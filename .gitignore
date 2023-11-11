@@ -166,3 +166,6 @@ cython_debug/
 *imported.ttl
 # Protegé
 *catalog-v*.xml
+
+#Other:
+DS_store

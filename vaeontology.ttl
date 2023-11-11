@@ -21,7 +21,7 @@
                                      dc:created "2023-11-14"^^xsd:date ;
                                      dc:creator "Andrés Holgado Sánchez" ;
                                      dc:description "Ontology for Value Awareness Engineering: representation and reasoning with human values."@en ;
-                                     dc:license <https://creativecommons.org/licenses/by/4.0> ;
+                                     dc:license <http://purl.org/NET/rdflicense/cc-by4.0.ttl> ;
                                      dc:title "VAE Ontology"@en ;
                                      vann:preferredNamespacePrefix "vae" ;
                                      vann:preferredNamespaceUri <https://w3id.org/def/vaeontology#> ;

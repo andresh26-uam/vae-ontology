@@ -1,0 +1,1737 @@
+<https://w3id.org/def/vaeontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/vaeontology#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/vaeontology/1.0.1> .
+<https://w3id.org/def/vaeontology#> <http://purl.org/dc/elements/1.1/created> "2023-11-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/vaeontology#> <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez" .
+<https://w3id.org/def/vaeontology#> <http://purl.org/dc/elements/1.1/description> "Ontology for Value Awareness Engineering: representation and reasoning with human values."@en .
+<https://w3id.org/def/vaeontology#> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/def/vaeontology#> <http://purl.org/dc/elements/1.1/title> "VAE Ontology"@en .
+<https://w3id.org/def/vaeontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vae" .
+<https://w3id.org/def/vaeontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/vaeontology#> .
+<https://w3id.org/def/vaeontology#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/def/vaeontology/1.0.0> .
+<https://w3id.org/def/vaeontology#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
+<https://w3id.org/def/vaeontology#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#bibRef
+<https://w3id.org/spice/SON/SchwartzValues#bibRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes> <http://www.w3.org/2000/01/rdf-schema#label> "conceptualizes" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#defines
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#defines> <http://www.w3.org/2000/01/rdf-schema#label> "defines" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart> <http://www.w3.org/2000/01/rdf-schema#label> "has proper part" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has region" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <http://www.w3.org/2000/01/rdf-schema#label> "has setting" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "is participant in" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies> <http://www.w3.org/2000/01/rdf-schema#label> "satisfies" .
+# 
+# http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo> <http://www.w3.org/2000/01/rdf-schema#label> "commits to" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/action
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#label> "action" .
+# 
+# http://www.w3.org/ns/odrl/2/asignee
+<http://www.w3.org/ns/odrl/2/asignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/asignee> <http://www.w3.org/2000/01/rdf-schema#label> "asignee" .
+# 
+# http://www.w3.org/ns/odrl/2/asigner
+<http://www.w3.org/ns/odrl/2/asigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/asigner> <http://www.w3.org/2000/01/rdf-schema#label> "asigner" .
+# 
+# http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#label> "constraint" .
+# 
+# http://www.w3.org/ns/odrl/2/leftOperand
+<http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/2000/01/rdf-schema#label> "left operand" .
+# 
+# http://www.w3.org/ns/odrl/2/operator
+<http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/2000/01/rdf-schema#label> "operator" .
+# 
+# http://www.w3.org/ns/odrl/2/rightOperand
+<http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/2000/01/rdf-schema#label> "right operand" .
+# 
+# http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#label> "target" .
+# 
+# https://w3id.org/def/vaeontology#abidesByValue
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#constrainsOutcome> .
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/2000/01/rdf-schema#label> "abides by value" .
+# 
+# https://w3id.org/def/vaeontology#asEntityOf
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isPresentInStatement> .
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#onEntity> .
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#asEntityOf> <http://www.w3.org/2000/01/rdf-schema#label> "as entity of" .
+# 
+# https://w3id.org/def/vaeontology#basedOnCriterion
+<https://w3id.org/def/vaeontology#basedOnCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#basedOnCriterion> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#usedInArgument> .
+<https://w3id.org/def/vaeontology#basedOnCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ArgumentStatement> .
+<https://w3id.org/def/vaeontology#basedOnCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Criterion> .
+<https://w3id.org/def/vaeontology#basedOnCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "based on criterion" .
+# 
+# https://w3id.org/def/vaeontology#comparisonHasInferior
+<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#inferiorInComparison> .
+<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/2000/01/rdf-schema#label> "comparison has inferior" .
+# 
+# https://w3id.org/def/vaeontology#comparisonHasSuperior
+<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#superiorInComparison> .
+<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/2000/01/rdf-schema#label> "comparison has superior" .
+# 
+# https://w3id.org/def/vaeontology#composedBySequence
+<https://w3id.org/def/vaeontology#composedBySequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#composedBySequence> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart> .
+<https://w3id.org/def/vaeontology#composedBySequence> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#composesComplexOutcome> .
+<https://w3id.org/def/vaeontology#composedBySequence> <http://www.w3.org/2000/01/rdf-schema#label> "composed by sequence" .
+# 
+# https://w3id.org/def/vaeontology#composesComplexOutcome
+<https://w3id.org/def/vaeontology#composesComplexOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#composesComplexOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "composes complex outcome" .
+# 
+# https://w3id.org/def/vaeontology#conditionsActionIn
+<https://w3id.org/def/vaeontology#conditionsActionIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#conditionsActionIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#onState> .
+<https://w3id.org/def/vaeontology#conditionsActionIn> <http://www.w3.org/2000/01/rdf-schema#label> "conditions action in" .
+# 
+# https://w3id.org/def/vaeontology#constrainsOutcome
+<https://w3id.org/def/vaeontology#constrainsOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#constrainsOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#constrainsOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#constrainsOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "constrains outcome" .
+# 
+# https://w3id.org/def/vaeontology#containsInputOutcome
+<https://w3id.org/def/vaeontology#containsInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#containsInputOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#startsWithOutcome> .
+<https://w3id.org/def/vaeontology#containsInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "contains input outcome" .
+# 
+# https://w3id.org/def/vaeontology#coversItem
+<https://w3id.org/def/vaeontology#coversItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#coversItem> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPresentInStatement> .
+<https://w3id.org/def/vaeontology#coversItem> <http://www.w3.org/2000/01/rdf-schema#label> "covers item" .
+# 
+# https://w3id.org/def/vaeontology#directlyGeneralizes
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#generalizes> .
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#directlyParticularizes> .
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#PropertyNode> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ConceptNode> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/2000/01/rdf-schema#label> "directly generalizes" .
+# 
+# https://w3id.org/def/vaeontology#directlyParticularizes
+<https://w3id.org/def/vaeontology#directlyParticularizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#directlyParticularizes> <http://www.w3.org/2000/01/rdf-schema#label> "directly particularizes" .
+# 
+# https://w3id.org/def/vaeontology#expressesProperty
+<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
+<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/2000/01/rdf-schema#label> "expresses property" .
+# 
+# https://w3id.org/def/vaeontology#expressesStatement
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes> .
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isExpressedByAgent> .
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Agent> .
+<https://w3id.org/def/vaeontology#expressesStatement> <http://www.w3.org/2000/01/rdf-schema#label> "expresses statement" .
+# 
+# https://w3id.org/def/vaeontology#followedByAgent
+<https://w3id.org/def/vaeontology#followedByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#followedByAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#followsStrategy> .
+<https://w3id.org/def/vaeontology#followedByAgent> <http://www.w3.org/2000/01/rdf-schema#label> "followed by agent" .
+# 
+# https://w3id.org/def/vaeontology#followsStrategy
+<https://w3id.org/def/vaeontology#followsStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#followsStrategy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> .
+<https://w3id.org/def/vaeontology#followsStrategy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ActingAgent> .
+<https://w3id.org/def/vaeontology#followsStrategy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Strategy> .
+<https://w3id.org/def/vaeontology#followsStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "follows strategy" .
+# 
+# https://w3id.org/def/vaeontology#fromTaxonomy
+<https://w3id.org/def/vaeontology#fromTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#fromTaxonomy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#hasConceptNode> .
+<https://w3id.org/def/vaeontology#fromTaxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "from taxonomy" .
+# 
+# https://w3id.org/def/vaeontology#generalizes
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#particularizes> .
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#PropertyNode> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ConceptNode> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#generalizes> <http://www.w3.org/2000/01/rdf-schema#label> "generalizes" .
+# 
+# https://w3id.org/def/vaeontology#hasActionOnState
+<https://w3id.org/def/vaeontology#hasActionOnState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasActionOnState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#partOfStrategy> .
+<https://w3id.org/def/vaeontology#hasActionOnState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Strategy> .
+<https://w3id.org/def/vaeontology#hasActionOnState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ActionOnState> .
+<https://w3id.org/def/vaeontology#hasActionOnState> <http://www.w3.org/2000/01/rdf-schema#label> "has action on state" .
+# 
+# https://w3id.org/def/vaeontology#hasAgent
+<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isAgentOfSystem> .
+<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#System> .
+<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Agent> .
+<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/2000/01/rdf-schema#label> "has agent" .
+# 
+# https://w3id.org/def/vaeontology#hasClaim
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isClaimOf> .
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ArgumentStatement> .
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/2000/01/rdf-schema#label> "has claim" .
+# 
+# https://w3id.org/def/vaeontology#hasClaimAsOutput
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/odrl/2/rightOperand> .
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isClaimOnConstraintOperator> .
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#SoundArgument> .
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#hasClaimAsOutput> <http://www.w3.org/2000/01/rdf-schema#label> "has claim as output" .
+# 
+# https://w3id.org/def/vaeontology#hasConceptNode
+<https://w3id.org/def/vaeontology#hasConceptNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasConceptNode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
+<https://w3id.org/def/vaeontology#hasConceptNode> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#hasConceptNode> <http://www.w3.org/2000/01/rdf-schema#label> "has concept node" .
+# 
+# https://w3id.org/def/vaeontology#hasImportance
+<https://w3id.org/def/vaeontology#hasImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasImportance> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isImportanceOf> .
+<https://w3id.org/def/vaeontology#hasImportance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#hasImportance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#NodeImportance> .
+<https://w3id.org/def/vaeontology#hasImportance> <http://www.w3.org/2000/01/rdf-schema#label> "has importance" .
+# 
+# https://w3id.org/def/vaeontology#hasInput
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isInputOfSequence> .
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> .
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has input" .
+# 
+# https://w3id.org/def/vaeontology#hasOutcome
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isOutcomeOfSequence> .
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has outcome" .
+# 
+# https://w3id.org/def/vaeontology#hasPremise
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPremiseOf> .
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ArgumentStatement> .
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/2000/01/rdf-schema#label> "has premise" .
+# 
+# https://w3id.org/def/vaeontology#hasPremiseAsInput
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/odrl/2/leftOperand> .
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPremiseOnConstraintOperator> .
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#SoundArgument> .
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#hasPremiseAsInput> <http://www.w3.org/2000/01/rdf-schema#label> "has premise as input" .
+# 
+# https://w3id.org/def/vaeontology#hasProperty
+<https://w3id.org/def/vaeontology#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPropertyOf> .
+<https://w3id.org/def/vaeontology#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#PropertyNode> .
+<https://w3id.org/def/vaeontology#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#PropertyTaxonomy> .
+<https://w3id.org/def/vaeontology#hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property" .
+# 
+# https://w3id.org/def/vaeontology#hasPropertyOfInferior
+<https://w3id.org/def/vaeontology#hasPropertyOfInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasPropertyOfInferior> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#hasPropertyOfInferior> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#hasPropertyOfInferior> <http://www.w3.org/2000/01/rdf-schema#label> "has property of inferior" .
+# 
+# https://w3id.org/def/vaeontology#hasPropertyOfSuperior
+<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPropertyOfInferiorAt> .
+<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/2000/01/rdf-schema#label> "has property of superior" .
+# 
+# https://w3id.org/def/vaeontology#hasRootNode
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#hasConceptNode> .
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isRootNodeOf> .
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#hasRootNode> <http://www.w3.org/2000/01/rdf-schema#label> "has root node" .
+# 
+# https://w3id.org/def/vaeontology#hasState
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> .
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isStateOfAgent> .
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Agent> .
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#State> .
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "has state" .
+# 
+# https://w3id.org/def/vaeontology#hasTaxonomyAlignment
+<https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy> .
+<https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
+<https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#TaxonomyAlignment> .
+<https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#label> "has taxonomy alignment" .
+# 
+# https://w3id.org/def/vaeontology#hasTrace
+<https://w3id.org/def/vaeontology#hasTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasTrace> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isTraceOfSystem> .
+<https://w3id.org/def/vaeontology#hasTrace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#System> .
+<https://w3id.org/def/vaeontology#hasTrace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Sequence> .
+<https://w3id.org/def/vaeontology#hasTrace> <http://www.w3.org/2000/01/rdf-schema#label> "has trace" .
+# 
+# https://w3id.org/def/vaeontology#hasUser
+<https://w3id.org/def/vaeontology#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#hasUser> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isUserOfSystem> .
+<https://w3id.org/def/vaeontology#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#System> .
+<https://w3id.org/def/vaeontology#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#User> .
+<https://w3id.org/def/vaeontology#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "has user" .
+# 
+# https://w3id.org/def/vaeontology#inferiorInComparison
+<https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#label> "inferior in comparison" .
+# 
+# https://w3id.org/def/vaeontology#influencesOutcome
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#satisfiesNorm> .
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "influences outcome" .
+# 
+# https://w3id.org/def/vaeontology#isAgentOfSystem
+<https://w3id.org/def/vaeontology#isAgentOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isAgentOfSystem> <http://www.w3.org/2000/01/rdf-schema#label> "is agent of system" .
+# 
+# https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy
+<https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "is alignment of taxonomy" .
+# 
+# https://w3id.org/def/vaeontology#isClaimOf
+<https://w3id.org/def/vaeontology#isClaimOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isClaimOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#isClaimOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ArgumentStatement> .
+<https://w3id.org/def/vaeontology#isClaimOf> <http://www.w3.org/2000/01/rdf-schema#label> "is claim of" .
+# 
+# https://w3id.org/def/vaeontology#isClaimOnConstraintOperator
+<https://w3id.org/def/vaeontology#isClaimOnConstraintOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isClaimOnConstraintOperator> <http://www.w3.org/2000/01/rdf-schema#label> "is claim on constraint operator" .
+# 
+# https://w3id.org/def/vaeontology#isExpressedByAgent
+<https://w3id.org/def/vaeontology#isExpressedByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isExpressedByAgent> <http://www.w3.org/2000/01/rdf-schema#label> "is expressed by agent" .
+# 
+# https://w3id.org/def/vaeontology#isImportanceOf
+<https://w3id.org/def/vaeontology#isImportanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isImportanceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is importance of" .
+# 
+# https://w3id.org/def/vaeontology#isInputOfSequence
+<https://w3id.org/def/vaeontology#isInputOfSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isInputOfSequence> <http://www.w3.org/2000/01/rdf-schema#label> "is input of sequence" .
+# 
+# https://w3id.org/def/vaeontology#isOptimalOfProperty
+<https://w3id.org/def/vaeontology#isOptimalOfProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isOptimalOfProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#propertyOptimzedAt> .
+<https://w3id.org/def/vaeontology#isOptimalOfProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#OptimalProperty> .
+<https://w3id.org/def/vaeontology#isOptimalOfProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#isOptimalOfProperty> <http://www.w3.org/2000/01/rdf-schema#label> "is optimal of property" .
+# 
+# https://w3id.org/def/vaeontology#isOutcomeOfSequence
+<https://w3id.org/def/vaeontology#isOutcomeOfSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isOutcomeOfSequence> <http://www.w3.org/2000/01/rdf-schema#label> "is outcome of sequence" .
+# 
+# https://w3id.org/def/vaeontology#isPremiseOf
+<https://w3id.org/def/vaeontology#isPremiseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isPremiseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is premise of" .
+# 
+# https://w3id.org/def/vaeontology#isPremiseOnConstraintOperator
+<https://w3id.org/def/vaeontology#isPremiseOnConstraintOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isPremiseOnConstraintOperator> <http://www.w3.org/2000/01/rdf-schema#label> "is premise on constraint operator" .
+# 
+# https://w3id.org/def/vaeontology#isPresentInStatement
+<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeEntity> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeProperty> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#label> "is present in statement" .
+# 
+# https://w3id.org/def/vaeontology#isPropertyOf
+<https://w3id.org/def/vaeontology#isPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is property of" .
+# 
+# https://w3id.org/def/vaeontology#isPropertyOfInferiorAt
+<https://w3id.org/def/vaeontology#isPropertyOfInferiorAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isPropertyOfInferiorAt> <http://www.w3.org/2000/01/rdf-schema#label> "is property of inferior at" .
+# 
+# https://w3id.org/def/vaeontology#isRootNodeOf
+<https://w3id.org/def/vaeontology#isRootNodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isRootNodeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is root node of" .
+# 
+# https://w3id.org/def/vaeontology#isStartOfSequence
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#sequenceStartsWith> .
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Sequence> .
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/2000/01/rdf-schema#label> "is start of sequence" .
+# 
+# https://w3id.org/def/vaeontology#isStateOfAgent
+<https://w3id.org/def/vaeontology#isStateOfAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isStateOfAgent> <http://www.w3.org/2000/01/rdf-schema#label> "is state of agent" .
+# 
+# https://w3id.org/def/vaeontology#isTestedInStatement
+<https://w3id.org/def/vaeontology#isTestedInStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isTestedInStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isPresentInStatement> .
+<https://w3id.org/def/vaeontology#isTestedInStatement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#withNorm> .
+<https://w3id.org/def/vaeontology#isTestedInStatement> <http://www.w3.org/2000/01/rdf-schema#label> "is tested in statement" .
+# 
+# https://w3id.org/def/vaeontology#isTraceOfSystem
+<https://w3id.org/def/vaeontology#isTraceOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isTraceOfSystem> <http://www.w3.org/2000/01/rdf-schema#label> "is trace of system" .
+# 
+# https://w3id.org/def/vaeontology#isUserOfSystem
+<https://w3id.org/def/vaeontology#isUserOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isUserOfSystem> <http://www.w3.org/2000/01/rdf-schema#label> "is user of system" .
+# 
+# https://w3id.org/def/vaeontology#isValuedInStatement
+<https://w3id.org/def/vaeontology#isValuedInStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#isValuedInStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isPresentInStatement> .
+<https://w3id.org/def/vaeontology#isValuedInStatement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#withValue> .
+<https://w3id.org/def/vaeontology#isValuedInStatement> <http://www.w3.org/2000/01/rdf-schema#label> "is valued in statement" .
+# 
+# https://w3id.org/def/vaeontology#madeByAgent
+<https://w3id.org/def/vaeontology#madeByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#madeByAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#makesAction> .
+<https://w3id.org/def/vaeontology#madeByAgent> <http://www.w3.org/2000/01/rdf-schema#label> "made by agent" .
+# 
+# https://w3id.org/def/vaeontology#makesAction
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> .
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ActingAgent> .
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Action> .
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#label> "makes action" .
+# 
+# https://w3id.org/def/vaeontology#measuredOnOutcome
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#satisfiesProperty> .
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "measured on outcome" .
+# 
+# https://w3id.org/def/vaeontology#nextInputOutcome
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#previousInputOutcome> .
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "next input outcome" .
+# 
+# https://w3id.org/def/vaeontology#onEntity
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#unionOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeEntity> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#label> "on entity" .
+# 
+# https://w3id.org/def/vaeontology#onOutcome
+<https://w3id.org/def/vaeontology#onOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#onOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "on outcome" .
+# 
+# https://w3id.org/def/vaeontology#onState
+<https://w3id.org/def/vaeontology#onState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#onState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ActionOnState> .
+<https://w3id.org/def/vaeontology#onState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#State> .
+<https://w3id.org/def/vaeontology#onState> <http://www.w3.org/2000/01/rdf-schema#label> "on state" .
+# 
+# https://w3id.org/def/vaeontology#partOfStrategy
+<https://w3id.org/def/vaeontology#partOfStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#partOfStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "part of strategy" .
+# 
+# https://w3id.org/def/vaeontology#particularizes
+<https://w3id.org/def/vaeontology#particularizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#particularizes> <http://www.w3.org/2000/01/rdf-schema#label> "particularizes" .
+# 
+# https://w3id.org/def/vaeontology#perform
+<https://w3id.org/def/vaeontology#perform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#perform> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#performedOnStateIn> .
+<https://w3id.org/def/vaeontology#perform> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ActionOnState> .
+<https://w3id.org/def/vaeontology#perform> <http://www.w3.org/2000/01/rdf-schema#range> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#perform> <http://www.w3.org/2000/01/rdf-schema#label> "perform" .
+# 
+# https://w3id.org/def/vaeontology#performedOnStateIn
+<https://w3id.org/def/vaeontology#performedOnStateIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#performedOnStateIn> <http://www.w3.org/2000/01/rdf-schema#label> "performed on state in" .
+# 
+# https://w3id.org/def/vaeontology#previousInputOutcome
+<https://w3id.org/def/vaeontology#previousInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#previousInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "previous input outcome" .
+# 
+# https://w3id.org/def/vaeontology#propertyExpressedAt
+<https://w3id.org/def/vaeontology#propertyExpressedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#propertyExpressedAt> <http://www.w3.org/2000/01/rdf-schema#label> "property expressed at" .
+# 
+# https://w3id.org/def/vaeontology#propertyOptimzedAt
+<https://w3id.org/def/vaeontology#propertyOptimzedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#propertyOptimzedAt> <http://www.w3.org/2000/01/rdf-schema#label> "property optimzed at" .
+# 
+# https://w3id.org/def/vaeontology#reflectsValue
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#shapesNorm> .
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/2000/01/rdf-schema#label> "reflects value" .
+# 
+# https://w3id.org/def/vaeontology#satisfiesNorm
+<https://w3id.org/def/vaeontology#satisfiesNorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#satisfiesNorm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#satisfiesNorm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#satisfiesNorm> <http://www.w3.org/2000/01/rdf-schema#label> "satisfies norm" .
+# 
+# https://w3id.org/def/vaeontology#satisfiesProperty
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#label> "satisfies property" .
+# 
+# https://w3id.org/def/vaeontology#sequenceStartsWith
+<https://w3id.org/def/vaeontology#sequenceStartsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#sequenceStartsWith> <http://www.w3.org/2000/01/rdf-schema#label> "sequence starts with" .
+# 
+# https://w3id.org/def/vaeontology#shapesNorm
+<https://w3id.org/def/vaeontology#shapesNorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#shapesNorm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#shapesNorm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#shapesNorm> <http://www.w3.org/2000/01/rdf-schema#label> "shapes norm" .
+# 
+# https://w3id.org/def/vaeontology#startsWithOutcome
+<https://w3id.org/def/vaeontology#startsWithOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#startsWithOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Sequence> .
+<https://w3id.org/def/vaeontology#startsWithOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#startsWithOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "starts with outcome" .
+# 
+# https://w3id.org/def/vaeontology#superiorInComparison
+<https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#label> "superior in comparison" .
+# 
+# https://w3id.org/def/vaeontology#usedInArgument
+<https://w3id.org/def/vaeontology#usedInArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#usedInArgument> <http://www.w3.org/2000/01/rdf-schema#label> "used in argument" .
+# 
+# https://w3id.org/def/vaeontology#withNorm
+<https://w3id.org/def/vaeontology#withNorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#withNorm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#withNorm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#withNorm> <http://www.w3.org/2000/01/rdf-schema#label> "with norm" .
+# 
+# https://w3id.org/def/vaeontology#withValue
+<https://w3id.org/def/vaeontology#withValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#withValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeStatement> .
+<https://w3id.org/def/vaeontology#withValue> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#withValue> <http://www.w3.org/2000/01/rdf-schema#label> "with value" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#attitude
+<https://w3id.org/spice/SON/SchwartzValues#attitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#focus
+<https://w3id.org/spice/SON/SchwartzValues#focus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueDefinition> .
+# 
+# https://w3id.org/def/vaeontology#degreeOfSatisfaction
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#PropertyTaxonomy> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "degree of satisfaction" .
+# 
+# https://w3id.org/def/vaeontology#importanceValue
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#NodeImportance> .
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#label> "importance value" .
+# 
+# https://w3id.org/def/vaeontology#isActive
+<https://w3id.org/def/vaeontology#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/vaeontology#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/vaeontology#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount> <http://www.w3.org/2000/01/rdf-schema#label> "Amount" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norm" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Region
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region" .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory> <http://www.w3.org/2000/01/rdf-schema#label> "Theory" .
+# 
+# http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> <http://www.w3.org/2000/01/rdf-schema#label> "Judgement" .
+# 
+# http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario> <http://www.w3.org/2000/01/rdf-schema#label> "Social Scenario" .
+# 
+# http://www.ontologydesignpatterns.org/ont/values/valuecore#Value
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Value> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/vaeontology#Value> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Value> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/spice/SON/SchwartzValues#Value> .
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Value> <http://www.w3.org/2000/01/rdf-schema#label> "Value" .
+# 
+# http://www.w3.org/ns/odrl/2/Action
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
+# 
+# http://www.w3.org/ns/odrl/2/Asset
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset" .
+# 
+# http://www.w3.org/ns/odrl/2/Constraint
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Constraint" .
+# 
+# http://www.w3.org/ns/odrl/2/Operator
+<http://www.w3.org/ns/odrl/2/Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operator" .
+# 
+# http://www.w3.org/ns/odrl/2/Party
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#label> "Party" .
+# 
+# http://www.w3.org/ns/odrl/2/Policy
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy" .
+# 
+# https://w3id.org/def/vaeontology#ActingAgent
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Agent> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#makesAction> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Acting Agent" .
+# 
+# https://w3id.org/def/vaeontology#Action
+<https://w3id.org/def/vaeontology#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
+# 
+# https://w3id.org/def/vaeontology#ActionOnState
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#State> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onState> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#perform> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#label> "Action On State" .
+# 
+# https://w3id.org/def/vaeontology#Agent
+<https://w3id.org/def/vaeontology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent> .
+<https://w3id.org/def/vaeontology#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
+<https://w3id.org/def/vaeontology#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# https://w3id.org/def/vaeontology#AgentStatement
+<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/schema#FrameOcurrence> .
+<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Statement" .
+# 
+# https://w3id.org/def/vaeontology#AggregationFunction
+<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation Function" .
+# 
+# https://w3id.org/def/vaeontology#AlignmentStatement
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#withValue> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#AwarenessStatement> .
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Alignment Statement" .
+# 
+# https://w3id.org/def/vaeontology#ArgumentStatement
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Argument Statement" .
+# 
+# https://w3id.org/def/vaeontology#AwarenessStatement
+<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#withValue> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Norm> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#withNorm> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Awareness Statement" .
+# 
+# https://w3id.org/def/vaeontology#BooleanVaeProperty
+<https://w3id.org/def/vaeontology#BooleanVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#BooleanVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#BooleanVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean Vae Property" .
+# 
+# https://w3id.org/def/vaeontology#ConceptNode
+<https://w3id.org/def/vaeontology#ConceptNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ConceptNode> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#PropertyNode> .
+<https://w3id.org/def/vaeontology#ConceptNode> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Node" .
+# 
+# https://w3id.org/def/vaeontology#Context
+<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario> .
+<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context" .
+# 
+# https://w3id.org/def/vaeontology#Criterion
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#label> "Criterion" .
+# 
+# https://w3id.org/def/vaeontology#Equality
+<https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/2000/01/rdf-schema#label> "Equality" .
+# 
+# https://w3id.org/def/vaeontology#FinalInputOutcome
+<https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#FinalInputOutcome> .
+<https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "Final Input Outcome" .
+# 
+# https://w3id.org/def/vaeontology#Generalization
+<https://w3id.org/def/vaeontology#Generalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Generalization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#Generalization> <http://www.w3.org/2000/01/rdf-schema#label> "Generalization" .
+# 
+# https://w3id.org/def/vaeontology#GiniIndex
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#SemanticsFunction> .
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Gini Index" .
+# 
+# https://w3id.org/def/vaeontology#ImportanceRelation
+<https://w3id.org/def/vaeontology#ImportanceRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ImportanceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+<https://w3id.org/def/vaeontology#ImportanceRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Importance Relation" .
+# 
+# https://w3id.org/def/vaeontology#MultiInputOutcome
+<https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "Multi Input Outcome" .
+# 
+# https://w3id.org/def/vaeontology#NodeImportance
+<https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#label> "Node Importance" .
+# 
+# https://w3id.org/def/vaeontology#Norm
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norm" .
+# 
+# https://w3id.org/def/vaeontology#OptimalProperty
+<https://w3id.org/def/vaeontology#OptimalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#OptimalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#BooleanVaeProperty> .
+<https://w3id.org/def/vaeontology#OptimalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#OptimalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Optimal Property" .
+# 
+# https://w3id.org/def/vaeontology#Outcome
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> .
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#composedBySequence> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome" .
+# 
+# https://w3id.org/def/vaeontology#PromotionDemotion
+<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QualitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#label> "Promotion Demotion" .
+# 
+# https://w3id.org/def/vaeontology#PropertyNode
+<https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#label> "Property Node" .
+# 
+# https://w3id.org/def/vaeontology#PropertyTaxonomy
+<https://w3id.org/def/vaeontology#PropertyTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#PropertyTaxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#PropertyTaxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#PropertyTaxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "Property Taxonomy" .
+# 
+# https://w3id.org/def/vaeontology#QualitativeVaeProperty
+<https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Qualitative Vae Property" .
+# 
+# https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#PromotionDemotion> .
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#label> "Quantitative Promotion Demotion" .
+# 
+# https://w3id.org/def/vaeontology#QuantitativeVaeProperty
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Quantitative Vae Property" .
+# 
+# https://w3id.org/def/vaeontology#SemanticsFunction
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#SemanticsFunction> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Semantics Function" .
+# 
+# https://w3id.org/def/vaeontology#Sequence
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#startsWithOutcome> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#label> "Sequence" .
+# 
+# https://w3id.org/def/vaeontology#SoundArgument
+<https://w3id.org/def/vaeontology#SoundArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#SoundArgument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Operator> .
+<https://w3id.org/def/vaeontology#SoundArgument> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Argument" .
+# 
+# https://w3id.org/def/vaeontology#State
+<https://w3id.org/def/vaeontology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+# 
+# https://w3id.org/def/vaeontology#Strategy
+<https://w3id.org/def/vaeontology#Strategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Strategy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#Strategy> <http://www.w3.org/2000/01/rdf-schema#label> "Strategy" .
+# 
+# https://w3id.org/def/vaeontology#System
+<https://w3id.org/def/vaeontology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Agent> .
+<https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#label> "System" .
+# 
+# https://w3id.org/def/vaeontology#TaxonomyAlignment
+<https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy Alignment" .
+# 
+# https://w3id.org/def/vaeontology#TextualVaeProperty
+<https://w3id.org/def/vaeontology#TextualVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#TextualVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#TextualVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Textual Vae Property" .
+# 
+# https://w3id.org/def/vaeontology#User
+<https://w3id.org/def/vaeontology#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ActingAgent> .
+<https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
+# 
+# https://w3id.org/def/vaeontology#VaeEntity
+<https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Entity" .
+# 
+# https://w3id.org/def/vaeontology#VaeProperty
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property" .
+# 
+# https://w3id.org/def/vaeontology#VaePropertyStatement
+<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property Statement" .
+# 
+# https://w3id.org/def/vaeontology#VaeStatement
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Action> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Statement" .
+# 
+# https://w3id.org/def/vaeontology#Value
+<https://w3id.org/def/vaeontology#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#Value> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/spice/SON/SchwartzValues#Value> .
+<https://w3id.org/def/vaeontology#Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#Value> <http://www.w3.org/2000/01/rdf-schema#label> "Value" .
+# 
+# https://w3id.org/def/vaeontology#ValueComparisonStatement
+<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Value Comparison Statement" .
+# 
+# https://w3id.org/def/vaeontology#ValueConcept
+<https://w3id.org/def/vaeontology#ValueConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ValueConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept> .
+<https://w3id.org/def/vaeontology#ValueConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Value Concept" .
+# 
+# https://w3id.org/def/vaeontology#ValueDefinition
+<https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> .
+<https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Value Definition" .
+# 
+# https://w3id.org/def/vaeontology#ValueProperty
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Value Property" .
+# 
+# https://w3id.org/def/vaeontology#ValueTaxonomy
+<https://w3id.org/def/vaeontology#ValueTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#ValueTaxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
+<https://w3id.org/def/vaeontology#ValueTaxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "Value Taxonomy" .
+# 
+# https://w3id.org/framester/schema#FrameOcurrence
+<https://w3id.org/framester/schema#FrameOcurrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/framester/schema#FrameOcurrence> <http://www.w3.org/2000/01/rdf-schema#label> "Frame Ocurrence" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Achievement
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Value> .
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Face> .
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> <http://www.w3.org/2000/01/rdf-schema#label> "Achievement" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Action
+<https://w3id.org/spice/SON/SchwartzValues#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> .
+<https://w3id.org/spice/SON/SchwartzValues#Action> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Thought> .
+<https://w3id.org/spice/SON/SchwartzValues#Action> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"The freedom to determine one's own actions.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Benevolence
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Value> .
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> <http://www.w3.org/2000/01/rdf-schema#label> "Benevolence" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Caring
+<https://w3id.org/spice/SON/SchwartzValues#Caring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Caring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Benevolence> .
+<https://w3id.org/spice/SON/SchwartzValues#Caring> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Dependability> .
+<https://w3id.org/spice/SON/SchwartzValues#Caring> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Devotion to the wellbeing of group members.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Concern
+<https://w3id.org/spice/SON/SchwartzValues#Concern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Concern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Universalism> .
+<https://w3id.org/spice/SON/SchwartzValues#Concern> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Nature> .
+<https://w3id.org/spice/SON/SchwartzValues#Concern> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Tolerance> .
+<https://w3id.org/spice/SON/SchwartzValues#Concern> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Commitment to equality, justice and protection for all.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Conformity
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Face> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Security> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Tradition> .
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Control of one's own impulses and behaviour, in line with social norms and expectations.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Conservation
+<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Dependability
+<https://w3id.org/spice/SON/SchwartzValues#Dependability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Dependability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Benevolence> .
+<https://w3id.org/spice/SON/SchwartzValues#Dependability> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Being a reliable and trustworthy member of the in-group.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Dominance
+<https://w3id.org/spice/SON/SchwartzValues#Dominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Dominance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Power> .
+<https://w3id.org/spice/SON/SchwartzValues#Dominance> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Resources> .
+<https://w3id.org/spice/SON/SchwartzValues#Dominance> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Power through exercising control over others.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Face
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Power> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Security> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Tradition> .
+<https://w3id.org/spice/SON/SchwartzValues#Face> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Security and power via the keeping up of one's own public image and avoidance of humiliation.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Focus
+<https://w3id.org/spice/SON/SchwartzValues#Focus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Focus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree
+<https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Hedonism
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Power> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Stimulation> .
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"The search for pleasure and sensuous gratification or satisfaction for oneself.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Humility
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#complementOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#unionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Security> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Tradition> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Universalism> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Acknowledgement of one's insignificance in the grand scheme of things.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Nature
+<https://w3id.org/spice/SON/SchwartzValues#Nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Nature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Universalism> .
+<https://w3id.org/spice/SON/SchwartzValues#Nature> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Tolerance> .
+<https://w3id.org/spice/SON/SchwartzValues#Nature> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Preservation of the natural environment.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#OpennessToChange
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2000/01/rdf-schema#label> "Openness To Change" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority
+<https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Individuals differ substantially in the importance they attribute to the ten values. At the societal level, however, consensus regarding the hierarchical order of the values is surprisingly high.\"\n\nBasic Human Values: Theory, Measurement, and Applications - S.H. Shwartz (2006)" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#PersonalFocus
+<https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Focus> .
+<https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Focus on personal issues and self." .
+<https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Power
+<https://w3id.org/spice/SON/SchwartzValues#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Value> .
+<https://w3id.org/spice/SON/SchwartzValues#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+<https://w3id.org/spice/SON/SchwartzValues#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Resources
+<https://w3id.org/spice/SON/SchwartzValues#Resources> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Resources> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Power> .
+<https://w3id.org/spice/SON/SchwartzValues#Resources> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Power through control of material and social resources.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Security
+<https://w3id.org/spice/SON/SchwartzValues#Security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Security> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+<https://w3id.org/spice/SON/SchwartzValues#Security> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Personal wellbeing and that of in-persons and in-groups, as well as the stability of society and oneself.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SelfDirection
+<https://w3id.org/spice/SON/SchwartzValues#SelfDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfDirection> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Stimulation> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfDirection> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Independence of thought, action and opinion.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2000/01/rdf-schema#label> "Self Enhancement" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance
+<https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> <http://www.w3.org/2000/01/rdf-schema#comment> "The attitude to which can be ascribed some values motivations: Self Protection and Anxiety Avoidance is a reactive attitude." .
+<https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2000/01/rdf-schema#label> "Self Trascendence" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SocialFocus
+<https://w3id.org/spice/SON/SchwartzValues#SocialFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#SocialFocus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Focus> .
+<https://w3id.org/spice/SON/SchwartzValues#SocialFocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Focus on social issues and others, or self as a member of a social community." .
+<https://w3id.org/spice/SON/SchwartzValues#SocialFocus> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Stimulation
+<https://w3id.org/spice/SON/SchwartzValues#Stimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Stimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Value> .
+<https://w3id.org/spice/SON/SchwartzValues#Stimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
+<https://w3id.org/spice/SON/SchwartzValues#Stimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Stimulation" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Thought
+<https://w3id.org/spice/SON/SchwartzValues#Thought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Thought> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> .
+<https://w3id.org/spice/SON/SchwartzValues#Thought> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"The freedom to cultivate one's own ideas and skills.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Tolerance
+<https://w3id.org/spice/SON/SchwartzValues#Tolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Tolerance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Universalism> .
+<https://w3id.org/spice/SON/SchwartzValues#Tolerance> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Acceptance and understanding of those different from oneself.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Tradition
+<https://w3id.org/spice/SON/SchwartzValues#Tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Tradition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+<https://w3id.org/spice/SON/SchwartzValues#Tradition> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Respect for, commitment to and acceptation of the ideals and customs imposed by culture or religion.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Universalism
+<https://w3id.org/spice/SON/SchwartzValues#Universalism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Universalism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Value> .
+<https://w3id.org/spice/SON/SchwartzValues#Universalism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
+<https://w3id.org/spice/SON/SchwartzValues#Universalism> <http://www.w3.org/2000/01/rdf-schema#label> "Universalism" .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#Value
+<https://w3id.org/spice/SON/SchwartzValues#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/spice/SON/SchwartzValues#Value> <http://www.w3.org/2000/01/rdf-schema#label> "Value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/vaeontology#achievementTax
+<https://w3id.org/def/vaeontology#achievementTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#achievementTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/spice/SON/SchwartzValues#Achievement> .
+# 
+# https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes
+<https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Action> .
+<https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <https://w3id.org/def/vaeontology#taxProblemContext> .
+# 
+# https://w3id.org/def/vaeontology#actOfPayingTaxes
+<https://w3id.org/def/vaeontology#actOfPayingTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#actOfPayingTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Action> .
+# 
+# https://w3id.org/def/vaeontology#aggregationSum
+<https://w3id.org/def/vaeontology#aggregationSum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#aggregationSum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#AggregationFunction> .
+<https://w3id.org/def/vaeontology#aggregationSum> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology#state1> .
+<https://w3id.org/def/vaeontology#aggregationSum> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#aggregationSum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.87"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#alignClaim
+<https://w3id.org/def/vaeontology#alignClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#alignClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#AlignmentStatement> .
+<https://w3id.org/def/vaeontology#alignClaim> <https://w3id.org/def/vaeontology#onEntity> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#alignClaim> <https://w3id.org/def/vaeontology#withValue> <https://w3id.org/def/vaeontology#benevolenceTax> .
+# 
+# https://w3id.org/def/vaeontology#alignPremise
+<https://w3id.org/def/vaeontology#alignPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#alignPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#AlignmentStatement> .
+<https://w3id.org/def/vaeontology#alignPremise> <https://w3id.org/def/vaeontology#expressesProperty> <https://w3id.org/def/vaeontology#giniIndex0_9> .
+<https://w3id.org/def/vaeontology#alignPremise> <https://w3id.org/def/vaeontology#expressesProperty> <https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7> .
+<https://w3id.org/def/vaeontology#alignPremise> <https://w3id.org/def/vaeontology#onEntity> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#alignPremise> <https://w3id.org/def/vaeontology#withValue> <https://w3id.org/def/vaeontology#equalityTax> .
+# 
+# https://w3id.org/def/vaeontology#argumentAlign
+<https://w3id.org/def/vaeontology#argumentAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#argumentAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ArgumentStatement> .
+<https://w3id.org/def/vaeontology#argumentAlign> <https://w3id.org/def/vaeontology#basedOnCriterion> <https://w3id.org/def/vaeontology#criterionAlign> .
+<https://w3id.org/def/vaeontology#argumentAlign> <https://w3id.org/def/vaeontology#hasClaim> <https://w3id.org/def/vaeontology#alignClaim> .
+<https://w3id.org/def/vaeontology#argumentAlign> <https://w3id.org/def/vaeontology#hasPremise> <https://w3id.org/def/vaeontology#alignPremise> .
+# 
+# https://w3id.org/def/vaeontology#benevolenceNode
+<https://w3id.org/def/vaeontology#benevolenceNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#benevolenceNode> <https://w3id.org/def/vaeontology#directlyGeneralizes> <https://w3id.org/def/vaeontology#equalityNode> .
+<https://w3id.org/def/vaeontology#benevolenceNode> <https://w3id.org/def/vaeontology#hasImportance> <https://w3id.org/def/vaeontology#benvolenceNodeImportance> .
+# 
+# https://w3id.org/def/vaeontology#benevolenceTax
+<https://w3id.org/def/vaeontology#benevolenceTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#benevolenceTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/spice/SON/SchwartzValues#Benevolence> .
+# 
+# https://w3id.org/def/vaeontology#benvolenceNodeImportance
+<https://w3id.org/def/vaeontology#benvolenceNodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#benvolenceNodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#NodeImportance> .
+<https://w3id.org/def/vaeontology#benvolenceNodeImportance> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#benevolenceTax> .
+<https://w3id.org/def/vaeontology#benvolenceNodeImportance> <https://w3id.org/def/vaeontology#importanceValue> "0.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#constraintAlign
+<https://w3id.org/def/vaeontology#constraintAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#constraintAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Constraint> .
+<https://w3id.org/def/vaeontology#constraintAlign> <http://www.w3.org/ns/odrl/2/operator> <https://w3id.org/def/vaeontology#logicalImplication> .
+<https://w3id.org/def/vaeontology#constraintAlign> <http://www.w3.org/ns/odrl/2/operator> <https://w3id.org/def/vaeontology#sameContext> .
+<https://w3id.org/def/vaeontology#constraintAlign> <https://w3id.org/def/vaeontology#hasClaimAsOutput> <https://w3id.org/def/vaeontology#alignClaim> .
+<https://w3id.org/def/vaeontology#constraintAlign> <https://w3id.org/def/vaeontology#hasPremiseAsInput> <https://w3id.org/def/vaeontology#alignPremise> .
+# 
+# https://w3id.org/def/vaeontology#correctNaming
+<https://w3id.org/def/vaeontology#correctNaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#correctNaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#SoundArgument> .
+# 
+# https://w3id.org/def/vaeontology#criterionAlign
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Criterion> .
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#benevolenceTax> .
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology#alignClaim> .
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.w3.org/ns/odrl/2/constraint> <https://w3id.org/def/vaeontology#constraintAlign> .
+<https://w3id.org/def/vaeontology#criterionAlign> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology#alignPremise> .
+# 
+# https://w3id.org/def/vaeontology#equalityNode
+<https://w3id.org/def/vaeontology#equalityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#equalityNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ConceptNode> .
+<https://w3id.org/def/vaeontology#equalityNode> <https://w3id.org/def/vaeontology#directlyGeneralizes> <https://w3id.org/def/vaeontology#giniPropertyNode> .
+<https://w3id.org/def/vaeontology#equalityNode> <https://w3id.org/def/vaeontology#hasImportance> <https://w3id.org/def/vaeontology#equalityNodeImportance> .
+# 
+# https://w3id.org/def/vaeontology#equalityNodeImportance
+<https://w3id.org/def/vaeontology#equalityNodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#equalityNodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#NodeImportance> .
+<https://w3id.org/def/vaeontology#equalityNodeImportance> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#equalityTax> .
+<https://w3id.org/def/vaeontology#equalityNodeImportance> <https://w3id.org/def/vaeontology#importanceValue> "0.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#equalityTax
+<https://w3id.org/def/vaeontology#equalityTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#equalityTax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Equality> .
+# 
+# https://w3id.org/def/vaeontology#evaderAgent
+<https://w3id.org/def/vaeontology#evaderAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#evaderAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ActingAgent> .
+<https://w3id.org/def/vaeontology#evaderAgent> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <https://w3id.org/def/vaeontology#taxProblemContext> .
+<https://w3id.org/def/vaeontology#evaderAgent> <https://w3id.org/def/vaeontology#makesAction> <https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> .
+# 
+# https://w3id.org/def/vaeontology#generalizationRelationTaxPayer
+<https://w3id.org/def/vaeontology#generalizationRelationTaxPayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#generalizationRelationTaxPayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Generalization> .
+<https://w3id.org/def/vaeontology#generalizationRelationTaxPayer> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology#equalityTax> .
+<https://w3id.org/def/vaeontology#generalizationRelationTaxPayer> <https://w3id.org/def/vaeontology#comparisonHasSuperior> <https://w3id.org/def/vaeontology#benevolenceTax> .
+<https://w3id.org/def/vaeontology#generalizationRelationTaxPayer> <https://w3id.org/def/vaeontology#isExpressedByAgent> <https://w3id.org/def/vaeontology#payerAgent> .
+# 
+# https://w3id.org/def/vaeontology#giniIndex0_3
+<https://w3id.org/def/vaeontology#giniIndex0_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#giniIndex0_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#GiniIndex> .
+<https://w3id.org/def/vaeontology#giniIndex0_3> <https://w3id.org/def/vaeontology#onOutcome> <https://w3id.org/def/vaeontology#state1> .
+<https://w3id.org/def/vaeontology#giniIndex0_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#giniIndex0_9
+<https://w3id.org/def/vaeontology#giniIndex0_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#giniIndex0_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#GiniIndex> .
+<https://w3id.org/def/vaeontology#giniIndex0_9> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#equalityTax> .
+<https://w3id.org/def/vaeontology#giniIndex0_9> <https://w3id.org/def/vaeontology#onOutcome> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#giniIndex0_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#giniIndexProp
+<https://w3id.org/def/vaeontology#giniIndexProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#giniIndexProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#PropertyTaxonomy> .
+<https://w3id.org/def/vaeontology#giniIndexProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/vaeontology#giniIndexProp> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> "1.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7
+<https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#BooleanVaeProperty> .
+<https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#equalityTax> .
+# 
+# https://w3id.org/def/vaeontology#giniPropertyNode
+<https://w3id.org/def/vaeontology#giniPropertyNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#giniPropertyNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#PropertyNode> .
+<https://w3id.org/def/vaeontology#giniPropertyNode> <https://w3id.org/def/vaeontology#hasProperty> <https://w3id.org/def/vaeontology#giniIndexProp> .
+# 
+# https://w3id.org/def/vaeontology#importanceRelationTaxPayer
+<https://w3id.org/def/vaeontology#importanceRelationTaxPayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#importanceRelationTaxPayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ImportanceRelation> .
+<https://w3id.org/def/vaeontology#importanceRelationTaxPayer> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology#achievementTax> .
+<https://w3id.org/def/vaeontology#importanceRelationTaxPayer> <https://w3id.org/def/vaeontology#comparisonHasSuperior> <https://w3id.org/def/vaeontology#benevolenceTax> .
+<https://w3id.org/def/vaeontology#importanceRelationTaxPayer> <https://w3id.org/def/vaeontology#isExpressedByAgent> <https://w3id.org/def/vaeontology#payerAgent> .
+# 
+# https://w3id.org/def/vaeontology#logicalImplication
+<https://w3id.org/def/vaeontology#logicalImplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#logicalImplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#SoundArgument> .
+# 
+# https://w3id.org/def/vaeontology#multiInputOutcome1
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <https://w3id.org/def/vaeontology#hasInput> <https://w3id.org/def/vaeontology#state1> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <https://w3id.org/def/vaeontology#hasOutcome> <https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <https://w3id.org/def/vaeontology#hasOutcome> <https://w3id.org/def/vaeontology#actOfPayingTaxes> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <https://w3id.org/def/vaeontology#hasOutcome> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#multiInputOutcome1> <https://w3id.org/def/vaeontology#nextInputOutcome> <https://w3id.org/def/vaeontology#multiInputOutcome2> .
+# 
+# https://w3id.org/def/vaeontology#multiInputOutcome2
+<https://w3id.org/def/vaeontology#multiInputOutcome2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#multiInputOutcome2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#FinalInputOutcome> .
+<https://w3id.org/def/vaeontology#multiInputOutcome2> <https://w3id.org/def/vaeontology#hasInput> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#multiInputOutcome2> <https://w3id.org/def/vaeontology#hasOutcome> <https://w3id.org/def/vaeontology#actOfPayingTaxes> .
+# 
+# https://w3id.org/def/vaeontology#payMinimumTaxes
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes> .
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/ns/odrl/2/asignee> <https://w3id.org/def/vaeontology#evaderAgent> .
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/ns/odrl/2/asignee> <https://w3id.org/def/vaeontology#payerAgent> .
+<https://w3id.org/def/vaeontology#payMinimumTaxes> <http://www.w3.org/ns/odrl/2/asigner> <https://w3id.org/def/vaeontology#problemModeller> .
+# 
+# https://w3id.org/def/vaeontology#payTaxes
+<https://w3id.org/def/vaeontology#payTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#payTaxes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Norm> .
+<https://w3id.org/def/vaeontology#payTaxes> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology#actOfPayingTaxes> .
+<https://w3id.org/def/vaeontology#payTaxes> <http://www.w3.org/ns/odrl/2/asignee> <https://w3id.org/def/vaeontology#evaderAgent> .
+<https://w3id.org/def/vaeontology#payTaxes> <http://www.w3.org/ns/odrl/2/asigner> <https://w3id.org/def/vaeontology#problemModeller> .
+# 
+# https://w3id.org/def/vaeontology#payerAgent
+<https://w3id.org/def/vaeontology#payerAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#payerAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ActingAgent> .
+<https://w3id.org/def/vaeontology#payerAgent> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <https://w3id.org/def/vaeontology#taxProblemContext> .
+<https://w3id.org/def/vaeontology#payerAgent> <https://w3id.org/def/vaeontology#expressesStatement> <https://w3id.org/def/vaeontology#alignClaim> .
+<https://w3id.org/def/vaeontology#payerAgent> <https://w3id.org/def/vaeontology#expressesStatement> <https://w3id.org/def/vaeontology#alignPremise> .
+<https://w3id.org/def/vaeontology#payerAgent> <https://w3id.org/def/vaeontology#expressesStatement> <https://w3id.org/def/vaeontology#argumentAlign> .
+<https://w3id.org/def/vaeontology#payerAgent> <https://w3id.org/def/vaeontology#expressesStatement> <https://w3id.org/def/vaeontology#importanceRelationTaxPayer> .
+<https://w3id.org/def/vaeontology#payerAgent> <https://w3id.org/def/vaeontology#makesAction> <https://w3id.org/def/vaeontology#actOfPayingTaxes> .
+# 
+# https://w3id.org/def/vaeontology#payerTaxonomy
+<https://w3id.org/def/vaeontology#payerTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#payerTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
+<https://w3id.org/def/vaeontology#payerTaxonomy> <https://w3id.org/def/vaeontology#hasConceptNode> <https://w3id.org/def/vaeontology#benevolenceNode> .
+<https://w3id.org/def/vaeontology#payerTaxonomy> <https://w3id.org/def/vaeontology#hasConceptNode> <https://w3id.org/def/vaeontology#equalityNode> .
+<https://w3id.org/def/vaeontology#payerTaxonomy> <https://w3id.org/def/vaeontology#hasRootNode> <https://w3id.org/def/vaeontology#benevolenceNode> .
+<https://w3id.org/def/vaeontology#payerTaxonomy> <https://w3id.org/def/vaeontology#hasTaxonomyAlignment> <https://w3id.org/def/vaeontology#taxonomAlignment> .
+# 
+# https://w3id.org/def/vaeontology#positiveBenevolenceAlignment
+<https://w3id.org/def/vaeontology#positiveBenevolenceAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#positiveBenevolenceAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#PromotionDemotion> .
+<https://w3id.org/def/vaeontology#positiveBenevolenceAlignment> <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> <https://w3id.org/def/vaeontology#benevolenceTax> .
+# 
+# https://w3id.org/def/vaeontology#problemModeller
+<https://w3id.org/def/vaeontology#problemModeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#problemModeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#User> .
+# 
+# https://w3id.org/def/vaeontology#sameContext
+<https://w3id.org/def/vaeontology#sameContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#sameContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#SoundArgument> .
+# 
+# https://w3id.org/def/vaeontology#sequenceOfOutcomes
+<https://w3id.org/def/vaeontology#sequenceOfOutcomes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#sequenceOfOutcomes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Sequence> .
+<https://w3id.org/def/vaeontology#sequenceOfOutcomes> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <https://w3id.org/def/vaeontology#taxProblemContext> .
+<https://w3id.org/def/vaeontology#sequenceOfOutcomes> <https://w3id.org/def/vaeontology#startsWithOutcome> <https://w3id.org/def/vaeontology#multiInputOutcome1> .
+# 
+# https://w3id.org/def/vaeontology#state1
+<https://w3id.org/def/vaeontology#state1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#state1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#State> .
+# 
+# https://w3id.org/def/vaeontology#state2
+<https://w3id.org/def/vaeontology#state2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#state2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#State> .
+# 
+# https://w3id.org/def/vaeontology#taxProblemContext
+<https://w3id.org/def/vaeontology#taxProblemContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#taxProblemContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#Context> .
+<https://w3id.org/def/vaeontology#taxProblemContext> <http://www.w3.org/2000/01/rdf-schema#comment> "This context is of a problem on taxing" .
+# 
+# https://w3id.org/def/vaeontology#taxSystem
+<https://w3id.org/def/vaeontology#taxSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#taxSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#System> .
+<https://w3id.org/def/vaeontology#taxSystem> <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> <https://w3id.org/def/vaeontology#taxProblemContext> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasAgent> <https://w3id.org/def/vaeontology#evaderAgent> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasAgent> <https://w3id.org/def/vaeontology#payerAgent> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasState> <https://w3id.org/def/vaeontology#state1> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasState> <https://w3id.org/def/vaeontology#state2> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasTrace> <https://w3id.org/def/vaeontology#sequenceOfOutcomes> .
+<https://w3id.org/def/vaeontology#taxSystem> <https://w3id.org/def/vaeontology#hasUser> <https://w3id.org/def/vaeontology#problemModeller> .
+# 
+# https://w3id.org/def/vaeontology#taxonomAlignment
+<https://w3id.org/def/vaeontology#taxonomAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vaeontology#taxonomAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#TaxonomyAlignment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+# 
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid78 <http://www.w3.org/2002/07/owl#members> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid83 <http://www.w3.org/2002/07/owl#members> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

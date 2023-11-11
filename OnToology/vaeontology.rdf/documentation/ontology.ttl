@@ -11,7 +11,7 @@
                                      <http://purl.org/dc/elements/1.1/created> "2023-11-14"^^xsd:date ;
                                      <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez" ;
                                      <http://purl.org/dc/elements/1.1/description> "Ontology for Value Awareness Engineering: representation and reasoning with human values."@en ;
-                                     <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0> ;
+                                     <http://purl.org/dc/elements/1.1/license> <http://purl.org/NET/rdflicense/cc-by4.0.ttl> ;
                                      <http://purl.org/dc/elements/1.1/title> "VAE Ontology"@en ;
                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "vae" ;
                                      <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/vaeontology#> ;

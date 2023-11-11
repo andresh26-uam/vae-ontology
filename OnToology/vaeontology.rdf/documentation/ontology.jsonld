@@ -2420,7 +2420,7 @@
     "@value" : "Ontology for Value Awareness Engineering: representation and reasoning with human values."
   } ],
   "http://purl.org/dc/elements/1.1/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0"
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0.ttl"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",

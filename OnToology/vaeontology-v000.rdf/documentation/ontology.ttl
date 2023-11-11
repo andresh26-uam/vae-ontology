@@ -1,0 +1,1909 @@
+@prefix : <https://w3id.org/def/vaeontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/vaeontology#> .
+
+<https://w3id.org/def/vaeontology#> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://w3id.org/def/vaeontology/1.0.1> ;
+                                     <http://purl.org/dc/elements/1.1/created> "2023-11-14"^^xsd:date ;
+                                     <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez" ;
+                                     <http://purl.org/dc/elements/1.1/description> "Ontology for Value Awareness Engineering: representation and reasoning with human values."@en ;
+                                     <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                     <http://purl.org/dc/elements/1.1/title> "VAE Ontology"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "vae" ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/vaeontology#> ;
+                                     owl:priorVersion <https://w3id.org/def/vaeontology/1.0.0> ;
+                                     owl:versionInfo "1.0.1" ;
+                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty ;
+             rdfs:range xsd:String ,
+                        xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#bibRef
+<https://w3id.org/spice/SON/SchwartzValues#bibRef> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:label "conceptualizes" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#defines
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#defines> rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "defines" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:label "has parameter" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:label "has proper part" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "has region" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> rdf:type owl:ObjectProperty ;
+                                                               rdfs:label "has setting" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "is about" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:label "is participant in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "satisfies" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:label "commits to" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/action
+<http://www.w3.org/ns/odrl/2/action> rdf:type owl:ObjectProperty ;
+                                     rdfs:label "action" .
+
+
+###  http://www.w3.org/ns/odrl/2/asignee
+<http://www.w3.org/ns/odrl/2/asignee> rdf:type owl:ObjectProperty ;
+                                      rdfs:label "asignee" .
+
+
+###  http://www.w3.org/ns/odrl/2/asigner
+<http://www.w3.org/ns/odrl/2/asigner> rdf:type owl:ObjectProperty ;
+                                      rdfs:label "asigner" .
+
+
+###  http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> rdf:type owl:ObjectProperty ;
+                                         rdfs:label "constraint" .
+
+
+###  http://www.w3.org/ns/odrl/2/leftOperand
+<http://www.w3.org/ns/odrl/2/leftOperand> rdf:type owl:ObjectProperty ;
+                                          rdfs:label "left operand" .
+
+
+###  http://www.w3.org/ns/odrl/2/operator
+<http://www.w3.org/ns/odrl/2/operator> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "operator" .
+
+
+###  http://www.w3.org/ns/odrl/2/rightOperand
+<http://www.w3.org/ns/odrl/2/rightOperand> rdf:type owl:ObjectProperty ;
+                                           rdfs:label "right operand" .
+
+
+###  http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> rdf:type owl:ObjectProperty ;
+                                     rdfs:label "target" .
+
+
+###  https://w3id.org/def/vaeontology#abidesByValue
+:abidesByValue rdf:type owl:ObjectProperty ;
+               owl:inverseOf :constrainsOutcome ;
+               rdfs:domain :Outcome ;
+               rdfs:range :ValueConcept ;
+               rdfs:label "abides by value" .
+
+
+###  https://w3id.org/def/vaeontology#asEntityOf
+:asEntityOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :isPresentInStatement ;
+            owl:inverseOf :onEntity ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Agent
+                                        :Norm
+                                        :Outcome
+                                      )
+                        ] ;
+            rdfs:range :VaeStatement ;
+            rdfs:label "as entity of" .
+
+
+###  https://w3id.org/def/vaeontology#basedOnCriterion
+:basedOnCriterion rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :usedInArgument ;
+                  rdfs:domain :ArgumentStatement ;
+                  rdfs:range :Criterion ;
+                  rdfs:label "based on criterion" .
+
+
+###  https://w3id.org/def/vaeontology#comparisonHasInferior
+:comparisonHasInferior rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :inferiorInComparison ;
+                       rdfs:domain :ValueComparisonStatement ;
+                       rdfs:range :ValueConcept ;
+                       rdfs:label "comparison has inferior" .
+
+
+###  https://w3id.org/def/vaeontology#comparisonHasSuperior
+:comparisonHasSuperior rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :superiorInComparison ;
+                       rdfs:domain :ValueComparisonStatement ;
+                       rdfs:range :ValueConcept ;
+                       rdfs:label "comparison has superior" .
+
+
+###  https://w3id.org/def/vaeontology#composedBySequence
+:composedBySequence rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart> ;
+                    owl:inverseOf :composesComplexOutcome ;
+                    rdfs:label "composed by sequence" .
+
+
+###  https://w3id.org/def/vaeontology#composesComplexOutcome
+:composesComplexOutcome rdf:type owl:ObjectProperty ;
+                        rdfs:label "composes complex outcome" .
+
+
+###  https://w3id.org/def/vaeontology#conditionsActionIn
+:conditionsActionIn rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :onState ;
+                    rdfs:label "conditions action in" .
+
+
+###  https://w3id.org/def/vaeontology#constrainsOutcome
+:constrainsOutcome rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ValueConcept ;
+                   rdfs:range :Outcome ;
+                   rdfs:label "constrains outcome" .
+
+
+###  https://w3id.org/def/vaeontology#containsInputOutcome
+:containsInputOutcome rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :startsWithOutcome ;
+                      rdfs:label "contains input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#coversItem
+:coversItem rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isPresentInStatement ;
+            rdfs:label "covers item" .
+
+
+###  https://w3id.org/def/vaeontology#directlyGeneralizes
+:directlyGeneralizes rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :generalizes ;
+                     owl:inverseOf :directlyParticularizes ;
+                     rdfs:domain :ConceptNode ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( :ConceptNode
+                                                :PropertyNode
+                                              )
+                                ] ;
+                     rdfs:label "directly generalizes" .
+
+
+###  https://w3id.org/def/vaeontology#directlyParticularizes
+:directlyParticularizes rdf:type owl:ObjectProperty ;
+                        rdfs:label "directly particularizes" .
+
+
+###  https://w3id.org/def/vaeontology#expressesProperty
+:expressesProperty rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :propertyExpressedAt ;
+                   rdfs:domain :VaePropertyStatement ;
+                   rdfs:range :VaeProperty ;
+                   rdfs:label "expresses property" .
+
+
+###  https://w3id.org/def/vaeontology#expressesStatement
+:expressesStatement rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes> ;
+                    owl:inverseOf :isExpressedByAgent ;
+                    rdfs:domain :AgentStatement ;
+                    rdfs:range :Agent ;
+                    rdfs:label "expresses statement" .
+
+
+###  https://w3id.org/def/vaeontology#followedByAgent
+:followedByAgent rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :followsStrategy ;
+                 rdfs:label "followed by agent" .
+
+
+###  https://w3id.org/def/vaeontology#followsStrategy
+:followsStrategy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> ;
+                 rdfs:domain :ActingAgent ;
+                 rdfs:range :Strategy ;
+                 rdfs:label "follows strategy" .
+
+
+###  https://w3id.org/def/vaeontology#fromTaxonomy
+:fromTaxonomy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasConceptNode ;
+              rdfs:label "from taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#generalizes
+:generalizes rdf:type owl:ObjectProperty ;
+             owl:inverseOf :particularizes ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:domain :ConceptNode ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :ConceptNode
+                                        :PropertyNode
+                                      )
+                        ] ;
+             rdfs:label "generalizes" .
+
+
+###  https://w3id.org/def/vaeontology#hasActionOnState
+:hasActionOnState rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :partOfStrategy ;
+                  rdfs:domain :Strategy ;
+                  rdfs:range :ActionOnState ;
+                  rdfs:label "has action on state" .
+
+
+###  https://w3id.org/def/vaeontology#hasAgent
+:hasAgent rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isAgentOfSystem ;
+          rdfs:domain :System ;
+          rdfs:range :Agent ;
+          rdfs:label "has agent" .
+
+
+###  https://w3id.org/def/vaeontology#hasClaim
+:hasClaim rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isClaimOf ;
+          rdfs:domain :ArgumentStatement ;
+          rdfs:range :VaeStatement ;
+          rdfs:label "has claim" .
+
+
+###  https://w3id.org/def/vaeontology#hasClaimAsOutput
+:hasClaimAsOutput rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.w3.org/ns/odrl/2/rightOperand> ;
+                  owl:inverseOf :isClaimOnConstraintOperator ;
+                  rdfs:domain :SoundArgument ;
+                  rdfs:range :VaeStatement ;
+                  rdfs:label "has claim as output" .
+
+
+###  https://w3id.org/def/vaeontology#hasConceptNode
+:hasConceptNode rdf:type owl:ObjectProperty ;
+                rdfs:domain :ValueTaxonomy ;
+                rdfs:range :ConceptNode ;
+                rdfs:label "has concept node" .
+
+
+###  https://w3id.org/def/vaeontology#hasImportance
+:hasImportance rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isImportanceOf ;
+               rdfs:domain :ConceptNode ;
+               rdfs:range :NodeImportance ;
+               rdfs:label "has importance" .
+
+
+###  https://w3id.org/def/vaeontology#hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isInputOfSequence ;
+          rdfs:domain :MultiInputOutcome ;
+          rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> ;
+          rdfs:label "has input" .
+
+
+###  https://w3id.org/def/vaeontology#hasOutcome
+:hasOutcome rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isOutcomeOfSequence ;
+            rdfs:domain :MultiInputOutcome ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Action
+                                       :Sequence
+                                       :State
+                                     )
+                       ] ;
+            rdfs:label "has outcome" .
+
+
+###  https://w3id.org/def/vaeontology#hasPremise
+:hasPremise rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isPremiseOf ;
+            rdfs:domain :ArgumentStatement ;
+            rdfs:range :VaeStatement ;
+            rdfs:label "has premise" .
+
+
+###  https://w3id.org/def/vaeontology#hasPremiseAsInput
+:hasPremiseAsInput rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.w3.org/ns/odrl/2/leftOperand> ;
+                   owl:inverseOf :isPremiseOnConstraintOperator ;
+                   rdfs:domain :SoundArgument ;
+                   rdfs:range :VaeStatement ;
+                   rdfs:label "has premise as input" .
+
+
+###  https://w3id.org/def/vaeontology#hasProperty
+:hasProperty rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isPropertyOf ;
+             rdfs:domain :PropertyNode ;
+             rdfs:range :PropertyTaxonomy ;
+             rdfs:label "has property" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyOfInferior
+:hasPropertyOfInferior rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ValueComparisonStatement ;
+                       rdfs:range :ValueProperty ;
+                       rdfs:label "has property of inferior" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyOfSuperior
+:hasPropertyOfSuperior rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isPropertyOfInferiorAt ;
+                       rdfs:domain :ValueComparisonStatement ;
+                       rdfs:range :ValueProperty ;
+                       rdfs:label "has property of superior" .
+
+
+###  https://w3id.org/def/vaeontology#hasRootNode
+:hasRootNode rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasConceptNode ;
+             owl:inverseOf :isRootNodeOf ;
+             rdfs:domain :ValueTaxonomy ;
+             rdfs:range :ConceptNode ;
+             rdfs:label "has root node" .
+
+
+###  https://w3id.org/def/vaeontology#hasState
+:hasState rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> ;
+          owl:inverseOf :isStateOfAgent ;
+          rdfs:domain :Agent ;
+          rdfs:range :State ;
+          rdfs:label "has state" .
+
+
+###  https://w3id.org/def/vaeontology#hasTaxonomyAlignment
+:hasTaxonomyAlignment rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isAlignmentOfTaxonomy ;
+                      rdfs:domain :ValueTaxonomy ;
+                      rdfs:range :TaxonomyAlignment ;
+                      rdfs:label "has taxonomy alignment" .
+
+
+###  https://w3id.org/def/vaeontology#hasTrace
+:hasTrace rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isTraceOfSystem ;
+          rdfs:domain :System ;
+          rdfs:range :Sequence ;
+          rdfs:label "has trace" .
+
+
+###  https://w3id.org/def/vaeontology#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isUserOfSystem ;
+         rdfs:domain :System ;
+         rdfs:range :User ;
+         rdfs:label "has user" .
+
+
+###  https://w3id.org/def/vaeontology#inferiorInComparison
+:inferiorInComparison rdf:type owl:ObjectProperty ;
+                      rdfs:label "inferior in comparison" .
+
+
+###  https://w3id.org/def/vaeontology#influencesOutcome
+:influencesOutcome rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :satisfiesNorm ;
+                   rdfs:domain :Norm ;
+                   rdfs:range :Outcome ;
+                   rdfs:label "influences outcome" .
+
+
+###  https://w3id.org/def/vaeontology#isAgentOfSystem
+:isAgentOfSystem rdf:type owl:ObjectProperty ;
+                 rdfs:label "is agent of system" .
+
+
+###  https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy
+:isAlignmentOfTaxonomy rdf:type owl:ObjectProperty ;
+                       rdfs:label "is alignment of taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#isClaimOf
+:isClaimOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :VaeStatement ;
+           rdfs:range :ArgumentStatement ;
+           rdfs:label "is claim of" .
+
+
+###  https://w3id.org/def/vaeontology#isClaimOnConstraintOperator
+:isClaimOnConstraintOperator rdf:type owl:ObjectProperty ;
+                             rdfs:label "is claim on constraint operator" .
+
+
+###  https://w3id.org/def/vaeontology#isExpressedByAgent
+:isExpressedByAgent rdf:type owl:ObjectProperty ;
+                    rdfs:label "is expressed by agent" .
+
+
+###  https://w3id.org/def/vaeontology#isImportanceOf
+:isImportanceOf rdf:type owl:ObjectProperty ;
+                rdfs:label "is importance of" .
+
+
+###  https://w3id.org/def/vaeontology#isInputOfSequence
+:isInputOfSequence rdf:type owl:ObjectProperty ;
+                   rdfs:label "is input of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isOptimalOfProperty
+:isOptimalOfProperty rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :propertyOptimzedAt ;
+                     rdfs:domain :OptimalProperty ;
+                     rdfs:range :VaeProperty ;
+                     rdfs:label "is optimal of property" .
+
+
+###  https://w3id.org/def/vaeontology#isOutcomeOfSequence
+:isOutcomeOfSequence rdf:type owl:ObjectProperty ;
+                     rdfs:label "is outcome of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isPremiseOf
+:isPremiseOf rdf:type owl:ObjectProperty ;
+             rdfs:label "is premise of" .
+
+
+###  https://w3id.org/def/vaeontology#isPremiseOnConstraintOperator
+:isPremiseOnConstraintOperator rdf:type owl:ObjectProperty ;
+                               rdfs:label "is premise on constraint operator" .
+
+
+###  https://w3id.org/def/vaeontology#isPresentInStatement
+:isPresentInStatement rdf:type owl:ObjectProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :VaeProperty
+                                                  :ValueConcept
+                                                  [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Agent
+                                                                  :Norm
+                                                                  :Outcome
+                                                                  :VaeEntity
+                                                                )
+                                                  ]
+                                                )
+                                  ] ;
+                      rdfs:range :AgentStatement ;
+                      rdfs:label "is present in statement" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyOf
+:isPropertyOf rdf:type owl:ObjectProperty ;
+              rdfs:label "is property of" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyOfInferiorAt
+:isPropertyOfInferiorAt rdf:type owl:ObjectProperty ;
+                        rdfs:label "is property of inferior at" .
+
+
+###  https://w3id.org/def/vaeontology#isRootNodeOf
+:isRootNodeOf rdf:type owl:ObjectProperty ;
+              rdfs:label "is root node of" .
+
+
+###  https://w3id.org/def/vaeontology#isStartOfSequence
+:isStartOfSequence rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :sequenceStartsWith ;
+                   rdfs:domain :MultiInputOutcome ;
+                   rdfs:range :Sequence ;
+                   rdfs:label "is start of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isStateOfAgent
+:isStateOfAgent rdf:type owl:ObjectProperty ;
+                rdfs:label "is state of agent" .
+
+
+###  https://w3id.org/def/vaeontology#isTestedInStatement
+:isTestedInStatement rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isPresentInStatement ;
+                     owl:inverseOf :withNorm ;
+                     rdfs:label "is tested in statement" .
+
+
+###  https://w3id.org/def/vaeontology#isTraceOfSystem
+:isTraceOfSystem rdf:type owl:ObjectProperty ;
+                 rdfs:label "is trace of system" .
+
+
+###  https://w3id.org/def/vaeontology#isUserOfSystem
+:isUserOfSystem rdf:type owl:ObjectProperty ;
+                rdfs:label "is user of system" .
+
+
+###  https://w3id.org/def/vaeontology#isValuedInStatement
+:isValuedInStatement rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isPresentInStatement ;
+                     owl:inverseOf :withValue ;
+                     rdfs:label "is valued in statement" .
+
+
+###  https://w3id.org/def/vaeontology#madeByAgent
+:madeByAgent rdf:type owl:ObjectProperty ;
+             owl:inverseOf :makesAction ;
+             rdfs:label "made by agent" .
+
+
+###  https://w3id.org/def/vaeontology#makesAction
+:makesAction rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn> ;
+             rdfs:domain :ActingAgent ;
+             rdfs:range :Action ;
+             rdfs:label "makes action" .
+
+
+###  https://w3id.org/def/vaeontology#measuredOnOutcome
+:measuredOnOutcome rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :satisfiesProperty ;
+                   rdfs:domain :VaeProperty ;
+                   rdfs:range :Outcome ;
+                   rdfs:label "measured on outcome" .
+
+
+###  https://w3id.org/def/vaeontology#nextInputOutcome
+:nextInputOutcome rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :previousInputOutcome ;
+                  rdfs:domain :MultiInputOutcome ;
+                  rdfs:range :MultiInputOutcome ;
+                  rdfs:label "next input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#onEntity
+:onEntity rdf:type owl:ObjectProperty ;
+          rdfs:domain :VaeStatement ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Agent
+                                     :Norm
+                                     :Outcome
+                                   )
+                     ] ,
+                     [ rdf:type owl:Class ;
+                       owl:unionOf ( :Agent
+                                     :Norm
+                                     :Outcome
+                                     :VaeEntity
+                                   )
+                     ] ;
+          rdfs:label "on entity" .
+
+
+###  https://w3id.org/def/vaeontology#onOutcome
+:onOutcome rdf:type owl:ObjectProperty ;
+           rdfs:label "on outcome" .
+
+
+###  https://w3id.org/def/vaeontology#onState
+:onState rdf:type owl:ObjectProperty ;
+         rdfs:domain :ActionOnState ;
+         rdfs:range :State ;
+         rdfs:label "on state" .
+
+
+###  https://w3id.org/def/vaeontology#partOfStrategy
+:partOfStrategy rdf:type owl:ObjectProperty ;
+                rdfs:label "part of strategy" .
+
+
+###  https://w3id.org/def/vaeontology#particularizes
+:particularizes rdf:type owl:ObjectProperty ;
+                rdfs:label "particularizes" .
+
+
+###  https://w3id.org/def/vaeontology#perform
+:perform rdf:type owl:ObjectProperty ;
+         owl:inverseOf :performedOnStateIn ;
+         rdfs:domain :ActionOnState ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Action
+                                    :Strategy
+                                  )
+                    ] ;
+         rdfs:label "perform" .
+
+
+###  https://w3id.org/def/vaeontology#performedOnStateIn
+:performedOnStateIn rdf:type owl:ObjectProperty ;
+                    rdfs:label "performed on state in" .
+
+
+###  https://w3id.org/def/vaeontology#previousInputOutcome
+:previousInputOutcome rdf:type owl:ObjectProperty ;
+                      rdfs:label "previous input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#propertyExpressedAt
+:propertyExpressedAt rdf:type owl:ObjectProperty ;
+                     rdfs:label "property expressed at" .
+
+
+###  https://w3id.org/def/vaeontology#propertyOptimzedAt
+:propertyOptimzedAt rdf:type owl:ObjectProperty ;
+                    rdfs:label "property optimzed at" .
+
+
+###  https://w3id.org/def/vaeontology#reflectsValue
+:reflectsValue rdf:type owl:ObjectProperty ;
+               owl:inverseOf :shapesNorm ;
+               rdfs:domain :Norm ;
+               rdfs:range :ValueConcept ;
+               rdfs:label "reflects value" .
+
+
+###  https://w3id.org/def/vaeontology#satisfiesNorm
+:satisfiesNorm rdf:type owl:ObjectProperty ;
+               rdfs:domain :Outcome ;
+               rdfs:range :Norm ;
+               rdfs:label "satisfies norm" .
+
+
+###  https://w3id.org/def/vaeontology#satisfiesProperty
+:satisfiesProperty rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Outcome ;
+                   rdfs:range :VaeProperty ;
+                   rdfs:label "satisfies property" .
+
+
+###  https://w3id.org/def/vaeontology#sequenceStartsWith
+:sequenceStartsWith rdf:type owl:ObjectProperty ;
+                    rdfs:label "sequence starts with" .
+
+
+###  https://w3id.org/def/vaeontology#shapesNorm
+:shapesNorm rdf:type owl:ObjectProperty ;
+            rdfs:domain :ValueConcept ;
+            rdfs:range :Norm ;
+            rdfs:label "shapes norm" .
+
+
+###  https://w3id.org/def/vaeontology#startsWithOutcome
+:startsWithOutcome rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Sequence ;
+                   rdfs:range :MultiInputOutcome ;
+                   rdfs:label "starts with outcome" .
+
+
+###  https://w3id.org/def/vaeontology#superiorInComparison
+:superiorInComparison rdf:type owl:ObjectProperty ;
+                      rdfs:label "superior in comparison" .
+
+
+###  https://w3id.org/def/vaeontology#usedInArgument
+:usedInArgument rdf:type owl:ObjectProperty ;
+                rdfs:label "used in argument" .
+
+
+###  https://w3id.org/def/vaeontology#withNorm
+:withNorm rdf:type owl:ObjectProperty ;
+          rdfs:domain :VaeStatement ;
+          rdfs:range :Norm ;
+          rdfs:label "with norm" .
+
+
+###  https://w3id.org/def/vaeontology#withValue
+:withValue rdf:type owl:ObjectProperty ;
+           rdfs:domain :VaeStatement ;
+           rdfs:range :ValueConcept ;
+           rdfs:label "with value" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#attitude
+<https://w3id.org/spice/SON/SchwartzValues#attitude> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#focus
+<https://w3id.org/spice/SON/SchwartzValues#focus> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ValueDefinition .
+
+
+###  https://w3id.org/def/vaeontology#degreeOfSatisfaction
+:degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PropertyTaxonomy ;
+                      rdfs:range xsd:float ;
+                      rdfs:label "degree of satisfaction" .
+
+
+###  https://w3id.org/def/vaeontology#importanceValue
+:importanceValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :NodeImportance ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "importance value" .
+
+
+###  https://w3id.org/def/vaeontology#isActive
+:isActive rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:boolean ;
+          rdfs:label "is active" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent> rdf:type owl:Class ;
+                                                          rdfs:label "Agent" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount> rdf:type owl:Class ;
+                                                           rdfs:label "Amount" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept> rdf:type owl:Class ;
+                                                            rdfs:label "Concept" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity> rdf:type owl:Class ;
+                                                           rdfs:label "Entity" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> rdf:type owl:Class ;
+                                                          rdfs:label "Event" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm> rdf:type owl:Class ;
+                                                         rdfs:label "Norm" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter> rdf:type owl:Class ;
+                                                              rdfs:label "Parameter" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Region
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Region> rdf:type owl:Class ;
+                                                           rdfs:label "Region" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory
+<http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory> rdf:type owl:Class ;
+                                                           rdfs:label "Theory" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :AgentStatement ;
+                                                                       rdfs:label "Judgement" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario> rdf:type owl:Class ;
+                                                                            rdfs:label "Social Scenario" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#Value
+<http://www.ontologydesignpatterns.org/ont/values/valuecore#Value> rdf:type owl:Class ;
+                                                                   owl:equivalentClass :Value ,
+                                                                                       <https://w3id.org/spice/SON/SchwartzValues#Value> ;
+                                                                   rdfs:label "Value" .
+
+
+###  http://www.w3.org/ns/odrl/2/Action
+<http://www.w3.org/ns/odrl/2/Action> rdf:type owl:Class ;
+                                     rdfs:label "Action" .
+
+
+###  http://www.w3.org/ns/odrl/2/Asset
+<http://www.w3.org/ns/odrl/2/Asset> rdf:type owl:Class ;
+                                    rdfs:label "Asset" .
+
+
+###  http://www.w3.org/ns/odrl/2/Constraint
+<http://www.w3.org/ns/odrl/2/Constraint> rdf:type owl:Class ;
+                                         rdfs:label "Constraint" .
+
+
+###  http://www.w3.org/ns/odrl/2/Operator
+<http://www.w3.org/ns/odrl/2/Operator> rdf:type owl:Class ;
+                                       rdfs:label "Operator" .
+
+
+###  http://www.w3.org/ns/odrl/2/Party
+<http://www.w3.org/ns/odrl/2/Party> rdf:type owl:Class ;
+                                    rdfs:label "Party" .
+
+
+###  http://www.w3.org/ns/odrl/2/Policy
+<http://www.w3.org/ns/odrl/2/Policy> rdf:type owl:Class ;
+                                     rdfs:label "Policy" .
+
+
+###  https://w3id.org/def/vaeontology#ActingAgent
+:ActingAgent rdf:type owl:Class ;
+             rdfs:subClassOf :Agent ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :makesAction ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:label "Acting Agent" .
+
+
+###  https://w3id.org/def/vaeontology#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :Outcome ;
+        rdfs:label "Action" .
+
+
+###  https://w3id.org/def/vaeontology#ActionOnState
+:ActionOnState rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :onState ;
+                                 owl:someValuesFrom :State
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :perform ;
+                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( :Action
+                                                                    :Strategy
+                                                                  )
+                                                    ]
+                               ] ;
+               rdfs:label "Action On State" .
+
+
+###  https://w3id.org/def/vaeontology#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent> ,
+                       <http://www.w3.org/ns/odrl/2/Party> ;
+       rdfs:label "Agent" .
+
+
+###  https://w3id.org/def/vaeontology#AgentStatement
+:AgentStatement rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/framester/schema#FrameOcurrence> ;
+                rdfs:label "Agent Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AggregationFunction
+:AggregationFunction rdf:type owl:Class ;
+                     rdfs:subClassOf :QuantitativeVaeProperty ;
+                     rdfs:label "Aggregation Function" .
+
+
+###  https://w3id.org/def/vaeontology#AlignmentStatement
+:AlignmentStatement rdf:type owl:Class ;
+                    rdfs:subClassOf [ owl:intersectionOf ( :VaeStatement
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :onEntity ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :Norm
+                                                                                                :Outcome
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :withValue ;
+                                                             owl:someValuesFrom :ValueConcept
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    owl:disjointWith :AwarenessStatement ;
+                    rdfs:label "Alignment Statement" .
+
+
+###  https://w3id.org/def/vaeontology#ArgumentStatement
+:ArgumentStatement rdf:type owl:Class ;
+                   rdfs:subClassOf :AgentStatement ;
+                   rdfs:label "Argument Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AwarenessStatement
+:AwarenessStatement rdf:type owl:Class ;
+                    rdfs:subClassOf [ owl:intersectionOf ( :VaeStatement
+                                                           [ rdf:type owl:Class ;
+                                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :withNorm ;
+                                                                             owl:someValuesFrom :Norm
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :withValue ;
+                                                                             owl:someValuesFrom :ValueConcept
+                                                                           ]
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :onEntity ;
+                                                             owl:someValuesFrom :Agent
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    rdfs:label "Awareness Statement" .
+
+
+###  https://w3id.org/def/vaeontology#BooleanVaeProperty
+:BooleanVaeProperty rdf:type owl:Class ;
+                    rdfs:subClassOf :VaeProperty ;
+                    rdfs:label "Boolean Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#ConceptNode
+:ConceptNode rdf:type owl:Class ;
+             owl:disjointWith :PropertyNode ;
+             rdfs:label "Concept Node" .
+
+
+###  https://w3id.org/def/vaeontology#Context
+:Context rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario> ;
+         rdfs:label "Context" .
+
+
+###  https://w3id.org/def/vaeontology#Criterion
+:Criterion rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory> ,
+                           <http://www.w3.org/ns/odrl/2/Policy> ;
+           rdfs:label "Criterion" .
+
+
+###  https://w3id.org/def/vaeontology#Equality
+:Equality rdf:type owl:Class ;
+          rdfs:subClassOf :ValueConcept ;
+          rdfs:label "Equality" .
+
+
+###  https://w3id.org/def/vaeontology#FinalInputOutcome
+:FinalInputOutcome rdf:type owl:Class ;
+                   rdfs:subClassOf :FinalInputOutcome ,
+                                   :MultiInputOutcome ;
+                   rdfs:label "Final Input Outcome" .
+
+
+###  https://w3id.org/def/vaeontology#Generalization
+:Generalization rdf:type owl:Class ;
+                rdfs:subClassOf :ValueComparisonStatement ;
+                rdfs:label "Generalization" .
+
+
+###  https://w3id.org/def/vaeontology#GiniIndex
+:GiniIndex rdf:type owl:Class ;
+           rdfs:subClassOf :SemanticsFunction ;
+           rdfs:label "Gini Index" .
+
+
+###  https://w3id.org/def/vaeontology#ImportanceRelation
+:ImportanceRelation rdf:type owl:Class ;
+                    rdfs:subClassOf :ValueComparisonStatement ;
+                    rdfs:label "Importance Relation" .
+
+
+###  https://w3id.org/def/vaeontology#MultiInputOutcome
+:MultiInputOutcome rdf:type owl:Class ;
+                   rdfs:label "Multi Input Outcome" .
+
+
+###  https://w3id.org/def/vaeontology#NodeImportance
+:NodeImportance rdf:type owl:Class ;
+                rdfs:subClassOf :QuantitativeVaeProperty ;
+                rdfs:label "Node Importance" .
+
+
+###  https://w3id.org/def/vaeontology#Norm
+:Norm rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm> ,
+                      <http://www.w3.org/ns/odrl/2/Policy> ;
+      owl:disjointWith :ValueConcept ;
+      rdfs:label "Norm" .
+
+
+###  https://w3id.org/def/vaeontology#OptimalProperty
+:OptimalProperty rdf:type owl:Class ;
+                 rdfs:subClassOf :BooleanVaeProperty ,
+                                 :QuantitativeVaeProperty ;
+                 rdfs:label "Optimal Property" .
+
+
+###  https://w3id.org/def/vaeontology#Outcome
+:Outcome rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#Event> ,
+                         :Outcome ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :composedBySequence ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:label "Outcome" .
+
+
+###  https://w3id.org/def/vaeontology#PromotionDemotion
+:PromotionDemotion rdf:type owl:Class ;
+                   rdfs:subClassOf :QualitativeVaeProperty ,
+                                   :ValueProperty ;
+                   rdfs:label "Promotion Demotion" .
+
+
+###  https://w3id.org/def/vaeontology#PropertyNode
+:PropertyNode rdf:type owl:Class ;
+              rdfs:label "Property Node" .
+
+
+###  https://w3id.org/def/vaeontology#PropertyTaxonomy
+:PropertyTaxonomy rdf:type owl:Class ;
+                  rdfs:subClassOf :QuantitativeVaeProperty ,
+                                  :ValueProperty ;
+                  rdfs:label "Property Taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#QualitativeVaeProperty
+:QualitativeVaeProperty rdf:type owl:Class ;
+                        rdfs:subClassOf :VaeProperty ;
+                        rdfs:label "Qualitative Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
+:QuantitativePromotionDemotion rdf:type owl:Class ;
+                               rdfs:subClassOf :PromotionDemotion ,
+                                               :QuantitativeVaeProperty ;
+                               rdfs:label "Quantitative Promotion Demotion" .
+
+
+###  https://w3id.org/def/vaeontology#QuantitativeVaeProperty
+:QuantitativeVaeProperty rdf:type owl:Class ;
+                         rdfs:subClassOf :VaeProperty ;
+                         rdfs:label "Quantitative Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#SemanticsFunction
+:SemanticsFunction rdf:type owl:Class ;
+                   rdfs:subClassOf :QuantitativeVaeProperty ,
+                                   :SemanticsFunction ,
+                                   :ValueProperty ;
+                   rdfs:label "Semantics Function" .
+
+
+###  https://w3id.org/def/vaeontology#Sequence
+:Sequence rdf:type owl:Class ;
+          rdfs:subClassOf :Outcome ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :startsWithOutcome ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          rdfs:label "Sequence" .
+
+
+###  https://w3id.org/def/vaeontology#SoundArgument
+:SoundArgument rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/odrl/2/Operator> ;
+               rdfs:label "Sound Argument" .
+
+
+###  https://w3id.org/def/vaeontology#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :Outcome ;
+       rdfs:label "State" .
+
+
+###  https://w3id.org/def/vaeontology#Strategy
+:Strategy rdf:type owl:Class ;
+          rdfs:subClassOf :Outcome ;
+          rdfs:label "Strategy" .
+
+
+###  https://w3id.org/def/vaeontology#System
+:System rdf:type owl:Class ;
+        rdfs:subClassOf :Agent ;
+        rdfs:label "System" .
+
+
+###  https://w3id.org/def/vaeontology#TaxonomyAlignment
+:TaxonomyAlignment rdf:type owl:Class ;
+                   rdfs:subClassOf :QuantitativeVaeProperty ;
+                   rdfs:label "Taxonomy Alignment" .
+
+
+###  https://w3id.org/def/vaeontology#TextualVaeProperty
+:TextualVaeProperty rdf:type owl:Class ;
+                    rdfs:subClassOf :VaeProperty ;
+                    rdfs:label "Textual Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf :ActingAgent ;
+      rdfs:label "User" .
+
+
+###  https://w3id.org/def/vaeontology#VaeEntity
+:VaeEntity rdf:type owl:Class ;
+           rdfs:label "Vae Entity" .
+
+
+###  https://w3id.org/def/vaeontology#VaeProperty
+:VaeProperty rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:label "Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#VaePropertyStatement
+:VaePropertyStatement rdf:type owl:Class ;
+                      rdfs:subClassOf :AgentStatement ;
+                      rdfs:label "Vae Property Statement" .
+
+
+###  https://w3id.org/def/vaeontology#VaeStatement
+:VaeStatement rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/odrl/2/Action> ,
+                              <http://www.w3.org/ns/odrl/2/Asset> ,
+                              :AgentStatement ,
+                              :VaePropertyStatement ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :onEntity ;
+                                owl:minCardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:label "Vae Statement" .
+
+
+###  https://w3id.org/def/vaeontology#Value
+:Value rdf:type owl:Class ;
+       owl:equivalentClass <https://w3id.org/spice/SON/SchwartzValues#Value> ;
+       rdfs:subClassOf :ValueConcept ;
+       rdfs:label "Value" .
+
+
+###  https://w3id.org/def/vaeontology#ValueComparisonStatement
+:ValueComparisonStatement rdf:type owl:Class ;
+                          rdfs:subClassOf :AgentStatement ;
+                          rdfs:label "Value Comparison Statement" .
+
+
+###  https://w3id.org/def/vaeontology#ValueConcept
+:ValueConcept rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept> ;
+              rdfs:label "Value Concept" .
+
+
+###  https://w3id.org/def/vaeontology#ValueDefinition
+:ValueDefinition rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement> ;
+                 rdfs:label "Value Definition" .
+
+
+###  https://w3id.org/def/vaeontology#ValueProperty
+:ValueProperty rdf:type owl:Class ;
+               rdfs:subClassOf :VaeProperty ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:label "Value Property" .
+
+
+###  https://w3id.org/def/vaeontology#ValueTaxonomy
+:ValueTaxonomy rdf:type owl:Class ;
+               rdfs:subClassOf :AgentStatement ;
+               rdfs:label "Value Taxonomy" .
+
+
+###  https://w3id.org/framester/schema#FrameOcurrence
+<https://w3id.org/framester/schema#FrameOcurrence> rdf:type owl:Class ;
+                                                   rdfs:label "Frame Ocurrence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Achievement
+<https://w3id.org/spice/SON/SchwartzValues#Achievement> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Value ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> ;
+                                                        owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Face> ,
+                                                                         <https://w3id.org/spice/SON/SchwartzValues#Hedonism> ;
+                                                        rdfs:label "Achievement" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Action
+<https://w3id.org/spice/SON/SchwartzValues#Action> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> ;
+                                                   owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Thought> ;
+                                                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"The freedom to determine one's own actions.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Benevolence
+<https://w3id.org/spice/SON/SchwartzValues#Benevolence> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Value ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> ;
+                                                        owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Humility> ;
+                                                        rdfs:label "Benevolence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Caring
+<https://w3id.org/spice/SON/SchwartzValues#Caring> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Benevolence> ;
+                                                   owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Dependability> ;
+                                                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Devotion to the wellbeing of group members.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Concern
+<https://w3id.org/spice/SON/SchwartzValues#Concern> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Universalism> ;
+                                                    owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Nature> ,
+                                                                     <https://w3id.org/spice/SON/SchwartzValues#Tolerance> ;
+                                                    <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Commitment to equality, justice and protection for all.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Conformity
+<https://w3id.org/spice/SON/SchwartzValues#Conformity> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Conservation> ;
+                                                       owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Face> ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#Humility> ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#Security> ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#Tradition> ;
+                                                       <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Control of one's own impulses and behaviour, in line with social norms and expectations.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Conservation
+<https://w3id.org/spice/SON/SchwartzValues#Conservation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Dependability
+<https://w3id.org/spice/SON/SchwartzValues#Dependability> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Benevolence> ;
+                                                          <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Being a reliable and trustworthy member of the in-group.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Dominance
+<https://w3id.org/spice/SON/SchwartzValues#Dominance> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Power> ;
+                                                      owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Resources> ;
+                                                      <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Power through exercising control over others.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Face
+<https://w3id.org/spice/SON/SchwartzValues#Face> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Conservation> ,
+                                                                 <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> ;
+                                                 owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Hedonism> ,
+                                                                  <https://w3id.org/spice/SON/SchwartzValues#Humility> ,
+                                                                  <https://w3id.org/spice/SON/SchwartzValues#Power> ,
+                                                                  <https://w3id.org/spice/SON/SchwartzValues#Security> ,
+                                                                  <https://w3id.org/spice/SON/SchwartzValues#Tradition> ;
+                                                 <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Security and power via the keeping up of one's own public image and avoidance of humiliation.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Focus
+<https://w3id.org/spice/SON/SchwartzValues#Focus> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree
+<https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Hedonism
+<https://w3id.org/spice/SON/SchwartzValues#Hedonism> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> ,
+                                                                     <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> ;
+                                                     owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Power> ,
+                                                                      <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> ,
+                                                                      <https://w3id.org/spice/SON/SchwartzValues#Stimulation> ;
+                                                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"The search for pleasure and sensuous gratification or satisfaction for oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Humility
+<https://w3id.org/spice/SON/SchwartzValues#Humility> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <https://w3id.org/spice/SON/SchwartzValues#attitude> ;
+                                                                                                                  owl:someValuesFrom <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree>
+                                                                                                                ]
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <https://w3id.org/spice/SON/SchwartzValues#attitude> ;
+                                                                                                                  owl:someValuesFrom <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance>
+                                                                                                                ]
+                                                                                                              )
+                                                                                                ]
+                                                                                                [ rdf:type owl:Class ;
+                                                                                                  owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty <https://w3id.org/spice/SON/SchwartzValues#focus> ;
+                                                                                                                     owl:someValuesFrom <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus>
+                                                                                                                   ]
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <https://w3id.org/spice/SON/SchwartzValues#focus> ;
+                                                                                                  owl:allValuesFrom <https://w3id.org/spice/SON/SchwartzValues#SocialFocus>
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ] ;
+                                                     rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Conservation> ,
+                                                                     <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> ;
+                                                     owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Security> ,
+                                                                      <https://w3id.org/spice/SON/SchwartzValues#Tradition> ,
+                                                                      <https://w3id.org/spice/SON/SchwartzValues#Universalism> ;
+                                                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Acknowledgement of one's insignificance in the grand scheme of things.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Nature
+<https://w3id.org/spice/SON/SchwartzValues#Nature> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Universalism> ;
+                                                   owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Tolerance> ;
+                                                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Preservation of the natural environment.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#OpennessToChange
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> rdf:type owl:Class ;
+                                                             rdfs:subClassOf :ValueConcept ;
+                                                             rdfs:label "Openness To Change" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority
+<https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf :ValueConcept ;
+                                                                                 <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Individuals differ substantially in the importance they attribute to the ten values. At the societal level, however, consensus regarding the hierarchical order of the values is surprisingly high.\"
+
+Basic Human Values: Theory, Measurement, and Applications - S.H. Shwartz (2006)""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#PersonalFocus
+<https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Focus> ;
+                                                          rdfs:comment "Focus on personal issues and self." ;
+                                                          <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Power
+<https://w3id.org/spice/SON/SchwartzValues#Power> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Value ,
+                                                                  <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> ;
+                                                  rdfs:label "Power" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Resources
+<https://w3id.org/spice/SON/SchwartzValues#Resources> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Power> ;
+                                                      <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Power through control of material and social resources.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Security
+<https://w3id.org/spice/SON/SchwartzValues#Security> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Conservation> ;
+                                                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Personal wellbeing and that of in-persons and in-groups, as well as the stability of society and oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfDirection
+<https://w3id.org/spice/SON/SchwartzValues#SelfDirection> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> ;
+                                                          owl:disjointWith <https://w3id.org/spice/SON/SchwartzValues#Stimulation> ;
+                                                          <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Independence of thought, action and opinion.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> rdf:type owl:Class ;
+                                                            rdfs:subClassOf :ValueConcept ;
+                                                            rdfs:label "Self Enhancement" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance
+<https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :ValueConcept ;
+                                                                              rdfs:comment "The attitude to which can be ascribed some values motivations: Self Protection and Anxiety Avoidance is a reactive attitude." ;
+                                                                              <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> rdf:type owl:Class ;
+                                                             rdfs:subClassOf :ValueConcept ;
+                                                             rdfs:label "Self Trascendence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SocialFocus
+<https://w3id.org/spice/SON/SchwartzValues#SocialFocus> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Focus> ;
+                                                        rdfs:comment "Focus on social issues and others, or self as a member of a social community." ;
+                                                        <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Stimulation
+<https://w3id.org/spice/SON/SchwartzValues#Stimulation> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Value ,
+                                                                        <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> ;
+                                                        rdfs:label "Stimulation" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Thought
+<https://w3id.org/spice/SON/SchwartzValues#Thought> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> ;
+                                                    <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"The freedom to cultivate one's own ideas and skills.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Tolerance
+<https://w3id.org/spice/SON/SchwartzValues#Tolerance> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Universalism> ;
+                                                      <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Acceptance and understanding of those different from oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Tradition
+<https://w3id.org/spice/SON/SchwartzValues#Tradition> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#Conservation> ;
+                                                      <https://w3id.org/spice/SON/SchwartzValues#bibRef> """\"Respect for, commitment to and acceptation of the ideals and customs imposed by culture or religion.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Universalism
+<https://w3id.org/spice/SON/SchwartzValues#Universalism> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Value ,
+                                                                         <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> ;
+                                                         rdfs:label "Universalism" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Value
+<https://w3id.org/spice/SON/SchwartzValues#Value> rdf:type owl:Class ;
+                                                  rdfs:label "Value" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vaeontology#achievementTax
+:achievementTax rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/spice/SON/SchwartzValues#Achievement> .
+
+
+###  https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes
+:actOfPayingMiniumumTaxes rdf:type owl:NamedIndividual ,
+                                   :Action ;
+                          <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> :taxProblemContext .
+
+
+###  https://w3id.org/def/vaeontology#actOfPayingTaxes
+:actOfPayingTaxes rdf:type owl:NamedIndividual ,
+                           :Action .
+
+
+###  https://w3id.org/def/vaeontology#aggregationSum
+:aggregationSum rdf:type owl:NamedIndividual ,
+                         :AggregationFunction ;
+                :measuredOnOutcome :state1 ,
+                                   :state2 ;
+                rdf:value "0.87"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#alignClaim
+:alignClaim rdf:type owl:NamedIndividual ,
+                     :AlignmentStatement ;
+            :onEntity :state2 ;
+            :withValue :benevolenceTax .
+
+
+###  https://w3id.org/def/vaeontology#alignPremise
+:alignPremise rdf:type owl:NamedIndividual ,
+                       :AlignmentStatement ;
+              :expressesProperty :giniIndex0_9 ,
+                                 :giniIndexSatisfiedThreshold0_7 ;
+              :onEntity :state2 ;
+              :withValue :equalityTax .
+
+
+###  https://w3id.org/def/vaeontology#argumentAlign
+:argumentAlign rdf:type owl:NamedIndividual ,
+                        :ArgumentStatement ;
+               :basedOnCriterion :criterionAlign ;
+               :hasClaim :alignClaim ;
+               :hasPremise :alignPremise .
+
+
+###  https://w3id.org/def/vaeontology#benevolenceNode
+:benevolenceNode rdf:type owl:NamedIndividual ;
+                 :directlyGeneralizes :equalityNode ;
+                 :hasImportance :benvolenceNodeImportance .
+
+
+###  https://w3id.org/def/vaeontology#benevolenceTax
+:benevolenceTax rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/spice/SON/SchwartzValues#Benevolence> .
+
+
+###  https://w3id.org/def/vaeontology#benvolenceNodeImportance
+:benvolenceNodeImportance rdf:type owl:NamedIndividual ,
+                                   :NodeImportance ;
+                          <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :benevolenceTax ;
+                          :importanceValue "0.8"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#constraintAlign
+:constraintAlign rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/ns/odrl/2/Constraint> ;
+                 <http://www.w3.org/ns/odrl/2/operator> :logicalImplication ,
+                                                        :sameContext ;
+                 :hasClaimAsOutput :alignClaim ;
+                 :hasPremiseAsInput :alignPremise .
+
+
+###  https://w3id.org/def/vaeontology#correctNaming
+:correctNaming rdf:type owl:NamedIndividual ,
+                        :SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#criterionAlign
+:criterionAlign rdf:type owl:NamedIndividual ,
+                         :Criterion ;
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :benevolenceTax ;
+                <http://www.w3.org/ns/odrl/2/action> :alignClaim ;
+                <http://www.w3.org/ns/odrl/2/constraint> :constraintAlign ;
+                <http://www.w3.org/ns/odrl/2/target> :alignPremise .
+
+
+###  https://w3id.org/def/vaeontology#equalityNode
+:equalityNode rdf:type owl:NamedIndividual ,
+                       :ConceptNode ;
+              :directlyGeneralizes :giniPropertyNode ;
+              :hasImportance :equalityNodeImportance .
+
+
+###  https://w3id.org/def/vaeontology#equalityNodeImportance
+:equalityNodeImportance rdf:type owl:NamedIndividual ,
+                                 :NodeImportance ;
+                        <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :equalityTax ;
+                        :importanceValue "0.8"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#equalityTax
+:equalityTax rdf:type owl:NamedIndividual ,
+                      :Equality .
+
+
+###  https://w3id.org/def/vaeontology#evaderAgent
+:evaderAgent rdf:type owl:NamedIndividual ,
+                      :ActingAgent ;
+             <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> :taxProblemContext ;
+             :makesAction :actOfPayingMiniumumTaxes .
+
+
+###  https://w3id.org/def/vaeontology#generalizationRelationTaxPayer
+:generalizationRelationTaxPayer rdf:type owl:NamedIndividual ,
+                                         :Generalization ;
+                                :comparisonHasInferior :equalityTax ;
+                                :comparisonHasSuperior :benevolenceTax ;
+                                :isExpressedByAgent :payerAgent .
+
+
+###  https://w3id.org/def/vaeontology#giniIndex0_3
+:giniIndex0_3 rdf:type owl:NamedIndividual ,
+                       :GiniIndex ;
+              :onOutcome :state1 ;
+              rdf:value "0.3"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#giniIndex0_9
+:giniIndex0_9 rdf:type owl:NamedIndividual ,
+                       :GiniIndex ;
+              <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :equalityTax ;
+              :onOutcome :state2 ;
+              rdf:value "0.9"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#giniIndexProp
+:giniIndexProp rdf:type owl:NamedIndividual ,
+                        :PropertyTaxonomy ;
+               rdf:value "0.9"^^xsd:float ;
+               :degreeOfSatisfaction "1.0"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7
+:giniIndexSatisfiedThreshold0_7 rdf:type owl:NamedIndividual ,
+                                         :BooleanVaeProperty ,
+                                         :ValueProperty ;
+                                <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :equalityTax .
+
+
+###  https://w3id.org/def/vaeontology#giniPropertyNode
+:giniPropertyNode rdf:type owl:NamedIndividual ,
+                           :PropertyNode ;
+                  :hasProperty :giniIndexProp .
+
+
+###  https://w3id.org/def/vaeontology#importanceRelationTaxPayer
+:importanceRelationTaxPayer rdf:type owl:NamedIndividual ,
+                                     :ImportanceRelation ;
+                            :comparisonHasInferior :achievementTax ;
+                            :comparisonHasSuperior :benevolenceTax ;
+                            :isExpressedByAgent :payerAgent .
+
+
+###  https://w3id.org/def/vaeontology#logicalImplication
+:logicalImplication rdf:type owl:NamedIndividual ,
+                             :SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#multiInputOutcome1
+:multiInputOutcome1 rdf:type owl:NamedIndividual ,
+                             :MultiInputOutcome ;
+                    :hasInput :state1 ;
+                    :hasOutcome :actOfPayingMiniumumTaxes ,
+                                :actOfPayingTaxes ,
+                                :state2 ;
+                    :nextInputOutcome :multiInputOutcome2 .
+
+
+###  https://w3id.org/def/vaeontology#multiInputOutcome2
+:multiInputOutcome2 rdf:type owl:NamedIndividual ,
+                             :FinalInputOutcome ;
+                    :hasInput :state2 ;
+                    :hasOutcome :actOfPayingTaxes .
+
+
+###  https://w3id.org/def/vaeontology#payMinimumTaxes
+:payMinimumTaxes rdf:type owl:NamedIndividual ,
+                          :Norm ;
+                 <http://www.w3.org/ns/odrl/2/action> :actOfPayingMiniumumTaxes ;
+                 <http://www.w3.org/ns/odrl/2/asignee> :evaderAgent ,
+                                                       :payerAgent ;
+                 <http://www.w3.org/ns/odrl/2/asigner> :problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#payTaxes
+:payTaxes rdf:type owl:NamedIndividual ,
+                   :Norm ;
+          <http://www.w3.org/ns/odrl/2/action> :actOfPayingTaxes ;
+          <http://www.w3.org/ns/odrl/2/asignee> :evaderAgent ;
+          <http://www.w3.org/ns/odrl/2/asigner> :problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#payerAgent
+:payerAgent rdf:type owl:NamedIndividual ,
+                     :ActingAgent ;
+            <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> :taxProblemContext ;
+            :expressesStatement :alignClaim ,
+                                :alignPremise ,
+                                :argumentAlign ,
+                                :importanceRelationTaxPayer ;
+            :makesAction :actOfPayingTaxes .
+
+
+###  https://w3id.org/def/vaeontology#payerTaxonomy
+:payerTaxonomy rdf:type owl:NamedIndividual ,
+                        :ValueTaxonomy ;
+               :hasConceptNode :benevolenceNode ,
+                               :equalityNode ;
+               :hasRootNode :benevolenceNode ;
+               :hasTaxonomyAlignment :taxonomAlignment .
+
+
+###  https://w3id.org/def/vaeontology#positiveBenevolenceAlignment
+:positiveBenevolenceAlignment rdf:type owl:NamedIndividual ,
+                                       :PromotionDemotion ;
+                              <http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout> :benevolenceTax .
+
+
+###  https://w3id.org/def/vaeontology#problemModeller
+:problemModeller rdf:type owl:NamedIndividual ,
+                          :User .
+
+
+###  https://w3id.org/def/vaeontology#sameContext
+:sameContext rdf:type owl:NamedIndividual ,
+                      :SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#sequenceOfOutcomes
+:sequenceOfOutcomes rdf:type owl:NamedIndividual ,
+                             :Sequence ;
+                    <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> :taxProblemContext ;
+                    :startsWithOutcome :multiInputOutcome1 .
+
+
+###  https://w3id.org/def/vaeontology#state1
+:state1 rdf:type owl:NamedIndividual ,
+                 :State .
+
+
+###  https://w3id.org/def/vaeontology#state2
+:state2 rdf:type owl:NamedIndividual ,
+                 :State .
+
+
+###  https://w3id.org/def/vaeontology#taxProblemContext
+:taxProblemContext rdf:type owl:NamedIndividual ,
+                            :Context ;
+                   rdfs:comment "This context is of a problem on taxing" .
+
+
+###  https://w3id.org/def/vaeontology#taxSystem
+:taxSystem rdf:type owl:NamedIndividual ,
+                    :System ;
+           <http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting> :taxProblemContext ;
+           :hasAgent :evaderAgent ,
+                     :payerAgent ;
+           :hasState :state1 ,
+                     :state2 ;
+           :hasTrace :sequenceOfOutcomes ;
+           :hasUser :problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#taxonomAlignment
+:taxonomAlignment rdf:type owl:NamedIndividual ,
+                           :TaxonomyAlignment .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rdf:value rdfs:label "value" .
+
+
+rdfs:comment rdfs:label "comment" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Action
+                :Sequence
+                :State
+                :Strategy
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :VaePropertyStatement
+                :ValueComparisonStatement
+                :ValueTaxonomy
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

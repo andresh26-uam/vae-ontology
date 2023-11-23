@@ -19,28 +19,28 @@ Agent subClassOf commitsTo some ValueConcept;
 ValueDefinition subClassOf defines min 1 ValueConcept;
 ValueDefinition subClassOf hasSetting some Context;
 
-vaeontology#:Norm subClassOf assignee some Agent;
-vaeontology#:Norm subClassOf assigner some User;
+Norm subClassOf assignee some Agent;
+Norm subClassOf assigner some User;
 
 
-vaeontology#:Norm subClassOf reflectsValue only ValueConcept;
-ValueConcept subClassOf shapesNorm only vaeontology#:Norm;
+Norm subClassOf reflectsValue only ValueConcept;
+ValueConcept subClassOf shapesNorm only Norm;
 
-vaeontology#:Norm subClassOf influencesOutcome only Outcome;
-Outcome subClassOf satisfiesNorm only vaeontology#:Norm;
+Norm subClassOf influencesOutcome only Outcome;
+Outcome subClassOf satisfiesNorm only Norm;
 
 Outcome subClassOf abidesByValue only ValueConcept;
 ValueConcept subClassOf constrainsOutcome only Outcome;
 
-vaeontology#:Norm subClassOf action some Outcome;
-vaeontology#:Norm subClassOf target some System;
-vaeontology#:Norm subClassOf constraint some Constraint;
+Norm subClassOf action some Outcome;
+Norm subClassOf target some System;
+Norm subClassOf constraint some Constraint;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ActingAgent subClassOf Agent that isParticipantIn some Outcome;
 
-ActingAgent subClassOf makesAction min 1 vaeontology#:Action;
+ActingAgent subClassOf makesAction min 1 Action;
 
 ActingAgent subClassOf followsStrategy min 1 Strategy;
 
@@ -57,7 +57,7 @@ hasState range State;
 hasState domain Agent;
 
 Sequence subClassOf Outcome;
-vaeontology#:Action subClassOf Outcome;
+Action subClassOf Outcome;
 State subClassOf Outcome;
 Strategy subClassOf Outcome;
 
@@ -118,7 +118,7 @@ VaeStatement subClassOf AgentStatement;
 AwarenessStatement subClassOf VaeStatement;
 AwarenessStatement subClassOf onEntity min 1 Agent;
 AwarenessStatement subClassOf withValue min 1 ValueConcept;
-AwarenessStatement subClassOf withNorm min 1 vaeontology#:Norm;
+AwarenessStatement subClassOf withNorm min 1 Norm;
 AwarenessStatement subClassOf VaeStatement that hasSetting some Context;
 
 ArgumentStatement subClassOf AgentStatement;
@@ -136,7 +136,7 @@ Criterion subClassOf Policy and Theory;
 Criterion subClassOf Policy that action some VaeStatement;
 Criterion subClassOf Policy that target some Asset;
 Criterion subClassOf isAbout some ValueConcept;
-Criterion subClassOf isAbout some vaeontology#:Norm;
+Criterion subClassOf isAbout some Norm;
 Criterion subClassOf isAbout min 1 Thing;
 Criterion subClassOf constraint only Constraint;
 Criterion subClassOf assignee min 1 Agent;

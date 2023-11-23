@@ -1,0 +1,3183 @@
+@prefix : <https://w3id.org/def/vaeontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vc: <http://www.ontologydesignpatterns.org/ont/values/valuecore#> .
+@prefix bhv: <https://w3id.org/spice/SON/SchwartzValues#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vae: <https://w3id.org/def/vaeontology#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix fschema: <https://w3id.org/framester/schema#> .
+@base <https://w3id.org/def/vaeontology#> .
+
+<https://w3id.org/def/vaeontology#> rdf:type owl:Ontology ;
+                                     owl:versionIRI <https://w3id.org/def/vaeontology/1.0.1> ;
+                                     dc:created "2023-11-14"^^xsd:date ;
+                                     dc:creator "Andrés Holgado Sánchez" ;
+                                     dc:description "Ontology for Value Awareness Engineering: representation and reasoning with human values."@en ;
+                                     dc:license <http://purl.org/NET/rdflicense/cc-by4.0.ttl> ;
+                                     dc:title "VAE Ontology"@en ;
+                                     vann:preferredNamespacePrefix "vae" ;
+                                     vann:preferredNamespaceUri <https://w3id.org/def/vaeontology#> ;
+                                     owl:priorVersion <https://w3id.org/def/vaeontology/1.0.0> ;
+                                     owl:versionInfo "1.0.1" ;
+                                     mod:createdWith <https://chowlk.linkeddata.es> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/created
+dc:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+dc:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty ;
+             rdfs:range xsd:String ,
+                        xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#bibRef
+bhv:bibRef rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#conceptualizes
+dul:conceptualizes rdf:type owl:ObjectProperty ;
+                   rdfs:label "conceptualizes" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#defines
+dul:defines rdf:type owl:ObjectProperty ;
+            rdfs:label "defines" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParameter
+dul:hasParameter rdf:type owl:ObjectProperty ;
+                 rdfs:label "has parameter" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasPart
+dul:hasPart rdf:type owl:ObjectProperty ;
+            owl:inverseOf dul:isPartOf ;
+            rdf:type owl:TransitiveProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasParticipant
+dul:hasParticipant rdf:type owl:ObjectProperty ;
+                   owl:inverseOf dul:isParticipantIn .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasProperPart
+dul:hasProperPart rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf dul:hasPart ;
+                  owl:inverseOf dul:isProperPartOf ;
+                  rdfs:label "has proper part" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasRegion
+dul:hasRegion rdf:type owl:ObjectProperty ;
+              rdfs:label "has region" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#hasSetting
+dul:hasSetting rdf:type owl:ObjectProperty ;
+               rdfs:label "has setting" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isAbout
+dul:isAbout rdf:type owl:ObjectProperty ;
+            rdfs:label "is about" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isPartOf
+dul:isPartOf rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isParticipantIn
+dul:isParticipantIn rdf:type owl:ObjectProperty ;
+                    rdfs:label "is participant in" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#isProperPartOf
+dul:isProperPartOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dul:isPartOf .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#satisfies
+dul:satisfies rdf:type owl:ObjectProperty ;
+              rdfs:label "satisfies" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#commitsTo
+vc:commitsTo rdf:type owl:ObjectProperty ;
+             rdfs:label "commits to" .
+
+
+###  http://www.w3.org/ns/odrl/2/action
+odrl:action rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( odrl:Policy
+                                        odrl:Rule
+                                      )
+                        ] ;
+            rdfs:range odrl:Action ;
+            rdfs:isDefinedBy odrl: ;
+            rdfs:label "Has Action"@en ,
+                       "action" ;
+            skos:definition "The operation relating to the Asset for which the Rule is being subjected."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/assignee
+odrl:assignee rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf odrl:function ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( odrl:Policy
+                                          odrl:Rule
+                                        )
+                          ] ;
+              rdfs:range odrl:Party ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Assignee"@en ,
+                         "asignee" ;
+              skos:definition "The Party is the recipient of the Rule."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/assigneeOf
+odrl:assigneeOf rdf:type owl:ObjectProperty ;
+                rdfs:domain odrl:Party ;
+                rdfs:range odrl:Policy ;
+                rdfs:isDefinedBy odrl: ;
+                rdfs:label "Assignee Of"@en ;
+                skos:definition "Identifies an ODRL Policy for which the identified Party undertakes the assignee functional role."@en ;
+                skos:note "When assigneeOf has been asserted between a metadata expression and an ODRL Policy, the Party being identified MUST be inferred to undertake the assignee functional role of all the Rules of that Policy."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/assigner
+odrl:assigner rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf odrl:function ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( odrl:Policy
+                                          odrl:Rule
+                                        )
+                          ] ;
+              rdfs:range odrl:Party ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Assigner"@en ,
+                         "asigner" ;
+              skos:definition "The Party is the issuer of the Rule."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/assignerOf
+odrl:assignerOf rdf:type owl:ObjectProperty ;
+                rdfs:domain odrl:Party ;
+                rdfs:range odrl:Policy ;
+                rdfs:isDefinedBy odrl: ;
+                rdfs:label "Assigner Of"@en ;
+                skos:definition "Identifies an ODRL Policy for which the identified Party undertakes the assigner functional role."@en ;
+                skos:note "When assignerOf has been asserted between a metadata expression and an ODRL Policy, the Party being identified MUST be inferred to undertake the assigner functional role of all the Rules of that Policy."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/constraint
+odrl:constraint rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( odrl:Policy
+                                            odrl:Rule
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( odrl:Constraint
+                                           odrl:LogicalConstraint
+                                         )
+                           ] ;
+                rdfs:isDefinedBy odrl: ;
+                rdfs:label "Has Constraint"@en ,
+                           "constraint" ;
+                skos:definition "Constraint applied to a Rule"@en ;
+                skos:note "Constraints on Rules are used to determine if a rule is Active or not. Example: the Permission rule is only active during the year 2018."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/function
+odrl:function rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( odrl:Policy
+                                          odrl:Rule
+                                        )
+                          ] ;
+              rdfs:range odrl:Party ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Function"@en ;
+              skos:definition "Function is an abstract property whose sub-properties define the functional roles which may be fulfilled by a party in relation to a Rule."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/hasPolicy
+odrl:hasPolicy rdf:type owl:ObjectProperty ;
+               rdfs:domain odrl:Asset ;
+               rdfs:range odrl:Policy ;
+               rdfs:isDefinedBy odrl: ;
+               rdfs:label "Target Policy"@en ;
+               skos:definition "Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules."@en ;
+               skos:note "The Asset being identified MUST be inferred to be the target Asset of all of the Rules of the Policy."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/leftOperand
+odrl:leftOperand rdf:type owl:ObjectProperty ;
+                 rdfs:domain odrl:Constraint ;
+                 rdfs:range odrl:LeftOperand ;
+                 rdfs:isDefinedBy odrl: ;
+                 rdfs:label "Has Left Operand"@en ,
+                            "left operand" ;
+                 skos:definition "The left operand in a constraint expression."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/operator
+odrl:operator rdf:type owl:ObjectProperty ;
+              rdfs:domain odrl:Constraint ;
+              rdfs:range odrl:Operator ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Has Operator"@en ,
+                         "operator" ;
+              skos:definition "The operator function applied to operands of a Constraint"@en .
+
+
+###  http://www.w3.org/ns/odrl/2/output
+odrl:output rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf odrl:relation ;
+            rdfs:domain odrl:Rule ;
+            rdfs:range odrl:Asset ;
+            rdfs:isDefinedBy odrl: ;
+            rdfs:label "Output"@en ;
+            skos:definition "The output property specifies the Asset which is created from the output of the Action."@en ;
+            skos:scopeNote "Non-Normative"@en .
+
+
+###  http://www.w3.org/ns/odrl/2/relation
+odrl:relation rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( odrl:Policy
+                                          odrl:Rule
+                                        )
+                          ] ;
+              rdfs:range odrl:Asset ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Relation"@en ;
+              skos:definition "Relation is an abstract property which creates an explicit link between an Action and an Asset."@en ;
+              skos:note "Sub-properties of relation are used to define the nature of that link."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/rightOperand
+odrl:rightOperand rdf:type owl:ObjectProperty ;
+                  rdfs:domain odrl:Constraint ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( rdfs:Literal
+                                             xsd:anyURI
+                                             odrl:RightOperand
+                                           )
+                             ] ;
+                  rdfs:isDefinedBy odrl: ;
+                  rdfs:label "Has Right Operand"@en ,
+                             "right operand" ;
+                  skos:definition "The value of the right operand in a constraint expression."@en ;
+                  skos:note "When used with set-based operators, a list of values may be used."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/target
+odrl:target rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf odrl:relation ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( odrl:Policy
+                                        odrl:Rule
+                                      )
+                        ] ;
+            rdfs:range odrl:Asset ;
+            rdfs:isDefinedBy odrl: ;
+            rdfs:label "Target"@en ,
+                       "target" ;
+            skos:definition "The target property indicates the Asset that is the primary subject to which the Rule action directly applies."@en .
+
+
+###  https://w3id.org/def/vaeontology#abidesByValue
+vae:abidesByValue rdf:type owl:ObjectProperty ;
+                  owl:inverseOf vae:constrainsOutcome ;
+                  rdfs:domain vae:Outcome ;
+                  rdfs:range vae:ValueConcept ;
+                  rdfs:comment "Said of an outcome abiding by a ValueConcept" ;
+                  rdfs:label "abides by value" .
+
+
+###  https://w3id.org/def/vaeontology#comparisonHasInferior
+vae:comparisonHasInferior rdf:type owl:ObjectProperty ;
+                          owl:inverseOf vae:inferiorInComparison ;
+                          rdfs:domain vae:ValueComparisonStatement ;
+                          rdfs:range vae:ValueConcept ;
+                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                          rdfs:label "comparison has inferior" .
+
+
+###  https://w3id.org/def/vaeontology#comparisonHasSuperior
+vae:comparisonHasSuperior rdf:type owl:ObjectProperty ;
+                          owl:inverseOf vae:superiorInComparison ;
+                          rdfs:domain vae:ValueComparisonStatement ;
+                          rdfs:range vae:ValueConcept ;
+                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                          rdfs:label "comparison has superior" .
+
+
+###  https://w3id.org/def/vaeontology#composedBySequence
+vae:composedBySequence rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf dul:hasProperPart ;
+                       owl:inverseOf vae:composesComplexOutcome ;
+                       rdfs:domain vae:Outcome ;
+                       rdfs:range vae:Sequence ;
+                       rdfs:comment "Indicates that the Outcome is composed by a Sequence of other outcomes." ;
+                       rdfs:label "composed by sequence" .
+
+
+###  https://w3id.org/def/vaeontology#composesComplexOutcome
+vae:composesComplexOutcome rdf:type owl:ObjectProperty ;
+                           rdfs:domain vae:Sequence ;
+                           rdfs:range vae:Outcome ;
+                           rdfs:comment "Indicates that the Sequence is a sequence of outcomes that composes a more complex Outcome." ;
+                           rdfs:label "composes complex outcome" .
+
+
+###  https://w3id.org/def/vaeontology#conditionsActionIn
+vae:conditionsActionIn rdf:type owl:ObjectProperty ;
+                       owl:inverseOf vae:onState ;
+                       rdfs:domain vae:State ;
+                       rdfs:range vae:ActionOnState ;
+                       rdfs:comment "Indicates that the vae:State is in some relation (vae:ActionOnState) from a vae:Strategy, an such, some vae:Action should be made by the Agent holding the vae:Strategy on the vae:State." ;
+                       rdfs:label "conditions action in" .
+
+
+###  https://w3id.org/def/vaeontology#constrainsOutcome
+vae:constrainsOutcome rdf:type owl:ObjectProperty ;
+                      rdfs:domain vae:ValueConcept ;
+                      rdfs:range vae:Outcome ;
+                      rdfs:comment "Said of an ValueConcept constraining an Outcome." ;
+                      rdfs:label "constrains outcome" .
+
+
+###  https://w3id.org/def/vaeontology#coversItem
+vae:coversItem rdf:type owl:ObjectProperty ;
+               owl:inverseOf vae:isPresentInStatement ;
+               rdfs:domain vae:AgentStatement ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( vae:Agent
+                                          vae:Norm
+                                          vae:Outcome
+                                          vae:VaeProperty
+                                          vae:ValueConcept
+                                        )
+                          ] ;
+               rdfs:comment "Indicates that the AgentStatement covers some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) in an undetermined way." ;
+               rdfs:label "covers item" .
+
+
+###  https://w3id.org/def/vaeontology#directlyGeneralizes
+vae:directlyGeneralizes rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf vae:generalizes ;
+                        owl:inverseOf vae:directlyParticularizes ;
+                        rdfs:domain vae:ConceptNode ;
+                        rdfs:range [ rdf:type owl:Class ;
+                                     owl:unionOf ( vae:ConceptNode
+                                                   vae:PropertyNode
+                                                 )
+                                   ] ;
+                        rdfs:comment "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)." ;
+                        rdfs:label "directly generalizes" .
+
+
+###  https://w3id.org/def/vaeontology#directlyParticularizes
+vae:directlyParticularizes rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf vae:particularizes ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( vae:ConceptNode
+                                                       vae:PropertyNode
+                                                     )
+                                       ] ;
+                           rdfs:range vae:ConceptNode ;
+                           rdfs:comment "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)." ;
+                           rdfs:label "directly particularizes" .
+
+
+###  https://w3id.org/def/vaeontology#expressesProperty
+vae:expressesProperty rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf vae:coversItem ;
+                      owl:inverseOf vae:propertyExpressedAt ;
+                      rdfs:domain vae:VaePropertyStatement ;
+                      rdfs:range vae:VaeProperty ;
+                      rdfs:comment "Indicates that the VaePropertyStatement expresses some VaeProperty" ;
+                      rdfs:label "presents property" .
+
+
+###  https://w3id.org/def/vaeontology#followsStrategy
+vae:followsStrategy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dul:isParticipantIn ;
+                    owl:inverseOf vae:isFollowedByAgent ;
+                    rdfs:domain vae:ActingAgent ;
+                    rdfs:range vae:Strategy ;
+                    rdfs:comment "Indicates that the Strategy is followed by some ActingAgent." ;
+                    rdfs:label "follows strategy" .
+
+
+###  https://w3id.org/def/vaeontology#generalizes
+vae:generalizes rdf:type owl:ObjectProperty ;
+                owl:inverseOf vae:particularizes ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain vae:ConceptNode ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( vae:ConceptNode
+                                           vae:PropertyNode
+                                         )
+                           ] ;
+                rdfs:comment "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified." ;
+                rdfs:label "generalizes" .
+
+
+###  https://w3id.org/def/vaeontology#hasActionOnState
+vae:hasActionOnState rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dul:hasProperPart ;
+                     owl:inverseOf vae:isActionOnStateOfStrategy ;
+                     rdfs:domain vae:Strategy ;
+                     rdfs:range vae:ActionOnState ;
+                     rdfs:comment "Indicates the Strategy has the ActionOnState relation specified." ;
+                     rdfs:label "has action on state" .
+
+
+###  https://w3id.org/def/vaeontology#hasAgent
+vae:hasAgent rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:hasPart ;
+             owl:inverseOf vae:isAgentOfSystem ;
+             rdfs:domain vae:System ;
+             rdfs:range vae:Agent ;
+             rdfs:comment "Indicates that the System has the Agent specified." ;
+             rdfs:label "has agent" .
+
+
+###  https://w3id.org/def/vaeontology#hasClaim
+vae:hasClaim rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:hasProperPart ;
+             owl:inverseOf vae:isClaimOf ;
+             rdfs:domain vae:ArgumentStatement ;
+             rdfs:range vae:VaeStatement ;
+             rdfs:comment "Indicates that the Argument has the VaeStaement specified as a claim." ;
+             rdfs:label "has claim" .
+
+
+###  https://w3id.org/def/vaeontology#hasConceptNode
+vae:hasConceptNode rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf vae:hasTaxonomyNode ;
+                   owl:inverseOf vae:isConceptNodeOf ;
+                   rdfs:domain vae:ValueTaxonomy ;
+                   rdfs:range vae:ConceptNode ;
+                   rdfs:comment "Indicates that the ValueTaxonomy has the ConceptNode specified." ;
+                   rdfs:label "has concept node" .
+
+
+###  https://w3id.org/def/vaeontology#hasImportance
+vae:hasImportance rdf:type owl:ObjectProperty ;
+                  owl:inverseOf vae:isImportanceOf ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( vae:ConceptNode
+                                              vae:PropertyNode
+                                            )
+                              ] ;
+                  rdfs:range vae:NodeImportance ;
+                  rdfs:comment "Indicates that the ConceptNode has a NodeImportance." ;
+                  rdfs:label "has importance" .
+
+
+###  https://w3id.org/def/vaeontology#hasInput
+vae:hasInput rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:hasProperPart ;
+             owl:inverseOf vae:isInputOfSequence ;
+             rdfs:domain vae:MultiInputOutcome ;
+             rdfs:range dul:Event ;
+             rdfs:comment "Indicates that the MultiInputOutcome has some Event as its input, that conditions its outcome." ;
+             rdfs:label "has input" .
+
+
+###  https://w3id.org/def/vaeontology#hasInputOutcome
+vae:hasInputOutcome rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dul:hasPart ;
+                    owl:inverseOf vae:isInputOutcomeOf ;
+                    rdfs:domain vae:Sequence ;
+                    rdfs:range vae:MultiInputOutcome ;
+                    rdfs:comment "Indicates that a vae:Sequence contains some vae:InputOutcome relation." ;
+                    rdfs:label "has input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#hasOutcome
+vae:hasOutcome rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dul:hasProperPart ;
+               owl:inverseOf vae:isOutcomeOfSequence ;
+               rdfs:domain vae:MultiInputOutcome ;
+               rdfs:range vae:Outcome ;
+               rdfs:comment "Indicates that the MultiInputOutcome relation has some Outcome, that might be conditioned on some input." ;
+               rdfs:label "has outcome" .
+
+
+###  https://w3id.org/def/vaeontology#hasPremise
+vae:hasPremise rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf dul:hasProperPart ;
+               owl:inverseOf vae:isPremiseOf ;
+               rdfs:domain vae:ArgumentStatement ;
+               rdfs:range vae:VaeStatement ;
+               rdfs:comment "Indicates that the Argument has the VaeStaement specified as a premise." ;
+               rdfs:label "has premise" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyNode
+vae:hasPropertyNode rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dul:hasProperPart ,
+                                       vae:hasTaxonomyNode ;
+                    owl:inverseOf vae:isPropertyNodeOf ;
+                    rdfs:domain vae:ValueTaxonomy ;
+                    rdfs:range vae:PropertyNode ;
+                    rdfs:comment "Indicates that the ValueTaxonomy has the PropertyNode specified." ;
+                    rdfs:label "has PropertyNode" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyOfInferior
+vae:hasPropertyOfInferior rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf vae:coversItem ;
+                          owl:inverseOf vae:isPropertyOfInferiorOf ;
+                          rdfs:domain vae:ValueComparisonStatement ;
+                          rdfs:range vae:ValueProperty ;
+                          rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
+                          rdfs:label "has property of inferior" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyOfSuperior
+vae:hasPropertyOfSuperior rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf vae:coversItem ;
+                          owl:inverseOf vae:isPropertyOfSuperiorOf ;
+                          rdfs:domain vae:ValueComparisonStatement ;
+                          rdfs:range vae:ValueProperty ;
+                          rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
+                          rdfs:label "has property of superior" .
+
+
+###  https://w3id.org/def/vaeontology#hasPropertyTaxonomy
+vae:hasPropertyTaxonomy rdf:type owl:ObjectProperty ;
+                        owl:inverseOf vae:isPropertyTaxonomyOfPropertyNode ;
+                        rdfs:domain vae:PropertyNode ;
+                        rdfs:range vae:PropertyTaxonomy ;
+                        rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
+                        rdfs:label "has Property Taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#hasRootNode
+vae:hasRootNode rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:hasProperPart ,
+                                   vae:hasConceptNode ;
+                owl:inverseOf vae:isRootNodeOf ;
+                rdfs:domain vae:ValueTaxonomy ;
+                rdfs:range [ owl:intersectionOf ( vae:ConceptNode
+                                                  [ rdf:type owl:Class ;
+                                                    owl:complementOf [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty vae:particularizes ;
+                                                                       owl:someValuesFrom vae:ConceptNode
+                                                                     ]
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+                rdfs:comment "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)." ;
+                rdfs:label "has root node" .
+
+
+###  https://w3id.org/def/vaeontology#hasState
+vae:hasState rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf dul:isParticipantIn ;
+             owl:inverseOf vae:isStateOfAgent ;
+             rdfs:domain vae:Agent ;
+             rdfs:range vae:State ;
+             rdfs:comment "Indicates that the Agent is represented by some State." ;
+             rdfs:label "has state" .
+
+
+###  https://w3id.org/def/vaeontology#hasTaxonomyAlignment
+vae:hasTaxonomyAlignment rdf:type owl:ObjectProperty ;
+                         owl:inverseOf vae:isAlignmentOfTaxonomy ;
+                         rdfs:domain vae:ValueTaxonomy ;
+                         rdfs:range vae:TaxonomyAlignment ;
+                         rdfs:comment "Indicates the ValueTaxonomy has a TaxonomyAlignment (a ValueProperty indicating the degree of alignment of an outcome considering the ValueTaxonomy)." ;
+                         rdfs:label "has taxonomy alignment" .
+
+
+###  https://w3id.org/def/vaeontology#hasTaxonomyNode
+vae:hasTaxonomyNode rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dul:hasPart ;
+                    owl:inverseOf vae:isTaxonomyNodeOf ;
+                    rdfs:domain vae:ValueTaxonomy ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( vae:ConceptNode
+                                               vae:PropertyNode
+                                             )
+                               ] ;
+                    rdfs:comment "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified." ;
+                    rdfs:label "has TaxonomyNode" .
+
+
+###  https://w3id.org/def/vaeontology#hasTrace
+vae:hasTrace rdf:type owl:ObjectProperty ;
+             owl:inverseOf vae:isTraceOfSystem ;
+             rdfs:domain vae:System ;
+             rdfs:range vae:Sequence ;
+             rdfs:comment "Indicates that the System has a Sequence representing its trace." ;
+             rdfs:label "has trace" .
+
+
+###  https://w3id.org/def/vaeontology#hasUser
+vae:hasUser rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf vae:hasAgent ;
+            owl:inverseOf vae:isUserOfSystem ;
+            rdfs:domain vae:System ;
+            rdfs:range vae:User ;
+            rdfs:comment "Indicates that the System has the User specified." ;
+            rdfs:label "has user" .
+
+
+###  https://w3id.org/def/vaeontology#inferiorInComparison
+vae:inferiorInComparison rdf:type owl:ObjectProperty ;
+                         rdfs:domain vae:ValueConcept ;
+                         rdfs:range vae:ValueComparisonStatement ;
+                         rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                         rdfs:label "inferior in comparison" .
+
+
+###  https://w3id.org/def/vaeontology#influencesOutcome
+vae:influencesOutcome rdf:type owl:ObjectProperty ;
+                      owl:inverseOf vae:satisfiesNorm ;
+                      rdfs:domain vae:Norm ;
+                      rdfs:range vae:Outcome ;
+                      rdfs:comment "Said of an Norm influencing an Outcome." ;
+                      rdfs:label "influences outcome" .
+
+
+###  https://w3id.org/def/vaeontology#isActionOnStateOfStrategy
+vae:isActionOnStateOfStrategy rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf dul:isProperPartOf ;
+                              rdfs:domain vae:ActionOnState ;
+                              rdfs:range vae:Strategy ;
+                              rdfs:comment "Indicates the ActionOnState relation is part of the Strategy specified." ;
+                              rdfs:label "is ActionOnState of Strategy" .
+
+
+###  https://w3id.org/def/vaeontology#isAgentOfSystem
+vae:isAgentOfSystem rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf dul:isPartOf ;
+                    rdfs:domain vae:Agent ;
+                    rdfs:range vae:System ;
+                    rdfs:comment "Indicates that the Agent belongs to the System specified." ;
+                    rdfs:label "is agent of system" .
+
+
+###  https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy
+vae:isAlignmentOfTaxonomy rdf:type owl:ObjectProperty ;
+                          rdfs:domain vae:TaxonomyAlignment ;
+                          rdfs:range vae:ValueTaxonomy ;
+                          rdfs:comment "Indicates the ValueTaxonomy has a TaxonomyAlignment (a ValueProperty indicating the degree of alignment of an outcome considering the ValueTaxonomy)." ;
+                          rdfs:label "is alignment of taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#isBasedOnCriterion
+vae:isBasedOnCriterion rdf:type owl:ObjectProperty ;
+                       owl:inverseOf vae:isCriterionOfArgument ;
+                       rdfs:domain vae:ArgumentStatement ;
+                       rdfs:range vae:Criterion ;
+                       rdfs:comment "Indicates that the vae:ArgumentStatement is based on some vae:Criterion as the theory of the Explanation ODP." ;
+                       rdfs:label "is based on criterion" .
+
+
+###  https://w3id.org/def/vaeontology#isClaimOf
+vae:isClaimOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf dul:isProperPartOf ;
+              rdfs:domain vae:VaeStatement ;
+              rdfs:range vae:ArgumentStatement ;
+              rdfs:comment "Indicates that the VaeStatement functions as a claim for the ArgumentStatement supplied." ;
+              rdfs:label "is claim of" .
+
+
+###  https://w3id.org/def/vaeontology#isConceptNodeOf
+vae:isConceptNodeOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf vae:isTaxonomyNodeOf ;
+                    rdfs:domain vae:ConceptNode ;
+                    rdfs:range vae:ValueTaxonomy ;
+                    rdfs:comment "Indicates that the ConceptNode is part of a ValueTaxonomy." ;
+                    rdfs:label "is ConceptNode of" .
+
+
+###  https://w3id.org/def/vaeontology#isCriterionOfArgument
+vae:isCriterionOfArgument rdf:type owl:ObjectProperty ;
+                          rdfs:domain vae:Criterion ;
+                          rdfs:range vae:ArgumentStatement ;
+                          rdfs:comment "Indicates that the vae:ArgumentStatement is based on some vae:Criterion as the theory of the Explanation ODP." ;
+                          rdfs:label "is Criterion Of Argument" .
+
+
+###  https://w3id.org/def/vaeontology#isEntityOf
+vae:isEntityOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf vae:isPresentInStatement ;
+               owl:inverseOf vae:onEntity ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( vae:Agent
+                                           vae:Norm
+                                           vae:Outcome
+                                         )
+                           ] ;
+               rdfs:range vae:VaeStatement ;
+               rdfs:comment "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." ;
+               rdfs:label "Is Entity Of"@en .
+
+
+###  https://w3id.org/def/vaeontology#isFollowedByAgent
+vae:isFollowedByAgent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dul:hasParticipant ;
+                      rdfs:domain vae:Strategy ;
+                      rdfs:range vae:ActingAgent ;
+                      rdfs:comment "Indicates that the Strategy is followed by some ActingAgent." ;
+                      rdfs:label "followed by agent" .
+
+
+###  https://w3id.org/def/vaeontology#isImportanceOf
+vae:isImportanceOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain vae:NodeImportance ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( vae:ConceptNode
+                                              vae:PropertyNode
+                                            )
+                              ] ;
+                   rdfs:comment "Indicates that the ConceptNode has a NodeImportance." ;
+                   rdfs:label "is importance of" .
+
+
+###  https://w3id.org/def/vaeontology#isInputOfSequence
+vae:isInputOfSequence rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dul:isProperPartOf ;
+                      rdfs:domain dul:Event ;
+                      rdfs:range vae:MultiInputOutcome ;
+                      rdfs:comment "Indicates that the Event is input of a MultiInputOutcome relation, so it conditions some outcome." ;
+                      rdfs:label "is input of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isInputOutcomeOf
+vae:isInputOutcomeOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dul:isPartOf ;
+                     rdfs:domain vae:MultiInputOutcome ;
+                     rdfs:range vae:Sequence ;
+                     rdfs:comment "Indicates the MultiInputOutcome is part of some Sequence" ;
+                     rdfs:label "is InputOutcome of" .
+
+
+###  https://w3id.org/def/vaeontology#isOptimizationOfProperty
+vae:isOptimizationOfProperty rdf:type owl:ObjectProperty ;
+                             owl:inverseOf vae:propertyOptimizedAt ;
+                             rdfs:domain vae:OptimizedProperty ;
+                             rdfs:range vae:VaeProperty ;
+                             rdfs:comment "Indicates the VaeProperty that is being optimized in some OptimizedProperty assertion." ;
+                             rdfs:label "is optimization of property" .
+
+
+###  https://w3id.org/def/vaeontology#isOutcomeOfSequence
+vae:isOutcomeOfSequence rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf dul:isProperPartOf ;
+                        rdfs:domain vae:Outcome ;
+                        rdfs:range vae:MultiInputOutcome ;
+                        rdfs:comment "Indicates that the Outcome is present at a MultiInputOutcome relation, being part of some Sequence." ;
+                        rdfs:label "is outcome of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isPremiseOf
+vae:isPremiseOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:isProperPartOf ;
+                rdfs:domain vae:VaeStatement ;
+                rdfs:range vae:ArgumentStatement ;
+                rdfs:comment "Indicates that the VaeStatement functions as a premise for the ArgumentStatement supplied." ;
+                rdfs:label "is premise of" .
+
+
+###  https://w3id.org/def/vaeontology#isPresentInStatement
+vae:isPresentInStatement rdf:type owl:ObjectProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( vae:Agent
+                                                     vae:Norm
+                                                     vae:Outcome
+                                                     vae:VaeProperty
+                                                     vae:ValueConcept
+                                                   )
+                                     ] ;
+                         rdfs:range vae:AgentStatement ;
+                         rdfs:comment "Indicates some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) is present (referenced) in an AgentStatement." ;
+                         rdfs:label "is present in statement" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyNodeOf
+vae:isPropertyNodeOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf vae:isTaxonomyNodeOf ;
+                     rdfs:domain vae:PropertyNode ;
+                     rdfs:range vae:ValueTaxonomy ;
+                     rdfs:comment "Indicates that the PropertyNode is part of the ValueTaxonomy specified." ;
+                     rdfs:label "is PropertyNode of" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyOfInferiorOf
+vae:isPropertyOfInferiorOf rdf:type owl:ObjectProperty ;
+                           rdfs:domain vae:ValueProperty ;
+                           rdfs:range vae:ValueComparisonStatement ;
+                           rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
+                           rdfs:label "is property of inferior of" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf
+vae:isPropertyOfSuperiorOf rdf:type owl:ObjectProperty ;
+                           rdfs:domain vae:ValueProperty ;
+                           rdfs:range vae:ValueComparisonStatement ;
+                           rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
+                           rdfs:label "Is property of superior of" .
+
+
+###  https://w3id.org/def/vaeontology#isPropertyTaxonomyOfPropertyNode
+vae:isPropertyTaxonomyOfPropertyNode rdf:type owl:ObjectProperty ;
+                                     rdfs:domain vae:PropertyTaxonomy ;
+                                     rdfs:range vae:PropertyNode ;
+                                     rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
+                                     rdfs:label "is PropertyTaxonomy of PropertyNode" .
+
+
+###  https://w3id.org/def/vaeontology#isProposedByAgent
+vae:isProposedByAgent rdf:type owl:ObjectProperty ;
+                      owl:inverseOf vae:proposesStatement ;
+                      rdfs:domain vae:AgentStatement ;
+                      rdfs:range vae:Agent ;
+                      rdfs:comment "Indicates that the AgentStatement about the world was proposed by some Agent." ;
+                      rdfs:label "is expressed by agent" .
+
+
+###  https://w3id.org/def/vaeontology#isRootNodeOf
+vae:isRootNodeOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf dul:isProperPartOf ,
+                                    vae:isConceptNodeOf ;
+                 rdfs:domain [ owl:intersectionOf ( vae:ConceptNode
+                                                    [ rdf:type owl:Class ;
+                                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty vae:particularizes ;
+                                                                         owl:someValuesFrom vae:ConceptNode
+                                                                       ]
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+                 rdfs:range vae:ValueTaxonomy ;
+                 rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
+                 rdfs:label "is root node of" .
+
+
+###  https://w3id.org/def/vaeontology#isStartOfSequence
+vae:isStartOfSequence rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf vae:isInputOutcomeOf ;
+                      owl:inverseOf vae:startsWithInputOutcome ;
+                      rdfs:domain vae:MultiInputOutcome ;
+                      rdfs:range vae:Sequence ;
+                      rdfs:comment "Indicates that the MultiInputOutcome relation is the starting point of some Sequence." ;
+                      rdfs:label "is start of sequence" .
+
+
+###  https://w3id.org/def/vaeontology#isStateOfAgent
+vae:isStateOfAgent rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf dul:hasParticipant ;
+                   rdfs:domain vae:State ;
+                   rdfs:range vae:Agent ;
+                   rdfs:comment "Indicates that the State represents the Agent supplied." ;
+                   rdfs:label "is state of agent" .
+
+
+###  https://w3id.org/def/vaeontology#isTaxonomyNodeOf
+vae:isTaxonomyNodeOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf dul:isPartOf ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( vae:ConceptNode
+                                                 vae:PropertyNode
+                                               )
+                                 ] ;
+                     rdfs:range vae:ValueTaxonomy ;
+                     rdfs:comment "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy." ;
+                     rdfs:label "is Taxonomy Node Of" .
+
+
+###  https://w3id.org/def/vaeontology#isTestedInStatement
+vae:isTestedInStatement rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf vae:isPresentInStatement ;
+                        owl:inverseOf vae:withNorm ;
+                        rdfs:domain vae:Norm ;
+                        rdfs:range vae:VaeStatement ;
+                        rdfs:comment "Indicates that the norm is being used in a VaeStatement as the evaluated characteristic, e.g. for an AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\"." ;
+                        rdfs:label "Is Tested in Statement" .
+
+
+###  https://w3id.org/def/vaeontology#isTraceOfSystem
+vae:isTraceOfSystem rdf:type owl:ObjectProperty ;
+                    rdfs:domain vae:Sequence ;
+                    rdfs:range vae:System ;
+                    rdfs:comment "Indicates that the Sequence is the trace of a System supplied." ;
+                    rdfs:label "is trace of system" .
+
+
+###  https://w3id.org/def/vaeontology#isUserOfSystem
+vae:isUserOfSystem rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf vae:isAgentOfSystem ;
+                   rdfs:domain vae:User ;
+                   rdfs:range vae:System ;
+                   rdfs:comment "Indicates that the User is in some System." ;
+                   rdfs:label "is user of system" .
+
+
+###  https://w3id.org/def/vaeontology#isValuedInStatement
+vae:isValuedInStatement rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf vae:isPresentInStatement ;
+                        owl:inverseOf vae:withValue ;
+                        rdfs:domain vae:ValueConcept ;
+                        rdfs:range vae:VaeStatement ;
+                        rdfs:comment "Indicates that the value concept is being used in a VaeStatement as the evaluated characteristic, e.g. for an AlignmentStatement: \"The vae:Outcome actOfPayingTaxes is aligned with the vae:ValueConcept [value concept] with a vae:GiniIndex of 0.9\"." ;
+                        rdfs:label "is valued in statement" .
+
+
+###  https://w3id.org/def/vaeontology#madeByAgent
+vae:madeByAgent rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:hasParticipant ;
+                owl:inverseOf vae:makesAction ;
+                rdfs:domain vae:Action ;
+                rdfs:range vae:ActingAgent ;
+                rdfs:comment "Indicates that the Action was made by some ActingAgent." ;
+                rdfs:label "made by agent" .
+
+
+###  https://w3id.org/def/vaeontology#makesAction
+vae:makesAction rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf dul:isParticipantIn ;
+                rdfs:domain vae:ActingAgent ;
+                rdfs:range vae:Action ;
+                rdfs:comment "Indicates that the ActingAgent makes some Action." ;
+                rdfs:label "makes action" .
+
+
+###  https://w3id.org/def/vaeontology#measuredOnOutcome
+vae:measuredOnOutcome rdf:type owl:ObjectProperty ;
+                      owl:inverseOf vae:satisfiesProperty ;
+                      rdfs:domain vae:VaeProperty ;
+                      rdfs:range vae:Outcome ;
+                      rdfs:comment "Indicates that the VaeProperty was satisfied (measured) in some Outcome." ;
+                      rdfs:label "measured on outcome" .
+
+
+###  https://w3id.org/def/vaeontology#nextInputOutcome
+vae:nextInputOutcome rdf:type owl:ObjectProperty ;
+                     owl:inverseOf vae:previousInputOutcome ;
+                     rdfs:domain vae:MultiInputOutcome ;
+                     rdfs:range vae:MultiInputOutcome ;
+                     rdfs:comment "Indicates a next MultiInputOutcome relation in a Sequence." ;
+                     rdfs:label "next input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#onEntity
+vae:onEntity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf vae:coversItem ;
+             rdfs:domain vae:VaeStatement ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( vae:Agent
+                                        vae:Norm
+                                        vae:Outcome
+                                      )
+                        ] ;
+             rdfs:comment "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." ;
+             rdfs:label "on entity" .
+
+
+###  https://w3id.org/def/vaeontology#onState
+vae:onState rdf:type owl:ObjectProperty ;
+            rdfs:domain vae:ActionOnState ;
+            rdfs:range vae:State ;
+            rdfs:comment "On a state to action relation (vae:ActionOnState) from a vae:Strategy, indicates the vae:State where some vae:Action should be made by the Agent holding the vae:Strategy." ;
+            rdfs:label "on state" .
+
+
+###  https://w3id.org/def/vaeontology#particularizes
+vae:particularizes rdf:type owl:ObjectProperty ,
+                            owl:TransitiveProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( vae:ConceptNode
+                                               vae:PropertyNode
+                                             )
+                               ] ;
+                   rdfs:range vae:ConceptNode ;
+                   rdfs:comment "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)." ;
+                   rdfs:label "particularizes" .
+
+
+###  https://w3id.org/def/vaeontology#perform
+vae:perform rdf:type owl:ObjectProperty ;
+            owl:inverseOf vae:performedOnStateIn ;
+            rdfs:domain vae:ActionOnState ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( vae:Action
+                                       vae:Strategy
+                                     )
+                       ] ;
+            rdfs:comment "Indicates the Action to be performed when an State is given, represented in a ActionOnState relation, which are components of some Strategy." ;
+            rdfs:label "perform" .
+
+
+###  https://w3id.org/def/vaeontology#performedOnStateIn
+vae:performedOnStateIn rdf:type owl:ObjectProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( vae:Action
+                                                   vae:Strategy
+                                                 )
+                                   ] ;
+                       rdfs:range vae:ActionOnState ;
+                       rdfs:comment "Indicates the Action to be performed when an State is given, represented in a ActionOnState relation, which are components of some Strategy." ;
+                       rdfs:label "performed on state in" .
+
+
+###  https://w3id.org/def/vaeontology#previousInputOutcome
+vae:previousInputOutcome rdf:type owl:ObjectProperty ;
+                         rdfs:domain vae:MultiInputOutcome ;
+                         rdfs:range vae:MultiInputOutcome ;
+                         rdfs:comment "Indicates a previous MultiInputOutcome relation in a Sequence." ;
+                         rdfs:label "previous input outcome" .
+
+
+###  https://w3id.org/def/vaeontology#propertyExpressedAt
+vae:propertyExpressedAt rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf vae:isPresentInStatement ;
+                        rdfs:domain vae:VaeProperty ;
+                        rdfs:range vae:VaePropertyStatement ;
+                        rdfs:comment "Indicates that the VaeProperty is expressed at some VaePropertyStatement." ;
+                        rdfs:label "property expressed at" .
+
+
+###  https://w3id.org/def/vaeontology#propertyOptimizedAt
+vae:propertyOptimizedAt rdf:type owl:ObjectProperty ;
+                        rdfs:domain vae:VaeProperty ;
+                        rdfs:range vae:OptimizedProperty ;
+                        rdfs:comment "Indicates that the VaeProperty that is being optimized in the OptimizedProperty assertion." ;
+                        rdfs:label "property optimzed at" .
+
+
+###  https://w3id.org/def/vaeontology#proposesStatement
+vae:proposesStatement rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf dul:conceptualizes ;
+                      rdfs:domain vae:Agent ;
+                      rdfs:range vae:AgentStatement ;
+                      rdfs:comment "Indicates that the Agent proposes an AgentStatement about the world." ;
+                      rdfs:label "proposes statement" .
+
+
+###  https://w3id.org/def/vaeontology#reflectsValue
+vae:reflectsValue rdf:type owl:ObjectProperty ;
+                  owl:inverseOf vae:shapesNorm ;
+                  rdfs:domain vae:Norm ;
+                  rdfs:range vae:ValueConcept ;
+                  rdfs:comment "Said of an Norm reflecting a ValueConcept." ;
+                  rdfs:label "reflects value" .
+
+
+###  https://w3id.org/def/vaeontology#satisfiesNorm
+vae:satisfiesNorm rdf:type owl:ObjectProperty ;
+                  rdfs:domain vae:Outcome ;
+                  rdfs:range vae:Norm ;
+                  rdfs:comment "Said of an Outcome satisfying a Norm." ;
+                  rdfs:label "satisfies norm" .
+
+
+###  https://w3id.org/def/vaeontology#satisfiesProperty
+vae:satisfiesProperty rdf:type owl:ObjectProperty ;
+                      rdfs:domain vae:Outcome ;
+                      rdfs:range vae:VaeProperty ;
+                      rdfs:comment "Indicates that the Outcome satisfies the VaeProperty specified." ;
+                      rdfs:label "satisfies property" .
+
+
+###  https://w3id.org/def/vaeontology#shapesNorm
+vae:shapesNorm rdf:type owl:ObjectProperty ;
+               rdfs:domain vae:ValueConcept ;
+               rdfs:range vae:Norm ;
+               rdfs:comment "Said of a ValueConcept shaping a Norm." ;
+               rdfs:label "shapes norm" .
+
+
+###  https://w3id.org/def/vaeontology#startsWithInputOutcome
+vae:startsWithInputOutcome rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf dul:hasProperPart ,
+                                              vae:hasInputOutcome ;
+                           rdfs:domain vae:Sequence ;
+                           rdfs:range vae:MultiInputOutcome ;
+                           rdfs:comment "Indicates that the vae:Sequence relation starts with a vae:MultiInputOutcome relation." ;
+                           rdfs:label "starts with InputOutcome" .
+
+
+###  https://w3id.org/def/vaeontology#superiorInComparison
+vae:superiorInComparison rdf:type owl:ObjectProperty ;
+                         rdfs:domain vae:ValueConcept ;
+                         rdfs:range vae:ValueComparisonStatement ;
+                         rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                         rdfs:label "superior in comparison" .
+
+
+###  https://w3id.org/def/vaeontology#withNorm
+vae:withNorm rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf vae:coversItem ;
+             rdfs:domain vae:VaeStatement ;
+             rdfs:range vae:Norm ;
+             rdfs:comment "Indicates that the norm is being used in a VaeStatement as the evaluated characteristic, e.g. for an AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\"." ;
+             rdfs:label "with norm" .
+
+
+###  https://w3id.org/def/vaeontology#withValue
+vae:withValue rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf vae:coversItem ;
+              rdfs:domain vae:VaeStatement ;
+              rdfs:range vae:ValueConcept ;
+              rdfs:comment "Indicates that the value concept is being used in a VaeStatement as the evaluated characteristic, e.g. for an AlignmentStatement: \"The vae:Outcome actOfPayingTaxes is aligned with the vae:ValueConcept [value concept] with a vae:GiniIndex of 0.9\"." ;
+              rdfs:label "with value" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#attitude
+bhv:attitude rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#focus
+bhv:focus rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/def/vaeontology#degreeOfSatisfaction
+vae:degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
+                         rdfs:domain vae:PropertyTaxonomy ;
+                         rdfs:range xsd:float ;
+                         rdfs:comment "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)." ;
+                         rdfs:label "degree of satisfaction" .
+
+
+###  https://w3id.org/def/vaeontology#importanceValue
+vae:importanceValue rdf:type owl:DatatypeProperty ;
+                    rdfs:domain vae:NodeImportance ;
+                    rdfs:range xsd:float ;
+                    rdfs:comment "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." ;
+                    rdfs:label "importance value" .
+
+
+###  https://w3id.org/def/vaeontology#isActive
+vae:isActive rdf:type owl:DatatypeProperty ;
+             rdfs:domain vae:Context ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "Represents if the Context is active (actually influences any ValueObject)." ;
+             rdfs:label "is active" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Action
+<http://schema.org/Action> rdf:type owl:Class .
+
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Agent
+dul:Agent rdf:type owl:Class ;
+          rdfs:label "Agent" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Amount
+dul:Amount rdf:type owl:Class ;
+           rdfs:label "Amount" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Concept
+dul:Concept rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ;
+            rdfs:label "Concept" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Entity
+dul:Entity rdf:type owl:Class ;
+           rdfs:label "Entity" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Event
+dul:Event rdf:type owl:Class ;
+          rdfs:label "Event" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Norm
+dul:Norm rdf:type owl:Class ;
+         rdfs:label "Norm" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Parameter
+dul:Parameter rdf:type owl:Class ;
+              rdfs:label "Parameter" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Region
+dul:Region rdf:type owl:Class ;
+           rdfs:label "Region" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL#Theory
+dul:Theory rdf:type owl:Class ;
+           rdfs:label "Theory" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#Judgement
+vc:Judgement rdf:type owl:Class ;
+             rdfs:subClassOf vae:AgentStatement ;
+             rdfs:label "Judgement" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#SocialScenario
+vc:SocialScenario rdf:type owl:Class ;
+                  rdfs:label "Social Scenario" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/values/valuecore#Value
+vc:Value rdf:type owl:Class ;
+         owl:equivalentClass vae:Value ,
+                             bhv:Value ;
+         rdfs:subClassOf vc:SocialScenario ;
+         rdfs:label "Value" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURI
+xsd:anyURI rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Agent
+<http://www.w3.org/2006/vcard/ns#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Individual
+<http://www.w3.org/2006/vcard/ns#Individual> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+<http://www.w3.org/2006/vcard/ns#Organization> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/odrl/2/Action
+odrl:Action rdf:type owl:Class ;
+            rdfs:subClassOf <http://schema.org/Action> ;
+            rdfs:isDefinedBy odrl: ;
+            rdfs:label "Action" ,
+                       "Action"@en ;
+            skos:definition "An operation on an Asset."@en ;
+            skos:note "Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/Asset
+odrl:Asset rdf:type owl:Class ;
+           rdfs:isDefinedBy odrl: ;
+           rdfs:label "Asset" ,
+                      "Asset"@en ;
+           skos:definition "A resource or a collection of resources that are the subject of a Rule."@en ;
+           skos:note "The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/Constraint
+odrl:Constraint rdf:type owl:Class ;
+                rdfs:isDefinedBy odrl: ;
+                rdfs:label "Constraint" ,
+                           "Constraint"@en ;
+                skos:definition "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/LeftOperand
+odrl:LeftOperand rdf:type owl:Class ;
+                 rdfs:label "Left Operand"@en ;
+                 skos:definition "Left operand for a constraint expression."@en ;
+                 skos:note "Instances of the LeftOperand class are used as the leftOperand of a Constraint."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/LogicalConstraint
+odrl:LogicalConstraint rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/odrl/2/Operator
+odrl:Operator rdf:type owl:Class ;
+              rdfs:isDefinedBy odrl: ;
+              rdfs:label "Operator" ,
+                         "Operator"@en ;
+              skos:definition "Operator for constraint expression."@en ;
+              skos:note "Instances of the Operator class representing relational operators."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/Party
+odrl:Party rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://schema.org/Organization>
+                                           <http://schema.org/Person>
+                                           <http://www.w3.org/2006/vcard/ns#Agent>
+                                           <http://www.w3.org/2006/vcard/ns#Individual>
+                                           <http://www.w3.org/2006/vcard/ns#Organization>
+                                           <http://xmlns.com/foaf/0.1/Agent>
+                                           <http://xmlns.com/foaf/0.1/Organization>
+                                           <http://xmlns.com/foaf/0.1/Person>
+                                         )
+                           ] ;
+           rdfs:isDefinedBy odrl: ;
+           rdfs:label "Party" ,
+                      "Party"@en ;
+           skos:definition "An entity or a collection of entities that undertake Roles in a Rule."@en ;
+           skos:note "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]]."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/Policy
+odrl:Policy rdf:type owl:Class ;
+            rdfs:isDefinedBy odrl: ;
+            rdfs:label "Policy" ,
+                       "Policy"@en ;
+            skos:definition "A non-empty group of Permissions and/or Prohibitions."@en ;
+            skos:note "A Policy may contain multiple Rules."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/RightOperand
+odrl:RightOperand rdf:type owl:Class ;
+                  rdfs:isDefinedBy odrl: ;
+                  rdfs:label "Right Operand"@en ;
+                  skos:definition "Right operand for constraint expression."@en ;
+                  skos:note "Instances of the RightOperand class are used as the rightOperand of a Constraint."@en .
+
+
+###  http://www.w3.org/ns/odrl/2/Rule
+odrl:Rule rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Abidance
+vae:Abidance rdf:type owl:Class ;
+             rdfs:subClassOf bhv:Conformity ;
+             rdfs:comment "Abidance: acting according to certain accepted standards" ,
+                          "Term added automatically" ;
+             rdfs:label "Abidance" .
+
+
+###  https://w3id.org/def/vaeontology#Accomplishment
+vae:Accomplishment rdf:type owl:Class ;
+                   rdfs:subClassOf bhv:Achievement ;
+                   rdfs:comment "Accomplishment: the action of accomplishing something" ,
+                                "Term added automatically" ;
+                   rdfs:label "Accomplishment" .
+
+
+###  https://w3id.org/def/vaeontology#Accord
+vae:Accord rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Conformity ;
+           rdfs:comment "Accord: concurrence of opinion" ,
+                        "Term added automatically" ;
+           rdfs:label "Accord" .
+
+
+###  https://w3id.org/def/vaeontology#Accordance
+vae:Accordance rdf:type owl:Class ;
+               rdfs:subClassOf bhv:Conformity ;
+               rdfs:comment "Accordance: concurrence of opinion" ,
+                            "Term added automatically" ;
+               rdfs:label "Accordance" .
+
+
+###  https://w3id.org/def/vaeontology#ActingAgent
+vae:ActingAgent rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( vae:Agent
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty dul:isParticipantIn ;
+                                                             owl:someValuesFrom vae:Action
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf vae:Agent ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:followsStrategy ;
+                                  owl:someValuesFrom vae:Strategy
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:makesAction ;
+                                  owl:someValuesFrom vae:Action
+                                ] ;
+                rdfs:comment "An Agent that makes Actions and/or follows some Strategy" ;
+                rdfs:label "Acting Agent" .
+
+
+###  https://w3id.org/def/vaeontology#Action
+vae:Action rdf:type owl:Class ;
+           rdfs:subClassOf vae:Outcome ;
+           rdfs:comment "An action that produces some effect in the world, made possible by some ActingAgent." ;
+           rdfs:label "Action" ;
+           rdfs:seeAlso vae:ActingAgent .
+
+
+###  https://w3id.org/def/vaeontology#ActionOnState
+vae:ActionOnState rdf:type owl:Class ;
+                  rdfs:subClassOf vae:Outcome ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty vae:onState ;
+                                    owl:someValuesFrom vae:State
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty vae:perform ;
+                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( vae:Action
+                                                                       vae:Strategy
+                                                                     )
+                                                       ]
+                                  ] ;
+                  rdfs:comment "A policy that defines that, on some given State, an Action is to be made. These are the basic components of Strategies which followed by ActingAgents." ;
+                  rdfs:label "Action On State" .
+
+
+###  https://w3id.org/def/vaeontology#Agent
+vae:Agent rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( dul:Agent
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dul:isParticipantIn ;
+                                                                       owl:someValuesFrom vae:Outcome
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty vc:commitsTo ;
+                                                                       owl:someValuesFrom vae:ValueConcept
+                                                                     ]
+                                                                   )
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf dul:Agent ,
+                          odrl:Party ,
+                          vae:VaeObject ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty vc:commitsTo ;
+                            owl:someValuesFrom vae:ValueConcept
+                          ] ;
+          rdfs:comment "An agent that takes part in a problem of interest, either by commiting to a ValueConcept or by participating in some Outcome." ;
+          rdfs:label "Agent" .
+
+
+###  https://w3id.org/def/vaeontology#AgentStatement
+vae:AgentStatement rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                owl:onProperty dul:hasSetting ;
+                                                                owl:someValuesFrom vae:Context
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty vae:isProposedByAgent ;
+                                                                owl:someValuesFrom vae:Agent
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf vae:VaeObject ,
+                                   fschema:FrameOcurrence ;
+                   rdfs:comment "An AgentStatement is whatever statement proposed by an Agent in some context about the world." ;
+                   rdfs:label "Agent Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AggregationFunction
+vae:AggregationFunction rdf:type owl:Class ;
+                        rdfs:subClassOf vae:QuantitativeVaeProperty ;
+                        rdfs:comment "An aggregation of some other VaeProperty over a set of Outcomes (or Sequence)." ;
+                        rdfs:label "Aggregation Function" .
+
+
+###  https://w3id.org/def/vaeontology#AlignmentStatement
+vae:AlignmentStatement rdf:type owl:Class ;
+                       rdfs:subClassOf vae:VaeStatement ,
+                                       [ rdf:type owl:Class ;
+                                         owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty vae:onEntity ;
+                                                                                owl:allValuesFrom vae:Norm
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty vae:onEntity ;
+                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass vae:Norm
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty vae:onEntity ;
+                                                                                owl:allValuesFrom vae:Outcome
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty vae:onEntity ;
+                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass vae:Outcome
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                                     )
+                                       ] ,
+                                       [ rdf:type owl:Class ;
+                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                            owl:onProperty vae:withNorm ;
+                                                            owl:someValuesFrom vae:Norm
+                                                          ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty vae:withValue ;
+                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass vae:ValueConcept
+                                       ] ;
+                       owl:disjointWith vae:AwarenessStatement ;
+                       rdfs:comment "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  \"When norms properly reflect values we say that the norms are value-aligned.” + (previously) “The application of norms always implies situation-awareness first.”" ,
+                                    "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “… when the outcomes adequately abide by values - possibly because they satisfy entirely the (value-aligned) norms - we say that these outcomes are value-aligned.”" ;
+                       rdfs:label "Alignment Statement" ;
+                       rdfs:seeAlso vae:AwarenessStatement ;
+                       skos:note "References for the specific ways of certifying alignment: [Nieves Montes, Carles Sierra et al. (Gini Index - Semantics Functions, Preferences,  Promotion, Demotion, Optimally aligned norms) https://www.jair.org/index.php/jair/article/view/13487], [Lera Leri et al. (“Moral Value Interpretation”) https://www.iiia.csic.es/media/filer_public/06/0a/060aec7a-2db6-40d7-b3e6-67de4260a065/2022aamaspluralisticvaluealignment.pdf], [Andrés Holgado-Sánchez (Admissibility of sequences of outcomes) https://link.springer.com/chapter/10.1007/978-3-031-43264-4_27]" .
+
+
+###  https://w3id.org/def/vaeontology#Allowance
+vae:Allowance rdf:type owl:Class ;
+              rdfs:subClassOf bhv:Tolerance ;
+              rdfs:comment "Allowance: a permissible difference; allowing some freedom to move within limits" ,
+                           "Term added automatically" ;
+              rdfs:label "Allowance" .
+
+
+###  https://w3id.org/def/vaeontology#ArgumentStatement
+vae:ArgumentStatement rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( vae:AgentStatement
+                                                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty vae:hasPremise ;
+                                                                                          owl:allValuesFrom vae:VaeStatement
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty vae:isBasedOnCriterion ;
+                                                                                          owl:allValuesFrom vae:Criterion
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty vae:isProposedByAgent ;
+                                                                   owl:someValuesFrom vae:Agent
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty vae:hasClaim ;
+                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass vae:VaeStatement
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf vae:AgentStatement ;
+                      rdfs:comment "An ArgumentStatement is a AgentStatment where a claim is made directly characterizing some value or norm related content (VaeStatement), justified by using other statements (premises) and based on some Criterion." ,
+                                   "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”." ;
+                      rdfs:label "Argument Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AwarenessStatement
+vae:AwarenessStatement rdf:type owl:Class ;
+                       rdfs:subClassOf vae:VaeStatement ,
+                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                owl:onProperty vae:onEntity ;
+                                                                owl:allValuesFrom vae:Agent
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty vae:onEntity ;
+                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass vae:Agent
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ,
+                                       [ rdf:type owl:Class ;
+                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty vae:withNorm ;
+                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass vae:Norm
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty vae:withValue ;
+                                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass vae:ValueConcept
+                                                       ]
+                                                     )
+                                       ] ;
+                       rdfs:comment "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] “… a system can be given a formal representation of the norms and/or values that determine its behavior or the behavior it expects from its users. In this case we say that the system is norm and/or value-aware.”" ;
+                       rdfs:label "Awareness Statement" ;
+                       rdfs:seeAlso vae:AlignmentStatement .
+
+
+###  https://w3id.org/def/vaeontology#BooleanVaeProperty
+vae:BooleanVaeProperty rdf:type owl:Class ;
+                       rdfs:subClassOf vae:VaeProperty ;
+                       rdfs:comment "A VaeProperty taken boolean values." ;
+                       rdfs:label "Boolean Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#Compliance
+vae:Compliance rdf:type owl:Class ;
+               rdfs:subClassOf bhv:Conformity ;
+               rdfs:comment "Compliance: acting according to certain accepted standards" ,
+                            "Term added automatically" ;
+               rdfs:label "Compliance" .
+
+
+###  https://w3id.org/def/vaeontology#ConceptNode
+vae:ConceptNode rdf:type owl:Class ;
+                rdfs:subClassOf vae:AgentStatement ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:isConceptNodeOf ;
+                                  owl:someValuesFrom vae:ValueTaxonomy
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:generalizes ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass [ rdf:type owl:Class ;
+                                                owl:unionOf ( vae:ConceptNode
+                                                              vae:PropertyNode
+                                                            )
+                                              ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:hasImportance ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass vae:NodeImportance
+                                ] ;
+                owl:disjointWith vae:PropertyNode ;
+                rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                rdfs:label "Concept Node" ;
+                bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/def/vaeontology#Conformance
+vae:Conformance rdf:type owl:Class ;
+                rdfs:subClassOf bhv:Conformity ;
+                rdfs:comment "Conformance: correspondence in form or appearance" ,
+                             "Term added automatically" ;
+                rdfs:label "Conformance" .
+
+
+###  https://w3id.org/def/vaeontology#Conformation
+vae:Conformation rdf:type owl:Class ;
+                 rdfs:subClassOf bhv:Conformity ;
+                 rdfs:comment "Conformation: acting according to certain accepted standards" ,
+                              "Term added automatically" ;
+                 rdfs:label "Conformation" .
+
+
+###  https://w3id.org/def/vaeontology#Conformism
+vae:Conformism rdf:type owl:Class ;
+               rdfs:subClassOf bhv:Conformity ;
+               rdfs:comment "Conformism: orthodoxy in thoughts and belief" ,
+                            "Term added automatically" ;
+               rdfs:label "Conformism" .
+
+
+###  https://w3id.org/def/vaeontology#Context
+vae:Context rdf:type owl:Class ;
+            rdfs:subClassOf dul:Entity ;
+            rdfs:comment "A Context is any kind of entity that is underlying of specific events, situations, descriptions and agents. They can be used to describe, for example, the kind of problem or world where a system is deployed, contextualization of statements, etc." ;
+            rdfs:label "Context" ;
+            rdfs:seeAlso vae:VaeObject ;
+            bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" ,
+                       "https://arxiv.org/abs/2305.02748" .
+
+
+###  https://w3id.org/def/vaeontology#Criterion
+vae:Criterion rdf:type owl:Class ;
+              rdfs:subClassOf dul:Theory ,
+                              odrl:Policy ,
+                              vae:VaeObject ,
+                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:action ;
+                                                       owl:someValuesFrom [ owl:intersectionOf ( vae:VaeStatement
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty vae:withNorm ;
+                                                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass vae:Norm
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty dul:isAbout ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass vae:Norm
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ,
+                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:action ;
+                                                       owl:someValuesFrom [ owl:intersectionOf ( vae:VaeStatement
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty vae:withValue ;
+                                                                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                   owl:onClass vae:ValueConcept
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty dul:isAbout ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass vae:ValueConcept
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ,
+                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty dul:isAbout ;
+                                                       owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( vae:Norm
+                                                                                         vae:ValueConcept
+                                                                                       )
+                                                                         ]
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:constraint ;
+                                                       owl:allValuesFrom odrl:Constraint
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:target ;
+                                                       owl:allValuesFrom odrl:Asset
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty dul:isAbout ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:action ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass vae:VaeStatement
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:assignee ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass vae:Agent
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty odrl:assigner ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass vae:User
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              rdfs:comment """In ArgumentStatements, the fact that specific claims can follow from some premises must be based on some Criterion (this class) proposed by an authority (i.e. the system designer or the researcher) or evolved by the society in some way. 
+
+Criteria link premises and claims and provide constraints for the premises to be true, for the claim to follow from the premises, from the context, etc.""" ;
+              rdfs:label "Criterion" ;
+              skos:note """[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”. 
+
+Criteria are those conditions that identify value-aligned or missaligned behaviour with values or norms in mind.""" .
+
+
+###  https://w3id.org/def/vaeontology#Custom
+vae:Custom rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Tradition ;
+           rdfs:comment "Custom: a specific practice of long standing" ,
+                        "Term added automatically" ;
+           rdfs:label "Custom" .
+
+
+###  https://w3id.org/def/vaeontology#Dependableness
+vae:Dependableness rdf:type owl:Class ;
+                   rdfs:subClassOf bhv:Dependability ;
+                   rdfs:comment "Dependableness: the quality of being dependable or reliable" ,
+                                "Term added automatically" ;
+                   rdfs:label "Dependableness" .
+
+
+###  https://w3id.org/def/vaeontology#Economic_value
+vae:Economic_value rdf:type owl:Class ;
+                   rdfs:subClassOf bhv:Value ;
+                   rdfs:comment "Economic_value: the amount (of money or goods or services) that is considered to be a fair equivalent for something else" ,
+                                "Term added automatically" ;
+                   rdfs:label "Economic_value" .
+
+
+###  https://w3id.org/def/vaeontology#Equality
+vae:Equality rdf:type owl:Class ;
+             rdfs:subClassOf bhv:SelfTrascendence ;
+             rdfs:comment "Equality is present in most of the VAE papers so far, as it is easy to formalize mathematically." ;
+             rdfs:label "Equality" .
+
+
+###  https://w3id.org/def/vaeontology#FinalInputOutcome
+vae:FinalInputOutcome rdf:type owl:Class ;
+                      rdfs:subClassOf [ owl:intersectionOf ( vae:MultiInputOutcome
+                                                             [ rdf:type owl:Class ;
+                                                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty vae:nextInputOutcome ;
+                                                                                  owl:someValuesFrom vae:MultiInputOutcome
+                                                                                ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                      rdfs:comment "The final relation between inputs and outcomes of a Sequence." ;
+                      rdfs:label "Final Input Outcome" ;
+                      rdfs:seeAlso vae:Sequence ,
+                                   "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
+
+
+###  https://w3id.org/def/vaeontology#Force
+vae:Force rdf:type owl:Class ;
+          rdfs:subClassOf bhv:Power ;
+          rdfs:comment "Force: one possessing or exercising power or influence or authority" ,
+                       "Term added automatically" ;
+          rdfs:label "Force" .
+
+
+###  https://w3id.org/def/vaeontology#Generalization
+vae:Generalization rdf:type owl:Class ;
+                   rdfs:subClassOf vae:ValueComparisonStatement ;
+                   rdfs:comment "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior)." ;
+                   rdfs:label "Generalization" ;
+                   rdfs:seeAlso vae:generalizes .
+
+
+###  https://w3id.org/def/vaeontology#GiniIndex
+vae:GiniIndex rdf:type owl:Class ;
+              rdfs:subClassOf vae:SemanticsFunction ;
+              rdfs:comment "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." ;
+              rdfs:label "Gini Index" ;
+              bhv:bibRef """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487""" .
+
+
+###  https://w3id.org/def/vaeontology#Humbleness
+vae:Humbleness rdf:type owl:Class ;
+               rdfs:subClassOf bhv:Humility ;
+               rdfs:comment "Humbleness: a disposition to be humble; a lack of false pride" ,
+                            "Term added automatically" ;
+               rdfs:label "Humbleness" .
+
+
+###  https://w3id.org/def/vaeontology#Imagination
+vae:Imagination rdf:type owl:Class ;
+                rdfs:subClassOf bhv:Resources ;
+                rdfs:comment "Imagination: the ability to deal resourcefully with unusual problems" ,
+                             "Term added automatically" ;
+                rdfs:label "Imagination" .
+
+
+###  https://w3id.org/def/vaeontology#ImportanceRelation
+vae:ImportanceRelation rdf:type owl:Class ;
+                       rdfs:subClassOf vae:ValueComparisonStatement ;
+                       rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ,
+                                    "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) is more important than another one (inferior)." ;
+                       rdfs:label "Importance Relation" ;
+                       rdfs:seeAlso "http://hdl.handle.net/10261/197622" ;
+                       bhv:bibRef "Value Systems as a ranking between values: [Serramia et al. https://aamas.csc.liv.ac.uk/Proceedings/aamas2018/pdfs/p1294.pdf]" .
+
+
+###  https://w3id.org/def/vaeontology#Leeway
+vae:Leeway rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Tolerance ;
+           rdfs:comment "Leeway: a permissible difference; allowing some freedom to move within limits" ,
+                        "Term added automatically" ;
+           rdfs:label "Leeway" .
+
+
+###  https://w3id.org/def/vaeontology#Margin
+vae:Margin rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Tolerance ;
+           rdfs:comment "Margin: a permissible difference; allowing some freedom to move within limits" ,
+                        "Term added automatically" ;
+           rdfs:label "Margin" .
+
+
+###  https://w3id.org/def/vaeontology#MultiInputOutcome
+vae:MultiInputOutcome rdf:type owl:Class ;
+                      rdfs:subClassOf vae:Outcome ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty vae:isStartOfSequence ;
+                                        owl:someValuesFrom vae:Sequence
+                                      ] ;
+                      rdfs:comment "A relationship between a series of input dul:Events and a series of Outcomes that follow those. MultiInputOutcomes are the basic blocks to build Sequences, they follow the Sequence ODP." ;
+                      rdfs:label "Multi Input Outcome" ;
+                      rdfs:seeAlso vae:Sequence ,
+                                   "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
+
+
+###  https://w3id.org/def/vaeontology#NodeImportance
+vae:NodeImportance rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty vae:isImportanceOf ;
+                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                              owl:unionOf ( vae:ConceptNode
+                                                                            vae:PropertyNode
+                                                                          )
+                                                            ]
+                                       ] ;
+                   rdfs:subClassOf vae:QuantitativeVaeProperty ,
+                                   vae:ValueProperty ;
+                   rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                   rdfs:label "Node Importance" ;
+                   rdfs:seeAlso vae:ImportanceRelation ,
+                                vae:ValueTaxonomy .
+
+
+###  https://w3id.org/def/vaeontology#Norm
+vae:Norm rdf:type owl:Class ;
+         rdfs:subClassOf dul:Norm ,
+                         odrl:Policy ,
+                         vae:VaeObject ,
+                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty odrl:assignee ;
+                                                  owl:someValuesFrom vae:Agent
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty odrl:assigner ;
+                                                  owl:someValuesFrom vae:User
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty odrl:action ;
+                           owl:someValuesFrom vae:Outcome
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty odrl:constraint ;
+                           owl:someValuesFrom odrl:Constraint
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty odrl:target ;
+                           owl:someValuesFrom vae:System
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty vae:influencesOutcome ;
+                           owl:someValuesFrom vae:Outcome
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty vae:reflectsValue ;
+                           owl:someValuesFrom vae:ValueConcept
+                         ] ;
+         rdfs:comment "\"Norms (...) establish boundaries, either soft or hard, on individual autonomy through a variety of mechanisms such as social pressure and expectations, constraints on actions, and sanctions for violation or rewards for compliance.\"" ,
+                      "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] \"Explicit representations of norms are often called policies.\"" ;
+         rdfs:label "Norm" ;
+         bhv:bibRef "Nieves Montes, Nardine Osman, and Carles Sierra, ‘Perspective-dependent value alignment of norms’ VALE workshop, ECAI 2023" .
+
+
+###  https://w3id.org/def/vaeontology#OptimizedProperty
+vae:OptimizedProperty rdf:type owl:Class ;
+                      rdfs:subClassOf vae:BooleanVaeProperty ,
+                                      vae:QuantitativeVaeProperty ;
+                      rdfs:comment "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)." ;
+                      rdfs:label "Optimized Property" .
+
+
+###  https://w3id.org/def/vaeontology#Ossification
+vae:Ossification rdf:type owl:Class ;
+                 rdfs:subClassOf bhv:Conformity ;
+                 rdfs:comment "Ossification: hardened conventionality" ,
+                              "Term added automatically" ;
+                 rdfs:label "Ossification" .
+
+
+###  https://w3id.org/def/vaeontology#Outcome
+vae:Outcome rdf:type owl:Class ;
+            rdfs:subClassOf dul:Event ,
+                            vae:VaeObject ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty vae:abidesByValue ;
+                              owl:someValuesFrom vae:ValueConcept
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty vae:satisfiesNorm ;
+                              owl:someValuesFrom vae:Norm
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty vae:satisfiesProperty ;
+                              owl:someValuesFrom vae:VaeProperty
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty vae:composedBySequence ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass vae:Sequence
+                            ] ;
+            rdfs:comment "Outcomes include the effect of the behavior of a system or of a user using a system [Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]." ;
+            rdfs:label "Outcome" .
+
+
+###  https://w3id.org/def/vaeontology#Permissiveness
+vae:Permissiveness rdf:type owl:Class ;
+                   rdfs:subClassOf bhv:Tolerance ;
+                   rdfs:comment "Permissiveness: a disposition to allow freedom of choice and behavior" ,
+                                "Term added automatically" ;
+                   rdfs:label "Permissiveness" .
+
+
+###  https://w3id.org/def/vaeontology#Prise
+vae:Prise rdf:type owl:Class ;
+          rdfs:subClassOf bhv:Value ;
+          rdfs:comment "Prise: regard highly; think much of" ,
+                       "Term added automatically" ;
+          rdfs:label "Prise" .
+
+
+###  https://w3id.org/def/vaeontology#Prize
+vae:Prize rdf:type owl:Class ;
+          rdfs:subClassOf bhv:Value ;
+          rdfs:comment "Prize: hold dear" ,
+                       "Term added automatically" ;
+          rdfs:label "Prize" .
+
+
+###  https://w3id.org/def/vaeontology#PromotionDemotion
+vae:PromotionDemotion rdf:type owl:Class ;
+                      rdfs:subClassOf vae:QualitativeVaeProperty ,
+                                      vae:ValueProperty ;
+                      rdfs:comment "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value." ;
+                      rdfs:label "Promotion Demotion" .
+
+
+###  https://w3id.org/def/vaeontology#PropertyNode
+vae:PropertyNode rdf:type owl:Class ;
+                 rdfs:subClassOf vae:AgentStatement ,
+                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                          owl:onProperty vae:hasPropertyTaxonomy ;
+                                                          owl:someValuesFrom vae:PropertyTaxonomy
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty vae:isPropertyNodeOf ;
+                                                          owl:someValuesFrom vae:ValueTaxonomy
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty vae:hasImportance ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass vae:NodeImportance
+                                 ] ;
+                 rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                 rdfs:label "Property Node" ;
+                 bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/def/vaeontology#PropertyTaxonomy
+vae:PropertyTaxonomy rdf:type owl:Class ;
+                     rdfs:subClassOf vae:QuantitativeVaeProperty ,
+                                     vae:ValueProperty ;
+                     rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                     rdfs:label "Property Taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology#QualitativeVaeProperty
+vae:QualitativeVaeProperty rdf:type owl:Class ;
+                           rdfs:subClassOf vae:VaeProperty ;
+                           rdfs:comment "A VaeProperty that represent a qualitative consideration on an Outcome with respect to a Value or Norm." ;
+                           rdfs:label "Qualitative Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
+vae:QuantitativePromotionDemotion rdf:type owl:Class ;
+                                  rdfs:subClassOf vae:PromotionDemotion ,
+                                                  vae:QuantitativeVaeProperty ;
+                                  rdfs:comment "A quantitative version of PromotionDemotion that specifies some degre of Promotion/Demotion/Neutrality." ;
+                                  rdfs:label "Quantitative Promotion Demotion" .
+
+
+###  https://w3id.org/def/vaeontology#QuantitativeVaeProperty
+vae:QuantitativeVaeProperty rdf:type owl:Class ;
+                            rdfs:subClassOf vae:VaeProperty ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rdf:value ;
+                                              owl:someValuesFrom owl:real
+                                            ] ;
+                            rdfs:comment "A VaeProperty that is represented by some numeric value." ;
+                            rdfs:label "Quantitative Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#Reliability
+vae:Reliability rdf:type owl:Class ;
+                rdfs:subClassOf bhv:Dependability ;
+                rdfs:comment "Reliability: the quality of being dependable or reliable" ,
+                             "Term added automatically" ;
+                rdfs:label "Reliability" .
+
+
+###  https://w3id.org/def/vaeontology#Reliableness
+vae:Reliableness rdf:type owl:Class ;
+                 rdfs:subClassOf bhv:Dependability ;
+                 rdfs:comment "Reliableness: the quality of being dependable or reliable" ,
+                              "Term added automatically" ;
+                 rdfs:label "Reliableness" .
+
+
+###  https://w3id.org/def/vaeontology#Resourcefulness
+vae:Resourcefulness rdf:type owl:Class ;
+                    rdfs:subClassOf bhv:Resources ;
+                    rdfs:comment "Resourcefulness: the ability to deal resourcefully with unusual problems" ,
+                                 "Term added automatically" ;
+                    rdfs:label "Resourcefulness" .
+
+
+###  https://w3id.org/def/vaeontology#SemanticsFunction
+vae:SemanticsFunction rdf:type owl:Class ;
+                      rdfs:subClassOf vae:QuantitativeVaeProperty ,
+                                      vae:ValueProperty ;
+                      rdfs:comment "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" ;
+                      rdfs:label "Semantics Function" ;
+                      bhv:bibRef """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487""" .
+
+
+###  https://w3id.org/def/vaeontology#Sequence
+vae:Sequence rdf:type owl:Class ;
+             rdfs:subClassOf vae:Outcome ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty vae:startsWithInputOutcome ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass vae:MultiInputOutcome
+                             ] ;
+             rdfs:comment "A Sequence of Outcomes. In general, allows representing sequences of input dul:Events and their related Outcomes (e.g. series of states -> actions, newstates -> actions, etc). It follows the Sequence ODP." ;
+             rdfs:label "Sequence" ;
+             rdfs:seeAlso "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
+
+
+###  https://w3id.org/def/vaeontology#SoundArgument
+vae:SoundArgument rdf:type owl:Class ;
+                  rdfs:subClassOf odrl:Operator ;
+                  rdfs:comment "Any operator used in a Constraint for a Criterion, between premises and claims contrasting if the argument is sound." ;
+                  rdfs:label "Sound Argument" .
+
+
+###  https://w3id.org/def/vaeontology#State
+vae:State rdf:type owl:Class ;
+          rdfs:subClassOf vae:Outcome ;
+          rdfs:comment "A representation of the State of an Agent." ;
+          rdfs:label "State" .
+
+
+###  https://w3id.org/def/vaeontology#Strategy
+vae:Strategy rdf:type owl:Class ;
+             rdfs:subClassOf vae:Outcome ;
+             rdfs:comment "A mapping between States and Actions that an ActingAgent follows and regulate its behaviour in the world." ;
+             rdfs:label "Strategy" .
+
+
+###  https://w3id.org/def/vaeontology#System
+vae:System rdf:type owl:Class ;
+           rdfs:subClassOf vae:Agent ,
+                           [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://schema.org/Organization>
+                                           <http://www.w3.org/2006/vcard/ns#Organization>
+                                           <http://xmlns.com/foaf/0.1/Organization>
+                                         )
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty vae:hasTrace ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass vae:Sequence
+                           ] ;
+           owl:disjointWith vae:User ;
+           rdfs:comment "A system is the organization of a set of Agents modelling some complex joint behaviour or for solving a task. A system has a trace, a Sequence of the inputs and the corresponding Outcomes performed (e.g.) by the system or the agents on it." ;
+           rdfs:label "System" .
+
+
+###  https://w3id.org/def/vaeontology#TaxonomyAlignment
+vae:TaxonomyAlignment rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty vae:isAlignmentOfTaxonomy ;
+                                            owl:someValuesFrom vae:ValueTaxonomy
+                                          ] ;
+                      rdfs:subClassOf vae:QuantitativeVaeProperty ,
+                                      vae:ValueProperty ;
+                      rdfs:comment "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\"" ;
+                      rdfs:label "Taxonomy Alignment" ;
+                      rdfs:seeAlso vae:ValueTaxonomy ;
+                      bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/def/vaeontology#TextualVaeProperty
+vae:TextualVaeProperty rdf:type owl:Class ;
+                       rdfs:subClassOf vae:VaeProperty ;
+                       rdfs:comment "A VaeProperty expressed in natural language." ;
+                       rdfs:label "Textual Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#Treasure
+vae:Treasure rdf:type owl:Class ;
+             rdfs:subClassOf bhv:Value ;
+             rdfs:comment "Term added automatically" ,
+                          "Treasure: hold dear" ;
+             rdfs:label "Treasure" .
+
+
+###  https://w3id.org/def/vaeontology#User
+vae:User rdf:type owl:Class ;
+         rdfs:subClassOf vae:Agent ,
+                         [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://www.w3.org/2006/vcard/ns#Individual>
+                                         <http://xmlns.com/foaf/0.1/Person>
+                                       )
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty vae:isUserOfSystem ;
+                           owl:someValuesFrom vae:System
+                         ] ;
+         rdfs:comment "A User is a human agent that can take part in a system (or model it, supervise it, interact with it...)" ;
+         rdfs:label "User" .
+
+
+###  https://w3id.org/def/vaeontology#VaeObject
+vae:VaeObject rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty dul:hasSetting ;
+                                owl:someValuesFrom vae:Context
+                              ] ;
+              owl:disjointWith vae:VaeProperty ;
+              owl:disjointUnionOf ( vae:Agent
+                                    vae:AgentStatement
+                                    vae:Criterion
+                                    vae:Norm
+                                    vae:Outcome
+                                    vae:ValueConcept
+                                  ) ;
+              rdfs:comment "Any kind of object from the VAE domain that is contextualized." ;
+              rdfs:label "Vae Object" ;
+              rdfs:seeAlso vae:Context .
+
+
+###  https://w3id.org/def/vaeontology#VaeProperty
+vae:VaeProperty rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty vae:measuredOnOutcome ;
+                                                                             owl:someValuesFrom vae:Outcome
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty vae:propertyExpressedAt ;
+                                                                             owl:someValuesFrom vae:VaePropertyStatement
+                                                                           ]
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty dul:isAbout ;
+                                                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                 owl:unionOf ( vae:Norm
+                                                                                               vae:ValueConcept
+                                                                                             )
+                                                                               ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:measuredOnOutcome ;
+                                  owl:someValuesFrom vae:Outcome
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty vae:propertyExpressedAt ;
+                                  owl:someValuesFrom vae:AgentStatement
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty dul:isAbout ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( vae:Norm
+                                                                    vae:ValueConcept
+                                                                  )
+                                                    ]
+                                ] ;
+                rdfs:comment "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value" ;
+                rdfs:label "Vae Property" .
+
+
+###  https://w3id.org/def/vaeontology#VaePropertyStatement
+vae:VaePropertyStatement rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( vae:AgentStatement
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty vae:expressesProperty ;
+                                                                      owl:someValuesFrom vae:VaeProperty
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf vae:AgentStatement ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty vae:expressesProperty ;
+                                           owl:someValuesFrom vae:VaeProperty
+                                         ] ;
+                         rdfs:comment "An AgentStatement where the agent expresses some VaeProperty of an Outcome." ;
+                         rdfs:label "Vae Property Statement" .
+
+
+###  https://w3id.org/def/vaeontology#VaeStatement
+vae:VaeStatement rdf:type owl:Class ;
+                 rdfs:subClassOf odrl:Action ,
+                                 odrl:Asset ,
+                                 vae:AgentStatement ,
+                                 vae:VaePropertyStatement ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty vae:onEntity ;
+                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass [ rdf:type owl:Class ;
+                                                 owl:unionOf ( vae:Agent
+                                                               vae:Norm
+                                                               vae:Outcome
+                                                             )
+                                               ]
+                                 ] ;
+                 rdfs:comment "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." ;
+                 rdfs:label "Vae Statement" .
+
+
+###  https://w3id.org/def/vaeontology#Value
+vae:Value rdf:type owl:Class ;
+          owl:equivalentClass bhv:Value ;
+          rdfs:subClassOf vae:ValueConcept ;
+          rdfs:comment "\"Values are very general, abstract guiding principles that individuals and groups utilise to generate judgements on a variety of constructs, such as actions, strategies, conventions and policies\"" ;
+          rdfs:label "Value" ;
+          bhv:bibRef "Nieves Montes, Nardine Osman, and Carles Sierra, ‘Perspective-dependent value alignment of norms’ VALE workshop, ECAI 2023" .
+
+
+###  https://w3id.org/def/vaeontology#ValueComparisonStatement
+vae:ValueComparisonStatement rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty vae:comparisonHasInferior ;
+                                                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass vae:ValueConcept
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty vae:comparisonHasSuperior ;
+                                                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onClass vae:ValueConcept
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf vae:AgentStatement ;
+                             rdfs:comment "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two instances of ValueConcepts, under some context." ;
+                             rdfs:label "Value Comparison Statement" .
+
+
+###  https://w3id.org/def/vaeontology#ValueConcept
+vae:ValueConcept rdf:type owl:Class ;
+                 rdfs:subClassOf dul:Concept ,
+                                 vc:SocialScenario ,
+                                 vae:VaeObject ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty vae:shapesNorm ;
+                                   owl:someValuesFrom vae:Norm
+                                 ] ;
+                 rdfs:comment "Any abstraction of Value, something that is considered as such even if not present in any specific theory." ;
+                 rdfs:label "Value Concept" ;
+                 rdfs:seeAlso vc:Value .
+
+
+###  https://w3id.org/def/vaeontology#ValueDefinition
+vae:ValueDefinition rdf:type owl:Class ;
+                    rdfs:subClassOf vc:Judgement ,
+                                    fschema:FrameOcurrence ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty dul:defines ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass vae:ValueConcept
+                                    ] ;
+                    rdfs:comment "A context-dependent grounded definition of a value." ;
+                    rdfs:label "Value Definition" .
+
+
+###  https://w3id.org/def/vaeontology#ValueProperty
+vae:ValueProperty rdf:type owl:Class ;
+                  rdfs:subClassOf vae:VaeProperty ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dul:isAbout ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass vae:ValueConcept
+                                  ] ;
+                  rdfs:comment "A VaeProperty specifying something about a ValueConcept." ;
+                  rdfs:label "Value Property" .
+
+
+###  https://w3id.org/def/vaeontology#ValueTaxonomy
+vae:ValueTaxonomy rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( vae:AgentStatement
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty vae:hasConceptNode ;
+                                                               owl:allValuesFrom vae:ConceptNode
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty vae:hasPropertyNode ;
+                                                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onClass vae:PropertyNode
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty vae:hasRootNode ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onClass vae:ConceptNode
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf vae:AgentStatement ;
+                  rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                  rdfs:label "Value Taxonomy" ;
+                  rdfs:seeAlso vae:TaxonomyAlignment ;
+                  bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/framester/schema#FrameOcurrence
+fschema:FrameOcurrence rdf:type owl:Class ;
+                       rdfs:label "Frame Ocurrence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Achievement
+bhv:Achievement rdf:type owl:Class ;
+                rdfs:subClassOf vae:Value ,
+                                bhv:SelfEnhancement ;
+                owl:disjointWith bhv:Face ,
+                                 bhv:Hedonism ;
+                rdfs:label "Achievement" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Action
+bhv:Action rdf:type owl:Class ;
+           rdfs:subClassOf bhv:SelfDirection ;
+           owl:disjointWith bhv:Thought ;
+           bhv:bibRef """\"The freedom to determine one's own actions.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Benevolence
+bhv:Benevolence rdf:type owl:Class ;
+                rdfs:subClassOf vae:Value ,
+                                bhv:SelfTrascendence ;
+                owl:disjointWith bhv:Humility ;
+                rdfs:label "Benevolence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Caring
+bhv:Caring rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Benevolence ;
+           owl:disjointWith bhv:Dependability ;
+           bhv:bibRef """\"Devotion to the wellbeing of group members.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Concern
+bhv:Concern rdf:type owl:Class ;
+            rdfs:subClassOf bhv:Universalism ;
+            owl:disjointWith bhv:Nature ,
+                             bhv:Tolerance ;
+            bhv:bibRef """\"Commitment to equality, justice and protection for all.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Conformity
+bhv:Conformity rdf:type owl:Class ;
+               rdfs:subClassOf bhv:Conservation ;
+               owl:disjointWith bhv:Face ,
+                                bhv:Humility ,
+                                bhv:Security ,
+                                bhv:Tradition ;
+               bhv:bibRef """\"Control of one's own impulses and behaviour, in line with social norms and expectations.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Conservation
+bhv:Conservation rdf:type owl:Class ;
+                 rdfs:subClassOf vae:ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Dependability
+bhv:Dependability rdf:type owl:Class ;
+                  rdfs:subClassOf bhv:Benevolence ;
+                  bhv:bibRef """\"Being a reliable and trustworthy member of the in-group.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Dominance
+bhv:Dominance rdf:type owl:Class ;
+              rdfs:subClassOf bhv:Power ;
+              owl:disjointWith bhv:Resources ;
+              bhv:bibRef """\"Power through exercising control over others.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Face
+bhv:Face rdf:type owl:Class ;
+         rdfs:subClassOf bhv:Conservation ,
+                         bhv:SelfEnhancement ;
+         owl:disjointWith bhv:Hedonism ,
+                          bhv:Humility ,
+                          bhv:Power ,
+                          bhv:Security ,
+                          bhv:Tradition ;
+         bhv:bibRef """\"Security and power via the keeping up of one's own public image and avoidance of humiliation.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Focus
+bhv:Focus rdf:type owl:Class ;
+          rdfs:subClassOf vae:ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree
+bhv:GrowthAndAnxietyFree rdf:type owl:Class ;
+                         rdfs:subClassOf vae:ValueConcept .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Hedonism
+bhv:Hedonism rdf:type owl:Class ;
+             rdfs:subClassOf bhv:OpennessToChange ,
+                             bhv:SelfEnhancement ;
+             owl:disjointWith bhv:Power ,
+                              bhv:SelfDirection ,
+                              bhv:Stimulation ;
+             bhv:bibRef """\"The search for pleasure and sensuous gratification or satisfaction for oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Humility
+bhv:Humility rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                          owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty bhv:attitude ;
+                                                                          owl:someValuesFrom bhv:GrowthAndAnxietyFree
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty bhv:attitude ;
+                                                                          owl:someValuesFrom bhv:SelfProtectionAndAnxietyAvoidance
+                                                                        ]
+                                                                      )
+                                                        ]
+                                                        [ rdf:type owl:Class ;
+                                                          owl:complementOf [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty bhv:focus ;
+                                                                             owl:someValuesFrom bhv:PersonalFocus
+                                                                           ]
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty bhv:focus ;
+                                                          owl:allValuesFrom bhv:SocialFocus
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf bhv:Conservation ,
+                             bhv:SelfTrascendence ;
+             owl:disjointWith bhv:Security ,
+                              bhv:Tradition ,
+                              bhv:Universalism ;
+             bhv:bibRef """\"Acknowledgement of one's insignificance in the grand scheme of things.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Nature
+bhv:Nature rdf:type owl:Class ;
+           rdfs:subClassOf bhv:Universalism ;
+           owl:disjointWith bhv:Tolerance ;
+           bhv:bibRef """\"Preservation of the natural environment.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#OpennessToChange
+bhv:OpennessToChange rdf:type owl:Class ;
+                     rdfs:subClassOf vae:ValueConcept ;
+                     rdfs:label "Openness To Change" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority
+bhv:PanCulturalBaselineForValuesPriority rdf:type owl:Class ;
+                                         rdfs:subClassOf vae:ValueConcept ;
+                                         bhv:bibRef """\"Individuals differ substantially in the importance they attribute to the ten values. At the societal level, however, consensus regarding the hierarchical order of the values is surprisingly high.\"
+
+Basic Human Values: Theory, Measurement, and Applications - S.H. Shwartz (2006)""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#PersonalFocus
+bhv:PersonalFocus rdf:type owl:Class ;
+                  rdfs:subClassOf bhv:Focus ;
+                  rdfs:comment "Focus on personal issues and self." ;
+                  bhv:bibRef "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Power
+bhv:Power rdf:type owl:Class ;
+          rdfs:subClassOf vae:Value ,
+                          bhv:SelfEnhancement ;
+          rdfs:label "Power" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Resources
+bhv:Resources rdf:type owl:Class ;
+              rdfs:subClassOf bhv:Power ;
+              bhv:bibRef """\"Power through control of material and social resources.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Security
+bhv:Security rdf:type owl:Class ;
+             rdfs:subClassOf bhv:Conservation ;
+             bhv:bibRef """\"Personal wellbeing and that of in-persons and in-groups, as well as the stability of society and oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfDirection
+bhv:SelfDirection rdf:type owl:Class ;
+                  rdfs:subClassOf bhv:OpennessToChange ;
+                  owl:disjointWith bhv:Stimulation ;
+                  bhv:bibRef """\"Independence of thought, action and opinion.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement
+bhv:SelfEnhancement rdf:type owl:Class ;
+                    rdfs:subClassOf vae:ValueConcept ;
+                    rdfs:label "Self Enhancement" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance
+bhv:SelfProtectionAndAnxietyAvoidance rdf:type owl:Class ;
+                                      rdfs:subClassOf vae:ValueConcept ;
+                                      rdfs:comment "The attitude to which can be ascribed some values motivations: Self Protection and Anxiety Avoidance is a reactive attitude." ;
+                                      bhv:bibRef "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
+bhv:SelfTrascendence rdf:type owl:Class ;
+                     rdfs:subClassOf vae:ValueConcept ;
+                     rdfs:label "Self Trascendence" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SocialFocus
+bhv:SocialFocus rdf:type owl:Class ;
+                rdfs:subClassOf bhv:Focus ;
+                rdfs:comment "Focus on social issues and others, or self as a member of a social community." ;
+                bhv:bibRef "Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Stimulation
+bhv:Stimulation rdf:type owl:Class ;
+                rdfs:subClassOf vae:Value ,
+                                bhv:OpennessToChange ;
+                rdfs:label "Stimulation" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Thought
+bhv:Thought rdf:type owl:Class ;
+            rdfs:subClassOf bhv:SelfDirection ;
+            bhv:bibRef """\"The freedom to cultivate one's own ideas and skills.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Tolerance
+bhv:Tolerance rdf:type owl:Class ;
+              rdfs:subClassOf bhv:Universalism ;
+              bhv:bibRef """\"Acceptance and understanding of those different from oneself.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Tradition
+bhv:Tradition rdf:type owl:Class ;
+              rdfs:subClassOf bhv:Conservation ;
+              bhv:bibRef """\"Respect for, commitment to and acceptation of the ideals and customs imposed by culture or religion.\"
+
+Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797.""" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Universalism
+bhv:Universalism rdf:type owl:Class ;
+                 rdfs:subClassOf vae:Value ,
+                                 bhv:SelfTrascendence ;
+                 rdfs:label "Universalism" .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#Value
+bhv:Value rdf:type owl:Class ;
+          rdfs:label "Value" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vaeontology#achievementTax
+vae:achievementTax rdf:type owl:NamedIndividual ,
+                            bhv:Achievement .
+
+
+###  https://w3id.org/def/vaeontology#actOfPayingMiniumumTaxes
+vae:actOfPayingMiniumumTaxes rdf:type owl:NamedIndividual ,
+                                      vae:Action ;
+                             dul:hasSetting vae:taxProblemContext .
+
+
+###  https://w3id.org/def/vaeontology#actOfPayingTaxes
+vae:actOfPayingTaxes rdf:type owl:NamedIndividual ,
+                              vae:Action .
+
+
+###  https://w3id.org/def/vaeontology#aggregationSum
+vae:aggregationSum rdf:type owl:NamedIndividual ,
+                            vae:AggregationFunction ;
+                   vae:measuredOnOutcome vae:state1 ,
+                                         vae:state2 ;
+                   rdf:value 0.87 .
+
+
+###  https://w3id.org/def/vaeontology#alignClaim
+vae:alignClaim rdf:type owl:NamedIndividual ,
+                        vae:AlignmentStatement ;
+               dul:hasSetting vae:taxProblemContext ;
+               vae:onEntity vae:state2 ;
+               vae:withValue vae:benevolenceTax .
+
+
+###  https://w3id.org/def/vaeontology#alignPremise
+vae:alignPremise rdf:type owl:NamedIndividual ,
+                          vae:AlignmentStatement ;
+                 dul:hasSetting vae:taxProblemContext ;
+                 vae:expressesProperty vae:giniIndex0_9 ,
+                                       vae:giniIndexSatisfiedThreshold0_7 ;
+                 vae:onEntity vae:state2 ;
+                 vae:withValue vae:equalityTax .
+
+
+###  https://w3id.org/def/vaeontology#argumentAlign
+vae:argumentAlign rdf:type owl:NamedIndividual ,
+                           vae:ArgumentStatement ;
+                  dul:hasSetting vae:taxProblemContext ;
+                  vae:hasClaim vae:alignClaim ;
+                  vae:hasPremise vae:alignPremise ;
+                  vae:isBasedOnCriterion vae:criterionAlign .
+
+
+###  https://w3id.org/def/vaeontology#benevolenceDef
+vae:benevolenceDef rdf:type owl:NamedIndividual ,
+                            vae:ValueDefinition ;
+                   dul:hasSetting vae:taxProblemContext ;
+                   dul:satisfies vae:benevolenceTax .
+
+
+###  https://w3id.org/def/vaeontology#benevolenceNode
+vae:benevolenceNode rdf:type owl:NamedIndividual ;
+                    vae:directlyGeneralizes vae:equalityNode ;
+                    vae:hasImportance vae:benvolenceNodeImportance .
+
+
+###  https://w3id.org/def/vaeontology#benevolenceTax
+vae:benevolenceTax rdf:type owl:NamedIndividual ,
+                            bhv:Benevolence .
+
+
+###  https://w3id.org/def/vaeontology#benvolenceNodeImportance
+vae:benvolenceNodeImportance rdf:type owl:NamedIndividual ,
+                                      vae:NodeImportance ;
+                             dul:isAbout vae:benevolenceTax ;
+                             vae:importanceValue "0.8"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#constraintAlign
+vae:constraintAlign rdf:type owl:NamedIndividual ,
+                             odrl:Constraint ;
+                    odrl:operator vae:logicalImplication ,
+                                  vae:sameContext .
+
+
+###  https://w3id.org/def/vaeontology#correctNaming
+vae:correctNaming rdf:type owl:NamedIndividual ,
+                           vae:SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#criterionAlign
+vae:criterionAlign rdf:type owl:NamedIndividual ,
+                            vae:Criterion ;
+                   dul:isAbout vae:benevolenceTax ;
+                   odrl:action vae:alignClaim ;
+                   odrl:constraint vae:constraintAlign ;
+                   odrl:target vae:alignPremise .
+
+
+###  https://w3id.org/def/vaeontology#equalityNode
+vae:equalityNode rdf:type owl:NamedIndividual ,
+                          vae:ConceptNode ;
+                 vae:directlyGeneralizes vae:giniPropertyNode ;
+                 vae:hasImportance vae:equalityNodeImportance .
+
+
+###  https://w3id.org/def/vaeontology#equalityNodeImportance
+vae:equalityNodeImportance rdf:type owl:NamedIndividual ,
+                                    vae:NodeImportance ;
+                           dul:isAbout vae:equalityTax ;
+                           vae:importanceValue "0.8"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#equalityTax
+vae:equalityTax rdf:type owl:NamedIndividual ,
+                         vae:Equality ;
+                dul:hasSetting vae:taxProblemContext .
+
+
+###  https://w3id.org/def/vaeontology#evaderAgent
+vae:evaderAgent rdf:type owl:NamedIndividual ,
+                         vae:ActingAgent ;
+                dul:hasSetting vae:taxProblemContext ;
+                vae:followsStrategy vae:evaderStrategy ;
+                vae:makesAction vae:actOfPayingMiniumumTaxes .
+
+
+###  https://w3id.org/def/vaeontology#evaderStrategy
+vae:evaderStrategy rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/vaeontology#generalizationRelationTaxPayer
+vae:generalizationRelationTaxPayer rdf:type owl:NamedIndividual ,
+                                            vae:Generalization ;
+                                   vae:comparisonHasInferior vae:equalityTax ;
+                                   vae:comparisonHasSuperior vae:benevolenceTax ;
+                                   vae:isProposedByAgent vae:payerAgent .
+
+
+###  https://w3id.org/def/vaeontology#giniIndex0_3
+vae:giniIndex0_3 rdf:type owl:NamedIndividual ,
+                          vae:GiniIndex ;
+                 dul:isAbout vae:equalityTax ;
+                 vae:measuredOnOutcome vae:state1 .
+
+
+###  https://w3id.org/def/vaeontology#giniIndex0_9
+vae:giniIndex0_9 rdf:type owl:NamedIndividual ,
+                          vae:GiniIndex ;
+                 dul:isAbout vae:equalityTax ;
+                 vae:measuredOnOutcome vae:state2 .
+
+
+###  https://w3id.org/def/vaeontology#giniIndexProp
+vae:giniIndexProp rdf:type owl:NamedIndividual ,
+                           vae:PropertyTaxonomy ;
+                  vae:degreeOfSatisfaction "1.0"^^xsd:float .
+
+
+###  https://w3id.org/def/vaeontology#giniIndexSatisfiedThreshold0_7
+vae:giniIndexSatisfiedThreshold0_7 rdf:type owl:NamedIndividual ,
+                                            vae:BooleanVaeProperty ,
+                                            vae:ValueProperty ;
+                                   dul:isAbout vae:equalityTax .
+
+
+###  https://w3id.org/def/vaeontology#giniPropertyNode
+vae:giniPropertyNode rdf:type owl:NamedIndividual ,
+                              vae:PropertyNode ;
+                     vae:hasPropertyTaxonomy vae:giniIndexProp .
+
+
+###  https://w3id.org/def/vaeontology#importanceRelationTaxPayer
+vae:importanceRelationTaxPayer rdf:type owl:NamedIndividual ,
+                                        vae:ImportanceRelation ;
+                               vae:comparisonHasInferior vae:achievementTax ;
+                               vae:comparisonHasSuperior vae:benevolenceTax ;
+                               vae:isProposedByAgent vae:payerAgent .
+
+
+###  https://w3id.org/def/vaeontology#logicalImplication
+vae:logicalImplication rdf:type owl:NamedIndividual ,
+                                vae:SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#multiInputOutcome1
+vae:multiInputOutcome1 rdf:type owl:NamedIndividual ,
+                                vae:MultiInputOutcome ;
+                       vae:hasInput vae:state1 ;
+                       vae:hasOutcome vae:actOfPayingMiniumumTaxes ,
+                                      vae:actOfPayingTaxes ,
+                                      vae:state2 ;
+                       vae:nextInputOutcome vae:multiInputOutcome2 .
+
+
+###  https://w3id.org/def/vaeontology#multiInputOutcome2
+vae:multiInputOutcome2 rdf:type owl:NamedIndividual ,
+                                vae:FinalInputOutcome ;
+                       vae:hasInput vae:state2 ;
+                       vae:hasOutcome vae:actOfPayingTaxes .
+
+
+###  https://w3id.org/def/vaeontology#payMinimumTaxes
+vae:payMinimumTaxes rdf:type owl:NamedIndividual ,
+                             vae:Norm ;
+                    odrl:action vae:actOfPayingMiniumumTaxes ;
+                    odrl:assignee vae:evaderAgent ,
+                                  vae:payerAgent ;
+                    odrl:assigner vae:problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#payTaxes
+vae:payTaxes rdf:type owl:NamedIndividual ,
+                      vae:Norm ;
+             odrl:action vae:actOfPayingTaxes ;
+             odrl:assignee vae:evaderAgent ;
+             odrl:assigner vae:problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#payerAgent
+vae:payerAgent rdf:type owl:NamedIndividual ,
+                        vae:ActingAgent ;
+               dul:hasSetting vae:taxProblemContext ;
+               vae:followsStrategy vae:payerStrategy ;
+               vae:makesAction vae:actOfPayingTaxes ;
+               vae:proposesStatement vae:alignClaim ,
+                                     vae:alignPremise ,
+                                     vae:argumentAlign ,
+                                     vae:importanceRelationTaxPayer .
+
+
+###  https://w3id.org/def/vaeontology#payerStrategy
+vae:payerStrategy rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/vaeontology#payerTaxonomy
+vae:payerTaxonomy rdf:type owl:NamedIndividual ,
+                           vae:ValueTaxonomy ;
+                  vae:hasConceptNode vae:benevolenceNode ,
+                                     vae:equalityNode ;
+                  vae:hasRootNode vae:benevolenceNode ;
+                  vae:hasTaxonomyAlignment vae:taxonomAlignment .
+
+
+###  https://w3id.org/def/vaeontology#positiveBenevolenceAlignment
+vae:positiveBenevolenceAlignment rdf:type owl:NamedIndividual ,
+                                          vae:PromotionDemotion ;
+                                 dul:isAbout vae:benevolenceTax .
+
+
+###  https://w3id.org/def/vaeontology#problemModeller
+vae:problemModeller rdf:type owl:NamedIndividual ,
+                             vae:User ;
+                    vae:isUserOfSystem vae:taxSystem .
+
+
+###  https://w3id.org/def/vaeontology#sameContext
+vae:sameContext rdf:type owl:NamedIndividual ,
+                         vae:SoundArgument .
+
+
+###  https://w3id.org/def/vaeontology#sequenceOfOutcomes
+vae:sequenceOfOutcomes rdf:type owl:NamedIndividual ,
+                                vae:Sequence ;
+                       dul:hasSetting vae:taxProblemContext ;
+                       vae:startsWithInputOutcome vae:multiInputOutcome1 .
+
+
+###  https://w3id.org/def/vaeontology#state1
+vae:state1 rdf:type owl:NamedIndividual ,
+                    vae:State ;
+           vae:satisfiesProperty vae:aggregationSum .
+
+
+###  https://w3id.org/def/vaeontology#state2
+vae:state2 rdf:type owl:NamedIndividual ,
+                    vae:State ;
+           vae:satisfiesProperty vae:aggregationSum .
+
+
+###  https://w3id.org/def/vaeontology#taxProblemContext
+vae:taxProblemContext rdf:type owl:NamedIndividual ,
+                               vae:Context ;
+                      rdfs:comment "This context is of a problem on taxing" .
+
+
+###  https://w3id.org/def/vaeontology#taxSystem
+vae:taxSystem rdf:type owl:NamedIndividual ,
+                       vae:System ;
+              dul:hasSetting vae:taxProblemContext ;
+              vae:hasAgent vae:evaderAgent ,
+                           vae:payerAgent ;
+              vae:hasState vae:state1 ,
+                           vae:state2 ;
+              vae:hasTrace vae:sequenceOfOutcomes ;
+              vae:hasUser vae:problemModeller .
+
+
+###  https://w3id.org/def/vaeontology#taxonomAlignment
+vae:taxonomAlignment rdf:type owl:NamedIndividual ,
+                              vae:TaxonomyAlignment .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:Action
+                vae:ActionOnState
+                vae:MultiInputOutcome
+                vae:Sequence
+                vae:State
+                vae:Strategy
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:Agent
+                vae:AgentStatement
+                vae:Criterion
+                vae:Norm
+                vae:Outcome
+                vae:ValueConcept
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:Agent
+                vae:Context
+                vae:ValueConcept
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:Agent
+                vae:MultiInputOutcome
+                vae:VaeProperty
+                vae:ValueConcept
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:VaePropertyStatement
+                vae:ValueComparisonStatement
+                vae:ValueTaxonomy
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

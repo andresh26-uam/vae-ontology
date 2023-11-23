@@ -3,6 +3,8 @@
 
 The purpose of the [VAE Ontology](https://w3id.org/def/vaeontology) is to represent nomenclature and formalize value reasoning for value-aware systems. The emerging field of *value awareness engineering* enforces different relevant value-related duties that our agents should perform to achieve value-aligned outcomes and, ultimately, respond to a value-aware behaviour. In this work we follow the [NeOn methodology](https://oeg.fi.upm.es/index.php/en/methodologies/59-neon-methodology/index.html) to develop an initial ontology that ambitions to link some of the proposed ideas in this field. The scenario-based method applies the tasks of: ontology specification, scheduling, reuse of applicable ontologies and knowledge organization systems, conceptualization and formalization, implementation, evaluation, upgrade and documentation.
 
+![image](https://github.com/andresh26-uam/vae-ontology/blob/main/diagrams/diagram_vaeontology_ADHOC.png)
+
 Reused ontologies include the pioneer [ValueNet](https://github.com/StenDoipanni/ValueNet), an OWL ontology network representing values from different theories, focusing in detecting value-related situations in the linguistic domain. That network heavily relies on upper level ontology [DOLCE](https://doi.org/10.3233%2Fao-210259), also reused here. Lastly, to represent different policies that our AI agents should abide to in order to certify their awareness for values, we use the [ODRL Information Model 2.2](https://www.w3.org/TR/odrl-model/) ontology.
 
 # References

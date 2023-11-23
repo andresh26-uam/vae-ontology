@@ -19,7 +19,7 @@
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-14</dc:created>
         <dc:creator>Andrés Holgado Sánchez</dc:creator>
         <dc:description xml:lang="en">Ontology for Value Awareness Engineering: representation and reasoning with human values.</dc:description>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
+        <dc:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0.ttl"/>
         <dc:title xml:lang="en">VAE Ontology</dc:title>
         <vann:preferredNamespacePrefix>vae</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/vaeontology#"/>

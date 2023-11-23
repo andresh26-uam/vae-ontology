@@ -1,0 +1,1095 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://dbpedia.org/resource/Value_(ethics)"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "Tradition" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Tradition"
+    },
+    "VaeConditioningEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
+    },
+    "isAgentOfSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology#isAgentOfSystem",
+      "@type" : "@id"
+    },
+    "propertyExpressedAt" : {
+      "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
+      "@type" : "@id"
+    },
+    "Caring" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Caring"
+    },
+    "leftOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/leftOperand",
+      "@type" : "@id"
+    },
+    "Situation" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "Ossification" : {
+      "@id" : "https://w3id.org/def/vaeontology#Ossification"
+    },
+    "Achievement" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Achievement"
+    },
+    "comparisonHasInferior" : {
+      "@id" : "https://w3id.org/def/vaeontology#comparisonHasInferior",
+      "@type" : "@id"
+    },
+    "isPremiseOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPremiseOf",
+      "@type" : "@id"
+    },
+    "QualitativeVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#QualitativeVaeProperty"
+    },
+    "Stimulation" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Stimulation"
+    },
+    "isEntityOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isEntityOf",
+      "@type" : "@id"
+    },
+    "hasConstituent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent",
+      "@type" : "@id"
+    },
+    "isActive" : {
+      "@id" : "https://w3id.org/def/vaeontology#isActive",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "OpennessToChange" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#OpennessToChange"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "Sequence" : {
+      "@id" : "https://w3id.org/def/vaeontology#Sequence"
+    },
+    "AwarenessSituation" : {
+      "@id" : "https://w3id.org/def/vaeontology#AwarenessSituation"
+    },
+    "PropertyNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    },
+    "Humbleness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Humbleness"
+    },
+    "nextInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#nextInputOutcome",
+      "@type" : "@id"
+    },
+    "Reliableness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Reliableness"
+    },
+    "Conformance" : {
+      "@id" : "https://w3id.org/def/vaeontology#Conformance"
+    },
+    "madeByAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#madeByAgent",
+      "@type" : "@id"
+    },
+    "influencesOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#influencesOutcome",
+      "@type" : "@id"
+    },
+    "constrainsOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#constrainsOutcome",
+      "@type" : "@id"
+    },
+    "SelfTrascendence" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "OptimizedProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#OptimizedProperty"
+    },
+    "composesComplexOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#composesComplexOutcome",
+      "@type" : "@id"
+    },
+    "Custom" : {
+      "@id" : "https://w3id.org/def/vaeontology#Custom"
+    },
+    "Asset" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Asset"
+    },
+    "followsStrategy" : {
+      "@id" : "https://w3id.org/def/vaeontology#followsStrategy",
+      "@type" : "@id"
+    },
+    "VaeSituation" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeSituation"
+    },
+    "describes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes",
+      "@type" : "@id"
+    },
+    "Outcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#Outcome"
+    },
+    "SemanticsFunction" : {
+      "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
+    },
+    "comparisonHasSuperior" : {
+      "@id" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
+      "@type" : "@id"
+    },
+    "satisfiesProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#satisfiesProperty",
+      "@type" : "@id"
+    },
+    "isSettingFor" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor",
+      "@type" : "@id"
+    },
+    "commitsTo" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo"
+    },
+    "isInputOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isInputOf",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "onEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#onEntity",
+      "@type" : "@id"
+    },
+    "SocialObject" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+    },
+    "Dominance" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Dominance"
+    },
+    "hasTrace" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasTrace",
+      "@type" : "@id"
+    },
+    "isPostconditionOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPostconditionOf",
+      "@type" : "@id"
+    },
+    "makesAction" : {
+      "@id" : "https://w3id.org/def/vaeontology#makesAction",
+      "@type" : "@id"
+    },
+    "opposingValueMotivation" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation",
+      "@type" : "@id"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "isTimeOfObservationOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeOfObservationOf",
+      "@type" : "@id"
+    },
+    "isInputOutcomeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isInputOutcomeOf",
+      "@type" : "@id"
+    },
+    "ConceptualFrame" : {
+      "@id" : "https://w3id.org/framester/schema/ConceptualFrame"
+    },
+    "Economic_value" : {
+      "@id" : "https://w3id.org/def/vaeontology#Economic_value"
+    },
+    "SelfProtectionAndAnxietyAvoidance" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
+    },
+    "hasPropertyOfInferior" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
+      "@type" : "@id"
+    },
+    "precedes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes",
+      "@type" : "@id"
+    },
+    "Object" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+    },
+    "hasActionOnState" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasActionOnState",
+      "@type" : "@id"
+    },
+    "performedOnStateIn" : {
+      "@id" : "https://w3id.org/def/vaeontology#performedOnStateIn",
+      "@type" : "@id"
+    },
+    "Accomplishment" : {
+      "@id" : "https://w3id.org/def/vaeontology#Accomplishment"
+    },
+    "hasAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasAgent",
+      "@type" : "@id"
+    },
+    "operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/operator",
+      "@type" : "@id"
+    },
+    "Context" : {
+      "@id" : "https://w3id.org/def/vaeontology#Context"
+    },
+    "hasEventDate" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate"
+    },
+    "isImportanceOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isImportanceOf",
+      "@type" : "@id"
+    },
+    "Resourcefulness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Resourcefulness"
+    },
+    "isRootNodeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isRootNodeOf",
+      "@type" : "@id"
+    },
+    "subsumedUnder" : {
+      "@id" : "https://w3id.org/framester/schema/subsumedUnder",
+      "@type" : "@id"
+    },
+    "hasDataValue" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ActingAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#ActingAgent"
+    },
+    "hasUser" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasUser",
+      "@type" : "@id"
+    },
+    "isProposedByAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#isProposedByAgent",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf",
+      "@type" : "@id"
+    },
+    "hasTaxonomyAlignment" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyAlignment",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+      "@type" : "@id"
+    },
+    "focus" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus",
+      "@type" : "@id"
+    },
+    "previousInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#previousInputOutcome",
+      "@type" : "@id"
+    },
+    "ValueTaxonomyStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    },
+    "isConstituentOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf",
+      "@type" : "@id"
+    },
+    "isTraceOfSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology#isTraceOfSystem",
+      "@type" : "@id"
+    },
+    "Reliability" : {
+      "@id" : "https://w3id.org/def/vaeontology#Reliability"
+    },
+    "ValueDefinition" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueDefinition"
+    },
+    "hasImportance" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasImportance",
+      "@type" : "@id"
+    },
+    "User" : {
+      "@id" : "https://w3id.org/def/vaeontology#User"
+    },
+    "shapesNorm" : {
+      "@id" : "https://w3id.org/def/vaeontology#shapesNorm",
+      "@type" : "@id"
+    },
+    "onState" : {
+      "@id" : "https://w3id.org/def/vaeontology#onState",
+      "@type" : "@id"
+    },
+    "QuantitativePromotionDemotion" : {
+      "@id" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"
+    },
+    "hasClaim" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasClaim",
+      "@type" : "@id"
+    },
+    "hasInterpretation" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasInterpretation",
+      "@type" : "@id"
+    },
+    "assigner" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assigner",
+      "@type" : "@id"
+    },
+    "Prise" : {
+      "@id" : "https://w3id.org/def/vaeontology#Prise"
+    },
+    "ConceptNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    },
+    "Event" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+    },
+    "follows" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows",
+      "@type" : "@id"
+    },
+    "isTimeIntervalOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isTimeIntervalOf",
+      "@type" : "@id"
+    },
+    "hasPropertyNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode",
+      "@type" : "@id"
+    },
+    "TaxonomyAlignment" : {
+      "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
+    },
+    "directlyGeneralizesNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizesNode",
+      "@type" : "@id"
+    },
+    "VaeStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
+    },
+    "Humility" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Humility"
+    },
+    "hasIntervalDate" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasIntervalDate"
+    },
+    "isConceptualizedBy" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
+      "@type" : "@id"
+    },
+    "isMemberOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf",
+      "@type" : "@id"
+    },
+    "AggregationFunction" : {
+      "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
+    },
+    "defines" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"
+    },
+    "Person" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"
+    },
+    "Leeway" : {
+      "@id" : "https://w3id.org/def/vaeontology#Leeway"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "Allowance" : {
+      "@id" : "https://w3id.org/def/vaeontology#Allowance"
+    },
+    "isTaxonomyNodeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf",
+      "@type" : "@id"
+    },
+    "hasPostcondition" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPostcondition",
+      "@type" : "@id"
+    },
+    "associatedWith" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+      "@type" : "@id"
+    },
+    "hasTaxonomyNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode",
+      "@type" : "@id"
+    },
+    "isFollowedByAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#isFollowedByAgent",
+      "@type" : "@id"
+    },
+    "Strategy" : {
+      "@id" : "https://w3id.org/def/vaeontology#Strategy"
+    },
+    "Agent" : {
+      "@id" : "https://w3id.org/def/vaeontology#Agent"
+    },
+    "relationWith" : {
+      "@id" : "https://w3id.org/def/vaeontology#relationWith",
+      "@type" : "@id"
+    },
+    "directlyFollows" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyFollows",
+      "@type" : "@id"
+    },
+    "perspectiveOn" : {
+      "@id" : "https://w3id.org/framester/schema/perspectiveOn",
+      "@type" : "@id"
+    },
+    "isPropertyNodeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPropertyNodeOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "isCriterionOfArgument" : {
+      "@id" : "https://w3id.org/def/vaeontology#isCriterionOfArgument",
+      "@type" : "@id"
+    },
+    "TextualVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#TextualVaeProperty"
+    },
+    "Constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Constraint"
+    },
+    "Face" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Face"
+    },
+    "isPropertyOfInferiorOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPropertyOfInferiorOf",
+      "@type" : "@id"
+    },
+    "hasProperPart" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasProperPart",
+      "@type" : "@id"
+    },
+    "isBasedOnCriterion" : {
+      "@id" : "https://w3id.org/def/vaeontology#isBasedOnCriterion",
+      "@type" : "@id"
+    },
+    "ActionOnState" : {
+      "@id" : "https://w3id.org/def/vaeontology#ActionOnState"
+    },
+    "value" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+    },
+    "hasOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasOutcome",
+      "@type" : "@id"
+    },
+    "hasMember" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember",
+      "@type" : "@id"
+    },
+    "hasInput" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasInput",
+      "@type" : "@id"
+    },
+    "isAlignmentOfTaxonomy" : {
+      "@id" : "https://w3id.org/def/vaeontology#isAlignmentOfTaxonomy",
+      "@type" : "@id"
+    },
+    "PersonalFocus" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
+    },
+    "PanCulturalBaselineForValuesPriority" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority"
+    },
+    "isComponentOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf",
+      "@type" : "@id"
+    },
+    "SoundArgument" : {
+      "@id" : "https://w3id.org/def/vaeontology#SoundArgument"
+    },
+    "TimeInterval" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"
+    },
+    "Permissiveness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Permissiveness"
+    },
+    "isSuperordinatedTo" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSuperordinatedTo",
+      "@type" : "@id"
+    },
+    "TaxonomyNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+    },
+    "isAgentInvolvedIn" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn",
+      "@type" : "@id"
+    },
+    "involvesAgent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent",
+      "@type" : "@id"
+    },
+    "ValueConcept" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+    },
+    "Security" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Security"
+    },
+    "MultiInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
+    },
+    "Dependableness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Dependableness"
+    },
+    "Equality" : {
+      "@id" : "https://w3id.org/def/vaeontology#Equality"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "Value" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Value"
+    },
+    "isTaxonomyPropertyOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isTaxonomyPropertyOf",
+      "@type" : "@id"
+    },
+    "directlyParticularizesNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#directlyParticularizesNode",
+      "@type" : "@id"
+    },
+    "AlignmentStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
+    },
+    "VaeStatementEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeStatementEntity"
+    },
+    "rightOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/rightOperand",
+      "@type" : "@id"
+    },
+    "Description" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+    },
+    "isClaimOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isClaimOf",
+      "@type" : "@id"
+    },
+    "isParticipantIn" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn",
+      "@type" : "@id"
+    },
+    "assigneeOf" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assigneeOf",
+      "@type" : "@id"
+    },
+    "Imagination" : {
+      "@id" : "https://w3id.org/def/vaeontology#Imagination"
+    },
+    "GiniIndex" : {
+      "@id" : "https://w3id.org/def/vaeontology#GiniIndex"
+    },
+    "VaeConditionedEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
+    },
+    "action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/action",
+      "@type" : "@id"
+    },
+    "Resources" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Resources"
+    },
+    "hasPolicy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/hasPolicy",
+      "@type" : "@id"
+    },
+    "hasPerspective" : {
+      "@id" : "https://w3id.org/framester/schema/hasPerspective",
+      "@type" : "@id"
+    },
+    "propertyOptimizedAt" : {
+      "@id" : "https://w3id.org/def/vaeontology#propertyOptimizedAt",
+      "@type" : "@id"
+    },
+    "ArgumentStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#ArgumentStatement"
+    },
+    "inferiorInComparison" : {
+      "@id" : "https://w3id.org/def/vaeontology#inferiorInComparison",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isTestedInStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#isTestedInStatement",
+      "@type" : "@id"
+    },
+    "hasTimeInterval" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasTimeInterval",
+      "@type" : "@id"
+    },
+    "Hedonism" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Hedonism"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasRootNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasRootNode",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "VaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
+    },
+    "describesVaeStatementEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#describesVaeStatementEntity",
+      "@type" : "@id"
+    },
+    "Focus" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Focus"
+    },
+    "function" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/function",
+      "@type" : "@id"
+    },
+    "SelfDirection" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfDirection"
+    },
+    "expressesProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#expressesProperty",
+      "@type" : "@id"
+    },
+    "Concern" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Concern"
+    },
+    "VaePropertyStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
+    },
+    "GrowthAndAnxietyFree" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
+    },
+    "isPresentInStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPresentInStatement",
+      "@type" : "@id"
+    },
+    "TaxonomyProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
+    },
+    "Norm" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm"
+    },
+    "BooleanVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#BooleanVaeProperty"
+    },
+    "isStartOfSequence" : {
+      "@id" : "https://w3id.org/def/vaeontology#isStartOfSequence",
+      "@type" : "@id"
+    },
+    "Rule" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Rule"
+    },
+    "Margin" : {
+      "@id" : "https://w3id.org/def/vaeontology#Margin"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isStateOfAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#isStateOfAgent",
+      "@type" : "@id"
+    },
+    "Theory" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"
+    },
+    "ValueProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+    },
+    "perform" : {
+      "@id" : "https://w3id.org/def/vaeontology#perform",
+      "@type" : "@id"
+    },
+    "Abidance" : {
+      "@id" : "https://w3id.org/def/vaeontology#Abidance"
+    },
+    "assignee" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assignee",
+      "@type" : "@id"
+    },
+    "Compliance" : {
+      "@id" : "https://w3id.org/def/vaeontology#Compliance"
+    },
+    "hasParticipant" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
+      "@type" : "@id"
+    },
+    "Generalization" : {
+      "@id" : "https://w3id.org/def/vaeontology#Generalization"
+    },
+    "Personal" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Personal"
+    },
+    "Nature" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Nature"
+    },
+    "Tolerance" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Tolerance"
+    },
+    "superiorInComparison" : {
+      "@id" : "https://w3id.org/def/vaeontology#superiorInComparison",
+      "@type" : "@id"
+    },
+    "VaeEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeEntity"
+    },
+    "conditionsActionIn" : {
+      "@id" : "https://w3id.org/def/vaeontology#conditionsActionIn",
+      "@type" : "@id"
+    },
+    "Prize" : {
+      "@id" : "https://w3id.org/def/vaeontology#Prize"
+    },
+    "valueMotivation" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation",
+      "@type" : "@id"
+    },
+    "ValueComparisonStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueComparisonStatement"
+    },
+    "Operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Operator"
+    },
+    "Thought" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Thought"
+    },
+    "isPropertPartOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPropertPartOf",
+      "@type" : "@id"
+    },
+    "FinalInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
+    },
+    "AlignmentSituation" : {
+      "@id" : "https://w3id.org/def/vaeontology#AlignmentSituation"
+    },
+    "isPreconditionOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf",
+      "@type" : "@id"
+    },
+    "hasPrecondition" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition",
+      "@type" : "@id"
+    },
+    "hasInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasInputOutcome",
+      "@type" : "@id"
+    },
+    "composedBySequence" : {
+      "@id" : "https://w3id.org/def/vaeontology#composedBySequence",
+      "@type" : "@id"
+    },
+    "target" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/target",
+      "@type" : "@id"
+    },
+    "isObservableAt" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt",
+      "@type" : "@id"
+    },
+    "ImportanceRelation" : {
+      "@id" : "https://w3id.org/def/vaeontology#ImportanceRelation"
+    },
+    "hasRelationWithProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasRelationWithProperty",
+      "@type" : "@id"
+    },
+    "bibRef" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#bibRef"
+    },
+    "measuredOnOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
+      "@type" : "@id"
+    },
+    "particularizesNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#particularizesNode",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "degreeOfSatisfaction" : {
+      "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Entity" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+    },
+    "isRegionFor" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor",
+      "@type" : "@id"
+    },
+    "hasState" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasState",
+      "@type" : "@id"
+    },
+    "Treasure" : {
+      "@id" : "https://w3id.org/def/vaeontology#Treasure"
+    },
+    "Process" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"
+    },
+    "withValue" : {
+      "@id" : "https://w3id.org/def/vaeontology#withValue",
+      "@type" : "@id"
+    },
+    "Conformity" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conformity"
+    },
+    "importanceValue" : {
+      "@id" : "https://w3id.org/def/vaeontology#importanceValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Policy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+    },
+    "satisfiesNorm" : {
+      "@id" : "https://w3id.org/def/vaeontology#satisfiesNorm",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "https://w3id.org/def/vaeontology#State"
+    },
+    "isUserOfSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology#isUserOfSystem",
+      "@type" : "@id"
+    },
+    "Benevolence" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Benevolence"
+    },
+    "hasPropertyTaxonomy" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy",
+      "@type" : "@id"
+    },
+    "QuantitativeVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+    },
+    "hasPremise" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPremise",
+      "@type" : "@id"
+    },
+    "Universalism" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Universalism"
+    },
+    "abidesByValue" : {
+      "@id" : "https://w3id.org/def/vaeontology#abidesByValue",
+      "@type" : "@id"
+    },
+    "Party" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Party"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "reflectsValue" : {
+      "@id" : "https://w3id.org/def/vaeontology#reflectsValue",
+      "@type" : "@id"
+    },
+    "isValuedInStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#isValuedInStatement",
+      "@type" : "@id"
+    },
+    "directlyPrecedes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyPrecedes",
+      "@type" : "@id"
+    },
+    "AgentStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
+    },
+    "subsumes" : {
+      "@id" : "https://w3id.org/framester/schema/subsumes",
+      "@type" : "@id"
+    },
+    "generalizesNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#generalizesNode",
+      "@type" : "@id"
+    },
+    "Dependability" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Dependability"
+    },
+    "assignerOf" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assignerOf",
+      "@type" : "@id"
+    },
+    "isSubordinatedTo" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSubordinatedTo",
+      "@type" : "@id"
+    },
+    "hasSetting" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
+      "@type" : "@id"
+    },
+    "directlyGeneralizes" : {
+      "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizes"
+    },
+    "System" : {
+      "@id" : "https://w3id.org/def/vaeontology#System"
+    },
+    "hasComponent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent",
+      "@type" : "@id"
+    },
+    "proposesStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#proposesStatement",
+      "@type" : "@id"
+    },
+    "Conservation" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conservation"
+    },
+    "Criterion" : {
+      "@id" : "https://w3id.org/def/vaeontology#Criterion"
+    },
+    "isOutcomeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isOutcomeOf",
+      "@type" : "@id"
+    },
+    "hasRegion" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion",
+      "@type" : "@id"
+    },
+    "isActionOnStateOfStrategy" : {
+      "@id" : "https://w3id.org/def/vaeontology#isActionOnStateOfStrategy",
+      "@type" : "@id"
+    },
+    "PromotionDemotion" : {
+      "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion"
+    },
+    "hasConceptNode" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasConceptNode",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Action"
+    },
+    "conceptualizes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#conceptualizes",
+      "@type" : "@id"
+    },
+    "isPropertyOfSuperiorOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf",
+      "@type" : "@id"
+    },
+    "AwarenessStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AwarenessStatement"
+    },
+    "SocialFocus" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
+    },
+    "SelfEnhancement" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement"
+    },
+    "isSatisfiedBy" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy",
+      "@type" : "@id"
+    },
+    "FrameOccurrence" : {
+      "@id" : "https://w3id.org/framester/schema/FrameOccurrence"
+    },
+    "Region" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+    },
+    "executesTask" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask",
+      "@type" : "@id"
+    },
+    "Power" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Power"
+    },
+    "withNorm" : {
+      "@id" : "https://w3id.org/def/vaeontology#withNorm",
+      "@type" : "@id"
+    },
+    "attitude" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude",
+      "@type" : "@id"
+    },
+    "LogicalConstraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/LogicalConstraint"
+    },
+    "isConceptNodeOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isConceptNodeOf",
+      "@type" : "@id"
+    },
+    "isOptimizationOfProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#isOptimizationOfProperty",
+      "@type" : "@id"
+    },
+    "Conformism" : {
+      "@id" : "https://w3id.org/def/vaeontology#Conformism"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Conformation" : {
+      "@id" : "https://w3id.org/def/vaeontology#Conformation"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Force" : {
+      "@id" : "https://w3id.org/def/vaeontology#Force"
+    },
+    "Societal" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Societal"
+    },
+    "NodeImportance" : {
+      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy",
+      "@type" : "@id"
+    },
+    "relation" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/relation",
+      "@type" : "@id"
+    },
+    "startsWithInputOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#startsWithInputOutcome",
+      "@type" : "@id"
+    },
+    "constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/constraint",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"
+    },
+    "Accordance" : {
+      "@id" : "https://w3id.org/def/vaeontology#Accordance"
+    },
+    "interpretationOn" : {
+      "@id" : "https://w3id.org/def/vaeontology#interpretationOn",
+      "@type" : "@id"
+    },
+    "Accord" : {
+      "@id" : "https://w3id.org/def/vaeontology#Accord"
+    },
+    "satisfies" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
+      "@type" : "@id"
+    },
+    "hasPropertyOfSuperior" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyOfSuperior",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,13 +1,13 @@
-@prefix : <https://w3id.org/def/vaeontology_montes&sierra#> .
+@prefix : <https://w3id.org/def/vaeontology_montes_sierra#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/def/vaeontology_montes&sierra#> .
+@base <https://w3id.org/def/vaeontology_montes_sierra#> .
 
-<https://w3id.org/def/vaeontology_montes&sierra> rdf:type owl:Ontology ;
-                                                  owl:versionIRI <https://w3id.org/def/vaeontology_montes&sierra/1.0.0> ;
+<https://w3id.org/def/vaeontology_montes_sierra> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://w3id.org/def/vaeontology_montes_sierra/1.0.0> ;
                                                   owl:imports <https://w3id.org/def/vaeontology/1.0.2> ;
                                                   <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" ;
                                                   <http://purl.org/dc/elements/1.1/description> """Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
@@ -248,7 +248,7 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/def/vaeontology#satisfiesNorm> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#hasOutState
+###  https://w3id.org/def/vaeontology_montes_sierra#hasOutState
 :hasOutState rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
              owl:inverseOf :isOutStateOf ;
@@ -260,7 +260,7 @@ mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (202
 https://doi.org/10.1613/jair.1.13487""" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#isOutStateOf
+###  https://w3id.org/def/vaeontology_montes_sierra#isOutStateOf
 :isOutStateOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> ;
               rdfs:domain <https://w3id.org/def/vaeontology#State> ;
@@ -291,7 +291,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                                                          "has parameter data value"@en .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#belongsToSegment
+###  https://w3id.org/def/vaeontology_montes_sierra#belongsToSegment
 :belongsToSegment rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
                   rdf:type owl:FunctionalProperty ;
@@ -317,7 +317,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                   rdfs:comment "\"At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#hasProbabilityOrFraction
+###  https://w3id.org/def/vaeontology_montes_sierra#hasProbabilityOrFraction
 :hasProbabilityOrFraction rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> ;
                           rdf:type owl:FunctionalProperty ;
@@ -331,7 +331,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                                      ] .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#hasWealth
+###  https://w3id.org/def/vaeontology_montes_sierra#hasWealth
 :hasWealth rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
            rdf:type owl:FunctionalProperty ;
@@ -502,7 +502,7 @@ Ordering on subparameters can be created by using or specializing the object pro
 <https://w3id.org/def/vaeontology#ValueProperty> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#BoundedQuantitativePromotionDemotion
+###  https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion
 :BoundedQuantitativePromotionDemotion rdf:type owl:Class ;
                                       rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> ,
                                                       [ rdf:type owl:Restriction ;
@@ -518,7 +518,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                       ] .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#EvaderAgent
+###  https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent
 :EvaderAgent rdf:type owl:Class ;
              rdfs:subClassOf :TaxingAgent ,
                              [ rdf:type owl:Restriction ;
@@ -528,14 +528,14 @@ Ordering on subparameters can be created by using or specializing the object pro
              rdfs:comment "\"In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#Fairness
+###  https://w3id.org/def/vaeontology_montes_sierra#Fairness
 :Fairness rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> ;
           rdfs:comment "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion.\"" ;
           rdfs:label "Fairness" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#LegalAgent
+###  https://w3id.org/def/vaeontology_montes_sierra#LegalAgent
 :LegalAgent rdf:type owl:Class ;
             rdfs:subClassOf :TaxingAgent ,
                             [ rdf:type owl:Restriction ;
@@ -545,13 +545,13 @@ Ordering on subparameters can be created by using or specializing the object pro
             rdfs:comment "\"In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#MoneyTransaction
+###  https://w3id.org/def/vaeontology_montes_sierra#MoneyTransaction
 :MoneyTransaction rdf:type owl:Class ;
                   rdfs:subClassOf <https://w3id.org/def/vaeontology#Action> ;
                   rdfs:comment "\"In principle, in the unregulated situation agents can exchange money as they see fit at any transition.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#NormativeSystem
+###  https://w3id.org/def/vaeontology_montes_sierra#NormativeSystem
 :NormativeSystem rdf:type owl:Class ;
                  rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> ,
@@ -559,7 +559,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                  rdfs:comment "\"A normative system N is a set of individual norms {ni} with all of their parameters instantiated to some quantity\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#NormativeSystemAlignment
+###  https://w3id.org/def/vaeontology_montes_sierra#NormativeSystemAlignment
 :NormativeSystemAlignment rdf:type owl:Class ;
                           rdfs:subClassOf <https://w3id.org/def/vaeontology#ValueProperty> ,
                                           :BoundedQuantitativePromotionDemotion ,
@@ -604,13 +604,13 @@ where PN is the random variable of the subset of paths restricted under the norm
                           rdfs:label "NormativeSystemAlignment" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#NotPayingTaxesTransaction
+###  https://w3id.org/def/vaeontology_montes_sierra#NotPayingTaxesTransaction
 :NotPayingTaxesTransaction rdf:type owl:Class ;
                            rdfs:subClassOf :MoneyTransaction ;
                            owl:disjointWith :PayingTaxesTransaction .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#OptimalNormativeSystemAlignment
+###  https://w3id.org/def/vaeontology_montes_sierra#OptimalNormativeSystemAlignment
 :OptimalNormativeSystemAlignment rdf:type owl:Class ;
                                  rdfs:subClassOf <https://w3id.org/def/vaeontology#OptimizedProperty> ,
                                                  :NormativeSystemAlignment ,
@@ -621,7 +621,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                  rdfs:label "OptimalNormativeSystemAlignment" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#ParametricNorm
+###  https://w3id.org/def/vaeontology_montes_sierra#ParametricNorm
 :ParametricNorm rdf:type owl:Class ;
                 rdfs:subClassOf <https://w3id.org/def/vaeontology#Norm> ,
                                 [ rdf:type owl:Restriction ;
@@ -635,19 +635,19 @@ where PN is the random variable of the subset of paths restricted under the norm
                                 ] .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#PayingTaxesTransaction
+###  https://w3id.org/def/vaeontology_montes_sierra#PayingTaxesTransaction
 :PayingTaxesTransaction rdf:type owl:Class ;
                         rdfs:subClassOf :MoneyTransaction .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#ProbabilityTaxFairnessSemantics
+###  https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics
 :ProbabilityTaxFairnessSemantics rdf:type owl:Class ;
                                  rdfs:subClassOf <https://w3id.org/def/vaeontology#SemanticsFunction> ;
                                  rdfs:comment "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment" ;
                                  rdfs:label "ProbabilityTaxFairnessSemantics" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#SemanticsFunctionAggregation
+###  https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation
 :SemanticsFunctionAggregation rdf:type owl:Class ;
                               rdfs:subClassOf <https://w3id.org/def/vaeontology#AggregationFunction> ,
                                               :BoundedQuantitativePromotionDemotion ,
@@ -658,7 +658,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                               rdfs:comment "\"Given a set of values V = {v1, ..., vm} and their semantics functions f1,...,fm, we propose that the semantics of the set of values in V should be grounded by an aggregation function FV : [−1, 1]m → [−1, 1]. FV takes in the compliance with respect to every individual value and merges them into a single metric. To shorten notation, we denote FV (f1(s), ..., fm(s)) as FV (s).\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#TaxingAgent
+###  https://w3id.org/def/vaeontology_montes_sierra#TaxingAgent
 :TaxingAgent rdf:type owl:Class ;
              rdfs:subClassOf <https://w3id.org/def/vaeontology#ActingAgent> ,
                              [ rdf:type owl:Restriction ;
@@ -669,7 +669,7 @@ where PN is the random variable of the subset of paths restricted under the norm
              rdfs:comment "\"In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#TaxingAgentState
+###  https://w3id.org/def/vaeontology_montes_sierra#TaxingAgentState
 :TaxingAgentState rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Restriction ;
                                         owl:onProperty <https://w3id.org/def/vaeontology#isStateOfAgent> ;
@@ -679,12 +679,12 @@ where PN is the random variable of the subset of paths restricted under the norm
                   rdfs:comment "At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to. [...] Therefore, an agent at any state is characterised by the tuple (xi, segi) ∈ (R+ × {1, 2, 3, 4, 5}), where xi is agent i’s wealth (which is always non-negative) and segi is the wealth segment or group it is assigned to." .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#TaxingSystem
+###  https://w3id.org/def/vaeontology_montes_sierra#TaxingSystem
 :TaxingSystem rdf:type owl:Class ;
               rdfs:subClassOf <https://w3id.org/def/vaeontology#System> .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#TaxingSystemState
+###  https://w3id.org/def/vaeontology_montes_sierra#TaxingSystemState
 :TaxingSystemState rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Restriction ;
                                          owl:onProperty <https://w3id.org/def/vaeontology#isStateOfAgent> ;
@@ -706,7 +706,7 @@ where PN is the random variable of the subset of paths restricted under the norm
 #    Individuals
 #################################################################
 
-###  https://w3id.org/def/vaeontology_montes&sierra#aggregatedFairnessEqualityOutPath1
+###  https://w3id.org/def/vaeontology_montes_sierra#aggregatedFairnessEqualityOutPath1
 :aggregatedFairnessEqualityOutPath1 rdf:type owl:NamedIndividual ,
                                              :SemanticsFunctionAggregation ;
                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :equalitySemanticsTaxingOutPath1 ,
@@ -715,7 +715,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                     <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality
 :alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality rdf:type owl:NamedIndividual ,
                                                                               <https://w3id.org/def/vaeontology#ArgumentStatement> ;
                                                                      <https://w3id.org/def/vaeontology#hasClaim> :optimalAlignmentStatementOnNormativeSystemForEquality ;
@@ -723,7 +723,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                                      <https://w3id.org/def/vaeontology#isBasedOnCriterion> :criterionNormativeSystemAlignment .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness
 :alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness rdf:type owl:NamedIndividual ,
                                                                               <https://w3id.org/def/vaeontology#ArgumentStatement> ;
                                                                      <https://w3id.org/def/vaeontology#hasClaim> :optimalAlignmentStatementOnNormativeSystemForFairness ;
@@ -731,7 +731,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                                      <https://w3id.org/def/vaeontology#isBasedOnCriterion> :criterionNormativeSystemAlignment .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentPropertyOnNormativeSystemForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality
 :alignmentPropertyOnNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                                         :NormativeSystemAlignment ;
                                                rdf:value 0.95 ;
@@ -741,7 +741,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                <https://w3id.org/def/vaeontology#relationWith> :equalityValueTaxing .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentPropertyOnNormativeSystemForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForFairness
 :alignmentPropertyOnNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                                         :NormativeSystemAlignment ;
                                                rdf:value 0.93 ;
@@ -751,35 +751,35 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                <https://w3id.org/def/vaeontology#relationWith> :fairnessValueTaxing .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentStatementOnNormativeSystemForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForEquality
 :alignmentStatementOnNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                                          <https://w3id.org/def/vaeontology#AlignmentStatement> ;
                                                 <https://w3id.org/def/vaeontology#interpretationOn> :equalityValueTaxing ;
                                                 <https://w3id.org/def/vaeontology#onEntity> :optimizedNormativeSystemForEquality .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#alignmentStatementOnNormativeSystemForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForFairness
 :alignmentStatementOnNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                                          <https://w3id.org/def/vaeontology#AlignmentStatement> ;
                                                 <https://w3id.org/def/vaeontology#interpretationOn> :fairnessValueTaxing ;
                                                 <https://w3id.org/def/vaeontology#onEntity> :optimizedNormativeSystemForFairness .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#catch
+###  https://w3id.org/def/vaeontology_montes_sierra#catch
 :catch rdf:type owl:NamedIndividual ,
                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
        :hasProbabilityOrFraction 0.44 ;
        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the normative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#catchF
+###  https://w3id.org/def/vaeontology_montes_sierra#catchF
 :catchF rdf:type owl:NamedIndividual ,
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
         :hasProbabilityOrFraction 0.45 ;
         rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the normative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collect
+###  https://w3id.org/def/vaeontology_montes_sierra#collect
 :collect rdf:type owl:NamedIndividual ,
                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> :collectSegment1 ,
@@ -790,7 +790,7 @@ where PN is the random variable of the subset of paths restricted under the norm
          rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectF
+###  https://w3id.org/def/vaeontology_montes_sierra#collectF
 :collectF rdf:type owl:NamedIndividual ,
                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> :collectFSegment1 ,
@@ -801,77 +801,77 @@ where PN is the random variable of the subset of paths restricted under the norm
           rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectFSegment1
+###  https://w3id.org/def/vaeontology_montes_sierra#collectFSegment1
 :collectFSegment1 rdf:type owl:NamedIndividual ,
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                   :hasProbabilityOrFraction 0.01 ;
                   rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectFSegment2
+###  https://w3id.org/def/vaeontology_montes_sierra#collectFSegment2
 :collectFSegment2 rdf:type owl:NamedIndividual ,
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                   :hasProbabilityOrFraction 0.30 ;
                   rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectFSegment3
+###  https://w3id.org/def/vaeontology_montes_sierra#collectFSegment3
 :collectFSegment3 rdf:type owl:NamedIndividual ,
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                   :hasProbabilityOrFraction 0.37 ;
                   rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectFSegment4
+###  https://w3id.org/def/vaeontology_montes_sierra#collectFSegment4
 :collectFSegment4 rdf:type owl:NamedIndividual ,
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                   :hasProbabilityOrFraction 0.72 ;
                   rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectFSegment5
+###  https://w3id.org/def/vaeontology_montes_sierra#collectFSegment5
 :collectFSegment5 rdf:type owl:NamedIndividual ,
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                   :hasProbabilityOrFraction 0.66 ;
                   rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectSegment1
+###  https://w3id.org/def/vaeontology_montes_sierra#collectSegment1
 :collectSegment1 rdf:type owl:NamedIndividual ,
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                  :hasProbabilityOrFraction 0.2 ;
                  rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectSegment2
+###  https://w3id.org/def/vaeontology_montes_sierra#collectSegment2
 :collectSegment2 rdf:type owl:NamedIndividual ,
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                  :hasProbabilityOrFraction 0.29 ;
                  rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectSegment3
+###  https://w3id.org/def/vaeontology_montes_sierra#collectSegment3
 :collectSegment3 rdf:type owl:NamedIndividual ,
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                  :hasProbabilityOrFraction 0.26 ;
                  rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectSegment4
+###  https://w3id.org/def/vaeontology_montes_sierra#collectSegment4
 :collectSegment4 rdf:type owl:NamedIndividual ,
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                  :hasProbabilityOrFraction 0.35 ;
                  rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#collectSegment5
+###  https://w3id.org/def/vaeontology_montes_sierra#collectSegment5
 :collectSegment5 rdf:type owl:NamedIndividual ,
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                  :hasProbabilityOrFraction 0.27 ;
                  rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#criterionNormativeSystemAlignment
+###  https://w3id.org/def/vaeontology_montes_sierra#criterionNormativeSystemAlignment
 :criterionNormativeSystemAlignment rdf:type owl:NamedIndividual ,
                                             <https://w3id.org/def/vaeontology#Criterion> ;
                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -880,7 +880,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                                                        :fairnessValueTaxing .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#equalitySemanticsTaxingOutPath1
+###  https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1
 :equalitySemanticsTaxingOutPath1 rdf:type owl:NamedIndividual ,
                                           <https://w3id.org/def/vaeontology#GiniIndex> ;
                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -889,21 +889,21 @@ where PN is the random variable of the subset of paths restricted under the norm
                                  <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#equalityValueTaxing
+###  https://w3id.org/def/vaeontology_montes_sierra#equalityValueTaxing
 :equalityValueTaxing rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#Equality> ;
                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
                      rdfs:label "equalityValueTaxing" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#evaderAgent1
+###  https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1
 :evaderAgent1 rdf:type owl:NamedIndividual ,
                        :EvaderAgent ;
               <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
               <https://w3id.org/def/vaeontology#isAgentOfSystem> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#evaderAgent1State1
+###  https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1State1
 :evaderAgent1State1 rdf:type owl:NamedIndividual ,
                              :TaxingAgentState ;
                     :belongsToSegment 3 ;
@@ -912,7 +912,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <https://w3id.org/def/vaeontology#isStateOfAgent> :evaderAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#evaderAgent1State2
+###  https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1State2
 :evaderAgent1State2 rdf:type owl:NamedIndividual ,
                              :TaxingAgentState ;
                     :belongsToSegment 4 ;
@@ -921,7 +921,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <https://w3id.org/def/vaeontology#isStateOfAgent> :evaderAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#evaderAgent1State3
+###  https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1State3
 :evaderAgent1State3 rdf:type owl:NamedIndividual ,
                              :TaxingAgentState ;
                     :belongsToSegment 2 ;
@@ -930,7 +930,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <https://w3id.org/def/vaeontology#isStateOfAgent> :evaderAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#evaderAgent1State4
+###  https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1State4
 :evaderAgent1State4 rdf:type owl:NamedIndividual ,
                              :TaxingAgentState ;
                     :belongsToSegment 1 ;
@@ -939,7 +939,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <https://w3id.org/def/vaeontology#isStateOfAgent> :evaderAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#fairnessSemanticsTaxingOutPath1
+###  https://w3id.org/def/vaeontology_montes_sierra#fairnessSemanticsTaxingOutPath1
 :fairnessSemanticsTaxingOutPath1 rdf:type owl:NamedIndividual ,
                                           :ProbabilityTaxFairnessSemantics ;
                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -947,26 +947,26 @@ where PN is the random variable of the subset of paths restricted under the norm
                                  <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#fairnessValueTaxing
+###  https://w3id.org/def/vaeontology_montes_sierra#fairnessValueTaxing
 :fairnessValueTaxing rdf:type owl:NamedIndividual ,
                               :Fairness ;
                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
                      rdfs:label "fairnessValueTaxing" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#fine
+###  https://w3id.org/def/vaeontology_montes_sierra#fine
 :fine rdf:type owl:NamedIndividual ,
                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
       :hasProbabilityOrFraction 0.61 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#fineF
+###  https://w3id.org/def/vaeontology_montes_sierra#fineF
 :fineF rdf:type owl:NamedIndividual ,
                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
        :hasProbabilityOrFraction 0.56 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#jointMoneyTransaction
+###  https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction
 :jointMoneyTransaction rdf:type owl:NamedIndividual ,
                                 <https://w3id.org/def/vaeontology#Action> ;
                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> :evaderAgent1 ,
@@ -976,12 +976,12 @@ where PN is the random variable of the subset of paths restricted under the norm
                        <https://w3id.org/def/vaeontology#isInputOf> :path1transition1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#operatorIsOptimizedAt
+###  https://w3id.org/def/vaeontology_montes_sierra#operatorIsOptimizedAt
 :operatorIsOptimizedAt rdf:type owl:NamedIndividual ;
                        rdf:value "premise expressesProperty that vae:isPropertyOptimizedAt B, which vae:propertyExpressedAt claim" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimalAlignmentPropertyOnNormativeSystemForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentPropertyOnNormativeSystemForEquality
 :optimalAlignmentPropertyOnNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                                                :OptimalNormativeSystemAlignment ;
                                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -994,7 +994,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                       <https://w3id.org/def/vaeontology#propertyExpressedAt> :optimalAlignmentStatementOnNormativeSystemForEquality .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimalAlignmentPropertyOnNormativeSystemForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentPropertyOnNormativeSystemForFairness
 :optimalAlignmentPropertyOnNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                                                :OptimalNormativeSystemAlignment ;
                                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1007,7 +1007,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                       <https://w3id.org/def/vaeontology#propertyExpressedAt> :optimalAlignmentStatementOnNormativeSystemForFairness .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimalAlignmentStatementOnNormativeSystemForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForEquality
 :optimalAlignmentStatementOnNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                                                 <https://w3id.org/def/vaeontology#AlignmentStatement> ;
                                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1015,7 +1015,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                        <https://w3id.org/def/vaeontology#onEntity> :optimizedNormativeSystemForEquality .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimalAlignmentStatementOnNormativeSystemForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForFairness
 :optimalAlignmentStatementOnNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                                                 <https://w3id.org/def/vaeontology#AlignmentStatement> ;
                                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1023,7 +1023,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                        <https://w3id.org/def/vaeontology#onEntity> :optimizedNormativeSystemForFairness .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimizedNormativeSystemForEquality
+###  https://w3id.org/def/vaeontology_montes_sierra#optimizedNormativeSystemForEquality
 :optimizedNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                               :NormativeSystem ;
                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :catch ,
@@ -1041,7 +1041,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                      <https://w3id.org/def/vaeontology#reflectsValue> :equalityValueTaxing .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#optimizedNormativeSystemForFairness
+###  https://w3id.org/def/vaeontology_montes_sierra#optimizedNormativeSystemForFairness
 :optimizedNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                               :NormativeSystem ;
                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :catchF ,
@@ -1059,7 +1059,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                      <https://w3id.org/def/vaeontology#reflectsValue> :fairnessValueTaxing .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm1_eq
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm1_eq
 :parametricNorm1_eq rdf:type owl:NamedIndividual ,
                              :ParametricNorm ;
                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :collect ;
@@ -1071,7 +1071,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm1_fair
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm1_fair
 :parametricNorm1_fair rdf:type owl:NamedIndividual ,
                                :ParametricNorm ;
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :collectF ;
@@ -1083,7 +1083,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                       <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm2_eq
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm2_eq
 :parametricNorm2_eq rdf:type owl:NamedIndividual ,
                              :ParametricNorm ;
                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :redistribute ;
@@ -1095,7 +1095,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm2_fair
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm2_fair
 :parametricNorm2_fair rdf:type owl:NamedIndividual ,
                                :ParametricNorm ;
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :redistributeF ;
@@ -1107,7 +1107,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                       <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm3_eq
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm3_eq
 :parametricNorm3_eq rdf:type owl:NamedIndividual ,
                              :ParametricNorm ;
                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :catch ;
@@ -1119,7 +1119,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm3_fair
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm3_fair
 :parametricNorm3_fair rdf:type owl:NamedIndividual ,
                                :ParametricNorm ;
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :catchF ;
@@ -1131,7 +1131,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                       <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm4_eq
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm4_eq
 :parametricNorm4_eq rdf:type owl:NamedIndividual ,
                              :ParametricNorm ;
                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :fine ;
@@ -1143,7 +1143,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#parametricNorm4_fair
+###  https://w3id.org/def/vaeontology_montes_sierra#parametricNorm4_fair
 :parametricNorm4_fair rdf:type owl:NamedIndividual ,
                                :ParametricNorm ;
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter> :fineF ;
@@ -1155,7 +1155,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                       <http://www.w3.org/ns/odrl/2/target> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#path1transition1
+###  https://w3id.org/def/vaeontology_montes_sierra#path1transition1
 :path1transition1 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#Transition> ;
                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1165,7 +1165,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                   <https://w3id.org/def/vaeontology#nextInputOutcome> :path1transition2 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#path1transition2
+###  https://w3id.org/def/vaeontology_montes_sierra#path1transition2
 :path1transition2 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#Transition> ;
                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1175,7 +1175,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                   <https://w3id.org/def/vaeontology#nextInputOutcome> :path1transition3 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#path1transition3
+###  https://w3id.org/def/vaeontology_montes_sierra#path1transition3
 :path1transition3 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#FinalInputOutcome> ,
                            <https://w3id.org/def/vaeontology#Transition> ;
@@ -1185,7 +1185,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                   <https://w3id.org/def/vaeontology#hasOutcome> :taxSystemState4 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#path2transition1
+###  https://w3id.org/def/vaeontology_montes_sierra#path2transition1
 :path2transition1 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#Transition> ;
                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1195,7 +1195,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                   <https://w3id.org/def/vaeontology#nextInputOutcome> :path2transition2 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#path2transition2
+###  https://w3id.org/def/vaeontology_montes_sierra#path2transition2
 :path2transition2 rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#Transition> ;
                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1205,14 +1205,14 @@ where PN is the random variable of the subset of paths restricted under the norm
                   <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemPath2 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#payerAgent1
+###  https://w3id.org/def/vaeontology_montes_sierra#payerAgent1
 :payerAgent1 rdf:type owl:NamedIndividual ,
                       :LegalAgent ;
              <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
              <https://w3id.org/def/vaeontology#isAgentOfSystem> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#payerAgent1State1
+###  https://w3id.org/def/vaeontology_montes_sierra#payerAgent1State1
 :payerAgent1State1 rdf:type owl:NamedIndividual ,
                             :TaxingAgentState ;
                    :belongsToSegment 5 ;
@@ -1221,7 +1221,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                    <https://w3id.org/def/vaeontology#isStateOfAgent> :payerAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#payerAgent1State2
+###  https://w3id.org/def/vaeontology_montes_sierra#payerAgent1State2
 :payerAgent1State2 rdf:type owl:NamedIndividual ,
                             :TaxingAgentState ;
                    :belongsToSegment 3 ;
@@ -1230,7 +1230,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                    <https://w3id.org/def/vaeontology#isStateOfAgent> :payerAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#payerAgent1State3
+###  https://w3id.org/def/vaeontology_montes_sierra#payerAgent1State3
 :payerAgent1State3 rdf:type owl:NamedIndividual ,
                             :TaxingAgentState ;
                    :belongsToSegment 2 ;
@@ -1239,7 +1239,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                    <https://w3id.org/def/vaeontology#isStateOfAgent> :payerAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#payerAgent1State4
+###  https://w3id.org/def/vaeontology_montes_sierra#payerAgent1State4
 :payerAgent1State4 rdf:type owl:NamedIndividual ,
                             :TaxingAgentState ;
                    :belongsToSegment 5 ;
@@ -1248,7 +1248,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                    <https://w3id.org/def/vaeontology#isStateOfAgent> :payerAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#problemModeller
+###  https://w3id.org/def/vaeontology_montes_sierra#problemModeller
 :problemModeller rdf:type owl:NamedIndividual ,
                           <https://w3id.org/def/vaeontology#User> ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1256,7 +1256,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                                                                       :optimalAlignmentStatementOnNormativeSystemForFairness .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistribute
+###  https://w3id.org/def/vaeontology_montes_sierra#redistribute
 :redistribute rdf:type owl:NamedIndividual ,
                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
               <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> :redistributeSegment1 ,
@@ -1267,7 +1267,7 @@ where PN is the random variable of the subset of paths restricted under the norm
               rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeF
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeF
 :redistributeF rdf:type owl:NamedIndividual ,
                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> :redistributeFSegment1 ,
@@ -1278,77 +1278,77 @@ where PN is the random variable of the subset of paths restricted under the norm
                rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeFSegment1
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment1
 :redistributeFSegment1 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                        :hasProbabilityOrFraction 0.02 ;
                        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeFSegment2
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment2
 :redistributeFSegment2 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                        :hasProbabilityOrFraction 0.23 ;
                        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeFSegment3
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment3
 :redistributeFSegment3 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                        :hasProbabilityOrFraction 0.42 ;
                        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeFSegment4
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment4
 :redistributeFSegment4 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                        :hasProbabilityOrFraction 0.24 ;
                        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeFSegment5
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment5
 :redistributeFSegment5 rdf:type owl:NamedIndividual ,
                                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                        :hasProbabilityOrFraction 0.09 ;
                        rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeSegment1
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment1
 :redistributeSegment1 rdf:type owl:NamedIndividual ,
                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                       :hasProbabilityOrFraction 0.2 ;
                       rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeSegment2
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment2
 :redistributeSegment2 rdf:type owl:NamedIndividual ,
                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                       :hasProbabilityOrFraction 0.29 ;
                       rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeSegment3
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment3
 :redistributeSegment3 rdf:type owl:NamedIndividual ,
                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                       :hasProbabilityOrFraction 0.26 ;
                       rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeSegment4
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment4
 :redistributeSegment4 rdf:type owl:NamedIndividual ,
                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                       :hasProbabilityOrFraction 0.35 ;
                       rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributeSegment5
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment5
 :redistributeSegment5 rdf:type owl:NamedIndividual ,
                                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> ;
                       :hasProbabilityOrFraction 0.27 ;
                       rdfs:comment "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\"" .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistribution
+###  https://w3id.org/def/vaeontology_montes_sierra#redistribution
 :redistribution rdf:type owl:NamedIndividual ,
                          <https://w3id.org/def/vaeontology#Action> ;
                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> :evaderAgent1 ,
@@ -1359,7 +1359,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                 <https://w3id.org/def/vaeontology#madeByAgent> :taxingSystem .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#redistributionStep
+###  https://w3id.org/def/vaeontology_montes_sierra#redistributionStep
 :redistributionStep rdf:type owl:NamedIndividual ,
                              <https://w3id.org/def/vaeontology#FinalInputOutcome> ;
                     <https://w3id.org/def/vaeontology#hasInput> :transactionsStep ;
@@ -1367,7 +1367,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                     <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemActionSequence .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#targetPropertyOptimizedAtAction
+###  https://w3id.org/def/vaeontology_montes_sierra#targetPropertyOptimizedAtAction
 :targetPropertyOptimizedAtAction rdf:type owl:NamedIndividual ,
                                           <http://www.w3.org/ns/odrl/2/Constraint> ;
                                  <http://www.w3.org/ns/odrl/2/leftOperand> :alignmentPropertyOnNormativeSystemForEquality ;
@@ -1375,30 +1375,30 @@ where PN is the random variable of the subset of paths restricted under the norm
                                  <http://www.w3.org/ns/odrl/2/rightOperand> :optimalAlignmentPropertyOnNormativeSystemForEquality .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxProblemContext
+###  https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext
 :taxProblemContext rdf:type owl:NamedIndividual ,
                             <https://w3id.org/def/vaeontology#Context> .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemActionSequence
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemActionSequence
 :taxSystemActionSequence rdf:type owl:NamedIndividual ,
                                   <https://w3id.org/def/vaeontology#Sequence> .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemExecution1
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1
 :taxSystemExecution1 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#MultiInputOutcome> ;
                      <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace ;
                      <https://w3id.org/def/vaeontology#nextInputOutcome> :taxSystemExecution2 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemExecution2
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2
 :taxSystemExecution2 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#FinalInputOutcome> ;
                      <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemPath1
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1
 :taxSystemPath1 rdf:type owl:NamedIndividual ,
                          <https://w3id.org/def/vaeontology#Path> ;
                 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
@@ -1407,7 +1407,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                 <https://w3id.org/def/vaeontology#startsWithInputOutcome> :path1transition1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemPath2
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2
 :taxSystemPath2 rdf:type owl:NamedIndividual ,
                          <https://w3id.org/def/vaeontology#Path> ;
                 :hasOutState :taxSystemState2 ;
@@ -1417,7 +1417,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                 <https://w3id.org/def/vaeontology#startsWithInputOutcome> :path2transition1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemState1
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemState1
 :taxSystemState1 rdf:type owl:NamedIndividual ,
                           :TaxingSystemState ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :evaderAgent1State1 ,
@@ -1425,7 +1425,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemState2
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2
 :taxSystemState2 rdf:type owl:NamedIndividual ,
                           :TaxingSystemState ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :evaderAgent1State2 ,
@@ -1433,7 +1433,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemState3
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemState3
 :taxSystemState3 rdf:type owl:NamedIndividual ,
                           :TaxingSystemState ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :evaderAgent1State3 ,
@@ -1441,7 +1441,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemState4
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4
 :taxSystemState4 rdf:type owl:NamedIndividual ,
                           :TaxingSystemState ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :evaderAgent1State4 ,
@@ -1450,20 +1450,20 @@ where PN is the random variable of the subset of paths restricted under the norm
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxSystemTrace
+###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace
 :taxSystemTrace rdf:type owl:NamedIndividual ,
                          <https://w3id.org/def/vaeontology#Sequence> ;
                 <https://w3id.org/def/vaeontology#startsWithInputOutcome> :taxSystemExecution1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#taxingSystem
+###  https://w3id.org/def/vaeontology_montes_sierra#taxingSystem
 :taxingSystem rdf:type owl:NamedIndividual ,
                        :TaxingSystem ;
               <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
               <https://w3id.org/def/vaeontology#hasState> :taxSystemState1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#transactionNotPayingTaxes
+###  https://w3id.org/def/vaeontology_montes_sierra#transactionNotPayingTaxes
 :transactionNotPayingTaxes rdf:type owl:NamedIndividual ,
                                     :NotPayingTaxesTransaction ;
                            <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> :payerAgent1 ;
@@ -1471,7 +1471,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                            <https://w3id.org/def/vaeontology#madeByAgent> :evaderAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#transactionPayingTaxes
+###  https://w3id.org/def/vaeontology_montes_sierra#transactionPayingTaxes
 :transactionPayingTaxes rdf:type owl:NamedIndividual ,
                                  :PayingTaxesTransaction ;
                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> :evaderAgent1 ;
@@ -1480,7 +1480,7 @@ where PN is the random variable of the subset of paths restricted under the norm
                         <https://w3id.org/def/vaeontology#madeByAgent> :payerAgent1 .
 
 
-###  https://w3id.org/def/vaeontology_montes&sierra#transactionsStep
+###  https://w3id.org/def/vaeontology_montes_sierra#transactionsStep
 :transactionsStep rdf:type owl:NamedIndividual ,
                            <https://w3id.org/def/vaeontology#MultiInputOutcome> ;
                   <https://w3id.org/def/vaeontology#hasOutcome> :transactionNotPayingTaxes ,

@@ -1382,15 +1382,29 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology#degreeOfSatisfaction
 <https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#TaxonomyProperty> .
-<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#range> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#comment> "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)." .
 <https://w3id.org/def/vaeontology#degreeOfSatisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "degree of satisfaction" .
 # 
 # https://w3id.org/def/vaeontology#importanceValue
 <https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
 <https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#NodeImportance> .
-<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." .
 <https://w3id.org/def/vaeontology#importanceValue> <http://www.w3.org/2000/01/rdf-schema#label> "importance value" .
 # 
@@ -1448,10 +1462,10 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
-_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Any physical, social, or mental process, event, or state.\n\nMore theoretically, events can be classified in different ways, possibly based on 'aspect' (e.g. stative, continuous, accomplishement, achievement, etc.), on 'agentivity' (e.g. intentional, natural, etc.), or on 'typical participants' (e.g. human, physical, abstract, food, etc.).\nHere no special direction is taken, and the following explains why: events are related to observable situations, and they can have different views at a same time.\nIf a position has to be suggested here anyway, the participant-based classification of events seems the most stable and appropriate for many modelling problems.\n\n(1) Alternative aspectual views\n\nConsider a same event 'rock erosion in the Sinni valley': it can be conceptualized as an accomplishment (what has brought a certain state to occur), as an achievement (the state resulting from a previous accomplishment), as a punctual event (if we collapse the time interval of the erosion into a time point), or as a transition (something that has changed from a state to a different one). \nIn the erosion case, we could therefore have good motivations to shift from one aspect to another: a) causation focus, b) effectual focus, c) historical condensation, d) transition (causality).\n\nThe different views refer to the same event, but are still different: how to live with this seeming paradox? \nA typical solution e.g. in linguistics (cf. Levin's aspectual classes) and in DOLCE Full (cf. WonderWeb D18 axiomatization) is to classify events based on aspectual differences. But this solution would create different identities for a same event, where the difference is only based on the modeller's attitude.\nAn alternative solution is suggested here, and exploits the notion of (observable) Situation; a Situation is a view, consistent with a Description, which can be observed of a set of entities. It can also be seen as a 'relational context' created by an observer on the basis of a 'frame'. Therefore, a Situation allows to create a context where each particular view can have a proper identity, while the Event preserves its own identity. \nFor example, ErosionAsAccomplishment is a Situation where rock erosion is observed as a process leading to a certain achievement: the conditions (roles, parameters) that suggest such view are stated in a Description, which acts as a 'theory of accomplishments'. Similarly, ErosionAsTransition is a Situation where rock erosion is observed as an event that has changed a state to another: the conditions for such interpretation are stated in a different Description, which acts as a 'theory of state transitions'.\nConsider that in no case the actual event is changed or enriched in parts by the aspectual view.\n\n(2) Alternative intentionality views\n\nSimilarly to aspectual views, several intentionality views can be provided for a same Event. For example, one can investigate if an avalanche has been caused by immediate natural forces, or if there is any hint of an intentional effort to activate those natural forces.\nAlso in this case, the Event as such has not different identities, while the causal analysis generates situations with different identities, according to what Description is taken for interpreting the Event. \nOn the other hand, if the possible actions of an Agent causing the starting of an avalanche are taken as parts of the Event, then this makes its identity change, because we are adding a part to it. \nTherefore, if intentionality is a criterion to classify events or not, this depends on if an ontology designer wants to consider causality as a relevant dimension for events' identity.\n\n(3) Alternative participant views\n\nA slightly different case is when we consider the basic participants to an Event. In this case, the identity of the Event is affected by the participating objects, because it depends on them. \nFor example, if snow, mountain slopes, wind, waves, etc. are considered as an avalanche basic participants, or if we also want to add water, human agents, etc., that makes the identity of an avalanche change.\nAnyway, this approach to event classification is based on the designer's choices, and more accurately mirrors lexical or commonsense classifications (see. e.g. WordNet 'supersenses' for verb synsets).\n\nUltimately, this discussion has no end, because realists will keep defending the idea that events in reality are not changed by the way we describe them, while constructivists will keep defending the idea that, whatever 'true reality' is about, it can't be modelled without the theoretical burden of how we observe and describe it. \nBoth positions are in principle valid, but, if taken too radically, they focus on issues that are only partly relevant to the aim of computational ontologies, which assist domain experts in representing a certain portion of reality according to their own assumptions and requirements. \n\nFor this reason, in this ontology version of DOLCE, both events and situations are allowed, together with descriptions (the reason for the inclusion of the D&S framewrok in DOLCE), in order to encode the modelling needs, independently from the position (if any) chosen by the model designer." .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
@@ -1492,10 +1506,10 @@ _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#comment> "A view, consistent with ('satisfying') a Description, on a set of entities. \nIt can also be seen as a 'relational context' created by an observer on the basis of a 'frame' (i.e. a Description). \nFor example, a PlanExecution is a context including some actions executed by agents according to certain parameters and expected tasks to be achieved from a Plan; a DiagnosedSituation is a context of observed entities that is interpreted on the basis of a Diagnosis, etc.\nSituation is also able to represent reified n-ary relations, where isSettingFor is the top-level relation for all binary projections of the n-ary relation. \nIf used in a transformation pattern for n-ary relations, the designer should take care of adding (some or all) OWL2 keys, corresponding to binary projections of the n-ary, to a subclass of Situation. Otherwise the 'identification constraint' (Calvanese et al., IJCAI 2001) might be violated." .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/2000/01/rdf-schema#label> "Situation"@en .
@@ -1587,18 +1601,18 @@ _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#ActingAgent
 <https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Agent> .
-<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
-_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Strategy> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#followsStrategy> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Action> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#makesAction> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#followsStrategy> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Action> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#makesAction> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "An Agent that makes Actions and/or follows some Strategy" .
 <https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/2000/01/rdf-schema#label> "Acting Agent" .
 # 
@@ -1612,22 +1626,22 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#ActionOnState
 <https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
-<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
-_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#State> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onState> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
-_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid74 .
-_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#perform> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#State> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onState> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#unionOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#perform> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#comment> "A policy that defines that, on some given State, an Action is to be made. These are the basic components of Strategies which followed by ActingAgents." .
 <https://w3id.org/def/vaeontology#ActionOnState> <http://www.w3.org/2000/01/rdf-schema#label> "Action On State" .
 # 
@@ -1643,10 +1657,10 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
 <https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeEntity> .
-<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
-_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isProposedByAgent> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isProposedByAgent> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "An AgentStatement is whatever statement proposed by an Agent in some context about the world." .
 <https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Agent Statement" .
 # 
@@ -1659,10 +1673,10 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#AlignmentSituation
 <https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeSituation> .
-<https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#AlignmentStatement> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#AlignmentStatement> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#AwarenessSituation> .
 <https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  \"When norms properly reflect values we say that the norms are value-aligned.” + (previously) “The application of norms always implies situation-awareness first.”" .
 <https://w3id.org/def/vaeontology#AlignmentSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “… when the outcomes adequately abide by values - possibly because they satisfy entirely the (value-aligned) norms - we say that these outcomes are value-aligned.”" .
@@ -1672,22 +1686,22 @@ _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#AlignmentStatement
 <https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeStatement> .
-<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
-_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
-_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid81 .
-_:genid81 <http://www.w3.org/2002/07/owl#unionOf> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#AwarenessStatement> .
 <https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  \"When norms properly reflect values we say that the norms are value-aligned.” + (previously) “The application of norms always implies situation-awareness first.”" .
 <https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “… when the outcomes adequately abide by values - possibly because they satisfy entirely the (value-aligned) norms - we say that these outcomes are value-aligned.”" .
@@ -1698,22 +1712,22 @@ _:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#ArgumentStatement
 <https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
-_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasClaim> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
-_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isProposedByAgent> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPremise> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
-_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Criterion> .
-_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isBasedOnCriterion> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasClaim> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isProposedByAgent> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPremise> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Criterion> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isBasedOnCriterion> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "An ArgumentStatement is a AgentStatment where a claim is made directly characterizing some value or norm related content (VaeStatement), justified by using other statements (premises) and based on some Criterion." .
 <https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”." .
 <https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Argument Statement" .
@@ -1721,36 +1735,36 @@ _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#AwarenessSituation
 <https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeSituation> .
-<https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#AwarenessStatement> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#AwarenessStatement> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] “… a system can be given a formal representation of the norms and/or values that determine its behavior or the behavior it expects from its users. In this case we say that the system is norm and/or value-aware.”" .
 <https://w3id.org/def/vaeontology#AwarenessSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Awareness Statement" .
 # 
 # https://w3id.org/def/vaeontology#AwarenessStatement
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeStatement> .
-<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
-_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid90 .
-_:genid90 <http://www.w3.org/2002/07/owl#unionOf> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
-_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
-_:genid94 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#unionOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
 _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] “… a system can be given a formal representation of the norms and/or values that determine its behavior or the behavior it expects from its users. In this case we say that the system is norm and/or value-aware.”" .
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Awareness Statement" .
 <https://w3id.org/def/vaeontology#AwarenessStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#AlignmentStatement> .
@@ -1783,22 +1797,22 @@ _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
-_:genid95 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/action> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assignee> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
-_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#User> .
-_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assigner> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/action> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assignee> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#User> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assigner> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#comment> "In ArgumentStatements, the fact that specific claims can follow from some premises must be based on some Criterion (this class) proposed by an authority (i.e. the system designer or the researcher) or evolved by the society in some way. \n\nCriteria link premises and claims and provide constraints for the premises to be true, for the claim to follow from the premises, from the context, etc." .
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2000/01/rdf-schema#label> "Criterion" .
 <https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/2004/02/skos/core#note> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”. \n\nCriteria are those conditions that identify value-aligned or missaligned behaviour with values or norms in mind." .
@@ -1844,10 +1858,10 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#MultiInputOutcome
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
-<https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
-_:genid99 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Sequence> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isStartOfSequence> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isStartOfSequence> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a series of input dul:Events and a series of Outcomes that follow those. MultiInputOutcomes are the basic blocks to build Sequences, they follow the Sequence ODP." .
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "Multi Input Outcome" .
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#Sequence> .
@@ -1857,10 +1871,10 @@ _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
-<https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#TaxonomyNode> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#TaxonomyNode> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" .
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#label> "Node Importance" .
 <https://w3id.org/def/vaeontology#NodeImportance> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#ImportanceRelation> .
@@ -1872,22 +1886,22 @@ _:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
-<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
-_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/action> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
-_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assignee> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-_:genid103 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#User> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assigner> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
-_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#System> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/target> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/action> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Agent> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assignee> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#User> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assigner> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#System> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/target> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Norms (...) establish boundaries, either soft or hard, on individual autonomy through a variety of mechanisms such as social pressure and expectations, constraints on actions, and sanctions for violation or rewards for compliance.\"" .
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/2000/01/rdf-schema#comment> "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] \"Explicit representations of norms are often called policies.\"" .
@@ -1896,10 +1910,10 @@ _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/def/vaeontology#OptimizedProperty
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid105 .
-_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeProperty> .
-_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeProperty> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#BooleanVaeProperty> .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)." .
@@ -1909,28 +1923,28 @@ _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
 <https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
-<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Sequence> .
-_:genid106 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#composedBySequence> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid111 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#composedBySequence> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcomes include the effect of the behavior of a system or of a user using a system [Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]." .
 <https://w3id.org/def/vaeontology#Outcome> <http://www.w3.org/2000/01/rdf-schema#label> "Outcome" .
 # 
 # https://w3id.org/def/vaeontology#Path
 <https://w3id.org/def/vaeontology#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid107 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid110 .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
-_:genid109 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Transition> .
-_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInputOutcome> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid112 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Transition> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInputOutcome> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Sequence> .
 # 
 # https://w3id.org/def/vaeontology#PromotionDemotion
@@ -1943,10 +1957,10 @@ _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#PropertyNode
 <https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#TaxonomyNode> .
-<https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
-_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#TaxonomyProperty> .
-_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
+_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#TaxonomyProperty> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#comment> "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" .
 <https://w3id.org/def/vaeontology#PropertyNode> <http://www.w3.org/2000/01/rdf-schema#label> "Property Node" .
 <https://w3id.org/def/vaeontology#PropertyNode> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)" .
@@ -1967,10 +1981,10 @@ _:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#QuantitativeVaeProperty
 <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
-_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#real> .
-_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
+_:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#real> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A VaeProperty that is represented by some numeric value." .
 <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Quantitative Vae Property" .
 # 
@@ -1985,11 +1999,11 @@ _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#Sequence
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
-<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
-_:genid113 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
-_:genid113 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#startsWithInputOutcome> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+_:genid118 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#startsWithInputOutcome> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#comment> "A Sequence of Outcomes. In general, allows representing sequences of input dul:Events and their related Outcomes (e.g. series of states -> actions, newstates -> actions, etc). It follows the Sequence ODP." .
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#label> "Sequence" .
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
@@ -2016,11 +2030,11 @@ _:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> .
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Agent> .
-<https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
-_:genid114 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Sequence> .
-_:genid114 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasTrace> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid119 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasTrace> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#User> .
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#comment> "A system is the organization of a set of Agents modelling some complex joint behaviour or for solving a task. A system has a trace, a Sequence of the inputs and the corresponding Outcomes performed (e.g.) by the system or the agents on it." .
 <https://w3id.org/def/vaeontology#System> <http://www.w3.org/2000/01/rdf-schema#label> "System" .
@@ -2029,10 +2043,10 @@ _:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
-<https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
-_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
-_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#comment> "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\"" .
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy Alignment" .
 <https://w3id.org/def/vaeontology#TaxonomyAlignment> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#ValueTaxonomy> .
@@ -2041,10 +2055,10 @@ _:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#TaxonomyNode
 <https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
-<https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
-_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
-_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#comment> "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" .
 <https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#label> "A node of a ValueTaxonomy." .
 <https://w3id.org/def/vaeontology#TaxonomyNode> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
@@ -2054,10 +2068,10 @@ _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
-<https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
-_:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#PropertyNode> .
-_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#PropertyNode> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" .
 <https://w3id.org/def/vaeontology#TaxonomyProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property Taxonomy" .
 # 
@@ -2069,43 +2083,43 @@ _:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/def/vaeontology#Transition
 <https://w3id.org/def/vaeontology#Transition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#Transition> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid118 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
-_:genid120 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#State> .
-_:genid120 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasOutcome> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid122 .
-_:genid122 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#State> .
-_:genid122 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInput> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
-_:genid124 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Action> .
-_:genid124 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInput> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology#Transition> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid123 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#State> .
+_:genid125 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasOutcome> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#State> .
+_:genid127 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInput> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Action> .
+_:genid129 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasInput> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/def/vaeontology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Outcome> .
 # 
 # https://w3id.org/def/vaeontology#User
 <https://w3id.org/def/vaeontology#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> .
 <https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Agent> .
-<https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-_:genid126 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#System> .
-_:genid126 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isUserOfSystem> .
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#System> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isUserOfSystem> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#comment> "A User is a human agent that can take part in a system (or model it, supervise it, interact with it...)" .
 <https://w3id.org/def/vaeontology#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
 # 
@@ -2120,10 +2134,10 @@ _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#VaeEntity
 <https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
-<https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid127 .
-_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Context> .
-_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Context> .
+_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of object from the VAE domain that is contextualized." .
 <https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Object" .
 <https://w3id.org/def/vaeontology#VaeEntity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#Context> .
@@ -2132,28 +2146,28 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
-<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
-_:genid128 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
-_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnOutcome> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid129 .
-_:genid129 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
-_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
-_:genid130 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
-_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
+_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnOutcome> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
+_:genid134 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
+_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
+_:genid135 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value" .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property" .
 # 
 # https://w3id.org/def/vaeontology#VaePropertyStatement
 <https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
-_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeProperty> .
-_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
+_:genid136 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeProperty> .
+_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "An AgentStatement where the agent expresses some VaeProperty of an Outcome." .
 <https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property Statement" .
 # 
@@ -2162,14 +2176,14 @@ _:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeEntity> .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/framester/schema/FrameOccurrence> .
-<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
-_:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
-_:genid132 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid133 .
-_:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid133 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
+_:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
+_:genid138 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#VaeStatement> .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Statement" .
@@ -2179,18 +2193,18 @@ _:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Action> .
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
-<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
-_:genid134 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
-_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
-_:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
-_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid136 .
-_:genid136 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeSituation> .
-_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#interpretationOn> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
+_:genid140 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
+_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeSituation> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Statement" .
 # 
@@ -2208,14 +2222,14 @@ _:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#ValueComparisonStatement
 <https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
-<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid137 .
-_:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasInferior> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid138 .
-_:genid138 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasSuperior> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
+_:genid142 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasInferior> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasSuperior> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two instances of ValueConcepts, under some context." .
 <https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Value Comparison Statement" .
 # 
@@ -2230,39 +2244,39 @@ _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/def/vaeontology#ValueDefinition
 <https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
-_:genid139 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/framester/schema/perspectiveOn> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/framester/schema/perspectiveOn> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "A context-dependent grounded definition of a value." .
 <https://w3id.org/def/vaeontology#ValueDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Value Definition" .
 # 
 # https://w3id.org/def/vaeontology#ValueProperty
 <https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
-_:genid140 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid145 .
+_:genid145 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A VaeProperty specifying something about a ValueConcept." .
 <https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Value Property" .
 # 
 # https://w3id.org/def/vaeontology#ValueTaxonomyStatement
 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
-<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
-_:genid141 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ConceptNode> .
-_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasConceptNode> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
-_:genid142 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#PropertyNode> .
-_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyNode> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
-_:genid143 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ConceptNode> .
-_:genid143 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasRootNode> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid146 .
+_:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#ConceptNode> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasConceptNode> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid147 .
+_:genid147 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#PropertyNode> .
+_:genid147 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyNode> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid148 .
+_:genid148 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ConceptNode> .
+_:genid148 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasRootNode> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" .
 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Value Taxonomy" .
 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#TaxonomyAlignment> .
@@ -2313,42 +2327,42 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#Conservation
 <https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid144 .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid144 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid149 .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
-_:genid146 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
-_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
-_:genid148 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
-_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid150 .
-_:genid150 <http://www.w3.org/2002/07/owl#unionOf> _:genid153 .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
-_:genid152 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
-_:genid152 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid154 .
-_:genid154 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
-_:genid154 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid155 .
-_:genid155 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
-_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid149 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid151 .
+_:genid151 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
+_:genid153 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid155 .
+_:genid155 <http://www.w3.org/2002/07/owl#unionOf> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid157 .
+_:genid157 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
+_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid159 .
+_:genid159 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid159 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid160 .
+_:genid160 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
+_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/spice/SON/SchwartzValues#Conservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
 # 
 # https://w3id.org/spice/SON/SchwartzValues#Dependability
@@ -2384,40 +2398,40 @@ _:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#Humility
 <https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid156 .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid156 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid162 .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid158 .
-_:genid158 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
-_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid160 .
-_:genid160 <http://www.w3.org/2002/07/owl#complementOf> _:genid161 .
-_:genid161 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
-_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid161 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid163 .
-_:genid163 <http://www.w3.org/2002/07/owl#unionOf> _:genid166 .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid165 .
-_:genid165 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
-_:genid165 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid167 .
-_:genid167 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid167 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid163 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
+_:genid163 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid165 .
+_:genid165 <http://www.w3.org/2002/07/owl#complementOf> _:genid166 .
+_:genid166 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid166 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid168 .
+_:genid168 <http://www.w3.org/2002/07/owl#unionOf> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid170 .
+_:genid170 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid170 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid172 .
+_:genid172 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid172 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
 <https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
 <https://w3id.org/spice/SON/SchwartzValues#Humility> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Universalism> .
@@ -2430,31 +2444,31 @@ _:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#OpennessToChange
 <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid168 .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid168 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid173 .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid170 .
-_:genid170 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
-_:genid170 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid172 .
-_:genid172 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
-_:genid172 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid174 .
-_:genid174 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid174 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid175 .
-_:genid175 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
-_:genid175 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid173 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid175 .
+_:genid175 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> .
+_:genid175 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
 _:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid177 .
+_:genid177 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid177 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid179 .
+_:genid179 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid179 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid180 .
+_:genid180 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+_:genid180 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
 <https://w3id.org/spice/SON/SchwartzValues#OpennessToChange> <http://www.w3.org/2000/01/rdf-schema#label> "Openness To Change" .
 # 
@@ -2465,35 +2479,35 @@ _:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#Personal
 <https://w3id.org/spice/SON/SchwartzValues#Personal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#Personal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid176 .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid176 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid183 .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid179 .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid178 .
-_:genid178 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
-_:genid178 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid180 .
-_:genid180 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
-_:genid180 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid182 .
-_:genid182 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
-_:genid182 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid184 .
-_:genid184 <http://www.w3.org/2002/07/owl#complementOf> _:genid185 .
-_:genid185 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid185 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+<https://w3id.org/spice/SON/SchwartzValues#Personal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid181 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid188 .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid186 .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid183 .
+_:genid183 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+_:genid183 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid185 .
+_:genid185 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid185 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
 _:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid187 .
+_:genid187 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid187 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid189 .
+_:genid189 <http://www.w3.org/2002/07/owl#complementOf> _:genid190 .
+_:genid190 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/spice/SON/SchwartzValues#Personal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Security> .
 <https://w3id.org/spice/SON/SchwartzValues#Personal> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/spice/SON/SchwartzValues#Societal> .
 <https://w3id.org/spice/SON/SchwartzValues#Personal> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Safety in one's own immediate environment.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
@@ -2527,42 +2541,42 @@ _:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement
 <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid186 .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid186 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid191 .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid189 .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid187 .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid188 .
-_:genid188 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
-_:genid188 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid190 .
-_:genid190 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
-_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid192 .
-_:genid192 <http://www.w3.org/2002/07/owl#unionOf> _:genid195 .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid194 .
-_:genid194 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
-_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid196 .
-_:genid196 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid196 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid197 .
-_:genid197 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
-_:genid197 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
-_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid191 .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid191 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid193 .
+_:genid193 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid195 .
+_:genid195 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#PersonalFocus> .
+_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid197 .
+_:genid197 <http://www.w3.org/2002/07/owl#unionOf> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid198 .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid199 .
+_:genid199 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid199 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid201 .
+_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid202 .
+_:genid202 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
+_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
 <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> <http://www.w3.org/2000/01/rdf-schema#label> "Self Enhancement" .
 # 
@@ -2574,31 +2588,31 @@ _:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
 <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid198 .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid198 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid203 .
-_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid201 .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid199 .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid200 .
-_:genid200 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
-_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid202 .
-_:genid202 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
-_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid204 .
-_:genid204 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid205 .
-_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
-_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid203 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid208 .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid206 .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid205 .
+_:genid205 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
+_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
 _:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid207 .
+_:genid207 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
+_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid209 .
+_:genid209 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid210 .
+_:genid210 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement> .
+_:genid210 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation> .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueConcept> .
 <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/2000/01/rdf-schema#label> "Self Trascendence" .
 # 
@@ -2610,35 +2624,35 @@ _:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/spice/SON/SchwartzValues#Societal
 <https://w3id.org/spice/SON/SchwartzValues#Societal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/spice/SON/SchwartzValues#Societal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid206 .
-_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid206 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid213 .
-_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid211 .
-_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid209 .
-_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid207 .
-_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid208 .
-_:genid208 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
-_:genid208 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
-_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid210 .
-_:genid210 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
-_:genid210 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
-_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid212 .
-_:genid212 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
-_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
-_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid214 .
-_:genid214 <http://www.w3.org/2002/07/owl#complementOf> _:genid215 .
-_:genid215 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
-_:genid215 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+<https://w3id.org/spice/SON/SchwartzValues#Societal> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid211 .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid211 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid218 .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid216 .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid214 .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid213 .
+_:genid213 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#Conservation> .
+_:genid213 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#valueMotivation> .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid215 .
+_:genid215 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SocialFocus> .
+_:genid215 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#focus> .
 _:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid217 .
+_:genid217 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance> .
+_:genid217 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid219 .
+_:genid219 <http://www.w3.org/2002/07/owl#complementOf> _:genid220 .
+_:genid220 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree> .
+_:genid220 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/spice/SON/SchwartzValues#attitude> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/spice/SON/SchwartzValues#Societal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#Security> .
 <https://w3id.org/spice/SON/SchwartzValues#Societal> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "\"Security and stability in wider society.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797." .
 # 
@@ -2683,115 +2697,100 @@ _:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #################################################################
 # 
 # 
-_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid216 <http://www.w3.org/2002/07/owl#members> _:genid220 .
-_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid219 .
-_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid218 .
-_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid217 .
-_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/schema/ConceptualFrame> .
-_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeProperty> .
-_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
-_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm> .
-_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
 _:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid221 <http://www.w3.org/2002/07/owl#members> _:genid224 .
+_:genid221 <http://www.w3.org/2002/07/owl#members> _:genid225 .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid224 .
 _:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid223 .
 _:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid222 .
 _:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/framester/schema/ConceptualFrame> .
 _:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Party> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeProperty> .
 _:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Operator> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
 _:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid225 <http://www.w3.org/2002/07/owl#members> _:genid231 .
-_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid230 .
-_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid229 .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid226 <http://www.w3.org/2002/07/owl#members> _:genid229 .
 _:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid228 .
 _:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid227 .
-_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid226 .
-_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
-_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
 _:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Party> .
 _:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Operator> .
 _:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ActionOnState> .
-_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
-_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid232 <http://www.w3.org/2002/07/owl#members> _:genid237 .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid236 .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid230 <http://www.w3.org/2002/07/owl#members> _:genid236 .
 _:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid235 .
 _:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid234 .
 _:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid233 .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid232 .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid231 .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Strategy> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Sequence> .
 _:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeProperty> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
 _:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ActionOnState> .
 _:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Action> .
 _:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid238 <http://www.w3.org/2002/07/owl#members> _:genid241 .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid237 <http://www.w3.org/2002/07/owl#members> _:genid242 .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid241 .
 _:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid240 .
 _:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid239 .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid238 .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeProperty> .
 _:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeSituation> .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Outcome> .
 _:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#AgentStatement> .
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Norm> .
 _:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Agent> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid242 <http://www.w3.org/2002/07/owl#members> _:genid247 .
-_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid246 .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid243 <http://www.w3.org/2002/07/owl#members> _:genid246 .
 _:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid245 .
 _:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid244 .
-_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid243 .
-_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
-_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueDefinition> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
 _:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeSituation> .
 _:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Criterion> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#AgentStatement> .
 _:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ArgumentStatement> .
-_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid248 <http://www.w3.org/2002/07/owl#members> _:genid252 .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid247 <http://www.w3.org/2002/07/owl#members> _:genid252 .
 _:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid251 .
 _:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid250 .
 _:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid249 .
-_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyProperty> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueDefinition> .
 _:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyAlignment> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
 _:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#PromotionDemotion> .
+_:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#Criterion> .
 _:genid251 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#NodeImportance> .
+_:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ArgumentStatement> .
 _:genid252 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid253 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
@@ -2800,52 +2799,52 @@ _:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid256 .
 _:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid255 .
 _:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid254 .
 _:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
+_:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyProperty> .
 _:genid254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
+_:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyAlignment> .
 _:genid255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatement> .
+_:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#PromotionDemotion> .
 _:genid256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyNode> .
+_:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#NodeImportance> .
 _:genid257 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid258 <http://www.w3.org/2002/07/owl#members> _:genid261 .
+_:genid258 <http://www.w3.org/2002/07/owl#members> _:genid262 .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid261 .
 _:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid260 .
 _:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid259 .
 _:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
+_:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
 _:genid259 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Face> .
+_:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#ValueComparisonStatement> .
 _:genid260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Achievement> .
+_:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#VaeStatement> .
 _:genid261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#TaxonomyNode> .
+_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid262 <http://www.w3.org/2002/07/owl#members> _:genid265 .
+_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid263 <http://www.w3.org/2002/07/owl#members> _:genid266 .
+_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid265 .
 _:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid264 .
-_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid263 .
-_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Tolerance> .
-_:genid263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Nature> .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
 _:genid264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Concern> .
+_:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Face> .
 _:genid265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Achievement> .
+_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid266 <http://www.w3.org/2002/07/owl#members> _:genid270 .
+_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid267 <http://www.w3.org/2002/07/owl#members> _:genid270 .
 _:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid269 .
 _:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid268 .
-_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid267 .
-_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Security> .
-_:genid267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Tolerance> .
 _:genid268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Face> .
+_:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Nature> .
 _:genid269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Conformity> .
+_:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Concern> .
 _:genid270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
@@ -2854,7 +2853,7 @@ _:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid274 .
 _:genid274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid273 .
 _:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid272 .
 _:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Tradition> .
+_:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Security> .
 _:genid272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
 _:genid273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
@@ -2864,27 +2863,42 @@ _:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/
 _:genid275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid276 <http://www.w3.org/2002/07/owl#members> _:genid279 .
+_:genid276 <http://www.w3.org/2002/07/owl#members> _:genid280 .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid279 .
 _:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid278 .
 _:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid277 .
 _:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Power> .
+_:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Tradition> .
 _:genid277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
+_:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Humility> .
 _:genid278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Face> .
 _:genid279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Conformity> .
+_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid280 <http://www.w3.org/2002/07/owl#members> _:genid283 .
+_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid281 <http://www.w3.org/2002/07/owl#members> _:genid284 .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid283 .
 _:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid282 .
-_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid281 .
-_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Stimulation> .
-_:genid281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Power> .
 _:genid282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
 _:genid283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Face> .
+_:genid284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid285 <http://www.w3.org/2002/07/owl#members> _:genid288 .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid287 .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid286 .
+_:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Stimulation> .
+_:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#SelfDirection> .
+_:genid287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/spice/SON/SchwartzValues#Hedonism> .
+_:genid288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -704,8 +704,7 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
     "degreeOfSatisfaction" : {
-      "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction",
-      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+      "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
     },
     "Entity" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
@@ -723,7 +722,7 @@
     },
     "importanceValue" : {
       "@id" : "https://w3id.org/def/vaeontology#importanceValue",
-      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "Policy" : {
       "@id" : "http://www.w3.org/ns/odrl/2/Policy"

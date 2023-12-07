@@ -22,22 +22,13 @@
   "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-  } ]
-}, {
-  "@id" : "_:genid101",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/action"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+    "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
   } ]
 }, {
-  "@id" : "_:genid102",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/assignee"
@@ -46,7 +37,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   } ]
 }, {
-  "@id" : "_:genid103",
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/assigner"
@@ -55,7 +46,61 @@
     "@id" : "https://w3id.org/def/vaeontology#User"
   } ]
 }, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#interpretationOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
+  } ]
+}, {
   "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Sequence"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#isStartOfSequence"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/action"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/assignee"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Agent"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/assigner"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#User"
+  } ]
+}, {
+  "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/target"
@@ -64,7 +109,7 @@
     "@id" : "https://w3id.org/def/vaeontology#System"
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid110",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isOptimizationOfProperty"
@@ -73,7 +118,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
   } ]
 }, {
-  "@id" : "_:genid106",
+  "@id" : "_:genid111",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -86,17 +131,17 @@
     "@id" : "https://w3id.org/def/vaeontology#composedBySequence"
   } ]
 }, {
-  "@id" : "_:genid107",
+  "@id" : "_:genid112",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/def/vaeontology#Sequence"
     }, {
-      "@id" : "_:genid109"
+      "@id" : "_:genid114"
     } ]
   } ]
 }, {
-  "@id" : "_:genid109",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Transition"
@@ -105,7 +150,7 @@
     "@id" : "https://w3id.org/def/vaeontology#hasInputOutcome"
   } ]
 }, {
-  "@id" : "_:genid111",
+  "@id" : "_:genid116",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
@@ -114,7 +159,7 @@
     "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid117",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
@@ -123,7 +168,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#real"
   } ]
 }, {
-  "@id" : "_:genid113",
+  "@id" : "_:genid118",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
@@ -136,7 +181,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -149,7 +194,7 @@
     "@id" : "https://w3id.org/def/vaeontology#hasTrace"
   } ]
 }, {
-  "@id" : "_:genid115",
+  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
@@ -158,7 +203,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
   } ]
 }, {
-  "@id" : "_:genid116",
+  "@id" : "_:genid121",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf"
@@ -167,7 +212,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
   } ]
 }, {
-  "@id" : "_:genid117",
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
@@ -176,21 +221,21 @@
     "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
   } ]
 }, {
-  "@id" : "_:genid118",
+  "@id" : "_:genid123",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
     }, {
-      "@id" : "_:genid124"
+      "@id" : "_:genid129"
     }, {
-      "@id" : "_:genid122"
+      "@id" : "_:genid127"
     }, {
-      "@id" : "_:genid120"
+      "@id" : "_:genid125"
     } ]
   } ]
 }, {
-  "@id" : "_:genid120",
+  "@id" : "_:genid125",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#State"
@@ -203,7 +248,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid122",
+  "@id" : "_:genid127",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#State"
@@ -216,7 +261,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid124",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Action"
@@ -229,42 +274,6 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid126",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isUserOfSystem"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#System"
-  } ]
-}, {
-  "@id" : "_:genid127",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Context"
-  } ]
-}, {
-  "@id" : "_:genid128",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
-  } ]
-}, {
-  "@id" : "_:genid129",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
-  } ]
-}, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
@@ -275,7 +284,43 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#isUserOfSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#System"
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Context"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+  } ]
+}, {
+  "@id" : "_:genid135",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
@@ -284,7 +329,7 @@
     "@id" : "https://w3id.org/def/vaeontology#relationWith"
   } ]
 }, {
-  "@id" : "_:genid131",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
@@ -293,7 +338,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
   } ]
 }, {
-  "@id" : "_:genid132",
+  "@id" : "_:genid137",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
@@ -302,7 +347,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
   } ]
 }, {
-  "@id" : "_:genid133",
+  "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
@@ -311,7 +356,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ]
 }, {
-  "@id" : "_:genid134",
+  "@id" : "_:genid139",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#interpretationOn"
@@ -320,7 +365,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid140",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#onEntity"
@@ -329,7 +374,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
   } ]
 }, {
-  "@id" : "_:genid136",
+  "@id" : "_:genid141",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeSituation"
@@ -338,7 +383,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy"
   } ]
 }, {
-  "@id" : "_:genid137",
+  "@id" : "_:genid142",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#comparisonHasInferior"
@@ -347,7 +392,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ]
 }, {
-  "@id" : "_:genid138",
+  "@id" : "_:genid143",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#comparisonHasSuperior"
@@ -356,7 +401,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ]
 }, {
-  "@id" : "_:genid139",
+  "@id" : "_:genid144",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/framester/schema/perspectiveOn"
@@ -365,7 +410,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ]
 }, {
-  "@id" : "_:genid140",
+  "@id" : "_:genid145",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
@@ -374,7 +419,7 @@
     "@id" : "https://w3id.org/def/vaeontology#relationWith"
   } ]
 }, {
-  "@id" : "_:genid141",
+  "@id" : "_:genid146",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#hasConceptNode"
@@ -383,7 +428,7 @@
     "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
   } ]
 }, {
-  "@id" : "_:genid142",
+  "@id" : "_:genid147",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
@@ -392,7 +437,7 @@
     "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
   } ]
 }, {
-  "@id" : "_:genid143",
+  "@id" : "_:genid148",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
@@ -405,19 +450,19 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid144",
+  "@id" : "_:genid149",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid150"
+      "@id" : "_:genid155"
     }, {
-      "@id" : "_:genid148"
+      "@id" : "_:genid153"
     }, {
-      "@id" : "_:genid146"
+      "@id" : "_:genid151"
     } ]
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid151",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conservation"
@@ -426,7 +471,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
   } ]
 }, {
-  "@id" : "_:genid148",
+  "@id" : "_:genid153",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
@@ -435,17 +480,17 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
   } ]
 }, {
-  "@id" : "_:genid150",
+  "@id" : "_:genid155",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid154"
+      "@id" : "_:genid159"
     }, {
-      "@id" : "_:genid152"
+      "@id" : "_:genid157"
     } ]
   } ]
 }, {
-  "@id" : "_:genid152",
+  "@id" : "_:genid157",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
@@ -454,43 +499,13 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
   } ]
 }, {
-  "@id" : "_:genid154",
+  "@id" : "_:genid159",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
-  } ]
-}, {
-  "@id" : "_:genid155",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#OpennessToChange"
-  } ]
-}, {
-  "@id" : "_:genid156",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid163"
-    }, {
-      "@id" : "_:genid160"
-    }, {
-      "@id" : "_:genid158"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid158",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
   "@id" : "_:genid16",
@@ -504,12 +519,42 @@
   } ]
 }, {
   "@id" : "_:genid160",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "_:genid161"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#OpennessToChange"
   } ]
 }, {
   "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid168"
+    }, {
+      "@id" : "_:genid165"
+    }, {
+      "@id" : "_:genid163"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid163",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
+  } ]
+}, {
+  "@id" : "_:genid165",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid166"
+  } ]
+}, {
+  "@id" : "_:genid166",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
@@ -518,40 +563,10 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
   } ]
 }, {
-  "@id" : "_:genid163",
+  "@id" : "_:genid168",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid167"
-    }, {
-      "@id" : "_:genid165"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid165",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
-  } ]
-}, {
-  "@id" : "_:genid167",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
-  } ]
-}, {
-  "@id" : "_:genid168",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid174"
-    }, {
       "@id" : "_:genid172"
     }, {
       "@id" : "_:genid170"
@@ -560,6 +575,36 @@
 }, {
   "@id" : "_:genid170",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
+  } ]
+}, {
+  "@id" : "_:genid172",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
+  } ]
+}, {
+  "@id" : "_:genid173",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid179"
+    }, {
+      "@id" : "_:genid177"
+    }, {
+      "@id" : "_:genid175"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid175",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#OpennessToChange"
   } ],
@@ -567,7 +612,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
   } ]
 }, {
-  "@id" : "_:genid172",
+  "@id" : "_:genid177",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
@@ -576,7 +621,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
-  "@id" : "_:genid174",
+  "@id" : "_:genid179",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
@@ -585,7 +630,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
   } ]
 }, {
-  "@id" : "_:genid175",
+  "@id" : "_:genid180",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation"
@@ -594,21 +639,21 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conservation"
   } ]
 }, {
-  "@id" : "_:genid176",
+  "@id" : "_:genid181",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid184"
+      "@id" : "_:genid189"
     }, {
-      "@id" : "_:genid182"
+      "@id" : "_:genid187"
     }, {
-      "@id" : "_:genid180"
+      "@id" : "_:genid185"
     }, {
-      "@id" : "_:genid178"
+      "@id" : "_:genid183"
     } ]
   } ]
 }, {
-  "@id" : "_:genid178",
+  "@id" : "_:genid183",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conservation"
@@ -617,7 +662,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
   } ]
 }, {
-  "@id" : "_:genid180",
+  "@id" : "_:genid185",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
@@ -626,7 +671,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
-  "@id" : "_:genid182",
+  "@id" : "_:genid187",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
@@ -635,40 +680,10 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
   } ]
 }, {
-  "@id" : "_:genid184",
+  "@id" : "_:genid189",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "_:genid185"
-  } ]
-}, {
-  "@id" : "_:genid185",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
-  } ]
-}, {
-  "@id" : "_:genid186",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid192"
-    }, {
-      "@id" : "_:genid190"
-    }, {
-      "@id" : "_:genid188"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid188",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
+    "@id" : "_:genid190"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -683,6 +698,36 @@
 }, {
   "@id" : "_:genid190",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
+  } ]
+}, {
+  "@id" : "_:genid191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid197"
+    }, {
+      "@id" : "_:genid195"
+    }, {
+      "@id" : "_:genid193"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid193",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
+  } ]
+}, {
+  "@id" : "_:genid195",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus"
   } ],
@@ -690,17 +735,17 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
-  "@id" : "_:genid192",
+  "@id" : "_:genid197",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid196"
+      "@id" : "_:genid201"
     }, {
-      "@id" : "_:genid194"
+      "@id" : "_:genid199"
     } ]
   } ]
 }, {
-  "@id" : "_:genid194",
+  "@id" : "_:genid199",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
@@ -709,7 +754,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
   } ]
 }, {
-  "@id" : "_:genid196",
+  "@id" : "_:genid201",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
@@ -718,7 +763,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
   } ]
 }, {
-  "@id" : "_:genid197",
+  "@id" : "_:genid202",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation"
@@ -727,19 +772,19 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"
   } ]
 }, {
-  "@id" : "_:genid198",
+  "@id" : "_:genid203",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid204"
+      "@id" : "_:genid209"
     }, {
-      "@id" : "_:genid202"
+      "@id" : "_:genid207"
     }, {
-      "@id" : "_:genid200"
+      "@id" : "_:genid205"
     } ]
   } ]
 }, {
-  "@id" : "_:genid200",
+  "@id" : "_:genid205",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"
@@ -748,7 +793,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
   } ]
 }, {
-  "@id" : "_:genid202",
+  "@id" : "_:genid207",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
@@ -757,7 +802,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
-  "@id" : "_:genid204",
+  "@id" : "_:genid209",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
@@ -766,7 +811,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
   } ]
 }, {
-  "@id" : "_:genid205",
+  "@id" : "_:genid210",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation"
@@ -775,21 +820,21 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfEnhancement"
   } ]
 }, {
-  "@id" : "_:genid206",
+  "@id" : "_:genid211",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid214"
+      "@id" : "_:genid219"
     }, {
-      "@id" : "_:genid212"
+      "@id" : "_:genid217"
     }, {
-      "@id" : "_:genid210"
+      "@id" : "_:genid215"
     }, {
-      "@id" : "_:genid208"
+      "@id" : "_:genid213"
     } ]
   } ]
 }, {
-  "@id" : "_:genid208",
+  "@id" : "_:genid213",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conservation"
@@ -798,7 +843,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#valueMotivation"
   } ]
 }, {
-  "@id" : "_:genid210",
+  "@id" : "_:genid215",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus"
@@ -807,7 +852,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#focus"
   } ]
 }, {
-  "@id" : "_:genid212",
+  "@id" : "_:genid217",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance"
@@ -816,13 +861,23 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
   } ]
 }, {
-  "@id" : "_:genid214",
+  "@id" : "_:genid219",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "_:genid215"
+    "@id" : "_:genid220"
   } ]
 }, {
-  "@id" : "_:genid215",
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+    }, {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid220",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#attitude"
@@ -831,7 +886,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#GrowthAndAnxietyFree"
   } ]
 }, {
-  "@id" : "_:genid216",
+  "@id" : "_:genid221",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -845,17 +900,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
-    }, {
-      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid221",
+  "@id" : "_:genid226",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -867,7 +912,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid225",
+  "@id" : "_:genid230",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -885,7 +930,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid232",
+  "@id" : "_:genid237",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -901,7 +946,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid238",
+  "@id" : "_:genid243",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -913,7 +958,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid242",
+  "@id" : "_:genid247",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -926,20 +971,6 @@
       "@id" : "https://w3id.org/def/vaeontology#ValueDefinition"
     }, {
       "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid248",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-    }, {
-      "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion"
-    }, {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
-    }, {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
     } ]
   } ]
 }, {
@@ -957,6 +988,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    }, {
+      "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion"
+    }, {
+      "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
+    }, {
+      "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
       "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
     }, {
       "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
@@ -967,7 +1012,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid258",
+  "@id" : "_:genid263",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -979,7 +1024,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid262",
+  "@id" : "_:genid267",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -988,20 +1033,6 @@
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Nature"
     }, {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Tolerance"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid266",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conformity"
-    }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Face"
-    }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Humility"
-    }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Security"
     } ]
   } ]
 }, {
@@ -1015,7 +1046,7 @@
     }, {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Humility"
     }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Tradition"
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Security"
     } ]
   } ]
 }, {
@@ -1023,11 +1054,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Conformity"
+    }, {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Face"
     }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Hedonism"
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Humility"
     }, {
-      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Power"
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Tradition"
     } ]
   } ]
 }, {
@@ -1041,7 +1074,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid280",
+  "@id" : "_:genid281",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Face"
+    }, {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Hedonism"
+    }, {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#Power"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid285",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1184,30 +1229,22 @@
   } ]
 }, {
   "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
-  } ]
-}, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid71"
+    }, {
+      "@id" : "_:genid69"
+    } ]
   } ]
 }, {
   "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -1220,7 +1257,40 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid71",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+  } ]
+}, {
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#followsStrategy"
@@ -1229,7 +1299,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Strategy"
   } ]
 }, {
-  "@id" : "_:genid71",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Action"
@@ -1238,7 +1308,7 @@
     "@id" : "https://w3id.org/def/vaeontology#makesAction"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#onState"
@@ -1247,16 +1317,16 @@
     "@id" : "https://w3id.org/def/vaeontology#State"
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#perform"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid74"
+    "@id" : "_:genid79"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1266,7 +1336,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isProposedByAgent"
@@ -1275,7 +1345,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
@@ -1284,7 +1354,7 @@
     "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#interpretationOn"
@@ -1293,16 +1363,16 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ]
 }, {
-  "@id" : "_:genid80",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid81"
+    "@id" : "_:genid86"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#onEntity"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1312,7 +1382,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#hasClaim"
@@ -1321,7 +1391,7 @@
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isProposedByAgent"
@@ -1330,7 +1400,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
@@ -1339,7 +1409,7 @@
     "@id" : "https://w3id.org/def/vaeontology#hasPremise"
   } ]
 }, {
-  "@id" : "_:genid87",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Criterion"
@@ -1348,7 +1418,7 @@
     "@id" : "https://w3id.org/def/vaeontology#isBasedOnCriterion"
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"
@@ -1357,16 +1427,16 @@
     "@id" : "https://w3id.org/def/vaeontology#AwarenessStatement"
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#interpretationOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid90"
+    "@id" : "_:genid95"
   } ]
 }, {
-  "@id" : "_:genid90",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1376,67 +1446,22 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#onEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Agent"
-  } ]
-}, {
-  "@id" : "_:genid94",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Agent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#onEntity"
-  } ]
-}, {
-  "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/action"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
-  } ]
-}, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/assignee"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Agent"
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/odrl/2/assigner"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#User"
-  } ]
-}, {
   "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#interpretationOn"
+    "@id" : "https://w3id.org/def/vaeontology#onEntity"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
+    "@id" : "https://w3id.org/def/vaeontology#Agent"
   } ]
 }, {
   "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Sequence"
+    "@id" : "https://w3id.org/def/vaeontology#Agent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isStartOfSequence"
+    "@id" : "https://w3id.org/def/vaeontology#onEntity"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/created",
@@ -1568,7 +1593,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
   }, {
-    "@id" : "_:genid67"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
@@ -1659,7 +1684,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
   }, {
-    "@id" : "_:genid68"
+    "@id" : "_:genid73"
   } ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
@@ -2906,11 +2931,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid74"
   }, {
-    "@id" : "_:genid70"
+    "@id" : "_:genid75"
   }, {
-    "@id" : "_:genid71"
+    "@id" : "_:genid76"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Action",
@@ -2939,9 +2964,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Outcome"
   }, {
-    "@id" : "_:genid72"
+    "@id" : "_:genid77"
   }, {
-    "@id" : "_:genid73"
+    "@id" : "_:genid78"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Agent",
@@ -2973,7 +2998,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#VaeEntity"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#AggregationFunction",
@@ -3001,7 +3026,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeSituation"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid83"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AwarenessSituation"
@@ -3026,9 +3051,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid84"
   }, {
-    "@id" : "_:genid80"
+    "@id" : "_:genid85"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AwarenessStatement"
@@ -3050,13 +3075,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
   }, {
-    "@id" : "_:genid84"
+    "@id" : "_:genid89"
   }, {
-    "@id" : "_:genid85"
+    "@id" : "_:genid90"
   }, {
-    "@id" : "_:genid86"
+    "@id" : "_:genid91"
   }, {
-    "@id" : "_:genid87"
+    "@id" : "_:genid92"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#AwarenessSituation",
@@ -3070,7 +3095,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeSituation"
   }, {
-    "@id" : "_:genid88"
+    "@id" : "_:genid93"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#AwarenessStatement",
@@ -3087,11 +3112,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
   }, {
-    "@id" : "_:genid89"
-  }, {
-    "@id" : "_:genid93"
-  }, {
     "@id" : "_:genid94"
+  }, {
+    "@id" : "_:genid98"
+  }, {
+    "@id" : "_:genid99"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#BooleanVaeProperty",
@@ -3159,13 +3184,13 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
   }, {
-    "@id" : "_:genid95"
+    "@id" : "_:genid100"
   }, {
-    "@id" : "_:genid96"
+    "@id" : "_:genid101"
   }, {
-    "@id" : "_:genid97"
+    "@id" : "_:genid102"
   }, {
-    "@id" : "_:genid98"
+    "@id" : "_:genid103"
   } ],
   "http://www.w3.org/2004/02/skos/core#note" : [ {
     "@value" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”. \n\nCriteria are those conditions that identify value-aligned or missaligned behaviour with values or norms in mind."
@@ -3269,7 +3294,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Outcome"
   }, {
-    "@id" : "_:genid99"
+    "@id" : "_:genid104"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#NodeImportance",
@@ -3290,7 +3315,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
   }, {
-    "@id" : "_:genid100"
+    "@id" : "_:genid105"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Norm",
@@ -3312,13 +3337,13 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#VaeConditioningEntity"
   }, {
-    "@id" : "_:genid101"
+    "@id" : "_:genid106"
   }, {
-    "@id" : "_:genid102"
+    "@id" : "_:genid107"
   }, {
-    "@id" : "_:genid103"
+    "@id" : "_:genid108"
   }, {
-    "@id" : "_:genid104"
+    "@id" : "_:genid109"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
@@ -3341,7 +3366,7 @@
     "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid105"
+    "@id" : "_:genid110"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Outcome",
@@ -3357,7 +3382,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
   }, {
-    "@id" : "_:genid106"
+    "@id" : "_:genid111"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Path",
@@ -3366,7 +3391,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Sequence"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid107"
+    "@id" : "_:genid112"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion",
@@ -3394,7 +3419,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
   }, {
-    "@id" : "_:genid111"
+    "@id" : "_:genid116"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
@@ -3437,7 +3462,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
   }, {
-    "@id" : "_:genid112"
+    "@id" : "_:genid117"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction",
@@ -3471,7 +3496,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Outcome"
   }, {
-    "@id" : "_:genid113"
+    "@id" : "_:genid118"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#SoundArgument",
@@ -3523,7 +3548,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   }, {
-    "@id" : "_:genid114"
+    "@id" : "_:genid119"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology#User"
@@ -3545,7 +3570,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
   }, {
-    "@id" : "_:genid115"
+    "@id" : "_:genid120"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
@@ -3565,7 +3590,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
   }, {
-    "@id" : "_:genid116"
+    "@id" : "_:genid121"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
@@ -3584,7 +3609,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
   }, {
-    "@id" : "_:genid117"
+    "@id" : "_:genid122"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#TextualVaeProperty",
@@ -3605,7 +3630,7 @@
     "@id" : "https://w3id.org/def/vaeontology#Outcome"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid118"
+    "@id" : "_:genid123"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#User",
@@ -3621,7 +3646,7 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#Agent"
   }, {
-    "@id" : "_:genid126"
+    "@id" : "_:genid131"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity",
@@ -3650,7 +3675,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
   }, {
-    "@id" : "_:genid127"
+    "@id" : "_:genid132"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#VaeProperty",
@@ -3666,11 +3691,11 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatementEntity"
   }, {
-    "@id" : "_:genid128"
+    "@id" : "_:genid133"
   }, {
-    "@id" : "_:genid129"
+    "@id" : "_:genid134"
   }, {
-    "@id" : "_:genid130"
+    "@id" : "_:genid135"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement",
@@ -3684,7 +3709,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
   }, {
-    "@id" : "_:genid131"
+    "@id" : "_:genid136"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#VaeSituation",
@@ -3702,9 +3727,9 @@
   }, {
     "@id" : "https://w3id.org/framester/schema/FrameOccurrence"
   }, {
-    "@id" : "_:genid132"
+    "@id" : "_:genid137"
   }, {
-    "@id" : "_:genid133"
+    "@id" : "_:genid138"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
@@ -3725,11 +3750,11 @@
   }, {
     "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
   }, {
-    "@id" : "_:genid134"
+    "@id" : "_:genid139"
   }, {
-    "@id" : "_:genid135"
+    "@id" : "_:genid140"
   }, {
-    "@id" : "_:genid136"
+    "@id" : "_:genid141"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#VaeStatementEntity",
@@ -3764,9 +3789,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
   }, {
-    "@id" : "_:genid137"
+    "@id" : "_:genid142"
   }, {
-    "@id" : "_:genid138"
+    "@id" : "_:genid143"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#ValueConcept",
@@ -3797,7 +3822,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
   }, {
-    "@id" : "_:genid139"
+    "@id" : "_:genid144"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#ValueProperty",
@@ -3811,7 +3836,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
   }, {
-    "@id" : "_:genid140"
+    "@id" : "_:genid145"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement",
@@ -3828,11 +3853,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
   }, {
-    "@id" : "_:genid141"
+    "@id" : "_:genid146"
   }, {
-    "@id" : "_:genid142"
+    "@id" : "_:genid147"
   }, {
-    "@id" : "_:genid143"
+    "@id" : "_:genid148"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
@@ -3985,7 +4010,12 @@
     "@value" : "degree of satisfaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "_:genid67"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#describesVaeStatementEntity",
@@ -4513,7 +4543,10 @@
     "@value" : "importance value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#inferiorInComparison",
@@ -5511,9 +5544,9 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid144"
+    "@id" : "_:genid149"
   }, {
-    "@id" : "_:genid155"
+    "@id" : "_:genid160"
   } ]
 }, {
   "@id" : "https://w3id.org/spice/SON/SchwartzValues#Dependability",
@@ -5582,7 +5615,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Universalism"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid156"
+    "@id" : "_:genid161"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "\"Acknowledgement of one's insignificance in the grand scheme of things.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797."
@@ -5606,9 +5639,9 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid168"
+    "@id" : "_:genid173"
   }, {
-    "@id" : "_:genid175"
+    "@id" : "_:genid180"
   } ]
 }, {
   "@id" : "https://w3id.org/spice/SON/SchwartzValues#PanCulturalBaselineForValuesPriority",
@@ -5629,7 +5662,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Societal"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid176"
+    "@id" : "_:genid181"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "\"Safety in one's own immediate environment.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797."
@@ -5694,9 +5727,9 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid186"
+    "@id" : "_:genid191"
   }, {
-    "@id" : "_:genid197"
+    "@id" : "_:genid202"
   } ]
 }, {
   "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfProtectionAndAnxietyAvoidance",
@@ -5720,9 +5753,9 @@
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid198"
+    "@id" : "_:genid203"
   }, {
-    "@id" : "_:genid205"
+    "@id" : "_:genid210"
   } ]
 }, {
   "@id" : "https://w3id.org/spice/SON/SchwartzValues#SocialFocus",
@@ -5743,7 +5776,7 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#Security"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid206"
+    "@id" : "_:genid211"
   } ],
   "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
     "@value" : "\"Security and stability in wider society.\"\n\nGiménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-order structuring of Shalom Schwartz’s theory of basic human values.\" Heliyon 5.6 (2019): e01797."

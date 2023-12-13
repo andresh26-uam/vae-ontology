@@ -37,132 +37,8 @@ ai (2023) https://arxiv.org/abs/2305.02748""" .
 #    Annotation properties
 #################################################################
 
-###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
-<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
-dul:hasSetting rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
 owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/action
-odrl:action rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/assignee
-odrl:assignee rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/leftOperand
-odrl:leftOperand rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/operator
-odrl:operator rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/rightOperand
-odrl:rightOperand rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/ns/odrl/2/target
-odrl:target rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#directlyParticularizesNode
-vae:directlyParticularizesNode rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#hasAgent
-vae:hasAgent rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#hasState
-vae:hasState rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#hasUser
-vae:hasUser rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#isActive
-vae:isActive rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#isAgentOfSystem
-vae:isAgentOfSystem rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#isUserOfSystem
-vae:isUserOfSystem rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#measuredOnOutcome
-vae:measuredOnOutcome rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#proposesStatement
-vae:proposesStatement rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#relationWith
-vae:relationWith rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior
-:comparisonHasInferior rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior
-:comparisonHasSuperior rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy
-:followsStrategy rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasAgent
-:hasAgent rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode
-:hasConceptNode rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode
-:hasRootNode rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasState
-:hasState rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment
-:hasTaxonomyAlignment rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasTrace
-:hasTrace rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasUser
-:hasUser rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent
-:isProposedByAgent rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome
-:measuredOnOutcome rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome
-:startsWithInputOutcome rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -425,12 +301,12 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceBalanceGiveTake1 rdf:type owl:NamedIndividual ,
                                                   odrl:Asset ,
                                                   :AggregationOfImportance ;
+                                         dul:hasMember :p1Importance1 ,
+                                                       :p2Importance1 ;
                                          odrl:refinement :condomainConstraint ,
                                                          :idempotenceConstraint ,
                                                          :monotonicityOfAggregationConstraint ,
                                                          :symmetryConstraint ;
-                                         dul:hasMember :p1Importance1 ,
-                                                       :p2Importance1 ;
                                          rdf:value 0.8 .
 
 
@@ -438,11 +314,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceBalanceGiveTake2 rdf:type owl:NamedIndividual ,
                                                   odrl:Asset ,
                                                   :AggregationOfImportance ;
+                                         dul:hasMember :p1Importance2 ;
                                          odrl:refinement :condomainConstraint ,
                                                          :idempotenceConstraint ,
                                                          :monotonicityOfAggregationConstraint ,
                                                          :symmetryConstraint ;
-                                         dul:hasMember :p1Importance2 ;
                                          rdf:value 0.8 .
 
 
@@ -458,11 +334,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceEqualDivision2 rdf:type owl:NamedIndividual ,
                                                 odrl:Asset ,
                                                 :AggregationOfImportance ;
+                                       dul:hasMember :p3Importance2 ;
                                        odrl:refinement :condomainConstraint ,
                                                        :idempotenceConstraint ,
                                                        :monotonicityOfAggregationConstraint ,
                                                        :symmetryConstraint ;
-                                       dul:hasMember :p3Importance2 ;
                                        rdf:value 0.8 .
 
 
@@ -470,12 +346,12 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceEqualTreatment1 rdf:type owl:NamedIndividual ,
                                                  odrl:Asset ,
                                                  :AggregationOfImportance ;
+                                        dul:hasMember :equalDivisionImportance1 ,
+                                                      :equalPayImportance1 ;
                                         odrl:refinement :condomainConstraint ,
                                                         :idempotenceConstraint ,
                                                         :monotonicityOfAggregationConstraint ,
                                                         :symmetryConstraint ;
-                                        dul:hasMember :equalDivisionImportance1 ,
-                                                      :equalPayImportance1 ;
                                         rdf:value 0.7 .
 
 
@@ -483,11 +359,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceEqualTreatment2 rdf:type owl:NamedIndividual ,
                                                  odrl:Asset ,
                                                  :AggregationOfImportance ;
+                                        dul:hasMember :equalDivisionImportance2 ;
                                         odrl:refinement :condomainConstraint ,
                                                         :idempotenceConstraint ,
                                                         :monotonicityOfAggregationConstraint ,
                                                         :symmetryConstraint ;
-                                        dul:hasMember :equalDivisionImportance2 ;
                                         rdf:value 0.7 .
 
 
@@ -495,11 +371,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceEqualTreatment3 rdf:type owl:NamedIndividual ,
                                                  odrl:Asset ,
                                                  :AggregationOfImportance ;
+                                        dul:hasMember :equalDivisionImportance3 ;
                                         odrl:refinement :condomainConstraint ,
                                                         :idempotenceConstraint ,
                                                         :monotonicityOfAggregationConstraint ,
                                                         :symmetryConstraint ;
-                                        dul:hasMember :equalDivisionImportance3 ;
                                         rdf:value 0.9 .
 
 
@@ -507,12 +383,12 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceFairness1 rdf:type owl:NamedIndividual ,
                                            odrl:Asset ,
                                            :AggregationOfImportance ;
+                                  dul:hasMember :equalTreatmentImportance1 ,
+                                                :reciprocityImportance1 ;
                                   odrl:refinement :condomainConstraint ,
                                                   :idempotenceConstraint ,
                                                   :monotonicityOfAggregationConstraint ,
                                                   :symmetryConstraint ;
-                                  dul:hasMember :equalTreatmentImportance1 ,
-                                                :reciprocityImportance1 ;
                                   rdf:value 0.75 .
 
 
@@ -520,11 +396,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceReciprocity1 rdf:type owl:NamedIndividual ,
                                               odrl:Asset ,
                                               :AggregationOfImportance ;
+                                     dul:hasMember :reciprocityImportance1 ;
                                      odrl:refinement :condomainConstraint ,
                                                      :idempotenceConstraint ,
                                                      :monotonicityOfAggregationConstraint ,
                                                      :symmetryConstraint ;
-                                     dul:hasMember :reciprocityImportance1 ;
                                      rdf:value 0.8 .
 
 
@@ -532,11 +408,11 @@ The importance function I : N → COD assigns an importance value from the codom
 :aggregationOfImportanceReciprocity2 rdf:type owl:NamedIndividual ,
                                               odrl:Asset ,
                                               :AggregationOfImportance ;
+                                     dul:hasMember :reciprocityImportance2 ;
                                      odrl:refinement :condomainConstraint ,
                                                      :idempotenceConstraint ,
                                                      :monotonicityOfAggregationConstraint ,
                                                      :symmetryConstraint ;
-                                     dul:hasMember :reciprocityImportance2 ;
                                      rdf:value 0.8 .
 
 
@@ -570,15 +446,15 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance
 :balancedGiveTakeNodeImportance rdf:type owl:NamedIndividual ,
                                          vae:NodeImportance ;
-                                vae:importanceValue 1.0 ;
-                                vae:relationWith :balancedGiveTakeExample .
+                                vae:relationWith :balancedGiveTakeExample ;
+                                vae:importanceValue 1.0 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance2
 :balancedGiveTakeNodeImportance2 rdf:type owl:NamedIndividual ,
                                           vae:NodeImportance ;
-                                 vae:importanceValue 0.8 ;
-                                 vae:relationWith :balancedGiveTakeExample .
+                                 vae:relationWith :balancedGiveTakeExample ;
+                                 vae:importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#condomain
@@ -600,8 +476,8 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#contextExample1
 :contextExample1 rdf:type owl:NamedIndividual ,
                           vae:Context ;
-                 rdfs:comment "This context is for taxonomy of Figure 1." ;
-                 vae:isActive "true"^^xsd:boolean .
+                 vae:isActive "true"^^xsd:boolean ;
+                 rdfs:comment "This context is for taxonomy of Figure 1." .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#contextExample2_1
@@ -624,25 +500,25 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance1
 :equalDivisionImportance1 rdf:type owl:NamedIndividual ,
                                    vae:NodeImportance ;
-                          vae:importanceValue 0.7 ;
                           dul:hasSetting :contextExample1 ;
-                          vae:relationWith :equalDivisionExample .
+                          vae:relationWith :equalDivisionExample ;
+                          vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance2
 :equalDivisionImportance2 rdf:type owl:NamedIndividual ,
                                    vae:NodeImportance ;
-                          vae:importanceValue 0.7 ;
                           dul:hasSetting :contextExample2_1 ;
-                          vae:relationWith :equalDivisionExample .
+                          vae:relationWith :equalDivisionExample ;
+                          vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance3
 :equalDivisionImportance3 rdf:type owl:NamedIndividual ,
                                    vae:NodeImportance ;
-                          vae:importanceValue 0.9 ;
                           dul:hasSetting :contextExample2_2 ;
-                          vae:relationWith :equalDivisionExample .
+                          vae:relationWith :equalDivisionExample ;
+                          vae:importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode
@@ -678,8 +554,8 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalPayImportance1
 :equalPayImportance1 rdf:type owl:NamedIndividual ,
                               vae:NodeImportance ;
-                     vae:importanceValue 0.7 ;
-                     vae:relationWith :equalPayExample .
+                     vae:relationWith :equalPayExample ;
+                     vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalPayNode
@@ -698,22 +574,22 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance1
 :equalTreatmentImportance1 rdf:type owl:NamedIndividual ,
                                     vae:NodeImportance ;
-                           vae:importanceValue 0.7 ;
-                           vae:relationWith :equalTreatmentExample .
+                           vae:relationWith :equalTreatmentExample ;
+                           vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance2
 :equalTreatmentImportance2 rdf:type owl:NamedIndividual ,
                                     vae:NodeImportance ;
-                           vae:importanceValue 0.7 ;
-                           vae:relationWith :equalTreatmentExample .
+                           vae:relationWith :equalTreatmentExample ;
+                           vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance3
 :equalTreatmentImportance3 rdf:type owl:NamedIndividual ,
                                     vae:NodeImportance ;
-                           vae:importanceValue 0.9 ;
-                           vae:relationWith :equalTreatmentExample .
+                           vae:relationWith :equalTreatmentExample ;
+                           vae:importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode
@@ -775,23 +651,23 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance
 :fairnessNodeImportance rdf:type owl:NamedIndividual ,
                                  vae:NodeImportance ;
+                        vae:relationWith :fairnessExample ;
                         :importanceCalculatedWith :aggregationOfImportanceFairness1 ;
-                        vae:importanceValue 0.75 ;
-                        vae:relationWith :fairnessExample .
+                        vae:importanceValue 0.75 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance2
 :fairnessNodeImportance2 rdf:type owl:NamedIndividual ,
                                   vae:NodeImportance ;
-                         vae:importanceValue 0.75 ;
-                         vae:relationWith :fairnessExample .
+                         vae:relationWith :fairnessExample ;
+                         vae:importanceValue 0.75 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance3
 :fairnessNodeImportance3 rdf:type owl:NamedIndividual ,
                                   vae:NodeImportance ;
-                         vae:importanceValue 0.9 ;
-                         vae:relationWith :fairnessExample .
+                         vae:relationWith :fairnessExample ;
+                         vae:importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#idempotenceConstraint
@@ -818,32 +694,32 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers
 :p1HelpRequestsProportionateOffers rdf:type owl:NamedIndividual ,
                                             vae:TaxonomyProperty ;
-                                   vae:degreeOfSatisfaction 0.5 ;
                                    vae:measuredOnOutcome :state1 ;
                                    vae:relationWith :balancedGiveTakeExample ,
                                                     :fairnessExample ,
-                                                    :reciprocityExample .
+                                                    :reciprocityExample ;
+                                   vae:degreeOfSatisfaction 0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance1
 :p1Importance1 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.7 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance2
 :p1Importance2 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.8 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance3
 :p1Importance3 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue -0.5 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue -0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Node
@@ -870,32 +746,32 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual
 :p2HelpRequestsProportionateActual rdf:type owl:NamedIndividual ,
                                             vae:TaxonomyProperty ;
-                                   vae:degreeOfSatisfaction 0.9 ;
                                    vae:measuredOnOutcome :state1 ;
                                    vae:relationWith :balancedGiveTakeExample ,
                                                     :fairnessExample ,
-                                                    :reciprocityExample .
+                                                    :reciprocityExample ;
+                                   vae:degreeOfSatisfaction 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance1
 :p2Importance1 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.9 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance2
 :p2Importance2 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.0 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue 0.0 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance3
 :p2Importance3 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue -0.5 ;
-               vae:relationWith :balancedGiveTakeExample .
+               vae:relationWith :balancedGiveTakeExample ;
+               vae:importanceValue -0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Node
@@ -922,22 +798,22 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance1
 :p3Importance1 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.7 ;
-               vae:relationWith :equalDivisionExample .
+               vae:relationWith :equalDivisionExample ;
+               vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance2
 :p3Importance2 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.7 ;
-               vae:relationWith :equalDivisionExample .
+               vae:relationWith :equalDivisionExample ;
+               vae:importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3
 :p3Importance3 rdf:type owl:NamedIndividual ,
                         vae:NodeImportance ;
-               vae:importanceValue 0.9 ;
-               vae:relationWith :equalDivisionExample .
+               vae:relationWith :equalDivisionExample ;
+               vae:importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Node
@@ -964,8 +840,8 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers
 :p3TasksDistributedAmongVolunteers rdf:type owl:NamedIndividual ,
                                             vae:TaxonomyProperty ;
-                                   vae:degreeOfSatisfaction 0.9 ;
-                                   vae:measuredOnOutcome :state1 .
+                                   vae:measuredOnOutcome :state1 ;
+                                   vae:degreeOfSatisfaction 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#problemModeller
@@ -984,15 +860,15 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance1
 :reciprocityImportance1 rdf:type owl:NamedIndividual ,
                                  vae:NodeImportance ;
-                        vae:importanceValue 0.8 ;
-                        vae:relationWith :reciprocityExample .
+                        vae:relationWith :reciprocityExample ;
+                        vae:importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance2
 :reciprocityImportance2 rdf:type owl:NamedIndividual ,
                                  vae:NodeImportance ;
-                        vae:importanceValue 0.8 ;
-                        vae:relationWith :reciprocityExample .
+                        vae:relationWith :reciprocityExample ;
+                        vae:importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode
@@ -1037,13 +913,13 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure1
 :taxonomyFigure1 rdf:type owl:NamedIndividual ,
                           vae:ValueTaxonomyStatement ;
-                 :hasCondomain :condomain ;
-                 :hasNProperties "3"^^xsd:positiveInteger ;
                  dul:hasSetting :contextExample1 ;
                  vae:expressesProperty :taxonomyFigure1Alignment ;
                  vae:hasConceptNode :equalTreatmentNode ,
                                     :reciprocityNode ;
-                 vae:hasRootNode :fairnessNode .
+                 vae:hasRootNode :fairnessNode ;
+                 :hasCondomain :condomain ;
+                 :hasNProperties "3"^^xsd:positiveInteger .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure1Alignment
@@ -1059,24 +935,24 @@ The importance function I : N → COD assigns an importance value from the codom
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2_1
 :taxonomyFigure2_1 rdf:type owl:NamedIndividual ,
                             vae:ValueTaxonomyStatement ;
-                   :hasCondomain :condomain ;
-                   :hasNProperties "3"^^xsd:positiveInteger ;
                    dul:hasSetting :contextExample2_1 ;
                    vae:expressesProperty :taxonomyFigure2Alignment ;
                    vae:hasConceptNode :equalTreatmentNode2 ,
                                       :reciprocityNode2 ;
-                   vae:hasRootNode :fairnessNode2 .
+                   vae:hasRootNode :fairnessNode2 ;
+                   :hasCondomain :condomain ;
+                   :hasNProperties "3"^^xsd:positiveInteger .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2_2
 :taxonomyFigure2_2 rdf:type owl:NamedIndividual ,
                             vae:ValueTaxonomyStatement ;
-                   :hasCondomain :condomain ;
-                   :hasNProperties "1"^^xsd:positiveInteger ;
                    dul:hasSetting :contextExample2_2 ;
                    vae:expressesProperty :taxonomyFigure3Alignment ;
                    vae:hasConceptNode :equalTreatmentNode3 ;
-                   vae:hasRootNode :fairnessNode3 .
+                   vae:hasRootNode :fairnessNode3 ;
+                   :hasCondomain :condomain ;
+                   :hasNProperties "1"^^xsd:positiveInteger .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure3Alignment
@@ -1200,8 +1076,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
 
 :t rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Node importance propagates to the value of the Aggregation of importance calculation" ;
+[ rdfs:comment "Node importance propagates to the value of the Aggregation of importance calculation" ;
    rdfs:label "S2" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1241,8 +1116,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(3 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(3 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (3 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1504,8 +1378,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(2 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(2 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (2 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1689,8 +1562,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(1 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(1 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (1 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1787,8 +1659,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it" ;
+[ rdfs:comment "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it" ;
    rdfs:label "S7" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1821,8 +1692,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Generalization implies belonging to the full taxonomy" ;
+[ rdfs:comment "Generalization implies belonging to the full taxonomy" ;
    rdfs:label "S3 - Property Nodes" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1862,8 +1732,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "No cyclic graph condition" ;
+[ rdfs:comment "No cyclic graph condition" ;
    rdfs:label "S8" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1889,8 +1758,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Generalization implies belonging to the full taxonomy" ;
+[ rdfs:comment "Generalization implies belonging to the full taxonomy" ;
    rdfs:label "S3 - Concept Nodes" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1930,8 +1798,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Structure of Taxonomies" ;
+[ rdfs:comment "Structure of Taxonomies" ;
    rdfs:label "StructureOfTaxonomies" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -2061,8 +1928,7 @@ vae:particularizesNode rdfs:comment "\"The set of edgesE : N ×N is a set of dir
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Aggregation of importance calculation propagated to the node importance" ;
+[ rdfs:comment "Aggregation of importance calculation propagated to the node importance" ;
    rdfs:label "S1" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;

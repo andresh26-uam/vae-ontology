@@ -37,11 +37,34 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
     
 
 
@@ -112,7 +135,17 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:comment>Any relation between concepts, e.g. superordinated, conceptual parthood, having a parameter, having a task, superordination, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <rdfs:label xml:lang="en">is related to concept</rdfs:label>
+        <rdfs:label xml:lang="it">è associato al concetto</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -132,6 +165,7 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#Path"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#State"/>
         <rdfs:comment>&quot;Given a path p ∈ P, the function out : P → S returns the last state (or the outcome) of path p, out(p) = sn.&quot;</rdfs:comment>
+        <rdfs:label>hasOutState</rdfs:label>
         <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
 mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
@@ -146,6 +180,7 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#State"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#Path"/>
         <rdfs:comment>&quot;Given a path p ∈ P, the function out : P → S returns the last state (or the outcome) of path p, out(p) = sn.&quot;</rdfs:comment>
+        <rdfs:label>isOutStateOf</rdfs:label>
         <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
 mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
@@ -221,6 +256,7 @@ Ordering on subparameters can be created by using or specializing the object pro
             </rdfs:Datatype>
         </rdfs:range>
         <rdfs:comment>&quot;At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to.&quot;</rdfs:comment>
+        <rdfs:label>belongsToSegment</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -230,6 +266,7 @@ Ordering on subparameters can be created by using or specializing the object pro
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology_montes_sierra#hasProbabilityOrFraction">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -243,6 +280,8 @@ Ordering on subparameters can be created by using or specializing the object pro
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>Reference to a probability or fraction, e.g. the probability of catching an evader, or the fraction of the fund to be redistributed back to a segment.</rdfs:comment>
+        <rdfs:label>hasProbabilityOrFraction</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -255,6 +294,7 @@ Ordering on subparameters can be created by using or specializing the object pro
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#TaxingAgentState"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>&quot;At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to.&quot;</rdfs:comment>
+        <rdfs:label>hasWealth</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -278,6 +318,14 @@ Ordering on subparameters can be created by using or specializing the object pro
     
 
 
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType">
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter">
@@ -294,11 +342,18 @@ Ordering on subparameters can be created by using or specializing the object pro
                 <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
         <rdfs:comment>A Concept that classifies a Region; the difference between a Region and a Parameter is that regions represent sets of observable values, e.g. the height  of a given building, while parameters represent constraints or selections on observable values, e.g. &apos;VeryHigh&apos;. Therefore, parameters can also be used to constrain regions, e.g. VeryHigh on a subset of values of the Region Height applied to buildings, or to add an external selection criterion , such as measurement units, to regions, e.g. Meter on a subset of values from the Region Length applied to the Region Length applied to roads.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">Parameter</rdfs:label>
         <rdfs:label xml:lang="it">Parametro</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
     
 
 
@@ -328,19 +383,6 @@ Ordering on subparameters can be created by using or specializing the object pro
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&quot;First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).&quot;</rdfs:comment>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Norm -->
-
-    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Norm">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -399,6 +441,8 @@ Ordering on subparameters can be created by using or specializing the object pro
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>BoundedQuantitativePromotionDemotion</rdfs:label>
+        <skos:definition>A quantitative Promotion or Demotion, bounded in a certain interval where the limits -1 and 1 represent the highest degrees of promotion and demotion, and the centre (0) the neutrality.</skos:definition>
     </owl:Class>
     
 
@@ -414,6 +458,7 @@ Ordering on subparameters can be created by using or specializing the object pro
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&quot;In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.&quot;</rdfs:comment>
+        <rdfs:label>EvaderAgent</rdfs:label>
     </owl:Class>
     
 
@@ -439,6 +484,7 @@ Ordering on subparameters can be created by using or specializing the object pro
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&quot;In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.&quot;</rdfs:comment>
+        <rdfs:label>LegalAgent</rdfs:label>
     </owl:Class>
     
 
@@ -448,6 +494,8 @@ Ordering on subparameters can be created by using or specializing the object pro
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#MoneyTransaction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#Action"/>
         <rdfs:comment>&quot;In principle, in the unregulated situation agents can exchange money as they see fit at any transition.&quot;</rdfs:comment>
+        <rdfs:label>MoneyTransaction</rdfs:label>
+        <skos:definition>Any kind of action made by agents in the TaxingSystem.</skos:definition>
     </owl:Class>
     
 
@@ -459,12 +507,12 @@ Ordering on subparameters can be created by using or specializing the object pro
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#Norm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#ParametricNorm"/>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#ParametricNorm"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&quot;A normative system N is a set of individual norms {ni} with all of their parameters instantiated to some quantity&quot;</rdfs:comment>
+        <rdfs:label>NormativeSystem</rdfs:label>
     </owl:Class>
     
 
@@ -534,6 +582,9 @@ where PN is the random variable of the subset of paths restricted under the norm
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#NotPayingTaxesTransaction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#MoneyTransaction"/>
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#PayingTaxesTransaction"/>
+        <rdfs:comment>&quot;Agents contribute to the common fund with a tax amount that is dependent on their economic status. However, a subset of evader agents try to skip the payment.&quot;</rdfs:comment>
+        <rdfs:label>NotPayingTaxesTransaction</rdfs:label>
+        <skos:definition>An action for an agent that does not pay its taxes in the TaxingSystem.</skos:definition>
     </owl:Class>
     
 
@@ -571,6 +622,8 @@ where PN is the random variable of the subset of paths restricted under the norm
                 <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>&quot;The main steps of our synthesis approach are: a) [...] b) Define the norms ni in the normative system N that regulate the transitions between consecutive states of the MAS. Every norm targets a particular aspect of the transition. All norms are parametric on a set of values, whose domains and constraints have to be specified. This parametrisation provides the search space N over which the maximising search in eq. (1) is performed.&quot;</rdfs:comment>
+        <rdfs:label>ParametricNorm</rdfs:label>
     </owl:Class>
     
 
@@ -579,6 +632,9 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#PayingTaxesTransaction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#MoneyTransaction"/>
+        <rdfs:comment>&quot;Agents contribute to the common fund with a tax amount that is dependent on their economic status.&quot;</rdfs:comment>
+        <rdfs:label>PayingTaxesTransaction</rdfs:label>
+        <skos:definition>An action for an agent which pays its taxes in the TaxingSystem.</skos:definition>
     </owl:Class>
     
 
@@ -605,6 +661,7 @@ where PN is the random variable of the subset of paths restricted under the norm
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>&quot;Given a set of values V = {v1, ..., vm} and their semantics functions f1,...,fm, we propose that the semantics of the set of values in V should be grounded by an aggregation function FV : [−1, 1]m → [−1, 1]. FV takes in the compliance with respect to every individual value and merges them into a single metric. To shorten notation, we denote FV (f1(s), ..., fm(s)) as FV (s).&quot;</rdfs:comment>
+        <rdfs:label>SemanticsFunctionAggregation</rdfs:label>
     </owl:Class>
     
 
@@ -621,6 +678,7 @@ where PN is the random variable of the subset of paths restricted under the norm
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#TaxingSystem"/>
         <rdfs:comment>&quot;In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.&quot;</rdfs:comment>
+        <rdfs:label>TaxingAgent</rdfs:label>
     </owl:Class>
     
 
@@ -635,7 +693,9 @@ where PN is the random variable of the subset of paths restricted under the norm
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#State"/>
-        <rdfs:comment>At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to. [...] Therefore, an agent at any state is characterised by the tuple (xi, segi) ∈ (R+ × {1, 2, 3, 4, 5}), where xi is agent i’s wealth (which is always non-negative) and segi is the wealth segment or group it is assigned to.</rdfs:comment>
+        <rdfs:comment>&quot;At any given time-step, every agent is characterised by its current wealth xi as well as an integer that denotes the wealth segment it belongs to. [...] Therefore, an agent at any state is characterised by the tuple (xi, segi) ∈ (R+ × {1, 2, 3, 4, 5}), where xi is agent i’s wealth (which is always non-negative) and segi is the wealth segment or group it is assigned to&quot;.</rdfs:comment>
+        <rdfs:label>TaxingAgentState</rdfs:label>
+        <skos:definition>The state of a TaxingAgent.</skos:definition>
     </owl:Class>
     
 
@@ -644,6 +704,9 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#TaxingSystem">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#System"/>
+        <rdfs:comment>&quot;We illustrate all of our contributions with a running example of a toy social model, remi- niscent of the public goods game.&quot;</rdfs:comment>
+        <rdfs:label>TaxingSystem</rdfs:label>
+        <skos:definition>A class representing a system for the simple taxing example in the paper.</skos:definition>
     </owl:Class>
     
 
@@ -665,6 +728,8 @@ where PN is the random variable of the subset of paths restricted under the norm
                 <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#TaxingAgentState"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>TaxingSystemState</rdfs:label>
+        <skos:definition>The state of a TaxingSystem.</skos:definition>
     </owl:Class>
     
 
@@ -1730,6 +1795,9 @@ where PN is the random variable of the subset of paths restricted under the norm
         <vae:isStartOfSequence rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemActionSequence"/>
         <vae:nextInputOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#redistributionStep"/>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 

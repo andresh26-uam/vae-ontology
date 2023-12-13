@@ -138,9 +138,6 @@
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor",
       "@type" : "@id"
     },
-    "commitsTo" : {
-      "@id" : "http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo"
-    },
     "isInputOf" : {
       "@id" : "https://w3id.org/def/vaeontology#isInputOf",
       "@type" : "@id"
@@ -336,9 +333,6 @@
     },
     "AggregationFunction" : {
       "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
-    },
-    "defines" : {
-      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"
     },
     "Person" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"
@@ -795,9 +789,6 @@
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
       "@type" : "@id"
     },
-    "directlyGeneralizes" : {
-      "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizes"
-    },
     "System" : {
       "@id" : "https://w3id.org/def/vaeontology#System"
     },
@@ -859,10 +850,6 @@
     },
     "Region" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
-    },
-    "executesTask" : {
-      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask",
-      "@type" : "@id"
     },
     "Power" : {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Power"

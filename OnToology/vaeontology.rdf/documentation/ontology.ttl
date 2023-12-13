@@ -56,14 +56,6 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo
-<http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo> rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty ;
              rdfs:range xsd:String ,
@@ -92,10 +84,6 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology#directlyGeneralizes
-:directlyGeneralizes rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
@@ -164,10 +152,6 @@ A same Entity can be given different descriptions, for example, an old cradle ca
                                                                          rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
                                                                          rdfs:label "directly precedes"@en ,
                                                                                     "precede direttamente"@it .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows

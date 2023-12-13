@@ -44,12 +44,6 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo
-<http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
@@ -72,9 +66,6 @@
 # 
 # http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#directlyGeneralizes
-<https://w3id.org/def/vaeontology#directlyGeneralizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -144,9 +135,6 @@
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyPrecedes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyPrecedes> <http://www.w3.org/2000/01/rdf-schema#label> "directly precedes"@en .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#directlyPrecedes> <http://www.w3.org/2000/01/rdf-schema#label> "precede direttamente"@it .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

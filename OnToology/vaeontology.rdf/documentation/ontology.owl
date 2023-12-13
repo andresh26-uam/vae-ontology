@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://w3id.org/def/vaeontology#"
      xml:base="https://w3id.org/def/vaeontology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,9 +11,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:vaeontology="https://w3id.org/def/vaeontology#"
-     xmlns:SchwartzValues="https://w3id.org/spice/SON/SchwartzValues#"
-     xmlns:valuecore_with_value_frames="http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#">
+     xmlns:SchwartzValues="https://w3id.org/spice/SON/SchwartzValues#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology/1.0.2"/>
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-14</dc:created>
@@ -101,20 +98,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
 
@@ -164,13 +147,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#directlyGeneralizes -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#directlyGeneralizes"/>
     
 
 
@@ -280,13 +256,6 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:label xml:lang="en">directly precedes</rdfs:label>
         <rdfs:label xml:lang="it">precede direttamente</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask"/>
     
 
 

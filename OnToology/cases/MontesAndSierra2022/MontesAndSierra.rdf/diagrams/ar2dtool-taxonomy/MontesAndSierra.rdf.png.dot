@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "dul:Concept" "base:NotPayingTaxesTransaction" "base:BoundedQuantitativePromotionDemotion" "base:TaxingAgentState" "base:TaxingAgent" "base:NormativeSystemAlignment" "base:LegalAgent" "dul:UnitOfMeasure" "base:MoneyTransaction" "dul:Parameter" "base:TaxingSystem" "base:PayingTaxesTransaction" "base:NormativeSystem" "base:SemanticsFunctionAggregation" "base:TaxingSystemState" "base:ParametricNorm" "base:EvaderAgent" "base:OptimalNormativeSystemAlignment" "base:ProbabilityTaxFairnessSemantics" "base:Fairness" ; /*classes style*/
+	"base:EvaderAgent" -> "base:TaxingAgent" [ label = "rdfs:subClassOf" ];
+	"base:TaxingAgent" -> "vae:ActingAgent" [ label = "rdfs:subClassOf" ];
+	"dul:Concept" -> "dul:SocialObject" [ label = "rdfs:subClassOf" ];
+	"base:LegalAgent" -> "base:TaxingAgent" [ label = "rdfs:subClassOf" ];
+	"base:TaxingSystem" -> "vae:System" [ label = "rdfs:subClassOf" ];
+	"base:TaxingSystemState" -> "vae:State" [ label = "rdfs:subClassOf" ];
+	"base:ProbabilityTaxFairnessSemantics" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
+	"dul:UnitOfMeasure" -> "dul:Parameter" [ label = "rdfs:subClassOf" ];
+	"base:NotPayingTaxesTransaction" -> "base:MoneyTransaction" [ label = "rdfs:subClassOf" ];
+	"dul:Parameter" -> "dul:Concept" [ label = "rdfs:subClassOf" ];
+	"base:BoundedQuantitativePromotionDemotion" -> "vae:QuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
+	"base:OptimalNormativeSystemAlignment" -> "base:NormativeSystemAlignment" [ label = "rdfs:subClassOf" ];
+	"base:OptimalNormativeSystemAlignment" -> "vae:OptimizedProperty" [ label = "rdfs:subClassOf" ];
+	"base:Fairness" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
+	"base:SemanticsFunctionAggregation" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
+	"base:SemanticsFunctionAggregation" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
+	"vae:SemanticsFunction" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
+	"base:NormativeSystem" -> "vae:Norm" [ label = "rdfs:subClassOf" ];
+	"base:NormativeSystem" -> "dul:Collection" [ label = "rdfs:subClassOf" ];
+	"base:PayingTaxesTransaction" -> "base:MoneyTransaction" [ label = "rdfs:subClassOf" ];
+	"base:TaxingAgentState" -> "vae:State" [ label = "rdfs:subClassOf" ];
+	"base:NormativeSystemAlignment" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
+	"base:NormativeSystemAlignment" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
+	"base:MoneyTransaction" -> "vae:Action" [ label = "rdfs:subClassOf" ];
+	"base:ParametricNorm" -> "vae:Norm" [ label = "rdfs:subClassOf" ];
+
+}

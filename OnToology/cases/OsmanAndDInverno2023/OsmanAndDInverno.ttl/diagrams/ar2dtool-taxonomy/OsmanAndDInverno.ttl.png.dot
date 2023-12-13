@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:AggregationOfImportance" "base:EqualPay" "base:OsmanDinvernoAlignmentExample" "base:Fairness" "base:Reciprocity" "base:EqualDivisionOfWorkload" "base:BalancedGiveAndTake" "base:EqualTreatment" "34c9b07912a7e2ac95eb25a8d180e05c" ; /*classes style*/
+	"base:EqualPay" -> "base:EqualTreatment" [ label = "rdfs:subClassOf" ];
+	"base:EqualDivisionOfWorkload" -> "base:EqualTreatment" [ label = "rdfs:subClassOf" ];
+	"base:AggregationOfImportance" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
+	"base:Reciprocity" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
+	"vae:PropertyNode" -> "34c9b07912a7e2ac95eb25a8d180e05c" [ label = "rdfs:subClassOf" ];
+	"base:BalancedGiveAndTake" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
+	"base:EqualTreatment" -> "vae:Equality" [ label = "rdfs:subClassOf" ];
+	"base:OsmanDinvernoAlignmentExample" -> "vae:TaxonomyAlignment" [ label = "rdfs:subClassOf" ];
+	"base:Fairness" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
+	"vae:TaxonomyAlignment" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
+
+}

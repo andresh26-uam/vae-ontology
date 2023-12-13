@@ -1754,9 +1754,6 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"
   } ]
 }, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1834,9 +1831,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes"
   } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
@@ -2417,9 +2411,6 @@
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/def/vaeontology#Value"
   } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -4038,9 +4029,6 @@
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isPresentInStatement"
   } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizesNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],

@@ -1,6 +1,6 @@
 <https://w3id.org/def/vaeontology_osman_dInverno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/vaeontology_osman_dInverno> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/vaeontology_osman_dInverno/1.0.0> .
-<https://w3id.org/def/vaeontology_osman_dInverno> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/vaeontology/1.0.2> .
+<https://w3id.org/def/vaeontology_osman_dInverno> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/vaeontology_osman_dInverno> .
+<https://w3id.org/def/vaeontology_osman_dInverno> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/vaeontology> .
 <https://w3id.org/def/vaeontology_osman_dInverno> <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" .
 <https://w3id.org/def/vaeontology_osman_dInverno> <http://purl.org/dc/elements/1.1/description> "Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023) https://arxiv.org/abs/2305.02748" .
 <https://w3id.org/def/vaeontology_osman_dInverno> <http://purl.org/dc/elements/1.1/title> "Ontology on \"A computational framework of human values for ethical\nAI\" by Nardine Osman and Mark d’Inverno (2023)" .

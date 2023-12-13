@@ -16,10 +16,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:vcvf="http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://w3id.org/framester/schema/"
-     xmlns:fschema="https://w3id.org/framester/schema#"
-     xmlns:schema1="https://w3id.org/framester/metanet/schema/"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+     xmlns:schema="https://w3id.org/framester/schema/">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology/1.0.2"/>
         <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-14</dc:created>
@@ -97,18 +94,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
@@ -151,12 +136,6 @@
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#directlyGeneralizes -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#directlyGeneralizes"/>
     
 
 
@@ -209,9 +188,9 @@
         <rdfs:comment>A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created the solar-system metaphor for the atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force members share the attack plan&apos;.
 Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be &apos;assumed&apos;, situations can be &apos;believed&apos; or &apos;known&apos;, plans can be &apos;adopted&apos;, etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>conceptualizes</rdfs:label>
         <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
         <rdfs:label xml:lang="it">concettualizza</rdfs:label>
+        <rdfs:label>conceptualizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -257,12 +236,6 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:label xml:lang="en">directly precedes</rdfs:label>
         <rdfs:label xml:lang="it">precede direttamente</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask"/>
     
 
 
@@ -398,8 +371,8 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <rdfs:comment>A relation between entities and regions, e.g. &apos;the number of wheels of that truck is 12&apos;, &apos;the time of the experiment is August 9th, 2004&apos;, &apos;the whale has been localized at 34 degrees E, 20 degrees S&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="it">ha attributo</rdfs:label>
-        <rdfs:label>has region</rdfs:label>
         <rdfs:label xml:lang="en">has region</rdfs:label>
+        <rdfs:label>has region</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -412,9 +385,9 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
         <rdfs:comment>A relation between entities and situations, e.g. &apos;this morning I&apos;ve prepared my coffee with a new fantastic Arabica&apos;, i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>has setting</rdfs:label>
         <rdfs:label xml:lang="en">has setting</rdfs:label>
         <rdfs:label xml:lang="it">è nel contesto di</rdfs:label>
+        <rdfs:label>has setting</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -512,9 +485,9 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
         <rdfs:comment>A relation between an object and a process, e.g. &apos;John took part in the discussion&apos;, &apos;a large mass of snow fell during the avalanche&apos;, or &apos;a cook, some sugar, flour, etc. are all present in the cooking of a cake&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>is participant in</rdfs:label>
         <rdfs:label xml:lang="en">is participant in</rdfs:label>
         <rdfs:label xml:lang="it">è un partecipante a</rdfs:label>
+        <rdfs:label>is participant in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -641,9 +614,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:comment>A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>satisfies</rdfs:label>
         <rdfs:label xml:lang="en">satisfies</rdfs:label>
         <rdfs:label xml:lang="it">soddisfa</rdfs:label>
+        <rdfs:label>satisfies</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2062,9 +2035,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:comment>Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.</rdfs:comment>
         <rdfs:comment>Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Agent</rdfs:label>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agente</rdfs:label>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
@@ -2104,9 +2077,9 @@ Descriptions &apos;define&apos; or &apos;use&apos; concepts, and can be &apos;sa
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">
         <rdfs:comment>Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Entity</rdfs:label>
         <rdfs:label xml:lang="en">Entity</rdfs:label>
         <rdfs:label xml:lang="it">Entità</rdfs:label>
+        <rdfs:label>Entity</rdfs:label>
     </owl:Class>
     
 
@@ -2157,9 +2130,9 @@ Both positions are in principle valid, but, if taken too radically, they focus o
 
 For this reason, in this ontology version of DOLCE, both events and situations are allowed, together with descriptions (the reason for the inclusion of the D&amp;S framewrok in DOLCE), in order to encode the modelling needs, independently from the position (if any) chosen by the model designer.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Event</rdfs:label>
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="it">Evento</rdfs:label>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -2170,9 +2143,9 @@ For this reason, in this ontology version of DOLCE, both events and situations a
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:comment>A social norm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Norm</rdfs:label>
         <rdfs:label xml:lang="en">Norm</rdfs:label>
         <rdfs:label xml:lang="it">Norma</rdfs:label>
+        <rdfs:label>Norm</rdfs:label>
     </owl:Class>
     
 
@@ -2254,8 +2227,8 @@ Being dependent on communication, all social objects need to be expressed by som
 This class can also be used to act as &apos;naturalized reifications&apos; of logical theories (of course, they will be necessarily incomplete in this case, because second-order entities are represented as first-order ones).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="it">Teoria</rdfs:label>
-        <rdfs:label>Theory</rdfs:label>
         <rdfs:label xml:lang="en">Theory</rdfs:label>
+        <rdfs:label>Theory</rdfs:label>
     </owl:Class>
     
 
@@ -2281,8 +2254,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Action">
         <owl:disjointWith rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Action</rdfs:label>
         <rdfs:label xml:lang="en">Action</rdfs:label>
+        <rdfs:label>Action</rdfs:label>
         <skos:definition xml:lang="en">An operation on an Asset.</skos:definition>
         <skos:note xml:lang="en">Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties.</skos:note>
     </owl:Class>
@@ -2293,8 +2266,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Asset">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Asset</rdfs:label>
         <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <rdfs:label>Asset</rdfs:label>
         <skos:definition xml:lang="en">A resource or a collection of resources that are the subject of a Rule.</skos:definition>
         <skos:note xml:lang="en">The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.</skos:note>
     </owl:Class>
@@ -2305,8 +2278,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Constraint">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Constraint</rdfs:label>
         <rdfs:label xml:lang="en">Constraint</rdfs:label>
+        <rdfs:label>Constraint</rdfs:label>
         <skos:definition xml:lang="en">A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.</skos:definition>
     </owl:Class>
     
@@ -2322,8 +2295,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Operator">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Operator</rdfs:label>
         <rdfs:label xml:lang="en">Operator</rdfs:label>
+        <rdfs:label>Operator</rdfs:label>
         <skos:definition xml:lang="en">Operator for constraint expression.</skos:definition>
         <skos:note xml:lang="en">Instances of the Operator class representing relational operators.</skos:note>
     </owl:Class>
@@ -2334,8 +2307,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Party</rdfs:label>
         <rdfs:label xml:lang="en">Party</rdfs:label>
+        <rdfs:label>Party</rdfs:label>
         <skos:definition xml:lang="en">An entity or a collection of entities that undertake Roles in a Rule.</skos:definition>
         <skos:note xml:lang="en">The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].</skos:note>
     </owl:Class>
@@ -2346,8 +2319,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Policy</rdfs:label>
         <rdfs:label xml:lang="en">Policy</rdfs:label>
+        <rdfs:label>Policy</rdfs:label>
         <skos:definition xml:lang="en">A non-empty group of Permissions and/or Prohibitions.</skos:definition>
         <skos:note xml:lang="en">A Policy may contain multiple Rules.</skos:note>
     </owl:Class>

@@ -15,9 +15,6 @@
 @prefix vcvf: <http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://w3id.org/framester/schema/> .
-@prefix fschema: <https://w3id.org/framester/schema#> .
-@prefix schema1: <https://w3id.org/framester/metanet/schema/> .
-@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
 @base <https://w3id.org/def/vaeontology#> .
 
 <https://w3id.org/def/vaeontology> rdf:type owl:Ontology ;
@@ -70,14 +67,6 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
-dul:defines rdf:type owl:AnnotationProperty .
-
-
-###  http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#commitsTo
-vcvf:commitsTo rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty ;
              rdfs:range xsd:String ,
@@ -108,10 +97,6 @@ skos:note rdf:type owl:AnnotationProperty .
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/def/vaeontology#directlyGeneralizes
-vae:directlyGeneralizes rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/mod#createdWith
 mod:createdWith rdf:type owl:AnnotationProperty .
 
@@ -140,9 +125,9 @@ dul:conceptualizes rdf:type owl:ObjectProperty ;
                    rdfs:comment """A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created the solar-system metaphor for the atomic theory'; 'Jacques assumes all swans are white'; 'the task force members share the attack plan'.
 Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be 'assumed', situations can be 'believed' or 'known', plans can be 'adopted', etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.""" ;
                    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-                   rdfs:label "conceptualizes" ,
-                              "conceptualizes"@en ,
-                              "concettualizza"@it .
+                   rdfs:label "conceptualizes"@en ,
+                              "concettualizza"@it ,
+                              "conceptualizes" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes
@@ -178,10 +163,6 @@ dul:directlyPrecedes rdf:type owl:ObjectProperty ;
                      rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
                      rdfs:label "directly precedes"@en ,
                                 "precede direttamente"@it .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask
-dul:executesTask rdf:type owl:ObjectProperty .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows
@@ -285,8 +266,8 @@ dul:hasRegion rdf:type owl:ObjectProperty ;
               rdfs:comment "A relation between entities and regions, e.g. 'the number of wheels of that truck is 12', 'the time of the experiment is August 9th, 2004', 'the whale has been localized at 34 degrees E, 20 degrees S'." ;
               rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
               rdfs:label "ha attributo"@it ,
-                         "has region" ,
-                         "has region"@en .
+                         "has region"@en ,
+                         "has region" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
@@ -296,9 +277,9 @@ dul:hasSetting rdf:type owl:ObjectProperty ;
                rdfs:range dul:Situation ;
                rdfs:comment "A relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning." ;
                rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-               rdfs:label "has setting" ,
-                          "has setting"@en ,
-                          "è nel contesto di"@it .
+               rdfs:label "has setting"@en ,
+                          "è nel contesto di"@it ,
+                          "has setting" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent
@@ -375,9 +356,9 @@ dul:isParticipantIn rdf:type owl:ObjectProperty ;
                     rdfs:range dul:Event ;
                     rdfs:comment "A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'." ;
                     rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-                    rdfs:label "is participant in" ,
-                               "is participant in"@en ,
-                               "è un partecipante a"@it .
+                    rdfs:label "is participant in"@en ,
+                               "è un partecipante a"@it ,
+                               "is participant in" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPostconditionOf
@@ -471,9 +452,9 @@ dul:satisfies rdf:type owl:ObjectProperty ;
               rdfs:range dul:Description ;
               rdfs:comment "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan." ;
               rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-              rdfs:label "satisfies" ,
-                         "satisfies"@en ,
-                         "soddisfa"@it .
+              rdfs:label "satisfies"@en ,
+                         "soddisfa"@it ,
+                         "satisfies" .
 
 
 ###  http://www.w3.org/ns/odrl/2/action
@@ -1512,9 +1493,9 @@ dul:Agent rdf:type owl:Class ;
           rdfs:comment "Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl." ,
                        "Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community)." ;
           rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-          rdfs:label "Agent" ,
-                     "Agent"@en ,
-                     "Agente"@it .
+          rdfs:label "Agent"@en ,
+                     "Agente"@it ,
+                     "Agent" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
@@ -1545,9 +1526,9 @@ Descriptions 'define' or 'use' concepts, and can be 'satisfied' by situations.""
 dul:Entity rdf:type owl:Class ;
            rdfs:comment "Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose." ;
            rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-           rdfs:label "Entity" ,
-                      "Entity"@en ,
-                      "Entità"@it .
+           rdfs:label "Entity"@en ,
+                      "Entità"@it ,
+                      "Entity" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
@@ -1593,9 +1574,9 @@ Both positions are in principle valid, but, if taken too radically, they focus o
 
 For this reason, in this ontology version of DOLCE, both events and situations are allowed, together with descriptions (the reason for the inclusion of the D&S framewrok in DOLCE), in order to encode the modelling needs, independently from the position (if any) chosen by the model designer.""" ;
           rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-          rdfs:label "Event" ,
-                     "Event"@en ,
-                     "Evento"@it .
+          rdfs:label "Event"@en ,
+                     "Evento"@it ,
+                     "Event" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm
@@ -1603,9 +1584,9 @@ dul:Norm rdf:type owl:Class ;
          rdfs:subClassOf dul:Description ;
          rdfs:comment "A social norm." ;
          rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
-         rdfs:label "Norm" ,
-                    "Norm"@en ,
-                    "Norma"@it .
+         rdfs:label "Norm"@en ,
+                    "Norma"@it ,
+                    "Norm" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
@@ -1667,8 +1648,8 @@ dul:Theory rdf:type owl:Class ;
 This class can also be used to act as 'naturalized reifications' of logical theories (of course, they will be necessarily incomplete in this case, because second-order entities are represented as first-order ones).""" ;
            rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
            rdfs:label "Teoria"@it ,
-                      "Theory" ,
-                      "Theory"@en .
+                      "Theory"@en ,
+                      "Theory" .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#Value
@@ -1688,8 +1669,8 @@ vcvf:Value rdf:type owl:Class ;
 odrl:Action rdf:type owl:Class ;
             owl:disjointWith odrl:Party ;
             rdfs:isDefinedBy odrl: ;
-            rdfs:label "Action" ,
-                       "Action"@en ;
+            rdfs:label "Action"@en ,
+                       "Action" ;
             skos:definition "An operation on an Asset."@en ;
             skos:note "Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties."@en .
 
@@ -1697,8 +1678,8 @@ odrl:Action rdf:type owl:Class ;
 ###  http://www.w3.org/ns/odrl/2/Asset
 odrl:Asset rdf:type owl:Class ;
            rdfs:isDefinedBy odrl: ;
-           rdfs:label "Asset" ,
-                      "Asset"@en ;
+           rdfs:label "Asset"@en ,
+                      "Asset" ;
            skos:definition "A resource or a collection of resources that are the subject of a Rule."@en ;
            skos:note "The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata."@en .
 
@@ -1706,8 +1687,8 @@ odrl:Asset rdf:type owl:Class ;
 ###  http://www.w3.org/ns/odrl/2/Constraint
 odrl:Constraint rdf:type owl:Class ;
                 rdfs:isDefinedBy odrl: ;
-                rdfs:label "Constraint" ,
-                           "Constraint"@en ;
+                rdfs:label "Constraint"@en ,
+                           "Constraint" ;
                 skos:definition "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule."@en .
 
 
@@ -1718,8 +1699,8 @@ odrl:LogicalConstraint rdf:type owl:Class .
 ###  http://www.w3.org/ns/odrl/2/Operator
 odrl:Operator rdf:type owl:Class ;
               rdfs:isDefinedBy odrl: ;
-              rdfs:label "Operator" ,
-                         "Operator"@en ;
+              rdfs:label "Operator"@en ,
+                         "Operator" ;
               skos:definition "Operator for constraint expression."@en ;
               skos:note "Instances of the Operator class representing relational operators."@en .
 
@@ -1727,8 +1708,8 @@ odrl:Operator rdf:type owl:Class ;
 ###  http://www.w3.org/ns/odrl/2/Party
 odrl:Party rdf:type owl:Class ;
            rdfs:isDefinedBy odrl: ;
-           rdfs:label "Party" ,
-                      "Party"@en ;
+           rdfs:label "Party"@en ,
+                      "Party" ;
            skos:definition "An entity or a collection of entities that undertake Roles in a Rule."@en ;
            skos:note "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]]."@en .
 
@@ -1736,8 +1717,8 @@ odrl:Party rdf:type owl:Class ;
 ###  http://www.w3.org/ns/odrl/2/Policy
 odrl:Policy rdf:type owl:Class ;
             rdfs:isDefinedBy odrl: ;
-            rdfs:label "Policy" ,
-                       "Policy"@en ;
+            rdfs:label "Policy"@en ,
+                       "Policy" ;
             skos:definition "A non-empty group of Permissions and/or Prohibitions."@en ;
             skos:note "A Policy may contain multiple Rules."@en .
 

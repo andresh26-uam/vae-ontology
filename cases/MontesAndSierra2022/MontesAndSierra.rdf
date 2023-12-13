@@ -17,8 +17,8 @@
      xmlns:vcvf="http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology_montes_sierra">
-        <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_montes_sierra/1.0.0"/>
-        <owl:imports rdf:resource="https://w3id.org/def/vaeontology/1.0.2"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_montes_sierra"/>
+        <owl:imports rdf:resource="https://w3id.org/def/vaeontology"/>
         <dc:creator>Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022</dc:creator>
         <dc:description>Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487</dc:description>

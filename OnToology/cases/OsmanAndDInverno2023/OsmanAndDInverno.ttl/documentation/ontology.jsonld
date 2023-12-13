@@ -2253,10 +2253,10 @@
     "@value" : "https://arxiv.org/abs/2305.02748"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://w3id.org/def/vaeontology/1.0.2"
+    "@id" : "https://w3id.org/def/vaeontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno/1.0.0"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno"
   } ],
   "https://w3id.org/mod#createdWith" : [ {
     "@value" : "https://w3id.org/def/vaeontology"

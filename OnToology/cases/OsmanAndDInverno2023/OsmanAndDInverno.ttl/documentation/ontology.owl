@@ -20,8 +20,8 @@
      xmlns:SchwartzValues="https://w3id.org/spice/SON/SchwartzValues#"
      xmlns:vaeontology_osman_dInverno="https://w3id.org/def/vaeontology_osman_dInverno#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology_osman_dInverno">
-        <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno/1.0.0"/>
-        <owl:imports rdf:resource="https://w3id.org/def/vaeontology/1.0.2"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno"/>
+        <owl:imports rdf:resource="https://w3id.org/def/vaeontology"/>
         <dc:creator>Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022</dc:creator>
         <dc:description>Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023) https://arxiv.org/abs/2305.02748</dc:description>

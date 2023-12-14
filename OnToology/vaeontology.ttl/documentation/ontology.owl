@@ -3,14 +3,19 @@
      xml:base="https://w3id.org/def/vaeontology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mod="https://w3id.org/mod#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:SchwartzValues="https://w3id.org/spice/SON/SchwartzValues#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology"/>
@@ -22,7 +27,7 @@
         <vann:preferredNamespacePrefix>vae</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/vaeontology#"/>
         <owl:priorVersion>https://w3id.org/def/vaeontology/1.0.1</owl:priorVersion>
-        <owl:versionInfo>1.0.2</owl:versionInfo>
+        <owl:versionInfo>1.0.3</owl:versionInfo>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es"/>
     </owl:Ontology>
     
@@ -37,6 +42,69 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_NHC0 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P106 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P108 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P207 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P366 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P383 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P383"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P384 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P384"/>
     
 
 
@@ -95,6 +163,20 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     
 
 
@@ -663,6 +745,20 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#differentFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#differentFrom"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
     <!-- http://www.w3.org/ns/odrl/2/action -->
 
 
@@ -920,7 +1016,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasInferior">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#inferiorInComparison"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
@@ -934,7 +1030,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasSuperior">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#superiorInComparison"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
@@ -1158,6 +1254,20 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
+    <!-- https://w3id.org/def/vaeontology#hasFirstElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasFirstElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasRelatedElement"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isFirstElementOfRelation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Reference to the first element of a directed relation tuple R = (first, second) (Could be used to have one to many or many to many relationships).</rdfs:comment>
+        <rdfs:label>hasFirstElement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#hasInput -->
 
 
@@ -1194,6 +1304,8 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#interpretationOn"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
+        <rdfs:comment>Indicates that the VaeConditioningEntity is interpreted in some way according to an AgentStatement. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value.</rdfs:comment>
+        <rdfs:label>has Interpretation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1244,7 +1356,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfInferior">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
@@ -1258,7 +1370,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
@@ -1282,6 +1394,20 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
+    <!-- https://w3id.org/def/vaeontology#hasRelatedElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasRelatedElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Indicates that a RelationStatement relates the specified entity with others.</rdfs:comment>
+        <rdfs:label>has Related Element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#hasRelationWithProperty -->
 
 
@@ -1290,6 +1416,8 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#relationWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
+        <rdfs:comment>Indicates that a VaeConditioningEntity is related to the meaning of a VaeProperty. For instance, a measure of the GiniIndex can be related to the value of Equality.</rdfs:comment>
+        <rdfs:label>has Relation With Property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1308,6 +1436,20 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
+    <!-- https://w3id.org/def/vaeontology#hasSecondElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasSecondElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasRelatedElement"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isSecondElementOfRelation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Reference to the second element of a directed relation tuple R = (first, second) (Could be used to have one to many or many to many relationships).</rdfs:comment>
+        <rdfs:label>hasSecondElement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#hasState -->
 
 
@@ -1318,6 +1460,20 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#State"/>
         <rdfs:comment>Indicates that the Agent is represented by some State.</rdfs:comment>
         <rdfs:label>has state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasRelatedElement"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Indicates that the relation involves a symmetrically related element (it is related to any other one with this same property).</rdfs:comment>
+        <rdfs:label>has Symmetrically Related Element</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1368,7 +1524,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#inferiorInComparison">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isSecondElementOfRelation"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
@@ -1397,6 +1553,8 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#describesVaeStatementEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
+        <rdfs:comment>Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value.</rdfs:comment>
+        <rdfs:label>interpretation on</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1490,6 +1648,19 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
         <rdfs:comment>Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
         <rdfs:label xml:lang="en">Is Entity Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#isFirstElementOfRelation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isFirstElementOfRelation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>Reference to the first element of a binary relation tuple R = (first, second).</rdfs:comment>
+        <rdfs:label>is First Element Of Relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1603,7 +1774,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</rdfs:comment>
@@ -1616,7 +1787,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</rdfs:comment>
@@ -1639,6 +1810,19 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
+    <!-- https://w3id.org/def/vaeontology#isRelatedElementIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isRelatedElementIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>Indicates that an entity is related to others in a RelationStatement.</rdfs:comment>
+        <rdfs:label>is Related Element In</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#isRootNodeOf -->
 
 
@@ -1648,6 +1832,19 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode).</rdfs:comment>
         <rdfs:label>is root node of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#isSecondElementOfRelation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isSecondElementOfRelation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>Reference to the second element of a binary relation tuple R = (first, second).</rdfs:comment>
+        <rdfs:label>is Second Element Of Relation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1675,6 +1872,19 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#Agent"/>
         <rdfs:comment>Indicates that the State represents the Agent supplied.</rdfs:comment>
         <rdfs:label>is state of agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
+        <rdfs:comment>Indicates that an entity is targeted by a SymmetricRelationStatement</rdfs:comment>
+        <rdfs:label>is Symmetrically Related Element In</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1793,7 +2003,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#describesVaeStatementEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
-        <rdfs:comment>Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
+        <rdfs:comment>Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
         <rdfs:label>on entity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1893,7 +2103,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#propertyExpressedAt">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isPresentInStatement"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
         <rdfs:comment>Indicates that the VaeProperty is expressed at some VaePropertyStatement.</rdfs:comment>
         <rdfs:label>property expressed at</rdfs:label>
     </owl:ObjectProperty>
@@ -1946,6 +2156,8 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/schema/perspectiveOn"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
+        <rdfs:comment>Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality.</rdfs:comment>
+        <rdfs:label>relation with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2004,7 +2216,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#superiorInComparison">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isFirstElementOfRelation"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
@@ -2123,7 +2335,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology#degreeOfSatisfaction">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -2177,6 +2388,348 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
      -->
 
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20189 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75915 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75915">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <obo:NCIT_NHC0>C75915</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Property of Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2698891</obo:NCIT_P207>
+        <obo:NCIT_P366>Property_of_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Properties of Relations</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Property of Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Property of Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Properties of Relations</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Property of Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>HD</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75917 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75917">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A relation in which no element is in relation to itself.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75917</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Antireflexive Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2698160</obo:NCIT_P207>
+        <obo:NCIT_P366>Antireflexive_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Antireflexive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Antireflexive Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Antireflexive Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75917"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relation in which no element is in relation to itself.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75917"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antireflexive</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75917"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antireflexive Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75918 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A relation in which each element is in relation to itself.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75918</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Reflexive Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2699021</obo:NCIT_P207>
+        <obo:NCIT_P366>Reflexive_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Reflexive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Reflexive Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Reflexive Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75918"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relation in which each element is in relation to itself.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75918"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Reflexive</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75918"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Reflexive Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75919 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A binary relation such that if a is related to b then b is related to a.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75919</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Symmetric Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2699744</obo:NCIT_P207>
+        <obo:NCIT_P366>Symmetric_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Symmetric</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Symmetric Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Symmetric Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75919"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A binary relation such that if a is related to b then b is related to a.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75919"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Symmetric</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75919"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Symmetric Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75920 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A binary relation such that if a is related to b and b is related to a, then a equals b.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75920</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Antisymmetric Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2698161</obo:NCIT_P207>
+        <obo:NCIT_P366>Antisymmetric_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Antisymmetric</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Antisymmetric Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Antisymmetric Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A binary relation such that if a is related to b and b is related to a, then a equals b.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75920"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antisymmetric</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75920"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antisymmetric Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75921 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75921">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A binary relation such that whenever an element a is related to an element b, and b is in turn related to an element c, then a is also related to c.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75921</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Transitive Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2700062</obo:NCIT_P207>
+        <obo:NCIT_P366>Transitive_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Transitive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Transitive Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Transitive Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75921"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A binary relation such that whenever an element a is related to an element b, and b is in turn related to an element c, then a is also related to c.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75921"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Transitive</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75921"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Transitive Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75922 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75922">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>A binary relation such that an element a is related to an element b, and b is in turn related to an element c, but a is not related to c.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75922</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Antitransitive Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2698162</obo:NCIT_P207>
+        <obo:NCIT_P366>Antitransitive_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Antitransitive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Antitransitive Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Antitransitive Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A binary relation such that an element a is related to an element b, and b is in turn related to an element c, but a is not related to c.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75922"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antitransitive</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75922"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Antitransitive Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75924 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75924">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>An injection (or injective, or one-to-one) such that for every y in Y there is at most one x in X such that f(x) equals y.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75924</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Functional Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2700217</obo:NCIT_P207>
+        <obo:NCIT_P366>Functional_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Functional</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Functional Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Functional Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75924"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An injection (or injective, or one-to-one) such that for every y in Y there is at most one x in X such that f(x) equals y.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75924"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Functional</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75924"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Functional Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C75925 -->
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C75925">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75915"/>
+        <obo:IAO_0000115>An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C75925</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108>Reverse-Functional Relationship</obo:NCIT_P108>
+        <obo:NCIT_P207>C2699074</obo:NCIT_P207>
+        <obo:NCIT_P366>Reverse-Functional_Relationship</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Reverse-Functional</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Reverse-Functional Relationship</oboInOwl:hasExactSynonym>
+        <rdfs:label>Reverse-Functional Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75925"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75925"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Reverse-Functional</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75925"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Reverse-Functional Relationship</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
@@ -2673,6 +3226,36 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
     
 
 
+    <!-- https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75920"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#AsymmetricRelationStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
+        <rdfs:label>Anti-Symmetric Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75922"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#IntransitiveRelationStatement"/>
+        <rdfs:label>Anti-Transitive Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#ArgumentStatement -->
 
 
@@ -2705,6 +3288,18 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
         <rdfs:comment>An ArgumentStatement is a AgentStatment where a claim is made directly characterizing some value or norm related content (VaeStatement), justified by using other statements (premises) and based on some Criterion.</rdfs:comment>
         <rdfs:comment>[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”.</rdfs:comment>
         <rdfs:label>Argument Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#AsymmetricRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AsymmetricRelationStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
+        <rdfs:comment>An statement on a relation R where if a R b, does not imply that b R a. This differs from AntiSymmetricRelationStatement, where it is not possible at all to have b R a if a R b.</rdfs:comment>
+        <rdfs:label>Asymmetric Relation Statement</rdfs:label>
     </owl:Class>
     
 
@@ -2869,10 +3464,24 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
     
 
 
+    <!-- https://w3id.org/def/vaeontology#FunctionalRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#FunctionalRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75924"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>A statement specifying a Functional Relation.</rdfs:comment>
+        <rdfs:label>Functional Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#Generalization -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#Generalization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#IrreflexiveRelationStatement"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#ImportanceRelation"/>
         <rdfs:comment>A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior).</rdfs:comment>
@@ -2900,12 +3509,39 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#ImportanceRelation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#IrreflexiveRelationStatement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#TransitiveRelationStatement"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
         <rdfs:comment>&quot;Another important concept considered core in the social sciences is value priority, or how important a value is for someone.&quot;  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
         <rdfs:comment>A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) is more important than another one (inferior).</rdfs:comment>
         <rdfs:label>Importance Relation</rdfs:label>
         <rdfs:seeAlso>http://hdl.handle.net/10261/197622</rdfs:seeAlso>
         <SchwartzValues:bibRef>Value Systems as a ranking between values: [Serramia et al. https://aamas.csc.liv.ac.uk/Proceedings/aamas2018/pdfs/p1294.pdf]</SchwartzValues:bibRef>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#IntransitiveRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#IntransitiveRelationStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#TransitiveRelationStatement"/>
+        <rdfs:comment>An staetment on a relation R where if a R b, and b R v, not necessarily (but it is possible) that a R c. This differs from AntiTransitiveRelationStatement, where it is not possible to have a R c if a R b and b R c.</rdfs:comment>
+        <rdfs:label>Intransitive Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#IrreflexiveRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#IrreflexiveRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75917"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#ReflexiveRelationStatement"/>
+        <rdfs:comment>Also called anti-reflexive.</rdfs:comment>
+        <rdfs:label>Irreflexive Relation Statement</rdfs:label>
     </owl:Class>
     
 
@@ -3043,6 +3679,8 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#Sequence"/>
+        <rdfs:comment>A path is a Sequence that is composed of Transitions (state + action -&gt; state).</rdfs:comment>
+        <rdfs:label>Path</rdfs:label>
     </owl:Class>
     
 
@@ -3118,6 +3756,55 @@ ai (2023)</SchwartzValues:bibRef>
     
 
 
+    <!-- https://w3id.org/def/vaeontology#ReflexiveRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ReflexiveRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75918"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>A statement specifying a Reflexive Relation.</rdfs:comment>
+        <rdfs:label>Reflexive Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#RelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#RelationStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A contextualized relation between two or more entities put forward by an agent.</rdfs:comment>
+        <rdfs:label>Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#ReverseFunctionalRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ReverseFunctionalRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75925"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>A reverse-functional relation statement.</rdfs:comment>
+        <rdfs:label>Reverse-Functional Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#SemanticsFunction -->
 
 
@@ -3185,6 +3872,25 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
     
 
 
+    <!-- https://w3id.org/def/vaeontology#SymmetricRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#SymmetricRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75919"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A symmetric RelationStatement</rdfs:comment>
+        <rdfs:label>Symmetric Relation Statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#System -->
 
 
@@ -3238,8 +3944,9 @@ ai (2023)</SchwartzValues:bibRef>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>A node of a ValueTaxonomy.</rdfs:label>
+        <rdfs:label>Taxonomy Node</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
+        <skos:definition>A node of a ValueTaxonomy.</skos:definition>
         <SchwartzValues:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023)</SchwartzValues:bibRef>
     </owl:Class>
@@ -3302,6 +4009,20 @@ ai (2023)</SchwartzValues:bibRef>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#Outcome"/>
+        <rdfs:comment>A transition is a MultiInputOutcome that hasInput an Action and a State and hasOutcome another State. This represents the effects of an action (the second state) when it is applied on a certain state.</rdfs:comment>
+        <rdfs:label>Transition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#TransitiveRelationStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#TransitiveRelationStatement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75921"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:comment>A transitive RelationStatement.</rdfs:comment>
+        <rdfs:label>Transitive Relation Statement</rdfs:label>
     </owl:Class>
     
 
@@ -3329,6 +4050,8 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaeConditionedEntity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
+        <rdfs:comment>A VaeEntity that refers to something that has consequencestowards or its behaviour influenced by a VaeConditioningEntity. For example, an Agent (a VaeConditionedEntity) is in general conditioned to some Norms or Values (which are VaeConditioningEntities), in the sense that the Agent needs to be aware of them in some way.</rdfs:comment>
+        <rdfs:label>VAE Conditioned Entity</rdfs:label>
     </owl:Class>
     
 
@@ -3338,6 +4061,8 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaeConditioningEntity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
+        <rdfs:comment>A VaeEntity that refers to something that conditions the behaviour or the characteristics of VaeConditionedEntity. For example, an Agent (a VaeConditionedEntity) is in general conditioned to some Norms or Values (which are VaeConditioningEntities), in the sense that the Agent needs to be aware of them in some way.</rdfs:comment>
+        <rdfs:label>VAE Conditioning Entity</rdfs:label>
     </owl:Class>
     
 
@@ -3384,7 +4109,7 @@ ai (2023)</SchwartzValues:bibRef>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value</rdfs:comment>
+        <rdfs:comment>Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension).</rdfs:comment>
         <rdfs:label>Vae Property</rdfs:label>
     </owl:Class>
     
@@ -3469,6 +4194,8 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaeStatementEntity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
+        <rdfs:comment>A VaeEntity that can be present in an AgentStatement</rdfs:comment>
+        <rdfs:label>VAE Statement Entity</rdfs:label>
     </owl:Class>
     
 
@@ -3489,6 +4216,7 @@ ai (2023)</SchwartzValues:bibRef>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#ValueComparisonStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4252,7 +4980,7 @@ Giménez, August Corrons, and Lluís Garay Tamajón. &quot;Analysis of the third
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ArgumentStatement"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Criterion"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
+            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#RelationStatement"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueDefinition"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         </owl:members>
@@ -4324,6 +5052,657 @@ Giménez, August Corrons, and Lluís Garay Tamajón. &quot;Analysis of the third
             <rdf:Description rdf:about="https://w3id.org/spice/SON/SchwartzValues#SelfDirection"/>
             <rdf:Description rdf:about="https://w3id.org/spice/SON/SchwartzValues#Stimulation"/>
         </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Antisymmetry Violation</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>AntiTransitivity Violation</rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Functional Relation Enforcement</rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#FunctionalRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#FunctionalRelationStatement"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Irreflexivity Enforcement</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#IrreflexiveRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Reverse-Functional Relation Enforcement</rdfs:comment>
+        <rdfs:label>S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#ReverseFunctionalRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#ReverseFunctionalRelationStatement"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Symmetry Enforcement</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Transitivity Enforcement</rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#TransitiveRelationStatement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/vaeontology#TransitiveRelationStatement"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#b"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#t"/>
+                                                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/def/vaeontology#r"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/def/vaeontology#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 

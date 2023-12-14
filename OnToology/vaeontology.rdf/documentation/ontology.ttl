@@ -16,12 +16,48 @@
                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "vae" ;
                                     <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                     owl:priorVersion "https://w3id.org/def/vaeontology/1.0.1" ;
-                                    owl:versionInfo "1.0.2" ;
+                                    owl:versionInfo "1.0.3" ;
                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_NHC0
+<http://purl.obolibrary.org/obo/NCIT_NHC0> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P106
+<http://purl.obolibrary.org/obo/NCIT_P106> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P108
+<http://purl.obolibrary.org/obo/NCIT_P108> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P207
+<http://purl.obolibrary.org/obo/NCIT_P207> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P366
+<http://purl.obolibrary.org/obo/NCIT_P366> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P378
+<http://purl.obolibrary.org/obo/NCIT_P378> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P383
+<http://purl.obolibrary.org/obo/NCIT_P383> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_P384
+<http://purl.obolibrary.org/obo/NCIT_P384> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/created
 <http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
@@ -54,6 +90,14 @@
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
@@ -446,6 +490,14 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                                                                              "satisfies" .
 
 
+###  http://www.w3.org/2002/07/owl#differentFrom
+owl:differentFrom rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/odrl/2/action
 <http://www.w3.org/ns/odrl/2/action> rdf:type owl:ObjectProperty ;
                                      rdfs:domain [ rdf:type owl:Class ;
@@ -621,7 +673,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#comparisonHasInferior
 :comparisonHasInferior rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
+                       rdfs:subPropertyOf :hasSecondElement ;
                        owl:inverseOf :inferiorInComparison ;
                        rdfs:domain :ValueComparisonStatement ;
                        rdfs:range :ValueConcept ;
@@ -631,7 +683,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#comparisonHasSuperior
 :comparisonHasSuperior rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
+                       rdfs:subPropertyOf :hasFirstElement ;
                        owl:inverseOf :superiorInComparison ;
                        rdfs:domain :ValueComparisonStatement ;
                        rdfs:range :ValueConcept ;
@@ -788,6 +840,16 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                 rdfs:label "has concept node" .
 
 
+###  https://w3id.org/def/vaeontology#hasFirstElement
+:hasFirstElement rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasRelatedElement ;
+                 owl:inverseOf :isFirstElementOfRelation ;
+                 rdfs:domain :RelationStatement ;
+                 rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                 rdfs:comment "Reference to the first element of a directed relation tuple R = (first, second) (Could be used to have one to many or many to many relationships)." ;
+                 rdfs:label "hasFirstElement" .
+
+
 ###  https://w3id.org/def/vaeontology#hasInput
 :hasInput rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
@@ -813,7 +875,9 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                    rdfs:subPropertyOf :isPresentInStatement ;
                    owl:inverseOf :interpretationOn ;
                    rdfs:domain :VaeConditioningEntity ;
-                   rdfs:range :AgentStatement .
+                   rdfs:range :AgentStatement ;
+                   rdfs:comment "Indicates that the VaeConditioningEntity is interpreted in some way according to an AgentStatement. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value." ;
+                   rdfs:label "has Interpretation" .
 
 
 ###  https://w3id.org/def/vaeontology#hasOutcome
@@ -848,7 +912,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#hasPropertyOfInferior
 :hasPropertyOfInferior rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
+                       rdfs:subPropertyOf :expressesProperty ;
                        owl:inverseOf :isPropertyOfInferiorOf ;
                        rdfs:domain :ValueComparisonStatement ;
                        rdfs:range :ValueProperty ;
@@ -858,7 +922,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#hasPropertyOfSuperior
 :hasPropertyOfSuperior rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
+                       rdfs:subPropertyOf :expressesProperty ;
                        owl:inverseOf :isPropertyOfSuperiorOf ;
                        rdfs:domain :ValueComparisonStatement ;
                        rdfs:range :ValueProperty ;
@@ -876,12 +940,24 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                      rdfs:label "has Property Taxonomy" .
 
 
+###  https://w3id.org/def/vaeontology#hasRelatedElement
+:hasRelatedElement rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
+                   owl:inverseOf :isRelatedElementIn ;
+                   rdfs:domain :RelationStatement ;
+                   rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                   rdfs:comment "Indicates that a RelationStatement relates the specified entity with others." ;
+                   rdfs:label "has Related Element" .
+
+
 ###  https://w3id.org/def/vaeontology#hasRelationWithProperty
 :hasRelationWithProperty rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf <https://w3id.org/framester/schema/hasPerspective> ;
                          owl:inverseOf :relationWith ;
                          rdfs:domain :VaeConditioningEntity ;
-                         rdfs:range :VaeProperty .
+                         rdfs:range :VaeProperty ;
+                         rdfs:comment "Indicates that a VaeConditioningEntity is related to the meaning of a VaeProperty. For instance, a measure of the GiniIndex can be related to the value of Equality." ;
+                         rdfs:label "has Relation With Property" .
 
 
 ###  https://w3id.org/def/vaeontology#hasRootNode
@@ -894,6 +970,16 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
              rdfs:label "has root node" .
 
 
+###  https://w3id.org/def/vaeontology#hasSecondElement
+:hasSecondElement rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasRelatedElement ;
+                  owl:inverseOf :isSecondElementOfRelation ;
+                  rdfs:domain :RelationStatement ;
+                  rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                  rdfs:comment "Reference to the second element of a directed relation tuple R = (first, second) (Could be used to have one to many or many to many relationships)." ;
+                  rdfs:label "hasSecondElement" .
+
+
 ###  https://w3id.org/def/vaeontology#hasState
 :hasState rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn> ;
@@ -902,6 +988,16 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
           rdfs:range :State ;
           rdfs:comment "Indicates that the Agent is represented by some State." ;
           rdfs:label "has state" .
+
+
+###  https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement
+:hasSymmetricallyRelatedElement rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :hasRelatedElement ;
+                                owl:inverseOf :isSymmetricallyRelatedElementIn ;
+                                rdfs:domain :SymmetricRelationStatement ;
+                                rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                                rdfs:comment "Indicates that the relation involves a symmetrically related element (it is related to any other one with this same property)." ;
+                                rdfs:label "has Symmetrically Related Element" .
 
 
 ###  https://w3id.org/def/vaeontology#hasTaxonomyNode
@@ -936,7 +1032,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#inferiorInComparison
 :inferiorInComparison rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
+                      rdfs:subPropertyOf :isSecondElementOfRelation ;
                       rdfs:domain :ValueConcept ;
                       rdfs:range :ValueComparisonStatement ;
                       rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
@@ -956,7 +1052,9 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 :interpretationOn rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :describesVaeStatementEntity ;
                   rdfs:domain :AgentStatement ;
-                  rdfs:range :VaeConditioningEntity .
+                  rdfs:range :VaeConditioningEntity ;
+                  rdfs:comment "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value." ;
+                  rdfs:label "interpretation on" .
 
 
 ###  https://w3id.org/def/vaeontology#isActionOnStateOfStrategy
@@ -1022,6 +1120,15 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
             rdfs:range :AgentStatement ;
             rdfs:comment "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." ;
             rdfs:label "Is Entity Of"@en .
+
+
+###  https://w3id.org/def/vaeontology#isFirstElementOfRelation
+:isFirstElementOfRelation rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :isRelatedElementIn ;
+                          rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                          rdfs:range :RelationStatement ;
+                          rdfs:comment "Reference to the first element of a binary relation tuple R = (first, second)." ;
+                          rdfs:label "is First Element Of Relation" .
 
 
 ###  https://w3id.org/def/vaeontology#isFollowedByAgent
@@ -1099,7 +1206,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#isPropertyOfInferiorOf
 :isPropertyOfInferiorOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
+                        rdfs:subPropertyOf :propertyExpressedAt ;
                         rdfs:domain :ValueProperty ;
                         rdfs:range :ValueComparisonStatement ;
                         rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
@@ -1108,7 +1215,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf
 :isPropertyOfSuperiorOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
+                        rdfs:subPropertyOf :propertyExpressedAt ;
                         rdfs:domain :ValueProperty ;
                         rdfs:range :ValueComparisonStatement ;
                         rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
@@ -1125,6 +1232,15 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                    rdfs:label "is expressed by agent" .
 
 
+###  https://w3id.org/def/vaeontology#isRelatedElementIn
+:isRelatedElementIn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
+                    rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                    rdfs:range :RelationStatement ;
+                    rdfs:comment "Indicates that an entity is related to others in a RelationStatement." ;
+                    rdfs:label "is Related Element In" .
+
+
 ###  https://w3id.org/def/vaeontology#isRootNodeOf
 :isRootNodeOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isConceptNodeOf ;
@@ -1132,6 +1248,15 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
               rdfs:range :ValueTaxonomyStatement ;
               rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
               rdfs:label "is root node of" .
+
+
+###  https://w3id.org/def/vaeontology#isSecondElementOfRelation
+:isSecondElementOfRelation rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :isRelatedElementIn ;
+                           rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                           rdfs:range :RelationStatement ;
+                           rdfs:comment "Reference to the second element of a binary relation tuple R = (first, second)." ;
+                           rdfs:label "is Second Element Of Relation" .
 
 
 ###  https://w3id.org/def/vaeontology#isStartOfSequence
@@ -1151,6 +1276,15 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
                 rdfs:range :Agent ;
                 rdfs:comment "Indicates that the State represents the Agent supplied." ;
                 rdfs:label "is state of agent" .
+
+
+###  https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn
+:isSymmetricallyRelatedElementIn rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :isRelatedElementIn ;
+                                 rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
+                                 rdfs:range :SymmetricRelationStatement ;
+                                 rdfs:comment "Indicates that an entity is targeted by a SymmetricRelationStatement" ;
+                                 rdfs:label "is Symmetrically Related Element In" .
 
 
 ###  https://w3id.org/def/vaeontology#isTaxonomyNodeOf
@@ -1233,7 +1367,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
           rdfs:subPropertyOf :describesVaeStatementEntity ;
           rdfs:domain :AgentStatement ;
           rdfs:range :VaeConditionedEntity ;
-          rdfs:comment "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." ;
+          rdfs:comment "Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." ;
           rdfs:label "on entity" .
 
 
@@ -1300,7 +1434,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 :propertyExpressedAt rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :isPresentInStatement ;
                      rdfs:domain :VaeProperty ;
-                     rdfs:range :AgentStatement ;
+                     rdfs:range :VaePropertyStatement ;
                      rdfs:comment "Indicates that the VaeProperty is expressed at some VaePropertyStatement." ;
                      rdfs:label "property expressed at" .
 
@@ -1336,7 +1470,9 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 :relationWith rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <https://w3id.org/framester/schema/perspectiveOn> ;
               rdfs:domain :VaeProperty ;
-              rdfs:range :VaeConditioningEntity .
+              rdfs:range :VaeConditioningEntity ;
+              rdfs:comment "Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality." ;
+              rdfs:label "relation with" .
 
 
 ###  https://w3id.org/def/vaeontology#satisfiesNorm
@@ -1375,7 +1511,7 @@ Subproperties can be defined in order to distinguish the different uses.""" ;
 
 ###  https://w3id.org/def/vaeontology#superiorInComparison
 :superiorInComparison rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
+                      rdfs:subPropertyOf :isFirstElementOfRelation ;
                       rdfs:domain :ValueConcept ;
                       rdfs:range :ValueComparisonStatement ;
                       rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
@@ -1442,8 +1578,7 @@ rdf:value rdf:type owl:DatatypeProperty .
 :degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
                       rdfs:domain :TaxonomyProperty ;
-                      rdfs:range xsd:decimal ,
-                                 [ rdf:type rdfs:Datatype ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
                                    owl:onDatatype xsd:decimal ;
                                    owl:withRestrictions ( [ xsd:minInclusive 0.0
                                                           ]
@@ -1475,6 +1610,335 @@ rdf:value rdf:type owl:DatatypeProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/NCIT_C20189
+<http://purl.obolibrary.org/obo/NCIT_C20189> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75915
+<http://purl.obolibrary.org/obo/NCIT_C75915> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20189> ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75915" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Property of Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2698891" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Property_of_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Properties of Relations" ,
+                                                                                                            "Property of Relationship" ;
+                                             rdfs:label "Property of Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Properties of Relations" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Property of Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "HD" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75917
+<http://purl.obolibrary.org/obo/NCIT_C75917> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relation in which no element is in relation to itself." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75917" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Antireflexive Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2698160" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Antireflexive_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Antireflexive" ,
+                                                                                                            "Antireflexive Relationship" ;
+                                             rdfs:label "Antireflexive Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75917> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A relation in which no element is in relation to itself." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75917> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antireflexive" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75917> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antireflexive Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75918
+<http://purl.obolibrary.org/obo/NCIT_C75918> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relation in which each element is in relation to itself." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75918" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Reflexive Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2699021" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Reflexive_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Reflexive" ,
+                                                                                                            "Reflexive Relationship" ;
+                                             rdfs:label "Reflexive Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75918> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A relation in which each element is in relation to itself." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75918> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Reflexive" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75918> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Reflexive Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75919
+<http://purl.obolibrary.org/obo/NCIT_C75919> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A binary relation such that if a is related to b then b is related to a." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75919" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Symmetric Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2699744" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Symmetric_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Symmetric" ,
+                                                                                                            "Symmetric Relationship" ;
+                                             rdfs:label "Symmetric Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75919> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A binary relation such that if a is related to b then b is related to a." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75919> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Symmetric" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75919> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Symmetric Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75920
+<http://purl.obolibrary.org/obo/NCIT_C75920> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A binary relation such that if a is related to b and b is related to a, then a equals b." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75920" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Antisymmetric Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2698161" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Antisymmetric_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Antisymmetric" ,
+                                                                                                            "Antisymmetric Relationship" ;
+                                             rdfs:label "Antisymmetric Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75920> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A binary relation such that if a is related to b and b is related to a, then a equals b." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75920> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antisymmetric" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75920> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antisymmetric Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75921
+<http://purl.obolibrary.org/obo/NCIT_C75921> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A binary relation such that whenever an element a is related to an element b, and b is in turn related to an element c, then a is also related to c." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75921" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Transitive Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2700062" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Transitive_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Transitive" ,
+                                                                                                            "Transitive Relationship" ;
+                                             rdfs:label "Transitive Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75921> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A binary relation such that whenever an element a is related to an element b, and b is in turn related to an element c, then a is also related to c." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75921> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Transitive" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75921> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Transitive Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75922
+<http://purl.obolibrary.org/obo/NCIT_C75922> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A binary relation such that an element a is related to an element b, and b is in turn related to an element c, but a is not related to c." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75922" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Antitransitive Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2698162" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Antitransitive_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Antitransitive" ,
+                                                                                                            "Antitransitive Relationship" ;
+                                             rdfs:label "Antitransitive Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75922> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A binary relation such that an element a is related to an element b, and b is in turn related to an element c, but a is not related to c." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75922> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antitransitive" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75922> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Antitransitive Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75924
+<http://purl.obolibrary.org/obo/NCIT_C75924> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An injection (or injective, or one-to-one) such that for every y in Y there is at most one x in X such that f(x) equals y." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75924" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Functional Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2700217" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Functional_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Functional" ,
+                                                                                                            "Functional Relationship" ;
+                                             rdfs:label "Functional Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75924> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An injection (or injective, or one-to-one) such that for every y in Y there is at most one x in X such that f(x) equals y." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75924> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Functional" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75924> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Functional Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C75925
+<http://purl.obolibrary.org/obo/NCIT_C75925> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75915> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y." ;
+                                             <http://purl.obolibrary.org/obo/NCIT_NHC0> "C75925" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P106> "Conceptual Entity" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P108> "Reverse-Functional Relationship" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P207> "C2699074" ;
+                                             <http://purl.obolibrary.org/obo/NCIT_P366> "Reverse-Functional_Relationship" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Reverse-Functional" ,
+                                                                                                            "Reverse-Functional Relationship" ;
+                                             rdfs:label "Reverse-Functional Relationship" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75925> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y." ;
+   <http://purl.obolibrary.org/obo/NCIT_P378> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75925> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Reverse-Functional" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "SY" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/NCIT_C75925> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+   owl:annotatedTarget "Reverse-Functional Relationship" ;
+   <http://purl.obolibrary.org/obo/NCIT_P383> "PT" ;
+   <http://purl.obolibrary.org/obo/NCIT_P384> "NCI"
+ ] .
+
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdf:type owl:Class ;
@@ -1827,6 +2291,26 @@ This class can also be used to act as 'naturalized reifications' of logical theo
                     <http://www.w3.org/2004/02/skos/core#note> "References for the specific ways of certifying alignment: [Nieves Montes, Carles Sierra et al. (Gini Index - Semantics Functions, Preferences,  Promotion, Demotion, Optimally aligned norms) https://www.jair.org/index.php/jair/article/view/13487], [Lera Leri et al. (“Moral Value Interpretation”) https://www.iiia.csic.es/media/filer_public/06/0a/060aec7a-2db6-40d7-b3e6-67de4260a065/2022aamaspluralisticvaluealignment.pdf], [Andrés Holgado-Sánchez (Admissibility of sequences of outcomes) https://link.springer.com/chapter/10.1007/978-3-031-43264-4_27]" .
 
 
+###  https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement
+:AntiSymmetricRelationStatement rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75920> ,
+                                                :AsymmetricRelationStatement ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasFirstElement ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity>
+                                                ] ;
+                                owl:disjointWith :SymmetricRelationStatement ;
+                                rdfs:label "Anti-Symmetric Relation Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement
+:AntiTransitiveRelationStatement rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75922> ,
+                                                 :IntransitiveRelationStatement ;
+                                 rdfs:label "Anti-Transitive Relation Statement" .
+
+
 ###  https://w3id.org/def/vaeontology#ArgumentStatement
 :ArgumentStatement rdf:type owl:Class ;
                    rdfs:subClassOf :AgentStatement ,
@@ -1849,6 +2333,14 @@ This class can also be used to act as 'naturalized reifications' of logical theo
                    rdfs:comment "An ArgumentStatement is a AgentStatment where a claim is made directly characterizing some value or norm related content (VaeStatement), justified by using other statements (premises) and based on some Criterion." ,
                                 "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”." ;
                    rdfs:label "Argument Statement" .
+
+
+###  https://w3id.org/def/vaeontology#AsymmetricRelationStatement
+:AsymmetricRelationStatement rdf:type owl:Class ;
+                             rdfs:subClassOf :RelationStatement ;
+                             owl:disjointWith :SymmetricRelationStatement ;
+                             rdfs:comment "An statement on a relation R where if a R b, does not imply that b R a. This differs from AntiSymmetricRelationStatement, where it is not possible at all to have b R a if a R b." ;
+                             rdfs:label "Asymmetric Relation Statement" .
 
 
 ###  https://w3id.org/def/vaeontology#AwarenessSituation
@@ -1960,9 +2452,19 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                                 "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
 
 
+###  https://w3id.org/def/vaeontology#FunctionalRelationStatement
+:FunctionalRelationStatement rdf:type owl:Class ;
+                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75924> ,
+                                             :RelationStatement ;
+                             rdfs:comment "A statement specifying a Functional Relation." ;
+                             rdfs:label "Functional Relation Statement" .
+
+
 ###  https://w3id.org/def/vaeontology#Generalization
 :Generalization rdf:type owl:Class ;
-                rdfs:subClassOf :ValueComparisonStatement ;
+                rdfs:subClassOf :AntiSymmetricRelationStatement ,
+                                :IrreflexiveRelationStatement ,
+                                :ValueComparisonStatement ;
                 owl:disjointWith :ImportanceRelation ;
                 rdfs:comment "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior)." ;
                 rdfs:label "Generalization" ;
@@ -1981,12 +2483,31 @@ https://doi.org/10.1613/jair.1.13487""" .
 
 ###  https://w3id.org/def/vaeontology#ImportanceRelation
 :ImportanceRelation rdf:type owl:Class ;
-                    rdfs:subClassOf :ValueComparisonStatement ;
+                    rdfs:subClassOf :IrreflexiveRelationStatement ,
+                                    :TransitiveRelationStatement ,
+                                    :ValueComparisonStatement ;
                     rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ,
                                  "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) is more important than another one (inferior)." ;
                     rdfs:label "Importance Relation" ;
                     rdfs:seeAlso "http://hdl.handle.net/10261/197622" ;
                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Value Systems as a ranking between values: [Serramia et al. https://aamas.csc.liv.ac.uk/Proceedings/aamas2018/pdfs/p1294.pdf]" .
+
+
+###  https://w3id.org/def/vaeontology#IntransitiveRelationStatement
+:IntransitiveRelationStatement rdf:type owl:Class ;
+                               rdfs:subClassOf :RelationStatement ;
+                               owl:disjointWith :TransitiveRelationStatement ;
+                               rdfs:comment "An staetment on a relation R where if a R b, and b R v, not necessarily (but it is possible) that a R c. This differs from AntiTransitiveRelationStatement, where it is not possible to have a R c if a R b and b R c." ;
+                               rdfs:label "Intransitive Relation Statement" .
+
+
+###  https://w3id.org/def/vaeontology#IrreflexiveRelationStatement
+:IrreflexiveRelationStatement rdf:type owl:Class ;
+                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75917> ,
+                                              :RelationStatement ;
+                              owl:disjointWith :ReflexiveRelationStatement ;
+                              rdfs:comment "Also called anti-reflexive." ;
+                              rdfs:label "Irreflexive Relation Statement" .
 
 
 ###  https://w3id.org/def/vaeontology#MultiInputOutcome
@@ -2080,7 +2601,9 @@ https://doi.org/10.1613/jair.1.13487""" .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-      rdfs:subClassOf :Sequence .
+      rdfs:subClassOf :Sequence ;
+      rdfs:comment "A path is a Sequence that is composed of Transitions (state + action -> state)." ;
+      rdfs:label "Path" .
 
 
 ###  https://w3id.org/def/vaeontology#PromotionDemotion
@@ -2130,6 +2653,39 @@ ai (2023)""" .
                          rdfs:label "Quantitative Vae Property" .
 
 
+###  https://w3id.org/def/vaeontology#ReflexiveRelationStatement
+:ReflexiveRelationStatement rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75918> ,
+                                            :RelationStatement ;
+                            rdfs:comment "A statement specifying a Reflexive Relation." ;
+                            rdfs:label "Reflexive Relation Statement" .
+
+
+###  https://w3id.org/def/vaeontology#RelationStatement
+:RelationStatement rdf:type owl:Class ;
+                   rdfs:subClassOf :AgentStatement ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasFirstElement ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasSecondElement ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity>
+                                   ] ;
+                   rdfs:comment "A contextualized relation between two or more entities put forward by an agent." ;
+                   rdfs:label "Relation Statement" .
+
+
+###  https://w3id.org/def/vaeontology#ReverseFunctionalRelationStatement
+:ReverseFunctionalRelationStatement rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75925> ,
+                                                    :RelationStatement ;
+                                    rdfs:comment "A reverse-functional relation statement." ;
+                                    rdfs:label "Reverse-Functional Relation Statement" .
+
+
 ###  https://w3id.org/def/vaeontology#SemanticsFunction
 :SemanticsFunction rdf:type owl:Class ;
                    rdfs:subClassOf :QuantitativeVaeProperty ,
@@ -2175,6 +2731,19 @@ https://doi.org/10.1613/jair.1.13487""" .
           rdfs:label "Strategy" .
 
 
+###  https://w3id.org/def/vaeontology#SymmetricRelationStatement
+:SymmetricRelationStatement rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75919> ,
+                                            :RelationStatement ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasSymmetricallyRelatedElement ;
+                                              owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity>
+                                            ] ;
+                            rdfs:comment "A symmetric RelationStatement" ;
+                            rdfs:label "Symmetric Relation Statement" .
+
+
 ###  https://w3id.org/def/vaeontology#System
 :System rdf:type owl:Class ;
         rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> ,
@@ -2212,8 +2781,9 @@ ai (2023)""" .
                                 owl:someValuesFrom :ValueTaxonomyStatement
                               ] ;
               rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-              rdfs:label "A node of a ValueTaxonomy." ;
+              rdfs:label "Taxonomy Node" ;
               rdfs:seeAlso :ValueTaxonomyStatement ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A node of a ValueTaxonomy." ;
               <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023)""" .
 
@@ -2258,7 +2828,17 @@ ai (2023)""" .
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
-            rdfs:subClassOf :Outcome .
+            rdfs:subClassOf :Outcome ;
+            rdfs:comment "A transition is a MultiInputOutcome that hasInput an Action and a State and hasOutcome another State. This represents the effects of an action (the second state) when it is applied on a certain state." ;
+            rdfs:label "Transition" .
+
+
+###  https://w3id.org/def/vaeontology#TransitiveRelationStatement
+:TransitiveRelationStatement rdf:type owl:Class ;
+                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C75921> ,
+                                             :RelationStatement ;
+                             rdfs:comment "A transitive RelationStatement." ;
+                             rdfs:label "Transitive Relation Statement" .
 
 
 ###  https://w3id.org/def/vaeontology#User
@@ -2275,12 +2855,16 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology#VaeConditionedEntity
 :VaeConditionedEntity rdf:type owl:Class ;
-                      rdfs:subClassOf :VaeStatementEntity .
+                      rdfs:subClassOf :VaeStatementEntity ;
+                      rdfs:comment "A VaeEntity that refers to something that has consequencestowards or its behaviour influenced by a VaeConditioningEntity. For example, an Agent (a VaeConditionedEntity) is in general conditioned to some Norms or Values (which are VaeConditioningEntities), in the sense that the Agent needs to be aware of them in some way." ;
+                      rdfs:label "VAE Conditioned Entity" .
 
 
 ###  https://w3id.org/def/vaeontology#VaeConditioningEntity
 :VaeConditioningEntity rdf:type owl:Class ;
-                       rdfs:subClassOf :VaeStatementEntity .
+                       rdfs:subClassOf :VaeStatementEntity ;
+                       rdfs:comment "A VaeEntity that refers to something that conditions the behaviour or the characteristics of VaeConditionedEntity. For example, an Agent (a VaeConditionedEntity) is in general conditioned to some Norms or Values (which are VaeConditioningEntities), in the sense that the Agent needs to be aware of them in some way." ;
+                       rdfs:label "VAE Conditioning Entity" .
 
 
 ###  https://w3id.org/def/vaeontology#VaeEntity
@@ -2311,7 +2895,7 @@ ai (2023)""" .
                                owl:onProperty :relationWith ;
                                owl:allValuesFrom :VaeConditioningEntity
                              ] ;
-             rdfs:comment "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value" ;
+             rdfs:comment "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)." ;
              rdfs:label "Vae Property" .
 
 
@@ -2367,7 +2951,9 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology#VaeStatementEntity
 :VaeStatementEntity rdf:type owl:Class ;
-                    rdfs:subClassOf :VaeEntity .
+                    rdfs:subClassOf :VaeEntity ;
+                    rdfs:comment "A VaeEntity that can be present in an AgentStatement" ;
+                    rdfs:label "VAE Statement Entity" .
 
 
 ###  https://w3id.org/def/vaeontology#Value
@@ -2380,7 +2966,8 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology#ValueComparisonStatement
 :ValueComparisonStatement rdf:type owl:Class ;
-                          rdfs:subClassOf :VaePropertyStatement ,
+                          rdfs:subClassOf :RelationStatement ,
+                                          :VaePropertyStatement ,
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty :comparisonHasInferior ;
                                             owl:someValuesFrom :ValueConcept
@@ -2922,7 +3509,7 @@ Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-ord
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :ArgumentStatement
                 :Criterion
-                :ValueComparisonStatement
+                :RelationStatement
                 :ValueDefinition
                 :ValueTaxonomyStatement
               )
@@ -2996,5 +3583,373 @@ Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-ord
               )
 ] .
 
+
+#################################################################
+#    Rules
+#################################################################
+
+:r rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:a rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:t rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Antisymmetry Violation" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AntiSymmetricRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :AntiSymmetricRelationStatement ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "AntiTransitivity Violation" ;
+   rdfs:label "S5" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :AntiTransitiveRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :AntiTransitiveRelationStatement ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> owl:Nothing ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Functional Relation Enforcement" ;
+   rdfs:label "S6" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :FunctionalRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :FunctionalRelationStatement ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Irreflexivity Enforcement" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :IrreflexiveRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Reverse-Functional Relation Enforcement" ;
+   rdfs:label "S7" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ReverseFunctionalRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :ReverseFunctionalRelationStatement ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Symmetry Enforcement" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SymmetricRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSymmetricallyRelatedElement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSymmetricallyRelatedElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Transitivity Enforcement" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TransitiveRelationStatement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :TransitiveRelationStatement ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :t ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasFirstElement ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasSecondElement ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

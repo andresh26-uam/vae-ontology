@@ -18,7 +18,7 @@
 
 <https://w3id.org/def/vaeontology_osman_dInverno> rdf:type owl:Ontology ;
                                                    owl:versionIRI <https://w3id.org/def/vaeontology_osman_dInverno> ;
-                                                   owl:imports <https://w3id.org/def/vaeontology> ;
+                                                   owl:imports <https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl> ;
                                                    dc:creator "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" ;
                                                    dc:description """Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023) https://arxiv.org/abs/2305.02748""" ;
@@ -29,6 +29,7 @@ AI\" by Nardine Osman and Mark d’Inverno (2023)""" ;
                                                    rdfs:comment """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023) https://arxiv.org/abs/2305.02748""" ;
                                                    rdfs:seeAlso "https://arxiv.org/abs/2305.02748" ;
+                                                   owl:versionInfo "1.0.3" ;
                                                    mod:createdWith "https://w3id.org/def/vaeontology" ;
                                                    bhv:bibRef """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023) https://arxiv.org/abs/2305.02748""" .

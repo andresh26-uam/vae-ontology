@@ -47,10 +47,6 @@ ai (2023) https://arxiv.org/abs/2305.02748""" .
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
-###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
-<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> rdf:type owl:AnnotationProperty .
 
@@ -125,58 +121,6 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/def/vaeontology#relationWith
 <https://w3id.org/def/vaeontology#relationWith> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior
-:comparisonHasInferior rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior
-:comparisonHasSuperior rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy
-:followsStrategy rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasAgent
-:hasAgent rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode
-:hasConceptNode rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode
-:hasRootNode rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasState
-:hasState rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment
-:hasTaxonomyAlignment rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasTrace
-:hasTrace rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#hasUser
-:hasUser rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent
-:isProposedByAgent rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome
-:measuredOnOutcome rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome
-:startsWithInputOutcome rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/mod#createdWith
@@ -1337,8 +1281,7 @@ The importance function I : N → COD assigns an importance value from the codom
 
 :n2 rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(3 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(3 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (3 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1600,8 +1543,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Structure of Taxonomies" ;
+[ rdfs:comment "Structure of Taxonomies" ;
    rdfs:label "StructureOfTaxonomies" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1731,8 +1673,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it" ;
+[ rdfs:comment "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it" ;
    rdfs:label "S7" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1765,8 +1706,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Generalization implies belonging to the full taxonomy" ;
+[ rdfs:comment "Generalization implies belonging to the full taxonomy" ;
    rdfs:label "S3 - Concept Nodes" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1806,8 +1746,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Generalization implies belonging to the full taxonomy" ;
+[ rdfs:comment "Generalization implies belonging to the full taxonomy" ;
    rdfs:label "S3 - Property Nodes" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1847,8 +1786,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Aggregation of importance calculation propagated to the node importance" ;
+[ rdfs:comment "Aggregation of importance calculation propagated to the node importance" ;
    rdfs:label "S1" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1888,8 +1826,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Node importance propagates to the value of the Aggregation of importance calculation" ;
+[ rdfs:comment "Node importance propagates to the value of the Aggregation of importance calculation" ;
    rdfs:label "S2" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1929,8 +1866,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "No cyclic graph condition" ;
+[ rdfs:comment "No cyclic graph condition" ;
    rdfs:label "S8" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1956,8 +1892,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(1 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(1 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (1 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -2054,8 +1989,7 @@ The importance function I : N → COD assigns an importance value from the codom
                                          ]
  ] .
 
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "(2 properties) Calculation of the taxonomy alignment formula" ;
+[ rdfs:comment "(2 properties) Calculation of the taxonomy alignment formula" ;
    rdfs:label "S4 - T. Alignment (2 props)" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;

@@ -13,7 +13,6 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vaeontology="https://w3id.org/def/vaeontology#"
@@ -83,13 +82,6 @@ ai (2023) https://arxiv.org/abs/2305.02748</SchwartzValues:bibRef>
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
-
-
-    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -223,97 +215,6 @@ ai (2023) https://arxiv.org/abs/2305.02748</SchwartzValues:bibRef>
 
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#relationWith"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasAgent -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasState -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasState"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasTrace -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasTrace"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#hasUser -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#hasUser"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome"/>
     
 
 
@@ -2149,7 +2050,6 @@ The importance function I : N → COD assigns an importance value from the codom
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>(3 properties) Calculation of the taxonomy alignment formula</rdfs:comment>
         <rdfs:label>S4 - T. Alignment (3 props)</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -2636,7 +2536,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Structure of Taxonomies</rdfs:comment>
         <rdfs:label>StructureOfTaxonomies</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -2871,7 +2770,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it</rdfs:comment>
         <rdfs:label>S7</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -2929,7 +2827,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Generalization implies belonging to the full taxonomy</rdfs:comment>
         <rdfs:label>S3 - Concept Nodes</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3000,7 +2897,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Generalization implies belonging to the full taxonomy</rdfs:comment>
         <rdfs:label>S3 - Property Nodes</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3071,7 +2967,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Aggregation of importance calculation propagated to the node importance</rdfs:comment>
         <rdfs:label>S1</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3142,7 +3037,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Node importance propagates to the value of the Aggregation of importance calculation</rdfs:comment>
         <rdfs:label>S2</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3213,7 +3107,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>No cyclic graph condition</rdfs:comment>
         <rdfs:label>S8</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3258,7 +3151,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>(1 properties) Calculation of the taxonomy alignment formula</rdfs:comment>
         <rdfs:label>S4 - T. Alignment (1 props)</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3435,7 +3327,6 @@ The importance function I : N → COD assigns an importance value from the codom
         </swrl:head>
     </rdf:Description>
     <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>(2 properties) Calculation of the taxonomy alignment formula</rdfs:comment>
         <rdfs:label>S4 - T. Alignment (2 props)</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>

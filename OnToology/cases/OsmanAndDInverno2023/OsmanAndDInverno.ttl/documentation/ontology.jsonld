@@ -344,10 +344,6 @@
 }, {
   "@id" : "_:genid160",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "(3 properties) Calculation of the taxonomy alignment formula"
   } ],
@@ -891,10 +887,6 @@
 }, {
   "@id" : "_:genid249",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Structure of Taxonomies"
   } ],
@@ -1179,10 +1171,6 @@
 }, {
   "@id" : "_:genid295",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it"
   } ],
@@ -1278,10 +1266,6 @@
 }, {
   "@id" : "_:genid304",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Generalization implies belonging to the full taxonomy"
   } ],
@@ -1361,10 +1345,6 @@
 }, {
   "@id" : "_:genid315",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Generalization implies belonging to the full taxonomy"
   } ],
@@ -1444,10 +1424,6 @@
 }, {
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Aggregation of importance calculation propagated to the node importance"
   } ],
@@ -1533,10 +1509,6 @@
 }, {
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Node importance propagates to the value of the Aggregation of importance calculation"
   } ],
@@ -1625,10 +1597,6 @@
 }, {
   "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "No cyclic graph condition"
   } ],
@@ -1680,10 +1648,6 @@
 }, {
   "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "(1 properties) Calculation of the taxonomy alignment formula"
   } ],
@@ -1899,10 +1863,6 @@
 }, {
   "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "(2 properties) Calculation of the taxonomy alignment formula"
   } ],
@@ -1984,9 +1944,6 @@
 }, {
   "@id" : "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
-}, {
-  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -2671,12 +2628,6 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ccimp",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#condomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -3074,15 +3025,6 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasAgent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3115,21 +3057,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTrace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasUser",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#idempotenceConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -3239,17 +3166,11 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#logicalImplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology#SoundArgument"
   } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#monotonicityOfAggregationConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -3677,9 +3598,6 @@
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#rn",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],

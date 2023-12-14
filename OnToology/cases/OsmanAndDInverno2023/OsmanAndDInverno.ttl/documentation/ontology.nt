@@ -34,9 +34,6 @@
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
-<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -93,45 +90,6 @@
 # 
 # https://w3id.org/def/vaeontology#relationWith
 <https://w3id.org/def/vaeontology#relationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior
-<https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior
-<https://w3id.org/def/vaeontology_osman_dInverno#comparisonHasSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy
-<https://w3id.org/def/vaeontology_osman_dInverno#followsStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasAgent
-<https://w3id.org/def/vaeontology_osman_dInverno#hasAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode
-<https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode
-<https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasState
-<https://w3id.org/def/vaeontology_osman_dInverno#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment
-<https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyAlignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasTrace
-<https://w3id.org/def/vaeontology_osman_dInverno#hasTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#hasUser
-<https://w3id.org/def/vaeontology_osman_dInverno#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent
-<https://w3id.org/def/vaeontology_osman_dInverno#isProposedByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome
-<https://w3id.org/def/vaeontology_osman_dInverno#measuredOnOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome
-<https://w3id.org/def/vaeontology_osman_dInverno#startsWithInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -1169,7 +1127,6 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/def/vaeontology_osman_dInverno#ccimp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <https://w3id.org/def/vaeontology_osman_dInverno#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <https://w3id.org/def/vaeontology_osman_dInverno#n2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:genid160 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid160 <http://www.w3.org/2000/01/rdf-schema#comment> "(3 properties) Calculation of the taxonomy alignment formula" .
 _:genid160 <http://www.w3.org/2000/01/rdf-schema#label> "S4 - T. Alignment (3 props)" .
 _:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1466,7 +1423,6 @@ _:genid248 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.w3.org
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 _:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
 _:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid249 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid249 <http://www.w3.org/2000/01/rdf-schema#comment> "Structure of Taxonomies" .
 _:genid249 <http://www.w3.org/2000/01/rdf-schema#label> "StructureOfTaxonomies" .
 _:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1622,7 +1578,6 @@ _:genid286 <http://www.w3.org/2003/11/swrl#builtin> <http://sqwrl.stanford.edu/o
 <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
 _:genid286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
 _:genid285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid295 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid295 <http://www.w3.org/2000/01/rdf-schema#comment> "Being a PropertyNode and a TaxonomyNode of a ValueTaxonomyStatement means being a property node of it" .
 _:genid295 <http://www.w3.org/2000/01/rdf-schema#label> "S7" .
 _:genid295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1654,7 +1609,6 @@ _:genid303 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeo
 _:genid303 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> .
 _:genid303 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
 _:genid302 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid304 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid304 <http://www.w3.org/2000/01/rdf-schema#comment> "Generalization implies belonging to the full taxonomy" .
 _:genid304 <http://www.w3.org/2000/01/rdf-schema#label> "S3 - Concept Nodes" .
 _:genid304 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1693,7 +1647,6 @@ _:genid314 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeo
 _:genid314 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasConceptNode> .
 _:genid314 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
 _:genid313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid315 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid315 <http://www.w3.org/2000/01/rdf-schema#comment> "Generalization implies belonging to the full taxonomy" .
 _:genid315 <http://www.w3.org/2000/01/rdf-schema#label> "S3 - Property Nodes" .
 _:genid315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1732,7 +1685,6 @@ _:genid325 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeo
 _:genid325 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> .
 _:genid325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
 _:genid324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid40 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid40 <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregation of importance calculation propagated to the node importance" .
 _:genid40 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1771,7 +1723,6 @@ _:genid50 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeon
 _:genid50 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid51 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid51 <http://www.w3.org/2000/01/rdf-schema#comment> "Node importance propagates to the value of the Aggregation of importance calculation" .
 _:genid51 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1810,7 +1761,6 @@ _:genid61 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeon
 _:genid61 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid62 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid62 <http://www.w3.org/2000/01/rdf-schema#comment> "No cyclic graph condition" .
 _:genid62 <http://www.w3.org/2000/01/rdf-schema#label> "S8" .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1835,7 +1785,6 @@ _:genid68 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeon
 _:genid68 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/2002/07/owl#Nothing> .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid69 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid69 <http://www.w3.org/2000/01/rdf-schema#comment> "(1 properties) Calculation of the taxonomy alignment formula" .
 _:genid69 <http://www.w3.org/2000/01/rdf-schema#label> "S4 - T. Alignment (1 props)" .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
@@ -1937,7 +1886,6 @@ _:genid98 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeon
 _:genid98 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
 _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid99 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid99 <http://www.w3.org/2000/01/rdf-schema#comment> "(2 properties) Calculation of the taxonomy alignment formula" .
 _:genid99 <http://www.w3.org/2000/01/rdf-schema#label> "S4 - T. Alignment (2 props)" .
 _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .

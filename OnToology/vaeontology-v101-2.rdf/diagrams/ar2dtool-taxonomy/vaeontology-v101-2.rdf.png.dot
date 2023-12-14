@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Humbleness" "odrl:Action" "vae:GiniIndex" "http://schema.org/Action" "schema:FrameOccurrence" "bhv:PersonalFocus" "bhv:Hedonism" "vae:Resourcefulness" "bhv:Societal" "vae:NodeImportance" "vae:BooleanVaeProperty" "vae:AggregationFunction" "bhv:Universalism" "vae:Conformance" "vae:AwarenessSituation" "vae:Value" "bhv:Stimulation" "odrl:Policy" "bhv:Achievement" "bhv:Value" "vae:Accordance" "dul:Norm" "vae:AlignmentSituation" "vae:Conformation" "odrl:Operator" "vae:VaeProperty" "bhv:SelfTrascendence" "vae:Prise" "vae:Outcome" "vae:Abidance" "schema:ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "vae:SoundArgument" "bhv:Conservation" "vae:AlignmentStatement" "bhv:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "bhv:Caring" "odrl:Asset" "bhv:Nature" "dul:Person" "vae:Generalization" "vae:Reliableness" "vae:Context" "vae:Compliance" "vae:ActionOnState" "vae:VaeStatement" "vae:TaxonomyProperty" "vae:Force" "vae:Economic_value" "bhv:Security" "vae:ConceptNode" "dul:Object" "bhv:Tolerance" "vae:System" "http://dbpedia.org/resource/Value_(ethics)" "bhv:Humility" "odrl:Party" "vae:QuantitativeVaeProperty" "vae:Norm" "vae:Conformism" "bhv:GrowthAndAnxietyFree" "320415d5:18c63678990:-7f9b" "vae:User" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "bhv:Tradition" "dul:Event" "vae:PromotionDemotion" "dul:Agent" "vae:Permissiveness" "vae:Ossification" "vae:ValueTaxonomyStatement" "vae:TaxonomyAlignment" "320415d5:18c63678990:-7f8f" "bhv:SelfEnhancement" "vae:Strategy" "vae:Agent" "320415d5:18c63678990:-7f84" "bhv:Benevolence" "vae:FinalInputOutcome" "bhv:PanCulturalBaselineForValuesPriority" "vae:VaeSituation" "bhv:Conformity" "vae:Accord" "vae:Action" "bhv:Focus" "bhv:Resources" "dul:Collection" "vae:AwarenessStatement" "vae:ValueDefinition" "bhv:OpennessToChange" "vae:ActingAgent" "vae:Imagination" "vae:ValueConcept" "vae:PropertyNode" "vae:ValueProperty" "vae:ValueComparisonStatement" "vae:VaeStatementEntity" "vae:Criterion" "bhv:Thought" "dul:TimeInterval" "dul:Process" "vae:Treasure" "vae:State" "dul:Entity" "bhv:Face" "vae:VaeConditioningEntity" "vae:TaxonomyNode" "vae:Leeway" "vae:Dependableness" "vae:VaePropertyStatement" "vae:SemanticsFunction" "bhv:SocialFocus" "vae:Reliability" "vae:Custom" "vae:Equality" "vae:OptimizedProperty" "dul:Theory" "dul:Region" "dul:Description" "vae:QuantitativePromotionDemotion" "bhv:Action" "vcvf:Value" "bhv:Power" "vae:ImportanceRelation" "bhv:Personal" "vae:Allowance" "vae:Accomplishment" "dul:Action" "vae:ArgumentStatement" "bhv:SelfDirection" "bhv:Concern" "vae:Prize" "vae:Margin" "vae:TextualVaeProperty" "bhv:SelfProtectionAndAnxietyAvoidance" ; /*classes style*/
+node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Humbleness" "odrl:Action" "vae:GiniIndex" "http://schema.org/Action" "schema:FrameOccurrence" "bhv:PersonalFocus" "bhv:Hedonism" "vae:Resourcefulness" "bhv:Societal" "vae:NodeImportance" "vae:BooleanVaeProperty" "bhv:Universalism" "vae:AggregationFunction" "vae:Conformance" "vae:AwarenessSituation" "vae:Value" "bhv:Stimulation" "odrl:Policy" "bhv:Achievement" "bhv:Value" "vae:Accordance" "dul:Norm" "vae:AlignmentSituation" "vae:Conformation" "odrl:Operator" "vae:VaeProperty" "bhv:SelfTrascendence" "vae:Prise" "vae:Outcome" "vae:Abidance" "schema:ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "vae:SoundArgument" "bhv:Conservation" "vae:AlignmentStatement" "bhv:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "bhv:Caring" "odrl:Asset" "bhv:Nature" "dul:Person" "vae:Generalization" "vae:Reliableness" "vae:Context" "vae:Compliance" "vae:ActionOnState" "vae:VaeStatement" "vae:TaxonomyProperty" "vae:Force" "vae:Economic_value" "bhv:Security" "vae:ConceptNode" "dul:Object" "bhv:Tolerance" "vae:System" "http://dbpedia.org/resource/Value_(ethics)" "bhv:Humility" "odrl:Party" "vae:QuantitativeVaeProperty" "vae:Norm" "vae:Conformism" "bhv:GrowthAndAnxietyFree" "vae:User" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "bhv:Tradition" "dul:Event" "vae:PromotionDemotion" "dul:Agent" "vae:Permissiveness" "vae:Ossification" "vae:ValueTaxonomyStatement" "vae:TaxonomyAlignment" "bhv:SelfEnhancement" "vae:Strategy" "83db6a3:18c67b21677:-7f8f" "vae:Agent" "bhv:Benevolence" "vae:FinalInputOutcome" "bhv:PanCulturalBaselineForValuesPriority" "83db6a3:18c67b21677:-7f84" "vae:VaeSituation" "bhv:Conformity" "vae:Accord" "vae:Action" "bhv:Focus" "bhv:Resources" "dul:Collection" "vae:AwarenessStatement" "vae:ValueDefinition" "bhv:OpennessToChange" "vae:ActingAgent" "vae:Imagination" "83db6a3:18c67b21677:-7f9b" "vae:ValueConcept" "vae:PropertyNode" "vae:ValueProperty" "vae:ValueComparisonStatement" "vae:VaeStatementEntity" "vae:Criterion" "bhv:Thought" "dul:TimeInterval" "dul:Process" "vae:Treasure" "vae:State" "dul:Entity" "bhv:Face" "vae:VaeConditioningEntity" "vae:TaxonomyNode" "vae:Leeway" "vae:Dependableness" "vae:VaePropertyStatement" "vae:SemanticsFunction" "bhv:SocialFocus" "vae:Reliability" "vae:Custom" "vae:Equality" "vae:OptimizedProperty" "dul:Theory" "dul:Region" "dul:Description" "vae:QuantitativePromotionDemotion" "bhv:Action" "vcvf:Value" "bhv:Power" "vae:ImportanceRelation" "bhv:Personal" "vae:Allowance" "vae:Accomplishment" "dul:Action" "vae:ArgumentStatement" "bhv:SelfDirection" "bhv:Concern" "vae:Prize" "vae:Margin" "vae:TextualVaeProperty" "bhv:SelfProtectionAndAnxietyAvoidance" ; /*classes style*/
 	"vae:GiniIndex" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
 	"dul:Region" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"vae:Dependableness" -> "bhv:Dependability" [ label = "rdfs:subClassOf" ];
@@ -31,8 +31,8 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Hu
 	"vae:AgentStatement" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"vae:BooleanVaeProperty" -> "vae:VaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:Norm" -> "vae:VaeConditioningEntity" [ label = "rdfs:subClassOf" ];
-	"vae:Norm" -> "dul:Norm" [ label = "rdfs:subClassOf" ];
 	"vae:Norm" -> "odrl:Policy" [ label = "rdfs:subClassOf" ];
+	"vae:Norm" -> "dul:Norm" [ label = "rdfs:subClassOf" ];
 	"vae:Norm" -> "vae:VaeConditionedEntity" [ label = "rdfs:subClassOf" ];
 	"bhv:Tolerance" -> "bhv:Universalism" [ label = "rdfs:subClassOf" ];
 	"dul:SocialObject" -> "dul:Object" [ label = "rdfs:subClassOf" ];
@@ -100,7 +100,7 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Hu
 	"vae:VaeConditionedEntity" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
 	"vae:Custom" -> "bhv:Tradition" [ label = "rdfs:subClassOf" ];
 	"bhv:Thought" -> "bhv:SelfDirection" [ label = "rdfs:subClassOf" ];
-	"vae:FinalInputOutcome" -> "320415d5:18c63678990:-7f84" [ label = "rdfs:subClassOf" ];
+	"vae:FinalInputOutcome" -> "83db6a3:18c67b21677:-7f84" [ label = "rdfs:subClassOf" ];
 	"vae:FinalInputOutcome" -> "vae:MultiInputOutcome" [ label = "rdfs:subClassOf" ];
 	"bhv:SelfProtectionAndAnxietyAvoidance" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:ValueDefinition" -> "vae:AgentStatement" [ label = "rdfs:subClassOf" ];
@@ -113,7 +113,7 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Hu
 	"vae:Action" -> "dul:Action" [ label = "rdfs:subClassOf" ];
 	"vae:AwarenessSituation" -> "vae:VaeSituation" [ label = "rdfs:subClassOf" ];
 	"vae:AggregationFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
-	"vae:AwarenessStatement" -> "320415d5:18c63678990:-7f8f" [ label = "rdfs:subClassOf" ];
+	"vae:AwarenessStatement" -> "83db6a3:18c67b21677:-7f8f" [ label = "rdfs:subClassOf" ];
 	"vae:AwarenessStatement" -> "vae:VaeStatement" [ label = "rdfs:subClassOf" ];
 	"vae:TaxonomyNode" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"vae:VaeProperty" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
@@ -164,7 +164,7 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "vae:Hu
 	"bhv:SelfDirection" -> "bhv:OpennessToChange" [ label = "rdfs:subClassOf" ];
 	"vae:Prise" -> "bhv:Value" [ label = "rdfs:subClassOf" ];
 	"vae:AlignmentStatement" -> "vae:VaeStatement" [ label = "rdfs:subClassOf" ];
-	"vae:AlignmentStatement" -> "320415d5:18c63678990:-7f9b" [ label = "rdfs:subClassOf" ];
+	"vae:AlignmentStatement" -> "83db6a3:18c67b21677:-7f9b" [ label = "rdfs:subClassOf" ];
 	"vae:ActingAgent" -> "vae:Agent" [ label = "rdfs:subClassOf" ];
 	"vae:Accomplishment" -> "bhv:Achievement" [ label = "rdfs:subClassOf" ];
 	"bhv:Humility" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];

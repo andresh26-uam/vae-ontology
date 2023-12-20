@@ -1,6 +1,5 @@
 <https://w3id.org/def/vaeontology_montes_sierra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/def/vaeontology_montes_sierra> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/vaeontology_montes_sierra> .
-<https://w3id.org/def/vaeontology_montes_sierra> <http://www.w3.org/2002/07/owl#imports> <https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl> .
 <https://w3id.org/def/vaeontology_montes_sierra> <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" .
 <https://w3id.org/def/vaeontology_montes_sierra> <http://purl.org/dc/elements/1.1/description> "Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
 <https://w3id.org/def/vaeontology_montes_sierra> <http://purl.org/dc/elements/1.1/title> "Ontology on \"Synthesis and properties of optimally value-aligned normative systems\", Montes, N., Sierra, C. (2022)." .
@@ -19,8 +18,29 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2002/07/owl#minQualifiedCardinality
 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#bibRef
+<https://w3id.org/spice/SON/SchwartzValues#bibRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -36,6 +56,9 @@
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstraint
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -55,9 +78,21 @@
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -89,6 +124,114 @@
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#parametrizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
 # 
+# http://www.w3.org/ns/odrl/2/assignee
+<http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/assigner
+<http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/leftOperand
+<http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/operator
+<http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/rightOperand
+<http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#abidesByValue
+<https://w3id.org/def/vaeontology#abidesByValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#composedBySequence
+<https://w3id.org/def/vaeontology#composedBySequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#hasClaim
+<https://w3id.org/def/vaeontology#hasClaim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#hasInput
+<https://w3id.org/def/vaeontology#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#hasOutcome
+<https://w3id.org/def/vaeontology#hasOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#hasPremise
+<https://w3id.org/def/vaeontology#hasPremise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#hasState
+<https://w3id.org/def/vaeontology#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#influencesOutcome
+<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#interpretationOn
+<https://w3id.org/def/vaeontology#interpretationOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isAgentOfSystem
+<https://w3id.org/def/vaeontology#isAgentOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isBasedOnCriterion
+<https://w3id.org/def/vaeontology#isBasedOnCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isInputOf
+<https://w3id.org/def/vaeontology#isInputOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isInputOutcomeOf
+<https://w3id.org/def/vaeontology#isInputOutcomeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isOptimizationOfProperty
+<https://w3id.org/def/vaeontology#isOptimizationOfProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isOutcomeOf
+<https://w3id.org/def/vaeontology#isOutcomeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isStartOfSequence
+<https://w3id.org/def/vaeontology#isStartOfSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#isStateOfAgent
+<https://w3id.org/def/vaeontology#isStateOfAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#madeByAgent
+<https://w3id.org/def/vaeontology#madeByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#makesAction
+<https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#measuredOnOutcome
+<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#nextInputOutcome
+<https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#onEntity
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#propertyExpressedAt
+<https://w3id.org/def/vaeontology#propertyExpressedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#propertyOptimizedAt
+<https://w3id.org/def/vaeontology#propertyOptimizedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#proposesStatement
+<https://w3id.org/def/vaeontology#proposesStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#reflectsValue
+<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#relationWith
+<https://w3id.org/def/vaeontology#relationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#satisfiesNorm
+<https://w3id.org/def/vaeontology#satisfiesNorm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/vaeontology#startsWithInputOutcome
+<https://w3id.org/def/vaeontology#startsWithInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://w3id.org/def/vaeontology_montes_sierra#hasOutState
 <https://w3id.org/def/vaeontology_montes_sierra#hasOutState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology_montes_sierra#hasOutState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> .
@@ -117,6 +260,9 @@
 # #################################################################
 # 
 # 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
@@ -125,6 +271,9 @@
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore"@it .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter data value"@en .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#belongsToSegment
 <https://w3id.org/def/vaeontology_montes_sierra#belongsToSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -190,6 +339,9 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
@@ -215,24 +367,73 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parametro"@it .
 # 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
 # 
+# http://www.w3.org/ns/odrl/2/Constraint
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#ActingAgent
+<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Action
+<https://w3id.org/def/vaeontology#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#AggregationFunction
+<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#AlignmentStatement
+<https://w3id.org/def/vaeontology#AlignmentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#ArgumentStatement
+<https://w3id.org/def/vaeontology#ArgumentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Context
+<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Criterion
+<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/def/vaeontology#Equality
+<https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/2000/01/rdf-schema#comment> "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality.\"" .
 # 
+# https://w3id.org/def/vaeontology#FinalInputOutcome
+<https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/def/vaeontology#GiniIndex
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#SemanticsFunction> .
 <https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Equality> .
 _:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\"" .
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." .
+<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Gini Index" .
+<https://w3id.org/def/vaeontology#GiniIndex> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
+# 
+# https://w3id.org/def/vaeontology#MultiInputOutcome
+<https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Norm
+<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#OptimizedProperty
+<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/vaeontology#Path
+<https://w3id.org/def/vaeontology#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
 _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -249,9 +450,39 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology_montes_sierra#hasOutState> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
+# https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#QuantitativeVaeProperty
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/def/vaeontology#SemanticsFunction
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
 <https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> .
 <https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\"" .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Semantics Function" .
+<https://w3id.org/def/vaeontology#SemanticsFunction> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
+# 
+# https://w3id.org/def/vaeontology#Sequence
+<https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#State
+<https://w3id.org/def/vaeontology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#System
+<https://w3id.org/def/vaeontology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Transition
+<https://w3id.org/def/vaeontology#Transition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#User
+<https://w3id.org/def/vaeontology#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#ValueProperty
+<https://w3id.org/def/vaeontology#ValueProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion
 <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -475,6 +706,9 @@ _:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignp
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_montes_sierra#TaxingSystemState> <http://www.w3.org/2000/01/rdf-schema#label> "TaxingSystemState" .
 <https://w3id.org/def/vaeontology_montes_sierra#TaxingSystemState> <http://www.w3.org/2004/02/skos/core#definition> "The state of a TaxingSystem." .
+# 
+# https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 

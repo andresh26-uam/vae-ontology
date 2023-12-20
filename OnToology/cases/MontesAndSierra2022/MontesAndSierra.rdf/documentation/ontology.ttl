@@ -8,7 +8,6 @@
 
 <https://w3id.org/def/vaeontology_montes_sierra> rdf:type owl:Ontology ;
                                                   owl:versionIRI <https://w3id.org/def/vaeontology_montes_sierra> ;
-                                                  owl:imports <https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl> ;
                                                   <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" ;
                                                   <http://purl.org/dc/elements/1.1/description> """Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487""" ;
@@ -26,8 +25,36 @@ https://doi.org/10.1613/jair.1.13487""" .
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
 owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#bibRef
+<https://w3id.org/spice/SON/SchwartzValues#bibRef> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -40,6 +67,10 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstraint
@@ -63,9 +94,25 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> rdf:type owl:ObjectProperty .
 
 
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor> rdf:type owl:ObjectProperty ;
                                                                         rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor
@@ -102,6 +149,150 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
                                                                      rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
 
 
+###  http://www.w3.org/ns/odrl/2/assignee
+<http://www.w3.org/ns/odrl/2/assignee> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/assigner
+<http://www.w3.org/ns/odrl/2/assigner> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/leftOperand
+<http://www.w3.org/ns/odrl/2/leftOperand> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/operator
+<http://www.w3.org/ns/odrl/2/operator> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/rightOperand
+<http://www.w3.org/ns/odrl/2/rightOperand> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#abidesByValue
+<https://w3id.org/def/vaeontology#abidesByValue> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#composedBySequence
+<https://w3id.org/def/vaeontology#composedBySequence> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#hasClaim
+<https://w3id.org/def/vaeontology#hasClaim> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#hasInput
+<https://w3id.org/def/vaeontology#hasInput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#hasOutcome
+<https://w3id.org/def/vaeontology#hasOutcome> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#hasPremise
+<https://w3id.org/def/vaeontology#hasPremise> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#hasState
+<https://w3id.org/def/vaeontology#hasState> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#influencesOutcome
+<https://w3id.org/def/vaeontology#influencesOutcome> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#interpretationOn
+<https://w3id.org/def/vaeontology#interpretationOn> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isAgentOfSystem
+<https://w3id.org/def/vaeontology#isAgentOfSystem> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isBasedOnCriterion
+<https://w3id.org/def/vaeontology#isBasedOnCriterion> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isInputOf
+<https://w3id.org/def/vaeontology#isInputOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isInputOutcomeOf
+<https://w3id.org/def/vaeontology#isInputOutcomeOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isOptimizationOfProperty
+<https://w3id.org/def/vaeontology#isOptimizationOfProperty> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isOutcomeOf
+<https://w3id.org/def/vaeontology#isOutcomeOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isStartOfSequence
+<https://w3id.org/def/vaeontology#isStartOfSequence> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#isStateOfAgent
+<https://w3id.org/def/vaeontology#isStateOfAgent> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#madeByAgent
+<https://w3id.org/def/vaeontology#madeByAgent> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#makesAction
+<https://w3id.org/def/vaeontology#makesAction> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#measuredOnOutcome
+<https://w3id.org/def/vaeontology#measuredOnOutcome> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#nextInputOutcome
+<https://w3id.org/def/vaeontology#nextInputOutcome> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#onEntity
+<https://w3id.org/def/vaeontology#onEntity> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#propertyExpressedAt
+<https://w3id.org/def/vaeontology#propertyExpressedAt> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#propertyOptimizedAt
+<https://w3id.org/def/vaeontology#propertyOptimizedAt> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#proposesStatement
+<https://w3id.org/def/vaeontology#proposesStatement> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#reflectsValue
+<https://w3id.org/def/vaeontology#reflectsValue> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#relationWith
+<https://w3id.org/def/vaeontology#relationWith> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#satisfiesNorm
+<https://w3id.org/def/vaeontology#satisfiesNorm> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/vaeontology#startsWithInputOutcome
+<https://w3id.org/def/vaeontology#startsWithInputOutcome> rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/def/vaeontology_montes_sierra#hasOutState
 :hasOutState rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
@@ -131,6 +322,10 @@ https://doi.org/10.1613/jair.1.13487""" .
 #    Data properties
 #################################################################
 
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> rdf:type owl:DatatypeProperty ;
                                                                               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
@@ -141,6 +336,10 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                                               rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ;
                                                                               rdfs:label "ha valore"@it ,
                                                                                          "has parameter data value"@en .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#belongsToSegment
@@ -201,6 +400,10 @@ Ordering on subparameters can be created by using or specializing the object pro
 #    Classes
 #################################################################
 
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> rdf:type owl:Class .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> rdf:type owl:Class ;
                                                                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
@@ -229,8 +432,16 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                                              "Parametro"@it .
 
 
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> rdf:type owl:Class .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> rdf:type owl:Class .
 
 
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure
@@ -238,20 +449,77 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                                       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> .
 
 
+###  http://www.w3.org/ns/odrl/2/Constraint
+<http://www.w3.org/ns/odrl/2/Constraint> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#ActingAgent
+<https://w3id.org/def/vaeontology#ActingAgent> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Action
+<https://w3id.org/def/vaeontology#Action> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#AggregationFunction
+<https://w3id.org/def/vaeontology#AggregationFunction> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#AlignmentStatement
+<https://w3id.org/def/vaeontology#AlignmentStatement> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#ArgumentStatement
+<https://w3id.org/def/vaeontology#ArgumentStatement> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Context
+<https://w3id.org/def/vaeontology#Context> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Criterion
+<https://w3id.org/def/vaeontology#Criterion> rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/vaeontology#Equality
-<https://w3id.org/def/vaeontology#Equality> rdfs:comment "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality.\"" .
+<https://w3id.org/def/vaeontology#Equality> rdf:type owl:Class ;
+                                            rdfs:comment "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality.\"" .
+
+
+###  https://w3id.org/def/vaeontology#FinalInputOutcome
+<https://w3id.org/def/vaeontology#FinalInputOutcome> rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/vaeontology#GiniIndex
-<https://w3id.org/def/vaeontology#GiniIndex> rdfs:subClassOf [ rdf:type owl:Restriction ;
+<https://w3id.org/def/vaeontology#GiniIndex> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/def/vaeontology#SemanticsFunction> ,
+                                                             [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/def/vaeontology#relationWith> ;
                                                                owl:allValuesFrom <https://w3id.org/def/vaeontology#Equality>
                                                              ] ;
-                                             rdfs:comment "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\"" .
+                                             rdfs:comment "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\"" ,
+                                                          "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." ;
+                                             rdfs:label "Gini Index" ;
+                                             <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487""" .
+
+
+###  https://w3id.org/def/vaeontology#MultiInputOutcome
+<https://w3id.org/def/vaeontology#MultiInputOutcome> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Norm
+<https://w3id.org/def/vaeontology#Norm> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#OptimizedProperty
+<https://w3id.org/def/vaeontology#OptimizedProperty> rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/vaeontology#Path
-<https://w3id.org/def/vaeontology#Path> rdfs:subClassOf [ rdf:type owl:Restriction ;
+<https://w3id.org/def/vaeontology#Path> rdf:type owl:Class ;
+                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                           owl:onProperty :hasOutState ;
                                                           owl:someValuesFrom [ owl:intersectionOf ( <https://w3id.org/def/vaeontology#State>
                                                                                                     [ rdf:type owl:Restriction ;
@@ -264,9 +532,49 @@ Ordering on subparameters can be created by using or specializing the object pro
                                                         ] .
 
 
+###  https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
+<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#QuantitativeVaeProperty
+<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/vaeontology#SemanticsFunction
-<https://w3id.org/def/vaeontology#SemanticsFunction> rdfs:subClassOf :BoundedQuantitativePromotionDemotion ;
-                                                     rdfs:comment "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\"" .
+<https://w3id.org/def/vaeontology#SemanticsFunction> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
+                                                                     <https://w3id.org/def/vaeontology#ValueProperty> ,
+                                                                     :BoundedQuantitativePromotionDemotion ;
+                                                     rdfs:comment "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\"" ,
+                                                                  "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" ;
+                                                     rdfs:label "Semantics Function" ;
+                                                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487""" .
+
+
+###  https://w3id.org/def/vaeontology#Sequence
+<https://w3id.org/def/vaeontology#Sequence> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#State
+<https://w3id.org/def/vaeontology#State> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#System
+<https://w3id.org/def/vaeontology#System> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Transition
+<https://w3id.org/def/vaeontology#Transition> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#User
+<https://w3id.org/def/vaeontology#User> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#ValueProperty
+<https://w3id.org/def/vaeontology#ValueProperty> rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion
@@ -490,6 +798,10 @@ where PN is the random variable of the subset of paths restricted under the norm
                                    ] ;
                    rdfs:label "TaxingSystemState" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "The state of a TaxingSystem." .
+
+
+###  https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
+<https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> rdf:type owl:Class .
 
 
 #################################################################

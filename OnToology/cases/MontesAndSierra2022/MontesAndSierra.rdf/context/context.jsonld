@@ -333,6 +333,9 @@
     "State" : {
       "@id" : "https://w3id.org/def/vaeontology#State"
     },
+    "QuantitativeVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+    },
     "hasPremise" : {
       "@id" : "https://w3id.org/def/vaeontology#hasPremise",
       "@type" : "@id"

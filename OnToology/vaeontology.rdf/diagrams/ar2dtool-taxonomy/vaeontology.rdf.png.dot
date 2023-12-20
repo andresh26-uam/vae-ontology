@@ -1,8 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:Action" "vae:Path" "vae:GiniIndex" "schema:FrameOccurrence" "vae:AntiSymmetricRelationStatement" "bhv:PersonalFocus" "obo:NCIT_C75921" "vae:ReverseFunctionalRelationStatement" "bhv:Hedonism" "bhv:Societal" "vae:NodeImportance" "vae:BooleanVaeProperty" "vae:AggregationFunction" "bhv:Universalism" "vae:AwarenessSituation" "vae:Value" "bhv:Stimulation" "odrl:Policy" "bhv:Achievement" "bhv:Value" "dul:Norm" "obo:NCIT_C75922" "vae:AlignmentSituation" "obo:NCIT_C20189" "odrl:Operator" "vae:VaeProperty" "bhv:SelfTrascendence" "vae:Outcome" "vae:AsymmetricRelationStatement" "obo:NCIT_C75918" "schema:ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "vae:SoundArgument" "bhv:Conservation" "vae:AlignmentStatement" "bhv:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "bhv:Caring" "odrl:Asset" "bhv:Nature" "dul:Person" "vae:Generalization" "obo:NCIT_C75919" "vae:Context" "vae:SymmetricRelationStatement" "vae:ActionOnState" "vae:VaeStatement" "vae:TaxonomyProperty" "bhv:Security" "obo:NCIT_C75924" "vae:ConceptNode" "dul:Object" "bhv:Tolerance" "vae:System" "bhv:Humility" "vae:FunctionalRelationStatement" "odrl:Party" "vae:AntiTransitiveRelationStatement" "vae:QuantitativeVaeProperty" "vae:Norm" "bhv:GrowthAndAnxietyFree" "vae:User" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "bhv:Tradition" "dul:Event" "vae:PromotionDemotion" "dul:Agent" "vae:ValueTaxonomyStatement" "vae:TaxonomyAlignment" "bhv:SelfEnhancement" "vae:Strategy" "vae:Agent" "bhv:Benevolence" "vae:FinalInputOutcome" "bhv:PanCulturalBaselineForValuesPriority" "vae:VaeSituation" "bhv:Conformity" "vae:Action" "bhv:Resources" "bhv:Focus" "vae:TransitiveRelationStatement" "dul:Collection" "vae:AwarenessStatement" "vae:IrreflexiveRelationStatement" "obo:NCIT_C75925" "vae:ValueDefinition" "bhv:OpennessToChange" "vae:ActingAgent" "vae:ValueConcept" "vae:PropertyNode" "vae:ValueProperty" "vae:ValueComparisonStatement" "vae:VaeStatementEntity" "vae:Criterion" "obo:NCIT_C75915" "bhv:Thought" "vae:Transition" "vae:State" "dul:Entity" "bhv:Face" "vae:VaeConditioningEntity" "vae:TaxonomyNode" "vae:VaePropertyStatement" "vae:SemanticsFunction" "bhv:SocialFocus" "obo:NCIT_C75920" "vae:Equality" "vae:IntransitiveRelationStatement" "vae:OptimizedProperty" "dul:Theory" "dul:Region" "dul:Description" "vae:QuantitativePromotionDemotion" "bhv:Action" "vcvf:Value" "bhv:Power" "vae:ImportanceRelation" "bhv:Personal" "vae:ReflexiveRelationStatement" "obo:NCIT_C75917" "vae:ArgumentStatement" "bhv:SelfDirection" "bhv:Concern" "vae:TextualVaeProperty" "bhv:SelfProtectionAndAnxietyAvoidance" "vae:RelationStatement" ; /*classes style*/
-	"vae:GiniIndex" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:Action" "vae:Path" "schema:FrameOccurrence" "vae:AntiSymmetricRelationStatement" "bhv:PersonalFocus" "vae:ReverseFunctionalRelationStatement" "bhv:Hedonism" "obo:NCIT_C75921" "bhv:Societal" "vae:BooleanVaeProperty" "vae:AggregationFunction" "bhv:Universalism" "vae:AwarenessSituation" "vae:Value" "bhv:Stimulation" "odrl:Policy" "bhv:Achievement" "bhv:Value" "dul:Norm" "obo:NCIT_C75922" "vae:AlignmentSituation" "obo:NCIT_C20189" "odrl:Operator" "vae:VaeProperty" "bhv:SelfTrascendence" "vae:Outcome" "vae:AsymmetricRelationStatement" "obo:NCIT_C75918" "schema:ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "vae:SoundArgument" "bhv:Conservation" "vae:Fairness" "vae:AlignmentStatement" "bhv:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "bhv:Caring" "odrl:Asset" "bhv:Nature" "dul:Person" "vae:Generalization" "obo:NCIT_C75919" "vae:Context" "vae:SymmetricRelationStatement" "vae:ActionOnState" "vae:VaeStatement" "bhv:Security" "obo:NCIT_C75924" "dul:Object" "bhv:Tolerance" "vae:System" "bhv:Humility" "vae:FunctionalRelationStatement" "odrl:Party" "vae:AntiTransitiveRelationStatement" "vae:QuantitativeVaeProperty" "vae:Norm" "bhv:GrowthAndAnxietyFree" "vae:User" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "bhv:Tradition" "dul:Event" "vae:PromotionDemotion" "dul:Agent" "bhv:SelfEnhancement" "vae:Strategy" "vae:Agent" "bhv:Benevolence" "vae:FinalInputOutcome" "bhv:PanCulturalBaselineForValuesPriority" "vae:VaeSituation" "bhv:Conformity" "vae:Action" "bhv:Focus" "vae:TransitiveRelationStatement" "bhv:Resources" "dul:Collection" "vae:AwarenessStatement" "vae:IrreflexiveRelationStatement" "obo:NCIT_C75925" "vae:ValueDefinition" "bhv:OpennessToChange" "vae:ActingAgent" "vae:ValueConcept" "vae:ValueProperty" "vae:ValueComparisonStatement" "vae:VaeStatementEntity" "vae:Criterion" "obo:NCIT_C75915" "bhv:Thought" "vae:Transition" "vae:State" "dul:Entity" "bhv:Face" "vae:VaeConditioningEntity" "vae:VaePropertyStatement" "bhv:SocialFocus" "obo:NCIT_C75920" "vae:Equality" "vae:IntransitiveRelationStatement" "vae:OptimizedProperty" "dul:Theory" "dul:Region" "dul:Description" "vae:QuantitativePromotionDemotion" "bhv:Action" "vcvf:Value" "bhv:Power" "vae:ImportanceRelation" "bhv:Personal" "vae:ReflexiveRelationStatement" "obo:NCIT_C75917" "vae:ArgumentStatement" "bhv:SelfDirection" "bhv:Concern" "vae:TextualVaeProperty" "vae:RelationStatement" "bhv:SelfProtectionAndAnxietyAvoidance" ; /*classes style*/
 	"dul:Region" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"bhv:Societal" -> "bhv:Security" [ label = "rdfs:subClassOf" ];
 	"vae:Strategy" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
@@ -27,8 +26,6 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"vae:Generalization" -> "vae:AntiSymmetricRelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:TransitiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:TransitiveRelationStatement" -> "obo:NCIT_C75921" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"bhv:OpennessToChange" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:AgentStatement" -> "vae:VaeEntity" [ label = "rdfs:subClassOf" ];
 	"vae:AgentStatement" -> "dul:Description" [ label = "rdfs:subClassOf" ];
@@ -56,10 +53,11 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"vae:MultiInputOutcome" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"dul:Event" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"bhv:SocialFocus" -> "bhv:Focus" [ label = "rdfs:subClassOf" ];
-	"vae:Equality" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"vae:Context" -> "dul:Situation" [ label = "rdfs:subClassOf" ];
 	"bhv:Focus" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
+	"vae:Equality" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"bhv:SelfEnhancement" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
+	"vae:Fairness" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"bhv:Benevolence" -> "bhv:Value" [ label = "rdfs:subClassOf" ];
 	"bhv:Benevolence" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75915" -> "obo:NCIT_C20189" [ label = "rdfs:subClassOf" ];
@@ -85,8 +83,6 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"dul:Norm" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"vae:AntiSymmetricRelationStatement" -> "vae:AsymmetricRelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:AntiSymmetricRelationStatement" -> "obo:NCIT_C75920" [ label = "rdfs:subClassOf" ];
-	"vae:NodeImportance" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:NodeImportance" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Person" -> "dul:Agent" [ label = "rdfs:subClassOf" ];
 	"vae:State" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"bhv:Conservation" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
@@ -104,8 +100,6 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"vae:FinalInputOutcome" -> "vae:MultiInputOutcome" [ label = "rdfs:subClassOf" ];
 	"bhv:SelfProtectionAndAnxietyAvoidance" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:ValueDefinition" -> "vae:AgentStatement" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyAlignment" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyAlignment" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"bhv:Stimulation" -> "bhv:Value" [ label = "rdfs:subClassOf" ];
 	"bhv:Stimulation" -> "bhv:OpennessToChange" [ label = "rdfs:subClassOf" ];
 	"vae:TextualVaeProperty" -> "vae:VaeProperty" [ label = "rdfs:subClassOf" ];
@@ -115,25 +109,21 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"vae:AwarenessSituation" -> "vae:VaeSituation" [ label = "rdfs:subClassOf" ];
 	"vae:AggregationFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:AwarenessStatement" -> "vae:VaeStatement" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyNode" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75919" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
 	"vae:FunctionalRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:FunctionalRelationStatement" -> "obo:NCIT_C75924" [ label = "rdfs:subClassOf" ];
+	"bhv:Dominance" -> "bhv:Power" [ label = "rdfs:subClassOf" ];
 	"vae:VaeProperty" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
 	"vae:VaeProperty" -> "dul:Description" [ label = "rdfs:subClassOf" ];
-	"bhv:Dominance" -> "bhv:Power" [ label = "rdfs:subClassOf" ];
-	"vae:ValueTaxonomyStatement" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"vae:QualitativeVaeProperty" -> "vae:VaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:VaeEntity" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"vae:Agent" -> "vae:VaeConditionedEntity" [ label = "rdfs:subClassOf" ];
 	"vae:Agent" -> "odrl:Party" [ label = "rdfs:subClassOf" ];
 	"vae:Agent" -> "dul:Agent" [ label = "rdfs:subClassOf" ];
 	"bhv:PanCulturalBaselineForValuesPriority" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
-	"vae:PropertyNode" -> "vae:TaxonomyNode" [ label = "rdfs:subClassOf" ];
 	"vae:VaeConditioningEntity" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
 	"vae:ReflexiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:ReflexiveRelationStatement" -> "obo:NCIT_C75918" [ label = "rdfs:subClassOf" ];
-	"vae:ConceptNode" -> "vae:TaxonomyNode" [ label = "rdfs:subClassOf" ];
 	"vae:Value" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:OptimizedProperty" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:OptimizedProperty" -> "vae:BooleanVaeProperty" [ label = "rdfs:subClassOf" ];
@@ -144,8 +134,8 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"bhv:Value" -> "vae:Value" [ label = "rdfs:subClassOf" ];
 	"vae:QuantitativePromotionDemotion" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:QuantitativePromotionDemotion" -> "vae:PromotionDemotion" [ label = "rdfs:subClassOf" ];
-	"obo:NCIT_C75918" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
 	"dul:Theory" -> "dul:Description" [ label = "rdfs:subClassOf" ];
+	"obo:NCIT_C75918" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
 	"bhv:Personal" -> "bhv:Security" [ label = "rdfs:subClassOf" ];
 	"bhv:Dependability" -> "bhv:Benevolence" [ label = "rdfs:subClassOf" ];
 	"vae:ImportanceRelation" -> "vae:ValueComparisonStatement" [ label = "rdfs:subClassOf" ];
@@ -168,8 +158,6 @@ node [shape = rectangle, color="black"]; "bhv:Dominance" "dul:Situation" "odrl:A
 	"bhv:Humility" -> "bhv:Conservation" [ label = "rdfs:subClassOf" ];
 	"vae:SymmetricRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:SymmetricRelationStatement" -> "obo:NCIT_C75919" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyProperty" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyProperty" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Agent" -> "dul:Object" [ label = "rdfs:subClassOf" ];
 	"vae:IntransitiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 

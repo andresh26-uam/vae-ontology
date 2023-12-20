@@ -332,6 +332,24 @@
     "@value" : "1.0"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -370,7 +388,13 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"
   } ]
 }, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure",
@@ -385,11 +409,17 @@
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
   } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -444,11 +474,23 @@
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstraintFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
   } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParameterFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -515,34 +557,234 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
   } ]
 }, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
   "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/Constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/assignee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/assigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/leftOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/rightOperand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/odrl/2/target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#ActingAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#AggregationFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#ArgumentStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Criterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#Equality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality.\""
   } ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#GiniIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\""
+  }, {
+    "@value" : "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gini Index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
+  }, {
     "@id" : "_:genid14"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Norm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#OptimizedProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#Path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid15"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\""
+  }, {
+    "@value" : "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Semantics Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+  }, {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Sequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#Transition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#ValueProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#abidesByValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#composedBySequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#hasClaim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#hasOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#hasPremise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#influencesOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#interpretationOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isAgentOfSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isBasedOnCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isInputOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isInputOutcomeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isOptimizationOfProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isOutcomeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isStartOfSequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#isStateOfAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#madeByAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#makesAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#nextInputOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#onEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#propertyOptimizedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#proposesStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#reflectsValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#relationWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#satisfiesNorm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology#startsWithInputOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -566,9 +808,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://doi.org/10.1613/jair.1.13487"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra"
@@ -860,7 +1099,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#ArgumentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#ArgumentStatement"
+  } ],
   "https://w3id.org/def/vaeontology#hasClaim" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForEquality"
   } ],
@@ -872,7 +1114,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#ArgumentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#ArgumentStatement"
+  } ],
   "https://w3id.org/def/vaeontology#hasClaim" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForFairness"
   } ],
@@ -926,7 +1171,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForEquality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#AlignmentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
+  } ],
   "https://w3id.org/def/vaeontology#interpretationOn" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#equalityValueTaxing"
   } ],
@@ -935,7 +1183,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForFairness",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#AlignmentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
+  } ],
   "https://w3id.org/def/vaeontology#interpretationOn" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#fairnessValueTaxing"
   } ],
@@ -1158,9 +1409,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#criterionNormativeSystemAlignment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Criterion" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Criterion"
   } ],
   "http://www.w3.org/ns/odrl/2/constraint" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#targetPropertyOptimizedAtAction"
@@ -1422,7 +1676,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Action" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1"
   }, {
@@ -1430,6 +1684,9 @@
   } ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Action"
   } ],
   "https://w3id.org/def/vaeontology#composedBySequence" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemActionSequence"
@@ -1501,9 +1758,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForEquality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#AlignmentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
   } ],
   "https://w3id.org/def/vaeontology#interpretationOn" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#equalityValueTaxing"
@@ -1513,9 +1773,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForFairness",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#AlignmentStatement" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#AlignmentStatement"
   } ],
   "https://w3id.org/def/vaeontology#interpretationOn" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#fairnessValueTaxing"
@@ -1811,9 +2074,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#path1transition1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Transition" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Transition"
   } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction"
@@ -1828,9 +2094,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#path1transition2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Transition" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Transition"
   } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction"
@@ -1845,9 +2114,14 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#path1transition3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#FinalInputOutcome", "https://w3id.org/def/vaeontology#Transition" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#Transition"
   } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction"
@@ -1859,9 +2133,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#path2transition1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Transition" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Transition"
   } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction"
@@ -1876,9 +2153,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#path2transition2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Transition" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Transition"
   } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#jointMoneyTransaction"
@@ -1985,9 +2265,12 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#problemModeller",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#User" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#User"
   } ],
   "https://w3id.org/def/vaeontology#proposesStatement" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForEquality"
@@ -2166,7 +2449,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#redistribution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Action" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#evaderAgent1"
   }, {
@@ -2174,6 +2457,9 @@
   } ],
   "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Action"
   } ],
   "https://w3id.org/def/vaeontology#abidesByValue" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#equalityValueTaxing"
@@ -2186,7 +2472,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#redistributionStep",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#FinalInputOutcome" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
+  } ],
   "https://w3id.org/def/vaeontology#hasInput" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#transactionsStep"
   } ],
@@ -2198,7 +2487,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#targetPropertyOptimizedAtAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/odrl/2/Constraint" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/odrl/2/Constraint"
+  } ],
   "http://www.w3.org/ns/odrl/2/leftOperand" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality"
   } ],
@@ -2210,13 +2502,22 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Context" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Context"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemActionSequence",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Sequence" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Sequence"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#MultiInputOutcome" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
+  } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"
   } ],
@@ -2225,7 +2526,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#FinalInputOutcome" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
+  } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"
   } ]
@@ -2327,7 +2631,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#Sequence" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Sequence"
+  } ],
   "https://w3id.org/def/vaeontology#startsWithInputOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1"
   } ]
@@ -2378,7 +2685,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#transactionsStep",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/vaeontology#MultiInputOutcome" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
+  } ],
   "https://w3id.org/def/vaeontology#hasOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#transactionNotPayingTaxes"
   }, {
@@ -2390,4 +2700,10 @@
   "https://w3id.org/def/vaeontology#nextInputOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#redistributionStep"
   } ]
+}, {
+  "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/spice/SON/SchwartzValues#bibRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

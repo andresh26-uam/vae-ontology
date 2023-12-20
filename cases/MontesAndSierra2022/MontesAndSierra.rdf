@@ -21,6 +21,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology_montes_sierra">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_montes_sierra"/>
+        <owl:imports rdf:resource="https://w3id.org/def/vaeontology"/>
         <dc:creator>Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022</dc:creator>
         <dc:description>Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487</dc:description>
@@ -388,9 +389,9 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     
 
 
-    <!-- https://w3id.org/def/vaeontology#measuredOnOutcome -->
+    <!-- https://w3id.org/def/vaeontology#measuredOnConditionedEntity -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnOutcome"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
     
 
 
@@ -748,26 +749,6 @@ Ordering on subparameters can be created by using or specializing the object pro
     
 
 
-    <!-- https://w3id.org/def/vaeontology_montes_sierra#GiniIndex -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#GiniIndex">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#relationWith"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#Equality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>&quot;First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).&quot;</rdfs:comment>
-        <rdfs:comment>The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference).</rdfs:comment>
-        <rdfs:label>Gini Index</rdfs:label>
-        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#MultiInputOutcome -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#MultiInputOutcome"/>
@@ -818,22 +799,6 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     <!-- https://w3id.org/def/vaeontology#QuantitativeVaeProperty -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion"/>
-        <rdfs:comment>&quot;Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.&quot;</rdfs:comment>
-        <rdfs:comment>&quot;To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C&quot; [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]</rdfs:comment>
-        <rdfs:label>Semantics Function</rdfs:label>
-        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
-    </owl:Class>
     
 
 
@@ -927,6 +892,26 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     
 
 
+    <!-- https://w3id.org/def/vaeontology_montes_sierra#GiniIndex -->
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#GiniIndex">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#relationWith"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#Equality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>&quot;First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).&quot;</rdfs:comment>
+        <rdfs:comment>The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference).</rdfs:comment>
+        <rdfs:label>Gini Index</rdfs:label>
+        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology_montes_sierra#LegalAgent -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#LegalAgent">
@@ -994,7 +979,7 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnOutcome"/>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1099,6 +1084,22 @@ where PN is the random variable of the subset of paths restricted under the norm
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"/>
         <rdfs:comment>&quot;Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment</rdfs:comment>
         <rdfs:label>ProbabilityTaxFairnessSemantics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction -->
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion"/>
+        <rdfs:comment>&quot;Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.&quot;</rdfs:comment>
+        <rdfs:comment>&quot;To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C&quot; [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]</rdfs:comment>
+        <rdfs:label>Semantics Function</rdfs:label>
+        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
+mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
+https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     </owl:Class>
     
 
@@ -1212,7 +1213,7 @@ where PN is the random variable of the subset of paths restricted under the norm
         <dul:hasConstituent rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1"/>
         <dul:hasConstituent rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#fairnessSemanticsTaxingOutPath1"/>
         <dul:hasSetting rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
     </owl:NamedIndividual>
     
 
@@ -1243,8 +1244,8 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#NormativeSystemAlignment"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <vae:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForEquality"/>
         <vae:relationWith rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#equalityValueTaxing"/>
         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</rdf:value>
@@ -1256,8 +1257,8 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForFairness">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#NormativeSystemAlignment"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <vae:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#alignmentStatementOnNormativeSystemForFairness"/>
         <vae:relationWith rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#fairnessValueTaxing"/>
         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.93</rdf:value>
@@ -1450,7 +1451,7 @@ where PN is the random variable of the subset of paths restricted under the norm
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#GiniIndex"/>
         <dul:hasSetting rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <rdfs:comment>&quot;First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019)&quot;</rdfs:comment>
         <rdfs:label>&quot;Gini Index-based semantics function&quot;</rdfs:label>
     </owl:NamedIndividual>
@@ -1530,7 +1531,7 @@ where PN is the random variable of the subset of paths restricted under the norm
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#fairnessSemanticsTaxingOutPath1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics"/>
         <dul:hasSetting rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <rdfs:comment>&quot;Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1591,10 +1592,10 @@ where PN is the random variable of the subset of paths restricted under the norm
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#OptimalNormativeSystemAlignment"/>
         <dul:hasSetting rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"/>
         <vae:isOptimizationOfProperty rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <vae:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForEquality"/>
         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</rdf:value>
     </owl:NamedIndividual>
@@ -1607,10 +1608,10 @@ where PN is the random variable of the subset of paths restricted under the norm
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#OptimalNormativeSystemAlignment"/>
         <dul:hasSetting rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"/>
         <vae:isOptimizationOfProperty rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForFairness"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
-        <vae:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"/>
+        <vae:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"/>
         <vae:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#optimalAlignmentStatementOnNormativeSystemForFairness"/>
         <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.93</rdf:value>
     </owl:NamedIndividual>
@@ -2119,6 +2120,7 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology#MultiInputOutcome"/>
+        <vae:composesComplexOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
         <vae:isInputOutcomeOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"/>
         <vae:nextInputOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2"/>
     </owl:NamedIndividual>
@@ -2129,6 +2131,7 @@ where PN is the random variable of the subset of paths restricted under the norm
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology#FinalInputOutcome"/>
+        <vae:composesComplexOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
         <vae:isInputOutcomeOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"/>
     </owl:NamedIndividual>
     

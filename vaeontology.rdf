@@ -1013,7 +1013,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPresentInStatement"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
-        <rdfs:comment>Indicates that the AgentStatement covers some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) in an undetermined way.</rdfs:comment>
+        <rdfs:comment>Indicates that the AgentStatement covers some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) in an undetermined way.</rdfs:comment>
         <rdfs:label>covers item</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1383,7 +1383,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#onEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
-        <rdfs:comment>Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
+        <rdfs:comment>Indicates that an Agent or Outcome or Norm (or any VaeConditionedEntity) is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
         <rdfs:label xml:lang="en">Is Entity Of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1480,7 +1480,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
-        <rdfs:comment>Indicates some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement.</rdfs:comment>
+        <rdfs:comment>Indicates some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement.</rdfs:comment>
         <rdfs:label>is present in statement</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1633,14 +1633,14 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#measuredOnOutcome -->
+    <!-- https://w3id.org/def/vaeontology#measuredOnConditionedEntity -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnOutcome">
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#satisfiesProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#Outcome"/>
-        <rdfs:comment>Indicates that the VaeProperty was satisfied (measured) in some Outcome.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
+        <rdfs:comment>Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome).</rdfs:comment>
         <rdfs:label>measured on outcome</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1665,7 +1665,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#describesVaeStatementEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#AgentStatement"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
-        <rdfs:comment>Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
+        <rdfs:comment>Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: &quot;The vae:Agent payerAgent is aware of the vae:Norm [norm]&quot;, the entity of the statement is the vae:Agent payerAgent.</rdfs:comment>
         <rdfs:label>on entity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1809,9 +1809,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#satisfiesProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#Outcome"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
-        <rdfs:comment>Indicates that the Outcome satisfies the VaeProperty specified.</rdfs:comment>
+        <rdfs:comment>Indicates that the VaeConditionedEntity satisfies the VaeProperty specified.</rdfs:comment>
         <rdfs:label>satisfies property</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2703,7 +2703,7 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#AggregationFunction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:comment>An aggregation of some other VaeProperty over a set of Outcomes (or Sequence).</rdfs:comment>
+        <rdfs:comment>An aggregation of some other VaeProperty over a set of VaeConditionedEntitys (or Sequence).</rdfs:comment>
         <rdfs:label>Aggregation Function</rdfs:label>
     </owl:Class>
     
@@ -2903,7 +2903,7 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
         <rdfs:comment>A Context is any kind of entity that is underlying of specific events, situations, descriptions and agents. They can be used to describe, for example, the kind of problem or world where a system is deployed, contextualization of statements, etc.</rdfs:comment>
         <rdfs:label>Context</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#VaeObject"/>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
         <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
 ai (2023)</bhv:bibRef>
         <bhv:bibRef>https://arxiv.org/abs/2305.02748</bhv:bibRef>
@@ -3114,7 +3114,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#BooleanVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:comment>Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-).</rdfs:comment>
+        <rdfs:comment>Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnConditionedEntity vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-).</rdfs:comment>
         <rdfs:label>Optimized Property</rdfs:label>
     </owl:Class>
     
@@ -3164,7 +3164,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#PromotionDemotion">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QualitativeVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:comment>A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value.</rdfs:comment>
+        <rdfs:comment>A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of a VaeConditionedEntity towards some Value.</rdfs:comment>
         <rdfs:label>Promotion Demotion</rdfs:label>
     </owl:Class>
     
@@ -3174,7 +3174,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#QualitativeVaeProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
-        <rdfs:comment>A VaeProperty that represent a qualitative consideration on an Outcome with respect to a Value or Norm.</rdfs:comment>
+        <rdfs:comment>A VaeProperty that represent a qualitative consideration on an VaeConditionedEntity with respect to a Value or Norm.</rdfs:comment>
         <rdfs:label>Qualitative Vae Property</rdfs:label>
     </owl:Class>
     
@@ -3452,8 +3452,8 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnOutcome"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#Outcome"/>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeConditionedEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3468,7 +3468,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                 <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeConditioningEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension).</rdfs:comment>
+        <rdfs:comment>Any property measured on a VaeConditionedEntity, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension).</rdfs:comment>
         <rdfs:label>Vae Property</rdfs:label>
     </owl:Class>
     
@@ -3484,7 +3484,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>An AgentStatement where the agent expresses some VaeProperty of an Outcome.</rdfs:comment>
+        <rdfs:comment>An AgentStatement where the agent expresses some VaeProperty of a VaeConditionedEntity.</rdfs:comment>
         <rdfs:label>Vae Property Statement</rdfs:label>
     </owl:Class>
     
@@ -3509,7 +3509,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#VaeStatement"/>
-        <rdfs:comment>Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</rdfs:comment>
+        <rdfs:comment>Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</rdfs:comment>
         <rdfs:label>Vae Statement</rdfs:label>
     </owl:Class>
     
@@ -3539,7 +3539,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                 <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeSituation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</rdfs:comment>
+        <rdfs:comment>Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</rdfs:comment>
         <rdfs:label>Vae Statement</rdfs:label>
     </owl:Class>
     

@@ -259,9 +259,9 @@
         <rdfs:comment>A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created the solar-system metaphor for the atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force members share the attack plan&apos;.
 Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be &apos;assumed&apos;, situations can be &apos;believed&apos; or &apos;known&apos;, plans can be &apos;adopted&apos;, etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>conceptualizes</rdfs:label>
         <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
         <rdfs:label xml:lang="it">concettualizza</rdfs:label>
+        <rdfs:label>conceptualizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -442,8 +442,8 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <rdfs:comment>A relation between entities and regions, e.g. &apos;the number of wheels of that truck is 12&apos;, &apos;the time of the experiment is August 9th, 2004&apos;, &apos;the whale has been localized at 34 degrees E, 20 degrees S&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="it">ha attributo</rdfs:label>
-        <rdfs:label>has region</rdfs:label>
         <rdfs:label xml:lang="en">has region</rdfs:label>
+        <rdfs:label>has region</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -456,9 +456,9 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
         <rdfs:comment>A relation between entities and situations, e.g. &apos;this morning I&apos;ve prepared my coffee with a new fantastic Arabica&apos;, i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>has setting</rdfs:label>
         <rdfs:label xml:lang="en">has setting</rdfs:label>
         <rdfs:label xml:lang="it">è nel contesto di</rdfs:label>
+        <rdfs:label>has setting</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -556,9 +556,9 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
         <rdfs:comment>A relation between an object and a process, e.g. &apos;John took part in the discussion&apos;, &apos;a large mass of snow fell during the avalanche&apos;, or &apos;a cook, some sugar, flour, etc. are all present in the cooking of a cake&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>is participant in</rdfs:label>
         <rdfs:label xml:lang="en">is participant in</rdfs:label>
         <rdfs:label xml:lang="it">è un partecipante a</rdfs:label>
+        <rdfs:label>is participant in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -685,9 +685,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:comment>A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>satisfies</rdfs:label>
         <rdfs:label xml:lang="en">satisfies</rdfs:label>
         <rdfs:label xml:lang="it">soddisfa</rdfs:label>
+        <rdfs:label>satisfies</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1024,15 +1024,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#directlyGeneralizesNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#generalizesNode"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#directlyParticularizesNode"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ConceptNode"/>
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#PropertyNode"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:comment>Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy).</rdfs:comment>
         <rdfs:label>directly generalizes</rdfs:label>
     </owl:ObjectProperty>
@@ -1043,15 +1034,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#directlyParticularizesNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#particularizesNode"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ConceptNode"/>
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#PropertyNode"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
         <rdfs:comment>Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy).</rdfs:comment>
         <rdfs:label>directly particularizes</rdfs:label>
     </owl:ObjectProperty>
@@ -1090,15 +1072,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/schema/subsumes"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#particularizesNode"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ConceptNode"/>
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#PropertyNode"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:comment>Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified.</rdfs:comment>
         <rdfs:label>generalizes</rdfs:label>
     </owl:ObjectProperty>
@@ -1149,8 +1122,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasConceptNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasTaxonomyNode"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isConceptNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
         <rdfs:comment>Indicates that the ValueTaxonomy has the ConceptNode specified.</rdfs:comment>
         <rdfs:label>has concept node</rdfs:label>
     </owl:ObjectProperty>
@@ -1240,8 +1211,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasTaxonomyNode"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
         <rdfs:comment>Indicates that the ValueTaxonomy has the PropertyNode specified.</rdfs:comment>
         <rdfs:label>has PropertyNode</rdfs:label>
     </owl:ObjectProperty>
@@ -1279,8 +1248,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyTaxonomy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyPropertyOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
         <rdfs:comment>Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property).</rdfs:comment>
         <rdfs:label>has Property Taxonomy</rdfs:label>
     </owl:ObjectProperty>
@@ -1318,8 +1285,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasRootNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasConceptNode"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isRootNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
         <rdfs:comment>Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other).</rdfs:comment>
         <rdfs:label>has root node</rdfs:label>
     </owl:ObjectProperty>
@@ -1370,8 +1335,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasTaxonomyNode">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#TaxonomyNode"/>
         <rdfs:comment>Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified.</rdfs:comment>
         <rdfs:label>has TaxonomyNode</rdfs:label>
     </owl:ObjectProperty>
@@ -1493,8 +1456,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isConceptNodeOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>Indicates that the ConceptNode is part of a ValueTaxonomy.</rdfs:comment>
         <rdfs:label>is ConceptNode of</rdfs:label>
     </owl:ObjectProperty>
@@ -1627,8 +1588,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyNodeOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>Indicates that the PropertyNode is part of the ValueTaxonomy specified.</rdfs:comment>
         <rdfs:label>is PropertyNode of</rdfs:label>
     </owl:ObjectProperty>
@@ -1688,8 +1647,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isRootNodeOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isConceptNodeOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode).</rdfs:comment>
         <rdfs:label>is root node of</rdfs:label>
     </owl:ObjectProperty>
@@ -1749,8 +1706,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isTaxonomyNodeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#TaxonomyNode"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy.</rdfs:comment>
         <rdfs:label>is Taxonomy Node Of</rdfs:label>
     </owl:ObjectProperty>
@@ -1761,8 +1716,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isTaxonomyPropertyOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
         <rdfs:comment>Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property).</rdfs:comment>
         <rdfs:label>is PropertyTaxonomy of PropertyNode</rdfs:label>
     </owl:ObjectProperty>
@@ -1873,15 +1826,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#particularizesNode">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/schema/subsumedUnder"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ConceptNode"/>
-                    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#PropertyNode"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
         <rdfs:comment>Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject).</rdfs:comment>
         <rdfs:label>particularizes</rdfs:label>
     </owl:ObjectProperty>
@@ -2152,7 +2096,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology#degreeOfSatisfaction">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -2176,7 +2119,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology#importanceValue">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#NodeImportance"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about.</rdfs:comment>
         <rdfs:label>importance value</rdfs:label>
@@ -2545,9 +2487,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:comment>Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.</rdfs:comment>
         <rdfs:comment>Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Agent</rdfs:label>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agente</rdfs:label>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
@@ -2587,9 +2529,9 @@ Descriptions &apos;define&apos; or &apos;use&apos; concepts, and can be &apos;sa
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity">
         <rdfs:comment>Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Entity</rdfs:label>
         <rdfs:label xml:lang="en">Entity</rdfs:label>
         <rdfs:label xml:lang="it">Entità</rdfs:label>
+        <rdfs:label>Entity</rdfs:label>
     </owl:Class>
     
 
@@ -2640,9 +2582,9 @@ Both positions are in principle valid, but, if taken too radically, they focus o
 
 For this reason, in this ontology version of DOLCE, both events and situations are allowed, together with descriptions (the reason for the inclusion of the D&amp;S framewrok in DOLCE), in order to encode the modelling needs, independently from the position (if any) chosen by the model designer.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Event</rdfs:label>
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="it">Evento</rdfs:label>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -2653,9 +2595,9 @@ For this reason, in this ontology version of DOLCE, both events and situations a
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
         <rdfs:comment>A social norm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <rdfs:label>Norm</rdfs:label>
         <rdfs:label xml:lang="en">Norm</rdfs:label>
         <rdfs:label xml:lang="it">Norma</rdfs:label>
+        <rdfs:label>Norm</rdfs:label>
     </owl:Class>
     
 
@@ -2737,8 +2679,8 @@ Being dependent on communication, all social objects need to be expressed by som
 This class can also be used to act as &apos;naturalized reifications&apos; of logical theories (of course, they will be necessarily incomplete in this case, because second-order entities are represented as first-order ones).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="it">Teoria</rdfs:label>
-        <rdfs:label>Theory</rdfs:label>
         <rdfs:label xml:lang="en">Theory</rdfs:label>
+        <rdfs:label>Theory</rdfs:label>
     </owl:Class>
     
 
@@ -2764,8 +2706,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Action">
         <owl:disjointWith rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Action</rdfs:label>
         <rdfs:label xml:lang="en">Action</rdfs:label>
+        <rdfs:label>Action</rdfs:label>
         <skos:definition xml:lang="en">An operation on an Asset.</skos:definition>
         <skos:note xml:lang="en">Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties.</skos:note>
     </owl:Class>
@@ -2776,8 +2718,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Asset">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Asset</rdfs:label>
         <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <rdfs:label>Asset</rdfs:label>
         <skos:definition xml:lang="en">A resource or a collection of resources that are the subject of a Rule.</skos:definition>
         <skos:note xml:lang="en">The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.</skos:note>
     </owl:Class>
@@ -2788,8 +2730,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Constraint">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Constraint</rdfs:label>
         <rdfs:label xml:lang="en">Constraint</rdfs:label>
+        <rdfs:label>Constraint</rdfs:label>
         <skos:definition xml:lang="en">A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.</skos:definition>
     </owl:Class>
     
@@ -2805,8 +2747,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Operator">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Operator</rdfs:label>
         <rdfs:label xml:lang="en">Operator</rdfs:label>
+        <rdfs:label>Operator</rdfs:label>
         <skos:definition xml:lang="en">Operator for constraint expression.</skos:definition>
         <skos:note xml:lang="en">Instances of the Operator class representing relational operators.</skos:note>
     </owl:Class>
@@ -2817,8 +2759,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Party</rdfs:label>
         <rdfs:label xml:lang="en">Party</rdfs:label>
+        <rdfs:label>Party</rdfs:label>
         <skos:definition xml:lang="en">An entity or a collection of entities that undertake Roles in a Rule.</skos:definition>
         <skos:note xml:lang="en">The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].</skos:note>
     </owl:Class>
@@ -2829,8 +2771,8 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
-        <rdfs:label>Policy</rdfs:label>
         <rdfs:label xml:lang="en">Policy</rdfs:label>
+        <rdfs:label>Policy</rdfs:label>
         <skos:definition xml:lang="en">A non-empty group of Permissions and/or Prohibitions.</skos:definition>
         <skos:note xml:lang="en">A Policy may contain multiple Rules.</skos:note>
     </owl:Class>
@@ -3138,19 +3080,6 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
     
 
 
-    <!-- https://w3id.org/def/vaeontology#ConceptNode -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ConceptNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#TaxonomyNode"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
-        <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Concept Node</rdfs:label>
-        <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)</bhv:bibRef>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#Context -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#Context">
@@ -3216,6 +3145,16 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
     
 
 
+    <!-- https://w3id.org/def/vaeontology#Fairness -->
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Fairness">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"/>
+        <rdfs:comment>Fairness is present in most of the VAE papers so far, as it is easy to formalize mathematically.</rdfs:comment>
+        <rdfs:label>Fairness</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#FinalInputOutcome -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#FinalInputOutcome">
@@ -3249,19 +3188,6 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
         <rdfs:comment>A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior).</rdfs:comment>
         <rdfs:label>Generalization</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#generalizesNode"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#GiniIndex -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#GiniIndex">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#SemanticsFunction"/>
-        <rdfs:comment>The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference).</rdfs:comment>
-        <rdfs:label>Gini Index</rdfs:label>
-        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     </owl:Class>
     
 
@@ -3322,25 +3248,6 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
     
 
 
-    <!-- https://w3id.org/def/vaeontology#NodeImportance -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#NodeImportance">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#TaxonomyNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>&quot;Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.&quot;  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Node Importance</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#ImportanceRelation"/>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomy"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#Norm -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#Norm">
@@ -3372,7 +3279,6 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#System"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         <rdfs:comment>&quot;Norms (...) establish boundaries, either soft or hard, on individual autonomy through a variety of mechanisms such as social pressure and expectations, constraints on actions, and sanctions for violation or rewards for compliance.&quot;</rdfs:comment>
         <rdfs:comment>[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] &quot;Explicit representations of norms are often called policies.&quot;</rdfs:comment>
         <rdfs:label>Norm</rdfs:label>
@@ -3444,24 +3350,6 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
         <rdfs:comment>A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value.</rdfs:comment>
         <rdfs:label>Promotion Demotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#PropertyNode -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#PropertyNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#TaxonomyNode"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyTaxonomy"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Property Node</rdfs:label>
-        <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)</bhv:bibRef>
     </owl:Class>
     
 
@@ -3549,20 +3437,6 @@ ai (2023)</bhv:bibRef>
     
 
 
-    <!-- https://w3id.org/def/vaeontology#SemanticsFunction -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#SemanticsFunction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:comment>&quot;To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C&quot; [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]</rdfs:comment>
-        <rdfs:label>Semantics Function</rdfs:label>
-        <bhv:bibRef>Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#Sequence -->
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#Sequence">
@@ -3644,63 +3518,6 @@ https://doi.org/10.1613/jair.1.13487</bhv:bibRef>
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#User"/>
         <rdfs:comment>A system is the organization of a set of Agents modelling some complex joint behaviour or for solving a task. A system has a trace, a Sequence of the inputs and the corresponding Outcomes performed (e.g.) by the system or the agents on it.</rdfs:comment>
         <rdfs:label>System</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#TaxonomyAlignment -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#TaxonomyAlignment">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>&quot;We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.&quot;</rdfs:comment>
-        <rdfs:label>Taxonomy Alignment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomy"/>
-        <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)</bhv:bibRef>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#TaxonomyNode -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#TaxonomyNode">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Taxonomy Node</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        <skos:definition>A node of a ValueTaxonomy.</skos:definition>
-        <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)</bhv:bibRef>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#TaxonomyProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#TaxonomyProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Property Taxonomy</rdfs:label>
     </owl:Class>
     
 
@@ -3996,38 +3813,6 @@ ai (2023)</bhv:bibRef>
         </rdfs:subClassOf>
         <rdfs:comment>A VaeProperty specifying something about a ValueConcept.</rdfs:comment>
         <rdfs:label>Value Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#ValueTaxonomyStatement -->
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ValueTaxonomyStatement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasConceptNode"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyNode"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#PropertyNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasRootNode"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology#ConceptNode"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]</rdfs:comment>
-        <rdfs:label>Value Taxonomy</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#TaxonomyAlignment"/>
-        <bhv:bibRef>Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)</bhv:bibRef>
     </owl:Class>
     
 
@@ -4652,34 +4437,6 @@ Giménez, August Corrons, and Lluís Garay Tamajón. &quot;Analysis of the third
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#AgentStatement"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#VaeSituation"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ArgumentStatement"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Criterion"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#RelationStatement"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueDefinition"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#NodeImportance"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#PromotionDemotion"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#TaxonomyAlignment"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#TaxonomyProperty"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#TaxonomyNode"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#VaeStatement"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueTaxonomyStatement"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

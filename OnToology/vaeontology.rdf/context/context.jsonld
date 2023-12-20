@@ -78,9 +78,6 @@
     "AwarenessSituation" : {
       "@id" : "https://w3id.org/def/vaeontology#AwarenessSituation"
     },
-    "PropertyNode" : {
-      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-    },
     "nextInputOutcome" : {
       "@id" : "https://w3id.org/def/vaeontology#nextInputOutcome",
       "@type" : "@id"
@@ -132,9 +129,6 @@
     },
     "Outcome" : {
       "@id" : "https://w3id.org/def/vaeontology#Outcome"
-    },
-    "SemanticsFunction" : {
-      "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
     },
     "comparisonHasSuperior" : {
       "@id" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
@@ -301,9 +295,6 @@
       "@id" : "https://w3id.org/def/vaeontology#hasRelatedElement",
       "@type" : "@id"
     },
-    "ValueTaxonomyStatement" : {
-      "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-    },
     "isRelatedElementIn" : {
       "@id" : "https://w3id.org/def/vaeontology#isRelatedElementIn",
       "@type" : "@id"
@@ -348,9 +339,6 @@
       "@id" : "http://www.w3.org/ns/odrl/2/assigner",
       "@type" : "@id"
     },
-    "ConceptNode" : {
-      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-    },
     "Event" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
     },
@@ -361,9 +349,6 @@
     "hasPropertyNode" : {
       "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode",
       "@type" : "@id"
-    },
-    "TaxonomyAlignment" : {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
     },
     "directlyGeneralizesNode" : {
       "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizesNode",
@@ -400,6 +385,9 @@
     },
     "note" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "Fairness" : {
+      "@id" : "https://w3id.org/def/vaeontology#Fairness"
     },
     "isTaxonomyNodeOf" : {
       "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf",
@@ -512,9 +500,6 @@
     "SoundArgument" : {
       "@id" : "https://w3id.org/def/vaeontology#SoundArgument"
     },
-    "TaxonomyNode" : {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-    },
     "isAgentInvolvedIn" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn",
       "@type" : "@id"
@@ -576,9 +561,6 @@
     "assigneeOf" : {
       "@id" : "http://www.w3.org/ns/odrl/2/assigneeOf",
       "@type" : "@id"
-    },
-    "GiniIndex" : {
-      "@id" : "https://w3id.org/def/vaeontology#GiniIndex"
     },
     "VaeConditionedEntity" : {
       "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
@@ -667,9 +649,6 @@
     },
     "NCIT_P378" : {
       "@id" : "http://purl.obolibrary.org/obo/NCIT_P378"
-    },
-    "TaxonomyProperty" : {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
     },
     "NCIT_P108" : {
       "@id" : "http://purl.obolibrary.org/obo/NCIT_P108"
@@ -999,9 +978,6 @@
     },
     "Societal" : {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Societal"
-    },
-    "NodeImportance" : {
-      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
     },
     "isDescribedBy" : {
       "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy",

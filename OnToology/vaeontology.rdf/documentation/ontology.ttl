@@ -742,12 +742,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :directlyGeneralizesNode rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :generalizesNode ;
                          owl:inverseOf :directlyParticularizesNode ;
-                         rdfs:domain :ConceptNode ;
-                         rdfs:range [ rdf:type owl:Class ;
-                                      owl:unionOf ( :ConceptNode
-                                                    :PropertyNode
-                                                  )
-                                    ] ;
                          rdfs:comment "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)." ;
                          rdfs:label "directly generalizes" .
 
@@ -755,12 +749,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#directlyParticularizesNode
 :directlyParticularizesNode rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :particularizesNode ;
-                            rdfs:domain [ rdf:type owl:Class ;
-                                          owl:unionOf ( :ConceptNode
-                                                        :PropertyNode
-                                                      )
-                                        ] ;
-                            rdfs:range :ConceptNode ;
                             rdfs:comment "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)." ;
                             rdfs:label "directly particularizes" .
 
@@ -790,12 +778,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                  rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumes> ;
                  owl:inverseOf :particularizesNode ;
                  rdf:type owl:TransitiveProperty ;
-                 rdfs:domain :ConceptNode ;
-                 rdfs:range [ rdf:type owl:Class ;
-                              owl:unionOf ( :ConceptNode
-                                            :PropertyNode
-                                          )
-                            ] ;
                  rdfs:comment "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified." ;
                  rdfs:label "generalizes" .
 
@@ -834,8 +816,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :hasConceptNode rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasTaxonomyNode ;
                 owl:inverseOf :isConceptNodeOf ;
-                rdfs:domain :ValueTaxonomyStatement ;
-                rdfs:range :ConceptNode ;
                 rdfs:comment "Indicates that the ValueTaxonomy has the ConceptNode specified." ;
                 rdfs:label "has concept node" .
 
@@ -904,8 +884,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :hasPropertyNode rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasTaxonomyNode ;
                  owl:inverseOf :isPropertyNodeOf ;
-                 rdfs:domain :ValueTaxonomyStatement ;
-                 rdfs:range :PropertyNode ;
                  rdfs:comment "Indicates that the ValueTaxonomy has the PropertyNode specified." ;
                  rdfs:label "has PropertyNode" .
 
@@ -934,8 +912,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :hasPropertyTaxonomy rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :expressesProperty ;
                      owl:inverseOf :isTaxonomyPropertyOf ;
-                     rdfs:domain :PropertyNode ;
-                     rdfs:range :TaxonomyProperty ;
                      rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
                      rdfs:label "has Property Taxonomy" .
 
@@ -964,8 +940,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :hasRootNode rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasConceptNode ;
              owl:inverseOf :isRootNodeOf ;
-             rdfs:domain :ValueTaxonomyStatement ;
-             rdfs:range :ConceptNode ;
              rdfs:comment "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)." ;
              rdfs:label "has root node" .
 
@@ -1004,8 +978,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :hasTaxonomyNode rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
                  owl:inverseOf :isTaxonomyNodeOf ;
-                 rdfs:domain :ValueTaxonomyStatement ;
-                 rdfs:range :TaxonomyNode ;
                  rdfs:comment "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified." ;
                  rdfs:label "has TaxonomyNode" .
 
@@ -1097,8 +1069,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#isConceptNodeOf
 :isConceptNodeOf rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :isTaxonomyNodeOf ;
-                 rdfs:domain :ConceptNode ;
-                 rdfs:range :ValueTaxonomyStatement ;
                  rdfs:comment "Indicates that the ConceptNode is part of a ValueTaxonomy." ;
                  rdfs:label "is ConceptNode of" .
 
@@ -1198,8 +1168,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#isPropertyNodeOf
 :isPropertyNodeOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :isTaxonomyNodeOf ;
-                  rdfs:domain :PropertyNode ;
-                  rdfs:range :ValueTaxonomyStatement ;
                   rdfs:comment "Indicates that the PropertyNode is part of the ValueTaxonomy specified." ;
                   rdfs:label "is PropertyNode of" .
 
@@ -1244,8 +1212,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#isRootNodeOf
 :isRootNodeOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isConceptNodeOf ;
-              rdfs:domain :ConceptNode ;
-              rdfs:range :ValueTaxonomyStatement ;
               rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
               rdfs:label "is root node of" .
 
@@ -1290,8 +1256,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#isTaxonomyNodeOf
 :isTaxonomyNodeOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> ;
-                  rdfs:domain :TaxonomyNode ;
-                  rdfs:range :ValueTaxonomyStatement ;
                   rdfs:comment "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy." ;
                   rdfs:label "is Taxonomy Node Of" .
 
@@ -1299,8 +1263,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#isTaxonomyPropertyOf
 :isTaxonomyPropertyOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :propertyExpressedAt ;
-                      rdfs:domain :TaxonomyProperty ;
-                      rdfs:range :PropertyNode ;
                       rdfs:comment "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
                       rdfs:label "is PropertyTaxonomy of PropertyNode" .
 
@@ -1384,12 +1346,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 :particularizesNode rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumedUnder> ;
                     rdf:type owl:TransitiveProperty ;
-                    rdfs:domain [ rdf:type owl:Class ;
-                                  owl:unionOf ( :ConceptNode
-                                                :PropertyNode
-                                              )
-                                ] ;
-                    rdfs:range :ConceptNode ;
                     rdfs:comment "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)." ;
                     rdfs:label "particularizes" .
 
@@ -1577,7 +1533,6 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  https://w3id.org/def/vaeontology#degreeOfSatisfaction
 :degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                      rdfs:domain :TaxonomyProperty ;
                       rdfs:range [ rdf:type rdfs:Datatype ;
                                    owl:onDatatype xsd:decimal ;
                                    owl:withRestrictions ( [ xsd:minInclusive 0.0
@@ -1593,7 +1548,6 @@ rdf:value rdf:type owl:DatatypeProperty .
 ###  https://w3id.org/def/vaeontology#importanceValue
 :importanceValue rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                 rdfs:domain :NodeImportance ;
                  rdfs:range xsd:decimal ;
                  rdfs:comment "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." ;
                  rdfs:label "importance value" .
@@ -2385,16 +2339,6 @@ This class can also be used to act as 'naturalized reifications' of logical theo
                     rdfs:label "Boolean Vae Property" .
 
 
-###  https://w3id.org/def/vaeontology#ConceptNode
-:ConceptNode rdf:type owl:Class ;
-             rdfs:subClassOf :TaxonomyNode ;
-             owl:disjointWith :PropertyNode ;
-             rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-             rdfs:label "Concept Node" ;
-             <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
 ###  https://w3id.org/def/vaeontology#Context
 :Context rdf:type owl:Class ;
          rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> ;
@@ -2443,6 +2387,13 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
           rdfs:label "Equality" .
 
 
+###  https://w3id.org/def/vaeontology#Fairness
+:Fairness rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> ;
+          rdfs:comment "Fairness is present in most of the VAE papers so far, as it is easy to formalize mathematically." ;
+          rdfs:label "Fairness" .
+
+
 ###  https://w3id.org/def/vaeontology#FinalInputOutcome
 :FinalInputOutcome rdf:type owl:Class ;
                    rdfs:subClassOf :MultiInputOutcome ;
@@ -2469,16 +2420,6 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                 rdfs:comment "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior)." ;
                 rdfs:label "Generalization" ;
                 rdfs:seeAlso :generalizesNode .
-
-
-###  https://w3id.org/def/vaeontology#GiniIndex
-:GiniIndex rdf:type owl:Class ;
-           rdfs:subClassOf :SemanticsFunction ;
-           rdfs:comment "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." ;
-           rdfs:label "Gini Index" ;
-           <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487""" .
 
 
 ###  https://w3id.org/def/vaeontology#ImportanceRelation
@@ -2523,20 +2464,6 @@ https://doi.org/10.1613/jair.1.13487""" .
                                 "http://ontologydesignpatterns.org/wiki/Submissions:Sequence" .
 
 
-###  https://w3id.org/def/vaeontology#NodeImportance
-:NodeImportance rdf:type owl:Class ;
-                rdfs:subClassOf :QuantitativeVaeProperty ,
-                                :ValueProperty ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :propertyExpressedAt ;
-                                  owl:someValuesFrom :TaxonomyNode
-                                ] ;
-                rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                rdfs:label "Node Importance" ;
-                rdfs:seeAlso :ImportanceRelation ,
-                             :ValueTaxonomy .
-
-
 ###  https://w3id.org/def/vaeontology#Norm
 :Norm rdf:type owl:Class ;
       rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm> ,
@@ -2559,7 +2486,6 @@ https://doi.org/10.1613/jair.1.13487""" .
                         owl:onProperty <http://www.w3.org/ns/odrl/2/target> ;
                         owl:someValuesFrom :System
                       ] ;
-      owl:disjointWith :ValueTaxonomyStatement ;
       rdfs:comment "\"Norms (...) establish boundaries, either soft or hard, on individual autonomy through a variety of mechanisms such as social pressure and expectations, constraints on actions, and sanctions for violation or rewards for compliance.\"" ,
                    "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] \"Explicit representations of norms are often called policies.\"" ;
       rdfs:label "Norm" ;
@@ -2612,19 +2538,6 @@ https://doi.org/10.1613/jair.1.13487""" .
                                    :ValueProperty ;
                    rdfs:comment "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value." ;
                    rdfs:label "Promotion Demotion" .
-
-
-###  https://w3id.org/def/vaeontology#PropertyNode
-:PropertyNode rdf:type owl:Class ;
-              rdfs:subClassOf :TaxonomyNode ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasPropertyTaxonomy ;
-                                owl:someValuesFrom :TaxonomyProperty
-                              ] ;
-              rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-              rdfs:label "Property Node" ;
-              <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
 
 
 ###  https://w3id.org/def/vaeontology#QualitativeVaeProperty
@@ -2686,17 +2599,6 @@ ai (2023)""" .
                                     rdfs:label "Reverse-Functional Relation Statement" .
 
 
-###  https://w3id.org/def/vaeontology#SemanticsFunction
-:SemanticsFunction rdf:type owl:Class ;
-                   rdfs:subClassOf :QuantitativeVaeProperty ,
-                                   :ValueProperty ;
-                   rdfs:comment "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" ;
-                   rdfs:label "Semantics Function" ;
-                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-
-mative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
-https://doi.org/10.1613/jair.1.13487""" .
-
-
 ###  https://w3id.org/def/vaeontology#Sequence
 :Sequence rdf:type owl:Class ;
           rdfs:subClassOf :Outcome ,
@@ -2756,48 +2658,6 @@ https://doi.org/10.1613/jair.1.13487""" .
         owl:disjointWith :User ;
         rdfs:comment "A system is the organization of a set of Agents modelling some complex joint behaviour or for solving a task. A system has a trace, a Sequence of the inputs and the corresponding Outcomes performed (e.g.) by the system or the agents on it." ;
         rdfs:label "System" .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyAlignment
-:TaxonomyAlignment rdf:type owl:Class ;
-                   rdfs:subClassOf :QuantitativeVaeProperty ,
-                                   :ValueProperty ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :propertyExpressedAt ;
-                                     owl:someValuesFrom :ValueTaxonomyStatement
-                                   ] ;
-                   rdfs:comment "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\"" ;
-                   rdfs:label "Taxonomy Alignment" ;
-                   rdfs:seeAlso :ValueTaxonomy ;
-                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyNode
-:TaxonomyNode rdf:type owl:Class ;
-              rdfs:subClassOf :VaePropertyStatement ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :isTaxonomyNodeOf ;
-                                owl:someValuesFrom :ValueTaxonomyStatement
-                              ] ;
-              rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-              rdfs:label "Taxonomy Node" ;
-              rdfs:seeAlso :ValueTaxonomyStatement ;
-              <http://www.w3.org/2004/02/skos/core#definition> "A node of a ValueTaxonomy." ;
-              <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyProperty
-:TaxonomyProperty rdf:type owl:Class ;
-                  rdfs:subClassOf :QuantitativeVaeProperty ,
-                                  :ValueProperty ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :propertyExpressedAt ;
-                                    owl:someValuesFrom :PropertyNode
-                                  ] ;
-                  rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                  rdfs:label "Property Taxonomy" .
 
 
 ###  https://w3id.org/def/vaeontology#TextualVaeProperty
@@ -3009,29 +2869,6 @@ ai (2023)""" .
                                ] ;
                rdfs:comment "A VaeProperty specifying something about a ValueConcept." ;
                rdfs:label "Value Property" .
-
-
-###  https://w3id.org/def/vaeontology#ValueTaxonomyStatement
-:ValueTaxonomyStatement rdf:type owl:Class ;
-                        rdfs:subClassOf :VaePropertyStatement ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasConceptNode ;
-                                          owl:someValuesFrom :ConceptNode
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasPropertyNode ;
-                                          owl:someValuesFrom :PropertyNode
-                                        ] ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :hasRootNode ;
-                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                          owl:onClass :ConceptNode
-                                        ] ;
-                        rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                        rdfs:label "Value Taxonomy" ;
-                        rdfs:seeAlso :TaxonomyAlignment ;
-                        <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
 
 
 ###  https://w3id.org/framester/schema/ConceptualFrame
@@ -3502,34 +3339,6 @@ Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-ord
   owl:members ( :AgentStatement
                 :VaeSituation
                 :VaeStatementEntity
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ArgumentStatement
-                :Criterion
-                :RelationStatement
-                :ValueDefinition
-                :ValueTaxonomyStatement
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :NodeImportance
-                :PromotionDemotion
-                :TaxonomyAlignment
-                :TaxonomyProperty
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :TaxonomyNode
-                :VaeStatement
-                :ValueComparisonStatement
-                :ValueTaxonomyStatement
               )
 ] .
 

@@ -136,109 +136,16 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/odrl/2/target> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology#directlyGeneralizesNode
-<https://w3id.org/def/vaeontology#directlyGeneralizesNode> rdf:type owl:ObjectProperty ;
-                                                           rdfs:subPropertyOf <https://w3id.org/def/vaeontology#generalizesNode> ;
-                                                           owl:inverseOf <https://w3id.org/def/vaeontology#directlyParticularizesNode> ;
-                                                           rdfs:domain <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                           rdfs:range [ rdf:type owl:Class ;
-                                                                        owl:unionOf ( <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                                      <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                                    )
-                                                                      ] ;
-                                                           rdfs:comment "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)." ;
-                                                           rdfs:label "directly generalizes" .
-
-
-###  https://w3id.org/def/vaeontology#directlyParticularizesNode
-<https://w3id.org/def/vaeontology#directlyParticularizesNode> rdf:type owl:ObjectProperty ;
-                                                              rdfs:subPropertyOf <https://w3id.org/def/vaeontology#particularizesNode> ;
-                                                              rdfs:domain [ rdf:type owl:Class ;
-                                                                            owl:unionOf ( <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                                          <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                                        )
-                                                                          ] ;
-                                                              rdfs:range <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                              rdfs:comment "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)." ;
-                                                              rdfs:label "directly particularizes" .
-
-
 ###  https://w3id.org/def/vaeontology#expressesProperty
 <https://w3id.org/def/vaeontology#expressesProperty> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/def/vaeontology#generalizesNode
-<https://w3id.org/def/vaeontology#generalizesNode> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumes> ;
-                                                   owl:inverseOf <https://w3id.org/def/vaeontology#particularizesNode> ;
-                                                   rdf:type owl:TransitiveProperty ;
-                                                   rdfs:domain <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                   rdfs:range [ rdf:type owl:Class ;
-                                                                owl:unionOf ( <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                              <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                            )
-                                                              ] ;
-                                                   rdfs:comment "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\"" ,
-                                                                "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified." ;
-                                                   rdfs:label "generalizes" .
 
 
 ###  https://w3id.org/def/vaeontology#hasAgent
 <https://w3id.org/def/vaeontology#hasAgent> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology#hasConceptNode
-<https://w3id.org/def/vaeontology#hasConceptNode> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
-                                                  owl:inverseOf <https://w3id.org/def/vaeontology#isConceptNodeOf> ;
-                                                  rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                  rdfs:range <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                  rdfs:comment "Indicates that the ValueTaxonomy has the ConceptNode specified." ;
-                                                  rdfs:label "has concept node" .
-
-
-###  https://w3id.org/def/vaeontology#hasPropertyNode
-<https://w3id.org/def/vaeontology#hasPropertyNode> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
-                                                   owl:inverseOf <https://w3id.org/def/vaeontology#isPropertyNodeOf> ;
-                                                   rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                   rdfs:range <https://w3id.org/def/vaeontology#PropertyNode> ;
-                                                   rdfs:comment "Indicates that the ValueTaxonomy has the PropertyNode specified." ;
-                                                   rdfs:label "has PropertyNode" .
-
-
-###  https://w3id.org/def/vaeontology#hasPropertyTaxonomy
-<https://w3id.org/def/vaeontology#hasPropertyTaxonomy> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf <https://w3id.org/def/vaeontology#expressesProperty> ;
-                                                       owl:inverseOf <https://w3id.org/def/vaeontology#isTaxonomyPropertyOf> ;
-                                                       rdfs:domain <https://w3id.org/def/vaeontology#PropertyNode> ;
-                                                       rdfs:range <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
-                                                       rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
-                                                       rdfs:label "has Property Taxonomy" .
-
-
-###  https://w3id.org/def/vaeontology#hasRootNode
-<https://w3id.org/def/vaeontology#hasRootNode> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf <https://w3id.org/def/vaeontology#hasConceptNode> ;
-                                               owl:inverseOf <https://w3id.org/def/vaeontology#isRootNodeOf> ;
-                                               rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                               rdfs:range <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                               rdfs:comment "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)." ;
-                                               rdfs:label "has root node" .
-
-
 ###  https://w3id.org/def/vaeontology#hasState
 <https://w3id.org/def/vaeontology#hasState> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/def/vaeontology#hasTaxonomyNode
-<https://w3id.org/def/vaeontology#hasTaxonomyNode> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
-                                                   owl:inverseOf <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> ;
-                                                   rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                   rdfs:range <https://w3id.org/def/vaeontology#TaxonomyNode> ;
-                                                   rdfs:comment "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified." ;
-                                                   rdfs:label "has TaxonomyNode" .
 
 
 ###  https://w3id.org/def/vaeontology#hasUser
@@ -249,72 +156,12 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/def/vaeontology#isAgentOfSystem> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology#isConceptNodeOf
-<https://w3id.org/def/vaeontology#isConceptNodeOf> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> ;
-                                                   rdfs:domain <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                   rdfs:range <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                   rdfs:comment "Indicates that the ConceptNode is part of a ValueTaxonomy." ;
-                                                   rdfs:label "is ConceptNode of" .
-
-
-###  https://w3id.org/def/vaeontology#isPropertyNodeOf
-<https://w3id.org/def/vaeontology#isPropertyNodeOf> rdf:type owl:ObjectProperty ;
-                                                    rdfs:subPropertyOf <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> ;
-                                                    rdfs:domain <https://w3id.org/def/vaeontology#PropertyNode> ;
-                                                    rdfs:range <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                    rdfs:comment "Indicates that the PropertyNode is part of the ValueTaxonomy specified." ;
-                                                    rdfs:label "is PropertyNode of" .
-
-
-###  https://w3id.org/def/vaeontology#isRootNodeOf
-<https://w3id.org/def/vaeontology#isRootNodeOf> rdf:type owl:ObjectProperty ;
-                                                rdfs:subPropertyOf <https://w3id.org/def/vaeontology#isConceptNodeOf> ;
-                                                rdfs:domain <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                rdfs:range <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
-                                                rdfs:label "is root node of" .
-
-
-###  https://w3id.org/def/vaeontology#isTaxonomyNodeOf
-<https://w3id.org/def/vaeontology#isTaxonomyNodeOf> rdf:type owl:ObjectProperty ;
-                                                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> ;
-                                                    rdfs:domain <https://w3id.org/def/vaeontology#TaxonomyNode> ;
-                                                    rdfs:range <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                    rdfs:comment "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy." ;
-                                                    rdfs:label "is Taxonomy Node Of" .
-
-
-###  https://w3id.org/def/vaeontology#isTaxonomyPropertyOf
-<https://w3id.org/def/vaeontology#isTaxonomyPropertyOf> rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
-                                                        rdfs:domain <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
-                                                        rdfs:range <https://w3id.org/def/vaeontology#PropertyNode> ;
-                                                        rdfs:comment "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
-                                                        rdfs:label "is PropertyTaxonomy of PropertyNode" .
-
-
 ###  https://w3id.org/def/vaeontology#isUserOfSystem
 <https://w3id.org/def/vaeontology#isUserOfSystem> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/def/vaeontology#measuredOnOutcome
 <https://w3id.org/def/vaeontology#measuredOnOutcome> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/def/vaeontology#particularizesNode
-<https://w3id.org/def/vaeontology#particularizesNode> rdf:type owl:ObjectProperty ;
-                                                      rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumedUnder> ;
-                                                      rdf:type owl:TransitiveProperty ;
-                                                      rdfs:domain [ rdf:type owl:Class ;
-                                                                    owl:unionOf ( <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                                  <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                                )
-                                                                  ] ;
-                                                      rdfs:range <https://w3id.org/def/vaeontology#ConceptNode> ;
-                                                      rdfs:comment "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\"" ,
-                                                                   "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)." ;
-                                                      rdfs:label "particularizes" .
 
 
 ###  https://w3id.org/def/vaeontology#propertyExpressedAt
@@ -329,14 +176,107 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/def/vaeontology#relationWith> rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode
+:directlyGeneralizesNode rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :generalizesNode ;
+                         owl:inverseOf :directlyParticularizesNode ;
+                         rdfs:domain :ConceptNode ;
+                         rdfs:range [ rdf:type owl:Class ;
+                                      owl:unionOf ( :ConceptNode
+                                                    :PropertyNode
+                                                  )
+                                    ] ;
+                         rdfs:comment "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)." ;
+                         rdfs:label "directly generalizes" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode
+:directlyParticularizesNode rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :particularizesNode ;
+                            rdfs:domain [ rdf:type owl:Class ;
+                                          owl:unionOf ( :ConceptNode
+                                                        :PropertyNode
+                                                      )
+                                        ] ;
+                            rdfs:range :ConceptNode ;
+                            rdfs:comment "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)." ;
+                            rdfs:label "directly particularizes" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode
+:generalizesNode rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumes> ;
+                 owl:inverseOf :particularizesNode ;
+                 rdf:type owl:TransitiveProperty ;
+                 rdfs:domain :ConceptNode ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( :ConceptNode
+                                            :PropertyNode
+                                          )
+                            ] ;
+                 rdfs:comment "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\"" ,
+                              "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified." ;
+                 rdfs:label "generalizes" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode
+:hasConceptNode rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasTaxonomyNode ;
+                owl:inverseOf :isConceptNodeOf ;
+                rdfs:domain :ValueTaxonomyStatement ;
+                rdfs:range :ConceptNode ;
+                rdfs:comment "Indicates that the ValueTaxonomy has the ConceptNode specified." ;
+                rdfs:label "has concept node" .
+
+
 ###  https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain
 :hasCondomain rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> ;
               owl:inverseOf :isCondomainFor ;
-              rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+              rdfs:domain :ValueTaxonomyStatement ;
               rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> ;
               rdfs:comment "\"3. The importance function I : N → COD assigns an im- portance value from the codomain COD to value con- cepts in N\"" ;
               rdfs:label "hasCondomain" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode
+:hasPropertyNode rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasTaxonomyNode ;
+                 owl:inverseOf :isPropertyNodeOf ;
+                 rdfs:domain :ValueTaxonomyStatement ;
+                 rdfs:range :PropertyNode ;
+                 rdfs:comment "Indicates that the ValueTaxonomy has the PropertyNode specified." ;
+                 rdfs:label "has PropertyNode" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy
+:hasPropertyTaxonomy rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <https://w3id.org/def/vaeontology#expressesProperty> ;
+                     owl:inverseOf :isTaxonomyPropertyOf ;
+                     rdfs:domain :PropertyNode ;
+                     rdfs:range :TaxonomyProperty ;
+                     rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
+                     rdfs:label "has Property Taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode
+:hasRootNode rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasConceptNode ;
+             owl:inverseOf :isRootNodeOf ;
+             rdfs:domain :ValueTaxonomyStatement ;
+             rdfs:range :ConceptNode ;
+             rdfs:comment "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)." ;
+             rdfs:label "has root node" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode
+:hasTaxonomyNode rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
+                 owl:inverseOf :isTaxonomyNodeOf ;
+                 rdfs:domain :ValueTaxonomyStatement ;
+                 rdfs:range :TaxonomyNode ;
+                 rdfs:comment "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified." ;
+                 rdfs:label "has TaxonomyNode" .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#importanceCalculatedWith
@@ -344,7 +284,7 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
                           rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> ;
                           owl:inverseOf :isCalculationOfImportance ;
                           rdf:type owl:FunctionalProperty ;
-                          rdfs:domain <https://w3id.org/def/vaeontology#NodeImportance> ;
+                          rdfs:domain :NodeImportance ;
                           rdfs:range <https://w3id.org/def/vaeontology#VaeProperty> ;
                           rdfs:comment "\"We articulate this coherence by requiring that a parent node’s importance must be aligned with the importance of its children nodes. For example, if the importance of all children nodes is low, then the importance of the parent node cannot be high, and vice versa.\"" ;
                           rdfs:label "importanceCalculatedWith" .
@@ -355,18 +295,78 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
                            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
                            rdf:type owl:InverseFunctionalProperty ;
                            rdfs:domain <https://w3id.org/def/vaeontology#VaeProperty> ;
-                           rdfs:range <https://w3id.org/def/vaeontology#NodeImportance> ;
+                           rdfs:range :NodeImportance ;
                            rdfs:comment "\"We articulate this coherence by requiring that a parent node’s importance must be aligned with the importance of its children nodes. For example, if the importance of all children nodes is low, then the importance of the parent node cannot be high, and vice versa.\"" ;
                            rdfs:label "isCalculationOfImportance" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#isConceptNodeOf
+:isConceptNodeOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isTaxonomyNodeOf ;
+                 rdfs:domain :ConceptNode ;
+                 rdfs:range :ValueTaxonomyStatement ;
+                 rdfs:comment "Indicates that the ConceptNode is part of a ValueTaxonomy." ;
+                 rdfs:label "is ConceptNode of" .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#isCondomainFor
 :isCondomainFor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> ;
                 rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> ;
-                rdfs:range <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                rdfs:range :ValueTaxonomyStatement ;
                 rdfs:comment "\"3. The importance function I : N → COD assigns an im- portance value from the codomain COD to value con- cepts in N\"" ;
                 rdfs:label "isCondomainFor" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#isPropertyNodeOf
+:isPropertyNodeOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :isTaxonomyNodeOf ;
+                  rdfs:domain :PropertyNode ;
+                  rdfs:range :ValueTaxonomyStatement ;
+                  rdfs:comment "Indicates that the PropertyNode is part of the ValueTaxonomy specified." ;
+                  rdfs:label "is PropertyNode of" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#isRootNodeOf
+:isRootNodeOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isConceptNodeOf ;
+              rdfs:domain :ConceptNode ;
+              rdfs:range :ValueTaxonomyStatement ;
+              rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
+              rdfs:label "is root node of" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf
+:isTaxonomyNodeOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> ;
+                  rdfs:domain :TaxonomyNode ;
+                  rdfs:range :ValueTaxonomyStatement ;
+                  rdfs:comment "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy." ;
+                  rdfs:label "is Taxonomy Node Of" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyPropertyOf
+:isTaxonomyPropertyOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
+                      rdfs:domain :TaxonomyProperty ;
+                      rdfs:range :PropertyNode ;
+                      rdfs:comment "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
+                      rdfs:label "is PropertyTaxonomy of PropertyNode" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#particularizesNode
+:particularizesNode rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumedUnder> ;
+                    rdf:type owl:TransitiveProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :ConceptNode
+                                                :PropertyNode
+                                              )
+                                ] ;
+                    rdfs:range :ConceptNode ;
+                    rdfs:comment "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\"" ,
+                                 "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)." ;
+                    rdfs:label "particularizes" .
 
 
 ###  https://w3id.org/framester/schema/subsumedUnder
@@ -393,42 +393,32 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 rdf:value rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/def/vaeontology#degreeOfSatisfaction
-<https://w3id.org/def/vaeontology#degreeOfSatisfaction> rdf:type owl:DatatypeProperty ;
-                                                        rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                                                        rdf:type owl:FunctionalProperty ;
-                                                        rdfs:domain <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
-                                                        rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                     owl:onDatatype xsd:decimal ;
-                                                                     owl:withRestrictions ( [ xsd:minInclusive 0.0
-                                                                                            ]
-                                                                                            [ xsd:maxInclusive 1.0
-                                                                                            ]
-                                                                                          )
-                                                                   ] ;
-                                                        rdfs:comment "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)." ;
-                                                        rdfs:label "degree of satisfaction" .
-
-
-###  https://w3id.org/def/vaeontology#importanceValue
-<https://w3id.org/def/vaeontology#importanceValue> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                                                   rdf:type owl:FunctionalProperty ;
-                                                   rdfs:domain <https://w3id.org/def/vaeontology#NodeImportance> ;
-                                                   rdfs:range xsd:decimal ;
-                                                   rdfs:comment "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." ;
-                                                   rdfs:label "importance value" .
-
-
 ###  https://w3id.org/def/vaeontology#isActive
 <https://w3id.org/def/vaeontology#isActive> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction
+:degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain :TaxonomyProperty ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:onDatatype xsd:decimal ;
+                                   owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                          ]
+                                                          [ xsd:maxInclusive 1.0
+                                                          ]
+                                                        )
+                                 ] ;
+                      rdfs:comment "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)." ;
+                      rdfs:label "degree of satisfaction" .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#hasNProperties
 :hasNProperties rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
                 rdf:type owl:FunctionalProperty ;
-                rdfs:domain <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                rdfs:domain :ValueTaxonomyStatement ;
                 rdfs:range xsd:positiveInteger .
 
 
@@ -453,6 +443,14 @@ rdf:value rdf:type owl:DatatypeProperty .
                      rdf:type owl:FunctionalProperty ;
                      rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> ;
                      rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#importanceValue
+:importanceValue rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :NodeImportance ;
+                 rdfs:range xsd:decimal .
 
 
 #################################################################
@@ -499,29 +497,6 @@ rdf:value rdf:type owl:DatatypeProperty .
 <https://w3id.org/def/vaeontology#ArgumentStatement> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/vaeontology#ConceptNode
-<https://w3id.org/def/vaeontology#ConceptNode> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://w3id.org/def/vaeontology#TaxonomyNode> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/def/vaeontology#expressesProperty> ;
-                                                                 owl:someValuesFrom [ owl:intersectionOf ( <https://w3id.org/def/vaeontology#NodeImportance>
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty :importanceCalculatedWith ;
-                                                                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                                             owl:onClass :AggregationOfImportance
-                                                                                                           ]
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                               ] ;
-                                               owl:disjointWith <https://w3id.org/def/vaeontology#PropertyNode> ;
-                                               rdfs:comment "\"Definition 2 (Coherence of Value Importance)\"" ,
-                                                            "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                               rdfs:label "Concept Node" ;
-                                               <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
 ###  https://w3id.org/def/vaeontology#Context
 <https://w3id.org/def/vaeontology#Context> rdf:type owl:Class .
 
@@ -534,47 +509,13 @@ ai (2023)""" .
 <https://w3id.org/def/vaeontology#Equality> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/vaeontology#NodeImportance
-<https://w3id.org/def/vaeontology#NodeImportance> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
-                                                                  <https://w3id.org/def/vaeontology#ValueProperty> ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
-                                                                    owl:someValuesFrom <https://w3id.org/def/vaeontology#TaxonomyNode>
-                                                                  ] ;
-                                                  rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                                  rdfs:label "Node Importance" ;
-                                                  rdfs:seeAlso <https://w3id.org/def/vaeontology#ImportanceRelation> ,
-                                                               <https://w3id.org/def/vaeontology#ValueTaxonomy> .
-
-
 ###  https://w3id.org/def/vaeontology#Norm
 <https://w3id.org/def/vaeontology#Norm> rdf:type owl:Class ;
-                                        owl:disjointWith <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> .
+                                        owl:disjointWith :ValueTaxonomyStatement .
 
 
 ###  https://w3id.org/def/vaeontology#PromotionDemotion
 <https://w3id.org/def/vaeontology#PromotionDemotion> rdf:type owl:Class .
-
-
-###  https://w3id.org/def/vaeontology#PropertyNode
-<https://w3id.org/def/vaeontology#PropertyNode> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://w3id.org/def/vaeontology#TaxonomyNode> ,
-                                                                [ rdf:type owl:Class ;
-                                                                  owl:complementOf [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <https://w3id.org/def/vaeontology#generalizesNode> ;
-                                                                                     owl:someValuesFrom <https://w3id.org/def/vaeontology#TaxonomyNode>
-                                                                                   ]
-                                                                ] ,
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
-                                                                  owl:someValuesFrom <https://w3id.org/def/vaeontology#TaxonomyProperty>
-                                                                ] ;
-                                                rdfs:comment "Added axiom: \"In our proposed value taxonomy, we require conditioning property nodes to be restricted to leaf nodes. In other words, one concrete computational understanding of a value concept (specified through a property) cannot be more general than another understanding of that value (specified through an- other property or label node).\"" ,
-                                                             "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                                rdfs:label "Property Node" ;
-                                                <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
 
 
 ###  https://w3id.org/def/vaeontology#QuantitativeVaeProperty
@@ -595,49 +536,6 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology#System
 <https://w3id.org/def/vaeontology#System> rdf:type owl:Class .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyAlignment
-<https://w3id.org/def/vaeontology#TaxonomyAlignment> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/def/vaeontology#AggregationFunction> ,
-                                                                     <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
-                                                                     <https://w3id.org/def/vaeontology#ValueProperty> ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
-                                                                       owl:someValuesFrom <https://w3id.org/def/vaeontology#ValueTaxonomyStatement>
-                                                                     ] ;
-                                                     rdfs:comment "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\"" ;
-                                                     rdfs:label "Taxonomy Alignment" ;
-                                                     rdfs:seeAlso <https://w3id.org/def/vaeontology#ValueTaxonomy> ;
-                                                     <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyNode
-<https://w3id.org/def/vaeontology#TaxonomyNode> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://w3id.org/def/vaeontology#VaePropertyStatement> ,
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty <https://w3id.org/def/vaeontology#isTaxonomyNodeOf> ;
-                                                                  owl:someValuesFrom <https://w3id.org/def/vaeontology#ValueTaxonomyStatement>
-                                                                ] ;
-                                                rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                                rdfs:label "Taxonomy Node" ;
-                                                rdfs:seeAlso <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
-                                                <http://www.w3.org/2004/02/skos/core#definition> "A node of a ValueTaxonomy." ;
-                                                <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
-###  https://w3id.org/def/vaeontology#TaxonomyProperty
-<https://w3id.org/def/vaeontology#TaxonomyProperty> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
-                                                                    <https://w3id.org/def/vaeontology#ValueProperty> ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
-                                                                      owl:someValuesFrom <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                    ] ;
-                                                    rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                                    rdfs:label "Property Taxonomy" .
 
 
 ###  https://w3id.org/def/vaeontology#User
@@ -672,76 +570,41 @@ ai (2023)""" .
 <https://w3id.org/def/vaeontology#ValueProperty> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/vaeontology#ValueTaxonomyStatement
-<https://w3id.org/def/vaeontology#ValueTaxonomyStatement> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <https://w3id.org/def/vaeontology#VaePropertyStatement> ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/def/vaeontology#hasConceptNode> ;
-                                                                            owl:someValuesFrom <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/def/vaeontology#hasPropertyNode> ;
-                                                                            owl:someValuesFrom <https://w3id.org/def/vaeontology#PropertyNode>
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
-                                                                            owl:allValuesFrom [ owl:intersectionOf ( <https://w3id.org/def/vaeontology#TaxonomyNode>
-                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                       owl:onProperty <https://w3id.org/def/vaeontology#expressesProperty> ;
-                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( <https://w3id.org/def/vaeontology#NodeImportance>
-                                                                                                                                                                 [ rdf:type owl:Restriction ;
-                                                                                                                                                                   owl:onProperty <https://w3id.org/def/vaeontology#importanceValue> ;
-                                                                                                                                                                   owl:someValuesFrom xsd:decimal
-                                                                                                                                                                 ]
-                                                                                                                                                               ) ;
-                                                                                                                                            rdf:type owl:Class
-                                                                                                                                          ]
-                                                                                                                     ]
-                                                                                                                   ) ;
-                                                                                                rdf:type owl:Class
-                                                                                              ]
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <https://w3id.org/def/vaeontology#hasRootNode> ;
-                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                            owl:onClass <https://w3id.org/def/vaeontology#ConceptNode>
-                                                                          ] ,
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty :hasCondomain ;
-                                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                            owl:onClass [ owl:intersectionOf ( <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region>
-                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                 owl:onProperty :importanceRangesIn ;
-                                                                                                                 owl:someValuesFrom xsd:decimal
-                                                                                                               ]
-                                                                                                             ) ;
-                                                                                          rdf:type owl:Class
-                                                                                        ]
-                                                                          ] ;
-                                                          rdfs:comment """\"Definition 1 (Value taxonomy). A value taxonomy V = (N, E, I) is defined as a directed acyclic graph, where: 
-1. The set of nodes N = Nl ∪ Nφ represents value concepts, and it is composed of two types of nodes: i) those that are specified through labels, with Nl ⊂ L representing the set of label nodes and L is the set of all value labels representing abstract value concepts like ‘fairness’ or ‘reciprocity’; and ii) those that are specified through concrete properties, with Nφ ⊂ Φ representing the set of property nodes and Φ is the set of all value properties whose satisfaction can be automatically verified at different world states, such as having the number of times one offers help in a mutual aid community larger than the number of times one asks for help.
-2. The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.
-The importance function I : N → COD assigns an importance value from the codomain COD to value concepts in N.
-\"""" ,
-                                                                       "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
-                                                          rdfs:label "Value Taxonomy" ;
-                                                          rdfs:seeAlso <https://w3id.org/def/vaeontology#TaxonomyAlignment> ;
-                                                          <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
-ai (2023)""" .
-
-
 ###  https://w3id.org/def/vaeontology_osman_dInverno#AggregationOfImportance
 :AggregationOfImportance rdf:type owl:Class ;
                          rdfs:subClassOf <https://w3id.org/def/vaeontology#AggregationFunction> ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
-                                           owl:allValuesFrom <https://w3id.org/def/vaeontology#TaxonomyNode>
+                                           owl:allValuesFrom :TaxonomyNode
                                          ] .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#BalancedGiveAndTake
 :BalancedGiveAndTake rdf:type owl:Class ;
                      rdfs:subClassOf <https://w3id.org/def/vaeontology#ValueConcept> .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode
+:ConceptNode rdf:type owl:Class ;
+             rdfs:subClassOf :TaxonomyNode ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <https://w3id.org/def/vaeontology#expressesProperty> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :NodeImportance
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :importanceCalculatedWith ;
+                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                           owl:onClass :AggregationOfImportance
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             owl:disjointWith :PropertyNode ;
+             rdfs:comment "\"Definition 2 (Coherence of Value Importance)\"" ,
+                          "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+             rdfs:label "Concept Node" ;
+             <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#EqualDivisionOfWorkload
@@ -764,17 +627,152 @@ ai (2023)""" .
           rdfs:subClassOf <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
 
 
+###  https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance
+:NodeImportance rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
+                                <https://w3id.org/def/vaeontology#ValueProperty> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
+                                  owl:someValuesFrom :TaxonomyNode
+                                ] ;
+                rdfs:comment "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                rdfs:label "Node Importance" ;
+                rdfs:seeAlso <https://w3id.org/def/vaeontology#ImportanceRelation> ,
+                             :ValueTaxonomy .
+
+
 ###  https://w3id.org/def/vaeontology_osman_dInverno#OsmanDinvernoAlignmentExample
 :OsmanDinvernoAlignmentExample rdf:type owl:Class ;
-                               rdfs:subClassOf <https://w3id.org/def/vaeontology#TaxonomyAlignment> ;
+                               rdfs:subClassOf :TaxonomyAlignment ;
                                rdfs:comment "\"Going back to the alignment function A, there are other implementation choices to make, such as the choice of the function f and the aggregation operator L. In this paper, we propose a straightforward implementation that simply uses the importance of properties as the weight of their degree of satisfaction (so f is implemented as a multiplication opera- tor), and the aggregation over all relevant properties (L) is implemented as a simple average\"" ;
                                rdfs:label "OsmanDinvernoAlignmentExample" ;
                                <http://www.w3.org/2004/02/skos/core#note> "Implemented in SWRL rules for aggregations of 1,2 or 3 PropertyNode." .
 
 
+###  https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode
+:PropertyNode rdf:type owl:Class ;
+              rdfs:subClassOf :TaxonomyNode ,
+                              [ rdf:type owl:Class ;
+                                owl:complementOf [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :generalizesNode ;
+                                                   owl:someValuesFrom :TaxonomyNode
+                                                 ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPropertyTaxonomy ;
+                                owl:someValuesFrom :TaxonomyProperty
+                              ] ;
+              rdfs:comment "Added axiom: \"In our proposed value taxonomy, we require conditioning property nodes to be restricted to leaf nodes. In other words, one concrete computational understanding of a value concept (specified through a property) cannot be more general than another understanding of that value (specified through an- other property or label node).\"" ,
+                           "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+              rdfs:label "Property Node" ;
+              <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
 ###  https://w3id.org/def/vaeontology_osman_dInverno#Reciprocity
 :Reciprocity rdf:type owl:Class ;
              rdfs:subClassOf <https://w3id.org/def/vaeontology#ValueConcept> .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment
+:TaxonomyAlignment rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/def/vaeontology#AggregationFunction> ,
+                                   <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
+                                   <https://w3id.org/def/vaeontology#ValueProperty> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
+                                     owl:someValuesFrom :ValueTaxonomyStatement
+                                   ] ;
+                   rdfs:comment "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\"" ;
+                   rdfs:label "Taxonomy Alignment" ;
+                   rdfs:seeAlso :ValueTaxonomy ;
+                   <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode
+:TaxonomyNode rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/def/vaeontology#VaePropertyStatement> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isTaxonomyNodeOf ;
+                                owl:someValuesFrom :ValueTaxonomyStatement
+                              ] ;
+              rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+              rdfs:label "Taxonomy Node" ;
+              rdfs:seeAlso :ValueTaxonomyStatement ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A node of a ValueTaxonomy." ;
+              <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty
+:TaxonomyProperty rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> ,
+                                  <https://w3id.org/def/vaeontology#ValueProperty> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <https://w3id.org/def/vaeontology#propertyExpressedAt> ;
+                                    owl:someValuesFrom :PropertyNode
+                                  ] ;
+                  rdfs:comment "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                  rdfs:label "Property Taxonomy" .
+
+
+###  https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement
+:ValueTaxonomyStatement rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/def/vaeontology#VaePropertyStatement> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasConceptNode ;
+                                          owl:someValuesFrom :ConceptNode
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasPropertyNode ;
+                                          owl:someValuesFrom :PropertyNode
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasTaxonomyNode ;
+                                          owl:allValuesFrom [ owl:intersectionOf ( :TaxonomyNode
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <https://w3id.org/def/vaeontology#expressesProperty> ;
+                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :NodeImportance
+                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                 owl:onProperty :importanceValue ;
+                                                                                                                                 owl:someValuesFrom xsd:decimal
+                                                                                                                               ]
+                                                                                                                             ) ;
+                                                                                                          rdf:type owl:Class
+                                                                                                        ]
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasCondomain ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass [ owl:intersectionOf ( <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :importanceRangesIn ;
+                                                                               owl:someValuesFrom xsd:decimal
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasRootNode ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :ConceptNode
+                                        ] ;
+                        rdfs:comment """\"Definition 1 (Value taxonomy). A value taxonomy V = (N, E, I) is defined as a directed acyclic graph, where: 
+1. The set of nodes N = Nl ∪ Nφ represents value concepts, and it is composed of two types of nodes: i) those that are specified through labels, with Nl ⊂ L representing the set of label nodes and L is the set of all value labels representing abstract value concepts like ‘fairness’ or ‘reciprocity’; and ii) those that are specified through concrete properties, with Nφ ⊂ Φ representing the set of property nodes and Φ is the set of all value properties whose satisfaction can be automatically verified at different world states, such as having the number of times one offers help in a mutual aid community larger than the number of times one asks for help.
+2. The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.
+The importance function I : N → COD assigns an importance value from the codomain COD to value concepts in N.
+\"""" ,
+                                     "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]" ;
+                        rdfs:label "Value Taxonomy" ;
+                        rdfs:seeAlso :TaxonomyAlignment ;
+                        <https://w3id.org/spice/SON/SchwartzValues#bibRef> """Osman, N., d’Inverno, M.: A computational framework of human values for ethical
+ai (2023)""" .
 
 
 ###  https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence
@@ -933,32 +931,32 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode
 :balancedGiveTakeNode rdf:type owl:NamedIndividual ,
-                               <https://w3id.org/def/vaeontology#ConceptNode> ;
-                      <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :p1Node ,
-                                                                                 :p2Node ;
-                      <https://w3id.org/def/vaeontology#expressesProperty> :balancedGiveTakeNodeImportance .
+                               :ConceptNode ;
+                      <https://w3id.org/def/vaeontology#expressesProperty> :balancedGiveTakeNodeImportance ;
+                      :directlyGeneralizesNode :p1Node ,
+                                               :p2Node .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode2
 :balancedGiveTakeNode2 rdf:type owl:NamedIndividual ,
-                                <https://w3id.org/def/vaeontology#ConceptNode> ;
-                       <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :p1Node2 ,
-                                                                                  :p2Node2 ;
-                       <https://w3id.org/def/vaeontology#expressesProperty> :balancedGiveTakeNodeImportance2 .
+                                :ConceptNode ;
+                       <https://w3id.org/def/vaeontology#expressesProperty> :balancedGiveTakeNodeImportance2 ;
+                       :directlyGeneralizesNode :p1Node2 ,
+                                                :p2Node2 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance
 :balancedGiveTakeNodeImportance rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                         :NodeImportance ;
                                 <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-                                <https://w3id.org/def/vaeontology#importanceValue> 1.0 .
+                                :importanceValue 1.0 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance2
 :balancedGiveTakeNodeImportance2 rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                          :NodeImportance ;
                                  <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-                                 <https://w3id.org/def/vaeontology#importanceValue> 0.8 .
+                                 :importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#condomain
@@ -1003,50 +1001,50 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance1
 :equalDivisionImportance1 rdf:type owl:NamedIndividual ,
-                                   <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                   :NodeImportance ;
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample1 ;
                           <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-                          <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+                          :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance2
 :equalDivisionImportance2 rdf:type owl:NamedIndividual ,
-                                   <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                   :NodeImportance ;
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample2_1 ;
                           <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-                          <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+                          :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance3
 :equalDivisionImportance3 rdf:type owl:NamedIndividual ,
-                                   <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                   :NodeImportance ;
                           <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample2_2 ;
                           <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-                          <https://w3id.org/def/vaeontology#importanceValue> 0.9 .
+                          :importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode
 :equalDivisionNode rdf:type owl:NamedIndividual ,
-                            <https://w3id.org/def/vaeontology#ConceptNode> ;
-                   <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :p3Node ;
-                   <https://w3id.org/def/vaeontology#directlyParticularizesNode> :equalTreatmentNode ;
-                   <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance1 .
+                            :ConceptNode ;
+                   <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance1 ;
+                   :directlyGeneralizesNode :p3Node ;
+                   :directlyParticularizesNode :equalTreatmentNode .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode2
 :equalDivisionNode2 rdf:type owl:NamedIndividual ,
-                             <https://w3id.org/def/vaeontology#ConceptNode> ;
-                    <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :p3Node2 ;
-                    <https://w3id.org/def/vaeontology#directlyParticularizesNode> :equalTreatmentNode2 ;
-                    <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance2 .
+                             :ConceptNode ;
+                    <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance2 ;
+                    :directlyGeneralizesNode :p3Node2 ;
+                    :directlyParticularizesNode :equalTreatmentNode2 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode3
 :equalDivisionNode3 rdf:type owl:NamedIndividual ,
-                             <https://w3id.org/def/vaeontology#ConceptNode> ;
-                    <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :p3Node3 ;
-                    <https://w3id.org/def/vaeontology#directlyParticularizesNode> :equalTreatmentNode3 ;
-                    <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance3 .
+                             :ConceptNode ;
+                    <https://w3id.org/def/vaeontology#expressesProperty> :equalDivisionImportance3 ;
+                    :directlyGeneralizesNode :p3Node3 ;
+                    :directlyParticularizesNode :equalTreatmentNode3 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalPayExample
@@ -1057,16 +1055,16 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalPayImportance1
 :equalPayImportance1 rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/def/vaeontology#NodeImportance> ;
+                              :NodeImportance ;
                      <https://w3id.org/def/vaeontology#relationWith> :equalPayExample ;
-                     <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+                     :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalPayNode
 :equalPayNode rdf:type owl:NamedIndividual ,
-                       <https://w3id.org/def/vaeontology#ConceptNode> ;
-              <https://w3id.org/def/vaeontology#directlyParticularizesNode> :equalTreatmentNode ;
-              <https://w3id.org/def/vaeontology#expressesProperty> :equalPayImportance1 .
+                       :ConceptNode ;
+              <https://w3id.org/def/vaeontology#expressesProperty> :equalPayImportance1 ;
+              :directlyParticularizesNode :equalTreatmentNode .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentExample
@@ -1077,40 +1075,40 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance1
 :equalTreatmentImportance1 rdf:type owl:NamedIndividual ,
-                                    <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                    :NodeImportance ;
                            <https://w3id.org/def/vaeontology#relationWith> :equalTreatmentExample ;
-                           <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+                           :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance2
 :equalTreatmentImportance2 rdf:type owl:NamedIndividual ,
-                                    <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                    :NodeImportance ;
                            <https://w3id.org/def/vaeontology#relationWith> :equalTreatmentExample ;
-                           <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+                           :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance3
 :equalTreatmentImportance3 rdf:type owl:NamedIndividual ,
-                                    <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                    :NodeImportance ;
                            <https://w3id.org/def/vaeontology#relationWith> :equalTreatmentExample ;
-                           <https://w3id.org/def/vaeontology#importanceValue> 0.9 .
+                           :importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode
 :equalTreatmentNode rdf:type owl:NamedIndividual ,
-                             <https://w3id.org/def/vaeontology#ConceptNode> ;
+                             :ConceptNode ;
                     <https://w3id.org/def/vaeontology#expressesProperty> :equalTreatmentImportance1 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2
 :equalTreatmentNode2 rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/def/vaeontology#ConceptNode> ;
+                              :ConceptNode ;
                      <https://w3id.org/def/vaeontology#expressesProperty> :equalTreatmentImportance2 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3
 :equalTreatmentNode3 rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/def/vaeontology#ConceptNode> ;
+                              :ConceptNode ;
                      <https://w3id.org/def/vaeontology#expressesProperty> :equalTreatmentImportance3 .
 
 
@@ -1131,47 +1129,47 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode
 :fairnessNode rdf:type owl:NamedIndividual ,
-                       <https://w3id.org/def/vaeontology#ConceptNode> ;
-              <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :equalTreatmentNode ,
-                                                                         :reciprocityNode ;
-              <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance .
+                       :ConceptNode ;
+              <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance ;
+              :directlyGeneralizesNode :equalTreatmentNode ,
+                                       :reciprocityNode .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode2
 :fairnessNode2 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#ConceptNode> ;
-               <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :equalTreatmentNode2 ,
-                                                                          :reciprocityNode2 ;
-               <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance2 .
+                        :ConceptNode ;
+               <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance2 ;
+               :directlyGeneralizesNode :equalTreatmentNode2 ,
+                                        :reciprocityNode2 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode3
 :fairnessNode3 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#ConceptNode> ;
-               <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :equalTreatmentNode3 ;
-               <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance3 .
+                        :ConceptNode ;
+               <https://w3id.org/def/vaeontology#expressesProperty> :fairnessNodeImportance3 ;
+               :directlyGeneralizesNode :equalTreatmentNode3 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance
 :fairnessNodeImportance rdf:type owl:NamedIndividual ,
-                                 <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                 :NodeImportance ;
                         <https://w3id.org/def/vaeontology#relationWith> :fairnessExample ;
                         :importanceCalculatedWith :aggregationOfImportanceFairness1 ;
-                        <https://w3id.org/def/vaeontology#importanceValue> 0.75 .
+                        :importanceValue 0.75 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance2
 :fairnessNodeImportance2 rdf:type owl:NamedIndividual ,
-                                  <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                  :NodeImportance ;
                          <https://w3id.org/def/vaeontology#relationWith> :fairnessExample ;
-                         <https://w3id.org/def/vaeontology#importanceValue> 0.75 .
+                         :importanceValue 0.75 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance3
 :fairnessNodeImportance3 rdf:type owl:NamedIndividual ,
-                                  <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                  :NodeImportance ;
                          <https://w3id.org/def/vaeontology#relationWith> :fairnessExample ;
-                         <https://w3id.org/def/vaeontology#importanceValue> 0.9 .
+                         :importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#idempotenceConstraint
@@ -1181,8 +1179,7 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#importanceValue
 :importanceValue rdf:type owl:NamedIndividual ,
-                          <http://www.w3.org/ns/odrl/2/LeftOperand> ;
-                 rdfs:comment "Would retrieve the rdf:value of a AggregationOfImportance or the importanceValue of a NodeImportance instance" .
+                          <http://www.w3.org/ns/odrl/2/LeftOperand> .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#logicalImplication
@@ -1197,155 +1194,155 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers
 :p1HelpRequestsProportionateOffers rdf:type owl:NamedIndividual ,
-                                            <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
+                                            :TaxonomyProperty ;
                                    <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
                                    <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ,
                                                                                    :fairnessExample ,
                                                                                    :reciprocityExample ;
-                                   <https://w3id.org/def/vaeontology#degreeOfSatisfaction> 0.5 .
+                                   :degreeOfSatisfaction 0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance1
 :p1Importance1 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+               :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance2
 :p1Importance2 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.8 .
+               :importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Importance3
 :p1Importance3 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> -0.5 .
+               :importanceValue -0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Node
 :p1Node rdf:type owl:NamedIndividual ,
-                 <https://w3id.org/def/vaeontology#PropertyNode> ;
+                 :PropertyNode ;
         <https://w3id.org/def/vaeontology#expressesProperty> :p1Importance1 ;
-        <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p1HelpRequestsProportionateOffers .
+        :hasPropertyTaxonomy :p1HelpRequestsProportionateOffers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Node2
 :p1Node2 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p1Importance2 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p1HelpRequestsProportionateOffers .
+         :hasPropertyTaxonomy :p1HelpRequestsProportionateOffers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1Node3
 :p1Node3 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p1Importance3 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p1HelpRequestsProportionateOffers .
+         :hasPropertyTaxonomy :p1HelpRequestsProportionateOffers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual
 :p2HelpRequestsProportionateActual rdf:type owl:NamedIndividual ,
-                                            <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
+                                            :TaxonomyProperty ;
                                    <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
                                    <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ,
                                                                                    :fairnessExample ,
                                                                                    :reciprocityExample ;
-                                   <https://w3id.org/def/vaeontology#degreeOfSatisfaction> 0.9 .
+                                   :degreeOfSatisfaction 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance1
 :p2Importance1 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.9 .
+               :importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance2
 :p2Importance2 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.0 .
+               :importanceValue 0.0 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Importance3
 :p2Importance3 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> -0.5 .
+               :importanceValue -0.5 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Node
 :p2Node rdf:type owl:NamedIndividual ,
-                 <https://w3id.org/def/vaeontology#PropertyNode> ;
+                 :PropertyNode ;
         <https://w3id.org/def/vaeontology#expressesProperty> :p2Importance1 ;
-        <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p2HelpRequestsProportionateActual .
+        :hasPropertyTaxonomy :p2HelpRequestsProportionateActual .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Node2
 :p2Node2 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p2Importance2 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p2HelpRequestsProportionateActual .
+         :hasPropertyTaxonomy :p2HelpRequestsProportionateActual .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2Node3
 :p2Node3 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p2Importance3 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p2HelpRequestsProportionateActual .
+         :hasPropertyTaxonomy :p2HelpRequestsProportionateActual .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance1
 :p3Importance1 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+               :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance2
 :p3Importance2 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.7 .
+               :importanceValue 0.7 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3
 :p3Importance3 rdf:type owl:NamedIndividual ,
-                        <https://w3id.org/def/vaeontology#NodeImportance> ;
+                        :NodeImportance ;
                <https://w3id.org/def/vaeontology#relationWith> :equalDivisionExample ;
-               <https://w3id.org/def/vaeontology#importanceValue> 0.9 .
+               :importanceValue 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Node
 :p3Node rdf:type owl:NamedIndividual ,
-                 <https://w3id.org/def/vaeontology#PropertyNode> ;
+                 :PropertyNode ;
         <https://w3id.org/def/vaeontology#expressesProperty> :p3Importance1 ;
-        <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p3TasksDistributedAmongVolunteers .
+        :hasPropertyTaxonomy :p3TasksDistributedAmongVolunteers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Node2
 :p3Node2 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p3Importance2 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p3TasksDistributedAmongVolunteers .
+         :hasPropertyTaxonomy :p3TasksDistributedAmongVolunteers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3Node3
 :p3Node3 rdf:type owl:NamedIndividual ,
-                  <https://w3id.org/def/vaeontology#PropertyNode> ;
+                  :PropertyNode ;
          <https://w3id.org/def/vaeontology#expressesProperty> :p3Importance3 ;
-         <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> :p3TasksDistributedAmongVolunteers .
+         :hasPropertyTaxonomy :p3TasksDistributedAmongVolunteers .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers
 :p3TasksDistributedAmongVolunteers rdf:type owl:NamedIndividual ,
-                                            <https://w3id.org/def/vaeontology#TaxonomyProperty> ;
+                                            :TaxonomyProperty ;
                                    <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
-                                   <https://w3id.org/def/vaeontology#degreeOfSatisfaction> 0.9 .
+                                   :degreeOfSatisfaction 0.9 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#problemModeller
@@ -1363,30 +1360,30 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance1
 :reciprocityImportance1 rdf:type owl:NamedIndividual ,
-                                 <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                 :NodeImportance ;
                         <https://w3id.org/def/vaeontology#relationWith> :reciprocityExample ;
-                        <https://w3id.org/def/vaeontology#importanceValue> 0.8 .
+                        :importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance2
 :reciprocityImportance2 rdf:type owl:NamedIndividual ,
-                                 <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                 :NodeImportance ;
                         <https://w3id.org/def/vaeontology#relationWith> :reciprocityExample ;
-                        <https://w3id.org/def/vaeontology#importanceValue> 0.8 .
+                        :importanceValue 0.8 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode
 :reciprocityNode rdf:type owl:NamedIndividual ,
-                          <https://w3id.org/def/vaeontology#ConceptNode> ;
-                 <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :balancedGiveTakeNode ;
-                 <https://w3id.org/def/vaeontology#expressesProperty> :reciprocityImportance1 .
+                          :ConceptNode ;
+                 <https://w3id.org/def/vaeontology#expressesProperty> :reciprocityImportance1 ;
+                 :directlyGeneralizesNode :balancedGiveTakeNode .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode2
 :reciprocityNode2 rdf:type owl:NamedIndividual ,
-                           <https://w3id.org/def/vaeontology#ConceptNode> ;
-                  <https://w3id.org/def/vaeontology#directlyGeneralizesNode> :balancedGiveTakeNode2 ;
-                  <https://w3id.org/def/vaeontology#expressesProperty> :reciprocityImportance2 .
+                           :ConceptNode ;
+                  <https://w3id.org/def/vaeontology#expressesProperty> :reciprocityImportance2 ;
+                  :directlyGeneralizesNode :balancedGiveTakeNode2 .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#respectsCondomain
@@ -1416,13 +1413,13 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure1
 :taxonomyFigure1 rdf:type owl:NamedIndividual ,
-                          <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                          :ValueTaxonomyStatement ;
                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample1 ;
                  <https://w3id.org/def/vaeontology#expressesProperty> :taxonomyFigure1Alignment ;
-                 <https://w3id.org/def/vaeontology#hasConceptNode> :equalTreatmentNode ,
-                                                                   :reciprocityNode ;
-                 <https://w3id.org/def/vaeontology#hasRootNode> :fairnessNode ;
+                 :hasConceptNode :equalTreatmentNode ,
+                                 :reciprocityNode ;
                  :hasCondomain :condomain ;
+                 :hasRootNode :fairnessNode ;
                  :hasNProperties "3"^^xsd:positiveInteger .
 
 
@@ -1438,24 +1435,24 @@ ai (2023)""" .
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2_1
 :taxonomyFigure2_1 rdf:type owl:NamedIndividual ,
-                            <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                            :ValueTaxonomyStatement ;
                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample2_1 ;
                    <https://w3id.org/def/vaeontology#expressesProperty> :taxonomyFigure2Alignment ;
-                   <https://w3id.org/def/vaeontology#hasConceptNode> :equalTreatmentNode2 ,
-                                                                     :reciprocityNode2 ;
-                   <https://w3id.org/def/vaeontology#hasRootNode> :fairnessNode2 ;
+                   :hasConceptNode :equalTreatmentNode2 ,
+                                   :reciprocityNode2 ;
                    :hasCondomain :condomain ;
+                   :hasRootNode :fairnessNode2 ;
                    :hasNProperties "3"^^xsd:positiveInteger .
 
 
 ###  https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2_2
 :taxonomyFigure2_2 rdf:type owl:NamedIndividual ,
-                            <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                            :ValueTaxonomyStatement ;
                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :contextExample2_2 ;
                    <https://w3id.org/def/vaeontology#expressesProperty> :taxonomyFigure3Alignment ;
-                   <https://w3id.org/def/vaeontology#hasConceptNode> :equalTreatmentNode3 ;
-                   <https://w3id.org/def/vaeontology#hasRootNode> :fairnessNode3 ;
+                   :hasConceptNode :equalTreatmentNode3 ;
                    :hasCondomain :condomain ;
+                   :hasRootNode :fairnessNode3 ;
                    :hasNProperties "1"^^xsd:positiveInteger .
 
 
@@ -1472,33 +1469,42 @@ ai (2023)""" .
  ] .
 
 #################################################################
+#    Annotations
+#################################################################
+
+:importanceValue rdfs:comment "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." ,
+                               "Would retrieve the rdf:value of a AggregationOfImportance or the importanceValue of a NodeImportance instance" ;
+                  rdfs:label "importance value" .
+
+
+#################################################################
 #    General axioms
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( <https://w3id.org/def/vaeontology#ArgumentStatement>
-                 <https://w3id.org/def/vaeontology#Criterion>
-                 <https://w3id.org/def/vaeontology#RelationStatement>
-                 <https://w3id.org/def/vaeontology#ValueDefinition>
-                 <https://w3id.org/def/vaeontology#ValueTaxonomyStatement>
-               )
- ] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/def/vaeontology#NodeImportance>
-                <https://w3id.org/def/vaeontology#PromotionDemotion>
-                <https://w3id.org/def/vaeontology#TaxonomyAlignment>
-                <https://w3id.org/def/vaeontology#TaxonomyProperty>
+  owl:members ( <https://w3id.org/def/vaeontology#ArgumentStatement>
+                <https://w3id.org/def/vaeontology#Criterion>
+                <https://w3id.org/def/vaeontology#RelationStatement>
+                <https://w3id.org/def/vaeontology#ValueDefinition>
+                :ValueTaxonomyStatement
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <https://w3id.org/def/vaeontology#TaxonomyNode>
-                <https://w3id.org/def/vaeontology#VaeStatement>
+  owl:members ( <https://w3id.org/def/vaeontology#PromotionDemotion>
+                :NodeImportance
+                :TaxonomyAlignment
+                :TaxonomyProperty
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/def/vaeontology#VaeStatement>
                 <https://w3id.org/def/vaeontology#ValueComparisonStatement>
-                <https://w3id.org/def/vaeontology#ValueTaxonomyStatement>
+                :TaxonomyNode
+                :ValueTaxonomyStatement
               )
 ] .
 
@@ -1618,7 +1624,7 @@ ai (2023)""" .
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1629,7 +1635,7 @@ ai (2023)""" .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :p1
                                                                                                  ] ;
@@ -1641,24 +1647,24 @@ ai (2023)""" .
                                                                                                             ] ;
                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :pi1
                                                                                                                        ] ;
                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :pi1 ;
                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> :pimp1
                                                                                                                                   ] ;
                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :p1 ;
                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> :pval1
                                                                                                                                              ] ;
                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :pval1 ;
                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> :dgp1
                                                                                                                                                         ] ;
@@ -1716,7 +1722,7 @@ ai (2023)""" .
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1727,13 +1733,13 @@ ai (2023)""" .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :p1
                                                                                                  ] ;
                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> :p2
                                                                                                             ] ;
@@ -1750,24 +1756,24 @@ ai (2023)""" .
                                                                                                                                   ] ;
                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                               <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :pi1
                                                                                                                                              ] ;
                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :pi1 ;
                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> :pimp1
                                                                                                                                                         ] ;
                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> :p1 ;
                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> :pval1
                                                                                                                                                                    ] ;
                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :pval1 ;
                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> :dgp1
                                                                                                                                                                               ] ;
@@ -1779,24 +1785,24 @@ ai (2023)""" .
                                                                                                                                                                                          ] ;
                                                                                                                                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#argument1> :pi2
                                                                                                                                                                                                     ] ;
                                                                                                                                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> :pi2 ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> :pimp2
                                                                                                                                                                                                                ] ;
                                                                                                                                                                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                                                                                             <http://www.w3.org/2003/11/swrl#argument1> :p2 ;
                                                                                                                                                                                                                             <http://www.w3.org/2003/11/swrl#argument2> :pval2
                                                                                                                                                                                                                           ] ;
                                                                                                                                                                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :pval2 ;
                                                                                                                                                                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :dgp2
                                                                                                                                                                                                                                      ] ;
@@ -1901,7 +1907,7 @@ ai (2023)""" .
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -1912,19 +1918,19 @@ ai (2023)""" .
                                                                                       ] ;
                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :p1
                                                                                                  ] ;
                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> :p2
                                                                                                             ] ;
                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :p3
                                                                                                                        ] ;
@@ -1951,24 +1957,24 @@ ai (2023)""" .
                                                                                                                                                                    ] ;
                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :pi1
                                                                                                                                                                               ] ;
                                                                                                                                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument1> :pi1 ;
                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#argument2> :pimp1
                                                                                                                                                                                          ] ;
                                                                                                                                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#argument1> :p1 ;
                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#argument2> :pval1
                                                                                                                                                                                                     ] ;
                                                                                                                                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> :pval1 ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> :dgp1
                                                                                                                                                                                                                ] ;
@@ -1980,24 +1986,24 @@ ai (2023)""" .
                                                                                                                                                                                                                           ] ;
                                                                                                                                                                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :pi2
                                                                                                                                                                                                                                      ] ;
                                                                                                                                                                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :pi2 ;
                                                                                                                                                                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :pimp2
                                                                                                                                                                                                                                                 ] ;
                                                                                                                                                                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                                                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                                                                                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :p2 ;
                                                                                                                                                                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :pval2
                                                                                                                                                                                                                                                            ] ;
                                                                                                                                                                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                                                                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :pval2 ;
                                                                                                                                                                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :dgp2
                                                                                                                                                                                                                                                                       ] ;
@@ -2009,24 +2015,24 @@ ai (2023)""" .
                                                                                                                                                                                                                                                                                  ] ;
                                                                                                                                                                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                                                                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                                                                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :pi3
                                                                                                                                                                                                                                                                                             ] ;
                                                                                                                                                                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                                                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :pi3 ;
                                                                                                                                                                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :pimp3
                                                                                                                                                                                                                                                                                                        ] ;
                                                                                                                                                                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                                                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyTaxonomy> ;
+                                                                                                                                                                                                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyTaxonomy ;
                                                                                                                                                                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :p3 ;
                                                                                                                                                                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> :pval3
                                                                                                                                                                                                                                                                                                                   ] ;
                                                                                                                                                                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#degreeOfSatisfaction> ;
+                                                                                                                                                                                                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> :degreeOfSatisfaction ;
                                                                                                                                                                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> :pval3 ;
                                                                                                                                                                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> :dgp3
                                                                                                                                                                                                                                                                                                                              ] ;
@@ -2153,7 +2159,7 @@ ai (2023)""" .
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :taxonomyStatement
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -2164,12 +2170,12 @@ ai (2023)""" .
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#TaxonomyAlignment> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :TaxonomyAlignment ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :ta
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasRootNode> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRootNode ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :taxonomyStatement ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :rn
                                                                                       ] ;
@@ -2181,18 +2187,18 @@ ai (2023)""" .
                                                                                                  ] ;
                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> :ri
                                                                                                             ] ;
                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> :ri ;
                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> :rimp
                                                                                                                        ] ;
                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasConceptNode> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasConceptNode ;
                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> :taxonomyStatement ;
                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> :cp
                                                                                                                                   ] ;
@@ -2204,18 +2210,18 @@ ai (2023)""" .
                                                                                                                                              ] ;
                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                          <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> :cpi
                                                                                                                                                         ] ;
                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> :cpi ;
                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> :cpimp
                                                                                                                                                                    ] ;
                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#directlyGeneralizesNode> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> :directlyGeneralizesNode ;
                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> :cp ;
                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> :cc
                                                                                                                                                                               ] ;
@@ -2227,12 +2233,12 @@ ai (2023)""" .
                                                                                                                                                                                          ] ;
                                                                                                                                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#argument1> :cci
                                                                                                                                                                                                     ] ;
                                                                                                                                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                                                                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> :cci ;
                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> :ccimp
                                                                                                                                                                                                                ] ;
@@ -2284,18 +2290,18 @@ ai (2023)""" .
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTaxonomyNode ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> :n
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#PropertyNode> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :PropertyNode ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :n
                                                                            ] ;
                                                                  rdf:rest rdf:nil
@@ -2304,7 +2310,7 @@ ai (2023)""" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> :n
                                                      ] ;
@@ -2318,24 +2324,24 @@ ai (2023)""" .
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTaxonomyNode ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> :n
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#generalizesNode> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :generalizesNode ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :n ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> :n2
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ConceptNode> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :ConceptNode ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :n2
                                                                                       ] ;
                                                                             rdf:rest rdf:nil
@@ -2345,7 +2351,7 @@ ai (2023)""" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasConceptNode> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasConceptNode ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> :n2
                                                      ] ;
@@ -2359,24 +2365,24 @@ ai (2023)""" .
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#ValueTaxonomyStatement> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ValueTaxonomyStatement ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasTaxonomyNode> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTaxonomyNode ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> :n
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#generalizesNode> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :generalizesNode ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> :n ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> :n2
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#PropertyNode> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :PropertyNode ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :n2
                                                                                       ] ;
                                                                             rdf:rest rdf:nil
@@ -2386,7 +2392,7 @@ ai (2023)""" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#hasPropertyNode> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPropertyNode ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ts ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> :n2
                                                      ] ;
@@ -2405,7 +2411,7 @@ ai (2023)""" .
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ni
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -2427,7 +2433,7 @@ ai (2023)""" .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :ni ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> :vi
                                                      ] ;
@@ -2446,7 +2452,7 @@ ai (2023)""" .
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#NodeImportance> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :NodeImportance ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :ni
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -2457,7 +2463,7 @@ ai (2023)""" .
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#importanceValue> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :importanceValue ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :ni ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :vi
                                                                                       ] ;
@@ -2482,12 +2488,12 @@ ai (2023)""" .
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/vaeontology#TaxonomyNode> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TaxonomyNode ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :t
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#generalizesNode> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :generalizesNode ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :t ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> :t
                                                                 ] ;

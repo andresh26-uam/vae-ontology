@@ -62,7 +62,7 @@
       "@type" : "@id"
     },
     "SemanticsFunction" : {
-      "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
+      "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"
     },
     "isOutStateOf" : {
       "@id" : "https://w3id.org/def/vaeontology_montes_sierra#isOutStateOf",
@@ -231,7 +231,7 @@
       "@type" : "@id"
     },
     "GiniIndex" : {
-      "@id" : "https://w3id.org/def/vaeontology#GiniIndex"
+      "@id" : "https://w3id.org/def/vaeontology_montes_sierra#GiniIndex"
     },
     "propertyOptimizedAt" : {
       "@id" : "https://w3id.org/def/vaeontology#propertyOptimizedAt",

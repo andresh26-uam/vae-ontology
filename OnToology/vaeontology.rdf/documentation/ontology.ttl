@@ -738,21 +738,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                              rdfs:label "covers item" .
 
 
-###  https://w3id.org/def/vaeontology#directlyGeneralizesNode
-:directlyGeneralizesNode rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :generalizesNode ;
-                         owl:inverseOf :directlyParticularizesNode ;
-                         rdfs:comment "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)." ;
-                         rdfs:label "directly generalizes" .
-
-
-###  https://w3id.org/def/vaeontology#directlyParticularizesNode
-:directlyParticularizesNode rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :particularizesNode ;
-                            rdfs:comment "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)." ;
-                            rdfs:label "directly particularizes" .
-
-
 ###  https://w3id.org/def/vaeontology#expressesProperty
 :expressesProperty rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :describesVaeStatementEntity ;
@@ -771,15 +756,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                  rdfs:range :Strategy ;
                  rdfs:comment "Indicates that the Strategy is followed by some ActingAgent." ;
                  rdfs:label "follows strategy" .
-
-
-###  https://w3id.org/def/vaeontology#generalizesNode
-:generalizesNode rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumes> ;
-                 owl:inverseOf :particularizesNode ;
-                 rdf:type owl:TransitiveProperty ;
-                 rdfs:comment "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified." ;
-                 rdfs:label "generalizes" .
 
 
 ###  https://w3id.org/def/vaeontology#hasActionOnState
@@ -810,14 +786,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
           rdfs:range :VaeStatement ;
           rdfs:comment "Indicates that the Argument has the VaeStaement specified as a claim." ;
           rdfs:label "has claim" .
-
-
-###  https://w3id.org/def/vaeontology#hasConceptNode
-:hasConceptNode rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :hasTaxonomyNode ;
-                owl:inverseOf :isConceptNodeOf ;
-                rdfs:comment "Indicates that the ValueTaxonomy has the ConceptNode specified." ;
-                rdfs:label "has concept node" .
 
 
 ###  https://w3id.org/def/vaeontology#hasFirstElement
@@ -880,14 +848,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
             rdfs:label "has premise" .
 
 
-###  https://w3id.org/def/vaeontology#hasPropertyNode
-:hasPropertyNode rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hasTaxonomyNode ;
-                 owl:inverseOf :isPropertyNodeOf ;
-                 rdfs:comment "Indicates that the ValueTaxonomy has the PropertyNode specified." ;
-                 rdfs:label "has PropertyNode" .
-
-
 ###  https://w3id.org/def/vaeontology#hasPropertyOfInferior
 :hasPropertyOfInferior rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :expressesProperty ;
@@ -908,14 +868,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                        rdfs:label "has property of superior" .
 
 
-###  https://w3id.org/def/vaeontology#hasPropertyTaxonomy
-:hasPropertyTaxonomy rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :expressesProperty ;
-                     owl:inverseOf :isTaxonomyPropertyOf ;
-                     rdfs:comment "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
-                     rdfs:label "has Property Taxonomy" .
-
-
 ###  https://w3id.org/def/vaeontology#hasRelatedElement
 :hasRelatedElement rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> ;
@@ -934,14 +886,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                          rdfs:range :VaeProperty ;
                          rdfs:comment "Indicates that a VaeConditioningEntity is related to the meaning of a VaeProperty. For instance, a measure of the GiniIndex can be related to the value of Equality." ;
                          rdfs:label "has Relation With Property" .
-
-
-###  https://w3id.org/def/vaeontology#hasRootNode
-:hasRootNode rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :hasConceptNode ;
-             owl:inverseOf :isRootNodeOf ;
-             rdfs:comment "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)." ;
-             rdfs:label "has root node" .
 
 
 ###  https://w3id.org/def/vaeontology#hasSecondElement
@@ -972,14 +916,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                                 rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> ;
                                 rdfs:comment "Indicates that the relation involves a symmetrically related element (it is related to any other one with this same property)." ;
                                 rdfs:label "has Symmetrically Related Element" .
-
-
-###  https://w3id.org/def/vaeontology#hasTaxonomyNode
-:hasTaxonomyNode rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> ;
-                 owl:inverseOf :isTaxonomyNodeOf ;
-                 rdfs:comment "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified." ;
-                 rdfs:label "has TaxonomyNode" .
 
 
 ###  https://w3id.org/def/vaeontology#hasTrace
@@ -1064,13 +1000,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
            rdfs:range :ArgumentStatement ;
            rdfs:comment "Indicates that the VaeStatement functions as a claim for the ArgumentStatement supplied." ;
            rdfs:label "is claim of" .
-
-
-###  https://w3id.org/def/vaeontology#isConceptNodeOf
-:isConceptNodeOf rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :isTaxonomyNodeOf ;
-                 rdfs:comment "Indicates that the ConceptNode is part of a ValueTaxonomy." ;
-                 rdfs:label "is ConceptNode of" .
 
 
 ###  https://w3id.org/def/vaeontology#isCriterionOfArgument
@@ -1165,13 +1094,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                       rdfs:label "is present in statement" .
 
 
-###  https://w3id.org/def/vaeontology#isPropertyNodeOf
-:isPropertyNodeOf rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :isTaxonomyNodeOf ;
-                  rdfs:comment "Indicates that the PropertyNode is part of the ValueTaxonomy specified." ;
-                  rdfs:label "is PropertyNode of" .
-
-
 ###  https://w3id.org/def/vaeontology#isPropertyOfInferiorOf
 :isPropertyOfInferiorOf rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :propertyExpressedAt ;
@@ -1209,13 +1131,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                     rdfs:label "is Related Element In" .
 
 
-###  https://w3id.org/def/vaeontology#isRootNodeOf
-:isRootNodeOf rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :isConceptNodeOf ;
-              rdfs:comment "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)." ;
-              rdfs:label "is root node of" .
-
-
 ###  https://w3id.org/def/vaeontology#isSecondElementOfRelation
 :isSecondElementOfRelation rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :isRelatedElementIn ;
@@ -1251,20 +1166,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
                                  rdfs:range :SymmetricRelationStatement ;
                                  rdfs:comment "Indicates that an entity is targeted by a SymmetricRelationStatement" ;
                                  rdfs:label "is Symmetrically Related Element In" .
-
-
-###  https://w3id.org/def/vaeontology#isTaxonomyNodeOf
-:isTaxonomyNodeOf rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> ;
-                  rdfs:comment "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy." ;
-                  rdfs:label "is Taxonomy Node Of" .
-
-
-###  https://w3id.org/def/vaeontology#isTaxonomyPropertyOf
-:isTaxonomyPropertyOf rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :propertyExpressedAt ;
-                      rdfs:comment "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)." ;
-                      rdfs:label "is PropertyTaxonomy of PropertyNode" .
 
 
 ###  https://w3id.org/def/vaeontology#isTraceOfSystem
@@ -1340,14 +1241,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
          rdfs:range :State ;
          rdfs:comment "On a state to action relation (vae:ActionOnState) from a vae:Strategy, indicates the vae:State where some vae:Action should be made by the Agent holding the vae:Strategy." ;
          rdfs:label "on state" .
-
-
-###  https://w3id.org/def/vaeontology#particularizesNode
-:particularizesNode rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf <https://w3id.org/framester/schema/subsumedUnder> ;
-                    rdf:type owl:TransitiveProperty ;
-                    rdfs:comment "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)." ;
-                    rdfs:label "particularizes" .
 
 
 ###  https://w3id.org/def/vaeontology#perform
@@ -1528,29 +1421,6 @@ owl:sameAs rdf:type owl:ObjectProperty .
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 rdf:value rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/def/vaeontology#degreeOfSatisfaction
-:degreeOfSatisfaction rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                      rdfs:range [ rdf:type rdfs:Datatype ;
-                                   owl:onDatatype xsd:decimal ;
-                                   owl:withRestrictions ( [ xsd:minInclusive 0.0
-                                                          ]
-                                                          [ xsd:maxInclusive 1.0
-                                                          ]
-                                                        )
-                                 ] ;
-                      rdfs:comment "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)." ;
-                      rdfs:label "degree of satisfaction" .
-
-
-###  https://w3id.org/def/vaeontology#importanceValue
-:importanceValue rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> ;
-                 rdfs:range xsd:decimal ;
-                 rdfs:comment "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about." ;
-                 rdfs:label "importance value" .
 
 
 ###  https://w3id.org/def/vaeontology#isActive
@@ -2418,8 +2288,7 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
                                 :ValueComparisonStatement ;
                 owl:disjointWith :ImportanceRelation ;
                 rdfs:comment "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior)." ;
-                rdfs:label "Generalization" ;
-                rdfs:seeAlso :generalizesNode .
+                rdfs:label "Generalization" .
 
 
 ###  https://w3id.org/def/vaeontology#ImportanceRelation
@@ -3339,6 +3208,15 @@ Giménez, August Corrons, and Lluís Garay Tamajón. \"Analysis of the third-ord
   owl:members ( :AgentStatement
                 :VaeSituation
                 :VaeStatementEntity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ArgumentStatement
+                :Criterion
+                :RelationStatement
+                :ValueDefinition
               )
 ] .
 

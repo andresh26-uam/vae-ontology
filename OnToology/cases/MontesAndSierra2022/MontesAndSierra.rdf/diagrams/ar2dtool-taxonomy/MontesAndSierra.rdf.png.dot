@@ -1,16 +1,19 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:TaxingAgent" "base:NormativeSystem" "base:TaxingSystem" "vae:QuantitativeVaeProperty" "base:BoundedQuantitativePromotionDemotion" "dul:UnitOfMeasure" "vae:AggregationFunction" "vae:System" "base:TaxingAgentState" "base:PayingTaxesTransaction" "vae:ValueProperty" "base:LegalAgent" "base:ProbabilityTaxFairnessSemantics" "vae:State" "dul:Parameter" "base:NormativeSystemAlignment" "dul:SocialObject" "vae:ActingAgent" "base:NotPayingTaxesTransaction" "base:OptimalNormativeSystemAlignment" "base:EvaderAgent" "dul:Concept" "base:ParametricNorm" "base:MoneyTransaction" "bhv:SelfTrascendence" "vae:Norm" "base:TaxingSystemState" "base:Fairness" "vae:QuantitativePromotionDemotion" "vae:GiniIndex" "dul:Collection" "base:SemanticsFunctionAggregation" "vae:SemanticsFunction" "vae:Action" "vae:OptimizedProperty" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:TaxingAgent" "base:NormativeSystem" "base:TaxingSystem" "vae:QuantitativeVaeProperty" "base:BoundedQuantitativePromotionDemotion" "dul:UnitOfMeasure" "vae:AggregationFunction" "vae:System" "base:TaxingAgentState" "base:PayingTaxesTransaction" "vae:ValueProperty" "base:LegalAgent" "base:ProbabilityTaxFairnessSemantics" "vae:State" "base:SemanticsFunction" "dul:Parameter" "base:NormativeSystemAlignment" "dul:SocialObject" "vae:ActingAgent" "base:NotPayingTaxesTransaction" "base:OptimalNormativeSystemAlignment" "base:EvaderAgent" "dul:Concept" "base:ParametricNorm" "base:MoneyTransaction" "bhv:SelfTrascendence" "vae:Norm" "base:TaxingSystemState" "base:Fairness" "vae:QuantitativePromotionDemotion" "dul:Collection" "base:SemanticsFunctionAggregation" "base:GiniIndex" "vae:Action" "vae:OptimizedProperty" ; /*classes style*/
 	"base:EvaderAgent" -> "base:TaxingAgent" [ label = "rdfs:subClassOf" ];
+	"base:SemanticsFunction" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
+	"base:SemanticsFunction" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
+	"base:SemanticsFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"base:TaxingAgent" -> "vae:ActingAgent" [ label = "rdfs:subClassOf" ];
 	"dul:Concept" -> "dul:SocialObject" [ label = "rdfs:subClassOf" ];
 	"base:LegalAgent" -> "base:TaxingAgent" [ label = "rdfs:subClassOf" ];
 	"base:TaxingSystem" -> "vae:System" [ label = "rdfs:subClassOf" ];
 	"base:TaxingSystemState" -> "vae:State" [ label = "rdfs:subClassOf" ];
-	"vae:GiniIndex" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
-	"base:ProbabilityTaxFairnessSemantics" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
+	"base:ProbabilityTaxFairnessSemantics" -> "base:SemanticsFunction" [ label = "rdfs:subClassOf" ];
 	"dul:UnitOfMeasure" -> "dul:Parameter" [ label = "rdfs:subClassOf" ];
+	"base:GiniIndex" -> "base:SemanticsFunction" [ label = "rdfs:subClassOf" ];
 	"base:NotPayingTaxesTransaction" -> "base:MoneyTransaction" [ label = "rdfs:subClassOf" ];
 	"dul:Parameter" -> "dul:Concept" [ label = "rdfs:subClassOf" ];
 	"base:BoundedQuantitativePromotionDemotion" -> "vae:QuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
@@ -19,9 +22,6 @@ node [shape = rectangle, color="black"]; "base:TaxingAgent" "base:NormativeSyste
 	"base:Fairness" -> "bhv:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"base:SemanticsFunctionAggregation" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
 	"base:SemanticsFunctionAggregation" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "base:BoundedQuantitativePromotionDemotion" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"base:NormativeSystem" -> "vae:Norm" [ label = "rdfs:subClassOf" ];
 	"base:NormativeSystem" -> "dul:Collection" [ label = "rdfs:subClassOf" ];
 	"base:PayingTaxesTransaction" -> "base:MoneyTransaction" [ label = "rdfs:subClassOf" ];

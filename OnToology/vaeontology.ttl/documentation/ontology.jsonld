@@ -372,10 +372,10 @@
   "@id" : "_:genid141",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome"
+    "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+    "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
   } ]
 }, {
   "@id" : "_:genid142",
@@ -4359,7 +4359,7 @@
   "@id" : "https://w3id.org/def/vaeontology#AggregationFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An aggregation of some other VaeProperty over a set of Outcomes (or Sequence)."
+    "@value" : "An aggregation of some other VaeProperty over a set of VaeConditionedEntitys (or Sequence)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Aggregation Function"
@@ -4537,7 +4537,7 @@
     "@value" : "Context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaeObject"
+    "@id" : "https://w3id.org/def/vaeontology#VaeEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
@@ -4758,7 +4758,7 @@
   "@id" : "https://w3id.org/def/vaeontology#OptimizedProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)."
+    "@value" : "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnConditionedEntity vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Optimized Property"
@@ -4806,7 +4806,7 @@
   "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value."
+    "@value" : "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of a VaeConditionedEntity towards some Value."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Promotion Demotion"
@@ -4820,7 +4820,7 @@
   "@id" : "https://w3id.org/def/vaeontology#QualitativeVaeProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A VaeProperty that represent a qualitative consideration on an Outcome with respect to a Value or Norm."
+    "@value" : "A VaeProperty that represent a qualitative consideration on an VaeConditionedEntity with respect to a Value or Norm."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Qualitative Vae Property"
@@ -5090,7 +5090,7 @@
   "@id" : "https://w3id.org/def/vaeontology#VaeProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)."
+    "@value" : "Any property measured on a VaeConditionedEntity, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vae Property"
@@ -5110,7 +5110,7 @@
   "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An AgentStatement where the agent expresses some VaeProperty of an Outcome."
+    "@value" : "An AgentStatement where the agent expresses some VaeProperty of a VaeConditionedEntity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vae Property Statement"
@@ -5124,7 +5124,7 @@
   "@id" : "https://w3id.org/def/vaeontology#VaeSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
+    "@value" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vae Statement"
@@ -5147,7 +5147,7 @@
   "@id" : "https://w3id.org/def/vaeontology#VaeStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
+    "@value" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Vae Statement"
@@ -5403,7 +5403,7 @@
   "@id" : "https://w3id.org/def/vaeontology#describesVaeStatementEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the AgentStatement covers some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) in an undetermined way."
+    "@value" : "Indicates that the AgentStatement covers some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) in an undetermined way."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
@@ -6006,7 +6006,7 @@
   "@id" : "https://w3id.org/def/vaeontology#isEntityOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
+    "@value" : "Indicates that an Agent or Outcome or Norm (or any VaeConditionedEntity) is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
@@ -6157,7 +6157,7 @@
   "@id" : "https://w3id.org/def/vaeontology#isPresentInStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement."
+    "@value" : "Indicates some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeStatementEntity"
@@ -6397,10 +6397,10 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentInvolvedIn"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
+  "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the VaeProperty was satisfied (measured) in some Outcome."
+    "@value" : "Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
@@ -6409,7 +6409,7 @@
     "@value" : "measured on outcome"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+    "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"
@@ -6442,7 +6442,7 @@
   "@id" : "https://w3id.org/def/vaeontology#onEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
+    "@value" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
@@ -6643,10 +6643,10 @@
   "@id" : "https://w3id.org/def/vaeontology#satisfiesProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the Outcome satisfies the VaeProperty specified."
+    "@value" : "Indicates that the VaeConditionedEntity satisfies the VaeProperty specified."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Outcome"
+    "@id" : "https://w3id.org/def/vaeontology#VaeConditionedEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "satisfies property"

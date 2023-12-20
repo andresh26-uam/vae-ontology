@@ -878,7 +878,7 @@ This section provides details for each class and property defined by VAE Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#AggregationFunction</p>
       <div class="comment">
-         <span class="markdown">An aggregation of some other VaeProperty over a set of Outcomes (or Sequence).</span>
+         <span class="markdown">An aggregation of some other VaeProperty over a set of VaeConditionedEntitys (or Sequence).</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2612,7 +2612,7 @@ For this reason, in this ontology version of DOLCE, both events and situations a
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#OptimizedProperty</p>
       <div class="comment">
-         <span class="markdown">Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-).</span>
+         <span class="markdown">Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnConditionedEntity vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-).</span>
       </div>
       <dl class="description">
          <dt>is equivalent to</dt>
@@ -2684,8 +2684,6 @@ For this reason, in this ontology version of DOLCE, both events and situations a
                title="https://w3id.org/def/vaeontology#composedBySequence">composed by sequence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isOutcomeOf" title="https://w3id.org/def/vaeontology#isOutcomeOf">is outcome of sequence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#satisfiesNorm" title="https://w3id.org/def/vaeontology#satisfiesNorm">satisfies norm</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#satisfiesProperty"
-               title="https://w3id.org/def/vaeontology#satisfiesProperty">satisfies property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -2697,8 +2695,6 @@ For this reason, in this ontology version of DOLCE, both events and situations a
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOutcome" title="https://w3id.org/def/vaeontology#hasOutcome">has outcome</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#influencesOutcome"
                title="https://w3id.org/def/vaeontology#influencesOutcome">influences outcome</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#measuredOnOutcome"
-               title="https://w3id.org/def/vaeontology#measuredOnOutcome">measured on outcome</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -2976,7 +2972,7 @@ For this reason, in this ontology version of DOLCE, both events and situations a
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#PromotionDemotion</p>
       <div class="comment">
-         <span class="markdown">A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value.</span>
+         <span class="markdown">A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of a VaeConditionedEntity towards some Value.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -3031,7 +3027,7 @@ For this reason, in this ontology version of DOLCE, both events and situations a
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#QualitativeVaeProperty</p>
       <div class="comment">
-         <span class="markdown">A VaeProperty that represent a qualitative consideration on an Outcome with respect to a Value or Norm.</span>
+         <span class="markdown">A VaeProperty that represent a qualitative consideration on an VaeConditionedEntity with respect to a Value or Norm.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -4293,11 +4289,15 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          <dt>is in domain of</dt>
          <dd>
             <a href="#isEntityOf" title="https://w3id.org/def/vaeontology#isEntityOf">Is Entity Of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#satisfiesProperty"
+               title="https://w3id.org/def/vaeontology#satisfiesProperty">satisfies property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#onEntity" title="https://w3id.org/def/vaeontology#onEntity">on entity</a>
+            <a href="#measuredOnConditionedEntity"
+               title="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">measured on outcome</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#onEntity" title="https://w3id.org/def/vaeontology#onEntity">on entity</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -4377,7 +4377,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#VaeProperty</p>
       <div class="comment">
-         <span class="markdown">Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension).</span>
+         <span class="markdown">Any property measured on a VaeConditionedEntity, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension).</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -4403,8 +4403,8 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#measuredOnOutcome"
-               title="https://w3id.org/def/vaeontology#measuredOnOutcome">measured on outcome</a>
+            <a href="#measuredOnConditionedEntity"
+               title="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">measured on outcome</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#propertyExpressedAt"
                title="https://w3id.org/def/vaeontology#propertyExpressedAt">property expressed at</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#propertyOptimizedAt"
@@ -4448,7 +4448,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#VaePropertyStatement</p>
       <div class="comment">
-         <span class="markdown">An AgentStatement where the agent expresses some VaeProperty of an Outcome.</span>
+         <span class="markdown">An AgentStatement where the agent expresses some VaeProperty of a VaeConditionedEntity.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -4485,7 +4485,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#VaeSituation</p>
       <div class="comment">
-         <span class="markdown">Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</span>
+         <span class="markdown">Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -4522,7 +4522,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#VaeStatement</p>
       <div class="comment">
-         <span class="markdown">Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</span>
+         <span class="markdown">Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -5214,8 +5214,8 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          <a href="#makesAction" title="https://w3id.org/def/vaeontology#makesAction">makes action</a>
       </li>
       <li>
-         <a href="#measuredOnOutcome"
-            title="https://w3id.org/def/vaeontology#measuredOnOutcome">measured on outcome</a>
+         <a href="#measuredOnConditionedEntity"
+            title="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">measured on outcome</a>
       </li>
       <li>
          <a href="#nextInputOutcome"
@@ -5746,7 +5746,7 @@ Conceptualizations can be distinguished into different forms, primarily based on
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#describesVaeStatementEntity</p>
       <div class="comment">
-         <span class="markdown">Indicates that the AgentStatement covers some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) in an undetermined way.</span>
+         <span class="markdown">Indicates that the AgentStatement covers some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) in an undetermined way.</span>
       </div>
       <div class="description">
          <dl>
@@ -5812,8 +5812,8 @@ A same Entity can be given different descriptions, for example, an old cradle ca
                   title="https://w3id.org/def/vaeontology#hasRelatedElement">has Related Element</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#isOptimizationOfProperty"
                   title="https://w3id.org/def/vaeontology#isOptimizationOfProperty">is optimization of property</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#measuredOnOutcome"
-                  title="https://w3id.org/def/vaeontology#measuredOnOutcome">measured on outcome</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#measuredOnConditionedEntity"
+                  title="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">measured on outcome</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -7919,7 +7919,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#isEntityOf</p>
       <div class="comment">
-         <span class="markdown">Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: "The vae:Agent payerAgent is aware of the vae:Norm [norm]", the entity of the statement is the vae:Agent payerAgent.</span>
+         <span class="markdown">Indicates that an Agent or Outcome or Norm (or any VaeConditionedEntity) is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: "The vae:Agent payerAgent is aware of the vae:Norm [norm]", the entity of the statement is the vae:Agent payerAgent.</span>
       </div>
       <div class="description">
          <dl>
@@ -8444,7 +8444,7 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#isPresentInStatement</p>
       <div class="comment">
-         <span class="markdown">Indicates some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement.</span>
+         <span class="markdown">Indicates some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement.</span>
       </div>
       <div class="description">
          <dl>
@@ -9027,15 +9027,15 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
          </dl>
       </div>
    </div>
-   <div class="entity" id="measuredOnOutcome">
+   <div class="entity" id="measuredOnConditionedEntity">
       <h3>measured on outcome<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/vaeontology#measuredOnOutcome</p>
+         <strong>IRI:</strong> https://w3id.org/def/vaeontology#measuredOnConditionedEntity</p>
       <div class="comment">
-         <span class="markdown">Indicates that the VaeProperty was satisfied (measured) in some Outcome.</span>
+         <span class="markdown">Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome).</span>
       </div>
       <div class="description">
          <dl>
@@ -9052,7 +9052,8 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Outcome" title="https://w3id.org/def/vaeontology#Outcome">Outcome</a>
+               <a href="#VaeConditionedEntity"
+                  title="https://w3id.org/def/vaeontology#VaeConditionedEntity">VAE Conditioned Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -9111,7 +9112,7 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#onEntity</p>
       <div class="comment">
-         <span class="markdown">Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: "The vae:Agent payerAgent is aware of the vae:Norm [norm]", the entity of the statement is the vae:Agent payerAgent.</span>
+         <span class="markdown">Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: "The vae:Agent payerAgent is aware of the vae:Norm [norm]", the entity of the statement is the vae:Agent payerAgent.</span>
       </div>
       <div class="description">
          <dl>
@@ -9701,7 +9702,7 @@ Subproperties can be defined in order to distinguish the different uses.</span>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#satisfiesProperty</p>
       <div class="comment">
-         <span class="markdown">Indicates that the Outcome satisfies the VaeProperty specified.</span>
+         <span class="markdown">Indicates that the VaeConditionedEntity satisfies the VaeProperty specified.</span>
       </div>
       <div class="description">
          <dl>
@@ -9713,7 +9714,8 @@ Subproperties can be defined in order to distinguish the different uses.</span>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Outcome" title="https://w3id.org/def/vaeontology#Outcome">Outcome</a>
+               <a href="#VaeConditionedEntity"
+                  title="https://w3id.org/def/vaeontology#VaeConditionedEntity">VAE Conditioned Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9723,8 +9725,8 @@ Subproperties can be defined in order to distinguish the different uses.</span>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#measuredOnOutcome"
-                  title="https://w3id.org/def/vaeontology#measuredOnOutcome">measured on outcome</a>
+               <a href="#measuredOnConditionedEntity"
+                  title="https://w3id.org/def/vaeontology#measuredOnConditionedEntity">measured on outcome</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>

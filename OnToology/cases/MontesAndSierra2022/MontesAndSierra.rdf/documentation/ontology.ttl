@@ -8,6 +8,7 @@
 
 <https://w3id.org/def/vaeontology_montes_sierra> rdf:type owl:Ontology ;
                                                   owl:versionIRI <https://w3id.org/def/vaeontology_montes_sierra> ;
+                                                  owl:imports <https://w3id.org/def/vaeontology> ;
                                                   <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" ;
                                                   <http://purl.org/dc/elements/1.1/description> """Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).
 https://doi.org/10.1613/jair.1.13487""" ;
@@ -51,6 +52,10 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vaeontology#composesComplexOutcome
+<https://w3id.org/def/vaeontology#composesComplexOutcome> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/spice/SON/SchwartzValues#bibRef
@@ -253,8 +258,8 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/def/vaeontology#makesAction> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology#measuredOnOutcome
-<https://w3id.org/def/vaeontology#measuredOnOutcome> rdf:type owl:ObjectProperty .
+###  https://w3id.org/def/vaeontology#measuredOnConditionedEntity
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/def/vaeontology#nextInputOutcome
@@ -647,7 +652,7 @@ https://doi.org/10.1613/jair.1.13487""" .
                                                                ]
                                           ] ,
                                           [ rdf:type owl:Restriction ;
-                                            owl:onProperty <https://w3id.org/def/vaeontology#measuredOnOutcome> ;
+                                            owl:onProperty <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> ;
                                             owl:allValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
                                                                                        owl:unionOf ( <https://w3id.org/def/vaeontology#Path>
                                                                                                      [ owl:intersectionOf ( <https://w3id.org/def/vaeontology#State>
@@ -814,7 +819,7 @@ https://doi.org/10.1613/jair.1.13487""" .
                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> :equalitySemanticsTaxingOutPath1 ,
                                                                                                            :fairnessSemanticsTaxingOutPath1 ;
                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
-                                    <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 .
+                                    <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemState4 .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality
@@ -836,8 +841,8 @@ https://doi.org/10.1613/jair.1.13487""" .
 ###  https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality
 :alignmentPropertyOnNormativeSystemForEquality rdf:type owl:NamedIndividual ,
                                                         :NormativeSystemAlignment ;
-                                               <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState2 ,
-                                                                                                    :taxSystemState4 ;
+                                               <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemState2 ,
+                                                                                                              :taxSystemState4 ;
                                                <https://w3id.org/def/vaeontology#propertyExpressedAt> :alignmentStatementOnNormativeSystemForEquality ;
                                                <https://w3id.org/def/vaeontology#relationWith> :equalityValueTaxing ;
                                                rdf:value 0.95 .
@@ -846,8 +851,8 @@ https://doi.org/10.1613/jair.1.13487""" .
 ###  https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForFairness
 :alignmentPropertyOnNormativeSystemForFairness rdf:type owl:NamedIndividual ,
                                                         :NormativeSystemAlignment ;
-                                               <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState2 ,
-                                                                                                    :taxSystemState4 ;
+                                               <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemState2 ,
+                                                                                                              :taxSystemState4 ;
                                                <https://w3id.org/def/vaeontology#propertyExpressedAt> :alignmentStatementOnNormativeSystemForFairness ;
                                                <https://w3id.org/def/vaeontology#relationWith> :fairnessValueTaxing ;
                                                rdf:value 0.93 .
@@ -986,7 +991,7 @@ https://doi.org/10.1613/jair.1.13487""" .
 :equalitySemanticsTaxingOutPath1 rdf:type owl:NamedIndividual ,
                                           :GiniIndex ;
                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
-                                 <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 ;
+                                 <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemState4 ;
                                  rdfs:comment "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019)\"" ;
                                  rdfs:label "\"Gini Index-based semantics function\"" .
 
@@ -1045,7 +1050,7 @@ https://doi.org/10.1613/jair.1.13487""" .
 :fairnessSemanticsTaxingOutPath1 rdf:type owl:NamedIndividual ,
                                           :ProbabilityTaxFairnessSemantics ;
                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
-                                 <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemState4 ;
+                                 <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemState4 ;
                                  rdfs:comment "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment\"" .
 
 
@@ -1088,10 +1093,10 @@ https://doi.org/10.1613/jair.1.13487""" .
                                                                :OptimalNormativeSystemAlignment ;
                                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
                                                       <https://w3id.org/def/vaeontology#isOptimizationOfProperty> :alignmentPropertyOnNormativeSystemForEquality ;
-                                                      <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemPath1 ,
-                                                                                                           :taxSystemPath2 ,
-                                                                                                           :taxSystemState2 ,
-                                                                                                           :taxSystemState4 ;
+                                                      <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemPath1 ,
+                                                                                                                     :taxSystemPath2 ,
+                                                                                                                     :taxSystemState2 ,
+                                                                                                                     :taxSystemState4 ;
                                                       <https://w3id.org/def/vaeontology#propertyExpressedAt> :optimalAlignmentStatementOnNormativeSystemForEquality ;
                                                       rdf:value 0.95 .
 
@@ -1101,10 +1106,10 @@ https://doi.org/10.1613/jair.1.13487""" .
                                                                :OptimalNormativeSystemAlignment ;
                                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> :taxProblemContext ;
                                                       <https://w3id.org/def/vaeontology#isOptimizationOfProperty> :alignmentPropertyOnNormativeSystemForFairness ;
-                                                      <https://w3id.org/def/vaeontology#measuredOnOutcome> :taxSystemPath1 ,
-                                                                                                           :taxSystemPath2 ,
-                                                                                                           :taxSystemState2 ,
-                                                                                                           :taxSystemState4 ;
+                                                      <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :taxSystemPath1 ,
+                                                                                                                     :taxSystemPath2 ,
+                                                                                                                     :taxSystemState2 ,
+                                                                                                                     :taxSystemState4 ;
                                                       <https://w3id.org/def/vaeontology#propertyExpressedAt> :optimalAlignmentStatementOnNormativeSystemForFairness ;
                                                       rdf:value 0.93 .
 
@@ -1491,13 +1496,15 @@ https://doi.org/10.1613/jair.1.13487""" .
 :taxSystemExecution1 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#MultiInputOutcome> ;
                      <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace ;
-                     <https://w3id.org/def/vaeontology#nextInputOutcome> :taxSystemExecution2 .
+                     <https://w3id.org/def/vaeontology#nextInputOutcome> :taxSystemExecution2 ;
+                     <https://w3id.org/def/vaeontology#composesComplexOutcome> :taxSystemPath1 .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2
 :taxSystemExecution2 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#FinalInputOutcome> ;
-                     <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace .
+                     <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace ;
+                     <https://w3id.org/def/vaeontology#composesComplexOutcome> :taxSystemPath2 .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1

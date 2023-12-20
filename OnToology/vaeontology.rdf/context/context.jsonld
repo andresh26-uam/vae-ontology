@@ -565,6 +565,10 @@
     "NCIT_C75924" : {
       "@id" : "http://purl.obolibrary.org/obo/NCIT_C75924"
     },
+    "measuredOnConditionedEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
+      "@type" : "@id"
+    },
     "Hedonism" : {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#Hedonism"
     },
@@ -730,10 +734,6 @@
     },
     "bibRef" : {
       "@id" : "https://w3id.org/spice/SON/SchwartzValues#bibRef"
-    },
-    "measuredOnOutcome" : {
-      "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
-      "@type" : "@id"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"

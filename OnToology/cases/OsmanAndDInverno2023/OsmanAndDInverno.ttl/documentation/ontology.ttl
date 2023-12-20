@@ -160,8 +160,8 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/def/vaeontology#isUserOfSystem> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/vaeontology#measuredOnOutcome
-<https://w3id.org/def/vaeontology#measuredOnOutcome> rdf:type owl:ObjectProperty .
+###  https://w3id.org/def/vaeontology#measuredOnConditionedEntity
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/def/vaeontology#propertyExpressedAt
@@ -507,6 +507,10 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  https://w3id.org/def/vaeontology#Equality
 <https://w3id.org/def/vaeontology#Equality> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vaeontology#Fairness
+<https://w3id.org/def/vaeontology#Fairness> owl:equivalentClass :Fairness .
 
 
 ###  https://w3id.org/def/vaeontology#Norm
@@ -1195,7 +1199,7 @@ ai (2023)""" .
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers
 :p1HelpRequestsProportionateOffers rdf:type owl:NamedIndividual ,
                                             :TaxonomyProperty ;
-                                   <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
+                                   <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :state1 ;
                                    <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ,
                                                                                    :fairnessExample ,
                                                                                    :reciprocityExample ;
@@ -1247,7 +1251,7 @@ ai (2023)""" .
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual
 :p2HelpRequestsProportionateActual rdf:type owl:NamedIndividual ,
                                             :TaxonomyProperty ;
-                                   <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
+                                   <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :state1 ;
                                    <https://w3id.org/def/vaeontology#relationWith> :balancedGiveTakeExample ,
                                                                                    :fairnessExample ,
                                                                                    :reciprocityExample ;
@@ -1341,7 +1345,7 @@ ai (2023)""" .
 ###  https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers
 :p3TasksDistributedAmongVolunteers rdf:type owl:NamedIndividual ,
                                             :TaxonomyProperty ;
-                                   <https://w3id.org/def/vaeontology#measuredOnOutcome> :state1 ;
+                                   <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> :state1 ;
                                    :degreeOfSatisfaction 0.9 .
 
 

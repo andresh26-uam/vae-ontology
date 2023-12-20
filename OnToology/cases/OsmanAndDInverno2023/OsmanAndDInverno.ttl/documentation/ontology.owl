@@ -290,10 +290,10 @@ ai (2023) https://arxiv.org/abs/2305.02748</SchwartzValues:bibRef>
     
 
 
-    <!-- https://w3id.org/def/vaeontology#measuredOnOutcome -->
+    <!-- https://w3id.org/def/vaeontology#measuredOnConditionedEntity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnOutcome"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
     
 
 
@@ -834,6 +834,15 @@ ai (2023) https://arxiv.org/abs/2305.02748</SchwartzValues:bibRef>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#Equality"/>
+    
+
+
+    <!-- https://w3id.org/def/vaeontology#Fairness -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Fairness">
+        <owl:equivalentClass rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#Fairness"/>
+    </rdf:Description>
     
 
 
@@ -1890,7 +1899,7 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"/>
-        <vaeontology:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
+        <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"/>
@@ -1970,7 +1979,7 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"/>
-        <vaeontology:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
+        <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"/>
@@ -2116,7 +2125,7 @@ ai (2023)</SchwartzValues:bibRef>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"/>
-        <vaeontology:measuredOnOutcome rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
+        <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_osman_dInverno#state1"/>
         <degreeOfSatisfaction rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</degreeOfSatisfaction>
     </owl:NamedIndividual>
     

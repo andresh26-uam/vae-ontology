@@ -3218,6 +3218,15 @@ bhv:Value rdf:type owl:Class ;
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( vae:ArgumentStatement
+                vae:Criterion
+                vae:RelationStatement
+                vae:ValueDefinition
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( bhv:Achievement
                 bhv:Face
                 bhv:Hedonism

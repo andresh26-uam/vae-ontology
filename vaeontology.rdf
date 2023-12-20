@@ -1019,27 +1019,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#directlyGeneralizesNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#directlyGeneralizesNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#generalizesNode"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#directlyParticularizesNode"/>
-        <rdfs:comment>Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy).</rdfs:comment>
-        <rdfs:label>directly generalizes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#directlyParticularizesNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#directlyParticularizesNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#particularizesNode"/>
-        <rdfs:comment>Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy).</rdfs:comment>
-        <rdfs:label>directly particularizes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#expressesProperty -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#expressesProperty">
@@ -1062,18 +1041,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#Strategy"/>
         <rdfs:comment>Indicates that the Strategy is followed by some ActingAgent.</rdfs:comment>
         <rdfs:label>follows strategy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#generalizesNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#generalizesNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/schema/subsumes"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#particularizesNode"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:comment>Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified.</rdfs:comment>
-        <rdfs:label>generalizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1113,17 +1080,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeStatement"/>
         <rdfs:comment>Indicates that the Argument has the VaeStaement specified as a claim.</rdfs:comment>
         <rdfs:label>has claim</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasConceptNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasConceptNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasTaxonomyNode"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isConceptNodeOf"/>
-        <rdfs:comment>Indicates that the ValueTaxonomy has the ConceptNode specified.</rdfs:comment>
-        <rdfs:label>has concept node</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1206,17 +1162,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#hasPropertyNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasTaxonomyNode"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyNodeOf"/>
-        <rdfs:comment>Indicates that the ValueTaxonomy has the PropertyNode specified.</rdfs:comment>
-        <rdfs:label>has PropertyNode</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#hasPropertyOfInferior -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfInferior">
@@ -1243,17 +1188,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#hasPropertyTaxonomy -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyTaxonomy">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyPropertyOf"/>
-        <rdfs:comment>Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property).</rdfs:comment>
-        <rdfs:label>has Property Taxonomy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#hasRelatedElement -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasRelatedElement">
@@ -1276,17 +1210,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
         <rdfs:comment>Indicates that a VaeConditioningEntity is related to the meaning of a VaeProperty. For instance, a measure of the GiniIndex can be related to the value of Equality.</rdfs:comment>
         <rdfs:label>has Relation With Property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasRootNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasRootNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasConceptNode"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isRootNodeOf"/>
-        <rdfs:comment>Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other).</rdfs:comment>
-        <rdfs:label>has root node</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1326,17 +1249,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
         <rdfs:comment>Indicates that the relation involves a symmetrically related element (it is related to any other one with this same property).</rdfs:comment>
         <rdfs:label>has Symmetrically Related Element</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasTaxonomyNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasTaxonomyNode">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:comment>Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified.</rdfs:comment>
-        <rdfs:label>has TaxonomyNode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1448,16 +1360,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ArgumentStatement"/>
         <rdfs:comment>Indicates that the VaeStatement functions as a claim for the ArgumentStatement supplied.</rdfs:comment>
         <rdfs:label>is claim of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isConceptNodeOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isConceptNodeOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:comment>Indicates that the ConceptNode is part of a ValueTaxonomy.</rdfs:comment>
-        <rdfs:label>is ConceptNode of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1584,16 +1486,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#isPropertyNodeOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyNodeOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isTaxonomyNodeOf"/>
-        <rdfs:comment>Indicates that the PropertyNode is part of the ValueTaxonomy specified.</rdfs:comment>
-        <rdfs:label>is PropertyNode of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#isPropertyOfInferiorOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">
@@ -1643,16 +1535,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     
 
 
-    <!-- https://w3id.org/def/vaeontology#isRootNodeOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isRootNodeOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isConceptNodeOf"/>
-        <rdfs:comment>Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode).</rdfs:comment>
-        <rdfs:label>is root node of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#isSecondElementOfRelation -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isSecondElementOfRelation">
@@ -1698,26 +1580,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
         <rdfs:comment>Indicates that an entity is targeted by a SymmetricRelationStatement</rdfs:comment>
         <rdfs:label>is Symmetrically Related Element In</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isTaxonomyNodeOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isTaxonomyNodeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"/>
-        <rdfs:comment>Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy.</rdfs:comment>
-        <rdfs:label>is Taxonomy Node Of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isTaxonomyPropertyOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isTaxonomyPropertyOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-        <rdfs:comment>Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property).</rdfs:comment>
-        <rdfs:label>is PropertyTaxonomy of PropertyNode</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1817,17 +1679,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#State"/>
         <rdfs:comment>On a state to action relation (vae:ActionOnState) from a vae:Strategy, indicates the vae:State where some vae:Action should be made by the Agent holding the vae:Strategy.</rdfs:comment>
         <rdfs:label>on state</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#particularizesNode -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#particularizesNode">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/framester/schema/subsumedUnder"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:comment>Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject).</rdfs:comment>
-        <rdfs:label>particularizes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2089,40 +1940,6 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#degreeOfSatisfaction -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology#degreeOfSatisfaction">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</xsd:maxInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment>States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy).</rdfs:comment>
-        <rdfs:label>degree of satisfaction</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#importanceValue -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/vaeontology#importanceValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment>Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about.</rdfs:comment>
-        <rdfs:label>importance value</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -3187,7 +3004,6 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
         <owl:disjointWith rdf:resource="https://w3id.org/def/vaeontology#ImportanceRelation"/>
         <rdfs:comment>A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) generalizes another one (inferior).</rdfs:comment>
         <rdfs:label>Generalization</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://w3id.org/def/vaeontology#generalizesNode"/>
     </owl:Class>
     
 
@@ -4437,6 +4253,15 @@ Giménez, August Corrons, and Lluís Garay Tamajón. &quot;Analysis of the third
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#AgentStatement"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#VaeSituation"/>
             <rdf:Description rdf:about="https://w3id.org/def/vaeontology#VaeStatementEntity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ArgumentStatement"/>
+            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Criterion"/>
+            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#RelationStatement"/>
+            <rdf:Description rdf:about="https://w3id.org/def/vaeontology#ValueDefinition"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

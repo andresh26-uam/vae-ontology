@@ -125,8 +125,8 @@
 # https://w3id.org/def/vaeontology#isUserOfSystem
 <https://w3id.org/def/vaeontology#isUserOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# https://w3id.org/def/vaeontology#measuredOnOutcome
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# https://w3id.org/def/vaeontology#measuredOnConditionedEntity
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/vaeontology#propertyExpressedAt
 <https://w3id.org/def/vaeontology#propertyExpressedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -456,6 +456,9 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology#Equality
 <https://w3id.org/def/vaeontology#Equality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/vaeontology#Fairness
+<https://w3id.org/def/vaeontology#Fairness> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/vaeontology_osman_dInverno#Fairness> .
 # 
 # https://w3id.org/def/vaeontology#Norm
 <https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1072,7 +1075,7 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers
 <https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty> .
-<https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
+<https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample> .
@@ -1117,7 +1120,7 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual
 <https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty> .
-<https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
+<https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample> .
@@ -1198,7 +1201,7 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers
 <https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty> .
-<https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
+<https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_osman_dInverno#state1> .
 <https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers> <https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction> "0.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_osman_dInverno#problemModeller

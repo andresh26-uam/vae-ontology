@@ -707,7 +707,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isPresentInStatement> .
 <https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#AgentStatement> .
 <https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
-<https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the AgentStatement covers some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValeuConcept) in an undetermined way." .
+<https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the AgentStatement covers some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) in an undetermined way." .
 <https://w3id.org/def/vaeontology#describesVaeStatementEntity> <http://www.w3.org/2000/01/rdf-schema#label> "covers item" .
 # 
 # https://w3id.org/def/vaeontology#expressesProperty
@@ -961,7 +961,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#onEntity> .
 <https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
 <https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an Agent or Outcome or Norm is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." .
+<https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an Agent or Outcome or Norm (or any VaeConditionedEntity) is being used in a VaeStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." .
 <https://w3id.org/def/vaeontology#isEntityOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is Entity Of"@en .
 # 
 # https://w3id.org/def/vaeontology#isFirstElementOfRelation
@@ -1026,7 +1026,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> .
 <https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
 <https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates some Vae abstraction (Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement." .
+<https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) is present (referenced) in an AgentStatement." .
 <https://w3id.org/def/vaeontology#isPresentInStatement> <http://www.w3.org/2000/01/rdf-schema#label> "is present in statement" .
 # 
 # https://w3id.org/def/vaeontology#isPropertyOfInferiorOf
@@ -1128,14 +1128,14 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the ActingAgent makes some Action." .
 <https://w3id.org/def/vaeontology#makesAction> <http://www.w3.org/2000/01/rdf-schema#label> "makes action" .
 # 
-# https://w3id.org/def/vaeontology#measuredOnOutcome
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#satisfiesProperty> .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#Outcome> .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the VaeProperty was satisfied (measured) in some Outcome." .
-<https://w3id.org/def/vaeontology#measuredOnOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "measured on outcome" .
+# https://w3id.org/def/vaeontology#measuredOnConditionedEntity
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#satisfiesProperty> .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeProperty> .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome)." .
+<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "measured on outcome" .
 # 
 # https://w3id.org/def/vaeontology#nextInputOutcome
 <https://w3id.org/def/vaeontology#nextInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1151,7 +1151,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#describesVaeStatementEntity> .
 <https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#AgentStatement> .
 <https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
-<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an Agent or Outcome or Norm is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." .
+<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent." .
 <https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/2000/01/rdf-schema#label> "on entity" .
 # 
 # https://w3id.org/def/vaeontology#onState
@@ -1253,9 +1253,9 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#satisfiesProperty
 <https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> .
-<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#Outcome> .
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
 <https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the Outcome satisfies the VaeProperty specified." .
+<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the VaeConditionedEntity satisfies the VaeProperty specified." .
 <https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/2000/01/rdf-schema#label> "satisfies property" .
 # 
 # https://w3id.org/def/vaeontology#shapesNorm
@@ -1856,7 +1856,7 @@ _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#AggregationFunction
 <https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggregation of some other VaeProperty over a set of Outcomes (or Sequence)." .
+<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An aggregation of some other VaeProperty over a set of VaeConditionedEntitys (or Sequence)." .
 <https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation Function" .
 # 
 # https://w3id.org/def/vaeontology#AlignmentSituation
@@ -1994,7 +1994,7 @@ _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
 <https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#comment> "A Context is any kind of entity that is underlying of specific events, situations, descriptions and agents. They can be used to describe, for example, the kind of problem or world where a system is deployed, contextualization of statements, etc." .
 <https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context" .
-<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#VaeObject> .
+<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/def/vaeontology#VaeEntity> .
 <https://w3id.org/def/vaeontology#Context> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)" .
 <https://w3id.org/def/vaeontology#Context> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "https://arxiv.org/abs/2305.02748" .
 # 
@@ -2132,7 +2132,7 @@ _:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeo
 _:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#BooleanVaeProperty> .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnOutcome vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)." .
+<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Assertion that a property has being optimized over a set of possible outcomes, supplying the value achieved (e.g. an optimal (maximum) vae:GiniIndex value of 0.9 is vae:measuredOnConditionedEntity vae:State, over some other possible states -the optimization domain could be represented somewhere else or with a custom property-)." .
 <https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Optimized Property" .
 # 
 # https://w3id.org/def/vaeontology#Outcome
@@ -2169,13 +2169,13 @@ _:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QualitativeVaeProperty> .
 <https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
-<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#comment> "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of an Outcome towards some Value." .
+<https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#comment> "A QualitativeVaeProperty and a ValueProperty that can represent Promotion, Demotion or Neutrality of a VaeConditionedEntity towards some Value." .
 <https://w3id.org/def/vaeontology#PromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#label> "Promotion Demotion" .
 # 
 # https://w3id.org/def/vaeontology#QualitativeVaeProperty
 <https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A VaeProperty that represent a qualitative consideration on an Outcome with respect to a Value or Norm." .
+<https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A VaeProperty that represent a qualitative consideration on an VaeConditionedEntity with respect to a Value or Norm." .
 <https://w3id.org/def/vaeontology#QualitativeVaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Qualitative Vae Property" .
 # 
 # https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
@@ -2365,8 +2365,8 @@ _:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeStatementEntity> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
-_:genid141 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Outcome> .
-_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnOutcome> .
+_:genid141 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeConditionedEntity> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
 _:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
 _:genid142 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaePropertyStatement> .
@@ -2376,7 +2376,7 @@ _:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid143 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeConditioningEntity> .
 _:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
 _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any property measured on an Outcome, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)." .
+<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any property measured on a VaeConditionedEntity, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)." .
 <https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property" .
 # 
 # https://w3id.org/def/vaeontology#VaePropertyStatement
@@ -2386,7 +2386,7 @@ _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#VaeProperty> .
 _:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
 _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "An AgentStatement where the agent expresses some VaeProperty of an Outcome." .
+<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "An AgentStatement where the agent expresses some VaeProperty of a VaeConditionedEntity." .
 <https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Property Statement" .
 # 
 # https://w3id.org/def/vaeontology#VaeSituation
@@ -2403,7 +2403,7 @@ _:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/
 _:genid146 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies> .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/vaeontology#VaeStatement> .
-<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
+<https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
 <https://w3id.org/def/vaeontology#VaeSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Statement" .
 # 
 # https://w3id.org/def/vaeontology#VaeStatement
@@ -2423,7 +2423,7 @@ _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid149 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#VaeSituation> .
 _:genid149 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy> .
 _:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on entity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
+<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen." .
 <https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Vae Statement" .
 # 
 # https://w3id.org/def/vaeontology#VaeStatementEntity

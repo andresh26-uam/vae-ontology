@@ -176,7 +176,7 @@
     "@id" : "_:genid35"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome"
+    "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -665,6 +665,9 @@
   "@id" : "https://w3id.org/def/vaeontology#composedBySequence",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology#composesComplexOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#hasClaim",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -716,7 +719,7 @@
   "@id" : "https://w3id.org/def/vaeontology#makesAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
+  "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#nextInputOutcome",
@@ -768,6 +771,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://doi.org/10.1613/jair.1.13487"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/def/vaeontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra"
@@ -1094,7 +1100,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"
   } ]
 }, {
@@ -1137,7 +1143,7 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "0.95"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"
@@ -1158,7 +1164,7 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "0.93"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState2"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"
@@ -1439,7 +1445,7 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "\"Gini Index-based semantics function\""
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"
   } ]
 }, {
@@ -1558,7 +1564,7 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment\""
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4"
   } ]
 }, {
@@ -1716,7 +1722,7 @@
   "https://w3id.org/def/vaeontology#isOptimizationOfProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForEquality"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"
@@ -1744,7 +1750,7 @@
   "https://w3id.org/def/vaeontology#isOptimizationOfProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentPropertyOnNormativeSystemForFairness"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"
@@ -2518,6 +2524,9 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
   } ],
+  "https://w3id.org/def/vaeontology#composesComplexOutcome" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"
+  } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"
   } ],
@@ -2529,6 +2538,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
+  } ],
+  "https://w3id.org/def/vaeontology#composesComplexOutcome" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"
   } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"

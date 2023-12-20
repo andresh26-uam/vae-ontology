@@ -2259,6 +2259,11 @@
   "@id" : "https://w3id.org/def/vaeontology#Equality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology#Fairness",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#Fairness"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology#Norm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
@@ -2328,7 +2333,7 @@
   "@id" : "https://w3id.org/def/vaeontology#isUserOfSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
+  "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
@@ -3798,7 +3803,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
@@ -3896,7 +3901,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
@@ -4069,7 +4074,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
-  "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
+  "https://w3id.org/def/vaeontology#measuredOnConditionedEntity" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
   } ],
   "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction" : [ {

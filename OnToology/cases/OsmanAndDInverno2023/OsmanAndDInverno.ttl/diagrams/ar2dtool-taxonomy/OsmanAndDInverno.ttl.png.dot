@@ -1,11 +1,11 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "base:BalancedGiveAndTake" "vae:VaeProperty" "vae:ConceptNode" "vae:QuantitativeVaeProperty" "base:Fairness" "vae:Equality" "vae:Context" "base:EqualTreatment" "vae:AggregationFunction" "base:EqualPay" "vae:System" "base:AggregationOfImportance" "vae:Criterion" "vae:ArgumentStatement" "vae:ValueProperty" "vae:ValueComparisonStatement" "vae:VaeStatement" "vae:TaxonomyProperty" "odrl:Asset" "vae:State" "vae:SoundArgument" "vae:ValueConcept" "vae:ValueTaxonomyStatement" "odrl:Action" "SchwartzValues:SelfTrascendence" "vae:Norm" "base:EqualDivisionOfWorkload" "vae:TaxonomyAlignment" "vae:User" "vae:RelationStatement" "vae:TaxonomyNode" "vae:VaePropertyStatement" "base:OsmanDinvernoAlignmentExample" "85e46b0714fb8571e9698d2fa019313a" "dul:Region" "base:Reciprocity" "vae:Agent" "vae:PromotionDemotion" "vae:NodeImportance" "vae:PropertyNode" "SchwartzValues:Dominance" "dul:Situation" "vae:Path" "vae:GiniIndex" "https://w3id.org/framester/schema/FrameOccurrence" "vae:AntiSymmetricRelationStatement" "SchwartzValues:PersonalFocus" "vae:ReverseFunctionalRelationStatement" "SchwartzValues:Hedonism" "obo:NCIT_C75921" "SchwartzValues:Societal" "vae:BooleanVaeProperty" "SchwartzValues:Universalism" "vae:AwarenessSituation" "vae:Value" "SchwartzValues:Stimulation" "odrl:Policy" "SchwartzValues:Achievement" "SchwartzValues:Value" "dul:Norm" "obo:NCIT_C75922" "vae:AlignmentSituation" "obo:NCIT_C20189" "vae:Outcome" "vae:AsymmetricRelationStatement" "obo:NCIT_C75918" "https://w3id.org/framester/schema/ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "SchwartzValues:Conservation" "vae:AlignmentStatement" "SchwartzValues:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "SchwartzValues:Caring" "SchwartzValues:Nature" "dul:Person" "vae:Generalization" "obo:NCIT_C75919" "vae:SymmetricRelationStatement" "vae:ActionOnState" "SchwartzValues:Security" "obo:NCIT_C75924" "dul:Object" "SchwartzValues:Tolerance" "SchwartzValues:Humility" "vae:FunctionalRelationStatement" "odrl:Party" "vae:AntiTransitiveRelationStatement" "SchwartzValues:GrowthAndAnxietyFree" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "SchwartzValues:Tradition" "dul:Event" "dul:Agent" "SchwartzValues:SelfEnhancement" "vae:Strategy" "SchwartzValues:Benevolence" "vae:FinalInputOutcome" "SchwartzValues:PanCulturalBaselineForValuesPriority" "vae:VaeSituation" "SchwartzValues:Conformity" "vae:Action" "SchwartzValues:Focus" "SchwartzValues:Resources" "vae:TransitiveRelationStatement" "dul:Collection" "vae:AwarenessStatement" "vae:IrreflexiveRelationStatement" "obo:NCIT_C75925" "SchwartzValues:OpennessToChange" "vae:ActingAgent" "vae:VaeStatementEntity" "obo:NCIT_C75915" "SchwartzValues:Thought" "vae:Transition" "dul:Entity" "SchwartzValues:Face" "vae:VaeConditioningEntity" "vae:SemanticsFunction" "SchwartzValues:SocialFocus" "obo:NCIT_C75920" "vae:IntransitiveRelationStatement" "vae:OptimizedProperty" "dul:Theory" "dul:Description" "vae:QuantitativePromotionDemotion" "SchwartzValues:Action" "vcvf:Value" "SchwartzValues:Power" "vae:ImportanceRelation" "SchwartzValues:Personal" "vae:ReflexiveRelationStatement" "obo:NCIT_C75917" "SchwartzValues:SelfDirection" "SchwartzValues:Concern" "vae:TextualVaeProperty" "SchwartzValues:SelfProtectionAndAnxietyAvoidance" ; /*classes style*/
-	"vae:GiniIndex" -> "vae:SemanticsFunction" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "base:BalancedGiveAndTake" "vae:VaeProperty" "vae:QuantitativeVaeProperty" "base:Fairness" "vae:Equality" "vae:Context" "base:TaxonomyNode" "vae:AggregationFunction" "base:EqualTreatment" "base:EqualPay" "base:NodeImportance" "vae:System" "base:AggregationOfImportance" "vae:Criterion" "vae:ArgumentStatement" "vae:ValueProperty" "vae:ValueComparisonStatement" "base:TaxonomyProperty" "vae:VaeStatement" "odrl:Asset" "vae:State" "vae:SoundArgument" "vae:ValueConcept" "odrl:Action" "3a168d504b871df407612260a54b5690" "base:ValueTaxonomyStatement" "SchwartzValues:SelfTrascendence" "vae:Norm" "base:EqualDivisionOfWorkload" "base:TaxonomyAlignment" "vae:User" "vae:RelationStatement" "vae:VaePropertyStatement" "base:OsmanDinvernoAlignmentExample" "base:ConceptNode" "dul:Region" "base:PropertyNode" "base:Reciprocity" "vae:Agent" "vae:PromotionDemotion" "SchwartzValues:Dominance" "dul:Situation" "vae:Path" "https://w3id.org/framester/schema/FrameOccurrence" "vae:AntiSymmetricRelationStatement" "SchwartzValues:PersonalFocus" "vae:ReverseFunctionalRelationStatement" "SchwartzValues:Hedonism" "obo:NCIT_C75921" "SchwartzValues:Societal" "vae:BooleanVaeProperty" "SchwartzValues:Universalism" "vae:AwarenessSituation" "vae:Value" "SchwartzValues:Stimulation" "odrl:Policy" "SchwartzValues:Achievement" "SchwartzValues:Value" "dul:Norm" "obo:NCIT_C75922" "vae:AlignmentSituation" "obo:NCIT_C20189" "vae:Outcome" "vae:AsymmetricRelationStatement" "obo:NCIT_C75918" "https://w3id.org/framester/schema/ConceptualFrame" "vae:VaeEntity" "vae:MultiInputOutcome" "SchwartzValues:Conservation" "vae:Fairness" "vae:AlignmentStatement" "SchwartzValues:Dependability" "dul:SocialObject" "vae:QualitativeVaeProperty" "SchwartzValues:Caring" "SchwartzValues:Nature" "dul:Person" "vae:Generalization" "obo:NCIT_C75919" "vae:SymmetricRelationStatement" "vae:ActionOnState" "SchwartzValues:Security" "obo:NCIT_C75924" "dul:Object" "SchwartzValues:Tolerance" "SchwartzValues:Humility" "vae:FunctionalRelationStatement" "odrl:Party" "vae:AntiTransitiveRelationStatement" "SchwartzValues:GrowthAndAnxietyFree" "vae:Sequence" "vae:AgentStatement" "vae:VaeConditionedEntity" "SchwartzValues:Tradition" "dul:Event" "dul:Agent" "SchwartzValues:SelfEnhancement" "vae:Strategy" "SchwartzValues:Benevolence" "vae:FinalInputOutcome" "SchwartzValues:PanCulturalBaselineForValuesPriority" "vae:VaeSituation" "SchwartzValues:Conformity" "vae:Action" "SchwartzValues:Focus" "vae:TransitiveRelationStatement" "SchwartzValues:Resources" "dul:Collection" "vae:AwarenessStatement" "vae:IrreflexiveRelationStatement" "obo:NCIT_C75925" "SchwartzValues:OpennessToChange" "vae:ActingAgent" "vae:VaeStatementEntity" "obo:NCIT_C75915" "SchwartzValues:Thought" "vae:Transition" "dul:Entity" "SchwartzValues:Face" "vae:VaeConditioningEntity" "SchwartzValues:SocialFocus" "obo:NCIT_C75920" "vae:IntransitiveRelationStatement" "vae:OptimizedProperty" "dul:Theory" "dul:Description" "vae:QuantitativePromotionDemotion" "SchwartzValues:Action" "vcvf:Value" "SchwartzValues:Power" "vae:ImportanceRelation" "SchwartzValues:Personal" "vae:ReflexiveRelationStatement" "obo:NCIT_C75917" "SchwartzValues:SelfDirection" "SchwartzValues:Concern" "vae:TextualVaeProperty" "SchwartzValues:SelfProtectionAndAnxietyAvoidance" ; /*classes style*/
 	"dul:Region" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Societal" -> "SchwartzValues:Security" [ label = "rdfs:subClassOf" ];
 	"vae:Strategy" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
+	"base:ConceptNode" -> "base:TaxonomyNode" [ label = "rdfs:subClassOf" ];
 	"vae:VaeStatementEntity" -> "vae:VaeEntity" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75917" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
 	"base:EqualTreatment" -> "vae:Equality" [ label = "rdfs:subClassOf" ];
@@ -28,8 +28,6 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"vae:Generalization" -> "vae:AntiSymmetricRelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:TransitiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:TransitiveRelationStatement" -> "obo:NCIT_C75921" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:SemanticsFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:OpennessToChange" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:AgentStatement" -> "vae:VaeEntity" [ label = "rdfs:subClassOf" ];
 	"vae:AgentStatement" -> "dul:Description" [ label = "rdfs:subClassOf" ];
@@ -58,11 +56,13 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"base:EqualPay" -> "base:EqualTreatment" [ label = "rdfs:subClassOf" ];
 	"vae:MultiInputOutcome" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"dul:Event" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
-	"SchwartzValues:SocialFocus" -> "SchwartzValues:Focus" [ label = "rdfs:subClassOf" ];
 	"vae:Equality" -> "SchwartzValues:SelfTrascendence" [ label = "rdfs:subClassOf" ];
+	"SchwartzValues:SocialFocus" -> "SchwartzValues:Focus" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyNode" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:SelfEnhancement" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Focus" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:Context" -> "dul:Situation" [ label = "rdfs:subClassOf" ];
+	"vae:Fairness" -> "SchwartzValues:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Benevolence" -> "SchwartzValues:Value" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Benevolence" -> "SchwartzValues:SelfTrascendence" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75915" -> "obo:NCIT_C20189" [ label = "rdfs:subClassOf" ];
@@ -74,6 +74,7 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"vae:PromotionDemotion" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
 	"vae:PromotionDemotion" -> "vae:QualitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Situation" -> "dul:Entity" [ label = "rdfs:subClassOf" ];
+	"base:ValueTaxonomyStatement" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Achievement" -> "SchwartzValues:Value" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Achievement" -> "SchwartzValues:SelfEnhancement" [ label = "rdfs:subClassOf" ];
 	"vae:RelationStatement" -> "vae:AgentStatement" [ label = "rdfs:subClassOf" ];
@@ -88,8 +89,6 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"dul:Norm" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"vae:AntiSymmetricRelationStatement" -> "vae:AsymmetricRelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:AntiSymmetricRelationStatement" -> "obo:NCIT_C75920" [ label = "rdfs:subClassOf" ];
-	"vae:NodeImportance" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:NodeImportance" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Person" -> "dul:Agent" [ label = "rdfs:subClassOf" ];
 	"vae:State" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Conservation" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
@@ -107,11 +106,10 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"vae:FinalInputOutcome" -> "vae:MultiInputOutcome" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:SelfProtectionAndAnxietyAvoidance" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:ValueDefinition" -> "vae:AgentStatement" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyAlignment" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyAlignment" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyAlignment" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Stimulation" -> "SchwartzValues:Value" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Stimulation" -> "SchwartzValues:OpennessToChange" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyProperty" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyProperty" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:TextualVaeProperty" -> "vae:VaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:Action" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"vae:Transition" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
@@ -120,12 +118,12 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"base:EqualDivisionOfWorkload" -> "base:EqualTreatment" [ label = "rdfs:subClassOf" ];
 	"vae:AggregationFunction" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:AwarenessStatement" -> "vae:VaeStatement" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyNode" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75919" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
 	"vae:FunctionalRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:FunctionalRelationStatement" -> "obo:NCIT_C75924" [ label = "rdfs:subClassOf" ];
-	"vae:ValueTaxonomyStatement" -> "vae:VaePropertyStatement" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:Dominance" -> "SchwartzValues:Power" [ label = "rdfs:subClassOf" ];
+	"base:PropertyNode" -> "3a168d504b871df407612260a54b5690" [ label = "rdfs:subClassOf" ];
+	"base:PropertyNode" -> "base:TaxonomyNode" [ label = "rdfs:subClassOf" ];
 	"vae:VaeProperty" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
 	"vae:VaeProperty" -> "dul:Description" [ label = "rdfs:subClassOf" ];
 	"vae:QualitativeVaeProperty" -> "vae:VaeProperty" [ label = "rdfs:subClassOf" ];
@@ -135,15 +133,17 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"vae:Agent" -> "odrl:Party" [ label = "rdfs:subClassOf" ];
 	"vae:Agent" -> "dul:Agent" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:PanCulturalBaselineForValuesPriority" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
-	"vae:PropertyNode" -> "85e46b0714fb8571e9698d2fa019313a" [ label = "rdfs:subClassOf" ];
-	"vae:PropertyNode" -> "vae:TaxonomyNode" [ label = "rdfs:subClassOf" ];
 	"vae:VaeConditioningEntity" -> "vae:VaeStatementEntity" [ label = "rdfs:subClassOf" ];
 	"vae:ReflexiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:ReflexiveRelationStatement" -> "obo:NCIT_C75918" [ label = "rdfs:subClassOf" ];
-	"vae:ConceptNode" -> "vae:TaxonomyNode" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyAlignment" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyAlignment" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
+	"base:TaxonomyAlignment" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
 	"vae:Value" -> "vae:ValueConcept" [ label = "rdfs:subClassOf" ];
 	"vae:OptimizedProperty" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"vae:OptimizedProperty" -> "vae:BooleanVaeProperty" [ label = "rdfs:subClassOf" ];
+	"base:NodeImportance" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
+	"base:NodeImportance" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Collection" -> "dul:SocialObject" [ label = "rdfs:subClassOf" ];
 	"https://w3id.org/framester/schema/FrameOccurrence" -> "dul:Situation" [ label = "rdfs:subClassOf" ];
 	"base:AggregationOfImportance" -> "vae:AggregationFunction" [ label = "rdfs:subClassOf" ];
@@ -168,7 +168,7 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"SchwartzValues:Hedonism" -> "SchwartzValues:OpennessToChange" [ label = "rdfs:subClassOf" ];
 	"vae:ActionOnState" -> "vae:Outcome" [ label = "rdfs:subClassOf" ];
 	"vae:AlignmentSituation" -> "vae:VaeSituation" [ label = "rdfs:subClassOf" ];
-	"base:OsmanDinvernoAlignmentExample" -> "vae:TaxonomyAlignment" [ label = "rdfs:subClassOf" ];
+	"base:OsmanDinvernoAlignmentExample" -> "base:TaxonomyAlignment" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:PersonalFocus" -> "SchwartzValues:Focus" [ label = "rdfs:subClassOf" ];
 	"SchwartzValues:SelfDirection" -> "SchwartzValues:OpennessToChange" [ label = "rdfs:subClassOf" ];
 	"obo:NCIT_C75925" -> "obo:NCIT_C75915" [ label = "rdfs:subClassOf" ];
@@ -178,8 +178,6 @@ node [shape = rectangle, color="black"]; "odrl:Operator" "vae:ValueDefinition" "
 	"SchwartzValues:Humility" -> "SchwartzValues:Conservation" [ label = "rdfs:subClassOf" ];
 	"vae:SymmetricRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 	"vae:SymmetricRelationStatement" -> "obo:NCIT_C75919" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyProperty" -> "vae:ValueProperty" [ label = "rdfs:subClassOf" ];
-	"vae:TaxonomyProperty" -> "vae:QuantitativeVaeProperty" [ label = "rdfs:subClassOf" ];
 	"dul:Agent" -> "dul:Object" [ label = "rdfs:subClassOf" ];
 	"vae:IntransitiveRelationStatement" -> "vae:RelationStatement" [ label = "rdfs:subClassOf" ];
 

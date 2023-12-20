@@ -3,9 +3,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
     } ]
   } ]
 }, {
@@ -13,9 +13,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
     } ]
   } ]
 }, {
@@ -28,7 +28,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#t"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#generalizesNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode"
   } ]
 }, {
   "@id" : "_:genid102",
@@ -37,7 +37,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#t"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid104",
@@ -118,7 +118,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid114",
@@ -130,7 +130,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid116",
@@ -142,7 +142,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid118",
@@ -151,7 +151,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi1"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid120",
@@ -175,7 +175,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid124",
@@ -197,7 +197,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid128",
@@ -401,7 +401,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid159",
@@ -413,7 +413,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid161",
@@ -425,7 +425,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid163",
@@ -434,7 +434,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi2"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid165",
@@ -458,7 +458,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid169",
@@ -470,7 +470,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid17",
@@ -488,7 +488,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid173",
@@ -497,7 +497,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi1"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid175",
@@ -530,16 +530,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid19"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
   } ]
 }, {
   "@id" : "_:genid181",
@@ -551,7 +551,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid183",
@@ -573,7 +573,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid187",
@@ -598,13 +598,12 @@
   } ]
 }, {
   "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-    }, {
-      "@id" : "_:genid21"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid20"
   } ]
 }, {
   "@id" : "_:genid191",
@@ -748,6 +747,16 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#divide"
   } ]
 }, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid203",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
@@ -776,19 +785,6 @@
   } ],
   "http://www.w3.org/2003/11/swrl#builtin" : [ {
     "@id" : "http://www.w3.org/2003/11/swrlb#add"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#AggregationOfImportance"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceCalculatedWith"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid213",
@@ -821,6 +817,19 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#multiply"
   } ]
 }, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#AggregationOfImportance"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceCalculatedWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
   "@id" : "_:genid223",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
@@ -845,16 +854,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp3"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid230",
@@ -866,7 +866,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval3"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid232",
@@ -878,7 +878,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp3"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid234",
@@ -887,7 +887,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi3"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid236",
@@ -911,13 +911,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "_:genid25"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid240",
@@ -929,7 +932,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid242",
@@ -941,7 +944,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid244",
@@ -950,7 +953,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi2"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid246",
@@ -974,16 +977,13 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction"
   } ]
 }, {
   "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#generalizesNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "_:genid250",
@@ -995,7 +995,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pval1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ]
 }, {
   "@id" : "_:genid252",
@@ -1007,7 +1007,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pimp1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid254",
@@ -1016,7 +1016,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi1"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid256",
@@ -1043,10 +1043,10 @@
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid260",
@@ -1076,7 +1076,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid266",
@@ -1088,7 +1088,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid268",
@@ -1100,16 +1100,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
   "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ]
 }, {
   "@id" : "_:genid270",
@@ -1131,7 +1131,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid274",
@@ -1170,10 +1170,10 @@
   "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf"
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid280",
@@ -1274,7 +1274,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ccimp"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid289",
@@ -1283,16 +1283,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cci"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid291",
@@ -1316,7 +1316,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cc"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizesNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode"
   } ]
 }, {
   "@id" : "_:genid295",
@@ -1328,7 +1328,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cpimp"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid297",
@@ -1337,7 +1337,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cpi"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid299",
@@ -1355,10 +1355,10 @@
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ]
 }, {
   "@id" : "_:genid301",
@@ -1370,7 +1370,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cp"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode"
   } ]
 }, {
   "@id" : "_:genid303",
@@ -1382,7 +1382,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#rimp"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid305",
@@ -1391,7 +1391,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ri"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid307",
@@ -1415,16 +1415,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#rn"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasRootNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode"
   } ]
 }, {
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ]
 }, {
   "@id" : "_:genid311",
@@ -1433,7 +1433,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ta"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment"
   } ]
 }, {
   "@id" : "_:genid313",
@@ -1454,7 +1454,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyStatement"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid317",
@@ -1474,11 +1474,11 @@
 }, {
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid33"
-  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ]
 }, {
   "@id" : "_:genid322",
@@ -1507,13 +1507,12 @@
   } ]
 }, {
   "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-    }, {
-      "@id" : "_:genid35"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid331",
@@ -1549,7 +1548,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ]
 }, {
   "@id" : "_:genid335",
@@ -1561,7 +1560,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid337",
@@ -1570,7 +1569,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid339",
@@ -1582,7 +1581,17 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+    }, {
+      "@id" : "_:genid36"
+    } ]
   } ]
 }, {
   "@id" : "_:genid340",
@@ -1620,7 +1629,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ]
 }, {
   "@id" : "_:genid344",
@@ -1632,7 +1641,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#generalizesNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode"
   } ]
 }, {
   "@id" : "_:genid346",
@@ -1644,7 +1653,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid348",
@@ -1653,16 +1662,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ]
-}, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid36"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid350",
@@ -1674,7 +1674,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode"
   } ]
 }, {
   "@id" : "_:genid351",
@@ -1712,7 +1712,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ]
 }, {
   "@id" : "_:genid355",
@@ -1724,7 +1724,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#generalizesNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode"
   } ]
 }, {
   "@id" : "_:genid357",
@@ -1736,7 +1736,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
   } ]
 }, {
   "@id" : "_:genid359",
@@ -1745,17 +1745,16 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ts"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-    }, {
-      "@id" : "_:genid38"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "_:genid361",
@@ -1767,13 +1766,23 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#n2"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -1783,23 +1792,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasRootNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid42",
@@ -1836,11 +1832,15 @@
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid48",
@@ -1867,7 +1867,7 @@
     }, {
       "@id" : "https://w3id.org/def/vaeontology#ValueDefinition"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
     } ]
   } ]
 }, {
@@ -1875,13 +1875,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-    }, {
       "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment"
+    }, {
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
     } ]
   } ]
 }, {
@@ -1889,13 +1889,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-    }, {
       "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
     }, {
       "@id" : "https://w3id.org/def/vaeontology#ValueComparisonStatement"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+    }, {
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
     } ]
   } ]
 }, {
@@ -1927,9 +1927,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
     }, {
-      "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+      "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
     } ]
   } ]
 }, {
@@ -1992,7 +1992,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ni"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid84",
@@ -2013,7 +2013,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#vi"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid87",
@@ -2054,7 +2054,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#vi"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#importanceValue"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue"
   } ]
 }, {
   "@id" : "_:genid91",
@@ -2075,7 +2075,7 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ni"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ]
 }, {
   "@id" : "_:genid95",
@@ -2250,28 +2250,6 @@
   "@id" : "https://w3id.org/def/vaeontology#ArgumentStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#ConceptNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"Definition 2 (Coherence of Value Importance)\""
-  }, {
-    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Concept Node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-  }, {
-    "@id" : "_:genid18"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#Context",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -2281,56 +2259,14 @@
   "@id" : "https://w3id.org/def/vaeontology#Equality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#NodeImportance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Node Importance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ImportanceRelation"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
-  }, {
-    "@id" : "_:genid23"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#Norm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#PromotionDemotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#PropertyNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Added axiom: \"In our proposed value taxonomy, we require conditioning property nodes to be restricted to leaf nodes. In other words, one concrete computational understanding of a value concept (specified through a property) cannot be more general than another understanding of that value (specified through an- other property or label node).\""
-  }, {
-    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Property Node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-  }, {
-    "@id" : "_:genid24"
-  }, {
-    "@id" : "_:genid26"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -2346,69 +2282,6 @@
 }, {
   "@id" : "https://w3id.org/def/vaeontology#System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Taxonomy Alignment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
-  }, {
-    "@id" : "_:genid27"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Taxonomy Node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
-  }, {
-    "@id" : "_:genid28"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "A node of a ValueTaxonomy."
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Property Taxonomy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
-  }, {
-    "@id" : "_:genid29"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -2434,250 +2307,17 @@
   "@id" : "https://w3id.org/def/vaeontology#ValueProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"Definition 1 (Value taxonomy). A value taxonomy V = (N, E, I) is defined as a directed acyclic graph, where: \n1. The set of nodes N = Nl ∪ Nφ represents value concepts, and it is composed of two types of nodes: i) those that are specified through labels, with Nl ⊂ L representing the set of label nodes and L is the set of all value labels representing abstract value concepts like ‘fairness’ or ‘reciprocity’; and ii) those that are specified through concrete properties, with Nφ ⊂ Φ representing the set of property nodes and Φ is the set of all value properties whose satisfaction can be automatically verified at different world states, such as having the number of times one offers help in a mutual aid community larger than the number of times one asks for help.\n2. The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\nThe importance function I : N → COD assigns an importance value from the codomain COD to value concepts in N.\n\""
-  }, {
-    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Value Taxonomy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
-  }, {
-    "@id" : "_:genid30"
-  }, {
-    "@id" : "_:genid31"
-  }, {
-    "@id" : "_:genid32"
-  }, {
-    "@id" : "_:genid41"
-  }, {
-    "@id" : "_:genid42"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#degreeOfSatisfaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "degree of satisfaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#directlyGeneralizesNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "directly generalizes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#generalizesNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#directlyParticularizesNode"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#directlyParticularizesNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "directly particularizes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#particularizesNode"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#expressesProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#generalizesNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
-  }, {
-    "@value" : "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "generalizes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/framester/schema/subsumes"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#particularizesNode"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#hasAgent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#hasConceptNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ValueTaxonomy has the ConceptNode specified."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has concept node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isConceptNodeOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#hasPropertyNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ValueTaxonomy has the PropertyNode specified."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isPropertyNodeOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#hasPropertyTaxonomy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Property Taxonomy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isTaxonomyPropertyOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#hasRootNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has root node"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#hasConceptNode"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isRootNodeOf"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#hasState",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#hasTaxonomyNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has TaxonomyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#hasUser",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#importanceValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "importance value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#isActive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -2685,121 +2325,11 @@
   "@id" : "https://w3id.org/def/vaeontology#isAgentOfSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#isConceptNodeOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ConceptNode is part of a ValueTaxonomy."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is ConceptNode of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#isPropertyNodeOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the PropertyNode is part of the ValueTaxonomy specified."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is PropertyNode of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#isRootNodeOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is root node of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#isConceptNodeOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#isTaxonomyNodeOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is Taxonomy Node Of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#isTaxonomyPropertyOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is PropertyTaxonomy of PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#isUserOfSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#measuredOnOutcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#particularizesNode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
-  }, {
-    "@value" : "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "particularizes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/framester/schema/subsumedUnder"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -2854,13 +2384,35 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
   }, {
-    "@id" : "_:genid47"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#BalancedGiveAndTake",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Definition 2 (Coherence of Value Importance)\""
+  }, {
+    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concept Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+  }, {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#EqualDivisionOfWorkload",
@@ -2887,6 +2439,27 @@
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Node Importance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#ImportanceRelation"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+  }, {
+    "@id" : "_:genid24"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#OsmanDinvernoAlignmentExample",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2896,16 +2469,130 @@
     "@value" : "OsmanDinvernoAlignmentExample"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyAlignment"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment"
   } ],
   "http://www.w3.org/2004/02/skos/core#note" : [ {
     "@value" : "Implemented in SWRL rules for aggregations of 1,2 or 3 PropertyNode."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Added axiom: \"In our proposed value taxonomy, we require conditioning property nodes to be restricted to leaf nodes. In other words, one concrete computational understanding of a value concept (specified through a property) cannot be more general than another understanding of that value (specified through an- other property or label node).\""
+  }, {
+    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid27"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#Reciprocity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Taxonomy Alignment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Taxonomy Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
+  }, {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A node of a ValueTaxonomy."
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property Taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Definition 1 (Value taxonomy). A value taxonomy V = (N, E, I) is defined as a directed acyclic graph, where: \n1. The set of nodes N = Nl ∪ Nφ represents value concepts, and it is composed of two types of nodes: i) those that are specified through labels, with Nl ⊂ L representing the set of label nodes and L is the set of all value labels representing abstract value concepts like ‘fairness’ or ‘reciprocity’; and ii) those that are specified through concrete properties, with Nφ ⊂ Φ representing the set of property nodes and Φ is the set of all value properties whose satisfaction can be automatically verified at different world states, such as having the number of times one offers help in a mutual aid community larger than the number of times one asks for help.\n2. The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\nThe importance function I : N → COD assigns an importance value from the codomain COD to value concepts in N.\n\""
+  }, {
+    "@value" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Value Taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid47"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#agentExample1",
@@ -3195,55 +2882,55 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node2"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node2"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance2"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node2"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1.0"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.8"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.8"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cc",
@@ -3327,6 +3014,24 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#cpimp",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "degree of satisfaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp1",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
@@ -3335,6 +3040,45 @@
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#dgp3",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "directly generalizes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ConceptNode or PropertyNode directly particularizes the ConceptNode specified (they are linked directly in the ValueTaxonomy)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "directly particularizes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#particularizesNode"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -3348,14 +3092,14 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance2",
@@ -3364,14 +3108,14 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample2_1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance3",
@@ -3380,59 +3124,59 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample2_2"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyParticularizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node2"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyParticularizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance2"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node2"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionNode3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node3"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyParticularizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionImportance3"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node3"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalPayExample",
@@ -3447,26 +3191,26 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalPayImportance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalPayExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalPayNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyParticularizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalPayImportance1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentExample",
@@ -3481,46 +3225,46 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance1"
@@ -3529,7 +3273,7 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance2"
@@ -3538,7 +3282,7 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentImportance3"
@@ -3573,83 +3317,127 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode2"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance2"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance3"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.75"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
   } ],
   "https://w3id.org/def/vaeontology_osman_dInverno#importanceCalculatedWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceFairness1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.75"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.75"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#generalizesNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
+  }, {
+    "@value" : "Indicates that the ConceptNode generalizes the ConceptNode or PropertyNode specified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generalizes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/framester/schema/subsumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#particularizesNode"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ValueTaxonomy has the ConceptNode specified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has concept node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isConceptNodeOf"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain",
@@ -3658,7 +3446,7 @@
     "@value" : "\"3. The importance function I : N → COD assigns an im- portance value from the codomain COD to value con- cepts in N\""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasCondomain"
@@ -3676,13 +3464,97 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasNProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ValueTaxonomy has the PropertyNode specified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isPropertyNodeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Property Taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#expressesProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyPropertyOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ValueTaxonomy has the RootNode specified (a ConceptNode which is not generalized by any other)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has root node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isRootNodeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#hasTaxonomyNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ValueTaxonomy containts the ConceptNode or PropertyNode specified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has TaxonomyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#idempotenceConstraint",
@@ -3697,7 +3569,7 @@
     "@value" : "\"We articulate this coherence by requiring that a parent node’s importance must be aligned with the importance of its children nodes. For example, if the importance of all children nodes is low, then the importance of the parent node cannot be high, and vice versa.\""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "importanceCalculatedWith"
@@ -3749,12 +3621,26 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about."
+  }, {
     "@value" : "Would retrieve the rdf:value of a AggregationOfImportance or the importanceValue of a NodeImportance instance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "importance value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isCalculationOfImportance",
@@ -3769,10 +3655,28 @@
     "@value" : "isCalculationOfImportance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isConceptNodeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ConceptNode is part of a ValueTaxonomy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is ConceptNode of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isCondomainFor",
@@ -3787,10 +3691,82 @@
     "@value" : "isCondomainFor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isPropertyNodeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the PropertyNode is part of the ValueTaxonomy specified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is PropertyNode of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isRootNodeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is root node of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isConceptNodeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyNodeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the Node (Concept or Property nodes) are part of a ValueTaxonomy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is Taxonomy Node Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#isTaxonomyPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates that the PropertyNode has a Taxonomy Property (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is PropertyTaxonomy of PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#logicalImplication",
@@ -3820,11 +3796,7 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "https://w3id.org/def/vaeontology#degreeOfSatisfaction" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.5"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
   "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
@@ -3835,80 +3807,84 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.5"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.8"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.8"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "-0.5"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-0.5"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance1"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance2"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Node3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance3"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p1HelpRequestsProportionateOffers"
   } ]
 }, {
@@ -3918,11 +3894,7 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "https://w3id.org/def/vaeontology#degreeOfSatisfaction" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
   "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
@@ -3933,80 +3905,84 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessExample"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.0"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.0"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "-0.5"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-0.5"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance1"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance2"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Node3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2Importance3"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p2HelpRequestsProportionateActual"
   } ]
 }, {
@@ -4016,89 +3992,109 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.7"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.7"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalDivisionExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance1"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance2"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Node3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#PropertyNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#PropertyNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3"
   } ],
-  "https://w3id.org/def/vaeontology#hasPropertyTaxonomy" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasPropertyTaxonomy" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#p3TasksDistributedAmongVolunteers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#TaxonomyProperty"
-  } ],
-  "https://w3id.org/def/vaeontology#degreeOfSatisfaction" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.9"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty"
   } ],
   "https://w3id.org/def/vaeontology#measuredOnOutcome" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#state1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#particularizesNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
+  }, {
+    "@value" : "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "particularizes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/framester/schema/subsumedUnder"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#pi1",
@@ -4161,51 +4157,51 @@
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.8"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.8"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#NodeImportance"
-  } ],
-  "https://w3id.org/def/vaeontology#importanceValue" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "0.8"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance"
   } ],
   "https://w3id.org/def/vaeontology#relationWith" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityExample"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.8"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ConceptNode"
-  } ],
-  "https://w3id.org/def/vaeontology#directlyGeneralizesNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode2"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance2"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#directlyGeneralizesNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNode2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#res",
@@ -4271,18 +4267,15 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure1Alignment"
   } ],
-  "https://w3id.org/def/vaeontology#hasConceptNode" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode"
-  } ],
-  "https://w3id.org/def/vaeontology#hasRootNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode"
   } ],
   "https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#condomain"
@@ -4290,6 +4283,9 @@
   "https://w3id.org/def/vaeontology_osman_dInverno#hasNProperties" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
     "@value" : "3"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure1Alignment",
@@ -4310,18 +4306,15 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample2_1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2Alignment"
   } ],
-  "https://w3id.org/def/vaeontology#hasConceptNode" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode2"
   }, {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityNode2"
-  } ],
-  "https://w3id.org/def/vaeontology#hasRootNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode2"
   } ],
   "https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#condomain"
@@ -4329,6 +4322,9 @@
   "https://w3id.org/def/vaeontology_osman_dInverno#hasNProperties" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
     "@value" : "3"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode2"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure2_2",
@@ -4337,16 +4333,13 @@
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#contextExample2_2"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueTaxonomyStatement"
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomyStatement"
   } ],
   "https://w3id.org/def/vaeontology#expressesProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure3Alignment"
   } ],
-  "https://w3id.org/def/vaeontology#hasConceptNode" : [ {
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#equalTreatmentNode3"
-  } ],
-  "https://w3id.org/def/vaeontology#hasRootNode" : [ {
-    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode3"
   } ],
   "https://w3id.org/def/vaeontology_osman_dInverno#hasCondomain" : [ {
     "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#condomain"
@@ -4354,6 +4347,9 @@
   "https://w3id.org/def/vaeontology_osman_dInverno#hasNProperties" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
     "@value" : "1"
+  } ],
+  "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNode3"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_osman_dInverno#taxonomyFigure3Alignment",

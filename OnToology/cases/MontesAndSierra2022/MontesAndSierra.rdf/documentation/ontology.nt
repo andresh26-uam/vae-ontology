@@ -411,18 +411,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#FinalInputOutcome
 <https://w3id.org/def/vaeontology#FinalInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/def/vaeontology#GiniIndex
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#SemanticsFunction> .
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Equality> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\"" .
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." .
-<https://w3id.org/def/vaeontology#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Gini Index" .
-<https://w3id.org/def/vaeontology#GiniIndex> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
-# 
 # https://w3id.org/def/vaeontology#MultiInputOutcome
 <https://w3id.org/def/vaeontology#MultiInputOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -434,37 +422,27 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology#Path
 <https://w3id.org/def/vaeontology#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
-_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#FinalInputOutcome> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOutcomeOf> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology_montes_sierra#hasOutState> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology#Path> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#FinalInputOutcome> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOutcomeOf> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology#State> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology_montes_sierra#hasOutState> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
 <https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/vaeontology#QuantitativeVaeProperty
 <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#SemanticsFunction
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\"" .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Semantics Function" .
-<https://w3id.org/def/vaeontology#SemanticsFunction> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
 # 
 # https://w3id.org/def/vaeontology#Sequence
 <https://w3id.org/def/vaeontology#Sequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -487,31 +465,31 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion
 <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> .
-<https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
-_:genid23 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
-_:genid25 <http://www.w3.org/2001/XMLSchema#minInclusive> "-1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2002/07/owl#real> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2001/XMLSchema#minInclusive> "-1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2002/07/owl#real> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/2000/01/rdf-schema#label> "BoundedQuantitativePromotionDemotion" .
 <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> <http://www.w3.org/2004/02/skos/core#definition> "A quantitative Promotion or Demotion, bounded in a certain interval where the limits -1 and 1 represent the highest degrees of promotion and demotion, and the centre (0) the neutrality." .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent
 <https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#TaxingAgent> .
-<https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_montes_sierra#NotPayingTaxesTransaction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#makesAction> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_montes_sierra#NotPayingTaxesTransaction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#makesAction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "\"In our running example, the MAS is composed of a set of 200 agents G = {1, 2, ..., 200}. Of these 200, we set 10 to be “evader” agents, which will try to skip payment when the tax collection and redistribution scheme is imposed. This composition of the society (10 out of 200 evader agents) is an arbitrary choice made for exemplification purposes.\"" .
 <https://w3id.org/def/vaeontology_montes_sierra#EvaderAgent> <http://www.w3.org/2000/01/rdf-schema#label> "EvaderAgent" .
 # 
@@ -520,6 +498,18 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_montes_sierra#Fairness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence> .
 <https://w3id.org/def/vaeontology_montes_sierra#Fairness> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion.\"" .
 <https://w3id.org/def/vaeontology_montes_sierra#Fairness> <http://www.w3.org/2000/01/rdf-schema#label> "Fairness" .
+# 
+# https://w3id.org/def/vaeontology_montes_sierra#GiniIndex
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#Equality> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\"" .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)." .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Gini Index" .
+<https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#LegalAgent
 <https://w3id.org/def/vaeontology_montes_sierra#LegalAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -648,16 +638,26 @@ _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics
 <https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#SemanticsFunction> .
+<https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> .
 <https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment" .
 <https://w3id.org/def/vaeontology_montes_sierra#ProbabilityTaxFairnessSemantics> <http://www.w3.org/2000/01/rdf-schema#label> "ProbabilityTaxFairnessSemantics" .
+# 
+# https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ValueProperty> .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\"" .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]" .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Semantics Function" .
+<https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> <https://w3id.org/spice/SON/SchwartzValues#bibRef> "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487" .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation
 <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AggregationFunction> .
 <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion> .
 <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#SemanticsFunction> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction> .
 _:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a set of values V = {v1, ..., vm} and their semantics functions f1,...,fm, we propose that the semantics of the set of values in V should be grounded by an aggregation function FV : [−1, 1]m → [−1, 1]. FV takes in the compliance with respect to every individual value and merges them into a single metric. To shorten notation, we denote FV (f1(s), ..., fm(s)) as FV (s).\"" .
@@ -873,7 +873,7 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1
 <https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#GiniIndex> .
+<https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_montes_sierra#GiniIndex> .
 <https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext> .
 <https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <https://w3id.org/def/vaeontology#measuredOnOutcome> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemState4> .
 <https://w3id.org/def/vaeontology_montes_sierra#equalitySemanticsTaxingOutPath1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019)\"" .

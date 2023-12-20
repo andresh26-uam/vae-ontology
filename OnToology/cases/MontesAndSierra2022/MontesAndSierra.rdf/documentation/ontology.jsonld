@@ -46,33 +46,24 @@
 }, {
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#Equality"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#relationWith"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#hasOutState"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid15"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/def/vaeontology#State"
     }, {
-      "@id" : "_:genid18"
+      "@id" : "_:genid17"
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#isOutcomeOf"
@@ -81,47 +72,56 @@
     "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid21"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#onDatatype" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#real"
   } ],
   "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
     "@list" : [ {
-      "@id" : "_:genid25"
+      "@id" : "_:genid24"
     }, {
-      "@id" : "_:genid23"
+      "@id" : "_:genid22"
     } ]
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid22",
   "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid24",
   "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "-1.0"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#NotPayingTaxesTransaction"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/vaeontology#makesAction"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#Equality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#relationWith"
   } ]
 }, {
   "@id" : "_:genid27",
@@ -264,7 +264,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"
   } ]
 }, {
   "@id" : "_:genid50",
@@ -620,25 +620,6 @@
   "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#GiniIndex",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\""
-  }, {
-    "@value" : "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Gini Index"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
-  }, {
-    "@id" : "_:genid14"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -651,7 +632,7 @@
   "@id" : "https://w3id.org/def/vaeontology#Path",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion",
@@ -659,27 +640,6 @@
 }, {
   "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\""
-  }, {
-    "@value" : "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Semantics Function"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
-  }, {
-    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion"
-  } ],
-  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
-    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology#Sequence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -827,7 +787,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A quantitative Promotion or Demotion, bounded in a certain interval where the limits -1 and 1 represent the highest degrees of promotion and demotion, and the centre (0) the neutrality."
@@ -844,7 +804,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#TaxingAgent"
   }, {
-    "@id" : "_:genid26"
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#Fairness",
@@ -857,6 +817,25 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/spice/SON/SchwartzValues#SelfTrascendence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_montes_sierra#GiniIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\""
+  }, {
+    "@value" : "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gini Index"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"
+  }, {
+    "@id" : "_:genid26"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#LegalAgent",
@@ -995,7 +974,28 @@
     "@value" : "ProbabilityTaxFairnessSemantics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#SemanticsFunction"
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\""
+  }, {
+    "@value" : "\"To express the relationship between an abstract value and the meaning it takes in a particular context, we say that an explicit goal g grounds the semantics of value v in context C\" [Nieves Montes, Carles Sierra et al. https://www.jair.org/index.php/jair/article/view/13487]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Semantics Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology#ValueProperty"
+  }, {
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion"
+  } ],
+  "https://w3id.org/spice/SON/SchwartzValues#bibRef" : [ {
+    "@value" : "Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned nor-\nmative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).\nhttps://doi.org/10.1613/jair.1.13487"
   } ]
 }, {
   "@id" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation",
@@ -1431,7 +1431,7 @@
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxProblemContext"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#GiniIndex"
+    "@id" : "https://w3id.org/def/vaeontology_montes_sierra#GiniIndex"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019)\""

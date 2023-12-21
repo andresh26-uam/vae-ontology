@@ -665,9 +665,6 @@
   "@id" : "https://w3id.org/def/vaeontology#composedBySequence",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/vaeontology#composesComplexOutcome",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/vaeontology#hasClaim",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -2524,7 +2521,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology#MultiInputOutcome"
   } ],
-  "https://w3id.org/def/vaeontology#composesComplexOutcome" : [ {
+  "https://w3id.org/def/vaeontology#composedBySequence" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"
   } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {
@@ -2539,7 +2536,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/vaeontology#FinalInputOutcome"
   } ],
-  "https://w3id.org/def/vaeontology#composesComplexOutcome" : [ {
+  "https://w3id.org/def/vaeontology#composedBySequence" : [ {
     "@id" : "https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"
   } ],
   "https://w3id.org/def/vaeontology#isInputOutcomeOf" : [ {

@@ -95,13 +95,6 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
     
 
 
-    <!-- https://w3id.org/def/vaeontology#composesComplexOutcome -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#composesComplexOutcome"/>
-    
-
-
     <!-- https://w3id.org/spice/SON/SchwartzValues#bibRef -->
 
 
@@ -2323,9 +2316,9 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology#MultiInputOutcome"/>
+        <vaeontology:composedBySequence rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
         <vaeontology:isInputOutcomeOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"/>
         <vaeontology:nextInputOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2"/>
-        <vaeontology:composesComplexOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1"/>
     </owl:NamedIndividual>
     
 
@@ -2335,8 +2328,8 @@ https://doi.org/10.1613/jair.1.13487</SchwartzValues:bibRef>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology#FinalInputOutcome"/>
+        <vaeontology:composedBySequence rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
         <vaeontology:isInputOutcomeOf rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace"/>
-        <vaeontology:composesComplexOutcome rdf:resource="https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2"/>
     </owl:NamedIndividual>
     
 

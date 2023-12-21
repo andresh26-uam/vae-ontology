@@ -5925,7 +5925,7 @@
     "@value" : "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+    "@id" : "https://w3id.org/def/vaeontology#VaeEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "inferior in comparison"
@@ -6775,7 +6775,7 @@
     "@value" : "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+    "@id" : "https://w3id.org/def/vaeontology#VaeEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "superior in comparison"

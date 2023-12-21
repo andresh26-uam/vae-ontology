@@ -893,7 +893,7 @@ _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#inferiorInComparison
 <https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isSecondElementOfRelation> .
-<https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeEntity> .
 <https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ComparisonStatement> .
 <https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." .
 <https://w3id.org/def/vaeontology#inferiorInComparison> <http://www.w3.org/2000/01/rdf-schema#label> "inferior in comparison" .
@@ -1276,7 +1276,7 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology#superiorInComparison
 <https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isFirstElementOfRelation> .
-<https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#ValueConcept> .
+<https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology#VaeEntity> .
 <https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/vaeontology#ComparisonStatement> .
 <https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." .
 <https://w3id.org/def/vaeontology#superiorInComparison> <http://www.w3.org/2000/01/rdf-schema#label> "superior in comparison" .

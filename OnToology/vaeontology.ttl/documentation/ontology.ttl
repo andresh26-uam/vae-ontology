@@ -941,7 +941,7 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#inferiorInComparison
 :inferiorInComparison rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :isSecondElementOfRelation ;
-                      rdfs:domain :ValueConcept ;
+                      rdfs:domain :VaeEntity ;
                       rdfs:range :ComparisonStatement ;
                       rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
                       rdfs:label "inferior in comparison" .
@@ -1361,7 +1361,7 @@ owl:sameAs rdf:type owl:ObjectProperty .
 ###  https://w3id.org/def/vaeontology#superiorInComparison
 :superiorInComparison rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :isFirstElementOfRelation ;
-                      rdfs:domain :ValueConcept ;
+                      rdfs:domain :VaeEntity ;
                       rdfs:range :ComparisonStatement ;
                       rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
                       rdfs:label "superior in comparison" .

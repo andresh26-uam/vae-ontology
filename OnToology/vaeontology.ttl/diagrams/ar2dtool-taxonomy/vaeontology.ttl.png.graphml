@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="158" parse.nodes="124" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="159" parse.nodes="125" parse.order="free">
       <node id="nid_dul:Region">
          <data key="d0">
             <y:ShapeNode>
@@ -470,42 +470,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_vae:VaePropertyStatement">
+      <node id="nid_vae:ComparisonStatement">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">vae:VaePropertyStatement</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">vae:ComparisonStatement</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_vae:ValueComparisonStatement" target="nid_vae:VaePropertyStatement">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_vae:RelationStatement">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="210.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">vae:RelationStatement</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_vae:ValueComparisonStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf16" source="nid_vae:ValueComparisonStatement" target="nid_vae:ComparisonStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -528,7 +505,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_vae:Sequence" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf17" source="nid_vae:Sequence" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -551,7 +528,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_vae:Generalization" target="nid_vae:ValueComparisonStatement">
+    <edge id="eid_rdfs:subClassOf18" source="nid_vae:Generalization" target="nid_vae:ValueComparisonStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -574,7 +551,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_vae:Generalization" target="nid_vae:IrreflexiveRelationStatement">
+    <edge id="eid_rdfs:subClassOf19" source="nid_vae:Generalization" target="nid_vae:IrreflexiveRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -597,7 +574,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_vae:Generalization" target="nid_vae:AntiSymmetricRelationStatement">
+    <edge id="eid_rdfs:subClassOf20" source="nid_vae:Generalization" target="nid_vae:AntiSymmetricRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -620,7 +597,19 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_vae:TransitiveRelationStatement" target="nid_vae:RelationStatement">
+      <node id="nid_vae:RelationStatement">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="210.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">vae:RelationStatement</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf21" source="nid_vae:TransitiveRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -643,7 +632,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_vae:TransitiveRelationStatement" target="nid_obo:NCIT_C75921">
+    <edge id="eid_rdfs:subClassOf22" source="nid_vae:TransitiveRelationStatement" target="nid_obo:NCIT_C75921">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -678,7 +667,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_bhv:OpennessToChange" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf23" source="nid_bhv:OpennessToChange" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -701,7 +690,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_vae:AgentStatement" target="nid_vae:VaeEntity">
+    <edge id="eid_rdfs:subClassOf24" source="nid_vae:AgentStatement" target="nid_vae:VaeEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -712,7 +701,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf26" source="nid_vae:AgentStatement" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf25" source="nid_vae:AgentStatement" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -747,7 +736,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_vae:BooleanVaeProperty" target="nid_vae:VaeProperty">
+    <edge id="eid_rdfs:subClassOf26" source="nid_vae:BooleanVaeProperty" target="nid_vae:VaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -782,7 +771,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_vae:Norm" target="nid_vae:VaeConditioningEntity">
+    <edge id="eid_rdfs:subClassOf27" source="nid_vae:Norm" target="nid_vae:VaeConditioningEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -805,7 +794,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf29" source="nid_vae:Norm" target="nid_dul:Norm">
+    <edge id="eid_rdfs:subClassOf28" source="nid_vae:Norm" target="nid_dul:Norm">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -828,7 +817,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf30" source="nid_vae:Norm" target="nid_odrl:Policy">
+    <edge id="eid_rdfs:subClassOf29" source="nid_vae:Norm" target="nid_odrl:Policy">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -839,7 +828,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf31" source="nid_vae:Norm" target="nid_vae:VaeConditionedEntity">
+    <edge id="eid_rdfs:subClassOf30" source="nid_vae:Norm" target="nid_vae:VaeConditionedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -850,7 +839,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf32" source="nid_vae:IrreflexiveRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf31" source="nid_vae:IrreflexiveRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -861,7 +850,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf33" source="nid_vae:IrreflexiveRelationStatement" target="nid_obo:NCIT_C75917">
+    <edge id="eid_rdfs:subClassOf32" source="nid_vae:IrreflexiveRelationStatement" target="nid_obo:NCIT_C75917">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -884,7 +873,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_bhv:Tolerance" target="nid_bhv:Universalism">
+    <edge id="eid_rdfs:subClassOf33" source="nid_bhv:Tolerance" target="nid_bhv:Universalism">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -895,7 +884,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf35" source="nid_dul:SocialObject" target="nid_dul:Object">
+    <edge id="eid_rdfs:subClassOf34" source="nid_dul:SocialObject" target="nid_dul:Object">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -918,7 +907,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_bhv:Tradition" target="nid_bhv:Conservation">
+    <edge id="eid_rdfs:subClassOf35" source="nid_bhv:Tradition" target="nid_bhv:Conservation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -941,7 +930,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf37" source="nid_bhv:Nature" target="nid_bhv:Universalism">
+    <edge id="eid_rdfs:subClassOf36" source="nid_bhv:Nature" target="nid_bhv:Universalism">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -964,7 +953,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf38" source="nid_schema:ConceptualFrame" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf37" source="nid_schema:ConceptualFrame" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -987,7 +976,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_vcvf:Value" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf38" source="nid_vcvf:Value" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -998,7 +987,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf40" source="nid_bhv:SelfTrascendence" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf39" source="nid_bhv:SelfTrascendence" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1021,7 +1010,19 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_vae:VaeStatement" target="nid_vae:VaePropertyStatement">
+      <node id="nid_vae:VaePropertyStatement">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">vae:VaePropertyStatement</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf40" source="nid_vae:VaeStatement" target="nid_vae:VaePropertyStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1044,7 +1045,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_vae:VaeStatement" target="nid_odrl:Asset">
+    <edge id="eid_rdfs:subClassOf41" source="nid_vae:VaeStatement" target="nid_odrl:Asset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1067,7 +1068,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf43" source="nid_vae:VaeStatement" target="nid_odrl:Action">
+    <edge id="eid_rdfs:subClassOf42" source="nid_vae:VaeStatement" target="nid_odrl:Action">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1090,7 +1091,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf44" source="nid_vae:AsymmetricRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf43" source="nid_vae:AsymmetricRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1113,7 +1114,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf45" source="nid_bhv:Resources" target="nid_bhv:Power">
+    <edge id="eid_rdfs:subClassOf44" source="nid_bhv:Resources" target="nid_bhv:Power">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1148,7 +1149,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_vae:AntiTransitiveRelationStatement" target="nid_vae:IntransitiveRelationStatement">
+    <edge id="eid_rdfs:subClassOf45" source="nid_vae:AntiTransitiveRelationStatement" target="nid_vae:IntransitiveRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1171,7 +1172,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf47" source="nid_vae:AntiTransitiveRelationStatement" target="nid_obo:NCIT_C75922">
+    <edge id="eid_rdfs:subClassOf46" source="nid_vae:AntiTransitiveRelationStatement" target="nid_obo:NCIT_C75922">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1194,7 +1195,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf48" source="nid_vae:MultiInputOutcome" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf47" source="nid_vae:MultiInputOutcome" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1205,7 +1206,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf49" source="nid_dul:Event" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf48" source="nid_dul:Event" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1240,7 +1241,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf50" source="nid_bhv:SocialFocus" target="nid_bhv:Focus">
+    <edge id="eid_rdfs:subClassOf49" source="nid_bhv:SocialFocus" target="nid_bhv:Focus">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1275,7 +1276,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf51" source="nid_vae:Context" target="nid_dul:Situation">
+    <edge id="eid_rdfs:subClassOf50" source="nid_vae:Context" target="nid_dul:Situation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1286,7 +1287,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf52" source="nid_bhv:Focus" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf51" source="nid_bhv:Focus" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1309,7 +1310,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf53" source="nid_vae:Equality" target="nid_bhv:SelfTrascendence">
+    <edge id="eid_rdfs:subClassOf52" source="nid_vae:Equality" target="nid_bhv:SelfTrascendence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1320,7 +1321,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf54" source="nid_bhv:SelfEnhancement" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf53" source="nid_bhv:SelfEnhancement" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1343,7 +1344,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf55" source="nid_vae:Fairness" target="nid_bhv:SelfTrascendence">
+    <edge id="eid_rdfs:subClassOf54" source="nid_vae:Fairness" target="nid_bhv:SelfTrascendence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1366,7 +1367,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf56" source="nid_bhv:Benevolence" target="nid_bhv:Value">
+    <edge id="eid_rdfs:subClassOf55" source="nid_bhv:Benevolence" target="nid_bhv:Value">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1377,7 +1378,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf57" source="nid_bhv:Benevolence" target="nid_bhv:SelfTrascendence">
+    <edge id="eid_rdfs:subClassOf56" source="nid_bhv:Benevolence" target="nid_bhv:SelfTrascendence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1400,7 +1401,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf58" source="nid_obo:NCIT_C75915" target="nid_obo:NCIT_C20189">
+    <edge id="eid_rdfs:subClassOf57" source="nid_obo:NCIT_C75915" target="nid_obo:NCIT_C20189">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1423,7 +1424,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf59" source="nid_bhv:Caring" target="nid_bhv:Benevolence">
+    <edge id="eid_rdfs:subClassOf58" source="nid_bhv:Caring" target="nid_bhv:Benevolence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1446,7 +1447,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_bhv:Concern" target="nid_bhv:Universalism">
+    <edge id="eid_rdfs:subClassOf59" source="nid_bhv:Concern" target="nid_bhv:Universalism">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1481,7 +1482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_vae:Criterion" target="nid_dul:Theory">
+    <edge id="eid_rdfs:subClassOf60" source="nid_vae:Criterion" target="nid_dul:Theory">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1492,7 +1493,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf62" source="nid_vae:Criterion" target="nid_vae:AgentStatement">
+    <edge id="eid_rdfs:subClassOf61" source="nid_vae:Criterion" target="nid_vae:AgentStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1503,7 +1504,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf63" source="nid_vae:Criterion" target="nid_odrl:Policy">
+    <edge id="eid_rdfs:subClassOf62" source="nid_vae:Criterion" target="nid_odrl:Policy">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1538,7 +1539,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf64" source="nid_vae:PromotionDemotion" target="nid_vae:ValueProperty">
+    <edge id="eid_rdfs:subClassOf63" source="nid_vae:PromotionDemotion" target="nid_vae:ValueProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1561,7 +1562,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf65" source="nid_vae:PromotionDemotion" target="nid_vae:QualitativeVaeProperty">
+    <edge id="eid_rdfs:subClassOf64" source="nid_vae:PromotionDemotion" target="nid_vae:QualitativeVaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1572,7 +1573,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf66" source="nid_dul:Situation" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf65" source="nid_dul:Situation" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1595,7 +1596,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf67" source="nid_bhv:Achievement" target="nid_bhv:Value">
+    <edge id="eid_rdfs:subClassOf66" source="nid_bhv:Achievement" target="nid_bhv:Value">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1606,7 +1607,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf68" source="nid_bhv:Achievement" target="nid_bhv:SelfEnhancement">
+    <edge id="eid_rdfs:subClassOf67" source="nid_bhv:Achievement" target="nid_bhv:SelfEnhancement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1617,7 +1618,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf69" source="nid_vae:RelationStatement" target="nid_vae:AgentStatement">
+    <edge id="eid_rdfs:subClassOf68" source="nid_vae:RelationStatement" target="nid_vae:AgentStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1640,7 +1641,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf70" source="nid_bhv:GrowthAndAnxietyFree" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf69" source="nid_bhv:GrowthAndAnxietyFree" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1675,7 +1676,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf71" source="nid_vae:System" target="nid_vae:Agent">
+    <edge id="eid_rdfs:subClassOf70" source="nid_vae:System" target="nid_vae:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1698,7 +1699,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf72" source="nid_vae:System" target="nid_dul:Collection">
+    <edge id="eid_rdfs:subClassOf71" source="nid_vae:System" target="nid_dul:Collection">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1709,7 +1710,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf73" source="nid_obo:NCIT_C75922" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf72" source="nid_obo:NCIT_C75922" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1732,7 +1733,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf74" source="nid_vae:ArgumentStatement" target="nid_vae:AgentStatement">
+    <edge id="eid_rdfs:subClassOf73" source="nid_vae:ArgumentStatement" target="nid_vae:AgentStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1755,7 +1756,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf75" source="nid_vae:Path" target="nid_vae:Sequence">
+    <edge id="eid_rdfs:subClassOf74" source="nid_vae:Path" target="nid_vae:Sequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1766,7 +1767,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf76" source="nid_vae:ValueProperty" target="nid_vae:VaeProperty">
+    <edge id="eid_rdfs:subClassOf75" source="nid_vae:ValueProperty" target="nid_vae:VaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1801,7 +1802,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf77" source="nid_bhv:Action" target="nid_bhv:SelfDirection">
+    <edge id="eid_rdfs:subClassOf76" source="nid_bhv:Action" target="nid_bhv:SelfDirection">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1812,7 +1813,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf78" source="nid_dul:Norm" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf77" source="nid_dul:Norm" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1823,7 +1824,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf79" source="nid_vae:AntiSymmetricRelationStatement" target="nid_vae:AsymmetricRelationStatement">
+    <edge id="eid_rdfs:subClassOf78" source="nid_vae:AntiSymmetricRelationStatement" target="nid_vae:AsymmetricRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1846,7 +1847,29 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf80" source="nid_vae:AntiSymmetricRelationStatement" target="nid_obo:NCIT_C75920">
+    <edge id="eid_rdfs:subClassOf79" source="nid_vae:AntiSymmetricRelationStatement" target="nid_obo:NCIT_C75920">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf80" source="nid_vae:ComparisonStatement" target="nid_vae:VaePropertyStatement">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf81" source="nid_vae:ComparisonStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1881,7 +1904,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf81" source="nid_dul:Person" target="nid_dul:Agent">
+    <edge id="eid_rdfs:subClassOf82" source="nid_dul:Person" target="nid_dul:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1904,7 +1927,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf82" source="nid_vae:State" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf83" source="nid_vae:State" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1915,7 +1938,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf83" source="nid_bhv:Conservation" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf84" source="nid_bhv:Conservation" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1926,7 +1949,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf84" source="nid_vae:VaePropertyStatement" target="nid_vae:AgentStatement">
+    <edge id="eid_rdfs:subClassOf85" source="nid_vae:VaePropertyStatement" target="nid_vae:AgentStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1961,7 +1984,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf85" source="nid_vae:VaeSituation" target="nid_schema:FrameOccurrence">
+    <edge id="eid_rdfs:subClassOf86" source="nid_vae:VaeSituation" target="nid_schema:FrameOccurrence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1972,7 +1995,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf86" source="nid_vae:VaeSituation" target="nid_vae:VaeEntity">
+    <edge id="eid_rdfs:subClassOf87" source="nid_vae:VaeSituation" target="nid_vae:VaeEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1983,7 +2006,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf87" source="nid_vae:VaeSituation" target="nid_odrl:Asset">
+    <edge id="eid_rdfs:subClassOf88" source="nid_vae:VaeSituation" target="nid_odrl:Asset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2006,7 +2029,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf88" source="nid_vae:User" target="nid_vae:Agent">
+    <edge id="eid_rdfs:subClassOf89" source="nid_vae:User" target="nid_vae:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2017,7 +2040,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf89" source="nid_vae:User" target="nid_dul:Person">
+    <edge id="eid_rdfs:subClassOf90" source="nid_vae:User" target="nid_dul:Person">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2052,7 +2075,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf90" source="nid_vae:SoundArgument" target="nid_odrl:Operator">
+    <edge id="eid_rdfs:subClassOf91" source="nid_vae:SoundArgument" target="nid_odrl:Operator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2063,7 +2086,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf91" source="nid_bhv:Security" target="nid_bhv:Conservation">
+    <edge id="eid_rdfs:subClassOf92" source="nid_bhv:Security" target="nid_bhv:Conservation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2086,7 +2109,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf92" source="nid_bhv:Conformity" target="nid_bhv:Conservation">
+    <edge id="eid_rdfs:subClassOf93" source="nid_bhv:Conformity" target="nid_bhv:Conservation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2097,7 +2120,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf93" source="nid_vae:VaeConditionedEntity" target="nid_vae:VaeStatementEntity">
+    <edge id="eid_rdfs:subClassOf94" source="nid_vae:VaeConditionedEntity" target="nid_vae:VaeStatementEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2120,7 +2143,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf94" source="nid_bhv:Thought" target="nid_bhv:SelfDirection">
+    <edge id="eid_rdfs:subClassOf95" source="nid_bhv:Thought" target="nid_bhv:SelfDirection">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2143,7 +2166,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf95" source="nid_vae:FinalInputOutcome" target="nid_vae:MultiInputOutcome">
+    <edge id="eid_rdfs:subClassOf96" source="nid_vae:FinalInputOutcome" target="nid_vae:MultiInputOutcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2166,7 +2189,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf96" source="nid_bhv:SelfProtectionAndAnxietyAvoidance" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf97" source="nid_bhv:SelfProtectionAndAnxietyAvoidance" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2189,7 +2212,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf97" source="nid_vae:ValueDefinition" target="nid_vae:AgentStatement">
+    <edge id="eid_rdfs:subClassOf98" source="nid_vae:ValueDefinition" target="nid_vae:AgentStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2212,7 +2235,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf98" source="nid_bhv:Stimulation" target="nid_bhv:Value">
+    <edge id="eid_rdfs:subClassOf99" source="nid_bhv:Stimulation" target="nid_bhv:Value">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2223,7 +2246,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf99" source="nid_bhv:Stimulation" target="nid_bhv:OpennessToChange">
+    <edge id="eid_rdfs:subClassOf100" source="nid_bhv:Stimulation" target="nid_bhv:OpennessToChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2246,7 +2269,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf100" source="nid_vae:TextualVaeProperty" target="nid_vae:VaeProperty">
+    <edge id="eid_rdfs:subClassOf101" source="nid_vae:TextualVaeProperty" target="nid_vae:VaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2269,7 +2292,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf101" source="nid_vae:Action" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf102" source="nid_vae:Action" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2292,7 +2315,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf102" source="nid_vae:Transition" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf103" source="nid_vae:Transition" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2303,7 +2326,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf103" source="nid_obo:NCIT_C75921" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf104" source="nid_obo:NCIT_C75921" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2326,7 +2349,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf104" source="nid_vae:AwarenessSituation" target="nid_vae:VaeSituation">
+    <edge id="eid_rdfs:subClassOf105" source="nid_vae:AwarenessSituation" target="nid_vae:VaeSituation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2361,7 +2384,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf105" source="nid_vae:AggregationFunction" target="nid_vae:QuantitativeVaeProperty">
+    <edge id="eid_rdfs:subClassOf106" source="nid_vae:AggregationFunction" target="nid_vae:QuantitativeVaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2384,7 +2407,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf106" source="nid_vae:AwarenessStatement" target="nid_vae:VaeStatement">
+    <edge id="eid_rdfs:subClassOf107" source="nid_vae:AwarenessStatement" target="nid_vae:VaeStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2407,7 +2430,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf107" source="nid_obo:NCIT_C75919" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf108" source="nid_obo:NCIT_C75919" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2430,7 +2453,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf108" source="nid_vae:FunctionalRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf109" source="nid_vae:FunctionalRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2441,7 +2464,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf109" source="nid_vae:FunctionalRelationStatement" target="nid_obo:NCIT_C75924">
+    <edge id="eid_rdfs:subClassOf110" source="nid_vae:FunctionalRelationStatement" target="nid_obo:NCIT_C75924">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2464,7 +2487,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf110" source="nid_bhv:Dominance" target="nid_bhv:Power">
+    <edge id="eid_rdfs:subClassOf111" source="nid_bhv:Dominance" target="nid_bhv:Power">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2475,7 +2498,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf111" source="nid_vae:VaeProperty" target="nid_vae:VaeStatementEntity">
+    <edge id="eid_rdfs:subClassOf112" source="nid_vae:VaeProperty" target="nid_vae:VaeStatementEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2486,7 +2509,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf112" source="nid_vae:VaeProperty" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf113" source="nid_vae:VaeProperty" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2497,7 +2520,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf113" source="nid_vae:QualitativeVaeProperty" target="nid_vae:VaeProperty">
+    <edge id="eid_rdfs:subClassOf114" source="nid_vae:QualitativeVaeProperty" target="nid_vae:VaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2508,7 +2531,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf114" source="nid_vae:VaeEntity" target="nid_dul:Entity">
+    <edge id="eid_rdfs:subClassOf115" source="nid_vae:VaeEntity" target="nid_dul:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2519,7 +2542,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf115" source="nid_vae:Agent" target="nid_vae:VaeConditionedEntity">
+    <edge id="eid_rdfs:subClassOf116" source="nid_vae:Agent" target="nid_vae:VaeConditionedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2542,7 +2565,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf116" source="nid_vae:Agent" target="nid_odrl:Party">
+    <edge id="eid_rdfs:subClassOf117" source="nid_vae:Agent" target="nid_odrl:Party">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2553,7 +2576,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf117" source="nid_vae:Agent" target="nid_dul:Agent">
+    <edge id="eid_rdfs:subClassOf118" source="nid_vae:Agent" target="nid_dul:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2576,7 +2599,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf118" source="nid_bhv:PanCulturalBaselineForValuesPriority" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf119" source="nid_bhv:PanCulturalBaselineForValuesPriority" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2587,7 +2610,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf119" source="nid_vae:VaeConditioningEntity" target="nid_vae:VaeStatementEntity">
+    <edge id="eid_rdfs:subClassOf120" source="nid_vae:VaeConditioningEntity" target="nid_vae:VaeStatementEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2610,7 +2633,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf120" source="nid_vae:ReflexiveRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf121" source="nid_vae:ReflexiveRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2633,7 +2656,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf121" source="nid_vae:ReflexiveRelationStatement" target="nid_obo:NCIT_C75918">
+    <edge id="eid_rdfs:subClassOf122" source="nid_vae:ReflexiveRelationStatement" target="nid_obo:NCIT_C75918">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2656,7 +2679,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf122" source="nid_vae:Value" target="nid_vae:ValueConcept">
+    <edge id="eid_rdfs:subClassOf123" source="nid_vae:Value" target="nid_vae:ValueConcept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2679,7 +2702,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf123" source="nid_vae:OptimizedProperty" target="nid_vae:QuantitativeVaeProperty">
+    <edge id="eid_rdfs:subClassOf124" source="nid_vae:OptimizedProperty" target="nid_vae:QuantitativeVaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2690,7 +2713,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf124" source="nid_vae:OptimizedProperty" target="nid_vae:BooleanVaeProperty">
+    <edge id="eid_rdfs:subClassOf125" source="nid_vae:OptimizedProperty" target="nid_vae:BooleanVaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2701,7 +2724,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf125" source="nid_dul:Collection" target="nid_dul:SocialObject">
+    <edge id="eid_rdfs:subClassOf126" source="nid_dul:Collection" target="nid_dul:SocialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2712,7 +2735,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf126" source="nid_schema:FrameOccurrence" target="nid_dul:Situation">
+    <edge id="eid_rdfs:subClassOf127" source="nid_schema:FrameOccurrence" target="nid_dul:Situation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2723,7 +2746,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf127" source="nid_vae:QuantitativeVaeProperty" target="nid_vae:VaeProperty">
+    <edge id="eid_rdfs:subClassOf128" source="nid_vae:QuantitativeVaeProperty" target="nid_vae:VaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2734,7 +2757,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf128" source="nid_obo:NCIT_C75920" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf129" source="nid_obo:NCIT_C75920" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2745,7 +2768,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf129" source="nid_bhv:Value" target="nid_vae:Value">
+    <edge id="eid_rdfs:subClassOf130" source="nid_bhv:Value" target="nid_vae:Value">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2768,7 +2791,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf130" source="nid_vae:QuantitativePromotionDemotion" target="nid_vae:QuantitativeVaeProperty">
+    <edge id="eid_rdfs:subClassOf131" source="nid_vae:QuantitativePromotionDemotion" target="nid_vae:QuantitativeVaeProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2779,7 +2802,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf131" source="nid_vae:QuantitativePromotionDemotion" target="nid_vae:PromotionDemotion">
+    <edge id="eid_rdfs:subClassOf132" source="nid_vae:QuantitativePromotionDemotion" target="nid_vae:PromotionDemotion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2790,7 +2813,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf132" source="nid_dul:Theory" target="nid_dul:Description">
+    <edge id="eid_rdfs:subClassOf133" source="nid_dul:Theory" target="nid_dul:Description">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2801,7 +2824,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf133" source="nid_obo:NCIT_C75918" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf134" source="nid_obo:NCIT_C75918" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2824,7 +2847,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf134" source="nid_bhv:Personal" target="nid_bhv:Security">
+    <edge id="eid_rdfs:subClassOf135" source="nid_bhv:Personal" target="nid_bhv:Security">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2847,7 +2870,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf135" source="nid_bhv:Dependability" target="nid_bhv:Benevolence">
+    <edge id="eid_rdfs:subClassOf136" source="nid_bhv:Dependability" target="nid_bhv:Benevolence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2870,7 +2893,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf136" source="nid_vae:ImportanceRelation" target="nid_vae:ValueComparisonStatement">
+    <edge id="eid_rdfs:subClassOf137" source="nid_vae:ImportanceRelation" target="nid_vae:ValueComparisonStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2881,7 +2904,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf137" source="nid_vae:ImportanceRelation" target="nid_vae:TransitiveRelationStatement">
+    <edge id="eid_rdfs:subClassOf138" source="nid_vae:ImportanceRelation" target="nid_vae:TransitiveRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2892,7 +2915,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf138" source="nid_vae:ImportanceRelation" target="nid_vae:IrreflexiveRelationStatement">
+    <edge id="eid_rdfs:subClassOf139" source="nid_vae:ImportanceRelation" target="nid_vae:IrreflexiveRelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2915,7 +2938,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf139" source="nid_vae:ReverseFunctionalRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf140" source="nid_vae:ReverseFunctionalRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2938,7 +2961,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf140" source="nid_vae:ReverseFunctionalRelationStatement" target="nid_obo:NCIT_C75925">
+    <edge id="eid_rdfs:subClassOf141" source="nid_vae:ReverseFunctionalRelationStatement" target="nid_obo:NCIT_C75925">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2949,7 +2972,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf141" source="nid_vae:ValueConcept" target="nid_schema:ConceptualFrame">
+    <edge id="eid_rdfs:subClassOf142" source="nid_vae:ValueConcept" target="nid_schema:ConceptualFrame">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2960,7 +2983,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf142" source="nid_vae:ValueConcept" target="nid_vae:VaeConditioningEntity">
+    <edge id="eid_rdfs:subClassOf143" source="nid_vae:ValueConcept" target="nid_vae:VaeConditioningEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2983,7 +3006,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf143" source="nid_bhv:Hedonism" target="nid_bhv:SelfEnhancement">
+    <edge id="eid_rdfs:subClassOf144" source="nid_bhv:Hedonism" target="nid_bhv:SelfEnhancement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2994,7 +3017,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf144" source="nid_bhv:Hedonism" target="nid_bhv:OpennessToChange">
+    <edge id="eid_rdfs:subClassOf145" source="nid_bhv:Hedonism" target="nid_bhv:OpennessToChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3017,7 +3040,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf145" source="nid_vae:ActionOnState" target="nid_vae:Outcome">
+    <edge id="eid_rdfs:subClassOf146" source="nid_vae:ActionOnState" target="nid_vae:Outcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3040,7 +3063,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf146" source="nid_vae:AlignmentSituation" target="nid_vae:VaeSituation">
+    <edge id="eid_rdfs:subClassOf147" source="nid_vae:AlignmentSituation" target="nid_vae:VaeSituation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3063,7 +3086,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf147" source="nid_bhv:PersonalFocus" target="nid_bhv:Focus">
+    <edge id="eid_rdfs:subClassOf148" source="nid_bhv:PersonalFocus" target="nid_bhv:Focus">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3074,7 +3097,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf148" source="nid_bhv:SelfDirection" target="nid_bhv:OpennessToChange">
+    <edge id="eid_rdfs:subClassOf149" source="nid_bhv:SelfDirection" target="nid_bhv:OpennessToChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3085,7 +3108,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf149" source="nid_obo:NCIT_C75925" target="nid_obo:NCIT_C75915">
+    <edge id="eid_rdfs:subClassOf150" source="nid_obo:NCIT_C75925" target="nid_obo:NCIT_C75915">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3108,7 +3131,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf150" source="nid_vae:AlignmentStatement" target="nid_vae:VaeStatement">
+    <edge id="eid_rdfs:subClassOf151" source="nid_vae:AlignmentStatement" target="nid_vae:VaeStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3131,7 +3154,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf151" source="nid_vae:ActingAgent" target="nid_vae:Agent">
+    <edge id="eid_rdfs:subClassOf152" source="nid_vae:ActingAgent" target="nid_vae:Agent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3154,7 +3177,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf152" source="nid_bhv:Humility" target="nid_bhv:SelfTrascendence">
+    <edge id="eid_rdfs:subClassOf153" source="nid_bhv:Humility" target="nid_bhv:SelfTrascendence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3165,7 +3188,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf153" source="nid_bhv:Humility" target="nid_bhv:Conservation">
+    <edge id="eid_rdfs:subClassOf154" source="nid_bhv:Humility" target="nid_bhv:Conservation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3188,7 +3211,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf154" source="nid_vae:SymmetricRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf155" source="nid_vae:SymmetricRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3199,7 +3222,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf155" source="nid_vae:SymmetricRelationStatement" target="nid_obo:NCIT_C75919">
+    <edge id="eid_rdfs:subClassOf156" source="nid_vae:SymmetricRelationStatement" target="nid_obo:NCIT_C75919">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3210,7 +3233,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf156" source="nid_dul:Agent" target="nid_dul:Object">
+    <edge id="eid_rdfs:subClassOf157" source="nid_dul:Agent" target="nid_dul:Object">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3221,7 +3244,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf157" source="nid_vae:IntransitiveRelationStatement" target="nid_vae:RelationStatement">
+    <edge id="eid_rdfs:subClassOf158" source="nid_vae:IntransitiveRelationStatement" target="nid_vae:RelationStatement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

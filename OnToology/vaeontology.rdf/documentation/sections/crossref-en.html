@@ -104,6 +104,10 @@ This section provides details for each class and property defined by VAE Ontolog
             title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection">Collection</a>
       </li>
       <li>
+         <a href="#ComparisonStatement"
+            title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/framester/schema/ConceptualFrame"
             title="https://w3id.org/framester/schema/ConceptualFrame">
             <span>conceptual frame</span>
@@ -1329,6 +1333,57 @@ A collection is neither an aggregate of its member entities (see e.g. ObjectAggr
          <dd>
             <a href="#http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"
                title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf">is member of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ComparisonStatement">
+      <h3>Comparison Statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/vaeontology#ComparisonStatement</p>
+      <div class="comment">
+         <span class="markdown">Any kind of comparison proposed by an Agent (or that the Agent believes in) between two VaeEntities, under some context. Note that the agent can support their preferences with a property for the superior and inferior cases.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RelationStatement"
+               title="https://w3id.org/def/vaeontology#RelationStatement">Relation Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VaePropertyStatement"
+               title="https://w3id.org/def/vaeontology#VaePropertyStatement">Vae Property Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ValueComparisonStatement"
+               title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#comparisonHasInferior"
+               title="https://w3id.org/def/vaeontology#comparisonHasInferior">comparison has inferior</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#comparisonHasSuperior"
+               title="https://w3id.org/def/vaeontology#comparisonHasSuperior">comparison has superior</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfInferior"
+               title="https://w3id.org/def/vaeontology#hasPropertyOfInferior">has property of inferior</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfSuperior"
+               title="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">has property of superior</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPropertyOfSuperiorOf"
+               title="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf">Is property of superior of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inferiorInComparison"
+               title="https://w3id.org/def/vaeontology#inferiorInComparison">inferior in comparison</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyOfInferiorOf"
+               title="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">is property of inferior of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#superiorInComparison"
+               title="https://w3id.org/def/vaeontology#superiorInComparison">superior in comparison</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -3190,6 +3245,8 @@ For this reason, in this ontology version of DOLCE, both events and situations a
          <dd>
             <a href="#AsymmetricRelationStatement"
                title="https://w3id.org/def/vaeontology#AsymmetricRelationStatement">Asymmetric Relation Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ComparisonStatement"
+               title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#FunctionalRelationStatement"
                title="https://w3id.org/def/vaeontology#FunctionalRelationStatement">Functional Relation Statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#IntransitiveRelationStatement"
@@ -3204,8 +3261,6 @@ For this reason, in this ontology version of DOLCE, both events and situations a
                title="https://w3id.org/def/vaeontology#SymmetricRelationStatement">Symmetric Relation Statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#TransitiveRelationStatement"
                title="https://w3id.org/def/vaeontology#TransitiveRelationStatement">Transitive Relation Statement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ValueComparisonStatement"
-               title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -4367,6 +4422,14 @@ This class can also be used to act as 'naturalized reifications' of logical theo
             <sup class="type-c" title="class">c</sup>, <a href="#VaeSituation" title="https://w3id.org/def/vaeontology#VaeSituation">Vae Statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#comparisonHasInferior"
+               title="https://w3id.org/def/vaeontology#comparisonHasInferior">comparison has inferior</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#comparisonHasSuperior"
+               title="https://w3id.org/def/vaeontology#comparisonHasSuperior">comparison has superior</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="VaeProperty">
@@ -4416,6 +4479,10 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          <dd>
             <a href="#hasRelationWithProperty"
                title="https://w3id.org/def/vaeontology#hasRelationWithProperty">has Relation With Property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfInferior"
+               title="https://w3id.org/def/vaeontology#hasPropertyOfInferior">has property of inferior</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfSuperior"
+               title="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">has property of superior</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isOptimizationOfProperty"
                title="https://w3id.org/def/vaeontology#isOptimizationOfProperty">is optimization of property</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#expressesProperty"
@@ -4458,9 +4525,9 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#VaeStatement" title="https://w3id.org/def/vaeontology#VaeStatement">Vae Statement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ValueComparisonStatement"
-               title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+            <a href="#ComparisonStatement"
+               title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VaeStatement" title="https://w3id.org/def/vaeontology#VaeStatement">Vae Statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -4692,10 +4759,8 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#RelationStatement"
-               title="https://w3id.org/def/vaeontology#RelationStatement">Relation Statement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#VaePropertyStatement"
-               title="https://w3id.org/def/vaeontology#VaePropertyStatement">Vae Property Statement</a>
+            <a href="#ComparisonStatement"
+               title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -4704,30 +4769,6 @@ This class can also be used to act as 'naturalized reifications' of logical theo
             <sup class="type-c" title="class">c</sup>, <a href="#ImportanceRelation"
                title="https://w3id.org/def/vaeontology#ImportanceRelation">Importance Relation</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#comparisonHasInferior"
-               title="https://w3id.org/def/vaeontology#comparisonHasInferior">comparison has inferior</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#comparisonHasSuperior"
-               title="https://w3id.org/def/vaeontology#comparisonHasSuperior">comparison has superior</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfInferior"
-               title="https://w3id.org/def/vaeontology#hasPropertyOfInferior">has property of inferior</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfSuperior"
-               title="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">has property of superior</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#isPropertyOfSuperiorOf"
-               title="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf">Is property of superior of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inferiorInComparison"
-               title="https://w3id.org/def/vaeontology#inferiorInComparison">inferior in comparison</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyOfInferiorOf"
-               title="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">is property of inferior of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#superiorInComparison"
-               title="https://w3id.org/def/vaeontology#superiorInComparison">superior in comparison</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -4786,10 +4827,6 @@ This class can also be used to act as 'naturalized reifications' of logical theo
          <dt>is in range of</dt>
          <dd>
             <a href="#abidesByValue" title="https://w3id.org/def/vaeontology#abidesByValue">abides by value</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#comparisonHasInferior"
-               title="https://w3id.org/def/vaeontology#comparisonHasInferior">comparison has inferior</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#comparisonHasSuperior"
-               title="https://w3id.org/def/vaeontology#comparisonHasSuperior">comparison has superior</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#reflectsValue" title="https://w3id.org/def/vaeontology#reflectsValue">reflects value</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -4858,14 +4895,6 @@ This class can also be used to act as 'naturalized reifications' of logical theo
                title="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf">Is property of superior of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyOfInferiorOf"
                title="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">is property of inferior of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasPropertyOfInferior"
-               title="https://w3id.org/def/vaeontology#hasPropertyOfInferior">has property of inferior</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyOfSuperior"
-               title="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">has property of superior</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -5484,7 +5513,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#comparisonHasInferior</p>
       <div class="comment">
-         <span class="markdown">Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement).</span>
+         <span class="markdown">Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement).</span>
       </div>
       <div class="description">
          <dl>
@@ -5496,13 +5525,13 @@ This class can also be used to act as 'naturalized reifications' of logical theo
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueConcept" title="https://w3id.org/def/vaeontology#ValueConcept">Value Concept</a>
+               <a href="#VaeEntity" title="https://w3id.org/def/vaeontology#VaeEntity">Vae Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -5522,7 +5551,7 @@ This class can also be used to act as 'naturalized reifications' of logical theo
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#comparisonHasSuperior</p>
       <div class="comment">
-         <span class="markdown">Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement).</span>
+         <span class="markdown">Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement).</span>
       </div>
       <div class="description">
          <dl>
@@ -5534,13 +5563,13 @@ This class can also be used to act as 'naturalized reifications' of logical theo
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueConcept" title="https://w3id.org/def/vaeontology#ValueConcept">Value Concept</a>
+               <a href="#VaeEntity" title="https://w3id.org/def/vaeontology#VaeEntity">Vae Object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6858,7 +6887,7 @@ E.g., 'A precondition to declare war against a foreign country is claiming to fi
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#hasPropertyOfInferior</p>
       <div class="comment">
-         <span class="markdown">Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</span>
+         <span class="markdown">Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</span>
       </div>
       <div class="description">
          <dl>
@@ -6870,13 +6899,13 @@ E.g., 'A precondition to declare war against a foreign country is claiming to fi
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueProperty" title="https://w3id.org/def/vaeontology#ValueProperty">Value Property</a>
+               <a href="#VaeProperty" title="https://w3id.org/def/vaeontology#VaeProperty">Vae Property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6896,7 +6925,7 @@ E.g., 'A precondition to declare war against a foreign country is claiming to fi
       <p>
          <strong>IRI:</strong> https://w3id.org/def/vaeontology#hasPropertyOfSuperior</p>
       <div class="comment">
-         <span class="markdown">Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</span>
+         <span class="markdown">Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</span>
       </div>
       <div class="description">
          <dl>
@@ -6908,13 +6937,13 @@ E.g., 'A precondition to declare war against a foreign country is claiming to fi
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueProperty" title="https://w3id.org/def/vaeontology#ValueProperty">Value Property</a>
+               <a href="#VaeProperty" title="https://w3id.org/def/vaeontology#VaeProperty">Vae Property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -7378,8 +7407,8 @@ E.g., 'A precondition to declare war against a foreign country is claiming to fi
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -8508,8 +8537,8 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -8546,8 +8575,8 @@ E.g., 'claiming to find nuclear weapons in a foreign country is a precondition t
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -9844,8 +9873,8 @@ Subproperties can be defined in order to distinguish the different uses.</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ValueComparisonStatement"
-                  title="https://w3id.org/def/vaeontology#ValueComparisonStatement">Value Comparison Statement</a>
+               <a href="#ComparisonStatement"
+                  title="https://w3id.org/def/vaeontology#ComparisonStatement">Comparison Statement</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>

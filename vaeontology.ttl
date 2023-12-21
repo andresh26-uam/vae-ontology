@@ -680,9 +680,9 @@ vae:abidesByValue rdf:type owl:ObjectProperty ;
 vae:comparisonHasInferior rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf vae:hasSecondElement ;
                           owl:inverseOf vae:inferiorInComparison ;
-                          rdfs:domain vae:ValueComparisonStatement ;
-                          rdfs:range vae:ValueConcept ;
-                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                          rdfs:domain vae:ComparisonStatement ;
+                          rdfs:range vae:VaeEntity ;
+                          rdfs:comment "Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement)." ;
                           rdfs:label "comparison has inferior" .
 
 
@@ -690,9 +690,9 @@ vae:comparisonHasInferior rdf:type owl:ObjectProperty ;
 vae:comparisonHasSuperior rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf vae:hasFirstElement ;
                           owl:inverseOf vae:superiorInComparison ;
-                          rdfs:domain vae:ValueComparisonStatement ;
-                          rdfs:range vae:ValueConcept ;
-                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
+                          rdfs:domain vae:ComparisonStatement ;
+                          rdfs:range vae:VaeEntity ;
+                          rdfs:comment "Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement)." ;
                           rdfs:label "comparison has superior" .
 
 
@@ -857,9 +857,9 @@ vae:hasPremise rdf:type owl:ObjectProperty ;
 vae:hasPropertyOfInferior rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf vae:expressesProperty ;
                           owl:inverseOf vae:isPropertyOfInferiorOf ;
-                          rdfs:domain vae:ValueComparisonStatement ;
-                          rdfs:range vae:ValueProperty ;
-                          rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
+                          rdfs:domain vae:ComparisonStatement ;
+                          rdfs:range vae:VaeProperty ;
+                          rdfs:comment "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
                           rdfs:label "has property of inferior" .
 
 
@@ -867,9 +867,9 @@ vae:hasPropertyOfInferior rdf:type owl:ObjectProperty ;
 vae:hasPropertyOfSuperior rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf vae:expressesProperty ;
                           owl:inverseOf vae:isPropertyOfSuperiorOf ;
-                          rdfs:domain vae:ValueComparisonStatement ;
-                          rdfs:range vae:ValueProperty ;
-                          rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
+                          rdfs:domain vae:ComparisonStatement ;
+                          rdfs:range vae:VaeProperty ;
+                          rdfs:comment "Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
                           rdfs:label "has property of superior" .
 
 
@@ -947,7 +947,7 @@ vae:hasUser rdf:type owl:ObjectProperty ;
 vae:inferiorInComparison rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf vae:isSecondElementOfRelation ;
                          rdfs:domain vae:ValueConcept ;
-                         rdfs:range vae:ValueComparisonStatement ;
+                         rdfs:range vae:ComparisonStatement ;
                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)." ;
                          rdfs:label "inferior in comparison" .
 
@@ -1103,7 +1103,7 @@ vae:isPresentInStatement rdf:type owl:ObjectProperty ;
 vae:isPropertyOfInferiorOf rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf vae:propertyExpressedAt ;
                            rdfs:domain vae:ValueProperty ;
-                           rdfs:range vae:ValueComparisonStatement ;
+                           rdfs:range vae:ComparisonStatement ;
                            rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation." ;
                            rdfs:label "is property of inferior of" .
 
@@ -1112,7 +1112,7 @@ vae:isPropertyOfInferiorOf rdf:type owl:ObjectProperty ;
 vae:isPropertyOfSuperiorOf rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf vae:propertyExpressedAt ;
                            rdfs:domain vae:ValueProperty ;
-                           rdfs:range vae:ValueComparisonStatement ;
+                           rdfs:range vae:ComparisonStatement ;
                            rdfs:comment "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation." ;
                            rdfs:label "Is property of superior of" .
 
@@ -1367,7 +1367,7 @@ vae:startsWithInputOutcome rdf:type owl:ObjectProperty ;
 vae:superiorInComparison rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf vae:isFirstElementOfRelation ;
                          rdfs:domain vae:ValueConcept ;
-                         rdfs:range vae:ValueComparisonStatement ;
+                         rdfs:range vae:ComparisonStatement ;
                          rdfs:comment "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)." ;
                          rdfs:label "superior in comparison" .
 
@@ -2214,6 +2214,30 @@ vae:BooleanVaeProperty rdf:type owl:Class ;
                        rdfs:label "Boolean Vae Property" .
 
 
+###  https://w3id.org/def/vaeontology#ComparisonStatement
+vae:ComparisonStatement rdf:type owl:Class ;
+                        rdfs:subClassOf vae:RelationStatement ,
+                                        vae:VaePropertyStatement ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty vae:comparisonHasInferior ;
+                                          owl:someValuesFrom vae:VaeEntity
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty vae:comparisonHasSuperior ;
+                                          owl:someValuesFrom vae:VaeEntity
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty vae:hasPropertyOfInferior ;
+                                          owl:allValuesFrom vae:VaeProperty
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty vae:hasPropertyOfSuperior ;
+                                          owl:allValuesFrom vae:VaeProperty
+                                        ] ;
+                        rdfs:comment "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two VaeEntities, under some context. Note that the agent can support their preferences with a property for the superior and inferior cases." ;
+                        rdfs:label "Comparison Statement" .
+
+
 ###  https://w3id.org/def/vaeontology#Context
 vae:Context rdf:type owl:Class ;
             rdfs:subClassOf dul:Situation ;
@@ -2700,15 +2724,22 @@ vae:Value rdf:type owl:Class ;
 
 ###  https://w3id.org/def/vaeontology#ValueComparisonStatement
 vae:ValueComparisonStatement rdf:type owl:Class ;
-                             rdfs:subClassOf vae:RelationStatement ,
-                                             vae:VaePropertyStatement ,
+                             rdfs:subClassOf vae:ComparisonStatement ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty vae:comparisonHasInferior ;
-                                               owl:someValuesFrom vae:ValueConcept
+                                               owl:allValuesFrom vae:ValueConcept
                                              ] ,
                                              [ rdf:type owl:Restriction ;
                                                owl:onProperty vae:comparisonHasSuperior ;
-                                               owl:someValuesFrom vae:ValueConcept
+                                               owl:allValuesFrom vae:ValueConcept
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty vae:hasPropertyOfInferior ;
+                                               owl:allValuesFrom vae:ValueProperty
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty vae:hasPropertyOfSuperior ;
+                                               owl:allValuesFrom vae:ValueProperty
                                              ] ;
                              rdfs:comment "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two instances of ValueConcepts, under some context." ;
                              rdfs:label "Value Comparison Statement" .

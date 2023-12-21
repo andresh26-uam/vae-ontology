@@ -54,10 +54,6 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/def/vaeontology#composesComplexOutcome
-<https://w3id.org/def/vaeontology#composesComplexOutcome> rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/spice/SON/SchwartzValues#bibRef
 <https://w3id.org/spice/SON/SchwartzValues#bibRef> rdf:type owl:AnnotationProperty .
 
@@ -1495,16 +1491,16 @@ https://doi.org/10.1613/jair.1.13487""" .
 ###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1
 :taxSystemExecution1 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#MultiInputOutcome> ;
+                     <https://w3id.org/def/vaeontology#composedBySequence> :taxSystemPath1 ;
                      <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace ;
-                     <https://w3id.org/def/vaeontology#nextInputOutcome> :taxSystemExecution2 ;
-                     <https://w3id.org/def/vaeontology#composesComplexOutcome> :taxSystemPath1 .
+                     <https://w3id.org/def/vaeontology#nextInputOutcome> :taxSystemExecution2 .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2
 :taxSystemExecution2 rdf:type owl:NamedIndividual ,
                               <https://w3id.org/def/vaeontology#FinalInputOutcome> ;
-                     <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace ;
-                     <https://w3id.org/def/vaeontology#composesComplexOutcome> :taxSystemPath2 .
+                     <https://w3id.org/def/vaeontology#composedBySequence> :taxSystemPath2 ;
+                     <https://w3id.org/def/vaeontology#isInputOutcomeOf> :taxSystemTrace .
 
 
 ###  https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1

@@ -40,9 +40,6 @@
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/def/vaeontology#composesComplexOutcome
-<https://w3id.org/def/vaeontology#composesComplexOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # https://w3id.org/spice/SON/SchwartzValues#bibRef
 <https://w3id.org/spice/SON/SchwartzValues#bibRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -1328,15 +1325,15 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#MultiInputOutcome> .
+<https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <https://w3id.org/def/vaeontology#composedBySequence> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1> .
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <https://w3id.org/def/vaeontology#isInputOutcomeOf> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace> .
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <https://w3id.org/def/vaeontology#nextInputOutcome> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> .
-<https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution1> <https://w3id.org/def/vaeontology#composesComplexOutcome> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1> .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology#FinalInputOutcome> .
+<https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> <https://w3id.org/def/vaeontology#composedBySequence> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2> .
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> <https://w3id.org/def/vaeontology#isInputOutcomeOf> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemTrace> .
-<https://w3id.org/def/vaeontology_montes_sierra#taxSystemExecution2> <https://w3id.org/def/vaeontology#composesComplexOutcome> <https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath2> .
 # 
 # https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1
 <https://w3id.org/def/vaeontology_montes_sierra#taxSystemPath1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

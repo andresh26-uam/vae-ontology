@@ -1018,9 +1018,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasInferior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#inferiorInComparison"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
-        <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
+        <rdfs:comment>Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement).</rdfs:comment>
         <rdfs:label>comparison has inferior</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1032,9 +1032,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasSuperior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#superiorInComparison"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
-        <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
+        <rdfs:comment>Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement).</rdfs:comment>
         <rdfs:label>comparison has superior</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1267,9 +1267,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfInferior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
+        <rdfs:comment>Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</rdfs:comment>
         <rdfs:label>has property of inferior</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1281,9 +1281,9 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfSuperior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#expressesProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
+        <rdfs:comment>Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</rdfs:comment>
         <rdfs:label>has property of superior</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1393,7 +1393,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#inferiorInComparison">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isSecondElementOfRelation"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
         <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
         <rdfs:label>inferior in comparison</rdfs:label>
     </owl:ObjectProperty>
@@ -1617,7 +1617,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
         <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation.</rdfs:comment>
         <rdfs:label>is property of inferior of</rdfs:label>
     </owl:ObjectProperty>
@@ -1630,7 +1630,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
         <rdfs:comment>Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation.</rdfs:comment>
         <rdfs:label>Is property of superior of</rdfs:label>
     </owl:ObjectProperty>
@@ -1999,7 +1999,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#superiorInComparison">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isFirstElementOfRelation"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
         <rdfs:comment>Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement).</rdfs:comment>
         <rdfs:label>superior in comparison</rdfs:label>
     </owl:ObjectProperty>
@@ -3112,6 +3112,42 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
     
 
 
+    <!-- https://w3id.org/def/vaeontology#ComparisonStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ComparisonStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#comparisonHasInferior"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#comparisonHasSuperior"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyOfInferior"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyOfSuperior"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#VaeProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any kind of comparison proposed by an Agent (or that the Agent believes in) between two VaeEntities, under some context. Note that the agent can support their preferences with a property for the superior and inferior cases.</rdfs:comment>
+        <rdfs:label>Comparison Statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/vaeontology#Context -->
 
 
@@ -3826,18 +3862,29 @@ Criteria are those conditions that identify value-aligned or missaligned behavio
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology#ValueComparisonStatement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#RelationStatement"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#ComparisonStatement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#comparisonHasInferior"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#comparisonHasSuperior"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyOfInferior"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#hasPropertyOfSuperior"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/def/vaeontology#ValueProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Any kind of comparison proposed by an Agent (or that the Agent believes in) between two instances of ValueConcepts, under some context.</rdfs:comment>

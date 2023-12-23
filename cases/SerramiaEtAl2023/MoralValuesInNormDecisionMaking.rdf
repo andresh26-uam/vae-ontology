@@ -23,7 +23,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM"/>
-        <owl:imports rdf:resource="https://w3id.org/def/vaeontology"/>
+        <owl:imports rdf:resource="https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl"/>
         <dc:creator>Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022</dc:creator>
         <dc:description>Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Serramia, M. et al:  Moral Values in Norm Decision Making. In Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS &apos;18). IFAAMAS, 1294–1302. https://dl.acm.org/doi/10.5555/3237383.3237891
         </dc:description>

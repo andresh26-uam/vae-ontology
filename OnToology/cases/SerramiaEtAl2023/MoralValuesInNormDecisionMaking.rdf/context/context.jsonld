@@ -1,0 +1,579 @@
+{
+  "@context" : {
+    "isDefinedIn" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn",
+      "@type" : "@id"
+    },
+    "hasOptimizationRegion" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion",
+      "@type" : "@id"
+    },
+    "isAgentOfSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology#isAgentOfSystem",
+      "@type" : "@id"
+    },
+    "propertyExpressedAt" : {
+      "@id" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
+      "@type" : "@id"
+    },
+    "leftOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/leftOperand",
+      "@type" : "@id"
+    },
+    "Situation" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"
+    },
+    "NormNet" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormNet"
+    },
+    "SupportRateComponent" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent"
+    },
+    "comparisonHasInferior" : {
+      "@id" : "https://w3id.org/def/vaeontology#comparisonHasInferior",
+      "@type" : "@id"
+    },
+    "NormValueSupport" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"
+    },
+    "isSymmetricallyRelatedElementIn" : {
+      "@id" : "https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn",
+      "@type" : "@id"
+    },
+    "RedundantNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#RedundantNormSystem"
+    },
+    "hasConstituent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent",
+      "@type" : "@id"
+    },
+    "NormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem"
+    },
+    "isDiscardedForVS" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isDiscardedForVS",
+      "@type" : "@id"
+    },
+    "Substitutability" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Substitutability"
+    },
+    "NCIT_P366" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P366"
+    },
+    "madeByAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#madeByAgent",
+      "@type" : "@id"
+    },
+    "Duty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Duty"
+    },
+    "influencesOutcome" : {
+      "@id" : "https://w3id.org/def/vaeontology#influencesOutcome",
+      "@type" : "@id"
+    },
+    "isRelatedToConcept" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasExactSynonym" : {
+      "@id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+    },
+    "OptimizedProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#OptimizedProperty"
+    },
+    "UtilityBasedComparison" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison"
+    },
+    "describes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes",
+      "@type" : "@id"
+    },
+    "comparisonHasSuperior" : {
+      "@id" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
+      "@type" : "@id"
+    },
+    "satisfiesProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#satisfiesProperty",
+      "@type" : "@id"
+    },
+    "VisitorAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#VisitorAgent"
+    },
+    "RelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#RelationStatement"
+    },
+    "OptimizationProblem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem"
+    },
+    "Permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Permission"
+    },
+    "onEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#onEntity",
+      "@type" : "@id"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "NormSystemRepresentationPower" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower"
+    },
+    "SocialObject" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
+    },
+    "ConflictFreeNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem"
+    },
+    "TransitiveGeneralizationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#TransitiveGeneralizationStatement"
+    },
+    "Nothing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Nothing"
+    },
+    "hasPropertyOfInferior" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
+      "@type" : "@id"
+    },
+    "SoundNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem"
+    },
+    "hasSymmetricallyRelatedElement" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasSymmetricallyRelatedElement",
+      "@type" : "@id"
+    },
+    "NCIT_P384" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P384"
+    },
+    "hasAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasAgent",
+      "@type" : "@id"
+    },
+    "operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/operator",
+      "@type" : "@id"
+    },
+    "Context" : {
+      "@id" : "https://w3id.org/def/vaeontology#Context"
+    },
+    "DirectGeneralizationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#DirectGeneralizationStatement"
+    },
+    "hasDataValue" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Prohibition"
+    },
+    "ActingAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#ActingAgent"
+    },
+    "isProposedByAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology#isProposedByAgent",
+      "@type" : "@id"
+    },
+    "ValuePreferenceUtility" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility"
+    },
+    "NormSystemMaximumRepresentationPower" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower"
+    },
+    "hasPart" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"
+    },
+    "NormProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty"
+    },
+    "hasRelatedElement" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasRelatedElement",
+      "@type" : "@id"
+    },
+    "isRelatedElementIn" : {
+      "@id" : "https://w3id.org/def/vaeontology#isRelatedElementIn",
+      "@type" : "@id"
+    },
+    "isConstituentOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf",
+      "@type" : "@id"
+    },
+    "User" : {
+      "@id" : "https://w3id.org/def/vaeontology#User"
+    },
+    "consequence" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/consequence",
+      "@type" : "@id"
+    },
+    "QuantitativePromotionDemotion" : {
+      "@id" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"
+    },
+    "assigner" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assigner",
+      "@type" : "@id"
+    },
+    "isOptimizationRegionFor" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isOptimizationRegionFor",
+      "@type" : "@id"
+    },
+    "VaeStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeStatement"
+    },
+    "NCIT_P207" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P207"
+    },
+    "isMemberOf" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf",
+      "@type" : "@id"
+    },
+    "AggregationFunction" : {
+      "@id" : "https://w3id.org/def/vaeontology#AggregationFunction"
+    },
+    "Person" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"
+    },
+    "IntransitiveRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#IntransitiveRelationStatement"
+    },
+    "associatedWith" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
+      "@type" : "@id"
+    },
+    "PassengerAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PassengerAgent"
+    },
+    "containsNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#containsNormSystem",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "https://w3id.org/def/vaeontology#Agent"
+    },
+    "relationWith" : {
+      "@id" : "https://w3id.org/def/vaeontology#relationWith",
+      "@type" : "@id"
+    },
+    "BorderControlAction" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#BorderControlAction"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "SymmetricRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#SymmetricRelationStatement"
+    },
+    "NCIT_P106" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P106"
+    },
+    "Constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Constraint"
+    },
+    "NCIT_NHC0" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_NHC0"
+    },
+    "isPropertyOfInferiorOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPropertyOfInferiorOf",
+      "@type" : "@id"
+    },
+    "PartialOrderValueComparison" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison"
+    },
+    "hasBudget" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasBudget",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "value" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+    },
+    "AntiTransitiveRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement"
+    },
+    "hasMember" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember",
+      "@type" : "@id"
+    },
+    "hasFirstElement" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasFirstElement",
+      "@type" : "@id"
+    },
+    "NormCost" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost"
+    },
+    "ValueConcept" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueConcept"
+    },
+    "MaximumNormSystemProblem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem"
+    },
+    "Value" : {
+      "@id" : "https://w3id.org/def/vaeontology#Value"
+    },
+    "rightOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/rightOperand",
+      "@type" : "@id"
+    },
+    "Description" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"
+    },
+    "action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/action",
+      "@type" : "@id"
+    },
+    "discardsPartialOrdering" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#discardsPartialOrdering",
+      "@type" : "@id"
+    },
+    "permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/permission",
+      "@type" : "@id"
+    },
+    "obligation" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/obligation",
+      "@type" : "@id"
+    },
+    "GeneralizationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#GeneralizationStatement"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ConflictiveNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictiveNormSystem"
+    },
+    "measuredOnConditionedEntity" : {
+      "@id" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
+      "@type" : "@id"
+    },
+    "NormSystemMinimumCost" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "NormRepresentationPower" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower"
+    },
+    "Parameter" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "acceptsPartialOrdering" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#acceptsPartialOrdering",
+      "@type" : "@id"
+    },
+    "VaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaeProperty"
+    },
+    "IrreflexiveRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#IrreflexiveRelationStatement"
+    },
+    "expressesProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#expressesProperty",
+      "@type" : "@id"
+    },
+    "VaePropertyStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#VaePropertyStatement"
+    },
+    "ValueSupportNormComparison" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison"
+    },
+    "NCIT_P378" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P378"
+    },
+    "NCIT_P108" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P108"
+    },
+    "Exclusivity" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Exclusivity"
+    },
+    "Norm" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"
+    },
+    "Rule" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Rule"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Theory" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"
+    },
+    "assignee" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assignee",
+      "@type" : "@id"
+    },
+    "hasParticipant" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
+      "@type" : "@id"
+    },
+    "Generalization" : {
+      "@id" : "https://w3id.org/def/vaeontology#Generalization"
+    },
+    "ValueComparisonStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#ValueComparisonStatement"
+    },
+    "minQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+    },
+    "target" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/target",
+      "@type" : "@id"
+    },
+    "hasRelationWithProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasRelationWithProperty",
+      "@type" : "@id"
+    },
+    "isSubsetOfNormNet" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isSubsetOfNormNet",
+      "@type" : "@id"
+    },
+    "duty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/duty",
+      "@type" : "@id"
+    },
+    "bibRef" : {
+      "@id" : "https://w3id.org/spice/SON/SchwartzValues#bibRef"
+    },
+    "NonRedundantNormSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem"
+    },
+    "hasParameterDataValue" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "NormSystemProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty"
+    },
+    "Entity" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
+    },
+    "ValueSystem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem"
+    },
+    "isRegionFor" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor",
+      "@type" : "@id"
+    },
+    "isNotDiscardedForVS" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isNotDiscardedForVS",
+      "@type" : "@id"
+    },
+    "QuantitativeVaeProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#QuantitativeVaeProperty"
+    },
+    "NormSystemCost" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "reflectsValue" : {
+      "@id" : "https://w3id.org/def/vaeontology#reflectsValue",
+      "@type" : "@id"
+    },
+    "remedy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/remedy",
+      "@type" : "@id"
+    },
+    "AgentStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AgentStatement"
+    },
+    "hasSetting" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
+      "@type" : "@id"
+    },
+    "NCIT_P383" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_P383"
+    },
+    "System" : {
+      "@id" : "https://w3id.org/def/vaeontology#System"
+    },
+    "proposesStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#proposesStatement",
+      "@type" : "@id"
+    },
+    "Criterion" : {
+      "@id" : "https://w3id.org/def/vaeontology#Criterion"
+    },
+    "hasSecondElement" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasSecondElement",
+      "@type" : "@id"
+    },
+    "hasRegion" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "https://w3id.org/def/vaeontology#Action"
+    },
+    "isPropertyOfSuperiorOf" : {
+      "@id" : "https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"
+    },
+    "NormSystemMaximumValueSupport" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport"
+    },
+    "prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/prohibition",
+      "@type" : "@id"
+    },
+    "isOptimizationOfProperty" : {
+      "@id" : "https://w3id.org/def/vaeontology#isOptimizationOfProperty",
+      "@type" : "@id"
+    },
+    "AntiSymmetricRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement"
+    },
+    "TransitiveRelationStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#TransitiveRelationStatement"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "ComparisonStatement" : {
+      "@id" : "https://w3id.org/def/vaeontology#ComparisonStatement"
+    },
+    "ValueBasedNormOptimizationProblem" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem"
+    },
+    "LocalAgent" : {
+      "@id" : "https://w3id.org/def/vaeontology_moral_values_in_norm_DM#LocalAgent"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy",
+      "@type" : "@id"
+    },
+    "constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/constraint",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"
+    },
+    "interpretationOn" : {
+      "@id" : "https://w3id.org/def/vaeontology#interpretationOn",
+      "@type" : "@id"
+    },
+    "hasPropertyOfSuperior" : {
+      "@id" : "https://w3id.org/def/vaeontology#hasPropertyOfSuperior",
+      "@type" : "@id"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}

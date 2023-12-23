@@ -3,6 +3,7 @@
      xml:base="https://w3id.org/def/vaeontology_moral_values_in_norm_DM"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:mod="https://w3id.org/mod#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,7 +23,7 @@
      xmlns:vaeontology_moral_values_in_norm_DM="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#">
     <owl:Ontology rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM">
         <owl:versionIRI rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM"/>
-        <owl:imports rdf:resource="https://w3id.org/def/vaeontology"/>
+        <owl:imports rdf:resource="https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl"/>
         <dc:creator>Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022</dc:creator>
         <dc:description>Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Serramia, M. et al:  Moral Values in Norm Decision Making. In Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS &apos;18). IFAAMAS, 1294–1302. https://dl.acm.org/doi/10.5555/3237383.3237891
         </dc:description>
@@ -112,41 +113,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
 
@@ -161,185 +127,10 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#definition -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/action -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/action"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/assignee -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/assignee"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/assigner -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/assigner"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/constraint -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/constraint"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/leftOperand -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/leftOperand"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/operator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/operator"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/rightOperand -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/rightOperand"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/target -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/odrl/2/target"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasAgent -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#hasAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#influencesOutcome -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#influencesOutcome"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#interpretationOn -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#interpretationOn"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isAgentOfSystem -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#isAgentOfSystem"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isPropertyOfInferiorOf -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfInferiorOf"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#isProposedByAgent -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#isProposedByAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#madeByAgent -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#madeByAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#propertyExpressedAt -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#proposesStatement -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#proposesStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#reflectsValue -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vaeontology#reflectsValue"/>
-    
-
-
-    <!-- https://w3id.org/spice/SON/SchwartzValues#bibRef -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/spice/SON/SchwartzValues#bibRef"/>
     
 
 
@@ -362,20 +153,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
 
 
@@ -383,45 +160,10 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn -->
 
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor"/>
     
 
 
@@ -439,13 +181,6 @@
         <rdfs:label xml:lang="en">is related to concept</rdfs:label>
         <rdfs:label xml:lang="it">è associato al concetto</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#differentFrom -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#differentFrom"/>
     
 
 
@@ -509,18 +244,18 @@
     <!-- https://w3id.org/def/vaeontology#comparisonHasInferior -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasInferior">
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#comparisonHasInferior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasSecondElement"/>
-    </owl:ObjectProperty>
+    </rdf:Description>
     
 
 
     <!-- https://w3id.org/def/vaeontology#comparisonHasSuperior -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#comparisonHasSuperior">
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#comparisonHasSuperior">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#hasFirstElement"/>
-    </owl:ObjectProperty>
+    </rdf:Description>
     
 
 
@@ -536,20 +271,6 @@
     
 
 
-    <!-- https://w3id.org/def/vaeontology#hasPropertyOfInferior -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfInferior"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasPropertyOfSuperior -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasPropertyOfSuperior"/>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#hasRelatedElement -->
 
 
@@ -558,13 +279,6 @@
         <owl:inverseOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#hasRelationWithProperty -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#hasRelationWithProperty"/>
     
 
 
@@ -606,13 +320,6 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/vaeontology#isRelatedElementIn"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#satisfiesProperty -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/vaeontology#satisfiesProperty"/>
     
 
 
@@ -731,13 +438,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue -->
 
 
@@ -778,104 +478,6 @@ Ordering on subparameters can be created by using or specializing the object pro
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error10 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error10"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error11 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error11"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error12 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error12"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error13 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error13"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error3 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error4 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error5 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error5"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error6 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error6"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error7 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error7"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error8 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error8"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error9 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error9"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
 
 
@@ -903,66 +505,10 @@ The classifies relation relates Concept(s) to Entity(s) at some TimeInterval</rd
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter -->
 
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
-    
-
-
-    <!-- http://www.w3.org/ns/odrl/2/Constraint -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Constraint"/>
     
 
 
@@ -1005,201 +551,12 @@ The classifies relation relates Concept(s) to Entity(s) at some TimeInterval</rd
     
 
 
-    <!-- http://www.w3.org/ns/odrl/2/Rule -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#ActingAgent -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ActingAgent"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Action -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Action"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#AgentStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AgentStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#AggregationFunction -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AggregationFunction"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#ComparisonStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ComparisonStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Context -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Context"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Criterion -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Criterion"/>
-    
-
-
     <!-- https://w3id.org/def/vaeontology#Generalization -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Generalization">
+    <rdf:Description rdf:about="https://w3id.org/def/vaeontology#Generalization">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#GeneralizationStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#IntransitiveRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#IntransitiveRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#IrreflexiveRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#IrreflexiveRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Norm -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Norm"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#OptimizedProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#OptimizedProperty"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#QuantitativePromotionDemotion -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#QuantitativeVaeProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#RelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#RelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#SymmetricRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#SymmetricRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#System -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#System"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#TransitiveRelationStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#TransitiveRelationStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#User -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#User"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#VaeProperty -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaeProperty"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#VaePropertyStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaePropertyStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#VaeStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#VaeStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#Value -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#Value"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#ValueComparisonStatement -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ValueComparisonStatement"/>
-    
-
-
-    <!-- https://w3id.org/def/vaeontology#ValueConcept -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/vaeontology#ValueConcept"/>
+    </rdf:Description>
     
 
 
@@ -1344,10 +701,22 @@ The classifies relation relates Concept(s) to Entity(s) at some TimeInterval</rd
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error7"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error8"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#Norm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/odrl/2/assignee"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/odrl/2/action"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"/>
@@ -1366,9 +735,15 @@ The classifies relation relates Concept(s) to Entity(s) at some TimeInterval</rd
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&quot;... we cannot ignore the fact that norm deployment has associated costs and that the expenses derived from imposing norms should be bounded by the available budget. Norm costs may represent monetary expenses derived from regulatory processes—such as norm establishment or norm enforcement—as well as non-monetary aspects—such as social implications or political correctness—as long as they can be somehow quantified. In any case, we intend to minimise incurred costs while maximizing norm representation.&quot;</rdfs:comment>
         <rdfs:label>Norm Cost</rdfs:label>
     </owl:Class>
@@ -1410,9 +785,15 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error11"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&quot;Formally, we consider a representation power function, r : N → R to be a linear function that computes a norm’s representation power: a real value that encapsulates the fact that a norm cannot only represent itself but also all the norms it generalises. Besides linearity, the only condition that we impose on r is that r(ni ) ≤ r(nj) for each nj ∈ A(ni).&quot;</rdfs:comment>
         <rdfs:comment>The restriction about generalization is implemented in SWRL rules. Linearity cannot be tested, however.</rdfs:comment>
         <rdfs:label>Norm Cost</rdfs:label>
@@ -1456,9 +837,15 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error6"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&quot;Similarly, we assume that the cost of a norm system can be obtained by adding the individual costs ofits norms, namely cost(Ω) = ni ∈ Ω c(ni), where c(ni) stands for the cost of norm ni.&quot;</rdfs:comment>
         <rdfs:label>NormSystemRepresentationPower</rdfs:label>
     </owl:Class>
@@ -1469,7 +856,6 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error13"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#OptimizedProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower"/>
         <rdfs:subClassOf>
@@ -1484,6 +870,13 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Property representing the fact that the related NormSystem has a maximum representation power in some MaximumNormSystemProblem</rdfs:comment>
         <rdfs:label>Norm System Maximum Representation Power</rdfs:label>
     </owl:Class>
@@ -1494,7 +887,6 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#OptimizedProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
         <rdfs:subClassOf>
@@ -1509,8 +901,12 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
                             <rdf:Description rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem"/>
+                            </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -1520,6 +916,13 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Property representing the fact that the related NormSystem has a maximum representation power in some MaximumNormSystemProblem</rdfs:comment>
@@ -1532,7 +935,6 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error10"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#OptimizedProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost"/>
         <rdfs:subClassOf>
@@ -1545,6 +947,13 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#measuredOnConditionedEntity"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#propertyExpressedAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Property representing the fact that the related NormSystem has a minimum cost in some MaximumNormSystemProblem</rdfs:comment>
@@ -1574,9 +983,15 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error9"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativeVaeProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&quot;[...] the representation power of a normative system Ω can be readily obtained by adding the representation power of its norms, namely ρ(Ω) = n∈Ω r(n)&quot;</rdfs:comment>
         <rdfs:label>NormSystemRepresentationPower</rdfs:label>
     </owl:Class>
@@ -1702,8 +1117,14 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error5"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#relationWith"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
@@ -1765,8 +1186,14 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1775,9 +1202,15 @@ and Rx ∩ Rs = ∅.&quot;</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error12"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#AggregationFunction"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/vaeontology#QuantitativePromotionDemotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/vaeontology#relationWith"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/vaeontology#ValueConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>&quot;Using the DAG value structure, we define the [...] recursive
 utility function to calculate the preference utility of each value&quot;</rdfs:comment>
         <rdfs:label>Value Preference Utility</rdfs:label>
@@ -1868,14 +1301,14 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1">
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Permission"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"/>
-        <DUL:isMemberOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;n1 : Permission(all_passengers, cross_border)&quot;</rdfs:comment>
+        <DUL:isMemberOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
         <odrl:action rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#crossBorder"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
+        <rdfs:comment>&quot;n1 : Permission(all_passengers, cross_border)&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1887,12 +1320,12 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Duty"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;n2 : Obligation(all_passengers, register_passport)&quot;</rdfs:comment>
         <odrl:action rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#registerPassport"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
+        <rdfs:comment>&quot;n2 : Obligation(all_passengers, register_passport)&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1904,12 +1337,12 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Duty"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;n3: Obligation(all_passengers, fulfil_form)&quot;</rdfs:comment>
         <odrl:action rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#fulfilForm"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
+        <rdfs:comment>&quot;n3: Obligation(all_passengers, fulfil_form)&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1920,13 +1353,13 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4">
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Duty"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"/>
-        <DUL:isMemberOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;n4 : Obligation(locals, fulfil_form)&quot;</rdfs:comment>
+        <DUL:isMemberOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
+        <rdfs:comment>&quot;n4 : Obligation(locals, fulfil_form)&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1938,11 +1371,11 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
         <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Duty"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;n5 : Obligation(visitors, fulfil_form)&quot;</rdfs:comment>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
+        <rdfs:comment>&quot;n5 : Obligation(visitors, fulfil_form)&quot;</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1983,10 +1416,10 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">26.0</rdf:value>
         <vaeontology:isOptimizationOfProperty rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costStatementOfNormSystemExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">26.0</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2096,10 +1529,10 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem"/>
-        <hasOptimizationRegion rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample"/>
-        <rdfs:comment>Example of a Maximum Norm System Problem instance with the example norms in Serramia et al.</rdfs:comment>
         <vaeontology:expressesProperty rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample"/>
         <vaeontology:expressesProperty rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample"/>
+        <hasOptimizationRegion rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample"/>
+        <rdfs:comment>Example of a Maximum Norm System Problem instance with the example norms in Serramia et al.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2118,8 +1551,8 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2129,8 +1562,8 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2140,8 +1573,8 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2151,8 +1584,8 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2162,8 +1595,8 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2180,12 +1613,12 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#exclusivityn1n2"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#transitiveGeneralizations"/>
+        <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
+        <vaeontology:isProposedByAgent rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <containsNormSystem rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
         <containsNormSystem rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive"/>
         <containsNormSystem rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant"/>
-        <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
         <rdfs:comment>&quot;Figure 1 illustrates an example of a norm net that includes some norms (rules) of border control at an international airport. Norms are depicted as circles labeled as n1, . . . , n5 respectively.&quot;</rdfs:comment>
-        <vaeontology:isProposedByAgent rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
     </owl:NamedIndividual>
     
 
@@ -2197,9 +1630,6 @@ utility function to calculate the preference utility of each value&quot;</rdfs:c
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem"/>
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>&quot;[...] Hence, considering these
-restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:comment>
-        <rdfs:comment>Although labeled as NormSystem, the Pellet reasoner using SWRL + OWL should be able to infer it is a SoundNormSystem, of the normNetExample.</rdfs:comment>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
@@ -2208,6 +1638,9 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
         <vaeontology:influencesOutcome rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#fulfilForm"/>
         <vaeontology:influencesOutcome rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#registerPassport"/>
         <vaeontology:reflectsValue rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample"/>
+        <rdfs:comment>&quot;[...] Hence, considering these
+restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:comment>
+        <rdfs:comment>Although labeled as NormSystem, the Pellet reasoner using SWRL + OWL should be able to infer it is a SoundNormSystem, of the normNetExample.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2220,12 +1653,12 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>Example of a norm system that is not sound. The ontology should label it as Conflictive using Pellet reasoner with the available SWRL rules.</rdfs:comment>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
         <vaeontology:reflectsValue rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample"/>
+        <rdfs:comment>Example of a norm system that is not sound. The ontology should label it as Conflictive using Pellet reasoner with the available SWRL rules.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2238,12 +1671,12 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5"/>
         <DUL:hasSetting rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext"/>
-        <rdfs:comment>Example of a norm system that is not sound. The ontology should label it as Redundant using Pellet reasoner with the available SWRL rules.</rdfs:comment>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent"/>
         <odrl:assignee rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent"/>
         <odrl:assigner rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller"/>
         <odrl:target rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem"/>
         <vaeontology:reflectsValue rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample"/>
+        <rdfs:comment>Example of a norm system that is not sound. The ontology should label it as Redundant using Pellet reasoner with the available SWRL rules.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -2263,10 +1696,10 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</rdf:value>
         <vaeontology:isPropertyOfSuperiorOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2276,10 +1709,10 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</rdf:value>
         <vaeontology:isPropertyOfInferiorOf rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2318,8 +1751,8 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</rdf:value>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2329,10 +1762,10 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.95</rdf:value>
         <vaeontology:isOptimizationOfProperty rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerStatementOfNormSystemExample"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.95</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2374,10 +1807,10 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2387,10 +1820,10 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2400,13 +1833,13 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2416,13 +1849,13 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent"/>
-        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</rdf:value>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4"/>
         <vaeontology:measuredOnConditionedEntity rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5"/>
         <vaeontology:propertyExpressedAt rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements"/>
         <vaeontology:relationWith rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2"/>
+        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</rdf:value>
     </owl:NamedIndividual>
     
 
@@ -2478,8 +1911,8 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem"/>
-        <hasOptimizationRegion rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample"/>
         <DUL:hasConstituent rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample"/>
+        <hasOptimizationRegion rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample"/>
     </owl:NamedIndividual>
     
 
@@ -2495,8 +1928,8 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1"/>
         <DUL:hasMember rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4"/>
-        <acceptsPartialOrdering rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1"/>
         <vaeontology:isProposedByAgent rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#society"/>
+        <acceptsPartialOrdering rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1"/>
     </owl:NamedIndividual>
     
 
@@ -2515,12 +1948,12 @@ restrictions Ω = {n1, n4} constitutes a possible sound norm system&quot;</rdfs:
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison"/>
-        <rdfs:comment>&quot;V = {v1,v2,v3,v4} with preferences: v1 preferred over v3 (i.e.,
-v1 ⪰ v3) and [...] v1 ⪰ v4.&quot;</rdfs:comment>
         <vaeontology:comparisonHasInferior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2"/>
         <vaeontology:comparisonHasInferior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value3"/>
         <vaeontology:comparisonHasInferior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4"/>
         <vaeontology:comparisonHasSuperior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1"/>
+        <rdfs:comment>&quot;V = {v1,v2,v3,v4} with preferences: v1 preferred over v3 (i.e.,
+v1 ⪰ v3) and [...] v1 ⪰ v4.&quot;</rdfs:comment>
         <isNotDiscardedForVS rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">:valueSystemExample</isNotDiscardedForVS>
     </owl:NamedIndividual>
     
@@ -2531,52 +1964,13 @@ v1 ⪰ v3) and [...] v1 ⪰ v4.&quot;</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4">
         <rdf:type rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison"/>
-        <rdfs:comment>&quot;v4 ⪰ v1&quot;</rdfs:comment>
         <vaeontology:comparisonHasInferior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1"/>
         <vaeontology:comparisonHasInferior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2"/>
         <vaeontology:comparisonHasSuperior rdf:resource="https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4"/>
+        <rdfs:comment>&quot;v4 ⪰ v1&quot;</rdfs:comment>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>

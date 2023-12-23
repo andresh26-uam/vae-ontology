@@ -1,6 +1,6 @@
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/vaeontology> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://www.w3.org/2002/07/owl#imports> <https://andresh26-uam.github.io/vae-ontology/OnToology/vaeontology.ttl/documentation/ontology.owl> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://purl.org/dc/elements/1.1/creator> "Andrés Holgado Sánchez - https://orcid.org/my-orcid?orcid=0000-0001-8853-1022" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://purl.org/dc/elements/1.1/description> "Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Serramia, M. et al:  Moral Values in Norm Decision Making. In Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS '18). IFAAMAS, 1294–1302. https://dl.acm.org/doi/10.5555/3237383.3237891\n        " .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM> <http://purl.org/dc/elements/1.1/title> "Ontology on \"Moral Values in Norm Decision Making\", Serramia, M. et al. (2018)." .
@@ -45,104 +45,14 @@
 # http://purl.obolibrary.org/obo/NCIT_P384
 <http://purl.obolibrary.org/obo/NCIT_P384> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2002/07/owl#minQualifiedCardinality
 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2002/07/owl#qualifiedCardinality
-<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2004/02/skos/core#definition
-<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/action
-<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/assignee
-<http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/assigner
-<http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/constraint
-<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/leftOperand
-<http://www.w3.org/ns/odrl/2/leftOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/operator
-<http://www.w3.org/ns/odrl/2/operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/rightOperand
-<http://www.w3.org/ns/odrl/2/rightOperand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/ns/odrl/2/target
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#hasAgent
-<https://w3id.org/def/vaeontology#hasAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#influencesOutcome
-<https://w3id.org/def/vaeontology#influencesOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#interpretationOn
-<https://w3id.org/def/vaeontology#interpretationOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#isAgentOfSystem
-<https://w3id.org/def/vaeontology#isAgentOfSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#isPropertyOfInferiorOf
-<https://w3id.org/def/vaeontology#isPropertyOfInferiorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf
-<https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#isProposedByAgent
-<https://w3id.org/def/vaeontology#isProposedByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#madeByAgent
-<https://w3id.org/def/vaeontology#madeByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#propertyExpressedAt
-<https://w3id.org/def/vaeontology#propertyExpressedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#proposesStatement
-<https://w3id.org/def/vaeontology#proposesStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/def/vaeontology#reflectsValue
-<https://w3id.org/def/vaeontology#reflectsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/spice/SON/SchwartzValues#bibRef
-<https://w3id.org/spice/SON/SchwartzValues#bibRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -156,32 +66,11 @@
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -194,9 +83,6 @@
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#label> "is related to concept"@en .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> <http://www.w3.org/2000/01/rdf-schema#label> "è associato al concetto"@it .
-# 
-# http://www.w3.org/2002/07/owl#differentFrom
-<http://www.w3.org/2002/07/owl#differentFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.w3.org/ns/odrl/2/consequence
 <http://www.w3.org/ns/odrl/2/consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -226,35 +112,23 @@
 <http://www.w3.org/ns/odrl/2/remedy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Duty> .
 # 
 # https://w3id.org/def/vaeontology#comparisonHasInferior
-<https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#comparisonHasInferior> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#hasSecondElement> .
 # 
 # https://w3id.org/def/vaeontology#comparisonHasSuperior
-<https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#comparisonHasSuperior> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#hasFirstElement> .
 # 
 # https://w3id.org/def/vaeontology#hasFirstElement
 <https://w3id.org/def/vaeontology#hasFirstElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#hasFirstElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#hasRelatedElement> .
 <https://w3id.org/def/vaeontology#hasFirstElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#hasFirstElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to the first element of a binary relation tuple R = (first, second)." .
 <https://w3id.org/def/vaeontology#hasFirstElement> <http://www.w3.org/2000/01/rdf-schema#label> "hasFirstElement" .
-# 
-# https://w3id.org/def/vaeontology#hasPropertyOfInferior
-<https://w3id.org/def/vaeontology#hasPropertyOfInferior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# https://w3id.org/def/vaeontology#hasPropertyOfSuperior
-<https://w3id.org/def/vaeontology#hasPropertyOfSuperior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/vaeontology#hasRelatedElement
 <https://w3id.org/def/vaeontology#hasRelatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#hasRelatedElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#describes> .
 <https://w3id.org/def/vaeontology#hasRelatedElement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology#isRelatedElementIn> .
 <https://w3id.org/def/vaeontology#hasRelatedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
-# 
-# https://w3id.org/def/vaeontology#hasRelationWithProperty
-<https://w3id.org/def/vaeontology#hasRelationWithProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/vaeontology#hasSecondElement
 <https://w3id.org/def/vaeontology#hasSecondElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -276,9 +150,6 @@
 # https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn
 <https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/vaeontology#isSymmetricallyRelatedElementIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/vaeontology#isRelatedElementIn> .
-# 
-# https://w3id.org/def/vaeontology#satisfiesProperty
-<https://w3id.org/def/vaeontology#satisfiesProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#acceptsPartialOrdering
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#acceptsPartialOrdering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -310,7 +181,6 @@
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isOptimizationRegionFor> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Property of optimization problems that specifies the set of objects it works with to conform its factible region of possible solutions. The \"optimization region\" is normally the set of actual factible solutions, but can also be used to refer to atomic elements that are used to construct them, or broader regions where the factible solutions exists in but that are simpler to define. For example, an optimization region for the TSP problem consists of a collection of possible cities, whereas an optimization region for the global minimization of x^2 are the real numbers." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <http://www.w3.org/2000/01/rdf-schema#label> "hasOptimizationRegion" .
 # 
@@ -353,9 +223,6 @@
 # #################################################################
 # 
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameterDataValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue> .
@@ -381,55 +248,11 @@
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error10
-<http://org.semanticweb.owlapi/error#Error10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error11
-<http://org.semanticweb.owlapi/error#Error11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error12
-<http://org.semanticweb.owlapi/error#Error12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error13
-<http://org.semanticweb.owlapi/error#Error13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error6
-<http://org.semanticweb.owlapi/error#Error6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error7
-<http://org.semanticweb.owlapi/error#Error7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error8
-<http://org.semanticweb.owlapi/error#Error8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://org.semanticweb.owlapi/error#Error9
-<http://org.semanticweb.owlapi/error#Error9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
@@ -437,38 +260,17 @@ _:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.ontologydesig
 _:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> .
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "A Concept is a SocialObject, and isDefinedIn some Description; once defined, a Concept can be used in other Description(s). If a Concept isDefinedIn exactly one Description, see the LocalConcept class.\nThe classifies relation relates Concept(s) to Entity(s) at some TimeInterval" .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concetto"@it .
 # 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
-# 
-# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/ns/odrl/2/Constraint
-<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/odrl/2/Duty
 <http://www.w3.org/ns/odrl/2/Duty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/odrl/2/Duty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Rule> .
-<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/odrl/2/Duty> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Permission> .
 <http://www.w3.org/ns/odrl/2/Duty> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/odrl/2/Prohibition> .
 <http://www.w3.org/ns/odrl/2/Duty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
@@ -490,89 +292,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3.org/ns/odrl/2/Prohibition> <http://www.w3.org/2000/01/rdf-schema#label> "Prohibition"@en .
 <http://www.w3.org/ns/odrl/2/Prohibition> <http://www.w3.org/2004/02/skos/core#definition> "The inability to perform an Action over an Asset."@en .
 # 
-# http://www.w3.org/ns/odrl/2/Rule
-# 
-# https://w3id.org/def/vaeontology#ActingAgent
-<https://w3id.org/def/vaeontology#ActingAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#Action
-<https://w3id.org/def/vaeontology#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#AgentStatement
-<https://w3id.org/def/vaeontology#AgentStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#AggregationFunction
-<https://w3id.org/def/vaeontology#AggregationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement
-<https://w3id.org/def/vaeontology#AntiSymmetricRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement
-<https://w3id.org/def/vaeontology#AntiTransitiveRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#ComparisonStatement
-<https://w3id.org/def/vaeontology#ComparisonStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#Context
-<https://w3id.org/def/vaeontology#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#Criterion
-<https://w3id.org/def/vaeontology#Criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/def/vaeontology#Generalization
-<https://w3id.org/def/vaeontology#Generalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology#Generalization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#GeneralizationStatement> .
-# 
-# https://w3id.org/def/vaeontology#IntransitiveRelationStatement
-<https://w3id.org/def/vaeontology#IntransitiveRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#IrreflexiveRelationStatement
-<https://w3id.org/def/vaeontology#IrreflexiveRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#Norm
-<https://w3id.org/def/vaeontology#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#OptimizedProperty
-<https://w3id.org/def/vaeontology#OptimizedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#QuantitativePromotionDemotion
-<https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#QuantitativeVaeProperty
-<https://w3id.org/def/vaeontology#QuantitativeVaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#RelationStatement
-<https://w3id.org/def/vaeontology#RelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#SymmetricRelationStatement
-<https://w3id.org/def/vaeontology#SymmetricRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#System
-<https://w3id.org/def/vaeontology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#TransitiveRelationStatement
-<https://w3id.org/def/vaeontology#TransitiveRelationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#User
-<https://w3id.org/def/vaeontology#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#VaeProperty
-<https://w3id.org/def/vaeontology#VaeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#VaePropertyStatement
-<https://w3id.org/def/vaeontology#VaePropertyStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#VaeStatement
-<https://w3id.org/def/vaeontology#VaeStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#Value
-<https://w3id.org/def/vaeontology#Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#ValueComparisonStatement
-<https://w3id.org/def/vaeontology#ValueComparisonStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/vaeontology#ValueConcept
-<https://w3id.org/def/vaeontology#ValueConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#BorderControlAction
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#BorderControlAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -641,7 +362,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> .
 _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
-<https://w3id.org/def/vaeontology#expressesProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
 _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> .
@@ -650,7 +370,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> .
 _:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#onEntity> .
-<https://w3id.org/def/vaeontology#onEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Problem 1. Given a norm net NN= ⟨N, R⟩, a representation power function r, and a fixed budget b, the maximum norm system problem with limited budget (or the maximum norm system problem, for short) is the problem offinding a sound norm system Ω ⊆ N with maximum representation power and minimum cost limited by some non-negative budget b (i.e., there is no other norm system Ω′ ⊆ N such that ρ(Ω′) > ρ(Ω), cost(Ω′) < cost(Ω), and cost(Ω) ≤ b).\"" .
 # 
@@ -664,24 +383,36 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error7> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error8> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Rule> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Norm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormNet> .
-_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Agent> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/assignee> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#Action> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/odrl/2/action> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormNet> .
+_:genid13 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Our notion of norm is based on a simplification of the one in [45]. Thus, here we formally consider a norm ni as a pair θ(ρ,ac), where: θ is a deontic operator (prohibition, permission, or obligation); ρ is a description of the addressee entity, namely, the agent required to comply with the norm; and ac is an action –from a set of actions– that entities can perform in a specific domain.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#comment> "The deontic operators are the ones under odrl:Rule. A Norm that is subclass of odrl:Duty indicates it is an obligation in the sense of this paper. Similarly, odrl:Permission corresponds to the operator \"permission\" and odrl:Prohibition to the operator \"prohibition\"." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norm (Serramia et al.)" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2002/07/owl#real> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#comment> "\"... we cannot ignore the fact that norm deployment has associated costs and that the expenses derived from imposing norms should be bounded by the available budget. Norm costs may represent monetary expenses derived from regulatory processes—such as norm establishment or norm enforcement—as well as non-monetary aspects—such as social implications or political correctness—as long as they can be somehow quantified. In any case, we intend to minimise incurred costs while maximizing norm representation.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormCost> <http://www.w3.org/2000/01/rdf-schema#label> "Norm Cost" .
 # 
@@ -696,19 +427,22 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-<https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of norm property, in the view of this paper." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Norm Property" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error11> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormProperty> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2002/07/owl#real> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Formally, we consider a representation power function, r : N → R to be a linear function that computes a norm’s representation power: a real value that encapsulates the fact that a norm cannot only represent itself but also all the norms it generalises. Besides linearity, the only condition that we impose on r is that r(ni ) ≤ r(nj) for each nj ∈ A(ni).\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#comment> "The restriction about generalization is implemented in SWRL rules. Linearity cannot be tested, however." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#label> "Norm Cost" .
@@ -717,115 +451,138 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#Norm> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormNet> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictiveNormSystem> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#RedundantNormSystem> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormNet> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictiveNormSystem> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#RedundantNormSystem> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a norm net NN = ⟨N , R⟩, we will refer to any subset of the norms in N as a norm system.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> <http://www.w3.org/2000/01/rdf-schema#label> "NormSystem" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error6> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2002/07/owl#real> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Similarly, we assume that the cost of a norm system can be obtained by adding the individual costs ofits norms, namely cost(Ω) = ni ∈ Ω c(ni), where c(ni) stands for the cost of norm ni.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> <http://www.w3.org/2000/01/rdf-schema#label> "NormSystemRepresentationPower" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error13> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#OptimizedProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
-<https://w3id.org/def/vaeontology#isOptimizationOfProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> .
+_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the fact that the related NormSystem has a maximum representation power in some MaximumNormSystemProblem" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#label> "Norm System Maximum Representation Power" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error3> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#OptimizedProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://org.semanticweb.owlapi/error#Error2> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> .
+_:genid34 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the fact that the related NormSystem has a maximum representation power in some MaximumNormSystemProblem" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMaximumValueSupport> <http://www.w3.org/2000/01/rdf-schema#label> "Norm System Maximum Representation Power" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error10> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#OptimizedProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemCost> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> .
+_:genid37 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#propertyExpressedAt> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#comment> "Property representing the fact that the related NormSystem has a minimum cost in some MaximumNormSystemProblem" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemMinimumCost> <http://www.w3.org/2000/01/rdf-schema#label> "Norm System Minimum Cost" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeProperty> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of property of a NormSystem." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Norm System Property" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error9> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemProperty> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2002/07/owl#real> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#comment> "\"[...] the representation power of a normative system Ω can be readily obtained by adding the representation power of its norms, namely ρ(Ω) = n∈Ω r(n)\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> <http://www.w3.org/2000/01/rdf-schema#label> "NormSystemRepresentationPower" .
 # 
@@ -833,27 +590,27 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AggregationFunction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#VaeStatement> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#OptimizedProperty> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#OptimizedProperty> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#expressesProperty> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "An optimization problem which expresses OptimizedProperties (related to values or norms)." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#label> "Optimization Problem" .
 # 
@@ -878,27 +635,27 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid35 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2002/07/owl#disjointWith> _:genid39 .
-_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#RedundantNormSystem> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictiveNormSystem> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystem> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2002/07/owl#disjointWith> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#RedundantNormSystem> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictiveNormSystem> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Given a norm netNN= ⟨N, R⟩, we say that a norm system Ω ⊆ N is sound iff it is both conflict-free and non-redundant.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SoundNormSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Norm System" .
 # 
@@ -912,24 +669,27 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error5> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid43 .
-_:genid43 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
-_:genid45 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
-_:genid47 <http://www.w3.org/2001/XMLSchema#minInclusive> "-1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2002/07/owl#real> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2001/XMLSchema#minInclusive> "-1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2002/07/owl#real> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Support Rate Component" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> <http://www.w3.org/2004/02/skos/core#definition> "A component of the support rate function (the support rate of one norm to one the value) \"[...] by means of a rate in [−1, 1], where: rate -1 stands for a norm totally demoting a value; 1 means that the norm totally promotes that value; and 0 means that the norm is neutral to the value (that is, it has no relation to it).\"" .
 # 
@@ -943,53 +703,61 @@ _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#ComparisonStatement> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyOfInferior> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyOfSuperior> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyOfInferior> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/vaeontology#QuantitativeVaeProperty> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#hasPropertyOfSuperior> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> .
+_:genid61 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error12> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AggregationFunction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#QuantitativePromotionDemotion> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#relationWith> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Using the DAG value structure, we define the [...] recursive\nutility function to calculate the preference utility of each value\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> <http://www.w3.org/2000/01/rdf-schema#label> "Value Preference Utility" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#UtilityBasedComparison> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Norm> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasInferior> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Norm> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasSuperior> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Norm> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasInferior> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSupportNormComparison> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology#Norm> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/vaeontology#comparisonHasSuperior> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/vaeontology#AgentStatement> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ValueConcept> .
-_:genid53 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/vaeontology#ValueConcept> .
+_:genid66 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Def. 5. A value system is a pairVS = ⟨V, ⪰⟩, where V stands for a non-empty set of moral values and ⪰ represents a partial order over these values such that ∀vi ,vj ∈ V s.t. vi ⪰ vj , it implies that vi is more or equally preferred to vj .\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Value System (Serramia et al.)" .
 # 
@@ -1015,61 +783,61 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Permission> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n1 : Permission(all_passengers, cross_border)\"" .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#crossBorder> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n1 : Permission(all_passengers, cross_border)\"" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Duty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n2 : Obligation(all_passengers, register_passport)\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#registerPassport> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n2 : Obligation(all_passengers, register_passport)\"" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Duty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n3: Obligation(all_passengers, fulfil_form)\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/ns/odrl/2/action> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#fulfilForm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n3: Obligation(all_passengers, fulfil_form)\"" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Duty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n4 : Obligation(locals, fulfil_form)\"" .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n4 : Obligation(locals, fulfil_form)\"" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/odrl/2/Duty> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#Norm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n5 : Obligation(visitors, fulfil_form)\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> <http://www.w3.org/2000/01/rdf-schema#comment> "\"n5 : Obligation(visitors, fulfil_form)\"" .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1090,10 +858,10 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "26.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costStatementOfNormSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "26.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costStatementOfNormSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costStatementOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1153,10 +921,10 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#MaximumNormSystemProblem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#OptimizationProblem> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a Maximum Norm System Problem instance with the example norms in Serramia et al." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <https://w3id.org/def/vaeontology#expressesProperty> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#costPropertyOfNormSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <https://w3id.org/def/vaeontology#expressesProperty> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#maximumNormSystemProblemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a Maximum Norm System Problem instance with the example norms in Serramia et al." .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#nonSoundNormSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#nonSoundNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1165,32 +933,32 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm1ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm2ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm3ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm4ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormValueSupport> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#norm5ValueSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1202,20 +970,18 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#exclusivityn1n2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#transitiveGeneralizations> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <https://w3id.org/def/vaeontology#isProposedByAgent> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#containsNormSystem> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#containsNormSystem> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#containsNormSystem> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Figure 1 illustrates an example of a norm net that includes some norms (rules) of border control at an international airport. Norms are depicted as circles labeled as n1, . . . , n5 respectively.\"" .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> <https://w3id.org/def/vaeontology#isProposedByAgent> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ConflictFreeNormSystem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NonRedundantNormSystem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "\"[...] Hence, considering these\nrestrictions Ω = {n1, n4} constitutes a possible sound norm system\"" .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "Although labeled as NormSystem, the Pellet reasoner using SWRL + OWL should be able to infer it is a SoundNormSystem, of the normNetExample." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
@@ -1224,6 +990,8 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <https://w3id.org/def/vaeontology#influencesOutcome> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#fulfilForm> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <https://w3id.org/def/vaeontology#influencesOutcome> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#registerPassport> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <https://w3id.org/def/vaeontology#reflectsValue> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "\"[...] Hence, considering these\nrestrictions Ω = {n1, n4} constitutes a possible sound norm system\"" .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> <http://www.w3.org/2000/01/rdf-schema#comment> "Although labeled as NormSystem, the Pellet reasoner using SWRL + OWL should be able to infer it is a SoundNormSystem, of the normNetExample." .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1231,12 +999,12 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a norm system that is not sound. The ontology should label it as Conflictive using Pellet reasoner with the available SWRL rules." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <https://w3id.org/def/vaeontology#reflectsValue> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleConflictive> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a norm system that is not sound. The ontology should label it as Conflictive using Pellet reasoner with the available SWRL rules." .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1244,12 +1012,12 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlContext> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a norm system that is not sound. The ontology should label it as Redundant using Pellet reasoner with the available SWRL rules." .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#localAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/ns/odrl/2/assignee> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/ns/odrl/2/assigner> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/ns/odrl/2/target> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlSystem> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <https://w3id.org/def/vaeontology#reflectsValue> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderValueSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExampleRedundant> <http://www.w3.org/2000/01/rdf-schema#comment> "Example of a norm system that is not sound. The ontology should label it as Redundant using Pellet reasoner with the available SWRL rules." .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemValueSupportExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemValueSupportExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1259,18 +1027,18 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue1VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValuePreferenceUtility> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <https://w3id.org/def/vaeontology#isPropertyOfInferiorOf> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#preferenceUtilityValue2VSexample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#problemModeller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1289,16 +1057,16 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormRepresentationPower> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.4"^^<http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#reprPowerNorm1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.4"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#NormSystemRepresentationPower> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#isOptimizationOfProperty> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerStatementOfNormSystemExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerPropertyOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerStatementOfNormSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#representationPowerStatementOfNormSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1320,40 +1088,40 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN1ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#SupportRateComponent> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm3> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm4> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#measuredOnConditionedEntity> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#borderControlNorm5> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#propertyExpressedAt> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#societyPropertyStatements> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <https://w3id.org/def/vaeontology#relationWith> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#supportValueN2ToV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#transitiveGeneralizations
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#transitiveGeneralizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1379,8 +1147,8 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#ValueBasedNormOptimizationProblem> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueBasedNormSystemOptimizationProblem> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#hasOptimizationRegion> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#normNetExample> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1391,8 +1159,8 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasMember> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#acceptsPartialOrdering> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <https://w3id.org/def/vaeontology#isProposedByAgent> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#society> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#valueSystemExample> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#acceptsPartialOrdering> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#visitorAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1401,35 +1169,22 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"V = {v1,v2,v3,v4} with preferences: v1 preferred over v3 (i.e.,\nv1 ⪰ v3) and [...] v1 ⪰ v4.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value3> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <https://w3id.org/def/vaeontology#comparisonHasSuperior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"V = {v1,v2,v3,v4} with preferences: v1 preferred over v3 (i.e.,\nv1 ⪰ v3) and [...] v1 ⪰ v4.\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom1> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#isNotDiscardedForVS> ":valueSystemExample"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#PartialOrderValueComparison> .
-<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <http://www.w3.org/2000/01/rdf-schema#comment> "\"v4 ⪰ v1\"" .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value1> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <https://w3id.org/def/vaeontology#comparisonHasInferior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value2> .
 <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <https://w3id.org/def/vaeontology#comparisonHasSuperior> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#value4> .
+<https://w3id.org/def/vaeontology_moral_values_in_norm_DM#vsPartialOrderRelationsFrom4> <http://www.w3.org/2000/01/rdf-schema#comment> "\"v4 ⪰ v1\"" .
 # 
-_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid57 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid59 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid61 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid63 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid64 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid65 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid66 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid68 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # 
 # 
@@ -1720,7 +1475,6 @@ _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
 _:genid139 <http://www.w3.org/2003/11/swrl#argument2> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#infe> .
 _:genid139 <http://www.w3.org/2003/11/swrl#argument1> <https://w3id.org/def/vaeontology_moral_values_in_norm_DM#inf> .
 _:genid139 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/vaeontology#relationWith> .
-<https://w3id.org/def/vaeontology#relationWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 _:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 _:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .

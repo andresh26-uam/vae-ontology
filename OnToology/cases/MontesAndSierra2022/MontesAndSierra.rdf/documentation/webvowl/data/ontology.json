@@ -65,7 +65,7 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -77,7 +77,7 @@
     "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "40",
@@ -86,7 +86,7 @@
     "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "38",
     "type" : "rdfs:Literal"
   }, {
     "id" : "41",
@@ -128,16 +128,16 @@
     "id" : "59",
     "type" : "owl:Class"
   }, {
-    "id" : "63",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "62",
     "type" : "owl:Class"
   }, {
     "id" : "80",
@@ -149,13 +149,13 @@
     "id" : "95",
     "type" : "owl:Class"
   }, {
-    "id" : "62",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
     "id" : "101",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "46",
@@ -230,13 +230,35 @@
     "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "68",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "https://w3id.org/def/vaeontology#ArgumentStatement",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArgumentStatement"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "labels" : {
+        "IRI-based" : "alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "labels" : {
+        "IRI-based" : "alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#GiniIndex",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
     "instances" : 0,
@@ -264,32 +286,10 @@
       }
     } ],
     "comment" : {
-      "undefined" : "\"First, we ground the meaning of value equality in the context of our model as, of course, economic equality. To do so, we use the well-known Gini index indicator (Gini, 1912), a widespread metric to quantify wealth and income inequality (The World Bank, Development Research Group, 2019).\""
+      "undefined" : "The Gini Index can be used as a Semantics Function in State, as in the taxing problem from Montes and Sierra (see reference)."
     },
-    "id" : "3",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "https://w3id.org/def/vaeontology#ArgumentStatement",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArgumentStatement"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "labels" : {
-        "IRI-based" : "alignmentArgumentationOnOptimallyAlignedNormativeSystemsForEquality"
-      }
-    }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "labels" : {
-        "IRI-based" : "alignmentArgumentationOnOptimallyAlignedNormativeSystemsForFairness"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#User",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -313,7 +313,7 @@
     "label" : {
       "IRI-based" : "QuantitativeVaeProperty"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "5" ],
     "attributes" : [ "external" ],
     "id" : "14"
   }, {
@@ -358,7 +358,7 @@
     "comment" : {
       "undefined" : "\"Agents contribute to the common fund with a tax amount that is dependent on their economic status. However, a subset of evader agents try to skip the payment.\""
     },
-    "id" : "36",
+    "id" : "39",
     "superClasses" : [ "28" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -392,7 +392,7 @@
     "id" : "29"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "39",
+    "id" : "38",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -518,7 +518,7 @@
       "IRI-based" : "MoneyTransaction",
       "undefined" : "MoneyTransaction"
     },
-    "subClasses" : [ "51", "36" ],
+    "subClasses" : [ "51", "39" ],
     "comment" : {
       "undefined" : "\"In principle, in the unregulated situation agents can exchange money as they see fit at any transition.\""
     },
@@ -560,6 +560,16 @@
       "IRI-based" : "decimal"
     }
   }, {
+    "iri" : "https://w3id.org/def/vaeontology#System",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System"
+    },
+    "subClasses" : [ "57" ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#BoundedQuantitativePromotionDemotion",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
     "instances" : 0,
@@ -575,19 +585,9 @@
       "IRI-based" : "BoundedQuantitativePromotionDemotion",
       "undefined" : "BoundedQuantitativePromotionDemotion"
     },
-    "subClasses" : [ "61", "62", "4" ],
-    "id" : "59",
-    "superClasses" : [ "60" ]
-  }, {
-    "iri" : "https://w3id.org/def/vaeontology#System",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "System"
-    },
-    "subClasses" : [ "57" ],
-    "attributes" : [ "external" ],
-    "id" : "63"
+    "subClasses" : [ "62", "63", "5" ],
+    "id" : "60",
+    "superClasses" : [ "61" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#NormativeSystem",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
@@ -621,9 +621,9 @@
     "label" : {
       "IRI-based" : "QuantitativePromotionDemotion"
     },
-    "subClasses" : [ "59" ],
+    "subClasses" : [ "60" ],
     "attributes" : [ "external" ],
-    "id" : "60"
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#SemanticsFunctionAggregation",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
@@ -642,8 +642,8 @@
     "comment" : {
       "undefined" : "\"Given a set of values V = {v1, ..., vm} and their semantics functions f1,...,fm, we propose that the semantics of the set of values in V should be grounded by an aggregation function FV : [−1, 1]m → [−1, 1]. FV takes in the compliance with respect to every individual value and merges them into a single metric. To shorten notation, we denote FV (f1(s), ..., fm(s)) as FV (s).\""
     },
-    "id" : "61",
-    "superClasses" : [ "78", "59" ]
+    "id" : "62",
+    "superClasses" : [ "78", "60" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -675,7 +675,7 @@
       }
     } ],
     "id" : "73",
-    "superClasses" : [ "62", "74" ]
+    "superClasses" : [ "63", "74" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#Sequence",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -723,8 +723,8 @@
     "comment" : {
       "undefined" : "\"Definition 4. Given a world (S , A, T ), a normative system N that applies to it, and a set of values V = {v1, ..., vn} with semantics functions f1, ..., fn, the alignment AlgnN,v of normative system N with respect to value v ∈ V is computed as:\n(expectancy of the evaluation of a semantics function on the final state of PN) (3)\nwhere PN is the random variable of the subset of paths restricted under the normative system N.\""
     },
-    "id" : "62",
-    "superClasses" : [ "59", "86" ]
+    "id" : "63",
+    "superClasses" : [ "60", "86" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#FinalInputOutcome",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -769,12 +769,12 @@
       "IRI-based" : "SemanticsFunction",
       "undefined" : "Semantics Function"
     },
-    "subClasses" : [ "3", "100" ],
+    "subClasses" : [ "4", "100" ],
     "comment" : {
       "undefined" : "\"Given a world (S, A, T ) and a set of values V , the semantics of value v ∈ V in the world is a function fv : S → [−1,1] that evaluates the states of the world, where fv(s) ∼ −1,0,+1 indicates that state s strongly opposes, is neutral or strongly promotes value v, respectively.\""
     },
-    "id" : "4",
-    "superClasses" : [ "59", "14", "86" ]
+    "id" : "5",
+    "superClasses" : [ "60", "14", "86" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#ActingAgent",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -858,7 +858,7 @@
     "label" : {
       "IRI-based" : "AggregationFunction"
     },
-    "subClasses" : [ "61" ],
+    "subClasses" : [ "62" ],
     "attributes" : [ "external" ],
     "id" : "78"
   }, {
@@ -952,7 +952,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "77",
-    "superClasses" : [ "38" ]
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#TaxingAgentState",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
@@ -1050,7 +1050,7 @@
     "label" : {
       "IRI-based" : "Concept"
     },
-    "subClasses" : [ "38" ],
+    "subClasses" : [ "37" ],
     "attributes" : [ "external" ],
     "id" : "22",
     "superClasses" : [ "91" ]
@@ -1061,7 +1061,7 @@
     "label" : {
       "IRI-based" : "ValueProperty"
     },
-    "subClasses" : [ "62", "4" ],
+    "subClasses" : [ "63", "5" ],
     "attributes" : [ "external" ],
     "id" : "86"
   }, {
@@ -1091,7 +1091,7 @@
       "undefined" : "\"We illustrate all of our contributions with a running example of a toy social model, remi- niscent of the public goods game.\""
     },
     "id" : "57",
-    "superClasses" : [ "63" ]
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -1196,7 +1196,7 @@
       "undefined" : "\"Second, we ground the semantics of value fairness to mean that evader individuals should be punished for their evasion. Hence, we consider that fairness is being highly promoted if, by the end of a fixed-length path, as many evaders as possible belong to the poorest wealth segment"
     },
     "id" : "100",
-    "superClasses" : [ "4" ]
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#Equality",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -1297,15 +1297,6 @@
         "IRI-based" : "collectFSegment3"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeF",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "comment" : {
-        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
-      },
-      "labels" : {
-        "IRI-based" : "redistributeF"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#collectFSegment1",
       "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
       "comment" : {
@@ -1313,6 +1304,15 @@
       },
       "labels" : {
         "IRI-based" : "collectFSegment1"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeF",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "comment" : {
+        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
+      },
+      "labels" : {
+        "IRI-based" : "redistributeF"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#catchF",
@@ -1369,15 +1369,6 @@
         "IRI-based" : "redistributeFSegment2"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment2",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "comment" : {
-        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
-      },
-      "labels" : {
-        "IRI-based" : "redistributeSegment2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeFSegment1",
       "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
       "comment" : {
@@ -1385,6 +1376,15 @@
       },
       "labels" : {
         "IRI-based" : "redistributeFSegment1"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment2",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "comment" : {
+        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
+      },
+      "labels" : {
+        "IRI-based" : "redistributeSegment2"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment3",
@@ -1447,15 +1447,6 @@
         "IRI-based" : "collectSegment2"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistribute",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "comment" : {
-        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
-      },
-      "labels" : {
-        "IRI-based" : "redistribute"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#collectSegment3",
       "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
       "comment" : {
@@ -1463,6 +1454,15 @@
       },
       "labels" : {
         "IRI-based" : "collectSegment3"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistribute",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "comment" : {
+        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
+      },
+      "labels" : {
+        "IRI-based" : "redistribute"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#collectSegment1",
@@ -1483,15 +1483,6 @@
         "IRI-based" : "redistributeSegment4"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment5",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "comment" : {
-        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
-      },
-      "labels" : {
-        "IRI-based" : "redistributeSegment5"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#catch",
       "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
       "comment" : {
@@ -1499,6 +1490,15 @@
       },
       "labels" : {
         "IRI-based" : "catch"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#redistributeSegment5",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "comment" : {
+        "undefined" : "\"Table 1: Optimisation results for the running example with respect to the two values of interest plus their aggregation: optimal normative parameters defining the norative system, and their associated optimal alignment.\""
+      },
+      "labels" : {
+        "IRI-based" : "redistributeSegment5"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#fineF",
@@ -1512,7 +1512,7 @@
       "undefined" : "A Concept that classifies a Region; the difference between a Region and a Parameter is that regions represent sets of observable values, e.g. the height  of a given building, while parameters represent constraints or selections on observable values, e.g. 'VeryHigh'. Therefore, parameters can also be used to constrain regions, e.g. VeryHigh on a subset of values of the Region Height applied to buildings, or to add an external selection criterion , such as measurement units, to regions, e.g. Meter on a subset of values from the Region Length applied to the Region Length applied to roads."
     },
     "attributes" : [ "external" ],
-    "id" : "38",
+    "id" : "37",
     "superClasses" : [ "22" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#ParametricNorm",
@@ -1547,16 +1547,16 @@
         "IRI-based" : "parametricNorm4_fair"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#parametricNorm4_eq",
-      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-      "labels" : {
-        "IRI-based" : "parametricNorm4_eq"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#parametricNorm3_fair",
       "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
       "labels" : {
         "IRI-based" : "parametricNorm3_fair"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_montes_sierra#parametricNorm4_eq",
+      "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
+      "labels" : {
+        "IRI-based" : "parametricNorm4_eq"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_montes_sierra#parametricNorm3_eq",
@@ -1620,7 +1620,7 @@
     "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "37",
+    "id" : "36",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "42",
@@ -1810,10 +1810,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "133",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "134",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "135",
     "type" : "owl:allValuesFrom"
@@ -1866,7 +1866,7 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
@@ -1932,12 +1932,12 @@
   }, {
     "range" : "18",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
     "range" : "18",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRelatedToConcept",
@@ -1968,37 +1968,37 @@
   }, {
     "range" : "29",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "27"
   }, {
     "range" : "14",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
     "range" : "33",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
     "range" : "33",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#hasProbabilityOrFraction",
     "baseIri" : "https://w3id.org/def/vaeontology_montes_sierra",
-    "range" : "39",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasProbabilityOrFraction",
       "undefined" : "hasProbabilityOrFraction"
     },
-    "domain" : "38",
+    "domain" : "37",
     "comment" : {
       "undefined" : "Reference to a probability or fraction, e.g. the probability of catching an evader, or the fraction of the fund to be redistributed back to a segment."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "37"
+    "id" : "36"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isInputOf",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -2077,7 +2077,7 @@
       "it" : "è un parametro per"
     },
     "superproperty" : [ "21" ],
-    "domain" : "38",
+    "domain" : "37",
     "comment" : {
       "undefined" : "A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation, e.g. a 4WheelDriver Role definedIn the ItalianTrafficLaw has a MinimumAge parameter on the Amount 16."
     },
@@ -2091,12 +2091,12 @@
       "IRI-based" : "isStateOfAgent"
     },
     "domain" : "17",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "55"
   }, {
     "range" : "57",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isStateOfAgent",
@@ -2106,7 +2106,7 @@
       "IRI-based" : "isStateOfAgent"
     },
     "domain" : "20",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "64"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_montes_sierra#isOutStateOf",
@@ -2139,7 +2139,7 @@
       "IRI-based" : "isMemberOf"
     },
     "domain" : "68",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "67"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#makesAction",
@@ -2154,18 +2154,18 @@
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "4",
+    "range" : "5",
     "label" : {
       "IRI-based" : "hasConstituent"
     },
-    "domain" : "61",
+    "domain" : "62",
     "subproperty" : [ "71" ],
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "70"
   }, {
     "range" : "74",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#nextInputOutcome",
@@ -2178,9 +2178,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "75"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/rightOperand",
@@ -2233,7 +2233,7 @@
     "label" : {
       "IRI-based" : "isConstraintFor"
     },
-    "domain" : "38",
+    "domain" : "37",
     "attributes" : [ "external", "object" ],
     "id" : "83"
   }, {
@@ -2248,13 +2248,13 @@
     "id" : "84"
   }, {
     "range" : "86",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
     "range" : "86",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "87"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#proposesStatement",
@@ -2269,12 +2269,12 @@
   }, {
     "range" : "53",
     "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "89"
   }, {
     "range" : "91",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isBasedOnCriterion",
@@ -2289,28 +2289,28 @@
   }, {
     "range" : "65",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "93"
   }, {
     "range" : "65",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "range" : "22",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "96"
   }, {
     "range" : "78",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "97"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParameter",
     "inverse" : "25",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "38",
+    "range" : "37",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2334,12 +2334,12 @@
   }, {
     "range" : "46",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
-    "range" : "4",
+    "range" : "5",
     "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "99"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith",
@@ -2363,9 +2363,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "102"
   }, {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "103"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
@@ -2378,14 +2378,14 @@
     "attributes" : [ "external", "object" ],
     "id" : "105"
   }, {
-    "range" : "63",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "60",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
-    "range" : "59",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "60",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/target",
@@ -2408,34 +2408,34 @@
     "attributes" : [ "external", "object" ],
     "id" : "109"
   }, {
-    "range" : "62",
+    "range" : "63",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
-    "range" : "60",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "61",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "111"
   }, {
     "range" : "28",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "112"
   }, {
     "range" : "28",
     "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
   }, {
-    "range" : "59",
+    "range" : "60",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "range" : "59",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#abidesByValue",
@@ -2458,6 +2458,16 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "117"
   }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isParametrizedBy"
+    },
+    "domain" : "54",
+    "attributes" : [ "external", "object" ],
+    "id" : "119"
+  }, {
     "iri" : "https://w3id.org/def/vaeontology#isOutcomeOf",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "8",
@@ -2466,21 +2476,11 @@
     },
     "domain" : "8",
     "attributes" : [ "external", "object" ],
-    "id" : "119"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "isParametrizedBy"
-    },
-    "domain" : "54",
-    "attributes" : [ "external", "object" ],
     "id" : "120"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstraint",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "38",
+    "range" : "37",
     "label" : {
       "IRI-based" : "hasConstraint"
     },
@@ -2524,7 +2524,7 @@
     "label" : {
       "IRI-based" : "parametrizes"
     },
-    "domain" : "38",
+    "domain" : "37",
     "attributes" : [ "external", "object" ],
     "id" : "128"
   }, {
@@ -2576,24 +2576,24 @@
     "attributes" : [ "functional", "datatype" ],
     "id" : "132"
   }, {
-    "range" : "123",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "classifies"
+    },
+    "domain" : "37",
+    "attributes" : [ "allValues", "external", "object" ],
     "id" : "133"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "hasPart"
-    },
-    "domain" : "38",
-    "attributes" : [ "allValues", "external", "object" ],
+    "range" : "123",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#makesAction",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "36",
+    "range" : "39",
     "label" : {
       "IRI-based" : "makesAction"
     },
@@ -2607,7 +2607,7 @@
     "label" : {
       "IRI-based" : "relationWith"
     },
-    "domain" : "3",
+    "domain" : "4",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "136"
   }, {
@@ -2629,7 +2629,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "71" ],
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "139"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assignee",
@@ -2643,18 +2643,18 @@
     "id" : "140"
   }, {
     "range" : "51",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#propertyOptimizedAt",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "62",
+    "range" : "63",
     "label" : {
       "IRI-based" : "propertyOptimizedAt"
     },
     "domain" : "73",
-    "attributes" : [ "external", "object", "someValues" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "142"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#startsWithInputOutcome",
@@ -2683,25 +2683,25 @@
       "en" : "has parameter data value",
       "it" : "ha valore"
     },
-    "domain" : "38",
+    "domain" : "37",
     "comment" : {
       "undefined" : "Parametrizes values from a datatype. For example, a Parameter MinimumAgeForDriving hasParameterDataValue 18 on datatype xsd:int, in the Italian traffic code. In this example, MinimumAgeForDriving isDefinedIn the Norm ItalianTrafficCodeAgeDriving.\nMore complex parametrization requires workarounds. E.g. AgeRangeForDrugUsage could parametrize data value: 14 to 50 on the datatype: xsd:int. Since complex datatypes are not allowed in OWL1.0, a solution to this can only work by creating two 'sub-parameters': MinimumAgeForDrugUsage (that hasParameterDataValue 14) and MaximumAgeForDrugUsage (that hasParameterDataValue 50), which are components of (cf. hasComponent) the main Parameter AgeRangeForDrugUsage.\nOrdering on subparameters can be created by using or specializing the object property 'precedes'."
     },
     "attributes" : [ "external", "datatype" ],
     "id" : "144"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "145"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "126",
+    "range" : "37",
     "label" : {
-      "IRI-based" : "classifies"
+      "IRI-based" : "hasPart"
     },
-    "domain" : "38",
+    "domain" : "37",
     "attributes" : [ "allValues", "external", "object" ],
     "id" : "146"
   }, {
@@ -2725,21 +2725,21 @@
     "attributes" : [ "external", "object" ],
     "id" : "149"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#hasInput",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "hasInput"
-    },
-    "domain" : "8",
-    "attributes" : [ "external", "object" ],
-    "id" : "151"
-  }, {
     "iri" : "http://www.w3.org/ns/odrl/2/constraint",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
     "range" : "8",
     "label" : {
       "IRI-based" : "constraint"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/def/vaeontology#hasInput",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasInput"
     },
     "domain" : "8",
     "attributes" : [ "external", "object" ],

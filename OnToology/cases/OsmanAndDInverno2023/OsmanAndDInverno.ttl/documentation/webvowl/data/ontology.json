@@ -86,19 +86,19 @@
     "id" : "143",
     "type" : "owl:Class"
   }, {
-    "id" : "155",
+    "id" : "139",
     "type" : "owl:Class"
   }, {
     "id" : "216",
     "type" : "owl:Class"
   }, {
-    "id" : "47",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "232",
     "type" : "owl:Class"
   }, {
-    "id" : "261",
+    "id" : "259",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -107,7 +107,7 @@
     "id" : "217",
     "type" : "owl:Class"
   }, {
-    "id" : "154",
+    "id" : "155",
     "type" : "owl:Class"
   }, {
     "id" : "85",
@@ -215,7 +215,7 @@
     "id" : "320",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
     "id" : "408",
@@ -248,16 +248,16 @@
     "id" : "492",
     "type" : "owl:Class"
   }, {
-    "id" : "289",
+    "id" : "498",
     "type" : "owl:Class"
   }, {
-    "id" : "498",
+    "id" : "289",
     "type" : "owl:Class"
   }, {
     "id" : "293",
     "type" : "owl:Class"
   }, {
-    "id" : "297",
+    "id" : "300",
     "type" : "owl:Class"
   }, {
     "id" : "103",
@@ -284,7 +284,7 @@
     "id" : "77",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "145",
@@ -332,10 +332,10 @@
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "36",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "478",
+    "id" : "472",
     "type" : "owl:Class"
   }, {
     "id" : "45",
@@ -380,10 +380,10 @@
     "id" : "164",
     "type" : "owl:Class"
   }, {
-    "id" : "292",
+    "id" : "299",
     "type" : "owl:Class"
   }, {
-    "id" : "152",
+    "id" : "153",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -398,16 +398,16 @@
     "id" : "219",
     "type" : "owl:Class"
   }, {
-    "id" : "495",
+    "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "122",
+    "id" : "495",
     "type" : "owl:Class"
   }, {
     "id" : "223",
     "type" : "owl:Class"
   }, {
-    "id" : "173",
+    "id" : "170",
     "type" : "owl:Class"
   }, {
     "id" : "120",
@@ -422,7 +422,7 @@
     "id" : "613",
     "type" : "owl:Class"
   }, {
-    "id" : "260",
+    "id" : "261",
     "type" : "rdfs:Literal"
   }, {
     "id" : "449",
@@ -563,7 +563,7 @@
     "id" : "83",
     "type" : "owl:Class"
   }, {
-    "id" : "296",
+    "id" : "292",
     "type" : "owl:Class"
   }, {
     "id" : "220",
@@ -584,7 +584,7 @@
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "137",
@@ -608,7 +608,7 @@
     "id" : "107",
     "type" : "owl:Class"
   }, {
-    "id" : "300",
+    "id" : "296",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -695,7 +695,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "60",
-    "superClasses" : [ "154" ]
+    "superClasses" : [ "155" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#QuantitativePromotionDemotion",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -709,7 +709,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "143",
-    "superClasses" : [ "144", "173" ]
+    "superClasses" : [ "144", "170" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#VaeConditioningEntity",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -723,7 +723,7 @@
       "undefined" : "A VaeEntity that refers to something that conditions the behaviour or the characteristics of VaeConditionedEntity. For example, an Agent (a VaeConditionedEntity) is in general conditioned to some Norms or Values (which are VaeConditioningEntities), in the sense that the Agent needs to be aware of them in some way."
     },
     "attributes" : [ "external" ],
-    "id" : "155",
+    "id" : "139",
     "superClasses" : [ "141" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#PersonalFocus",
@@ -758,7 +758,7 @@
       "undefined" : "A mapping between States and Actions that an ActingAgent follows and regulate its behaviour in the world."
     },
     "attributes" : [ "external" ],
-    "id" : "47",
+    "id" : "49",
     "superClasses" : [ "67" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#TransitiveRelationStatement",
@@ -774,7 +774,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "232",
-    "superClasses" : [ "145", "258" ]
+    "superClasses" : [ "258", "145" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#ConceptNode",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
@@ -877,9 +877,9 @@
       }
     } ],
     "comment" : {
-      "undefined" : "\"Definition 2 (Coherence of Value Importance)\""
+      "undefined" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
     },
-    "id" : "261",
+    "id" : "259",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation",
@@ -929,7 +929,7 @@
       "undefined" : "An AgentStatement is whatever statement proposed by an Agent in some context about the world."
     },
     "attributes" : [ "external" ],
-    "id" : "154",
+    "id" : "155",
     "superClasses" : [ "234", "85" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#VaeEntity",
@@ -947,7 +947,7 @@
       "IRI-based" : "VaeEntity",
       "undefined" : "Vae Object"
     },
-    "subClasses" : [ "122", "141", "154" ],
+    "subClasses" : [ "122", "141", "155" ],
     "comment" : {
       "undefined" : "Any kind of object from the VAE domain that is contextualized."
     },
@@ -1067,12 +1067,12 @@
       "bibRef" : [ {
         "identifier" : "bibRef",
         "language" : "undefined",
-        "value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)",
+        "value" : "https://arxiv.org/abs/2305.02748",
         "type" : "label"
       }, {
         "identifier" : "bibRef",
         "language" : "undefined",
-        "value" : "https://arxiv.org/abs/2305.02748",
+        "value" : "Osman, N., d’Inverno, M.: A computational framework of human values for ethical\nai (2023)",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -1157,21 +1157,6 @@
     "id" : "14",
     "superClasses" : [ "15", "110" ]
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#ComparisonStatement",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ComparisonStatement",
-      "undefined" : "Comparison Statement"
-    },
-    "subClasses" : [ "1" ],
-    "comment" : {
-      "undefined" : "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two VaeEntities, under some context. Note that the agent can support their preferences with a property for the superior and inferior cases."
-    },
-    "attributes" : [ "external" ],
-    "id" : "208",
-    "superClasses" : [ "145", "103" ]
-  }, {
     "iri" : "https://w3id.org/def/vaeontology#QualitativeVaeProperty",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "instances" : 0,
@@ -1184,8 +1169,23 @@
       "undefined" : "A VaeProperty that represent a qualitative consideration on an VaeConditionedEntity with respect to a Value or Norm."
     },
     "attributes" : [ "external" ],
-    "id" : "213",
+    "id" : "208",
     "superClasses" : [ "72" ]
+  }, {
+    "iri" : "https://w3id.org/def/vaeontology#ComparisonStatement",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComparisonStatement",
+      "undefined" : "Comparison Statement"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "undefined" : "Any kind of comparison proposed by an Agent (or that the Agent believes in) between two VaeEntities, under some context. Note that the agent can support their preferences with a property for the superior and inferior cases."
+    },
+    "attributes" : [ "external" ],
+    "id" : "213",
+    "superClasses" : [ "145", "103" ]
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/Asset",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
@@ -1216,16 +1216,16 @@
       "undefined" : "Asset"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment3",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "aggregationOfImportanceEqualTreatment3"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceBalanceGiveTake2",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "aggregationOfImportanceBalanceGiveTake2"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment3",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "aggregationOfImportanceEqualTreatment3"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceBalanceGiveTake1",
@@ -1234,28 +1234,28 @@
         "IRI-based" : "aggregationOfImportanceBalanceGiveTake1"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceReciprocity2",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "aggregationOfImportanceReciprocity2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment1",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "aggregationOfImportanceEqualTreatment1"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment2",
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceReciprocity2",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
-        "IRI-based" : "aggregationOfImportanceEqualTreatment2"
+        "IRI-based" : "aggregationOfImportanceReciprocity2"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualDivision2",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "aggregationOfImportanceEqualDivision2"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment2",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "aggregationOfImportanceEqualTreatment2"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceReciprocity1",
@@ -1518,7 +1518,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "1",
-    "superClasses" : [ "208" ]
+    "superClasses" : [ "213" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#VaeStatementEntity",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -1527,7 +1527,7 @@
       "IRI-based" : "VaeStatementEntity",
       "undefined" : "VAE Statement Entity"
     },
-    "subClasses" : [ "73", "72", "155" ],
+    "subClasses" : [ "73", "72", "139" ],
     "comment" : {
       "undefined" : "A VaeEntity that can be present in an AgentStatement"
     },
@@ -1650,7 +1650,7 @@
       "IRI-based" : "Value",
       "undefined" : "Value"
     },
-    "subClasses" : [ "27", "30", "43", "58", "297" ],
+    "subClasses" : [ "27", "30", "43", "58", "293" ],
     "attributes" : [ "external" ],
     "id" : "28",
     "superClasses" : [ "272" ]
@@ -1671,21 +1671,21 @@
         "value" : "C75919",
         "type" : "label"
       } ],
-      "NCIT_P366" : [ {
-        "identifier" : "NCIT_P366",
-        "language" : "undefined",
-        "value" : "Symmetric_Relationship",
-        "type" : "label"
-      } ],
       "hasExactSynonym" : [ {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Symmetric Relationship",
+        "value" : "Symmetric",
         "type" : "label"
       }, {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Symmetric",
+        "value" : "Symmetric Relationship",
+        "type" : "label"
+      } ],
+      "NCIT_P366" : [ {
+        "identifier" : "NCIT_P366",
+        "language" : "undefined",
+        "value" : "Symmetric_Relationship",
         "type" : "label"
       } ],
       "IAO_0000115" : [ {
@@ -1709,12 +1709,12 @@
       "NCIT_P383" : [ {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "SY",
+        "value" : "PT",
         "type" : "label"
       }, {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "PT",
+        "value" : "SY",
         "type" : "label"
       } ],
       "NCIT_P108" : [ {
@@ -1755,15 +1755,10 @@
         "value" : "C75918",
         "type" : "label"
       } ],
-      "hasExactSynonym" : [ {
-        "identifier" : "hasExactSynonym",
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "Reflexive Relationship",
-        "type" : "label"
-      }, {
-        "identifier" : "hasExactSynonym",
-        "language" : "undefined",
-        "value" : "Reflexive",
+        "value" : "A relation in which each element is in relation to itself.",
         "type" : "label"
       } ],
       "NCIT_P366" : [ {
@@ -1772,10 +1767,15 @@
         "value" : "Reflexive_Relationship",
         "type" : "label"
       } ],
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
+      "hasExactSynonym" : [ {
+        "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "A relation in which each element is in relation to itself.",
+        "value" : "Reflexive",
+        "type" : "label"
+      }, {
+        "identifier" : "hasExactSynonym",
+        "language" : "undefined",
+        "value" : "Reflexive Relationship",
         "type" : "label"
       } ],
       "NCIT_P378" : [ {
@@ -1838,13 +1838,13 @@
       "IRI-based" : "ValueConcept",
       "undefined" : "Value Concept"
     },
-    "subClasses" : [ "422", "15", "267", "38", "217", "110", "405", "368", "372", "272", "378", "165" ],
+    "subClasses" : [ "422", "15", "267", "37", "217", "110", "405", "368", "372", "272", "378", "165" ],
     "comment" : {
       "undefined" : "Any abstraction of Value, something that is considered as such even if not present in any specific theory."
     },
     "attributes" : [ "external" ],
     "id" : "23",
-    "superClasses" : [ "275", "155" ]
+    "superClasses" : [ "275", "139" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C75915",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1862,6 +1862,12 @@
         "value" : "C75915",
         "type" : "label"
       } ],
+      "NCIT_P366" : [ {
+        "identifier" : "NCIT_P366",
+        "language" : "undefined",
+        "value" : "Property_of_Relationship",
+        "type" : "label"
+      } ],
       "hasExactSynonym" : [ {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
@@ -1871,12 +1877,6 @@
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
         "value" : "Properties of Relations",
-        "type" : "label"
-      } ],
-      "NCIT_P366" : [ {
-        "identifier" : "NCIT_P366",
-        "language" : "undefined",
-        "value" : "Property_of_Relationship",
         "type" : "label"
       } ],
       "NCIT_P384" : [ {
@@ -1913,7 +1913,7 @@
       "IRI-based" : "NCIT_C75915",
       "undefined" : "Property of Relationship"
     },
-    "subClasses" : [ "311", "315", "258", "19", "357", "326", "289", "293" ],
+    "subClasses" : [ "311", "315", "258", "19", "357", "326", "289", "300" ],
     "attributes" : [ "external" ],
     "id" : "327",
     "superClasses" : [ "482" ]
@@ -1948,7 +1948,7 @@
       "undefined" : "Alignment Statement"
     },
     "comment" : {
-      "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  \"When norms properly reflect values we say that the norms are value-aligned.” + (previously) “The application of norms always implies situation-awareness first.”"
+      "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “… when the outcomes adequately abide by values - possibly because they satisfy entirely the (value-aligned) norms - we say that these outcomes are value-aligned.”"
     },
     "attributes" : [ "external" ],
     "id" : "253",
@@ -1961,13 +1961,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/def/vaeontology#Sequence",
-        "type" : "iri"
+        "value" : "http://ontologydesignpatterns.org/wiki/Submissions:Sequence",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://ontologydesignpatterns.org/wiki/Submissions:Sequence",
-        "type" : "label"
+        "value" : "https://w3id.org/def/vaeontology#Sequence",
+        "type" : "iri"
       } ]
     },
     "label" : {
@@ -1992,11 +1992,11 @@
       "undefined" : "An Agent that makes Actions and/or follows some Strategy"
     },
     "attributes" : [ "external" ],
-    "id" : "48",
+    "id" : "50",
     "superClasses" : [ "93" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#Fairness",
-    "equivalent" : [ "37" ],
+    "equivalent" : [ "36" ],
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
     "instances" : 0,
     "label" : {
@@ -2011,7 +2011,7 @@
     } ],
     "attributes" : [ "equivalent" ],
     "id" : "408",
-    "superClasses" : [ "38" ]
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#Concern",
     "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
@@ -2104,6 +2104,12 @@
         "value" : "C75920",
         "type" : "label"
       } ],
+      "NCIT_P366" : [ {
+        "identifier" : "NCIT_P366",
+        "language" : "undefined",
+        "value" : "Antisymmetric_Relationship",
+        "type" : "label"
+      } ],
       "hasExactSynonym" : [ {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
@@ -2121,12 +2127,6 @@
         "value" : "A binary relation such that if a is related to b and b is related to a, then a equals b.",
         "type" : "label"
       } ],
-      "NCIT_P366" : [ {
-        "identifier" : "NCIT_P366",
-        "language" : "undefined",
-        "value" : "Antisymmetric_Relationship",
-        "type" : "label"
-      } ],
       "NCIT_P378" : [ {
         "identifier" : "NCIT_P378",
         "language" : "undefined",
@@ -2142,24 +2142,24 @@
       "NCIT_P383" : [ {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "SY",
+        "value" : "PT",
         "type" : "label"
       }, {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "PT",
-        "type" : "label"
-      } ],
-      "NCIT_P108" : [ {
-        "identifier" : "NCIT_P108",
-        "language" : "undefined",
-        "value" : "Antisymmetric Relationship",
+        "value" : "SY",
         "type" : "label"
       } ],
       "NCIT_P207" : [ {
         "identifier" : "NCIT_P207",
         "language" : "undefined",
         "value" : "C2698161",
+        "type" : "label"
+      } ],
+      "NCIT_P108" : [ {
+        "identifier" : "NCIT_P108",
+        "language" : "undefined",
+        "value" : "Antisymmetric Relationship",
         "type" : "label"
       } ]
     },
@@ -2234,16 +2234,16 @@
         "value" : "SY",
         "type" : "label"
       } ],
-      "NCIT_P207" : [ {
-        "identifier" : "NCIT_P207",
-        "language" : "undefined",
-        "value" : "C2698162",
-        "type" : "label"
-      } ],
       "NCIT_P108" : [ {
         "identifier" : "NCIT_P108",
         "language" : "undefined",
         "value" : "Antitransitive Relationship",
+        "type" : "label"
+      } ],
+      "NCIT_P207" : [ {
+        "identifier" : "NCIT_P207",
+        "language" : "undefined",
+        "value" : "C2698162",
         "type" : "label"
       } ]
     },
@@ -2275,12 +2275,12 @@
       "hasExactSynonym" : [ {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Transitive",
+        "value" : "Transitive Relationship",
         "type" : "label"
       }, {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Transitive Relationship",
+        "value" : "Transitive",
         "type" : "label"
       } ],
       "IAO_0000115" : [ {
@@ -2318,16 +2318,16 @@
         "value" : "PT",
         "type" : "label"
       } ],
-      "NCIT_P108" : [ {
-        "identifier" : "NCIT_P108",
-        "language" : "undefined",
-        "value" : "Transitive Relationship",
-        "type" : "label"
-      } ],
       "NCIT_P207" : [ {
         "identifier" : "NCIT_P207",
         "language" : "undefined",
         "value" : "C2700062",
+        "type" : "label"
+      } ],
+      "NCIT_P108" : [ {
+        "identifier" : "NCIT_P108",
+        "language" : "undefined",
+        "value" : "Transitive Relationship",
         "type" : "label"
       } ]
     },
@@ -2347,13 +2347,13 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/def/vaeontology#Sequence",
-        "type" : "iri"
+        "value" : "http://ontologydesignpatterns.org/wiki/Submissions:Sequence",
+        "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://ontologydesignpatterns.org/wiki/Submissions:Sequence",
-        "type" : "label"
+        "value" : "https://w3id.org/def/vaeontology#Sequence",
+        "type" : "iri"
       } ]
     },
     "label" : {
@@ -2400,6 +2400,20 @@
     "attributes" : [ "external" ],
     "id" : "492"
   }, {
+    "iri" : "https://w3id.org/def/vaeontology#TextualVaeProperty",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextualVaeProperty",
+      "undefined" : "Textual Vae Property"
+    },
+    "comment" : {
+      "undefined" : "A VaeProperty expressed in natural language."
+    },
+    "attributes" : [ "external" ],
+    "id" : "498",
+    "superClasses" : [ "72" ]
+  }, {
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C75924",
     "baseIri" : "http://purl.obolibrary.org/obo",
     "instances" : 0,
@@ -2427,16 +2441,16 @@
         "value" : "Functional Relationship",
         "type" : "label"
       } ],
-      "NCIT_P366" : [ {
-        "identifier" : "NCIT_P366",
-        "language" : "undefined",
-        "value" : "Functional_Relationship",
-        "type" : "label"
-      } ],
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
         "value" : "An injection (or injective, or one-to-one) such that for every y in Y there is at most one x in X such that f(x) equals y.",
+        "type" : "label"
+      } ],
+      "NCIT_P366" : [ {
+        "identifier" : "NCIT_P366",
+        "language" : "undefined",
+        "value" : "Functional_Relationship",
         "type" : "label"
       } ],
       "NCIT_P378" : [ {
@@ -2454,24 +2468,24 @@
       "NCIT_P383" : [ {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "SY",
+        "value" : "PT",
         "type" : "label"
       }, {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "PT",
-        "type" : "label"
-      } ],
-      "NCIT_P207" : [ {
-        "identifier" : "NCIT_P207",
-        "language" : "undefined",
-        "value" : "C2700217",
+        "value" : "SY",
         "type" : "label"
       } ],
       "NCIT_P108" : [ {
         "identifier" : "NCIT_P108",
         "language" : "undefined",
         "value" : "Functional Relationship",
+        "type" : "label"
+      } ],
+      "NCIT_P207" : [ {
+        "identifier" : "NCIT_P207",
+        "language" : "undefined",
+        "value" : "C2700217",
         "type" : "label"
       } ]
     },
@@ -2484,19 +2498,17 @@
     "id" : "289",
     "superClasses" : [ "327" ]
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#TextualVaeProperty",
-    "baseIri" : "https://w3id.org/def/vaeontology",
+    "iri" : "https://w3id.org/spice/SON/SchwartzValues#Benevolence",
+    "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TextualVaeProperty",
-      "undefined" : "Textual Vae Property"
+      "IRI-based" : "Benevolence",
+      "undefined" : "Benevolence"
     },
-    "comment" : {
-      "undefined" : "A VaeProperty expressed in natural language."
-    },
+    "subClasses" : [ "292", "296" ],
     "attributes" : [ "external" ],
-    "id" : "498",
-    "superClasses" : [ "72" ]
+    "id" : "293",
+    "superClasses" : [ "37", "28" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/NCIT_C75925",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -2517,24 +2529,24 @@
       "hasExactSynonym" : [ {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Reverse-Functional",
+        "value" : "Reverse-Functional Relationship",
         "type" : "label"
       }, {
         "identifier" : "hasExactSynonym",
         "language" : "undefined",
-        "value" : "Reverse-Functional Relationship",
-        "type" : "label"
-      } ],
-      "IAO_0000115" : [ {
-        "identifier" : "IAO_0000115",
-        "language" : "undefined",
-        "value" : "An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y.",
+        "value" : "Reverse-Functional",
         "type" : "label"
       } ],
       "NCIT_P366" : [ {
         "identifier" : "NCIT_P366",
         "language" : "undefined",
         "value" : "Reverse-Functional_Relationship",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An surjection (or surjective, or onto) such that for every y in Y there is at least one x in X such that f(x) equals y.",
         "type" : "label"
       } ],
       "NCIT_P378" : [ {
@@ -2552,18 +2564,12 @@
       "NCIT_P383" : [ {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "PT",
+        "value" : "SY",
         "type" : "label"
       }, {
         "identifier" : "NCIT_P383",
         "language" : "undefined",
-        "value" : "SY",
-        "type" : "label"
-      } ],
-      "NCIT_P207" : [ {
-        "identifier" : "NCIT_P207",
-        "language" : "undefined",
-        "value" : "C2699074",
+        "value" : "PT",
         "type" : "label"
       } ],
       "NCIT_P108" : [ {
@@ -2571,28 +2577,22 @@
         "language" : "undefined",
         "value" : "Reverse-Functional Relationship",
         "type" : "label"
+      } ],
+      "NCIT_P207" : [ {
+        "identifier" : "NCIT_P207",
+        "language" : "undefined",
+        "value" : "C2699074",
+        "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "NCIT_C75925",
       "undefined" : "Reverse-Functional Relationship"
     },
-    "subClasses" : [ "292" ],
+    "subClasses" : [ "299" ],
     "attributes" : [ "external" ],
-    "id" : "293",
+    "id" : "300",
     "superClasses" : [ "327" ]
-  }, {
-    "iri" : "https://w3id.org/spice/SON/SchwartzValues#Benevolence",
-    "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Benevolence",
-      "undefined" : "Benevolence"
-    },
-    "subClasses" : [ "296", "300" ],
-    "attributes" : [ "external" ],
-    "id" : "297",
-    "superClasses" : [ "38", "28" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#VaePropertyStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -2601,13 +2601,13 @@
       "IRI-based" : "VaePropertyStatement",
       "undefined" : "Vae Property Statement"
     },
-    "subClasses" : [ "208", "90", "2", "10" ],
+    "subClasses" : [ "213", "90", "2", "10" ],
     "comment" : {
       "undefined" : "An AgentStatement where the agent expresses some VaeProperty of a VaeConditionedEntity."
     },
     "attributes" : [ "external" ],
     "id" : "103",
-    "superClasses" : [ "154" ]
+    "superClasses" : [ "155" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#AlignmentStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -2631,7 +2631,7 @@
       "undefined" : "Alignment Statement"
     },
     "comment" : {
-      "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “… when the outcomes adequately abide by values - possibly because they satisfy entirely the (value-aligned) norms - we say that these outcomes are value-aligned.”"
+      "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  \"When norms properly reflect values we say that the norms are value-aligned.” + (previously) “The application of norms always implies situation-awareness first.”"
     },
     "attributes" : [ "external" ],
     "id" : "471",
@@ -2759,12 +2759,12 @@
       "IRI-based" : "ValueProperty",
       "undefined" : "Value Property"
     },
-    "subClasses" : [ "226", "152", "144", "194" ],
+    "subClasses" : [ "226", "153", "144", "194" ],
     "comment" : {
       "undefined" : "A VaeProperty specifying something about a ValueConcept."
     },
     "attributes" : [ "external" ],
-    "id" : "32",
+    "id" : "39",
     "superClasses" : [ "72" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#RelationStatement",
@@ -2774,13 +2774,13 @@
       "IRI-based" : "RelationStatement",
       "undefined" : "Relation Statement"
     },
-    "subClasses" : [ "208", "418", "397", "414", "18", "288", "230", "292", "232" ],
+    "subClasses" : [ "213", "418", "397", "414", "18", "288", "230", "299", "232" ],
     "comment" : {
       "undefined" : "A contextualized relation between two or more entities put forward by an agent."
     },
     "attributes" : [ "external" ],
     "id" : "145",
-    "superClasses" : [ "154" ]
+    "superClasses" : [ "155" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#real",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -2824,13 +2824,13 @@
         "IRI-based" : "agentExample2"
       }
     } ],
-    "subClasses" : [ "495", "48", "210" ],
+    "subClasses" : [ "495", "50", "210" ],
     "comment" : {
       "undefined" : "An agent that takes part in a problem of interest, either by commiting to a ValueConcept or by participating in some Outcome."
     },
     "attributes" : [ "external" ],
     "id" : "93",
-    "superClasses" : [ "73", "88", "77" ]
+    "superClasses" : [ "73", "77", "88" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#NodeImportance",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
@@ -2839,12 +2839,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomy",
+        "value" : "https://w3id.org/def/vaeontology#ImportanceRelation",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://w3id.org/def/vaeontology#ImportanceRelation",
+        "value" : "https://w3id.org/def/vaeontology_osman_dInverno#ValueTaxonomy",
         "type" : "iri"
       } ]
     },
@@ -2913,16 +2913,16 @@
         "IRI-based" : "p2Importance1"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "p3Importance3"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#balancedGiveTakeNodeImportance2",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "balancedGiveTakeNodeImportance2"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#p3Importance3",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "p3Importance3"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#reciprocityImportance2",
@@ -2943,16 +2943,16 @@
         "IRI-based" : "p1Importance2"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "fairnessNodeImportance"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance1",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "p1Importance1"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#fairnessNodeImportance",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "fairnessNodeImportance"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#p1Importance3",
@@ -2995,7 +2995,7 @@
       "undefined" : "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone. We incorporate this concept by attaching a mea- sure of importance to each node of the taxonomy.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
     },
     "id" : "194",
-    "superClasses" : [ "173", "32" ]
+    "superClasses" : [ "170", "39" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#OptimizedProperty",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -3009,7 +3009,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "197",
-    "superClasses" : [ "510", "173" ]
+    "superClasses" : [ "510", "170" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -3027,7 +3027,7 @@
       "en" : "Description",
       "it" : "Descrizione"
     },
-    "subClasses" : [ "275", "223", "72", "338", "154" ],
+    "subClasses" : [ "275", "223", "72", "338", "155" ],
     "comment" : {
       "undefined" : "A Description is a SocialObject that represents a conceptualization. \nIt can be thought also as a 'descriptive context' that uses or defines concepts in order to create a view on a 'relational context' (cf. Situation) out of a set of data or observations. \nFor example, a Plan is a Description of some actions to be executed by agents in a certain way, with certain parameters; a Diagnosis is a Description that provides an interpretation for a set of observed entities, etc.\nDescriptions 'define' or 'use' concepts, and can be 'satisfied' by situations."
     },
@@ -3073,7 +3073,7 @@
       "undefined" : "\"Going back to the alignment function A, there are other implementation choices to make, such as the choice of the function f and the aggregation operator L. In this paper, we propose a straightforward implementation that simply uses the importance of properties as the weight of their degree of satisfaction (so f is implemented as a multiplication opera- tor), and the aggregation over all relevant properties (L) is implemented as a simple average\""
     },
     "id" : "240",
-    "superClasses" : [ "152" ]
+    "superClasses" : [ "153" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/values/valuecore_with_value_frames.owl#Value",
     "equivalent" : [ "272" ],
@@ -3084,7 +3084,7 @@
       "undefined" : "value"
     },
     "comment" : {
-      "undefined" : "Schwartz: Values are ordered by importance relative to one another. People’s values form an ordered system of priorities that characterize them as individuals."
+      "undefined" : "Schwartz: Values refer to desirable goals that motivate action."
     },
     "attributes" : [ "equivalent", "external" ],
     "id" : "372",
@@ -3146,7 +3146,7 @@
       "IRI-based" : "TaxonomyNode",
       "undefined" : "Taxonomy Node"
     },
-    "subClasses" : [ "261", "386" ],
+    "subClasses" : [ "259", "386" ],
     "comment" : {
       "undefined" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
     },
@@ -3245,7 +3245,7 @@
       "IRI-based" : "VaeProperty",
       "undefined" : "Vae Property"
     },
-    "subClasses" : [ "213", "510", "498", "173", "32" ],
+    "subClasses" : [ "208", "510", "498", "170", "39" ],
     "comment" : {
       "undefined" : "Any property measured on a VaeConditionedEntity, useful to describe some aspect that is related to a Norm or a Value (or any VaeConditioningEntity by extension)."
     },
@@ -3264,8 +3264,8 @@
       "undefined" : "Fairness is present in most of the VAE papers so far, as it is easy to formalize mathematically."
     },
     "attributes" : [ "equivalent", "external" ],
-    "id" : "37",
-    "superClasses" : [ "38" ]
+    "id" : "36",
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#AwarenessStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -3286,7 +3286,7 @@
       "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers] “… a system can be given a formal representation of the norms and/or values that determine its behavior or the behavior it expects from its users. In this case we say that the system is norm and/or value-aware.”"
     },
     "attributes" : [ "external" ],
-    "id" : "478",
+    "id" : "472",
     "superClasses" : [ "90" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#Humility",
@@ -3305,7 +3305,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "45",
-    "superClasses" : [ "267", "38" ]
+    "superClasses" : [ "37", "267" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#VaeStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -3314,7 +3314,7 @@
       "IRI-based" : "VaeStatement",
       "undefined" : "Vae Statement"
     },
-    "subClasses" : [ "478", "471" ],
+    "subClasses" : [ "472", "471" ],
     "comment" : {
       "undefined" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
     },
@@ -3536,8 +3536,8 @@
       "undefined" : "A reverse-functional relation statement."
     },
     "attributes" : [ "external" ],
-    "id" : "292",
-    "superClasses" : [ "145", "293" ]
+    "id" : "299",
+    "superClasses" : [ "145", "300" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyAlignment",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
@@ -3564,8 +3564,8 @@
     "comment" : {
       "undefined" : "\"We argue that the property-based nodes of a value taxonomy introduce the foundations for linking abstract value concepts to concrete computational constructs that can help formally assess the alignment of behaviour with those values. The value alignment of an entity’s behaviour becomes the degree of satisfaction of the property-based value nodes of the relevant taxonomy that this behaviour brings about.\""
     },
-    "id" : "152",
-    "superClasses" : [ "83", "173", "32" ]
+    "id" : "153",
+    "superClasses" : [ "83", "39", "170" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#SelfDirection",
     "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
@@ -3599,7 +3599,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "250",
-    "superClasses" : [ "38" ]
+    "superClasses" : [ "37" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#ImportanceRelation",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -3623,7 +3623,7 @@
       "undefined" : "Importance Relation"
     },
     "comment" : {
-      "undefined" : "A comparison statement proposed by an Agent in which believes that some ValueConcept (superior) is more important than another one (inferior)."
+      "undefined" : "\"Another important concept considered core in the social sciences is value priority, or how important a value is for someone.\"  [Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
     },
     "attributes" : [ "external" ],
     "id" : "130",
@@ -3637,11 +3637,26 @@
       "undefined" : "Argument Statement"
     },
     "comment" : {
-      "undefined" : "An ArgumentStatement is a AgentStatment where a claim is made directly characterizing some value or norm related content (VaeStatement), justified by using other statements (premises) and based on some Criterion."
+      "undefined" : "[Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]  “One of the big advantages of explicit representations is that outcomes can be explained by the system itself in terms of norms and values. For example, a user can ask why he is blocked on a social media platform and this is then explained in terms of which community rules he broke and possibly what values these rules reflect (i.e. why the norm was adopted)”."
     },
     "attributes" : [ "external" ],
     "id" : "219",
-    "superClasses" : [ "154" ]
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/def/vaeontology#VaeSituation",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VaeSituation",
+      "undefined" : "Vae Statement"
+    },
+    "subClasses" : [ "253", "256" ],
+    "comment" : {
+      "undefined" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "85", "202", "176" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#User",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -3663,21 +3678,6 @@
     "attributes" : [ "external" ],
     "id" : "495",
     "superClasses" : [ "87", "93" ]
-  }, {
-    "iri" : "https://w3id.org/def/vaeontology#VaeSituation",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VaeSituation",
-      "undefined" : "Vae Statement"
-    },
-    "subClasses" : [ "253", "256" ],
-    "comment" : {
-      "undefined" : "Any kind of VaePropertyStatement proposed by an agent in which they express that a complex notion of understanding, preservation or respect with a ValueConcept/Norm is present on some VaeConditionedEntity (Agent or Outcome or Norm) based on some VaeProperty(s) seen."
-    },
-    "attributes" : [ "external" ],
-    "id" : "122",
-    "superClasses" : [ "85", "202", "176" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -3711,12 +3711,12 @@
       "IRI-based" : "QuantitativeVaeProperty",
       "undefined" : "Quantitative Vae Property"
     },
-    "subClasses" : [ "226", "152", "83", "143", "194", "197" ],
+    "subClasses" : [ "226", "153", "83", "143", "194", "197" ],
     "comment" : {
       "undefined" : "A VaeProperty that is represented by some numeric value."
     },
     "attributes" : [ "external" ],
-    "id" : "173",
+    "id" : "170",
     "superClasses" : [ "72" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#Nature",
@@ -3768,7 +3768,7 @@
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#importanceValue",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "comment" : {
-        "undefined" : "Would retrieve the rdf:value of a AggregationOfImportance or the importanceValue of a NodeImportance instance"
+        "undefined" : "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about."
       },
       "labels" : {
         "IRI-based" : "importanceValue",
@@ -3779,7 +3779,7 @@
     "id" : "613"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "260",
+    "id" : "261",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3962,12 +3962,12 @@
     "superClasses" : [ "8" ]
   }, {
     "instances" : 0,
-    "union" : [ "261", "386" ],
+    "union" : [ "259", "386" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "612"
   }, {
     "instances" : 0,
-    "union" : [ "261", "386" ],
+    "union" : [ "259", "386" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "603"
   }, {
@@ -4021,12 +4021,12 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "261", "386" ],
+    "union" : [ "259", "386" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "278"
   }, {
     "instances" : 0,
-    "union" : [ "261", "386" ],
+    "union" : [ "259", "386" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "562"
   }, {
@@ -4040,7 +4040,7 @@
     "subClasses" : [ "120", "127", "132" ],
     "attributes" : [ "external" ],
     "id" : "43",
-    "superClasses" : [ "38", "28" ]
+    "superClasses" : [ "37", "28" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#TaxonomyProperty",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
@@ -4072,7 +4072,7 @@
       "undefined" : "[Nardine Osman, Mark D’Inverno https://arxiv.org/abs/2305.02748]"
     },
     "id" : "226",
-    "superClasses" : [ "32", "173" ]
+    "superClasses" : [ "39", "170" ]
   }, {
     "instances" : 0,
     "union" : [ "541", "78" ],
@@ -4128,12 +4128,12 @@
     "superClasses" : [ "67" ]
   }, {
     "instances" : 0,
-    "union" : [ "47", "63" ],
+    "union" : [ "49", "63" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "441"
   }, {
     "instances" : 0,
-    "union" : [ "47", "63" ],
+    "union" : [ "49", "63" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "596"
   }, {
@@ -4172,7 +4172,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "178",
-    "superClasses" : [ "73", "338", "155", "78" ]
+    "superClasses" : [ "73", "338", "139", "78" ]
   }, {
     "instances" : 0,
     "union" : [ "53", "12" ],
@@ -4192,7 +4192,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "144",
-    "superClasses" : [ "213", "32" ]
+    "superClasses" : [ "208", "39" ]
   }, {
     "instances" : 0,
     "union" : [ "53", "12" ],
@@ -4245,13 +4245,13 @@
       "IRI-based" : "AggregationFunction",
       "undefined" : "Aggregation Function"
     },
-    "subClasses" : [ "152", "82" ],
+    "subClasses" : [ "153", "82" ],
     "comment" : {
       "undefined" : "An aggregation of some other VaeProperty over a set of VaeConditionedEntitys (or Sequence)."
     },
     "attributes" : [ "external" ],
     "id" : "83",
-    "superClasses" : [ "173" ]
+    "superClasses" : [ "170" ]
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#Caring",
     "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
@@ -4268,8 +4268,8 @@
       "IRI-based" : "Caring"
     },
     "attributes" : [ "external" ],
-    "id" : "296",
-    "superClasses" : [ "297" ]
+    "id" : "292",
+    "superClasses" : [ "293" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#Criterion",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -4291,7 +4291,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "220",
-    "superClasses" : [ "223", "154", "78" ]
+    "superClasses" : [ "223", "155", "78" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#FunctionalRelationStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -4326,7 +4326,7 @@
     },
     "subClasses" : [ "87", "93" ],
     "comment" : {
-      "undefined" : "Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl."
+      "undefined" : "Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community)."
     },
     "attributes" : [ "external" ],
     "id" : "88",
@@ -4339,16 +4339,16 @@
       "IRI-based" : "AggregationOfImportance"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceBalanceGiveTake2",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "aggregationOfImportanceBalanceGiveTake2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment3",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "aggregationOfImportanceEqualTreatment3"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceBalanceGiveTake2",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "aggregationOfImportanceBalanceGiveTake2"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceBalanceGiveTake1",
@@ -4369,16 +4369,16 @@
         "IRI-based" : "aggregationOfImportanceReciprocity2"
       }
     }, {
-      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualDivision2",
-      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-      "labels" : {
-        "IRI-based" : "aggregationOfImportanceEqualDivision2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualTreatment2",
       "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
       "labels" : {
         "IRI-based" : "aggregationOfImportanceEqualTreatment2"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceEqualDivision2",
+      "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
+      "labels" : {
+        "IRI-based" : "aggregationOfImportanceEqualDivision2"
       }
     }, {
       "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#aggregationOfImportanceReciprocity1",
@@ -4434,9 +4434,9 @@
       "IRI-based" : "SelfTrascendence",
       "undefined" : "Self Trascendence"
     },
-    "subClasses" : [ "37", "45", "408", "43", "250", "297" ],
+    "subClasses" : [ "36", "45", "408", "43", "250", "293" ],
     "attributes" : [ "external" ],
-    "id" : "38",
+    "id" : "37",
     "superClasses" : [ "23" ]
   }, {
     "iri" : "https://w3id.org/def/vaeontology#Path",
@@ -4476,7 +4476,7 @@
       "IRI-based" : "Outcome",
       "undefined" : "Outcome"
     },
-    "subClasses" : [ "384", "95", "281", "396", "47", "63", "68" ],
+    "subClasses" : [ "384", "95", "281", "396", "49", "63", "68" ],
     "comment" : {
       "undefined" : "Outcomes include the effect of the behavior of a system or of a user using a system [Luc Steels: https://vale2023.iiia.csic.es/accepted-papers]."
     },
@@ -4569,8 +4569,8 @@
       "IRI-based" : "Dependability"
     },
     "attributes" : [ "external" ],
-    "id" : "300",
-    "superClasses" : [ "297" ]
+    "id" : "296",
+    "superClasses" : [ "293" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -4612,13 +4612,13 @@
     "id" : "31",
     "type" : "owl:allValuesFrom"
   }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "35",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
+    "id" : "38",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "42",
@@ -4630,7 +4630,7 @@
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "52",
@@ -4706,7 +4706,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "121",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "123",
     "type" : "rdfs:SubClassOf"
@@ -4715,7 +4715,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "128",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "129",
     "type" : "rdfs:SubClassOf"
@@ -4733,7 +4733,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "138",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "140",
     "type" : "rdfs:SubClassOf"
@@ -4741,19 +4741,19 @@
     "id" : "142",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "41",
+    "id" : "33",
     "type" : "owl:objectProperty"
   }, {
     "id" : "149",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "150",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "151",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "153",
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
     "type" : "owl:objectProperty"
   }, {
     "id" : "156",
@@ -4777,7 +4777,7 @@
     "id" : "168",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "170",
+    "id" : "171",
     "type" : "owl:objectProperty"
   }, {
     "id" : "174",
@@ -4790,7 +4790,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "179",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "180",
     "type" : "rdfs:SubClassOf"
@@ -4936,13 +4936,13 @@
     "id" : "257",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "259",
+    "id" : "260",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "262",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "33",
+    "id" : "40",
     "type" : "owl:objectProperty"
   }, {
     "id" : "263",
@@ -5002,10 +5002,10 @@
     "id" : "295",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "298",
+    "id" : "297",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "299",
+    "id" : "298",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "301",
@@ -5134,7 +5134,7 @@
     "id" : "364",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "40",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
     "id" : "366",
@@ -5173,7 +5173,7 @@
     "id" : "380",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "139",
+    "id" : "150",
     "type" : "owl:objectProperty"
   }, {
     "id" : "381",
@@ -5353,14 +5353,14 @@
     "id" : "459",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "461",
+    "id" : "462",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "462",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "465",
+    "id" : "463",
     "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "464",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "466",
     "type" : "owl:disjointWith"
@@ -5372,25 +5372,25 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "470",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "472",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "473",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "474",
     "type" : "owl:disjointWith"
   }, {
     "id" : "221",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "474",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "475",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "477",
-    "type" : "owl:disjointWith"
+    "id" : "476",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "478",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "479",
     "type" : "owl:disjointWith"
@@ -5465,7 +5465,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "506",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "507",
     "type" : "rdfs:SubClassOf"
@@ -5489,7 +5489,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "515",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "516",
     "type" : "rdfs:SubClassOf"
@@ -5531,10 +5531,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "530",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "531",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "532",
     "type" : "rdfs:SubClassOf"
@@ -5585,19 +5585,19 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "553",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "554",
     "type" : "owl:someValuesFrom"
   }, {
+    "id" : "554",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "555",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "556",
     "type" : "owl:disjointWith"
   }, {
     "id" : "557",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "558",
     "type" : "owl:someValuesFrom"
@@ -5665,10 +5665,10 @@
     "id" : "323",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "330",
+    "id" : "56",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "56",
+    "id" : "330",
     "type" : "owl:objectProperty"
   }, {
     "id" : "585",
@@ -5708,7 +5708,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "595",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "442",
     "type" : "owl:objectProperty"
@@ -5719,7 +5719,7 @@
     "id" : "167",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "476",
+    "id" : "477",
     "type" : "owl:objectProperty"
   }, {
     "id" : "426",
@@ -5737,7 +5737,7 @@
     "id" : "546",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "284",
@@ -5755,13 +5755,13 @@
     "id" : "597",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "464",
+    "id" : "461",
     "type" : "owl:objectProperty"
   }, {
     "id" : "604",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
     "id" : "605",
@@ -5794,7 +5794,7 @@
     "id" : "69",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "172",
+    "id" : "173",
     "type" : "owl:objectProperty"
   }, {
     "id" : "571",
@@ -5893,13 +5893,13 @@
     "id" : "644",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "460",
+    "id" : "465",
     "type" : "owl:objectProperty"
   }, {
     "id" : "74",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "463",
+    "id" : "460",
     "type" : "owl:objectProperty"
   }, {
     "id" : "645",
@@ -6007,7 +6007,7 @@
     "id" : "669",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "51",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "621",
@@ -6109,18 +6109,18 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
-    "inverse" : "33",
+    "iri" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
+    "inverse" : "32",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "32",
+    "range" : "23",
     "label" : {
-      "IRI-based" : "hasPropertyOfInferior",
-      "undefined" : "has property of inferior"
+      "IRI-based" : "comparisonHasSuperior",
+      "undefined" : "comparison has superior"
     },
-    "superproperty" : [ "34" ],
+    "superproperty" : [ "33" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
+      "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement)."
     },
     "attributes" : [ "allValues", "object", "external" ],
     "id" : "31"
@@ -6128,56 +6128,41 @@
     "range" : "28",
     "domain" : "30",
     "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
-    "range" : "38",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "iri" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
+    "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
     "inverse" : "40",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "23",
+    "range" : "39",
     "label" : {
-      "IRI-based" : "comparisonHasSuperior",
-      "undefined" : "comparison has superior"
+      "IRI-based" : "hasPropertyOfInferior",
+      "undefined" : "has property of inferior"
     },
     "superproperty" : [ "41" ],
     "domain" : "1",
     "comment" : {
-      "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement)."
+      "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
     },
     "attributes" : [ "allValues", "object", "external" ],
-    "id" : "39"
+    "id" : "38"
   }, {
     "range" : "28",
     "domain" : "43",
     "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "45",
     "attributes" : [ "object", "anonymous" ],
     "id" : "44"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#isFollowedByAgent",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "48",
-    "label" : {
-      "IRI-based" : "isFollowedByAgent",
-      "undefined" : "followed by agent"
-    },
-    "superproperty" : [ "49" ],
-    "domain" : "47",
-    "comment" : {
-      "undefined" : "Indicates that the Strategy is followed by some ActingAgent."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "46"
-  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
-    "inverse" : "51",
+    "inverse" : "47",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "12",
     "annotations" : {
@@ -6199,7 +6184,22 @@
       "undefined" : "A relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "50"
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/def/vaeontology#isFollowedByAgent",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "isFollowedByAgent",
+      "undefined" : "followed by agent"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "Indicates that the Strategy is followed by some ActingAgent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasEventDate",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -6208,18 +6208,18 @@
       "IRI-based" : "hasEventDate"
     },
     "domain" : "53",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "52"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfSuperior",
     "inverse" : "56",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "32",
+    "range" : "39",
     "label" : {
       "IRI-based" : "hasPropertyOfSuperior",
       "undefined" : "has property of superior"
     },
-    "superproperty" : [ "34" ],
+    "superproperty" : [ "41" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation."
@@ -6246,7 +6246,7 @@
     "iri" : "https://w3id.org/def/vaeontology#madeByAgent",
     "inverse" : "64",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "48",
+    "range" : "50",
     "label" : {
       "IRI-based" : "madeByAgent",
       "undefined" : "made by agent"
@@ -6391,7 +6391,7 @@
     },
     "superproperty" : [ "104" ],
     "domain" : "72",
-    "subproperty" : [ "56", "33", "105" ],
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
@@ -6435,6 +6435,21 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "119"
   }, {
+    "range" : "90",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "125",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "43",
+    "domain" : "127",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "90",
@@ -6457,21 +6472,6 @@
       "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
     "attributes" : [ "object", "external", "someValues" ],
-    "id" : "121"
-  }, {
-    "range" : "125",
-    "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "123"
-  }, {
-    "range" : "43",
-    "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "126"
-  }, {
-    "range" : "90",
-    "domain" : "122",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
     "range" : "1",
@@ -6518,28 +6518,19 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "136"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy",
-    "inverse" : "139",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "122",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-        "type" : "iri"
-      } ]
-    },
+    "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "139",
     "label" : {
-      "IRI-based" : "isSatisfiedBy",
-      "en" : "is satisfied by",
-      "it" : "è soddisfatta da"
+      "IRI-based" : "interpretationOn",
+      "undefined" : "interpretation on"
     },
+    "superproperty" : [ "113" ],
     "domain" : "90",
     "comment" : {
-      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
+      "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "138"
   }, {
     "range" : "141",
@@ -6567,47 +6558,56 @@
       "undefined" : "Reference to the first element of a directed relation tuple R = (first, second) (Could be used to have one to many or many to many relationships)."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "41"
+    "id" : "33"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#onEntity",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "73",
-    "label" : {
-      "IRI-based" : "onEntity",
-      "undefined" : "on entity"
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy",
+    "inverse" : "150",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "range" : "122",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+        "type" : "iri"
+      } ]
     },
-    "superproperty" : [ "113" ],
+    "label" : {
+      "IRI-based" : "isSatisfiedBy",
+      "en" : "is satisfied by",
+      "it" : "è soddisfatta da"
+    },
     "domain" : "90",
     "comment" : {
-      "undefined" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
+      "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "149"
   }, {
     "range" : "141",
     "domain" : "72",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "150"
+    "id" : "151"
   }, {
     "range" : "83",
-    "domain" : "152",
+    "domain" : "153",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "151"
+    "id" : "152"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "155",
+    "range" : "139",
     "label" : {
       "IRI-based" : "interpretationOn",
       "undefined" : "interpretation on"
     },
     "superproperty" : [ "113" ],
-    "domain" : "154",
+    "domain" : "155",
     "comment" : {
       "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "153"
+    "id" : "154"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#constrainsOutcome",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -6635,23 +6635,23 @@
     "attributes" : [ "object", "external" ],
     "id" : "157"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
+    "iri" : "https://w3id.org/def/vaeontology#onEntity",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "155",
+    "range" : "73",
     "label" : {
-      "IRI-based" : "interpretationOn",
-      "undefined" : "interpretation on"
+      "IRI-based" : "onEntity",
+      "undefined" : "on entity"
     },
     "superproperty" : [ "113" ],
     "domain" : "90",
     "comment" : {
-      "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
+      "undefined" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
     },
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "161"
   }, {
     "range" : "141",
-    "domain" : "155",
+    "domain" : "139",
     "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
@@ -6678,7 +6678,7 @@
     "iri" : "https://w3id.org/def/vaeontology#isEntityOf",
     "inverse" : "169",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "154",
+    "range" : "155",
     "label" : {
       "IRI-based" : "isEntityOf",
       "en" : "Is Entity Of"
@@ -6692,16 +6692,16 @@
     "id" : "168"
   }, {
     "iri" : "https://w3id.org/framester/schema/hasPerspective",
-    "inverse" : "171",
+    "inverse" : "172",
     "baseIri" : "https://w3id.org/framester/schema",
     "range" : "158",
     "label" : {
       "IRI-based" : "hasPerspective"
     },
     "domain" : "158",
-    "subproperty" : [ "172" ],
+    "subproperty" : [ "173" ],
     "attributes" : [ "object", "external" ],
-    "id" : "170"
+    "id" : "171"
   }, {
     "range" : "110",
     "domain" : "14",
@@ -6718,19 +6718,20 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "177"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#relationWith",
+    "iri" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
+    "inverse" : "74",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "155",
+    "range" : "73",
     "label" : {
-      "IRI-based" : "relationWith",
-      "undefined" : "relation with"
+      "IRI-based" : "measuredOnConditionedEntity",
+      "undefined" : "measured on outcome"
     },
-    "superproperty" : [ "171" ],
+    "superproperty" : [ "75" ],
     "domain" : "72",
     "comment" : {
-      "undefined" : "Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality."
+      "undefined" : "Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome)."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "179"
   }, {
     "range" : "176",
@@ -6759,8 +6760,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "183"
   }, {
-    "range" : "173",
-    "domain" : "152",
+    "range" : "170",
+    "domain" : "153",
     "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
@@ -6769,17 +6770,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "185"
   }, {
-    "range" : "173",
+    "range" : "170",
     "domain" : "83",
     "attributes" : [ "object", "anonymous" ],
     "id" : "186"
   }, {
     "range" : "85",
-    "domain" : "154",
+    "domain" : "155",
     "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
-    "range" : "173",
+    "range" : "170",
     "domain" : "143",
     "attributes" : [ "object", "anonymous" ],
     "id" : "188"
@@ -6805,7 +6806,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "192"
   }, {
-    "range" : "173",
+    "range" : "170",
     "domain" : "194",
     "attributes" : [ "object", "anonymous" ],
     "id" : "193"
@@ -6815,7 +6816,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "195"
   }, {
-    "range" : "173",
+    "range" : "170",
     "domain" : "197",
     "attributes" : [ "object", "anonymous" ],
     "id" : "196"
@@ -6866,7 +6867,7 @@
     "id" : "191"
   }, {
     "range" : "208",
-    "domain" : "1",
+    "domain" : "144",
     "attributes" : [ "object", "anonymous" ],
     "id" : "207"
   }, {
@@ -6876,18 +6877,18 @@
     "id" : "209"
   }, {
     "range" : "213",
-    "domain" : "144",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "212"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#relationWith",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "155",
+    "range" : "139",
     "label" : {
       "IRI-based" : "relationWith",
       "undefined" : "relation with"
     },
-    "superproperty" : [ "171" ],
+    "superproperty" : [ "172" ],
     "domain" : "72",
     "comment" : {
       "undefined" : "Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality."
@@ -6902,7 +6903,7 @@
       "IRI-based" : "hasIntervalDate"
     },
     "domain" : "158",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "214"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#onEntity",
@@ -6913,7 +6914,7 @@
       "undefined" : "on entity"
     },
     "superproperty" : [ "113" ],
-    "domain" : "154",
+    "domain" : "155",
     "comment" : {
       "undefined" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
     },
@@ -6941,17 +6942,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "222"
   }, {
-    "range" : "154",
+    "range" : "155",
     "domain" : "103",
     "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
-    "range" : "173",
+    "range" : "170",
     "domain" : "226",
     "attributes" : [ "object", "anonymous" ],
     "id" : "225"
   }, {
-    "range" : "155",
+    "range" : "139",
     "domain" : "23",
     "attributes" : [ "object", "anonymous" ],
     "id" : "227"
@@ -6986,7 +6987,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
-    "range" : "152",
+    "range" : "153",
     "domain" : "240",
     "attributes" : [ "object", "anonymous" ],
     "id" : "239"
@@ -7011,7 +7012,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "246"
   }, {
-    "range" : "154",
+    "range" : "155",
     "domain" : "145",
     "attributes" : [ "object", "anonymous" ],
     "id" : "248"
@@ -7021,7 +7022,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
-    "range" : "154",
+    "range" : "155",
     "domain" : "219",
     "attributes" : [ "object", "anonymous" ],
     "id" : "251"
@@ -7031,7 +7032,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "252"
   }, {
-    "range" : "154",
+    "range" : "155",
     "domain" : "220",
     "attributes" : [ "object", "anonymous" ],
     "id" : "254"
@@ -7041,14 +7042,14 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "255"
   }, {
-    "range" : "154",
+    "range" : "155",
     "domain" : "60",
     "attributes" : [ "object", "anonymous" ],
     "id" : "257"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#degreeOfSatisfaction",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "260",
+    "range" : "261",
     "label" : {
       "IRI-based" : "degreeOfSatisfaction",
       "undefined" : "degree of satisfaction"
@@ -7057,8 +7058,8 @@
     "comment" : {
       "undefined" : "States the degree of satisfaction of an instance of a property used in some ValueTaxonomy (PropertyTaxonomy)."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "259"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "260"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isPremiseOf",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -7077,18 +7078,18 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isPropertyOfInferiorOf",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "208",
+    "range" : "213",
     "label" : {
       "IRI-based" : "isPropertyOfInferiorOf",
       "undefined" : "is property of inferior of"
     },
     "superproperty" : [ "112" ],
-    "domain" : "32",
+    "domain" : "39",
     "comment" : {
       "undefined" : "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "33"
+    "id" : "40"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -7161,7 +7162,7 @@
   }, {
     "iri" : "https://w3id.org/spice/SON/SchwartzValues#opposingValueMotivation",
     "baseIri" : "https://w3id.org/spice/SON/SchwartzValues",
-    "range" : "38",
+    "range" : "37",
     "label" : {
       "IRI-based" : "opposingValueMotivation"
     },
@@ -7180,7 +7181,7 @@
     "label" : {
       "IRI-based" : "opposingValueMotivation"
     },
-    "domain" : "38",
+    "domain" : "37",
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "276"
   }, {
@@ -7193,7 +7194,7 @@
       "undefined" : "directly generalizes"
     },
     "superproperty" : [ "182" ],
-    "domain" : "261",
+    "domain" : "259",
     "comment" : {
       "undefined" : "Indicates that the ConceptNode directly generalizes the ConceptNode or PropertyNode specified (they are linked directly in the ValueTaxonomy)."
     },
@@ -7202,7 +7203,7 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isActionOnStateOfStrategy",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "47",
+    "range" : "49",
     "label" : {
       "IRI-based" : "isActionOnStateOfStrategy",
       "undefined" : "is ActionOnState of Strategy"
@@ -7291,7 +7292,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
-    "range" : "297",
+    "range" : "293",
     "domain" : "296",
     "attributes" : [ "object", "anonymous" ],
     "id" : "295"
@@ -7299,12 +7300,12 @@
     "range" : "21",
     "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "298"
+    "id" : "297"
   }, {
-    "range" : "297",
-    "domain" : "300",
+    "range" : "300",
+    "domain" : "299",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "299"
+    "id" : "298"
   }, {
     "range" : "30",
     "domain" : "14",
@@ -7312,7 +7313,7 @@
     "id" : "301"
   }, {
     "range" : "103",
-    "domain" : "208",
+    "domain" : "213",
     "attributes" : [ "object", "anonymous" ],
     "id" : "302"
   }, {
@@ -7394,7 +7395,7 @@
       "undefined" : "is ConceptNode of"
     },
     "superproperty" : [ "323" ],
-    "domain" : "261",
+    "domain" : "259",
     "subproperty" : [ "324" ],
     "comment" : {
       "undefined" : "Indicates that the ConceptNode is part of a ValueTaxonomy."
@@ -7449,7 +7450,7 @@
     "id" : "334"
   }, {
     "range" : "327",
-    "domain" : "293",
+    "domain" : "300",
     "attributes" : [ "object", "anonymous" ],
     "id" : "335"
   }, {
@@ -7484,7 +7485,7 @@
     "id" : "342"
   }, {
     "range" : "45",
-    "domain" : "297",
+    "domain" : "293",
     "attributes" : [ "object", "anonymous" ],
     "id" : "343"
   }, {
@@ -7493,8 +7494,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "344"
   }, {
-    "range" : "300",
-    "domain" : "296",
+    "range" : "296",
+    "domain" : "292",
     "attributes" : [ "object", "anonymous" ],
     "id" : "345"
   }, {
@@ -7587,23 +7588,23 @@
       "IRI-based" : "importanceRangesMax"
     },
     "domain" : "4",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "364"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#superiorInComparison",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "208",
+    "range" : "213",
     "label" : {
       "IRI-based" : "superiorInComparison",
       "undefined" : "superior in comparison"
     },
     "superproperty" : [ "146" ],
-    "domain" : "23",
+    "domain" : "85",
     "comment" : {
       "undefined" : "Indicates in the ValueComparisonStatement the ValueConcept that is superior to some other inferior one (that is to be supplied in the same ValueComparisonStatement)."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "40"
+    "id" : "32"
   }, {
     "range" : "67",
     "domain" : "63",
@@ -7687,7 +7688,7 @@
       "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "139"
+    "id" : "150"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#propertyExpressedAt",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -7698,7 +7699,7 @@
     },
     "superproperty" : [ "104" ],
     "domain" : "194",
-    "subproperty" : [ "56", "33", "105" ],
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
@@ -7723,7 +7724,7 @@
       "IRI-based" : "hasPropertyTaxonomy",
       "undefined" : "has Property Taxonomy"
     },
-    "superproperty" : [ "34" ],
+    "superproperty" : [ "41" ],
     "domain" : "386",
     "comment" : {
       "undefined" : "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
@@ -7749,8 +7750,8 @@
       "undefined" : "property expressed at"
     },
     "superproperty" : [ "104" ],
-    "domain" : "152",
-    "subproperty" : [ "56", "33", "105" ],
+    "domain" : "153",
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
@@ -7758,7 +7759,7 @@
     "id" : "389"
   }, {
     "range" : "23",
-    "domain" : "38",
+    "domain" : "37",
     "attributes" : [ "object", "anonymous" ],
     "id" : "390"
   }, {
@@ -7802,7 +7803,7 @@
     },
     "superproperty" : [ "104" ],
     "domain" : "226",
-    "subproperty" : [ "56", "33", "105" ],
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
@@ -7815,14 +7816,14 @@
     "id" : "399"
   }, {
     "range" : "67",
-    "domain" : "47",
+    "domain" : "49",
     "attributes" : [ "object", "anonymous" ],
     "id" : "400"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode",
     "inverse" : "322",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "261",
+    "range" : "259",
     "label" : {
       "IRI-based" : "hasConceptNode",
       "undefined" : "has concept node"
@@ -7857,7 +7858,7 @@
     "attributes" : [ "object", "someValues" ],
     "id" : "406"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "408",
     "attributes" : [ "object", "anonymous" ],
     "id" : "407"
@@ -7874,15 +7875,15 @@
     "comment" : {
       "undefined" : "\"We articulate this coherence by requiring that a parent node’s importance must be aligned with the importance of its children nodes. For example, if the importance of all children nodes is low, then the importance of the parent node cannot be high, and vice versa.\""
     },
-    "attributes" : [ "inverse functional", "object" ],
+    "attributes" : [ "object", "inverse functional" ],
     "id" : "409"
   }, {
     "range" : "28",
-    "domain" : "297",
+    "domain" : "293",
     "attributes" : [ "object", "anonymous" ],
     "id" : "410"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "43",
     "attributes" : [ "object", "anonymous" ],
     "id" : "411"
@@ -7894,8 +7895,8 @@
       "IRI-based" : "relationWith",
       "undefined" : "relation with"
     },
-    "superproperty" : [ "171" ],
-    "domain" : "32",
+    "superproperty" : [ "172" ],
+    "domain" : "39",
     "comment" : {
       "undefined" : "Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality."
     },
@@ -7907,7 +7908,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "413"
   }, {
-    "range" : "38",
+    "range" : "37",
     "domain" : "250",
     "attributes" : [ "object", "anonymous" ],
     "id" : "415"
@@ -7921,7 +7922,7 @@
     },
     "superproperty" : [ "104" ],
     "domain" : "82",
-    "subproperty" : [ "56", "33", "105" ],
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
@@ -7933,13 +7934,13 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "417"
   }, {
-    "range" : "38",
-    "domain" : "297",
+    "range" : "37",
+    "domain" : "293",
     "attributes" : [ "object", "anonymous" ],
     "id" : "419"
   }, {
     "range" : "386",
-    "domain" : "261",
+    "domain" : "259",
     "attributes" : [ "object", "anonymous" ],
     "id" : "420"
   }, {
@@ -7953,7 +7954,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "423"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "68",
     "attributes" : [ "object", "anonymous" ],
     "id" : "424"
@@ -7991,9 +7992,9 @@
     },
     "domain" : "194",
     "comment" : {
-      "undefined" : "Would retrieve the rdf:value of a AggregationOfImportance or the importanceValue of a NodeImportance instance"
+      "undefined" : "Defines the importance of a ValueConcept that a ConceptNode or PropertyNode is about."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "428"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#propertyOptimizedAt",
@@ -8023,15 +8024,15 @@
       "IRI-based" : "hasRegionDataValue"
     },
     "domain" : "158",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "432"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "95",
     "attributes" : [ "object", "anonymous" ],
     "id" : "434"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "281",
     "attributes" : [ "object", "anonymous" ],
     "id" : "435"
@@ -8061,7 +8062,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "439"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "63",
     "attributes" : [ "object", "anonymous" ],
     "id" : "440"
@@ -8104,7 +8105,7 @@
       "IRI-based" : "importanceRangesMin"
     },
     "domain" : "4",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "446"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#onState",
@@ -8226,27 +8227,6 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "458"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#followsStrategy",
-    "inverse" : "46",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "followsStrategy",
-      "undefined" : "follows strategy"
-    },
-    "superproperty" : [ "460" ],
-    "domain" : "48",
-    "comment" : {
-      "undefined" : "Indicates that the Strategy is followed by some ActingAgent."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "459"
-  }, {
-    "range" : "78",
-    "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "461"
-  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "67",
@@ -8264,12 +8244,17 @@
       "it" : "è un partecipante a",
       "undefined" : "is participant in"
     },
-    "domain" : "48",
-    "subproperty" : [ "463", "464" ],
+    "domain" : "50",
+    "subproperty" : [ "460", "461" ],
     "comment" : {
       "undefined" : "A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'."
     },
     "attributes" : [ "object", "external", "someValues" ],
+    "id" : "459"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "462"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#makesAction",
@@ -8279,13 +8264,29 @@
       "IRI-based" : "makesAction",
       "undefined" : "makes action"
     },
-    "superproperty" : [ "463" ],
-    "domain" : "48",
+    "superproperty" : [ "460" ],
+    "domain" : "50",
     "comment" : {
       "undefined" : "Indicates that the ActingAgent makes some Action."
     },
     "attributes" : [ "allValues", "object", "external" ],
-    "id" : "465"
+    "id" : "463"
+  }, {
+    "iri" : "https://w3id.org/def/vaeontology#followsStrategy",
+    "inverse" : "48",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "followsStrategy",
+      "undefined" : "follows strategy"
+    },
+    "superproperty" : [ "465" ],
+    "domain" : "50",
+    "comment" : {
+      "undefined" : "Indicates that the Strategy is followed by some ActingAgent."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "464"
   }, {
     "range" : "77",
     "domain" : "467",
@@ -8302,41 +8303,31 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "469"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "23",
-    "label" : {
-      "IRI-based" : "interpretationOn",
-      "undefined" : "interpretation on"
-    },
-    "superproperty" : [ "113" ],
+    "range" : "472",
     "domain" : "471",
-    "comment" : {
-      "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "470"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#hasPremise",
-    "inverse" : "262",
+    "iri" : "https://w3id.org/def/vaeontology#hasClaim",
+    "inverse" : "426",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "90",
     "label" : {
-      "IRI-based" : "hasPremise",
-      "undefined" : "has premise"
+      "IRI-based" : "hasClaim",
+      "undefined" : "has claim"
     },
     "superproperty" : [ "70" ],
     "domain" : "219",
     "comment" : {
-      "undefined" : "Indicates that the Argument has the VaeStaement specified as a premise."
+      "undefined" : "Indicates that the Argument has the VaeStaement specified as a claim."
     },
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "472"
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "473"
   }, {
     "range" : "414",
     "domain" : "229",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "473"
+    "id" : "474"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isCriterionOfArgument",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -8375,10 +8366,10 @@
       "undefined" : "A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan."
     },
     "attributes" : [ "object", "external", "someValues" ],
-    "id" : "474"
+    "id" : "475"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isProposedByAgent",
-    "inverse" : "476",
+    "inverse" : "477",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "93",
     "label" : {
@@ -8386,17 +8377,27 @@
       "undefined" : "is expressed by agent"
     },
     "superproperty" : [ "263" ],
-    "domain" : "154",
+    "domain" : "155",
     "comment" : {
       "undefined" : "Indicates that the AgentStatement about the world was proposed by some Agent."
     },
     "attributes" : [ "object", "external", "someValues" ],
-    "id" : "475"
+    "id" : "476"
   }, {
-    "range" : "478",
+    "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "interpretationOn",
+      "undefined" : "interpretation on"
+    },
+    "superproperty" : [ "113" ],
     "domain" : "471",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "477"
+    "comment" : {
+      "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "478"
   }, {
     "range" : "256",
     "domain" : "253",
@@ -8404,7 +8405,7 @@
     "id" : "479"
   }, {
     "range" : "122",
-    "domain" : "154",
+    "domain" : "155",
     "attributes" : [ "object", "anonymous" ],
     "id" : "480"
   }, {
@@ -8419,7 +8420,7 @@
     "id" : "483"
   }, {
     "range" : "141",
-    "domain" : "154",
+    "domain" : "155",
     "attributes" : [ "object", "anonymous" ],
     "id" : "484"
   }, {
@@ -8457,7 +8458,7 @@
       "undefined" : "has action on state"
     },
     "superproperty" : [ "70" ],
-    "domain" : "47",
+    "domain" : "49",
     "comment" : {
       "undefined" : "Indicates the Strategy has the ActionOnState relation specified."
     },
@@ -8467,7 +8468,7 @@
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#hasRootNode",
     "inverse" : "324",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "261",
+    "range" : "259",
     "label" : {
       "IRI-based" : "hasRootNode",
       "undefined" : "has root node"
@@ -8554,7 +8555,7 @@
     "id" : "499"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSatisfiedBy",
-    "inverse" : "139",
+    "inverse" : "150",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "12",
     "annotations" : {
@@ -8577,7 +8578,7 @@
     "attributes" : [ "object", "external" ],
     "id" : "500"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "396",
     "attributes" : [ "object", "anonymous" ],
     "id" : "501"
@@ -8593,15 +8594,15 @@
     "id" : "503"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
-    "inverse" : "40",
+    "inverse" : "32",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "85",
     "label" : {
       "IRI-based" : "comparisonHasSuperior",
       "undefined" : "comparison has superior"
     },
-    "superproperty" : [ "41" ],
-    "domain" : "208",
+    "superproperty" : [ "33" ],
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement)."
     },
@@ -8613,24 +8614,24 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "505"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
-    "inverse" : "33",
+    "iri" : "https://w3id.org/def/vaeontology#comparisonHasInferior",
+    "inverse" : "24",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "72",
+    "range" : "85",
     "label" : {
-      "IRI-based" : "hasPropertyOfInferior",
-      "undefined" : "has property of inferior"
+      "IRI-based" : "comparisonHasInferior",
+      "undefined" : "comparison has inferior"
     },
-    "superproperty" : [ "34" ],
-    "domain" : "208",
+    "superproperty" : [ "25" ],
+    "domain" : "213",
     "comment" : {
-      "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
+      "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement)."
     },
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "506"
   }, {
     "range" : "72",
-    "domain" : "213",
+    "domain" : "208",
     "attributes" : [ "object", "anonymous" ],
     "id" : "507"
   }, {
@@ -8673,8 +8674,8 @@
       "IRI-based" : "hasPropertyOfSuperior",
       "undefined" : "has property of superior"
     },
-    "superproperty" : [ "34" ],
-    "domain" : "208",
+    "superproperty" : [ "41" ],
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation."
     },
@@ -8687,33 +8688,33 @@
     "id" : "512"
   }, {
     "range" : "72",
-    "domain" : "173",
+    "domain" : "170",
     "attributes" : [ "object", "anonymous" ],
     "id" : "513"
   }, {
     "range" : "72",
-    "domain" : "32",
+    "domain" : "39",
     "attributes" : [ "object", "anonymous" ],
     "id" : "514"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#comparisonHasInferior",
-    "inverse" : "24",
+    "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
+    "inverse" : "40",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "85",
+    "range" : "72",
     "label" : {
-      "IRI-based" : "comparisonHasInferior",
-      "undefined" : "comparison has inferior"
+      "IRI-based" : "hasPropertyOfInferior",
+      "undefined" : "has property of inferior"
     },
-    "superproperty" : [ "25" ],
-    "domain" : "208",
+    "superproperty" : [ "41" ],
+    "domain" : "213",
     "comment" : {
-      "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement)."
+      "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "515"
   }, {
     "range" : "90",
-    "domain" : "478",
+    "domain" : "472",
     "attributes" : [ "object", "anonymous" ],
     "id" : "516"
   }, {
@@ -8771,7 +8772,7 @@
       "undefined" : "on entity"
     },
     "superproperty" : [ "113" ],
-    "domain" : "478",
+    "domain" : "472",
     "comment" : {
       "undefined" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
     },
@@ -8786,7 +8787,7 @@
       "undefined" : "on entity"
     },
     "superproperty" : [ "113" ],
-    "domain" : "478",
+    "domain" : "472",
     "comment" : {
       "undefined" : "Indicates that a VaeConditionedEntity (e.g. Agent or Outcome or Norm) is being used in an AgentStatement as an entity subject of evaluation for some characteristic, e.g. for an vae:AwarenessStatement: \"The vae:Agent payerAgent is aware of the vae:Norm [norm]\", the entity of the statement is the vae:Agent payerAgent."
     },
@@ -8821,7 +8822,7 @@
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "478",
+    "range" : "472",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8848,14 +8849,36 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "529"
   }, {
-    "range" : "60",
-    "domain" : "145",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/def/vaeontology#isBasedOnCriterion",
+    "inverse" : "221",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "isBasedOnCriterion",
+      "undefined" : "is based on criterion"
+    },
+    "superproperty" : [ "70" ],
+    "domain" : "219",
+    "comment" : {
+      "undefined" : "Indicates that the vae:ArgumentStatement is based on some vae:Criterion as the theory of the Explanation ODP."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "530"
   }, {
-    "range" : "60",
-    "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "https://w3id.org/def/vaeontology#hasPremise",
+    "inverse" : "262",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasPremise",
+      "undefined" : "has premise"
+    },
+    "superproperty" : [ "70" ],
+    "domain" : "219",
+    "comment" : {
+      "undefined" : "Indicates that the Argument has the VaeStaement specified as a premise."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "531"
   }, {
     "range" : "234",
@@ -8879,7 +8902,7 @@
     "id" : "535"
   }, {
     "range" : "234",
-    "domain" : "154",
+    "domain" : "155",
     "attributes" : [ "object", "anonymous" ],
     "id" : "536"
   }, {
@@ -8909,7 +8932,7 @@
     "id" : "542"
   }, {
     "range" : "2",
-    "domain" : "261",
+    "domain" : "259",
     "attributes" : [ "object", "anonymous" ],
     "id" : "543"
   }, {
@@ -8944,12 +8967,12 @@
     "id" : "547"
   }, {
     "range" : "60",
-    "domain" : "219",
+    "domain" : "145",
     "attributes" : [ "object", "anonymous" ],
     "id" : "548"
   }, {
-    "range" : "145",
-    "domain" : "219",
+    "range" : "60",
+    "domain" : "220",
     "attributes" : [ "object", "anonymous" ],
     "id" : "549"
   }, {
@@ -8980,13 +9003,8 @@
     "attributes" : [ "object", "external" ],
     "id" : "550"
   }, {
-    "range" : "145",
-    "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "553"
-  }, {
     "iri" : "https://w3id.org/def/vaeontology#isProposedByAgent",
-    "inverse" : "476",
+    "inverse" : "477",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "93",
     "label" : {
@@ -8999,43 +9017,26 @@
       "undefined" : "Indicates that the AgentStatement about the world was proposed by some Agent."
     },
     "attributes" : [ "object", "external", "someValues" ],
-    "id" : "554"
+    "id" : "553"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#isBasedOnCriterion",
-    "inverse" : "221",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "220",
-    "label" : {
-      "IRI-based" : "isBasedOnCriterion",
-      "undefined" : "is based on criterion"
-    },
-    "superproperty" : [ "70" ],
+    "range" : "145",
     "domain" : "219",
-    "comment" : {
-      "undefined" : "Indicates that the vae:ArgumentStatement is based on some vae:Criterion as the theory of the Explanation ODP."
-    },
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "555"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "554"
   }, {
     "range" : "220",
     "domain" : "219",
     "attributes" : [ "object", "anonymous" ],
+    "id" : "555"
+  }, {
+    "range" : "145",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "556"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#hasClaim",
-    "inverse" : "426",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "90",
-    "label" : {
-      "IRI-based" : "hasClaim",
-      "undefined" : "has claim"
-    },
-    "superproperty" : [ "70" ],
+    "range" : "60",
     "domain" : "219",
-    "comment" : {
-      "undefined" : "Indicates that the Argument has the VaeStaement specified as a claim."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "557"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
@@ -9044,12 +9045,12 @@
     "label" : {
       "IRI-based" : "value"
     },
-    "domain" : "173",
-    "attributes" : [ "external", "datatype", "someValues" ],
+    "domain" : "170",
+    "attributes" : [ "datatype", "external", "someValues" ],
     "id" : "558"
   }, {
     "range" : "226",
-    "domain" : "152",
+    "domain" : "153",
     "attributes" : [ "object", "anonymous" ],
     "id" : "560"
   }, {
@@ -9060,7 +9061,7 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#directlyParticularizesNode",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "261",
+    "range" : "259",
     "label" : {
       "IRI-based" : "directlyParticularizesNode",
       "undefined" : "directly particularizes"
@@ -9086,7 +9087,7 @@
       "IRI-based" : "hasTrace",
       "undefined" : "has trace"
     },
-    "superproperty" : [ "463" ],
+    "superproperty" : [ "460" ],
     "domain" : "210",
     "comment" : {
       "undefined" : "Indicates that the System has a Sequence representing its trace."
@@ -9099,7 +9100,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "566"
   }, {
-    "range" : "152",
+    "range" : "153",
     "domain" : "194",
     "attributes" : [ "object", "anonymous" ],
     "id" : "567"
@@ -9167,7 +9168,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "573"
   }, {
-    "range" : "152",
+    "range" : "153",
     "domain" : "144",
     "attributes" : [ "object", "anonymous" ],
     "id" : "574"
@@ -9177,9 +9178,9 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "575"
   }, {
-    "iri" : "http://www.w3.org/ns/odrl/2/action",
+    "iri" : "http://www.w3.org/ns/odrl/2/assigner",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "range" : "67",
+    "range" : "495",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9190,15 +9191,16 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "The operation relating to the Asset for which the Rule is being subjected.",
+        "value" : "The Party is the issuer of the Rule.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "action",
-      "en" : "Has Action",
-      "undefined" : "action"
+      "IRI-based" : "assigner",
+      "en" : "Assigner",
+      "undefined" : "asigner"
     },
+    "superproperty" : [ "552" ],
     "domain" : "178",
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "576"
@@ -9230,9 +9232,9 @@
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "577"
   }, {
-    "iri" : "http://www.w3.org/ns/odrl/2/assigner",
+    "iri" : "http://www.w3.org/ns/odrl/2/action",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "range" : "495",
+    "range" : "67",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -9243,16 +9245,15 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "The Party is the issuer of the Rule.",
+        "value" : "The operation relating to the Asset for which the Rule is being subjected.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "assigner",
-      "en" : "Assigner",
-      "undefined" : "asigner"
+      "IRI-based" : "action",
+      "en" : "Has Action",
+      "undefined" : "action"
     },
-    "superproperty" : [ "552" ],
     "domain" : "178",
     "attributes" : [ "object", "external", "someValues" ],
     "id" : "578"
@@ -9337,6 +9338,21 @@
     "attributes" : [ "object" ],
     "id" : "323"
   }, {
+    "iri" : "https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf",
+    "baseIri" : "https://w3id.org/def/vaeontology",
+    "range" : "213",
+    "label" : {
+      "IRI-based" : "isPropertyOfSuperiorOf",
+      "undefined" : "Is property of superior of"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPostconditionOf",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "584",
@@ -9361,21 +9377,6 @@
     },
     "attributes" : [ "object", "external" ],
     "id" : "330"
-  }, {
-    "iri" : "https://w3id.org/def/vaeontology#isPropertyOfSuperiorOf",
-    "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "208",
-    "label" : {
-      "IRI-based" : "isPropertyOfSuperiorOf",
-      "undefined" : "Is property of superior of"
-    },
-    "superproperty" : [ "112" ],
-    "domain" : "32",
-    "comment" : {
-      "undefined" : "Indicates that the ValueComparisonStatement has a ValueProperty characterizing why the superior of the comparison is, in fact, superior of the relation."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "56"
   }, {
     "range" : "232",
     "domain" : "397",
@@ -9407,36 +9408,9 @@
     "attributes" : [ "object", "external" ],
     "id" : "75"
   }, {
-    "iri" : "http://www.w3.org/ns/odrl/2/assignee",
-    "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "range" : "93",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/odrl/2/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "The Party is the recipient of the Rule.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "assignee",
-      "en" : "Assignee",
-      "undefined" : "asignee"
-    },
-    "superproperty" : [ "552" ],
-    "domain" : "220",
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "587"
-  }, {
     "iri" : "https://w3id.org/def/vaeontology#interpretationOn",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "155",
+    "range" : "139",
     "label" : {
       "IRI-based" : "interpretationOn",
       "undefined" : "interpretation on"
@@ -9447,12 +9421,7 @@
       "undefined" : "Indicates that an AgentStatement holds an interpretation on some VaeConditioningEntity. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
     },
     "attributes" : [ "object", "external", "someValues" ],
-    "id" : "588"
-  }, {
-    "range" : "130",
-    "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "589"
+    "id" : "587"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assigner",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
@@ -9479,6 +9448,38 @@
     "superproperty" : [ "552" ],
     "domain" : "220",
     "attributes" : [ "object", "external", "someValues" ],
+    "id" : "588"
+  }, {
+    "range" : "130",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "589"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/assignee",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "93",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/odrl/2/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Party is the recipient of the Rule.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assignee",
+      "en" : "Assignee",
+      "undefined" : "asignee"
+    },
+    "superproperty" : [ "552" ],
+    "domain" : "220",
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "590"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isStartOfSequence",
@@ -9498,15 +9499,15 @@
     "id" : "591"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#comparisonHasSuperior",
-    "inverse" : "40",
+    "inverse" : "32",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "85",
     "label" : {
       "IRI-based" : "comparisonHasSuperior",
       "undefined" : "comparison has superior"
     },
-    "superproperty" : [ "41" ],
-    "domain" : "208",
+    "superproperty" : [ "33" ],
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is superior to some other inferior one (that is to be supplied in the same ComparisonStatement)."
     },
@@ -9524,7 +9525,7 @@
     "id" : "592"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting",
-    "inverse" : "51",
+    "inverse" : "47",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "238",
     "annotations" : {
@@ -9587,20 +9588,19 @@
     "attributes" : [ "transitive", "object", "external" ],
     "id" : "204"
   }, {
-    "iri" : "https://w3id.org/def/vaeontology#measuredOnConditionedEntity",
-    "inverse" : "74",
+    "iri" : "https://w3id.org/def/vaeontology#relationWith",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "73",
+    "range" : "139",
     "label" : {
-      "IRI-based" : "measuredOnConditionedEntity",
-      "undefined" : "measured on outcome"
+      "IRI-based" : "relationWith",
+      "undefined" : "relation with"
     },
-    "superproperty" : [ "75" ],
+    "superproperty" : [ "172" ],
     "domain" : "72",
     "comment" : {
-      "undefined" : "Indicates that the VaeProperty was satisfied (measured) in some VaeConditionedEntity (e.g. Norm or Outcome)."
+      "undefined" : "Indicates that a VaeProperty is related to some degree to an aspect related to the VaeConditioningEntity indicated. For instance, a measure of the GiniIndex can be related to the value of Equality."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "595"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#performedOnStateIn",
@@ -9658,7 +9658,7 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology#proposesStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "154",
+    "range" : "155",
     "label" : {
       "IRI-based" : "proposesStatement",
       "undefined" : "proposes statement"
@@ -9669,7 +9669,7 @@
       "undefined" : "Indicates that the Agent proposes an AgentStatement about the world."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "476"
+    "id" : "477"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isClaimOf",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -9755,7 +9755,7 @@
     "id" : "546"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
-    "inverse" : "460",
+    "inverse" : "465",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "99",
     "annotations" : {
@@ -9772,12 +9772,12 @@
       "it" : "ha come partecipante"
     },
     "domain" : "53",
-    "subproperty" : [ "46", "65" ],
+    "subproperty" : [ "48", "65" ],
     "comment" : {
       "undefined" : "A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "49"
+    "id" : "51"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/target",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
@@ -9813,12 +9813,12 @@
       "IRI-based" : "hasDataValue"
     },
     "domain" : "5",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "601"
   }, {
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#particularizesNode",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "261",
+    "range" : "259",
     "label" : {
       "IRI-based" : "particularizesNode",
       "undefined" : "particularizes"
@@ -9827,7 +9827,7 @@
     "domain" : "603",
     "subproperty" : [ "279" ],
     "comment" : {
-      "undefined" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
+      "undefined" : "Indicates that the ConceptNode or PropertyNode particularizes the ConceptNode  specified (the object ConceptNode generalizes the subject)."
     },
     "attributes" : [ "transitive", "object" ],
     "id" : "160"
@@ -9866,7 +9866,7 @@
       "undefined" : "conceptualizes"
     },
     "domain" : "88",
-    "subproperty" : [ "476" ],
+    "subproperty" : [ "477" ],
     "comment" : {
       "undefined" : "A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created the solar-system metaphor for the atomic theory'; 'Jacques assumes all swans are white'; 'the task force members share the attack plan'.\nConceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be 'assumed', situations can be 'believed' or 'known', plans can be 'adopted', etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl."
     },
@@ -9874,20 +9874,20 @@
     "id" : "597"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#followsStrategy",
-    "inverse" : "46",
+    "inverse" : "48",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "47",
+    "range" : "49",
     "label" : {
       "IRI-based" : "followsStrategy",
       "undefined" : "follows strategy"
     },
-    "superproperty" : [ "460" ],
-    "domain" : "48",
+    "superproperty" : [ "465" ],
+    "domain" : "50",
     "comment" : {
       "undefined" : "Indicates that the Strategy is followed by some ActingAgent."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "464"
+    "id" : "461"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/hasPolicy",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
@@ -9935,7 +9935,7 @@
       "undefined" : "Indicates that the VaePropertyStatement expresses some VaeProperty"
     },
     "attributes" : [ "object", "external" ],
-    "id" : "34"
+    "id" : "41"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#hasState",
     "inverse" : "520",
@@ -9945,7 +9945,7 @@
       "IRI-based" : "hasState",
       "undefined" : "has state"
     },
-    "superproperty" : [ "463" ],
+    "superproperty" : [ "460" ],
     "domain" : "93",
     "comment" : {
       "undefined" : "Indicates that the Agent is represented by some State."
@@ -9988,8 +9988,8 @@
       "undefined" : "covers item"
     },
     "superproperty" : [ "75" ],
-    "domain" : "154",
-    "subproperty" : [ "34", "153", "169" ],
+    "domain" : "155",
+    "subproperty" : [ "41", "154", "169" ],
     "comment" : {
       "undefined" : "Indicates that the AgentStatement covers some VaeStatementEntity (e.g. Agent or Norm or Outcome or VaeProperty or ValueConcept) in an undetermined way."
     },
@@ -10118,13 +10118,13 @@
       "IRI-based" : "hasRelationWithProperty",
       "undefined" : "has Relation With Property"
     },
-    "superproperty" : [ "170" ],
-    "domain" : "155",
+    "superproperty" : [ "171" ],
+    "domain" : "139",
     "comment" : {
       "undefined" : "Indicates that a VaeConditioningEntity is related to the meaning of a VaeProperty. For instance, a measure of the GiniIndex can be related to the value of Equality."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "172"
+    "id" : "173"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#hasInputOutcome",
     "inverse" : "427",
@@ -10152,7 +10152,7 @@
       "undefined" : "generalizes"
     },
     "superproperty" : [ "159" ],
-    "domain" : "261",
+    "domain" : "259",
     "subproperty" : [ "277" ],
     "comment" : {
       "undefined" : "\"The set of edgesE : N ×N is a set of directed edges (np, nc) ∈ E that represent the relation between value concepts np and nc (the parent and child nodes, respectively) illustrating that the value concept np is a more general concept than nc.\""
@@ -10195,7 +10195,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "618"
   }, {
-    "range" : "155",
+    "range" : "139",
     "domain" : "178",
     "attributes" : [ "object", "anonymous" ],
     "id" : "619"
@@ -10223,7 +10223,7 @@
       "IRI-based" : "hasPropertyTaxonomy",
       "undefined" : "has Property Taxonomy"
     },
-    "superproperty" : [ "34" ],
+    "superproperty" : [ "41" ],
     "domain" : "386",
     "comment" : {
       "undefined" : "Indicates that the PropertyNode has a PropertyTaxonomy (a ValueProperty informing of the degree of satisfaction of the taxonomy property)."
@@ -10255,7 +10255,7 @@
       "undefined" : "is root node of"
     },
     "superproperty" : [ "322" ],
-    "domain" : "261",
+    "domain" : "259",
     "comment" : {
       "undefined" : "Indicates that the ConceptNode is a root of the ValueTaxonomy (is generalized by none other ConceptNode)."
     },
@@ -10289,13 +10289,13 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology#inferiorInComparison",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "208",
+    "range" : "213",
     "label" : {
       "IRI-based" : "inferiorInComparison",
       "undefined" : "inferior in comparison"
     },
     "superproperty" : [ "351" ],
-    "domain" : "23",
+    "domain" : "85",
     "comment" : {
       "undefined" : "Indicates in the ValueComparisonStatement the ValueConcept that is inferior to some other superior one (that is to be supplied in the same ValueComparisonStatement)."
     },
@@ -10317,7 +10317,7 @@
     },
     "superproperty" : [ "75" ],
     "domain" : "145",
-    "subproperty" : [ "25", "41", "452" ],
+    "subproperty" : [ "25", "33", "452" ],
     "comment" : {
       "undefined" : "Indicates that a RelationStatement relates the specified entity with others."
     },
@@ -10408,7 +10408,7 @@
     "id" : "631"
   }, {
     "range" : "145",
-    "domain" : "292",
+    "domain" : "299",
     "attributes" : [ "object", "anonymous" ],
     "id" : "632"
   }, {
@@ -10428,7 +10428,7 @@
     "id" : "636"
   }, {
     "range" : "93",
-    "domain" : "48",
+    "domain" : "50",
     "attributes" : [ "object", "anonymous" ],
     "id" : "637"
   }, {
@@ -10448,7 +10448,7 @@
     "comment" : {
       "undefined" : "Represents if the Context is active (actually influences any ValueObject)."
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "639"
   }, {
     "range" : "234",
@@ -10468,7 +10468,7 @@
       "IRI-based" : "hasNProperties"
     },
     "domain" : "10",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "642"
   }, {
     "range" : "145",
@@ -10494,12 +10494,12 @@
       "undefined" : "is participant in"
     },
     "domain" : "99",
-    "subproperty" : [ "463", "464" ],
+    "subproperty" : [ "460", "461" ],
     "comment" : {
       "undefined" : "A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "460"
+    "id" : "465"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#satisfiesProperty",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -10532,14 +10532,14 @@
       "en" : "is agent involved in",
       "it" : "è un agente coinvolto in"
     },
-    "superproperty" : [ "460" ],
+    "superproperty" : [ "465" ],
     "domain" : "88",
     "subproperty" : [ "64", "564", "605" ],
     "comment" : {
       "undefined" : "Agent participation."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "463"
+    "id" : "460"
   }, {
     "range" : "77",
     "domain" : "93",
@@ -10562,7 +10562,7 @@
     "attributes" : [ "object", "external" ],
     "id" : "351"
   }, {
-    "range" : "32",
+    "range" : "39",
     "domain" : "226",
     "attributes" : [ "object", "anonymous" ],
     "id" : "646"
@@ -10576,30 +10576,30 @@
     },
     "superproperty" : [ "104" ],
     "domain" : "72",
-    "subproperty" : [ "56", "33", "105" ],
+    "subproperty" : [ "56", "40", "105" ],
     "comment" : {
       "undefined" : "Indicates that the VaeProperty is expressed at some VaePropertyStatement."
     },
     "attributes" : [ "object", "external" ],
     "id" : "112"
   }, {
-    "range" : "32",
-    "domain" : "152",
+    "range" : "39",
+    "domain" : "153",
     "attributes" : [ "object", "anonymous" ],
     "id" : "647"
   }, {
-    "range" : "32",
+    "range" : "39",
     "domain" : "144",
     "attributes" : [ "object", "anonymous" ],
     "id" : "648"
   }, {
-    "range" : "32",
+    "range" : "39",
     "domain" : "194",
     "attributes" : [ "object", "anonymous" ],
     "id" : "649"
   }, {
     "range" : "145",
-    "domain" : "208",
+    "domain" : "213",
     "attributes" : [ "object", "anonymous" ],
     "id" : "650"
   }, {
@@ -10653,7 +10653,7 @@
     "id" : "425"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isProposedByAgent",
-    "inverse" : "476",
+    "inverse" : "477",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "93",
     "label" : {
@@ -10661,7 +10661,7 @@
       "undefined" : "is expressed by agent"
     },
     "superproperty" : [ "263" ],
-    "domain" : "154",
+    "domain" : "155",
     "comment" : {
       "undefined" : "Indicates that the AgentStatement about the world was proposed by some Agent."
     },
@@ -10728,7 +10728,7 @@
     },
     "superproperty" : [ "349" ],
     "domain" : "5",
-    "subproperty" : [ "40" ],
+    "subproperty" : [ "32" ],
     "comment" : {
       "undefined" : "Reference to the first element of a binary relation tuple R = (first, second)."
     },
@@ -10753,7 +10753,7 @@
   }, {
     "iri" : "https://w3id.org/def/vaeontology#isPresentInStatement",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "154",
+    "range" : "155",
     "label" : {
       "IRI-based" : "isPresentInStatement",
       "undefined" : "is present in statement"
@@ -10768,7 +10768,7 @@
     "id" : "104"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#involvesAgent",
-    "inverse" : "463",
+    "inverse" : "460",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "88",
     "annotations" : {
@@ -10784,7 +10784,7 @@
       "en" : "involves agent",
       "it" : "coinvolge agente"
     },
-    "superproperty" : [ "49" ],
+    "superproperty" : [ "51" ],
     "domain" : "53",
     "subproperty" : [ "565", "520", "62" ],
     "comment" : {
@@ -10906,15 +10906,15 @@
     "id" : "667"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#hasPropertyOfInferior",
-    "inverse" : "33",
+    "inverse" : "40",
     "baseIri" : "https://w3id.org/def/vaeontology",
     "range" : "72",
     "label" : {
       "IRI-based" : "hasPropertyOfInferior",
       "undefined" : "has property of inferior"
     },
-    "superproperty" : [ "34" ],
-    "domain" : "208",
+    "superproperty" : [ "41" ],
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the inferior of the comparison is, in fact, inferior of the relation."
     },
@@ -10924,7 +10924,7 @@
     "iri" : "https://w3id.org/def/vaeontology_osman_dInverno#hasConceptNode",
     "inverse" : "322",
     "baseIri" : "https://w3id.org/def/vaeontology_osman_dInverno",
-    "range" : "261",
+    "range" : "259",
     "label" : {
       "IRI-based" : "hasConceptNode",
       "undefined" : "has concept node"
@@ -10969,7 +10969,7 @@
     "id" : "668"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant",
-    "inverse" : "460",
+    "inverse" : "465",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "range" : "99",
     "annotations" : {
@@ -10986,7 +10986,7 @@
       "it" : "ha come partecipante"
     },
     "domain" : "53",
-    "subproperty" : [ "46", "65" ],
+    "subproperty" : [ "48", "65" ],
     "comment" : {
       "undefined" : "A relation between an object and a process, e.g. 'John took part in the discussion', 'a large mass of snow fell during the avalanche', or 'a cook, some sugar, flour, etc. are all present in the cooking of a cake'."
     },
@@ -11014,7 +11014,7 @@
       "undefined" : "A relation between situations and entities, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica', i.e.: the preparation of my coffee this morning is the setting for (an amount of) a new fantastic Arabica."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "51"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#shapesNorm",
     "baseIri" : "https://w3id.org/def/vaeontology",
@@ -11031,15 +11031,15 @@
     "id" : "621"
   }, {
     "iri" : "https://w3id.org/def/vaeontology#hasInterpretation",
-    "inverse" : "153",
+    "inverse" : "154",
     "baseIri" : "https://w3id.org/def/vaeontology",
-    "range" : "154",
+    "range" : "155",
     "label" : {
       "IRI-based" : "hasInterpretation",
       "undefined" : "has Interpretation"
     },
     "superproperty" : [ "104" ],
-    "domain" : "155",
+    "domain" : "139",
     "comment" : {
       "undefined" : "Indicates that the VaeConditioningEntity is interpreted in some way according to an AgentStatement. For instance, an AlignmentStatement has an interpretation on some Value, as it specifies the alignment on some entity with that Value."
     },
@@ -11100,8 +11100,8 @@
       "IRI-based" : "makesAction",
       "undefined" : "makes action"
     },
-    "superproperty" : [ "463" ],
-    "domain" : "48",
+    "superproperty" : [ "460" ],
+    "domain" : "50",
     "comment" : {
       "undefined" : "Indicates that the ActingAgent makes some Action."
     },
@@ -11117,7 +11117,7 @@
       "undefined" : "comparison has inferior"
     },
     "superproperty" : [ "25" ],
-    "domain" : "208",
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates in the ComparisonStatement the VaeEntity that is inferior to some other superior one (that is to be supplied in the same ComparisonStatement)."
     },
@@ -11132,8 +11132,8 @@
       "IRI-based" : "hasPropertyOfSuperior",
       "undefined" : "has property of superior"
     },
-    "superproperty" : [ "34" ],
-    "domain" : "208",
+    "superproperty" : [ "41" ],
+    "domain" : "213",
     "comment" : {
       "undefined" : "Indicates that the ComparisonStatement has a VaeProperty characterizing why the superior of the comparison is, in fact, superior of the relation."
     },

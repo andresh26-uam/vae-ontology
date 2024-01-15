@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>vae-ontology</title>
+    <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Vocabularies</a></li>
+        <li><a href="report.html">Vocabulary report</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+ </div>
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>vae-ontology landing page</h1>
+        <p class="lead">Here you can find the list of vocabularies that have been found on vae-ontology.</p>
+      </div>
+      <hr>
+<div class="row"> 
+</div>
+<br>
+<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+<thead>
+<tr>
+<th class="col-md-2">Ontology</th>
+<th class="col-md-1">Serialization</th>
+<th class="col-md-2">License</th>
+<th class="col-md-1">Language</th>
+<th class="col-md-6">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="tr1">
+<td><a href = "https://w3id.org/def/vaeontology#" target="_blank">VAE Ontology</a> </td><td>
+<a href="ontologies/vaeontology.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+Ontology for Value Awareness Engineering: representation and reasoning with human values.</td>
+</tr><tr id="tr2">
+<td><a href = "https://w3id.org/def/vaeontology#" target="_blank">VAE Ontology</a> </td><td>
+<a href="ontologies/vaeontology.rdf"><span class="label label-primary">RDF/XML</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+Ontology for Value Awareness Engineering: representation and reasoning with human values.</td>
+</tr><tr id="tr3">
+<td><a href = "/home/ahmad/repos/prevclone-7tos/cases/SerramiaEtAl2023/MoralValuesInNormDecisionMaking.rdf" target="_blank">Ontology on "Moral Values in Norm Decision Making", Serramia, M. et al. (2018).</a> </td><td>
+<a href="ontologies/MoralValuesInNormDecisionMaking.rdf"><span class="label label-primary">RDF/XML</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> </td>
+<td>
+<p id="collapse3" data-toggle="collapse" >
+Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research ... <a class="more3">See more</a>
+</p>
+<script>
+$('#collapse3').click(function () {
+if($('a').hasClass('more3'))
+{
+$('#collapse3').html('Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Serramia, M. et al:  Moral Values in Norm Decision Making. In Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS '18). IFAAMAS, 1294–1302. https://dl.acm.org/doi/10.5555/3237383.3237891<br>          <a class="less3">See less<a>'); 
+}
+else
+{      
+$('#collapse3').html('Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research ...  <a  class="more3">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr4">
+<td><a href = "/home/ahmad/repos/prevclone-7tos/cases/MontesAndSierra2022/MontesAndSierra.rdf" target="_blank">Ontology on "Synthesis and properties of optimally value-aligned normative systems", Montes, N., Sierra, C. (2022).</a> </td><td>
+<a href="ontologies/MontesAndSierra.rdf"><span class="label label-primary">RDF/XML</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> </td>
+<td>
+<p id="collapse4" data-toggle="collapse" >
+Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research ... <a class="more4">See more</a>
+</p>
+<script>
+$('#collapse4').click(function () {
+if($('a').hasClass('more4'))
+{
+$('#collapse4').html('Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Montes, N., Sierra, C.: Synthesis and properties of optimally value-aligned normative systems. Journal of Artificial Intelligence Research 74, 1739–1774 (2022).<br>https://doi.org/10.1613/jair.1.13487  <a class="less4">See less<a>'); 
+}
+else
+{      
+$('#collapse4').html('Extension of the VAE ontology, an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research ...  <a  class="more4">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr5">
+<td><a href = "/home/ahmad/repos/prevclone-7tos/cases/OsmanAndDInverno2023/OsmanAndDInverno.ttl" target="_blank">Ontology on "A computational framework of human values for ethical
+AI" by Nardine Osman and Mark d’Inverno (2023)</a> </td><td>
+<a href="ontologies/OsmanAndDInverno.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse5" data-toggle="collapse" >
+Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with ... <a class="more5">See more</a>
+</p>
+<script>
+$('#collapse5').click(function () {
+if($('a').hasClass('more5'))
+{
+$('#collapse5').html('Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with human values, modelling the research proposal by: Osman, N., d’Inverno, M.: A computational framework of human values for ethical<br>ai (2023) https://arxiv.org/abs/2305.02748  <a class="less5">See less<a>'); 
+}
+else
+{      
+$('#collapse5').html('Extension of the VAE ontology (https://w3id.org/def/vaeontology), an ontology for Value Awareness Engineering: representation and reasoning with ...  <a  class="more5">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr6">
+<td><a href = "https://w3id.org/def/vaeontology#" target="_blank">VAE Ontology</a> </td><td>
+<a href="ontologies/vaeontology-v000.rdf"><span class="label label-primary">RDF/XML</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+Ontology for Value Awareness Engineering: representation and reasoning with human values.</td>
+</tr><tr id="tr7">
+<td><a href = "https://w3id.org/def/vaeontology#" target="_blank">VAE Ontology</a> </td><td>
+<a href="ontologies/vaeontology-v102-1.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/ita" target="_blank"> <span class="label label-primary">it</span></a> </td>
+<td>
+Ontology for Value Awareness Engineering: representation and reasoning with human values.</td>
+</tr><tr id="tr8">
+<td><a href = "https://w3id.org/def/vaeontology#" target="_blank">VAE Ontology</a> </td><td>
+<a href="ontologies/vaeontology-v101.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="http://purl.org/NET/rdflicense/cc-by4.0.ttl" target="_blank"> <span class="label label-success">http://purl.org/NET/rdflicens...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+Ontology for Value Awareness Engineering: representation and reasoning with human values.</td>
+</tr></tbody></table>
+<hr>
+      <footer class="footer">
+           <footer class="footer">
+            <div class="row">
+    	<div class="col-md-10">
+    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
+	        <br>
+    	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+ 	        <br>
+	        Latest revision January, 2024
+        </div>
+		<div class="col-md-2">
+			<a href="https://github.com/dgarijo/vocabLite"><img width="140px"src="vocab/logoLite.png"></img></a>
+		</div>
+      </footer>      </div>
+      </footer>
+    </div> <!-- /container -->

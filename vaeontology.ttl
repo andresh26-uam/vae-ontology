@@ -28,7 +28,7 @@
                                     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                     vann:preferredNamespacePrefix "vae" ;
                                     vann:preferredNamespaceUri vae: ;
-                                    owl:priorVersion "https://w3id.org/def/vaeontology/1.0.1" ;
+                                    owl:priorVersion "https://w3id.org/def/vaeontology/1.0.2" ;
                                     owl:versionInfo "1.0.3" ;
                                     mod:createdWith <https://chowlk.linkeddata.es> .
 

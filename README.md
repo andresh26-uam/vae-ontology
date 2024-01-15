@@ -20,9 +20,9 @@ So far we have implemented parts of the following proposals from the VAE communi
 - (VAEMVNDM) Ontology on "Moral Values in Norm Decision Making", Serramia, M. et al. (2018).
 
 ## Prefixes
-[VAEMS](https://w3id.org/def/vaeontology_montes_sierra) ``https://w3id.org/spice/SON/SchwartzValues`` <br/>
-[VAEODI](https://w3id.org/def/vaeontology_osman_dInverno) ``https://w3id.org/def/vaeontology_osman_dInverno`` <br/>
-[VAEMVNDM](https://w3id.org/def/vaeontology_moral_values_in_norm_DM) ``https://w3id.org/def/vaeontology_moral_values_in_norm_DM`` <br/>
+[VAEMS](https://w3id.org/def/vaeontology_montes_sierra) ``https://w3id.org/def/vaeontology_montes_sierra`` ([OWL serialization for Protégé](https://andresh26-uam.github.io/vae-ontology/OnToology/cases/MontesAndSierra2022/MontesAndSierra.rdf/documentation/ontology.owl)) <br/>
+[VAEODI](https://w3id.org/def/vaeontology_osman_dInverno) ``https://w3id.org/def/vaeontology_osman_dInverno`` ([OWL serialization for Protégé](https://andresh26-uam.github.io/vae-ontology/OnToology/cases/OsmanAndDInverno2023/OsmanAndDInverno.ttl/documentation/ontology.owl)) <br/>
+[VAEMVNDM](https://w3id.org/def/vaeontology_moral_values_in_norm_DM) ``https://w3id.org/def/vaeontology_moral_values_in_norm_DM`` ([OWL serialization for Protégé](https://andresh26-uam.github.io/vae-ontology/OnToology/cases/SerramiaEtAl2023/MoralValuesInNormDecisionMaking.rdf/documentation/ontology.owl)) <br/>
 
 # References
 - ([NeOn](https://oeg.fi.upm.es/index.php/en/methodologies/59-neon-methodology/index.html)) Suárez-Figueroa, Mari Carmen (2010). NeOn Methodology for Building Ontology Networks: Specification, Scheduling and Reuse. Thesis (Doctoral), Facultad de Informática (UPM). https://doi.org/10.20868/UPM.thesis.3879.
